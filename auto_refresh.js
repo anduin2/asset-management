@@ -34,7 +34,8 @@
     homeBtn.style.transform = 'scale(1)';
   };
   homeBtn.onclick = function() {
-    location.href = './';
+    // 去掉当前文件名，回到目录首页（兼容 GitHub Pages / 本地）
+    location.href = location.href.replace(/\/[^\/]*$/, '/');
   };
 
   // 刷新按钮
