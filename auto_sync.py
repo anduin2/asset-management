@@ -2,7 +2,7 @@
 auto_sync.py — 自动同步最新报告到部署目录
 每次运行：复制最新输出 → 注入认证/自动刷新 → 更新版本号
 """
-import os, shutil, re
+import os, shutil, re, subprocess
 from datetime import datetime
 from pathlib import Path
 
@@ -75,7 +75,17 @@ def main():
     print(f"  [ver] version.txt → {version}")
     
     if changed:
-        print(f"\n*** CHANGED=true — ready for redeploy ***")
+        print(f"\n*** CHANGED=true — pushing to GitHub ***")
+        try:
+            subprocess.run(["git", "add", "-A"], cwd=str(DEPLOY), check=True)
+            subprocess.run(
+                ["git", "commit", "-m", f"Auto sync @ {version}"],
+                cwd=str(DEPLOY), check=True
+            )
+            subprocess.run(["git", "push"], cwd=str(DEPLOY), check=True)
+            print(f"  [git] pushed to GitHub Pages")
+        except subprocess.CalledProcessError as e:
+            print(f"  [git] FAILED: {e}")
     else:
         print(f"\nNo changes detected.")
     
