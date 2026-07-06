@@ -75,7 +75,7 @@ def main():
     print(f"  [ver] version.txt → {version}")
     
     if changed:
-        print(f"\n*** CHANGED=true — pushing to GitHub ***")
+        print(f"\n*** CHANGED=true ***")
         try:
             subprocess.run(["git", "add", "-A"], cwd=str(DEPLOY), check=True)
             subprocess.run(
@@ -87,7 +87,7 @@ def main():
         except subprocess.CalledProcessError as e:
             print(f"  [git] FAILED: {e}")
     else:
-        print(f"\nNo changes detected.")
+        print(f"\nCHANGED=false — No changes detected.")
     
     return changed
 

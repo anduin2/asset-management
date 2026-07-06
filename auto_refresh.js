@@ -1,79 +1,49 @@
-// ── 手动刷新 + 回到导航页 ──
+// ── 回到导航页 + 刷新 ──
+// 报告同步由定时自动化（auto_sync.py + git push）负责
+// GitHub Pages 为纯静态托管，无需服务器 API
 (function() {
-  // 回到导航页按钮
+  // 公共样式辅助
+  function setBtnStyle(el, css) {
+    for (var k in css) { el.style[k] = css[k]; }
+  }
+
+  // ── 回到导航页按钮 ──
   var homeBtn = document.createElement('button');
   homeBtn.textContent = '🏠 导航';
-  homeBtn.style.cssText = [
-    'position: fixed',
-    'bottom: 76px',
-    'right: 24px',
-    'z-index: 9999',
-    'padding: 10px 18px',
-    'font-size: 15px',
-    'font-weight: 600',
-    'color: #374151',
-    'background: #f3f4f6',
-    'border: 1px solid #d1d5db',
-    'border-radius: 8px',
-    'cursor: pointer',
-    'box-shadow: 0 2px 12px rgba(0,0,0,0.08)',
-    'transition: background 0.2s, transform 0.1s',
-    'outline: none'
-  ].join(';');
-
-  homeBtn.onmouseenter = function() {
-    homeBtn.style.background = '#e5e7eb';
+  var homeBaseStyle = {
+    position: 'fixed', bottom: '76px', right: '24px', zIndex: '9999',
+    padding: '10px 18px', fontSize: '15px', fontWeight: '600',
+    color: '#374151', background: '#f3f4f6',
+    border: '1px solid #d1d5db', borderRadius: '8px',
+    cursor: 'pointer', boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+    transition: 'background 0.2s, transform 0.1s', outline: 'none'
   };
-  homeBtn.onmouseleave = function() {
-    homeBtn.style.background = '#f3f4f6';
-  };
-  homeBtn.onmousedown = function() {
-    homeBtn.style.transform = 'scale(0.95)';
-  };
-  homeBtn.onmouseup = function() {
-    homeBtn.style.transform = 'scale(1)';
-  };
+  setBtnStyle(homeBtn, homeBaseStyle);
+  homeBtn.onmouseenter = function() { homeBtn.style.background = '#e5e7eb'; };
+  homeBtn.onmouseleave = function() { homeBtn.style.background = '#f3f4f6'; };
+  homeBtn.onmousedown = function() { homeBtn.style.transform = 'scale(0.95)'; };
+  homeBtn.onmouseup   = function() { homeBtn.style.transform = 'scale(1)'; };
   homeBtn.onclick = function() {
-    // 去掉当前文件名，回到目录首页（兼容 GitHub Pages / 本地）
     location.href = location.href.replace(/\/[^\/]*$/, '/');
   };
 
-  // 刷新按钮
+  // ── 刷新页面按钮 ──
   var refreshBtn = document.createElement('button');
-  refreshBtn.textContent = '⟳ 刷新';
-  refreshBtn.style.cssText = [
-    'position: fixed',
-    'bottom: 24px',
-    'right: 24px',
-    'z-index: 9999',
-    'padding: 10px 18px',
-    'font-size: 15px',
-    'font-weight: 600',
-    'color: #fff',
-    'background: #1a56db',
-    'border: none',
-    'border-radius: 8px',
-    'cursor: pointer',
-    'box-shadow: 0 2px 12px rgba(26,86,219,0.35)',
-    'transition: background 0.2s, transform 0.1s',
-    'outline: none'
-  ].join(';');
+  refreshBtn.textContent = '🔄 刷新';
+  var refBaseStyle = {
+    position: 'fixed', bottom: '24px', right: '24px', zIndex: '9999',
+    padding: '10px 18px', fontSize: '15px', fontWeight: '600',
+    color: '#fff', background: '#1a56db', border: 'none', borderRadius: '8px',
+    cursor: 'pointer', boxShadow: '0 2px 12px rgba(26,86,219,0.35)',
+    transition: 'background 0.2s, transform 0.1s', outline: 'none'
+  };
+  setBtnStyle(refreshBtn, refBaseStyle);
+  refreshBtn.onmouseenter = function() { refreshBtn.style.background = '#1e40af'; };
+  refreshBtn.onmouseleave = function() { refreshBtn.style.background = '#1a56db'; };
+  refreshBtn.onmousedown = function() { refreshBtn.style.transform = 'scale(0.95)'; };
+  refreshBtn.onmouseup   = function() { refreshBtn.style.transform = 'scale(1)'; };
 
-  refreshBtn.onmouseenter = function() {
-    refreshBtn.style.background = '#1e40af';
-  };
-  refreshBtn.onmouseleave = function() {
-    refreshBtn.style.background = '#1a56db';
-  };
-  refreshBtn.onmousedown = function() {
-    refreshBtn.style.transform = 'scale(0.95)';
-  };
-  refreshBtn.onmouseup = function() {
-    refreshBtn.style.transform = 'scale(1)';
-  };
   refreshBtn.onclick = function() {
-    refreshBtn.textContent = '刷新中…';
-    refreshBtn.style.pointerEvents = 'none';
     location.reload(true);
   };
 

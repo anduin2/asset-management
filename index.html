@@ -139,11 +139,33 @@
     </a>
   </div>
 
-  <p class="update-time">Updated: 2026-07-03</p>
+  <p class="update-time" id="update-time">加载中…</p>
 
   <footer>
     资管项目 · Treasury Desk Daily Reports &copy; 2026
   </footer>
 </div>
+
+<script>
+// 读取 version.txt 显示最后同步时间（GitHub Pages 静态文件）
+(function() {
+  var el = document.getElementById('update-time');
+  if (!el) return;
+
+  fetch('/version.txt')
+    .then(function(r) {
+      if (r.ok) return r.text();
+      throw new Error('not found');
+    })
+    .then(function(version) {
+      var t = version.trim().replace('T', ' ');
+      if (t.length > 16) t = t.substring(0, 16);
+      el.textContent = '📅 最后同步: ' + t;
+    })
+    .catch(function() {
+      el.textContent = '';
+    });
+})();
+</script>
 </body>
 </html>
