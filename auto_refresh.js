@@ -34,7 +34,7 @@
     homeBtn.style.transform = 'scale(1)';
   };
   homeBtn.onclick = function() {
-    location.href = '/';
+    location.href = './';
   };
 
   // 刷新按钮
@@ -80,7 +80,8 @@
   document.body.appendChild(refreshBtn);
 
   // 首页只显示刷新按钮，不显示导航按钮
-  if (location.pathname === '/' || location.pathname === '/index.html') {
+  var isHome = location.pathname === '/' || location.pathname.endsWith('/index.html') || location.pathname.split('/').filter(Boolean).length === 0;
+  if (isHome) {
     homeBtn.style.display = 'none';
   }
 })();
