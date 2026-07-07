@@ -10,9 +10,10 @@ ROOT = Path(r"c:\Users\fixedincome.intern\Desktop\资管项目")
 DEPLOY = ROOT / "deploy"
 
 SOURCES = {
-    "intel.html":   ROOT / "Daily Commentary" / "output" / "卖方每日情报.html",
-    "deposit.html": ROOT / "Deposit-main" / "每日存款报价汇总.html",
-    "repo.html":    ROOT / "repo-tool-main" / "output" / "每日REPO报价汇总.html",
+    "intel.html":             ROOT / "Daily Commentary" / "output" / "卖方每日情报.html",
+    "daily_commentary.html":  ROOT / "Daily Commentary（NEW）" / "report.html",
+    "deposit.html":           ROOT / "Deposit-main" / "每日存款报价汇总.html",
+    "repo.html":              ROOT / "repo-tool-main" / "output" / "每日REPO报价汇总.html",
 }
 
 AUTH_TAG = '<script src="auth.js"></script>'
