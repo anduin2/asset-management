@@ -12,6 +12,7 @@ DEPLOY = ROOT / "deploy"
 SOURCES = {
     "intel.html":             ROOT / "Daily Commentary" / "output" / "卖方每日情报.html",
     "daily_commentary.html":  ROOT / "Daily Commentary（NEW）" / "report.html",
+    "report-data.js":         ROOT / "Daily Commentary（NEW）" / "report-data.js",
     "deposit.html":           ROOT / "Deposit-main" / "每日存款报价汇总.html",
     "repo.html":              ROOT / "repo-tool-main" / "output" / "每日REPO报价汇总.html",
 }
