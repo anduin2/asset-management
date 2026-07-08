@@ -62,6 +62,7 @@
   .card:nth-child(1)::before { background: linear-gradient(90deg, #3b82f6, #6366f1); }
   .card:nth-child(2)::before { background: linear-gradient(90deg, #10b981, #06b6d4); }
   .card:nth-child(3)::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+  .card:nth-child(4)::before { background: linear-gradient(90deg, #8b5cf6, #ec4899); }
   .card:hover {
     transform: translateY(-4px);
     border-color: rgba(148, 163, 184, 0.35);
@@ -93,6 +94,18 @@
   .tag-intel { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
   .tag-deposit { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
   .tag-repo { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
+  .tag-new { background: rgba(139, 92, 246, 0.2); color: #c4b5fd; }
+  .badge-new {
+    display: inline-block;
+    background: #ec4899;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 6px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
   footer {
     text-align: center;
     margin-top: 60px;
@@ -113,7 +126,7 @@
 <div class="container">
   <header>
     <h1>资管项目 · 每日报告中心</h1>
-    <p>固定收益交易台 — 三大核心日报，一站式查看</p>
+    <p>固定收益交易台 — 四大核心日报，一站式查看</p>
   </header>
 
   <div class="cards">
@@ -136,6 +149,13 @@
       <h2>每日 REPO 报价汇总</h2>
       <p>银行间回购报价仪表盘：KPI、对比矩阵、30天趋势图、Haircut与Limit概览</p>
       <span class="tag tag-repo">REPO报价</span>
+    </a>
+
+    <a class="card" href="daily_commentary.html">
+      <div class="card-icon">🔮</div>
+      <h2>卖方每日情报<span class="badge-new">新</span></h2>
+      <p>多日信号聚合引擎：跨天Thread追踪、券商立场网格、分歧/共识自动标注、交易流与归因分析</p>
+      <span class="tag tag-new">卖方情报 · 新版</span>
     </a>
   </div>
 
