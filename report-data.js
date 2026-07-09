@@ -45,9 +45,28 @@ window.REPORT_DATA = {
     ],
     "divergences": [
       {
-        "aspect": "供给承接力",
-        "bulls": "MS: 3Y dealer 7.7% low+yield backup让10Y处于好位置",
-        "bears": "Amazon 1.6x bid-to-cover显示corporate supply消化困难"
+        "date": "2026-07-07",
+        "crux": "供给承接力",
+        "camps": [
+          {
+            "label": "看多",
+            "tilt": "pos",
+            "mode": "VIEW",
+            "brokers": [
+              "Multi"
+            ],
+            "point": "MS: 3Y dealer 7.7% low+yield backup让10Y处于好位置"
+          },
+          {
+            "label": "看空",
+            "tilt": "neg",
+            "mode": "VIEW",
+            "brokers": [
+              "Multi"
+            ],
+            "point": "Amazon 1.6x bid-to-cover显示corporate supply消化困难"
+          }
+        ]
       }
     ]
   },
@@ -105,10 +124,28 @@ window.REPORT_DATA = {
     ],
     "divergences": [
       {
-        "aspect": "持续性与油价路径",
-        "bears": "GS/JEF: 供应中断风险→油价$80+",
-        "bulls": "MS: temporary flare-up→回调",
-        "implication": "MS正确→risk-on回归；GS正确→持续risk-off→油价$80+"
+        "date": "2026-07-07",
+        "crux": "持续性与油价路径",
+        "camps": [
+          {
+            "label": "看多",
+            "tilt": "pos",
+            "mode": "VIEW",
+            "brokers": [
+              "Multi"
+            ],
+            "point": "MS: temporary flare-up→回调"
+          },
+          {
+            "label": "看空",
+            "tilt": "neg",
+            "mode": "VIEW",
+            "brokers": [
+              "Multi"
+            ],
+            "point": "GS/JEF: 供应中断风险→油价$80+"
+          }
+        ]
       }
     ]
   },
@@ -1496,12 +1533,558 @@ window.REPORT_DATA = {
   },
   {
     "reportDate": "2026-07-08",
-    "coverage": {},
-    "flow": {},
-    "signals": [],
-    "brokerNotes": [],
-    "dataChecks": [],
-    "qualityLog": []
+    "coverage": {
+      "emails": 8,
+      "brokers": [
+        "Goldman Sachs",
+        "Jefferies",
+        "Morgan Stanley",
+        "HSBC",
+        "UBS",
+        "Jane Street",
+        "BMO",
+        "Deutsche Bank"
+      ],
+      "lookbackDays": 15
+    },
+    "flow": {
+      "sentiment": {
+        "dir": "weak",
+        "label": "偏弱 · 供给+地缘双重打击",
+        "note": "全球利率上行~7bp，中东升级触发risk-off，油价$72+。股市跌但Energy领涨。FOMC纪要+10Y auction今日。"
+      },
+      "activeNames": [
+        {
+          "name": "Amazon",
+          "ticker": "AMZN",
+          "tone": "sell",
+          "activity": "$25b bid-to-cover仅1.6x，二级利差走阔",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ]
+        },
+        {
+          "name": "Samsung",
+          "ticker": "005930.KS",
+          "tone": "sell",
+          "activity": "-9% EPS拖累Semis",
+          "brokers": [
+            "Goldman Sachs",
+            "Jane Street"
+          ]
+        },
+        {
+          "name": "META",
+          "ticker": "META",
+          "tone": "buy",
+          "activity": "+2.6%，Muse image model发布",
+          "brokers": [
+            "Goldman Sachs"
+          ]
+        },
+        {
+          "name": "PALPM",
+          "ticker": "PALPM",
+          "tone": "buy",
+          "activity": "新发+1pt，FM+retail强劲",
+          "brokers": [
+            "UBS"
+          ]
+        },
+        {
+          "name": "NTT",
+          "ticker": "NTT",
+          "tone": "mixed",
+          "activity": "Japan 5Y IG bank买盘2-way",
+          "brokers": [
+            "HSBC"
+          ]
+        }
+      ],
+      "drivers": [
+        {
+          "broker": "GS",
+          "type": "事件驱动",
+          "summary": "伊朗导弹→US撤销石油豁免→油价$72+"
+        },
+        {
+          "broker": "MS",
+          "type": "技术性",
+          "summary": "供给比地缘更主导UST卖压—Amazon 1.6x, AI supply翻倍"
+        },
+        {
+          "broker": "JEF",
+          "type": "技术性",
+          "summary": "Bear-steepening nearing exhaustion→range-bound/flattening"
+        },
+        {
+          "broker": "HSBC",
+          "type": "基本面",
+          "summary": "Asia credit constructive—China IG 0-2bp tighter"
+        },
+        {
+          "broker": "BMO",
+          "type": "事件驱动",
+          "summary": "Iran news触发TIPS BE午后大幅走阔"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "id": "sig-20260708-01",
+        "date": "2026-07-08",
+        "headline": "UST全曲线~7bp卖压，3Y创纪录但供给压力仍主导",
+        "topic": "UST Supply",
+        "assetClass": "Rates",
+        "direction": "Bearish",
+        "signalType": [
+          "CONTINUATION",
+          "FLOW"
+        ],
+        "action": "WATCH",
+        "impactScore": 78,
+        "conviction": "High",
+        "brokers": [
+          "GS",
+          "JEF",
+          "MS"
+        ],
+        "oneLine": "Amazon 1.6x bid-to-cover。今日10Y reopening关键考验",
+        "evidence": [
+          "全曲线~7bp",
+          "3Y非经销商92.3%创纪录",
+          "Amazon 1.6x",
+          "AI supply翻倍",
+          "TU/WN flattener未能扁平化"
+        ],
+        "soWhat": "若10Y需求也偏弱→yield可能突破4.60%",
+        "quote": "Supply pressures felt like the more prominent driver. (MS)",
+        "sourceRefs": [
+          "GS/MS/JEF 2026-07-07"
+        ],
+        "threadId": "thread-ust-supply"
+      },
+      {
+        "id": "sig-20260708-02",
+        "date": "2026-07-08",
+        "headline": "US撤销伊朗石油豁免，油价$72+，券商分歧于持续性",
+        "topic": "Iran Risk",
+        "assetClass": "Commodity",
+        "direction": "Bearish",
+        "signalType": [
+          "ALERT",
+          "CATALYST",
+          "NEW"
+        ],
+        "action": "RISK_FLAG",
+        "impactScore": 92,
+        "conviction": "High",
+        "brokers": [
+          "GS",
+          "MS",
+          "JEF",
+          "BMO"
+        ],
+        "oneLine": "MS看暂时性flare-up vs GS/JEF关注石油供应中断风险→油价$80+",
+        "evidence": [
+          "US撤销伊朗石油豁免",
+          "伊朗导弹攻击商船",
+          "油价$72+",
+          "TIPS BE午后跳涨",
+          "卡塔尔调停受威胁"
+        ],
+        "soWhat": "关键分歧：MS正确→risk-on回归；GS/JEF正确→持续risk-off→油价$80+",
+        "quote": "My sense is more likely a temporary flare-up. (MS) Long oil/short bonds still make sense. (JEF)",
+        "sourceRefs": [
+          "GS/MS/JEF/BMO"
+        ],
+        "threadId": "thread-iran-risk"
+      },
+      {
+        "id": "sig-20260708-03",
+        "date": "2026-07-08",
+        "headline": "Asia Credit积极：China IG收窄+PALPM +1pt",
+        "topic": "Asia Credit",
+        "assetClass": "Credit",
+        "direction": "Cautiously Bullish",
+        "signalType": [
+          "FLOW",
+          "CONTINUATION"
+        ],
+        "action": "WATCH",
+        "impactScore": 62,
+        "conviction": "Medium",
+        "brokers": [
+          "HSBC",
+          "UBS"
+        ],
+        "oneLine": "China IG 0-2bp tighter；PALPM +1pt；但IIFOIN/VEDLN有卖压",
+        "evidence": [
+          "IG 0-2bp tighter",
+          "PALPM +1pt",
+          "IIFOIN/VEDLN selling",
+          "HK carry demand",
+          "Japan bank买5Y IG"
+        ],
+        "soWhat": "Asia credit constructive但新发后secondary卖压需关注",
+        "quote": "Clients buying, new issues/benchmarks outperformed. (HSBC)",
+        "sourceRefs": [
+          "HSBC/UBS 2026-07-08"
+        ],
+        "threadId": "thread-asia-credit"
+      },
+      {
+        "id": "sig-20260708-04",
+        "date": "2026-07-08",
+        "headline": "Le Pen裁定可参选2027→EUR -25bps",
+        "topic": "French Politics",
+        "assetClass": "FX",
+        "direction": "Bearish",
+        "signalType": [
+          "ALERT",
+          "CATALYST"
+        ],
+        "action": "WATCH",
+        "impactScore": 68,
+        "conviction": "Medium",
+        "brokers": [
+          "GS"
+        ],
+        "oneLine": "EUR -25bps，OAT-RX仅+0.8bps→市场未定价极端风险",
+        "evidence": [
+          "Le Pen裁定参选2027",
+          "EUR -25bps",
+          "OAT-RX +0.8bps",
+          "2017主张退出欧元"
+        ],
+        "soWhat": "政治风险重定价温和，需跟踪民调",
+        "quote": "Le Pen cleared to run in 2027. EUR ended -25bps. (GS)",
+        "sourceRefs": [
+          "GS"
+        ],
+        "threadId": "thread-eu-politics"
+      },
+      {
+        "id": "sig-20260708-05",
+        "date": "2026-07-08",
+        "headline": "美股板块轮动加速：Energy +303bps vs Semis -9%",
+        "topic": "Equity Rotation",
+        "assetClass": "Equity",
+        "direction": "Mixed",
+        "signalType": [
+          "MOMENTUM",
+          "CONTINUATION"
+        ],
+        "action": "WATCH",
+        "impactScore": 70,
+        "conviction": "High",
+        "brokers": [
+          "GS",
+          "Jane Street"
+        ],
+        "oneLine": "Energy ETF(IXC/XLE)获显著inflow；Samsung -9%",
+        "evidence": [
+          "Energy +303bps",
+          "IXC/XLE显著inflow",
+          "High Beta Momo -597bps",
+          "META +2.6%",
+          "VOO/VTI net buy"
+        ],
+        "soWhat": "ETF flow confirm成长→价值/能源迁移加速",
+        "quote": "Energy ETFs(IXC) saw significant inflows. (Jane Street)",
+        "sourceRefs": [
+          "GS/Jane Street"
+        ],
+        "threadId": "thread-equity-rotation"
+      },
+      {
+        "id": "sig-20260708-06",
+        "date": "2026-07-08",
+        "headline": "TIPS BE午后跳涨：5Y+3.3bp, 1Y CPI+11bp",
+        "topic": "TIPS Breakevens",
+        "assetClass": "Rates",
+        "direction": "Bullish",
+        "signalType": [
+          "ALERT",
+          "FLOW_REVERSAL"
+        ],
+        "action": "WATCH",
+        "impactScore": 65,
+        "conviction": "Medium",
+        "brokers": [
+          "BMO",
+          "GS"
+        ],
+        "oneLine": "Iran news触发BE午后反转→1Y CPI +11bp领涨",
+        "evidence": [
+          "5Y BE +3.3bp",
+          "10Y BE +1.8bp",
+          "1Y CPI +11bp",
+          "FM卖盘→Iran news买盘反转",
+          "Crude>$72"
+        ],
+        "soWhat": "BE curve flatten—短期通胀预期跳升。油价持续上行→BE进一步走阔",
+        "quote": "Breakevens end wider. US/Iran headline sent breaks higher. (BMO)",
+        "sourceRefs": [
+          "BMO/GS"
+        ],
+        "threadId": "thread-tips-breakevens"
+      },
+      {
+        "id": "sig-20260708-07",
+        "date": "2026-07-08",
+        "headline": "JGB 30Y拍卖强劲但sell-on-strength压制→10Y再创新高",
+        "topic": "JGB Auction",
+        "assetClass": "Rates",
+        "direction": "Neutral",
+        "signalType": [
+          "FLOW",
+          "CONFIRMED"
+        ],
+        "action": "WATCH",
+        "impactScore": 55,
+        "conviction": "Medium",
+        "brokers": [
+          "GS",
+          "MS"
+        ],
+        "oneLine": "30Y非常强劲→bull-flattening→被卖盘逆转；10Y JGB yield new high",
+        "evidence": [
+          "30Y auction very strong",
+          "触发bull-flattening",
+          "被sell-on-strength压制",
+          "10Y yield new high"
+        ],
+        "soWhat": "JGB结构性偏弱—auction好但不足逆转格局",
+        "quote": "Auction came in very strong, triggering sharp bull-flattening met with selling. (GS)",
+        "sourceRefs": [
+          "GS/MS"
+        ],
+        "threadId": "thread-global-duration"
+      },
+      {
+        "id": "sig-20260708-08",
+        "date": "2026-07-08",
+        "headline": "JEF: Bear-steepening nearing exhaustion→range-bound/flattening",
+        "topic": "Curve View Shift",
+        "assetClass": "Rates",
+        "direction": "Neutral",
+        "signalType": [
+          "PATTERN_CHANGE",
+          "TECHNICAL"
+        ],
+        "action": "WATCH",
+        "impactScore": 68,
+        "conviction": "High",
+        "brokers": [
+          "Jefferies"
+        ],
+        "oneLine": "10Y target 4.60/4.63%→突破确认wave (iii)；长油/短债仍成立",
+        "evidence": [
+          "Steepening nearing exhaustion",
+          "Range-bound/flattening偏向",
+          "10Y 4.60/4.63%关键",
+          "Long oil/short bonds"
+        ],
+        "soWhat": "曲线策略可能从steepener→flattener",
+        "quote": "Steepening move appears nearing exhaustion. (Jefferies)",
+        "sourceRefs": [
+          "Jefferies"
+        ],
+        "threadId": "thread-ust-supply"
+      },
+      {
+        "id": "sig-20260708-09",
+        "date": "2026-07-08",
+        "headline": "FOMC纪要(Warsh首份)+10Y auction→双重事件窗口",
+        "topic": "FOMC/Risk Events",
+        "assetClass": "Macro",
+        "direction": "Cautious",
+        "signalType": [
+          "CATALYST",
+          "ALERT"
+        ],
+        "action": "WATCH",
+        "impactScore": 75,
+        "conviction": "Medium",
+        "brokers": [
+          "MS",
+          "GS",
+          "JEF"
+        ],
+        "oneLine": "MS: Warsh首份纪要语言变化可能吸引关注但Powell偏avoid overcommunication",
+        "evidence": [
+          "FOMC Minutes(Warsh首份)",
+          "$38b 10Y reopening",
+          "MS: skeptical有新信息",
+          "~34bps hike EOY",
+          "10Y在backup后承接条件改善"
+        ],
+        "soWhat": "双重事件→今日波动率放大",
+        "quote": "FOMC Minutes may attract above average attention. (MS)",
+        "sourceRefs": [
+          "MS/GS/JEF"
+        ],
+        "threadId": "thread-fed-outlook"
+      },
+      {
+        "id": "sig-20260708-10",
+        "date": "2026-07-08",
+        "headline": "台湾6月CPI 2.6%超预期，核心CPI创2月来新高",
+        "topic": "Taiwan CPI",
+        "assetClass": "Macro",
+        "direction": "Bearish",
+        "signalType": [
+          "NEW",
+          "UNIQUE_DATA"
+        ],
+        "action": "WATCH",
+        "impactScore": 55,
+        "conviction": "Medium",
+        "brokers": [
+          "GS"
+        ],
+        "oneLine": "Headline 2.6%(前2.2%), Core 2.5%(前2.1%)，均超共识",
+        "evidence": [
+          "Headline 2.6% yoy",
+          "Core 2.5% yoy",
+          "超Bloomberg共识",
+          "mom +0.4%",
+          "Goods +0.6%"
+        ],
+        "soWhat": "通胀意外加速→可能影响CBC货币政策路径",
+        "quote": "Taiwan headline CPI rose to 2.6%, above Bloomberg consensus. (GS)",
+        "sourceRefs": [
+          "GS Research"
+        ],
+        "threadId": null
+      },
+      {
+        "id": "sig-20260708-11",
+        "date": "2026-07-08",
+        "headline": "DB: NWIDE 5Y Snr Pref FV at DM+105bp",
+        "topic": "Aussie Credit Primary",
+        "assetClass": "Credit",
+        "direction": "Neutral",
+        "signalType": [
+          "PRIMARY_ISSUE"
+        ],
+        "action": "VERIFY",
+        "impactScore": 48,
+        "conviction": "Medium",
+        "brokers": [
+          "Deutsche Bank"
+        ],
+        "oneLine": "DB Aussie Credit: NWIDE 5Y Snr Pref FV at DM+105bp",
+        "evidence": [
+          "NWIDE 5Y Snr Pref",
+          "FV DM+105bp"
+        ],
+        "soWhat": "AUD credit primary active，NWIDE pricing做comparables",
+        "quote": "NWIDE 5Y Snr Pref: We See FV At DM+105bp. (DB)",
+        "sourceRefs": [
+          "DB Aussie Credit"
+        ],
+        "threadId": null
+      }
+    ],
+    "brokerNotes": [
+      {
+        "broker": "Goldman Sachs",
+        "emails": 1,
+        "stance": "综合偏谨慎：利率卖压+中东升级主导，关注FOMC+10Y auction",
+        "sourceRefs": [
+          "GS Asia Macro 2026-07-07"
+        ]
+      },
+      {
+        "broker": "Jefferies",
+        "emails": 1,
+        "stance": "技术偏空：Bear-steepening nearing exhaustion→flattening偏向。长油/短全球债券。10Y target 4.60%+",
+        "sourceRefs": [
+          "Jefferies mkt recap 2026-07-08"
+        ]
+      },
+      {
+        "broker": "Morgan Stanley",
+        "emails": 1,
+        "stance": "谨慎偏中性：供给>地缘驱动。Iran temporary flare-up。Range-bound至FOMC。10Y auction条件改善",
+        "sourceRefs": [
+          "MS UST commentary 2026-07-08"
+        ]
+      },
+      {
+        "broker": "HSBC",
+        "emails": 1,
+        "stance": "Asia credit积极：China IG走强，Japan constructive，ex-China HY略弱",
+        "sourceRefs": [
+          "HSBC Asia Credit Midday 2026-07-08"
+        ]
+      },
+      {
+        "broker": "UBS",
+        "emails": 1,
+        "stance": "Non-China Asia活跃：新发PALPM强势但recent issues有卖压",
+        "sourceRefs": [
+          "UBS Non-China Midday Recap 2026-07-08"
+        ]
+      },
+      {
+        "broker": "Jane Street",
+        "emails": 1,
+        "stance": "ETF flow: Energy显著inflow，Tech outflow，板块轮动确认",
+        "sourceRefs": [
+          "Jane Street US ETF 2026-07-07"
+        ]
+      },
+      {
+        "broker": "BMO",
+        "emails": 1,
+        "stance": "TIPS BE午后跳涨：Iran news触发买盘，关注油价对通胀预期的传导",
+        "sourceRefs": [
+          "BMO TIPS EOD 2026-07-07"
+        ]
+      },
+      {
+        "broker": "Deutsche Bank",
+        "emails": 1,
+        "stance": "AUD credit primary: NWIDE 5Y FV DM+105bp",
+        "sourceRefs": [
+          "DB Aussie Credit 2026-07-08"
+        ]
+      }
+    ],
+    "dataChecks": [
+      {
+        "id": "dc-01",
+        "type": "观点分歧",
+        "subject": "伊朗风险持续性",
+        "status": "Monitor",
+        "detail": "MS(temporary flare-up) vs GS/JEF(供应中断风险)→油价路径核心分歧"
+      },
+      {
+        "id": "dc-02",
+        "type": "观点分歧",
+        "subject": "曲线策略方向",
+        "status": "Monitor",
+        "detail": "JEF(steepening exhaustion→flattening) vs GS(no explicit curve view change)"
+      },
+      {
+        "id": "dc-03",
+        "type": "交叉验证",
+        "subject": "Amazon $25b bid-to-cover",
+        "status": "Open",
+        "detail": "MS报道1.6x偏低，等Bloomberg确认"
+      }
+    ],
+    "qualityLog": [
+      "邮件采集: 5个API全部成功，去重后8封邮件",
+      "覆盖券商: 8家(GS,JEF,MS,HSBC,UBS,Jane Street,BMO,DB)",
+      "日期归属: effective_date=2026-07-08，覆盖July 7交易日",
+      "信号提取: 11条信号，涵盖UST/Credit/Equity/Commodity/FX/Macro",
+      "质量提升: 多券商交叉验证，发现Iran风险和曲线策略核心分歧"
+    ]
   }
 ]
 };
