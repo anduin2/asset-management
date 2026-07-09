@@ -21,6 +21,20 @@ AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
 INJECT_BLOCK = f'{AUTH_TAG}\n{REFRESH_TAG}'
 
+DATA_JS_RE = re.compile(r'<script src="report-data\.js"(\?v=[^"]*)?"></script>')
+
+def inject_cache_buster(html_path: Path):
+    """在 report-data.js 引用上添加时间戳缓存破坏参数"""
+    content = html_path.read_text(encoding="utf-8")
+    ts = datetime.now().strftime("%Y%m%d%H%M")
+    new_tag = f'<script src="report-data.js?v={ts}"></script>'
+    new_content = DATA_JS_RE.sub(new_tag, content)
+    if new_content != content:
+        html_path.write_text(new_content, encoding="utf-8")
+        print(f"  [ok] {html_path.name}: cache-buster added (v={ts})")
+    else:
+        print(f"  [warn] {html_path.name}: report-data.js tag not found for cache-buster")
+
 def inject_tags(html_path: Path):
     """在 <body> 后注入 auth.js + auto_refresh.js（如果尚未注入）"""
     content = html_path.read_text(encoding="utf-8")
@@ -69,6 +83,10 @@ def main():
         
         # 注入 auth + refresh tags
         inject_tags(dst)
+        
+        # daily_commentary.html 需要缓存破坏参数确保加载最新 data
+        if name == "daily_commentary.html":
+            inject_cache_buster(dst)
     
     # 更新 version.txt
     version = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
