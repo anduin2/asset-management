@@ -147,6 +147,7 @@ tr:hover td { background:#fbfcfe; }
 .mchip.m-FORECAST { background:#fff; color:#344054; border:1px dashed #98a2b3; }
 .mchip.m-COLOR { background:#f2f4f7; color:#667085; }
 .mchip.m-FLAG { background:#fff7ed; color:#b54708; border:1px solid #fed7aa; }
+.mchip.m-CONFIRM { background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; }
 #thread-legend .sw { width:12px; height:12px; border-radius:3px; display:inline-block; }
 
 .thread-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(430px,1fr)); gap:14px; align-items:start; }
@@ -180,12 +181,14 @@ th.dcol.here { color:var(--violet); }
 .cell.pos { --c:#12b76a; --cbg:#d1fadf; --ctx:#05603a; }
 .cell.neg { --c:#f04438; --cbg:#fee4e2; --ctx:#b42318; }
 .cell.neu { --c:#98a2b3; --cbg:#eceef2; --ctx:#475467; }
+.cell.mixed { --c:#a15cc0; --cbg:#f4eafa; --ctx:#6c2e8a; }
 .cell .g { font-size:10px; line-height:1; }
 /* mode texture: VIEW=solid(强), FORECAST=dashed, COLOR=pale(弱), FLAG=amber-ish accent */
 .cell.m-VIEW { background:var(--c); color:#fff; }
 .cell.m-FORECAST { background:var(--cbg); color:var(--ctx); border:1.5px dashed var(--c); }
 .cell.m-COLOR { background:var(--cbg); color:var(--ctx); opacity:.7; }
 .cell.m-FLAG { background:#fff; color:var(--ctx); border:1px solid var(--c); border-left:4px solid var(--c); }
+.cell.m-CONFIRM { background:var(--cbg); color:var(--ctx); outline:2px solid var(--c); outline-offset:-2px; }
 .cell.empty { background:transparent; color:#d7dce3; }
 .cell.chg::after { content:''; position:absolute; top:-2px; right:-2px; width:8px; height:8px; border-radius:50%; background:var(--violet); box-shadow:0 0 0 1.5px #fff; }
 .cell.here-mark { outline:2px solid var(--violet); outline-offset:1px; }
@@ -206,7 +209,7 @@ th.dcol.here { color:var(--violet); }
 .diverge-crux { flex:1; min-width:220px; font-size:12px; color:#344054; }
 .camps { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
 .camp { border:1px solid var(--border); border-radius:6px; padding:8px 10px; background:#fff; }
-.camp.pos { border-left:3px solid var(--green); } .camp.neg { border-left:3px solid var(--red); } .camp.neu { border-left:3px solid var(--muted); }
+.camp.pos { border-left:3px solid var(--green); } .camp.neg { border-left:3px solid var(--red); } .camp.neu { border-left:3px solid var(--muted); } .camp.mixed { border-left:3px solid #a15cc0; }
 .camp-head { font-size:12px; font-weight:700; margin-bottom:4px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
 .camp-head .who { color:var(--muted); font-weight:600; font-size:11px; }
 .camp-point { font-size:12px; color:#344054; line-height:1.5; }
@@ -221,9 +224,10 @@ th.dcol.here { color:var(--violet); }
 .pt-claim { color:#344054; line-height:1.45; }
 .pt-changed { color:var(--violet); font-weight:700; }
 .mtag { display:inline-flex; align-items:center; gap:3px; height:18px; padding:0 6px; border-radius:4px; font-size:10px; font-weight:700; flex-shrink:0; --c:#98a2b3; --cbg:#eef0f3; --ctx:#475467; }
-.mtag.pos { --c:#12b76a; --cbg:#d1fadf; --ctx:#05603a; } .mtag.neg { --c:#f04438; --cbg:#fee4e2; --ctx:#b42318; } .mtag.neu { --c:#98a2b3; --cbg:#eceef2; --ctx:#475467; }
+.mtag.pos { --c:#12b76a; --cbg:#d1fadf; --ctx:#05603a; } .mtag.neg { --c:#f04438; --cbg:#fee4e2; --ctx:#b42318; } .mtag.neu { --c:#98a2b3; --cbg:#eceef2; --ctx:#475467; } .mtag.mixed { --c:#a15cc0; --cbg:#f4eafa; --ctx:#6c2e8a; }
 .mtag.m-VIEW { background:var(--c); color:#fff; } .mtag.m-FORECAST { background:var(--cbg); color:var(--ctx); border:1px dashed var(--c); }
 .mtag.m-COLOR { background:var(--cbg); color:var(--ctx); opacity:.8; } .mtag.m-FLAG { background:#fff; color:var(--ctx); border-left:3px solid var(--c); border-top:1px solid var(--border); border-right:1px solid var(--border); border-bottom:1px solid var(--border); }
+.mtag.m-CONFIRM { background:var(--cbg); color:var(--ctx); border:2px solid var(--c); }
 
 .source-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
 .source-card { background:#fff; border:1px solid var(--border); border-radius:8px; padding:13px; }
@@ -339,15 +343,17 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   </div>
 </main>
 
-<script src="report-data.js?v=202607091026"></script>
+<script src="report-data.js?v=20260710-05"></script>
 <script>
 (function () {
   const D = window.REPORT_DATA || {};
+  console.log('[DEBUG] REPORT_DATA keys:', Object.keys(D), 'days:', D.days?.length, 'threads:', D.threads?.length);
   // 空数据保护:report-data.js 尚未填充时给出友好提示,而非白屏/报错
   if (!D.days || !D.days.length) {
+    console.error('[DEBUG] D.days is empty or missing!');
     document.querySelector("main").innerHTML =
       '<div style="padding:40px;text-align:center;color:#667085">' +
-      'REPORT_DATA.days 为空。请按 AGENT_GUIDE.md 填充 report-data.js。</div>';
+      'REPORT_DATA.days 为空（keys: '+JSON.stringify(Object.keys(D))+'）。请按 AGENT_GUIDE.md 填充 report-data.js。</div>';
     return;
   }
   D.threads = D.threads || [];
@@ -492,13 +498,17 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   }
 
   // tilt 方向 / mode 观点性质
-  const TILT = { pos:"偏多", neg:"偏空", neu:"中性" };
+  const TILT = { pos:"偏多", neg:"偏空", neu:"中性", neutral:"中性", mixed:"两向" };
   const MODE = {
     VIEW:     { cn:"观点", g:"●" },
     FORECAST: { cn:"预测", g:"▸" },
     COLOR:    { cn:"描述", g:"○" },
     FLAG:     { cn:"事件", g:"◆" },
+    CONFIRM:  { cn:"确认", g:"◇" },
   };
+  // 防御：未知 mode/tilt 值不回退 undefined，保证 ThreadView 不因单条脏数据崩溃
+  const safeMode = (m) => MODE[m] || MODE.COLOR;
+  const safeTilt = (t) => TILT[t] || "未知";
   const mdShort = (d)=>d.slice(5); // MM-DD
 
   function renderThreadLegend(){
@@ -511,12 +521,25 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       <div class="lgroup"><b>标记:</b><span class="lg"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--violet)"></span> 较上次改变立场</span><span class="lg"><span style="display:inline-block;width:14px;height:6px;border-radius:2px;box-shadow:0 3px 0 -1px #fda29b;background:#eee"></span> 该列跨券商分歧</span></div>`;
   }
 
+  // 归一化 divergences：兼容旧格式(aspect/bears/bulls)和新格式(crux/camps)
+  function normDivs(divs){
+    if(!divs||!divs.length) return [];
+    if(divs[0].camps) return divs; // 已是新格式
+    return divs.map(d=>{
+      const camps=[];
+      const parseBrks=(s)=>{ const m=(s||'').match(/^([A-Za-z\s,\/]+?)[:\s]+/); return m?m[1].split(/[\/,]\s*/).filter(Boolean):[]; };
+      if(d.bulls) camps.push({label:'看多',tilt:'pos',mode:'VIEW',brokers:parseBrks(d.bulls),point:d.bulls});
+      if(d.bears) camps.push({label:'看空',tilt:'neg',mode:'VIEW',brokers:parseBrks(d.bears),point:d.bears});
+      if(d.mixed) camps.push({label:'分歧',tilt:'neu',mode:'VIEW',brokers:parseBrks(d.mixed),point:d.mixed});
+      return {crux:d.aspect||d.crux||'',date:d.date||'',camps,implication:d.implication||''};
+    });
+  }
   function threadMatches(t){
     if(state.asset!=="ALL" && t.assetClass!==state.asset) return false;
     if(state.q){
       const hay=[t.name,t.status,t.latestChange,
         ...(t.brokerViews||[]).flatMap(v=>[v.broker,...v.points.map(p=>p.note)]),
-        ...(t.divergences||[]).flatMap(d=>[d.crux,...d.camps.flatMap(c=>[c.label,c.point,...c.brokers])])
+        ...normDivs(t.divergences).flatMap(d=>[d.crux,...(d.camps||[]).flatMap(c=>[c.label,c.point,...(c.brokers||[])])])
       ].join(" ").toLowerCase();
       if(!hay.includes(state.q.toLowerCase())) return false;
     }
@@ -524,6 +547,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   }
 
   function renderThreads(){
+    try {
     renderThreadLegend();
     // Thread View 跨全部9天聚合,独立于当前选中日期;但响应资产/搜索筛选
     const el=$("thread-grid");
@@ -557,8 +581,8 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
           if(!p){ r+=`<td><span class="cell empty">·</span></td>`; return; }
           const changed=p._prevTilt && p._prevTilt!==p.tilt;
           const cls=["cell",p.tilt,"m-"+p.mode,changed?"chg":"",isDiverge(d)?"col-diverge-cell":"",d===latestDate?"here-mark":""].filter(Boolean).join(" ");
-          const tip=`${p.date} · ${MODE[p.mode].cn}(${TILT[p.tilt]})${changed?" · 较上次方向改变":""}\n${p.note}`;
-          r+=`<td><span class="${cls}" title="${esc(tip)}"><span class="g">${MODE[p.mode].g}</span></span></td>`;
+          const tip=`${p.date} · ${safeMode(p.mode).cn}(${safeTilt(p.tilt)})${changed?" · 较上次方向改变":""}\n${p.note}`;
+          r+=`<td><span class="${cls}" title="${esc(tip)}"><span class="g">${safeMode(p.mode).g}</span></span></td>`;
         });
         return r+`</tr>`;
       }).join("");
@@ -571,7 +595,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       if(views.length<=1){ badges.push(`<span class="tbadge2 solo">单券商 · 看演变</span>`); }
       else if(divergeDates.length){
         // 分歧是"观点级"还是"描述级":看分歧那些天涉及的 point 是否含 VIEW
-        const dvgHasView=(t.divergences||[]).some(dv=>dv.camps.some(c=>c.mode==="VIEW"));
+        const dvgHasView=normDivs(t.divergences).some(dv=>(dv.camps||[]).some(c=>c.mode==="VIEW"));
         badges.push(`<span class="tbadge2 diverge">分歧 · ${dvgHasView?"观点级":"描述级"} · ${divergeDates.length}天</span>`);
       } else if(multiDates.length){ badges.push(`<span class="tbadge2 consensus">跨券商共识</span>`); }
       badges.push(viewCount?`<span class="tbadge2 calls">${viewCount} 条明确观点</span>`:`<span class="tbadge2 coloronly">多为描述/预测</span>`);
@@ -579,11 +603,11 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       if(anyChanged) badges.push(`<span class="tbadge2 solo">🟣 有券商改过立场</span>`);
 
       // ---- 展开:分歧详情 ----
-      const divs=t.divergences||[];
+      const divs=normDivs(t.divergences);
       const divergePanel = divs.length ? `<div class="thr-label warn">分歧详情 · 差异具体在哪</div>${divs.map(dv=>`<div class="diverge-block">
-          <div class="diverge-head"><span class="diverge-date">${mdShort(dv.date)}</span><span class="diverge-crux"><strong>分歧核心:</strong> ${esc(dv.crux)}</span></div>
-          <div class="camps">${dv.camps.map(c=>`<div class="camp ${esc(c.tilt||"neu")}">
-            <div class="camp-head">${esc(c.label)}<span class="mtag ${esc(c.tilt||"neu")} m-${esc(c.mode||"COLOR")}"><span class="g">${MODE[c.mode||"COLOR"].g}</span>${MODE[c.mode||"COLOR"].cn}</span><span class="who">${esc(c.brokers.join(", "))}</span></div>
+          <div class="diverge-head"><span class="diverge-date">${dv.date?mdShort(dv.date):''}</span><span class="diverge-crux"><strong>分歧核心:</strong> ${esc(dv.crux)}</span></div>
+          <div class="camps">${(dv.camps||[]).map(c=>`<div class="camp ${esc(c.tilt||"neu")}">
+            <div class="camp-head">${esc(c.label)}<span class="mtag ${esc(c.tilt||"neu")} m-${esc(c.mode||"COLOR")}"><span class="g">${safeMode(c.mode).g}</span>${safeMode(c.mode).cn}</span><span class="who">${esc((c.brokers||[]).join(", "))}</span></div>
             <div class="camp-point">${esc(c.point)}</div>
           </div>`).join("")}</div></div>`).join("")}` : "";
 
@@ -595,7 +619,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
           const chg=i>0 && pts[i-1].tilt!==p.tilt;
           return `<div class="pt-row">
             <span class="pt-date">${mdShort(p.date)}</span>
-            <span class="mtag ${esc(p.tilt)} m-${esc(p.mode)}"><span class="g">${MODE[p.mode].g}</span>${MODE[p.mode].cn}·${TILT[p.tilt]}</span>
+            <span class="mtag ${esc(p.tilt)} m-${esc(p.mode)}"><span class="g">${safeMode(p.mode).g}</span>${safeMode(p.mode).cn}·${safeTilt(p.tilt)}</span>
             <span class="pt-claim">${chg?'<span class="pt-changed">↳ 转向 </span>':""}${esc(p.note)}</span>
           </div>`;
         }).join("");
@@ -626,6 +650,11 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       card.querySelector(".expand-hint").addEventListener("click",toggle);
       card.querySelector(".thread-head").addEventListener("click",toggle);
     });
+    } catch(e) {
+      console.error('[ThreadView] renderThreads 异常:', e.message, e.stack);
+      const el=$("thread-grid");
+      if(el) el.innerHTML='<div class="empty" style="padding:40px;color:#b91c1c">Thread View 渲染出错，请检查数据格式（可能原因：新增 mode/tilt 值未适配）。<br><small>'+esc(e.message)+'</small></div>';
+    }
   }
 
   function renderSources(){
