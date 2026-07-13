@@ -1,13 +1,13 @@
 window.REPORT_DATA = {
   "title": "FI Desk Daily Commentary",
-  "subtitle": "Multi-Day 2026-07-08–2026-07-10 · 13 brokers · 14 threads (6 cross-date, 8 standalone)",
+  "subtitle": "Multi-Day 2026-07-08–2026-07-11 · 13 brokers · 17 threads (7 cross-date, 10 standalone)",
   "threads": [
   {
     "id": "thread-asia-credit",
-    "name": "Asia IG Credit：India outperform，Japan bank active",
-    "status": "延续中 · IG sovs 1-2bp tighter。India IG 3-5bp tighter。Korea new issues demand",
+    "name": "Asia Credit：供给缓解→spread compression",
+    "status": "延续中 · 新发taper off→二级compression→RM需求回归",
     "assetClass": "Credit",
-    "latestChange": "Japan banks MIZUHO >170m vol。Korea DAESEC/POINTL new issue demand。Buy the Dip",
+    "latestChange": "仅4笔公开发行$1.6bn→Korea/India mid-high-beta spread压缩。Asia Liquid IG cash basket ~2bps tighter",
     "brokerViews": [
       {
         "broker": "HSBC",
@@ -57,6 +57,12 @@ window.REPORT_DATA = {
             "tilt": "pos",
             "mode": "COLOR",
             "note": "IG sovs 1-2bp tighter。India IG outperformed 3-5bps tighter。Korea IG new issues DAESEC/POINTL seeing demand。Sovs: buying from all-in players，net sold risk on stale 2-3Y positions"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "供给taper off→Korea/India spread compression。Asia/global RM+regional accounts flow→front-end cash deployment thematic。2yr-5yr UST yields ~7bps higher→front-end buying。Recent new issues 5-10bps tighter。但mandate pipeline building(KOREA/MALAYS/EIBKOR等)→供给可能resume"
           }
         ]
       },
@@ -112,10 +118,10 @@ window.REPORT_DATA = {
   },
   {
     "id": "thread-fed",
-    "name": "FOMC/Fed与通胀前景：CPI Tuesday为关键",
-    "status": "等待中 · Jun CPI 3.8% YoY expected。Fed officials still highlighting inflation risks",
-    "assetClass": "Rates",
-    "latestChange": "Housing Soft (existing home sales 4.09mn)。Claims 215k stable。BOE Pill hawkish: needs to raise",
+    "name": "CPI Preview：周二数据决定9月加息路径",
+    "status": "催化剂前置 · GS +0.17% core vs consensus +0.3%→巨大分歧",
+    "assetClass": "Macro",
+    "latestChange": "市场定价52.5%概率9月加息(WIRP)。GS economists +0.17% core CPI→远低于共识+0.3%",
     "brokerViews": [
       {
         "broker": "Morgan Stanley",
@@ -154,6 +160,12 @@ window.REPORT_DATA = {
             "tilt": "neutral",
             "mode": "COLOR",
             "note": "Participants Would Support Unchanged policy"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "FORECAST",
+            "note": "GS economists call +0.17% core CPI vs consensus +0.3%。Walsh Fed远离forward guidance→每个数据点更重要。这次print对接下来几周risk tone至关重要。Global assets precariously well-priced ahead of Q2 earnings"
           }
         ]
       },
@@ -193,6 +205,12 @@ window.REPORT_DATA = {
             "tilt": "neg",
             "mode": "FLAG",
             "note": "CPI next Tuesday most important data point。June CPI ~334.75 (3.8% YoY)。Position-squaring ahead"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "neu",
+            "mode": "COLOR",
+            "note": "TIPS BE周四大幅sell-off完全回吐前2天涨幅→疑为CPI前position-squaring/profit-taking。市场Jun CPI pricing约334.75(3.8% YoY)"
           }
         ]
       }
@@ -222,15 +240,39 @@ window.REPORT_DATA = {
             "point": "Barclays/MS: risks but no urgency"
           }
         ]
+      },
+      {
+        "crux": "CPI方向：GS低于共识 vs 市场pricing",
+        "date": "2026-07-11",
+        "camps": [
+          {
+            "label": "低通胀",
+            "tilt": "pos",
+            "mode": "FORECAST",
+            "brokers": [
+              "Goldman Sachs"
+            ],
+            "point": "GS: +0.17% core→远低于+0.3%共识→若正确→risk-on rally"
+          },
+          {
+            "label": "市场定价",
+            "tilt": "neu",
+            "mode": "COLOR",
+            "brokers": [
+              "BMO"
+            ],
+            "point": "BMO: 市场pricing Jun CPI 334.75(3.8% YoY)。TIPS BE卖压→position-squaring ahead of CPI"
+          }
+        ]
       }
     ]
   },
   {
     "id": "thread-iran",
-    "name": "美伊冲突Day3：停火破裂，油价先冲后回",
-    "status": "升级中 · Trump宣布停火结束，Brent一度$80后回落",
+    "name": "美伊冲突Weekend：停火破裂，Brent触$80",
+    "status": "升级 · 周末战事延续，Trump宣布停火结束，Hormuz风险重回焦点",
     "assetClass": "Commodity",
-    "latestChange": "Brent从$80回落至$76-78；WTI -2.33%/Brent -2.61%。MS:冲突仍'contained'",
+    "latestChange": "停火破裂→Brent短暂触及$80→信用市场韧性超预期→Asia IG现金仅+0.5bp wider",
     "brokerViews": [
       {
         "broker": "Goldman Sachs",
@@ -252,6 +294,12 @@ window.REPORT_DATA = {
             "tilt": "neg",
             "mode": "FLAG",
             "note": "Geopolitics worsened—Trump ceasefire over。Brent briefly $80。HY -1~1.25pt after comments。Uneasy truce，asymmetric pricing"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "neg",
+            "mode": "FLAG",
+            "note": "周末US/Iran紧张延续。Brent短暂$80。Asia credit outperformed macro volatility。iTraxx Asia IG +0.5bp wider但liquid IG cash basket ~2bps tighter。HY周三-1pt但周五反弹。市场在re-escalation和quick resolution之间定价非对称"
           }
         ]
       },
@@ -393,8 +441,209 @@ window.REPORT_DATA = {
             "point": "MS正确→risk-on持续；GS正确→油价可能再冲$80+"
           }
         ]
+      },
+      {
+        "crux": "冲突持续时间定价：信用市场是否过于乐观",
+        "date": "2026-07-11",
+        "camps": [
+          {
+            "label": "信用韧性",
+            "tilt": "pos",
+            "mode": "VIEW",
+            "brokers": [
+              "Goldman Sachs"
+            ],
+            "point": "GS: credit outperformed macro vol。Asia IG cash不跌反tight。但Hormuz若关闭→oil spike→EM importer pressure resume"
+          },
+          {
+            "label": "尾部风险",
+            "tilt": "neg",
+            "mode": "FLAG",
+            "brokers": [
+              "Goldman Sachs"
+            ],
+            "point": "GS: HY价格极度非对称—几乎没有error margin。若海峡关闭油价飙升→HY大幅下跌；但若迅速解决也很难re-engage"
+          }
+        ]
       }
     ]
+  },
+  {
+    "id": "thread-ust-supply",
+    "name": "UST Supply & Auction：30yr强劲但AI供给溢出",
+    "status": "延续中 · 30yr auction强劲停止thru 0.3bp，但IG AI supply overshadowing",
+    "assetClass": "Rates",
+    "latestChange": "$22bn 30yr reopening stop thru 0.3bp→indirect 77.7%(第二高记录)。UST bull steepened→5s30s +3.7bp",
+    "brokerViews": [
+      {
+        "broker": "Goldman Sachs",
+        "points": [
+          {
+            "date": "2026-07-07",
+            "tilt": "neg",
+            "mode": "COLOR",
+            "note": "全曲线~7bps卖压。3Y through 0.6bps。Amazon $25b需求偏软。UVF buyer 24k FV，TU vs WN flattener。~34bps hike EOY。今日10Y reopening+FOMC"
+          },
+          {
+            "date": "2026-07-10",
+            "tilt": "pos",
+            "mode": "CONFIRM",
+            "note": "USTs bull steepened。22bn 30Y strong through 0.3bp。Indirect 77.7% second highest。SFR/FF basis positive首次。5s30s +3.7bp"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "UST bull steepened→retracing prior day sell-off。30yr auction strong—stop 0.3bps thru, indirect 77.7%。SFR/FF basis首次转正。AI supply volume took focus in IG credit: $194bn YTD hyperscaler。AMZN $25bn仅1.6x book→NIC 13-18bps AA级史无前例"
+          }
+        ]
+      },
+      {
+        "broker": "Jefferies",
+        "points": [
+          {
+            "date": "2026-07-07",
+            "tilt": "neg",
+            "mode": "COLOR",
+            "note": "Bear-steepening延续。3Y强劲。Steepening nearing exhaustion→range-bound/flattening。10Y target 4.60/4.63%。长期看空不变(10Y>=3.85%)。长油/短全球债券仍成立"
+          },
+          {
+            "date": "2026-07-09",
+            "tilt": "neg",
+            "mode": "COLOR",
+            "note": "10Y well received但weakness在long end。Yield接近目标但strategic buyers等5-10bp更多sell-off才re-engage"
+          }
+        ]
+      },
+      {
+        "broker": "Morgan Stanley",
+        "points": [
+          {
+            "date": "2026-07-07",
+            "tilt": "neg",
+            "mode": "COLOR",
+            "note": "供给驱动卖压比地缘更主导。Amazon bid-to-cover仅1.6x，AI supply翻倍。TU/WN flattener $1.3mm DV01未能扁平化。10Y auction在backup后处于更好承接位置。Range-bound until next FOMC"
+          },
+          {
+            "date": "2026-07-09",
+            "tilt": "neutral",
+            "mode": "COLOR",
+            "note": "3Y+10Y through 0.6bp→dip buying。May highs 4.68%不预期突破除非CPI意外。Asian RM two-way：pensions买long end vs banks pay belly"
+          },
+          {
+            "date": "2026-07-10",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "US rates rallied as oil reversed。Front end+belly led。30Y stopped through 5.058%。Claims 215k unchanged→limited labor weakness。Housing 4.09mn soft"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "Lower oil prices eased inflation shock→rates rally+AI equities rebound。30yr reopening stopped thru(5.058% highest award since 2007 but below WI)→healthy end-user demand。Claims 215k→labor stable。Existing home sales 4.09mn→housing drag"
+          }
+        ]
+      },
+      {
+        "broker": "HSBC",
+        "points": [
+          {
+            "date": "2026-07-09",
+            "tilt": "neutral",
+            "mode": "COLOR",
+            "note": "UST 10/30Y key resistance 4.6%/5.1%。No clear visibility sell-off持续多久"
+          }
+        ]
+      }
+    ],
+    "divergences": [
+      {
+        "crux": "re-entry timing",
+        "date": "2026-07-09",
+        "camps": [
+          {
+            "label": "现在买入",
+            "tilt": "pos",
+            "mode": "VIEW",
+            "brokers": [
+              "Morgan Stanley"
+            ],
+            "point": "MS: dip buying at current yield"
+          },
+          {
+            "label": "等待回调",
+            "tilt": "neg",
+            "mode": "VIEW",
+            "brokers": [
+              "Jefferies"
+            ],
+            "point": "JEF: 等5-10bp more→买spread products"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "thread-global-rates",
+    "name": "全球利率联动：Bull steepening，RBNZ hawkish",
+    "status": "延续中 · EGBs retrace，NZD +1.0%，USD/JPY 162.35",
+    "assetClass": "Rates",
+    "latestChange": "Global bull steepening。Bunds +2.8bp。JGBs bear-steepening→5Y auction solid。RBNZ hike expectation→NZD +1.0%",
+    "brokerViews": [
+      {
+        "broker": "Morgan Stanley",
+        "points": [
+          {
+            "date": "2026-07-09",
+            "tilt": "neg",
+            "mode": "COLOR",
+            "note": "EGBs sharply bear-flattening。GBP BoE +4bp。NZD RBNZ hike→+0.4%。USD/JPY 162.59→干预风险。JGBs weaker: 5Y +3bp, 10Y +2.5bp。Trump ceasefire end→duration pressure。5Y auction expected absorbed"
+          },
+          {
+            "date": "2026-07-10",
+            "tilt": "neu",
+            "mode": "COLOR",
+            "note": "NZD led gains +1.0% after strong data+RBNZ hike。AUD +0.2%。JPY gained modestly。EUR/USD+GBP/USD +0.1%。Barclays: buy EUR/USD vol。DXY 100.94 flat"
+          },
+          {
+            "date": "2026-07-10",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "Euro area rates rallied led by front+belly。Global bull steepening more pronounced in France/Italy/Spain。10Y France/Italy/Spain spreads tightened"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "NZD +1.0% on strong manufacturing+RBNZ hawkish。AUD +0.2%。JPY +0.1%(USD/JPY 162.35)。EUR/USD+GBP/USD +0.1%。Barclays推荐buy EUR/USD vol→低implied vs高不确定性。DXY 100.94 unchanged"
+          }
+        ]
+      },
+      {
+        "broker": "Goldman Sachs",
+        "points": [
+          {
+            "date": "2026-07-10",
+            "tilt": "neu",
+            "mode": "COLOR",
+            "note": "G10 FX Carry Comeback theme。Poland zloty weakened—Glapinski hints post-summer rate cuts"
+          },
+          {
+            "date": "2026-07-10",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "Bunds richened 2.8bps。OAT-RX -2.5bps/IK-RX -2.3bps。Poland zloty weak—Glapinski may push rate cuts after summer。Stoxx +0.8%。ASML +4.8%"
+          },
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "Global bull steepening as oil reversed。Bunds +2.8bp, OAT-RX -2.5bp。JGBs bear-steepening但5yr auction solid→dip-buying。AUD sideways lagging USTs"
+          }
+        ]
+      }
+    ],
+    "divergences": []
   },
   {
     "id": "thread-tips-be",
@@ -447,11 +696,11 @@ window.REPORT_DATA = {
     "divergences": []
   },
   {
-    "id": "thread-ust-supply",
-    "name": "UST Bull Steepening：30Y强拍卖+数据支撑",
-    "status": "延续中 · 10y -2.8bp，5s30s +3.7bp，30Y auction through 0.3bp",
-    "assetClass": "Rates",
-    "latestChange": "$22bn 30Y 间接投标77.7%(历史第二高)；10y 4.55%；claims 215k不变",
+    "id": "thread-equity-rotation",
+    "name": "Equity: AI反弹+能源回调→板块轮动",
+    "status": "延续中 · SPX +0.8%，NDX +1.3%，Energy -1.6%",
+    "assetClass": "Equity",
+    "latestChange": "Lower oil→inflation shock eased→AI-led equities rebound。IT +1.6%, Consumer Disc +1.5%, Financials +1.0%",
     "brokerViews": [
       {
         "broker": "Goldman Sachs",
@@ -460,30 +709,24 @@ window.REPORT_DATA = {
             "date": "2026-07-07",
             "tilt": "neg",
             "mode": "COLOR",
-            "note": "全曲线~7bps卖压。3Y through 0.6bps。Amazon $25b需求偏软。UVF buyer 24k FV，TU vs WN flattener。~34bps hike EOY。今日10Y reopening+FOMC"
+            "note": "SPX -45bps, NDX -177bps, RTY -90bps。283/6 sector收涨。Energy +303bps。Industrials -167bps, Info Tech -162bps。High Beta Momo -597bps。META +2.6%"
           },
           {
-            "date": "2026-07-10",
+            "date": "2026-07-11",
             "tilt": "pos",
-            "mode": "CONFIRM",
-            "note": "USTs bull steepened。22bn 30Y strong through 0.3bp。Indirect 77.7% second highest。SFR/FF basis positive首次。5s30s +3.7bp"
+            "mode": "COLOR",
+            "note": "SPX +1.23% on the week。Credit outperformed macro vol despite geopolitical escalation。AI/Hyperscaler supply fatigue but equity still resilient。Energy +145bps Wednesday but reversed Thursday"
           }
         ]
       },
       {
-        "broker": "Jefferies",
+        "broker": "Jane Street",
         "points": [
           {
             "date": "2026-07-07",
             "tilt": "neg",
             "mode": "COLOR",
-            "note": "Bear-steepening延续。3Y强劲。Steepening nearing exhaustion→range-bound/flattening。10Y target 4.60/4.63%。长期看空不变(10Y>=3.85%)。长油/短全球债券仍成立"
-          },
-          {
-            "date": "2026-07-09",
-            "tilt": "neg",
-            "mode": "COLOR",
-            "note": "10Y well received但weakness在long end。Yield接近目标但strategic buyers等5-10bp更多sell-off才re-engage"
+            "note": "IG ETFs: open outflow→午前inflow→午后steady。HY ETFs: 早盘buyer→收盘buyer回归。Energy ETFs(IXC)显著inflow&outperform。XLE/XLV/VNQ outperform vs XLK/XLI underperform。Net buyers: VOO,VTI,SKYY vs sellers: IVV,MTUM"
           }
         ]
       },
@@ -491,113 +734,61 @@ window.REPORT_DATA = {
         "broker": "Morgan Stanley",
         "points": [
           {
-            "date": "2026-07-07",
-            "tilt": "neg",
-            "mode": "COLOR",
-            "note": "供给驱动卖压比地缘更主导。Amazon bid-to-cover仅1.6x，AI supply翻倍。TU/WN flattener $1.3mm DV01未能扁平化。10Y auction在backup后处于更好承接位置。Range-bound until next FOMC"
-          },
-          {
-            "date": "2026-07-09",
-            "tilt": "neutral",
-            "mode": "COLOR",
-            "note": "3Y+10Y through 0.6bp→dip buying。May highs 4.68%不预期突破除非CPI意外。Asian RM two-way：pensions买long end vs banks pay belly"
-          },
-          {
-            "date": "2026-07-10",
+            "date": "2026-07-11",
             "tilt": "pos",
             "mode": "COLOR",
-            "note": "US rates rallied as oil reversed。Front end+belly led。30Y stopped through 5.058%。Claims 215k unchanged→limited labor weakness。Housing 4.09mn soft"
+            "note": "Lower oil prices eased inflation shock→AI-linked equities lead。SPX +0.8%, NDX +1.3%, VIX -6.3%。IT +1.6%, CD +1.5%, Financials +1.0%。Defensive/energy-linked lagged→Staples -1.8%, Energy -1.6%"
           }
         ]
-      },
+      }
+    ],
+    "divergences": []
+  },
+  {
+    "id": "thread-ai-supply",
+    "name": "AI Supply Fatigue：AMZN $25bn + 超大规模发行商发行量创纪录",
+    "status": "关键转折 · $194bn YTD vs $108bn FY2025，投资者疲劳显现",
+    "assetClass": "Credit",
+    "latestChange": "AMZN 8-tranche $25bn→NIC 13-18bps→AA级史无前例的concession。Hyperscaler占IG dv01 ~9%→翻倍仅一年",
+    "brokerViews": [
       {
-        "broker": "HSBC",
+        "broker": "Goldman Sachs",
         "points": [
           {
-            "date": "2026-07-09",
-            "tilt": "neutral",
-            "mode": "COLOR",
-            "note": "UST 10/30Y key resistance 4.6%/5.1%。No clear visibility sell-off持续多久"
+            "date": "2026-07-11",
+            "tilt": "neg",
+            "mode": "FLAG",
+            "note": "AI supply占IG总供给从2025年6.6%→YTD 18%。5大hyperscaler YTD $194bn(vs FY2025 $108bn)。AMZN $25bn deal仅1.6x book→NIC 13-18bps。Google Q3/META NVDA SPCX Q4预期→下一轮融资需分散到其他货币/私募/项目融资JV。Lev fin data center空间仍remarkably orderly"
           }
         ]
       }
     ],
     "divergences": [
       {
-        "crux": "re-entry timing",
-        "date": "2026-07-09",
+        "crux": "AI供给拐点是否已到",
+        "date": "2026-07-11",
         "camps": [
           {
-            "label": "现在买入",
+            "label": "战术反弹",
             "tilt": "pos",
             "mode": "VIEW",
             "brokers": [
-              "Morgan Stanley"
+              "Goldman Sachs"
             ],
-            "point": "MS: dip buying at current yield"
+            "point": "GS: 最近这波move overdone→类似3月和11月季度末deal后tactical bounce。周五RM+HF demand→off morning wides 3-7bps"
           },
           {
-            "label": "等待回调",
+            "label": "中期承压",
             "tilt": "neg",
             "mode": "VIEW",
             "brokers": [
-              "Jefferies"
+              "Goldman Sachs"
             ],
-            "point": "JEF: 等5-10bp more→买spread products"
+            "point": "GS: 趋势中期不会缓解。Capex已占CFO ~100%。'multi-year nature of this investment cycle is giving some investors pause'"
           }
         ]
       }
     ]
-  },
-  {
-    "id": "thread-global-rates",
-    "name": "FX & G10 Divergence：NZD leads，EUR/USD vol call",
-    "status": "延续中 · NZD/USD +1.0%(RBNZ hike)。DXY flat 100.94。USD/JPY 162.35",
-    "assetClass": "FX",
-    "latestChange": "Barclays: buy EUR/USD vol。JPY intervention concern persists。Poland zloty weak",
-    "brokerViews": [
-      {
-        "broker": "Morgan Stanley",
-        "points": [
-          {
-            "date": "2026-07-09",
-            "tilt": "neg",
-            "mode": "COLOR",
-            "note": "EGBs sharply bear-flattening。GBP BoE +4bp。NZD RBNZ hike→+0.4%。USD/JPY 162.59→干预风险。JGBs weaker: 5Y +3bp, 10Y +2.5bp。Trump ceasefire end→duration pressure。5Y auction expected absorbed"
-          },
-          {
-            "date": "2026-07-10",
-            "tilt": "neu",
-            "mode": "COLOR",
-            "note": "NZD led gains +1.0% after strong data+RBNZ hike。AUD +0.2%。JPY gained modestly。EUR/USD+GBP/USD +0.1%。Barclays: buy EUR/USD vol。DXY 100.94 flat"
-          },
-          {
-            "date": "2026-07-10",
-            "tilt": "pos",
-            "mode": "COLOR",
-            "note": "Euro area rates rallied led by front+belly。Global bull steepening more pronounced in France/Italy/Spain。10Y France/Italy/Spain spreads tightened"
-          }
-        ]
-      },
-      {
-        "broker": "Goldman Sachs",
-        "points": [
-          {
-            "date": "2026-07-10",
-            "tilt": "neu",
-            "mode": "COLOR",
-            "note": "G10 FX Carry Comeback theme。Poland zloty weakened—Glapinski hints post-summer rate cuts"
-          },
-          {
-            "date": "2026-07-10",
-            "tilt": "pos",
-            "mode": "COLOR",
-            "note": "Bunds richened 2.8bps。OAT-RX -2.5bps/IK-RX -2.3bps。Poland zloty weak—Glapinski may push rate cuts after summer。Stoxx +0.8%。ASML +4.8%"
-          }
-        ]
-      }
-    ],
-    "divergences": []
   },
   {
     "id": "thread-ai-tech-rebound",
@@ -717,36 +908,50 @@ window.REPORT_DATA = {
     "divergences": []
   },
   {
-    "id": "thread-equity-rotation",
-    "name": "美股板块轮动",
-    "status": "延续中 · Energy领涨、Semis承压、ETF资金转向能源",
-    "assetClass": "Equity",
-    "latestChange": "Samsung -9%拖累Semis，Energy +303bps，IXC/XLE获显著inflow",
+    "id": "thread-em-credit",
+    "name": "EM Credit：Indonesia Frontier风险 vs Philippines/LATAM反弹",
+    "status": "新动态 · S&P Indonesia warning→Indon CDS underperformer。Colombia压缩。Argentina $4.3bn付息",
+    "assetClass": "EM Credit",
+    "latestChange": "PHILIP outperformed INDON 3-5bps。S&P Indonesia Frontier warning→HF demand INDON CDS。Argentina成功支付$4.3bn",
     "brokerViews": [
       {
         "broker": "Goldman Sachs",
         "points": [
           {
-            "date": "2026-07-07",
-            "tilt": "neg",
+            "date": "2026-07-11",
+            "tilt": "mixed",
             "mode": "COLOR",
-            "note": "SPX -45bps, NDX -177bps, RTY -90bps。283/6 sector收涨。Energy +303bps。Industrials -167bps, Info Tech -162bps。High Beta Momo -597bps。META +2.6%"
-          }
-        ]
-      },
-      {
-        "broker": "Jane Street",
-        "points": [
-          {
-            "date": "2026-07-07",
-            "tilt": "neg",
-            "mode": "COLOR",
-            "note": "IG ETFs: open outflow→午前inflow→午后steady。HY ETFs: 早盘buyer→收盘buyer回归。Energy ETFs(IXC)显著inflow&outperform。XLE/XLV/VNQ outperform vs XLK/XLI underperform。Net buyers: VOO,VTI,SKYY vs sellers: IVV,MTUM"
+            "note": "EM IG sovereign flows分化：US sellers vs Asia/ME buyers。PHILIP outperform INDON 3-5bps。S&P Indonesia Frontier warning→equities -1.89%→renewed HF INDON CDS demand。PERTIJ buybacks→quasi 1-4bps tighter。MALAYS mandate→31s +8bps wider。Argentina $4.3bn payment→Caputo: 2027 obligations可不用国际市场。Venezuela +25c-1.25pts on IMF hopes。Colombia/Ecopet: Abelardo instructs debt renegotiation talks→Ecopet -12bps vs sov -2bps"
           }
         ]
       }
     ],
-    "divergences": []
+    "divergences": [
+      {
+        "crux": "Indonesia前景：结构性挑战 vs 短期韧性",
+        "date": "2026-07-11",
+        "camps": [
+          {
+            "label": "结构性担忧",
+            "tilt": "neg",
+            "mode": "FLAG",
+            "brokers": [
+              "Goldman Sachs"
+            ],
+            "point": "GS: S&P+ MSCI双警告→Indonesia可能失去EM地位。Front-end 4-10bps wider"
+          },
+          {
+            "label": "短期韧性",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "brokers": [
+              "Goldman Sachs"
+            ],
+            "point": "GS: belly/long-end outperformed→7-10yr 2-4.5bps tighter。PERTIJ buybacks→quasi resilient"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "thread-eu-politics",
@@ -763,6 +968,27 @@ window.REPORT_DATA = {
             "tilt": "neg",
             "mode": "FLAG",
             "note": "Le Pen裁定允许参选2027。EUR -25bps。2017主张退出欧元/法郎。OAT-RX +0.8bps, IK-RX +0.4bps。Le Pen宣布参选"
+          }
+        ]
+      }
+    ],
+    "divergences": []
+  },
+  {
+    "id": "thread-europe-fin",
+    "name": "European Financials：Beta compression + AT1 trimming",
+    "status": "活跃 · LT2 squeeze→decompression trades出现。RT1技术面非常强",
+    "assetClass": "Credit",
+    "latestChange": "€AT1 -0.375/-0.625pt。LT2 -3-6bps。Subincos unch/-2bps。RT1 -10-15bps。Beta compression thematic",
+    "brokerViews": [
+      {
+        "broker": "Goldman Sachs",
+        "points": [
+          {
+            "date": "2026-07-11",
+            "tilt": "pos",
+            "mode": "COLOR",
+            "note": "RM chasing carry into summer→LT2+Periph Prefs squeeze outperforming Subincos。Decompression trades: HQ flat to smaller banks(NWIDE=BCP/BAMIIM in T2s)。Subincos curves flattening on insurance demand 5s10s仅10-15bps steep。预期下周Subincos catch up LT2 move。RT1 profit-taking可能但技术面非常强"
           }
         ]
       }
@@ -965,7 +1191,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "GS/MS/BMO"
       ],
-      "threadId": "thread-iran-day3"
+      "threadId": "thread-iran"
     },
     {
       "id": "sig-20260710-02",
@@ -998,7 +1224,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "GS/MS"
       ],
-      "threadId": "thread-ust-bull-steepen"
+      "threadId": "thread-ust-supply"
     },
     {
       "id": "sig-20260710-03",
@@ -1031,7 +1257,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "BMO/GS"
       ],
-      "threadId": "thread-tips-heavy"
+      "threadId": "thread-tips-be"
     },
     {
       "id": "sig-20260710-04",
@@ -1098,7 +1324,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "GS/HSBC/JEF"
       ],
-      "threadId": "thread-asia-ig"
+      "threadId": "thread-asia-credit"
     },
     {
       "id": "sig-20260710-06",
@@ -1212,6 +1438,459 @@ window.REPORT_DATA = {
     "日期归属: effective_date=2026-07-10(Friday)",
     "信号提取: 6条信号涵盖Commodity/Rates/Equity/Credit",
     "关键发现: 美伊Day3停火破裂+AI-led反弹+TIPS BE全线回吐+China TMT turbo bid"
+  ]
+},
+{
+  "reportDate": "2026-07-11",
+  "coverage": {
+    "emails": 5,
+    "brokers": [
+      "Goldman Sachs",
+      "Morgan Stanley",
+      "BMO",
+      "Citi"
+    ],
+    "lookbackDays": 15
+  },
+  "flow": {
+    "sentiment": {
+      "dir": "mixed",
+      "label": "两向 · 地缘升级vs信用韧性+AI供给疲劳",
+      "note": "US-Iran停火破裂周末延续，Brent触$80但信用市场表现韧性。AMZN $25bn AA级史无前例concession→AI供给疲劳显现。UST bull steepening→30yr auction强劲。CPI周二公布→GS +0.17% core vs共识+0.3%关键分歧。Asia credit supply taper→spread compression。"
+    },
+    "activeNames": [
+      {
+        "name": "Amazon",
+        "ticker": "AMZN",
+        "tone": "sell",
+        "activity": "$25bn 8-tranche→NIC 13-18bps→仅1.6x book→AA级史无前例concession",
+        "brokers": [
+          "Goldman Sachs"
+        ]
+      },
+      {
+        "name": "PALPM",
+        "ticker": "PALPM",
+        "tone": "buy",
+        "activity": "$300mm 5NC2→+1.25pt→par area",
+        "brokers": [
+          "Goldman Sachs"
+        ]
+      },
+      {
+        "name": "FUBHKL",
+        "ticker": "FUBHKL",
+        "tone": "buy",
+        "activity": "$300mm 10NC5 T2→T+123→rallied to 114bps(-9bps)",
+        "brokers": [
+          "Goldman Sachs"
+        ]
+      },
+      {
+        "name": "KOREAT/KOEWPW",
+        "ticker": "KOREAT",
+        "tone": "buy",
+        "activity": "$500mm each→new issue compression→seasoned lines lifted",
+        "brokers": [
+          "Goldman Sachs"
+        ]
+      },
+      {
+        "name": "PERTIJ",
+        "ticker": "PERTIJ",
+        "tone": "buy",
+        "activity": "Secondary buybacks→2060s→curve 1-4bps tighter",
+        "brokers": [
+          "Goldman Sachs"
+        ]
+      }
+    ],
+    "drivers": [
+      {
+        "broker": "GS",
+        "type": "事件驱动",
+        "summary": "US-Iran周末升级→停火结束→Brent $80→credit outperformed macro vol"
+      },
+      {
+        "broker": "GS",
+        "type": "技术性",
+        "summary": "AI supply fatigue: AMZN $25bn→1.6x book→NIC 13-18bps。$194bn YTD vs $108bn FY2025"
+      },
+      {
+        "broker": "MS",
+        "type": "基本面",
+        "summary": "Lower oil→inflation shock eased→UST rally+AI equities rebound。Labor stable→claims 215k"
+      },
+      {
+        "broker": "GS",
+        "type": "流动性",
+        "summary": "Asia credit supply taper→front-end cash deployment thematic→RM demand回归"
+      },
+      {
+        "broker": "BMO",
+        "type": "仓位",
+        "summary": "TIPS BE sell-off→position-squaring ahead of Tuesday CPI"
+      }
+    ]
+  },
+  "signals": [
+    {
+      "id": "sig-20260711-01",
+      "date": "2026-07-11",
+      "headline": "US-Iran周末升级：停火破裂，Brent触$80，但Asia credit仅+0.5bp wider",
+      "topic": "Iran Weekend Escalation",
+      "assetClass": "Commodity",
+      "direction": "Bearish",
+      "signalType": [
+        "ALERT",
+        "CONTINUATION"
+      ],
+      "action": "RISK_FLAG",
+      "impactScore": 88,
+      "conviction": "High",
+      "brokers": [
+        "Goldman Sachs",
+        "Morgan Stanley"
+      ],
+      "oneLine": "信用outperformed macro vol。liquid IG cash basket ~2bps tighter",
+      "evidence": [
+        "Brent短暂$80",
+        "iTraxx Asia IG +0.5bp wider",
+        "Asia Liquid IG cash basket ~2bps tighter",
+        "HY周三-1pt→周五反弹"
+      ],
+      "soWhat": "市场pricing非对称：Hormuz关闭→oil spike但quick resolution也很难re-engage",
+      "quote": "Credit outperformed the volatility in macro. (GS)",
+      "sourceRefs": [
+        "GS Credit Recap 2026-07-13",
+        "MS Global Macro 2026-07-10"
+      ],
+      "threadId": "thread-iran"
+    },
+    {
+      "id": "sig-20260711-02",
+      "date": "2026-07-11",
+      "headline": "AI供给疲劳里程碑：AMZN $25bn仅1.6x book→NIC 13-18bps",
+      "topic": "AI Supply Fatigue",
+      "assetClass": "Credit",
+      "direction": "Bearish",
+      "signalType": [
+        "SHIFT",
+        "ALERT"
+      ],
+      "action": "WATCH",
+      "impactScore": 85,
+      "conviction": "High",
+      "brokers": [
+        "Goldman Sachs"
+      ],
+      "oneLine": "Hyperscaler占IG dv01 ~9%→翻倍仅一年。$194bn YTD vs $108bn FY2025",
+      "evidence": [
+        "5大hyperscaler YTD $194bn",
+        "FY2025全年$108bn",
+        "AMZN 1.6x book(vs Alphabet 4.7x)",
+        "NIC 13-18bps",
+        "AI supply占IG 6.6%→18%"
+      ],
+      "soWhat": "AI融资capacity nearing limits→下一轮需other currencies/private markets",
+      "quote": "It would have been hard to comprehend these numbers just 12 months ago. (GS)",
+      "sourceRefs": [
+        "GS Credit Recap 2026-07-13"
+      ],
+      "threadId": "thread-ai-supply"
+    },
+    {
+      "id": "sig-20260711-03",
+      "date": "2026-07-11",
+      "headline": "CPI Preview：GS +0.17% core vs consensus +0.3%→巨大分歧决定risk tone",
+      "topic": "CPI Preview",
+      "assetClass": "Macro",
+      "direction": "Cautious",
+      "signalType": [
+        "CATALYST",
+        "ALERT"
+      ],
+      "action": "WATCH",
+      "impactScore": 90,
+      "conviction": "High",
+      "brokers": [
+        "Goldman Sachs",
+        "BMO"
+      ],
+      "oneLine": "市场定价52.5%概率9月加息。GS远低于共识→若正确→risk-on rally",
+      "evidence": [
+        "GS economists: +0.17% core",
+        "Consensus: +0.3%",
+        "WIRP: 52.5% Sept hike",
+        "Walsh Fed远离forward guidance"
+      ],
+      "soWhat": "周二CPI是近期最重要数据→GS正确=risk-on→共识正确=继续承压",
+      "quote": "This print will be incredibly important to set the risk tone. (GS)",
+      "sourceRefs": [
+        "GS Credit Recap 2026-07-13",
+        "BMO TIPS EOD 2026-07-10"
+      ],
+      "threadId": "thread-fed"
+    },
+    {
+      "id": "sig-20260711-04",
+      "date": "2026-07-11",
+      "headline": "Asia Credit供给taper→spread compression：Korea/India mid-high-beta走强",
+      "topic": "Asia Credit Supply Taper",
+      "assetClass": "Credit",
+      "direction": "Constructive",
+      "signalType": [
+        "FLOW",
+        "CONTINUATION"
+      ],
+      "action": "WATCH",
+      "impactScore": 68,
+      "conviction": "Medium",
+      "brokers": [
+        "Goldman Sachs"
+      ],
+      "oneLine": "仅4笔公开发行$1.6bn→recent new issues 5-10bps tighter",
+      "evidence": [
+        "4笔公开发行total $1.6bn",
+        "KOREAT/KOEWPW/PALPM/FUBHKL",
+        "Korea seasoneds lifted 2.5-12bps",
+        "2-5yr UST ~7bps higher→front-end buying"
+      ],
+      "soWhat": "供给respite短暂→多项mandate announced→新供给可能resume",
+      "quote": "A brief respite in technicals as supply pressure eased off. (GS)",
+      "sourceRefs": [
+        "GS Credit Recap 2026-07-13"
+      ],
+      "threadId": "thread-asia-credit"
+    },
+    {
+      "id": "sig-20260711-05",
+      "date": "2026-07-11",
+      "headline": "UST 30yr auction强劲(77.7% indirect)→bull steepening→5s30s +3.7bp",
+      "topic": "UST Auction & Rally",
+      "assetClass": "Rates",
+      "direction": "Neutral",
+      "signalType": [
+        "CONFIRMED",
+        "TECHNICAL"
+      ],
+      "action": "WATCH",
+      "impactScore": 65,
+      "conviction": "Medium",
+      "brokers": [
+        "Goldman Sachs",
+        "Morgan Stanley"
+      ],
+      "oneLine": "$22bn 30yr stop thru 0.3bp。SFR/FF basis首次转正",
+      "evidence": [
+        "30yr stop 0.3bps thru",
+        "indirect 77.7%(第二高)",
+        "5s30s +3.7bp",
+        "10yr -2.8bp",
+        "SFR/FF basis positive",
+        "Claims 215k"
+      ],
+      "soWhat": "Auction demand confirms dip buying at elevated yields",
+      "quote": "The $22bn 30-year reopening stopped through. (MS)",
+      "sourceRefs": [
+        "GS Asia Macro 2026-07-13",
+        "MS Global Macro 2026-07-10"
+      ],
+      "threadId": "thread-ust-supply"
+    },
+    {
+      "id": "sig-20260711-06",
+      "date": "2026-07-11",
+      "headline": "European Financials beta compression：LT2 squeeze→decompression trades出现",
+      "topic": "European Financials",
+      "assetClass": "Credit",
+      "direction": "Constructive",
+      "signalType": [
+        "FLOW",
+        "MOMENTUM"
+      ],
+      "action": "WATCH",
+      "impactScore": 55,
+      "conviction": "Medium",
+      "brokers": [
+        "Goldman Sachs"
+      ],
+      "oneLine": "RM chasing carry→HQ flat to smaller banks。Subincos下周预期catch up",
+      "evidence": [
+        "LT2 -3-6bps",
+        "RT1 -10-15bps",
+        "AT1 -0.375/-0.625pt",
+        "NWIDE flat to BCP/BAMIIM",
+        "5s10s sub 10-15bps steep"
+      ],
+      "soWhat": "Carry trade into summer active→decompression opportunities emerging",
+      "quote": "Beta compression remains the theme with RM chasing carry. (GS)",
+      "sourceRefs": [
+        "GS Credit Recap 2026-07-13"
+      ],
+      "threadId": "thread-europe-fin"
+    },
+    {
+      "id": "sig-20260711-07",
+      "date": "2026-07-11",
+      "headline": "EM Credit分化：Indonesia Frontier风险 vs Colombia压缩+Argentina $4.3bn付息",
+      "topic": "EM Credit Fragmentation",
+      "assetClass": "EM Credit",
+      "direction": "Mixed",
+      "signalType": [
+        "DIVERGENCE",
+        "ALERT"
+      ],
+      "action": "WATCH",
+      "impactScore": 72,
+      "conviction": "Medium",
+      "brokers": [
+        "Goldman Sachs"
+      ],
+      "oneLine": "PHILIP +3-5bps vs INDON front-end +4-10bps wider。Argentina可不用国际市场",
+      "evidence": [
+        "S&P Indonesia Frontier warning",
+        "PHILIP outperformed INDON 3-5bps",
+        "Argentina $4.3bn payment",
+        "Venezuela +25c-1.25pts"
+      ],
+      "soWhat": "EM fragmentation加剧→Indonesia monitor vs Colombia/Argentina opportunities",
+      "quote": "Global assets remain precariously well-priced ahead of Q2 earnings. (GS)",
+      "sourceRefs": [
+        "GS Credit Recap 2026-07-13"
+      ],
+      "threadId": "thread-em-credit"
+    },
+    {
+      "id": "sig-20260711-08",
+      "date": "2026-07-11",
+      "headline": "TIPS BE complete retrace：前2天rally完全回吐→CPI前position-squaring",
+      "topic": "TIPS Breakevens",
+      "assetClass": "Rates",
+      "direction": "Bearish",
+      "signalType": [
+        "FLOW_REVERSAL",
+        "TECHNICAL"
+      ],
+      "action": "WATCH",
+      "impactScore": 60,
+      "conviction": "Medium",
+      "brokers": [
+        "BMO"
+      ],
+      "oneLine": "Sell flows outnumbered buy 5:1→straight line selling 8am-3:30pm",
+      "evidence": [
+        "BE完全retrace前2天rally",
+        "Sell:Buy 5:1",
+        "FM+RM selling",
+        "30y RY near 2.90%",
+        "CPI pricing 334.75(3.8% YoY)"
+      ],
+      "soWhat": "CPI后BE direction取决于print→GS低预期→若正确BE可能反弹",
+      "quote": "Rough session for breakevens, completely retraced. (BMO)",
+      "sourceRefs": [
+        "BMO TIPS EOD 2026-07-10"
+      ],
+      "threadId": "thread-tips-be"
+    },
+    {
+      "id": "sig-20260711-09",
+      "date": "2026-07-11",
+      "headline": "Equity: SPX +0.8%→AI-led rebound→lower oil ease inflation shock",
+      "topic": "Equity Rebound",
+      "assetClass": "Equity",
+      "direction": "Bullish",
+      "signalType": [
+        "MOMENTUM",
+        "CONTINUATION"
+      ],
+      "action": "WATCH",
+      "impactScore": 62,
+      "conviction": "Medium",
+      "brokers": [
+        "Morgan Stanley",
+        "Goldman Sachs"
+      ],
+      "oneLine": "SPX +1.23% on week。IT +1.6%, Energy -1.6%。VIX -6.3%",
+      "evidence": [
+        "SPX +0.8%(daily)/+1.23%(weekly)",
+        "NDX +1.3%",
+        "IT +1.6%",
+        "VIX -6.3%",
+        "Brent -2.6%/WTI -2.3%"
+      ],
+      "soWhat": "Oil reversal→AI rotation resumed→但supply fatigue+earnings ahead",
+      "quote": "Lower oil prices allowed AI-linked equities to lead. (MS)",
+      "sourceRefs": [
+        "MS Global Macro 2026-07-10",
+        "GS Credit Recap 2026-07-13"
+      ],
+      "threadId": "thread-equity-rotation"
+    }
+  ],
+  "brokerNotes": [
+    {
+      "broker": "Goldman Sachs",
+      "emails": 2,
+      "stance": "周度综述：US-Iran周末升级但credit resilient。AI supply fatigue里程碑。CPI周二关键分歧。Asia credit supply taper→compression",
+      "sourceRefs": [
+        "GS Credit Recap + Asia Macro 2026-07-13"
+      ]
+    },
+    {
+      "broker": "Morgan Stanley",
+      "emails": 1,
+      "stance": "Risk-on rotation：lower oil→AI equities lead。UST bull steepening→strong auction。Global policy divergence",
+      "sourceRefs": [
+        "MS Global Macro 2026-07-10"
+      ]
+    },
+    {
+      "broker": "BMO",
+      "emails": 1,
+      "stance": "TIPS BE bearish：complete retrace→CPI positioning。Jun CPI pricing 334.75→3.8% YoY",
+      "sourceRefs": [
+        "BMO TIPS EOD 2026-07-10"
+      ]
+    },
+    {
+      "broker": "Citi",
+      "emails": 1,
+      "stance": "META custom chip timeline→slightly negative but bonds already wide/steep",
+      "sourceRefs": [
+        "Citi IG Credit 2026-07-10"
+      ]
+    }
+  ],
+  "dataChecks": [
+    {
+      "id": "dc-01",
+      "type": "观点分歧",
+      "subject": "CPI预测：GS +0.17% vs consensus +0.3%",
+      "status": "Monitor",
+      "detail": "周二CPI为近期最关键数据。GS远低于共识→巨大市场影响"
+    },
+    {
+      "id": "dc-02",
+      "type": "观点分歧",
+      "subject": "AI供给拐点",
+      "status": "Monitor",
+      "detail": "GS: tactical bounce near-term but medium-term trend won't let up"
+    },
+    {
+      "id": "dc-03",
+      "type": "交叉验证",
+      "subject": "US-Iran对credit impact",
+      "status": "Confirmed",
+      "detail": "GS+MS均确认credit outperformed macro vol"
+    }
+  ],
+  "qualityLog": [
+    "邮件采集: 5个API成功，去重后5封邮件",
+    "覆盖券商: 4家(GS,MS,BMO,Citi)",
+    "日期归属: effective_date=2026-07-11(Friday)，覆盖July 10交易日+周末地缘",
+    "信号提取: 9条信号，涵盖Commodity/Credit/Rates/Equity/Macro/EM Credit",
+    "关键发现: AI supply fatigue里程碑+CPI前巨大分歧+US-Iran信用韧性"
   ]
 },
 {
@@ -1347,7 +2026,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "JEF/MS/GS/BMO/HSBC"
       ],
-      "threadId": "thread-iran-day2"
+      "threadId": "thread-iran"
     },
     {
       "id": "sig-20260709-02",
@@ -1380,7 +2059,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "JEF/MS/Barclays/GS"
       ],
-      "threadId": "thread-fomc-hawkish"
+      "threadId": "thread-fed"
     },
     {
       "id": "sig-20260709-03",
@@ -1413,7 +2092,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "JEF/MS/HSBC"
       ],
-      "threadId": "thread-ust-auction"
+      "threadId": "thread-ust-supply"
     },
     {
       "id": "sig-20260709-04",
@@ -1445,7 +2124,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "GS/MS/HSBC"
       ],
-      "threadId": "thread-asia-split"
+      "threadId": "thread-asia-credit"
     },
     {
       "id": "sig-20260709-05",
@@ -1476,7 +2155,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "BMO"
       ],
-      "threadId": "thread-tips-bear"
+      "threadId": "thread-tips-be"
     },
     {
       "id": "sig-20260709-06",
@@ -1509,7 +2188,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "HSBC/GS"
       ],
-      "threadId": "thread-asia-split"
+      "threadId": "thread-asia-credit"
     }
   ],
   "brokerNotes": [
@@ -1753,7 +2432,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "GS/MS/JEF/BMO"
       ],
-      "threadId": "thread-iran-risk"
+      "threadId": "thread-iran"
     },
     {
       "id": "sig-20260708-03",
@@ -1883,7 +2562,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "BMO/GS"
       ],
-      "threadId": "thread-tips-breakevens"
+      "threadId": "thread-tips-be"
     },
     {
       "id": "sig-20260708-07",
@@ -1917,7 +2596,7 @@ window.REPORT_DATA = {
       "sourceRefs": [
         "MS/GS/JEF"
       ],
-      "threadId": "thread-fed-outlook"
+      "threadId": "thread-fed"
     },
     {
       "id": "sig-20260708-08",
