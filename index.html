@@ -63,6 +63,7 @@
   .card:nth-child(2)::before { background: linear-gradient(90deg, #10b981, #06b6d4); }
   .card:nth-child(3)::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
   .card:nth-child(4)::before { background: linear-gradient(90deg, #8b5cf6, #ec4899); }
+  .card:nth-child(5)::before { background: linear-gradient(90deg, #14b8a6, #0ea5e9); }
   .card:hover {
     transform: translateY(-4px);
     border-color: rgba(148, 163, 184, 0.35);
@@ -95,6 +96,7 @@
   .tag-deposit { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
   .tag-repo { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
   .tag-new { background: rgba(139, 92, 246, 0.2); color: #c4b5fd; }
+  .tag-desk { background: rgba(20, 184, 166, 0.2); color: #5eead4; }
   .badge-new {
     display: inline-block;
     background: #ec4899;
@@ -126,7 +128,7 @@
 <div class="container">
   <header>
     <h1>资管项目 · 每日报告中心</h1>
-    <p>固定收益交易台 — 四大核心日报，一站式查看</p>
+    <p>固定收益交易台 — 五大核心日报，一站式查看</p>
   </header>
 
   <div class="cards">
@@ -156,6 +158,13 @@
       <h2>卖方每日情报<span class="badge-new">新</span></h2>
       <p>多日信号聚合引擎：跨天Thread追踪、券商立场网格、分歧/共识自动标注、交易流与归因分析</p>
       <span class="tag tag-new">卖方情报 · 新版</span>
+    </a>
+
+    <a class="card" href="交易台报告.html">
+      <div class="card-icon">📋</div>
+      <h2>交易台报告</h2>
+      <p>交易台独立视角：每日信号简讯、Flow Sentiment、策略关注、多天趋势对比</p>
+      <span class="tag tag-desk">交易台报告</span>
     </a>
   </div>
 
