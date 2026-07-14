@@ -221,6 +221,7 @@ th.dcol.here { color:var(--violet); }
 .pt-row { display:flex; gap:8px; align-items:baseline; font-size:12px; padding:4px 0; border-top:1px solid var(--border2); }
 .pt-row:first-child { border-top:none; }
 .pt-date { color:var(--muted); font-size:11px; min-width:40px; flex-shrink:0; }
+.date-marker { display:inline-block; margin-left:3px; padding:0 4px; border-radius:3px; font-size:10px; background:#fef7e0; color:#b45309; line-height:1.6; }
 .pt-claim { color:#344054; line-height:1.45; }
 .pt-changed { color:var(--violet); font-weight:700; }
 .mtag { display:inline-flex; align-items:center; gap:3px; height:18px; padding:0 6px; border-radius:4px; font-size:10px; font-weight:700; flex-shrink:0; --c:#98a2b3; --cbg:#eef0f3; --ctx:#475467; }
@@ -579,14 +580,18 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   }
 
   function renderBoard(signals){
-    $("board-body").innerHTML=signals.length?signals.map(s=>`<tr>
+    const rd=curDay().reportDate;
+    $("board-body").innerHTML=signals.length?signals.map(s=>{
+      const dateTag=s.date&&s.date!==rd?`<span class="date-marker">${fmtDateLabel(s.date,rd)}</span>`:"";
+      return `<tr>
       <td><strong>${esc(s.impactScore)}</strong></td>
-      <td><strong>${esc(s.headline)}</strong><br><span class="panel-sub">${esc(s.oneLine)}</span></td>
+      <td><strong>${esc(s.headline)}</strong>${dateTag}<br><span class="panel-sub">${esc(s.oneLine)}</span></td>
       <td>${s.signalType.map(badge).join(" ")}</td>
       <td>${esc(s.assetClass)}<br><span class="panel-sub">${esc(s.direction)}</span></td>
       <td>${esc(s.brokers.join(", "))}</td>
       <td>${action(s.action)}</td>
-      <td>${esc(s.soWhat)}</td></tr>`).join(""):'<tr><td colspan="7" class="empty">该筛选下无信号</td></tr>';
+      <td>${esc(s.soWhat)}</td></tr>`;
+    }).join(""):'<tr><td colspan="7" class="empty">该筛选下无信号</td></tr>';
   }
 
   // tilt 方向 / mode 观点性质
@@ -599,6 +604,18 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     FLOW:     { cn:"流", g:"◈" },
   };
   const mdShort = (d)=>d.slice(5); // MM-DD
+  // 日期标注：当point的日期不等于latestDate时，标出实际描述哪一天
+  const fmtDateLabel = (d,ref)=>{
+    const refDate=ref||latestDate;
+    if(!d || !refDate) return "";
+    if(d===refDate) return "";
+    const [,,m,dd]=d.split("-"); const mi=parseInt(m,10), di=parseInt(dd,10);
+    return `描述${mi}月${di}日`;
+  };
+  const fmtDateFull = (d)=>{ // 用于tooltip
+    if(!d||!latestDate||d===latestDate) return "";
+    const [y,m,dd]=d.split("-"); return `（描述${y}年${parseInt(m,10)}月${parseInt(dd,10)}日行情）`;
+  };
 
   function renderThreadLegend(){
     const host=$("thread-legend"); if(!host) return;
