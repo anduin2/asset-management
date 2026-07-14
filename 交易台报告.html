@@ -66,6 +66,7 @@ main { padding:18px 20px 40px; }
 .name-tone.buy { background:#d1fadf; color:#05603a; } .name-tone.firm { background:#e8f8ef; color:#087443; }
 .name-tone.sell { background:#fee4e2; color:#b42318; } .name-tone.weak { background:#fee4e2; color:#b42318; }
 .name-tone.mixed { background:#eff4ff; color:#2457a6; }
+.name-tone.new_issue { background:#fdf0d5; color:#7a4d00; }
 .name-main { flex:1; min-width:0; }
 .name-title { font-size:11.5px; font-weight:700; }
 .name-title .tk { font-size:9.5px; color:var(--muted); font-weight:600; background:#f2f4f7; padding:0 5px; border-radius:4px; margin-left:4px; }
@@ -148,6 +149,7 @@ tr:hover td { background:#fbfcfe; }
 .mchip.m-FORECAST { background:#fff; color:#344054; border:1px dashed #98a2b3; }
 .mchip.m-COLOR { background:#f2f4f7; color:#667085; }
 .mchip.m-FLAG { background:#fff7ed; color:#b54708; border:1px solid #fed7aa; }
+.mchip.m-FLOW { background:#f0f9ff; color:#0369a1; }
 #thread-legend .sw { width:12px; height:12px; border-radius:3px; display:inline-block; }
 
 .thread-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(430px,1fr)); gap:14px; align-items:start; }
@@ -259,9 +261,10 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 #tab-issuers .iv-filtered{display:none}
 #tab-issuers .iv-filtered.open{display:block}
 #tab-issuers .icard{border:1px solid var(--border);border-radius:10px;background:#fff;overflow:hidden;border-left:4px solid #98a2b3}
-#tab-issuers .icard.f-buy,#tab-issuers .icard.f-outperform{border-left-color:#087443}
-#tab-issuers .icard.f-sell,#tab-issuers .icard.f-underperform{border-left-color:#b42318}
-#tab-issuers .icard.f-twoway{border-left-color:#2457a6}
+#tab-issuers .icard.f-buy,#tab-issuers .icard.f-outperform,#tab-issuers .icard.f-firm{border-left-color:#087443}
+#tab-issuers .icard.f-sell,#tab-issuers .icard.f-underperform,#tab-issuers .icard.f-weak{border-left-color:#b42318}
+#tab-issuers .icard.f-twoway,#tab-issuers .icard.f-mixed{border-left-color:#2457a6}
+#tab-issuers .icard.f-new_issue{border-left-color:#d4a017}
 #tab-issuers .icard.excluded{background:#fbfbfc;border-left-color:#cbd2da}
 #tab-issuers .ic-top{display:flex;align-items:baseline;gap:8px;padding:11px 13px 6px;flex-wrap:wrap}
 #tab-issuers .iv-tk{font-size:16px;font-weight:800}
@@ -272,6 +275,10 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 #tab-issuers .fl-sell,#tab-issuers .fl-underperform{background:#fee4e2;color:#b42318}
 #tab-issuers .fl-twoway{background:#eff4ff;color:#2457a6}
 #tab-issuers .fl-unchanged{background:#eceef2;color:#475467}
+.fl-new_issue{background:#fdf0d5;color:#7a4d00}
+.fl-firm{background:#ecfdf3;color:#087443}
+.fl-weak{background:#fee4e2;color:#b42318}
+.fl-mixed{background:#eff4ff;color:#2457a6}
 #tab-issuers .ic-tags{display:flex;gap:5px;flex-wrap:wrap;padding:0 13px 8px}
 #tab-issuers .iv-mk{font-size:10px;font-weight:700;padding:1.5px 7px;border-radius:5px}
 #tab-issuers .mt-region{background:#eef2f7;color:#475467}
@@ -281,7 +288,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 #tab-issuers .mt-sov{background:#f3f0fb;color:#6941c6}
 #tab-issuers .mt-cross{background:#fff4ed;color:#b54708}
 #tab-issuers .mt-sector{background:#e6f6f4;color:#0e6d62}
-#tab-issuers .iv-new{font-size:10px;font-weight:700;color:#7a4d00;background:#fdf0d5;border:1px solid #f2d99a;padding:1px 7px;border-radius:5px}
+#tab-issuers .iv-new{margin-left:auto;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;background:#fdf0d5;color:#7a4d00}
 #tab-issuers .excl-reason{margin:0 13px 8px;font-size:11px;font-weight:700;color:#b42318;background:#fef3f2;border-radius:6px;padding:4px 9px;display:inline-block}
 #tab-issuers .ic-quote{margin:0 13px 8px;font-size:12px;color:#475467;font-style:italic;border-left:2px solid var(--border);padding-left:10px;line-height:1.5}
 #tab-issuers .ic-analysis{margin:0 13px 10px;font-size:12.5px;color:var(--text);line-height:1.55}
@@ -448,8 +455,8 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   const state = { q:"", asset:"ALL", type:"ALL" };
   let ivShowFiltered = false;   // 我们的关注 tab:是否展开"已过滤"池
   // 我们的关注 枚举
-  const IV_TONE={mixed:{g:"◆"},firm:{g:"▲"},weak:{g:"▼"}};
-  const IV_FLOW={buy:"买盘",sell:"卖盘",twoway:"两向",outperform:"跑赢",underperform:"跑输",unchanged:"持平"};
+  const IV_TONE={mixed:{g:"◆",cn:"两向"},firm:{g:"▲",cn:"偏强"},weak:{g:"▼",cn:"偏弱"}};
+  const IV_FLOW={buy:"买盘",sell:"卖盘",firm:"偏强",weak:"偏弱",mixed:"两向",twoway:"两向",outperform:"跑赢",underperform:"跑输",unchanged:"持平",new_issue:"新发"};
   const IV_ACLS={IG:["mt-ig","IG"],HY:["mt-hy","HY"],Sovereign:["mt-sov","主权"],Cross:["mt-cross","Cross"]};
 
   function curDay(){ return days.find(d=>d.reportDate===curDate); }
@@ -541,7 +548,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   }
 
   const SENT = { firm:{g:"▲",cn:"偏强"}, weak:{g:"▼",cn:"偏弱"}, mixed:{g:"◆",cn:"两向"}, stable:{g:"■",cn:"平静"} };
-  const TONE = { buy:"买盘", firm:"偏强", sell:"卖盘", weak:"偏弱", mixed:"两向" };
+  const TONE = { buy:"买盘", firm:"偏强", sell:"卖盘", weak:"偏弱", mixed:"两向", new_issue:"新发" };
 
   function renderFlow(){
     const f=curDay().flow;
@@ -550,7 +557,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     const s=f.sentiment, sm=SENT[s.dir]||SENT.stable;
     const sentiment=`<div class="flow-sentiment ${esc(s.dir)}">
       <div class="flow-arrow">${sm.g}</div>
-      <div><div class="flow-sent-label">市场情绪:${esc(s.label)}</div><div class="flow-sent-note">${esc(s.note)}</div></div>
+      <div><div class="flow-sent-label">市场情绪:${esc(sm.cn||s.label)}</div><div class="flow-sent-note">${esc(s.note)}</div></div>
     </div>`;
     const names=(f.activeNames||[]).map(n=>`<div class="name-row">
       <span class="name-tone ${esc(n.tone)}">${TONE[n.tone]||n.tone}</span>
@@ -589,6 +596,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     FORECAST: { cn:"预测", g:"▸" },
     COLOR:    { cn:"描述", g:"○" },
     FLAG:     { cn:"事件", g:"◆" },
+    FLOW:     { cn:"流", g:"◈" },
   };
   const mdShort = (d)=>d.slice(5); // MM-DD
 
@@ -648,8 +656,9 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
           if(!p){ r+=`<td><span class="cell empty">·</span></td>`; return; }
           const changed=p._prevTilt && p._prevTilt!==p.tilt;
           const cls=["cell",p.tilt,"m-"+p.mode,changed?"chg":"",isDiverge(d)?"col-diverge-cell":"",d===latestDate?"here-mark":""].filter(Boolean).join(" ");
-          const tip=`${p.date} · ${MODE[p.mode].cn}(${TILT[p.tilt]})${changed?" · 较上次方向改变":""}\n${p.note}`;
-          r+=`<td><span class="${cls}" title="${esc(tip)}"><span class="g">${MODE[p.mode].g}</span></span></td>`;
+          const m=MODE[p.mode]||{cn:p.mode,g:"?"};
+          const tip=`${p.date} · ${m.cn}(${TILT[p.tilt]})${changed?" · 较上次方向改变":""}\n${p.note}`;
+          r+=`<td><span class="${cls}" title="${esc(tip)}"><span class="g">${m.g}</span></span></td>`;
         });
         return r+`</tr>`;
       }).join("");
@@ -674,7 +683,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       const divergePanel = divs.length ? `<div class="thr-label warn">分歧详情 · 差异具体在哪</div>${divs.map(dv=>`<div class="diverge-block">
           <div class="diverge-head"><span class="diverge-date">${mdShort(dv.date)}</span><span class="diverge-crux"><strong>分歧核心:</strong> ${esc(dv.crux)}</span></div>
           <div class="camps">${dv.camps.map(c=>`<div class="camp ${esc(c.tilt||"neu")}">
-            <div class="camp-head">${esc(c.label)}<span class="mtag ${esc(c.tilt||"neu")} m-${esc(c.mode||"COLOR")}"><span class="g">${MODE[c.mode||"COLOR"].g}</span>${MODE[c.mode||"COLOR"].cn}</span><span class="who">${esc(c.brokers.join(", "))}</span></div>
+            <div class="camp-head">${esc(c.label)}<span class="mtag ${esc(c.tilt||"neu")} m-${esc(c.mode||"COLOR")}"><span class="g">${(MODE[c.mode]||MODE.COLOR).g}</span>${(MODE[c.mode]||MODE.COLOR).cn}</span><span class="who">${esc(c.brokers.join(", "))}</span></div>
             <div class="camp-point">${esc(c.point)}</div>
           </div>`).join("")}</div></div>`).join("")}` : "";
 
@@ -684,9 +693,10 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
         const changed=new Set(pts.map(p=>p.tilt)).size>1;
         const rowsHtml=pts.map((p,i)=>{
           const chg=i>0 && pts[i-1].tilt!==p.tilt;
+          const mi=MODE[p.mode]||{cn:p.mode,g:"?"};
           return `<div class="pt-row">
             <span class="pt-date">${mdShort(p.date)}</span>
-            <span class="mtag ${esc(p.tilt)} m-${esc(p.mode)}"><span class="g">${MODE[p.mode].g}</span>${MODE[p.mode].cn}·${TILT[p.tilt]}</span>
+            <span class="mtag ${esc(p.tilt)} m-${esc(p.mode)}"><span class="g">${mi.g}</span>${mi.cn}·${TILT[p.tilt]}</span>
             <span class="pt-claim">${chg?'<span class="pt-changed">↳ 转向 </span>':""}${esc(p.note)}</span>
           </div>`;
         }).join("");
@@ -758,7 +768,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       <div class="ic-top">
         ${i.inFocus&&i.priority?`<span class="pri-dot">P${i.priority}</span>`:""}
         <span class="iv-tk">${esc(i.ticker)}</span><span class="nm">${esc(i.name||"")}</span>
-        ${i.newIssue?`<span class="iv-new">新发</span>`:""}
+        ${i.newIssue&&i.flow!=="new_issue"?`<span class="iv-new">新发</span>`:""}
         <span class="ic-flow fl-${i.flow}">${IV_FLOW[i.flow]||i.flow}</span>
       </div>
       <div class="ic-tags">${tags}</div>
@@ -793,7 +803,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     // tone + macro
     const t=d.tone; if(t){ const tc=IV_TONE[t.dir]||IV_TONE.mixed;
       $("iv-tone").className="iv-tone "+t.dir;
-      $("iv-tone").innerHTML=`<div class="ta">${tc.g}</div><div><div class="tl">${esc(t.label)}</div><div class="tn">${esc(t.note)}</div></div>`;
+      $("iv-tone").innerHTML=`<div class="ta">${tc.g}</div><div><div class="tl">${esc(tc.cn||t.label)}</div><div class="tn">${esc(t.note)}</div></div>`;
     } else $("iv-tone").innerHTML="";
     $("iv-macro").innerHTML=(d.macro||[]).map(m=>`<li>${esc(m)}</li>`).join("");
     // issuers
@@ -822,7 +832,11 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     renderIssuers();
   }
 
-  function renderAll(){ renderDateNav(); renderDayScoped(); renderThreads(); }
+  function renderAll(){
+    try{ renderDateNav(); }catch(e){ console.error("renderDateNav",e); }
+    try{ renderDayScoped(); }catch(e){ console.error("renderDayScoped",e); }
+    try{ renderThreads(); }catch(e){ console.error("renderThreads",e); }
+  }
 
   // tabs
   document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{
