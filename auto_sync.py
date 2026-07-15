@@ -11,8 +11,6 @@ DEPLOY = ROOT / "deploy"
 
 SOURCES = {
     "intel.html":             ROOT / "Daily Commentary" / "output" / "卖方每日情报.html",
-    "daily_commentary.html":  ROOT / "Daily Commentary（NEW）" / "report.html",
-    "report-data.js":         ROOT / "Daily Commentary（NEW）" / "report-data.js",
     "deposit.html":           ROOT / "Deposit-main" / "每日存款报价汇总.html",
     "repo.html":              ROOT / "repo-tool-main" / "output" / "每日REPO报价汇总.html",
     "交易台报告.html":         ROOT / "交易台报告" / "卖方每日情报.html",
@@ -23,20 +21,7 @@ AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
 INJECT_BLOCK = f'{AUTH_TAG}\n{REFRESH_TAG}'
 
-DATA_JS_RE = re.compile(r'<script src="report-data\.js"(\?v=[^"]*)?"></script>')
 TRADING_DATA_RE = re.compile(r'<script src="trading_data\.js"(\?v=[^"]*)?"></script>')
-
-def inject_cache_buster(html_path: Path):
-    """在 report-data.js 引用上添加时间戳缓存破坏参数"""
-    content = html_path.read_text(encoding="utf-8")
-    ts = datetime.now().strftime("%Y%m%d%H%M")
-    new_tag = f'<script src="report-data.js?v={ts}"></script>'
-    new_content = DATA_JS_RE.sub(new_tag, content)
-    if new_content != content:
-        html_path.write_text(new_content, encoding="utf-8")
-        print(f"  [ok] {html_path.name}: cache-buster added (v={ts})")
-    else:
-        print(f"  [warn] {html_path.name}: report-data.js tag not found for cache-buster")
 
 def fixup_trading_desk_html(html_path: Path):
     """修复 交易台报告.html：将 report-data.js 引用替换为 trading_data.js + 缓存破坏"""
@@ -98,10 +83,6 @@ def main():
         
         # 注入 auth + refresh tags
         inject_tags(dst)
-        
-        # daily_commentary.html 需要缓存破坏参数确保加载最新 data
-        if name == "daily_commentary.html":
-            inject_cache_buster(dst)
         
         # 交易台报告.html: 修复 script src 引用 + 缓存破坏
         if name == "交易台报告.html":
