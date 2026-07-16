@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-16 07:58 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-16 10:22 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -111,6 +111,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Breakevens lagged oil rally, caught up after 3pm when Trump declared 'new war against Iran'."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Front-end breaks closed positive as conflict escalated"
             }
           ]
         },
@@ -122,6 +128,39 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "VIEW",
               "note": "US-Iran tit-for-tat + Russia diesel halt add to inflation. Long oil/short global bonds trade workable."
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "FLAG",
+              "note": "Trump expanding vs Iran. Brent+1.2%"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "FLAG",
+              "note": "Houthis closing Bab El-Mandeb. $100/bbl→core CPI+3-4bp"
+            }
+          ]
+        },
+        {
+          "broker": "SSA",
+          "points": [
+            {
+              "date": "2026-07-16",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Middle East=largest market-moving potential"
             }
           ]
         }
@@ -257,6 +296,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "VIEW",
               "note": "Ex-China IG ~1bp wider. RM+Korea onshore buying on higher all-in yields."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "Ex-China~1bp tighter.TMT selling eased.Equity/credit divergence=key theme"
             }
           ]
         },
@@ -280,6 +325,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Weaker tone. IG+0-4bps. China HY-0-0.25pts. SEA IG 1-2bps wider. Front end PEPs still carry supported."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Mixed tone.Japan firmer.SEA IG 0-2bps tighter"
             }
           ]
         },
@@ -303,6 +354,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "COLOR",
               "note": "China IG largely unch. Front end still very biddish. SEA constructive flows."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "China IG not happy.TMT 1-2bps wider.Global sellers back"
             }
           ]
         },
@@ -314,6 +371,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Overall weaker,1-3bps wider. Financials under pressure. BBB still onshore demand."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "1-2bps wider.RM sidelined.Street trimming"
             }
           ]
         }
@@ -443,6 +506,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "SOFTBK -2.5pts since Fri. New issues drifting lower with general bearishness."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "SOFTBK hybrids+¾-1pt squeeze.'65s+1pt.No sellers"
             }
           ]
         },
@@ -466,6 +535,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "VIEW",
               "note": "SOFTBK very weak. FM shorting cash+CDS. -1-1.25pts,5y+22bps. Failing to bounce despite equities."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "CDS+4bps.FM buying protection.Cash still offered"
             }
           ]
         },
@@ -477,6 +552,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Financials under pressure. Hybrid insurance 25-35c lower. BBB onshore demand."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Cash 1-2bps wider.RM sidelined"
             }
           ]
         }
@@ -575,6 +656,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Softer CPI sparked broad risk rally. July hike 50%→16%. 2y-8.8bp,10y-3.4bp. Curve materially steeper."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "2nd downside inflation surprise. Bull-steepening: 2y-5.9bp"
             }
           ]
         },
@@ -586,6 +673,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Strong bull steepening. 2y-9bp to 4.193%. July hike unwound to 6bps. Warsh partially retraced."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "1y1y+7bps. Swap spreads widening. But $100/bbl oil risk"
             }
           ]
         },
@@ -597,6 +690,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "COLOR",
               "note": "Big CPI miss. First monthly headline decline in 6 years. Shelter+0.1% smallest since 2021. TIPS held up well."
+            },
+            {
+              "date": "2026-07-16",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Weaker inflation. Dip buyers. FM selling 5s/10s"
             }
           ]
         }
@@ -702,38 +801,659 @@ window.REPORT_DATA =
         }
       ],
       "divergences": []
+    },
+    {
+      "id": "thread-us-asia-credit-divergence",
+      "name": "美元 vs 亚洲信用分化",
+      "status": "新开·Transatlantic divergence",
+      "assetClass": "Credit",
+      "latestChange": "US IG-1bp risk-on/$24.2bn供给.Asia IG 1-3bps wider.RM sidelined.两市场完全反向",
+      "brokerViews": [
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-16",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "CDX IG-0.78bp,HY+15cts.Money centers-3bps.$24.2bn absorbed"
+            }
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "points": [
+            {
+              "date": "2026-07-16",
+              "tilt": "pos",
+              "mode": "FLOW",
+              "note": "IG ETFs skewed buyers.Credit spreads tighter across board"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-07-16",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Asia IG 1-3bps wider.Financials driven by US Big 6 supply"
+            }
+          ]
+        }
+      ],
+      "divergences": [
+        {
+          "date": "2026-07-16",
+          "crux": "美元(risk-on)vs亚洲(wider)完全相反.US supply驱动亚洲金融wider+RM summer观望+TMT global sellers",
+          "camps": [
+            {
+              "label": "美元risk-on",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "brokers": [
+                "GS",
+                "Jane Street"
+              ],
+              "point": "CDX tighter,HY higher,primary absorbed,ETF inflows"
+            },
+            {
+              "label": "亚洲drift wider",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "brokers": [
+                "Barclays",
+                "JEFFERIES",
+                "HSBC"
+              ],
+              "point": "1-3bps wider,RM sidelined,TMT sellers"
+            }
+          ]
+        }
+      ]
     }
   ],
   "days": [
     {
       "reportDate": "2026-07-16",
       "coverage": {
-        "emails": 8,
+        "emails": 11,
         "brokers": [
           "BMO",
           "Barclays",
           "Deutsche Bank",
           "Goldman Sachs",
           "HSBC",
+          "Jane Street",
           "JEFFERIES",
           "Morgan Stanley",
-          "mkt"
+          "SSA"
         ],
         "lookbackDays": 15
       },
-      "signals": [],
-      "brokerNotes": [],
-      "dataChecks": [],
-      "qualityLog": [],
+      "signals": [
+        {
+          "id": "sig-20260716-01",
+          "headline": "PPI连续第二日通胀下行：headline-0.3%vs预期0%,5月下修→UST Bull-Steepening(2y-6bp/10y-4bp).July hike仅2.75bp定价",
+          "topic": "June PPI Downside Surprise Confirms CPI",
+          "assetClass": "Macro",
+          "direction": "Bullish",
+          "signalType": [
+            "CONFIRMED",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 85,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "Goldman Sachs"
+          ],
+          "oneLine": "PPI-0.3% vs 0% expected,5月下修.CPI+PPI双miss→2y-6bp.July hike仅2.75bp.GS:1y1y+7bps,swap spreads widening.但$100/bbl风险仍存",
+          "evidence": [
+            "MS: PPI declined 0.3% m/m vs 0%. Core+0.2% vs+0.3%. May revised lower. 2y-5.9bp, 30y-2.5bp",
+            "BMO: Weaker inflation sent breaks lower. Dip buyers showed up. FM selling 5s/10s",
+            "GS: 1y1y+7bps. 2s10s+2bps steeper. July hike compressed to 2.75bps. Swap spreads widening"
+          ],
+          "soWhat": "CPI+PPI双miss确认通胀下行.July hike基本排除.GS:$100/桶油情境推高核心CPI 3-4bp,Houthi关闭海峡增加此风险",
+          "priorState": "CPI全面miss→Bull Steepening.July hike 50%→16%",
+          "quote": "A second consecutive downside US inflation surprise reduced near-term tightening expectations",
+          "sourceRefs": [
+            "MS Global Macro",
+            "BMO TIPS",
+            "GS Asia Macro"
+          ],
+          "threadId": "thread-cpi-relief-rally"
+        },
+        {
+          "id": "sig-20260716-02",
+          "headline": "SOFTBK日内急剧反转：昨日-2.5pts→今日hybrids+¾-1pt short squeeze.'65s+1pt收盘零卖盘.CDS仍+4bps",
+          "topic": "SOFTBK Short Squeeze Reversal",
+          "assetClass": "Credit",
+          "direction": "Mixed",
+          "signalType": [
+            "SHIFT",
+            "MOMENTUM"
+          ],
+          "action": "TRADE_NOW",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "oneLine": "SOFTBK日内反转:hybrids+1pt short squeeze但CDS+4bps.现金端技术性vs衍生品端对冲",
+          "evidence": [
+            "HSBC: Short squeeze in SOFTBK hybrids +¾-1pt. '65s up 1pt, cannot find sellers",
+            "Barclays: SOFTBK CDS +4bps. FM buying protection. Cash still offered",
+            "JEFFERIES: Credit underperforms stock. 1-2bps wider. RM sidelined"
+          ],
+          "soWhat": "现金端+1pt squeeze vs CDS+4bps背离.现金可能仅为技术性挤压.CDS更准确反映FM对冲需求",
+          "priorState": "SOFTBK-1-1.25pts日内/-2.5pts since Fri.FM做空cash+CDS",
+          "quote": "There was a bit of a short squeeze in SOFTBK, best evidenced in the hybrids",
+          "sourceRefs": [
+            "HSBC EOD",
+            "Barclays EOD",
+            "JEFFERIES EOD"
+          ],
+          "threadId": "thread-japan-softbk-underperform"
+        },
+        {
+          "id": "sig-20260716-03",
+          "headline": "美伊+胡塞双重升级：Trump扩大伊朗军事行动,盘后Houthi宣布关闭Bab El-Mandeb海峡.GS:油飙$100/bbl→核心CPI+3-4bp",
+          "topic": "US-Iran-Houthi Escalation",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "SHIFT",
+            "ALERT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 82,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "Goldman Sachs",
+            "SSA"
+          ],
+          "oneLine": "Trump扩大伊朗行动+Houthi关闭Bab El-Mandeb.昨日缓和逆转.Brent+1.2%.盘后risk-off.GS:$100/bbl→CPI+3-4bp",
+          "evidence": [
+            "MS: Trump expanding operations vs Iran. Discussed Hormuz islands. Brent+1.2%",
+            "BMO: Front-end breaks/swaps closed positive as US/Iran conflict escalated",
+            "GS: Houthis closing Bab El-Mandeb Strait pushed credit wider after hours. $100/bbl→core CPI+3-4bp",
+            "SSA: Middle East developments retain largest market-moving potential"
+          ],
+          "soWhat": "昨日缓和被逆转+新前线(胡塞).GS:$100/桶情境下政策响应远超通胀数字.地缘→石油供给瓶颈→Fed再定价演变",
+          "priorState": "特朗普撤回20%霍尔木兹通行费,地缘溢价降级",
+          "quote": "Risk-off headlines after the close regarding the potential closure of the Bab El-Mandeb Strait",
+          "sourceRefs": [
+            "MS Global Macro",
+            "GS Asia Macro",
+            "SSA New Issue"
+          ],
+          "threadId": "thread-iran-escalation"
+        },
+        {
+          "id": "sig-20260716-04",
+          "headline": "BoC按兵不动于2.25%,删除加息/降息双向指引→鸽派措辞软化.Market took mildly dovish.TD预计USDCAD回撤<1.40",
+          "topic": "BoC Neutral Hold with Dovish Guidance",
+          "assetClass": "Rates",
+          "direction": "Cautious",
+          "signalType": [
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 50,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "BoC hold 2.25%,removed reference to both rate cuts and consecutive hikes.CAD仅+0.1%",
+          "evidence": [
+            "GS/TD: BoC held rates at 2.25%, watered down guidance by removing reference to both rate cuts and consecutive hikes"
+          ],
+          "soWhat": "BoC淡化双向指引=通胀/增长更平衡.短期对CAD影响有限",
+          "priorState": "BoC此前声明提及双向风险(加息和降息)",
+          "quote": "BoC watered down its guidance by removing the reference to both rate cuts and consecutive hikes",
+          "sourceRefs": [
+            "TD Securities via GS"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260716-05",
+          "headline": "亚洲IG与美股脱钩加剧：spreads 1-3bps wider,RM在场外.CPI/PPI双rally未传导.GS:equity/credit beta divergence为核心主题",
+          "topic": "Asia IG Diverging from Rally",
+          "assetClass": "Credit",
+          "direction": "Cautious",
+          "signalType": [
+            "DIVERGENCE",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 70,
+          "conviction": "Medium",
+          "brokers": [
+            "Barclays",
+            "JEFFERIES",
+            "HSBC",
+            "Goldman Sachs"
+          ],
+          "oneLine": "Asia IG 1-3bps wider,credit underperform.RM sidelined.China TMT全球卖家回归.GS视equity/credit背离为核心主题",
+          "evidence": [
+            "Barclays: China IG not happy as equities. TMT 1-2bps wider. Global sellers back on China TMT",
+            "JEFFERIES: Credit underperforms stock. 1-2bps wider. RM sidelined. Street trimming",
+            "HSBC: Mixed tone. Japan firmer second half. SEA IG 0-2bps tighter",
+            "GS: China TMT selling eased. Global sellers back. Equity/credit beta divergence key theme"
+          ],
+          "soWhat": "GS明确将equity/credit背离列为宏观核心主题.CPI+PPI仍不能吸引RM回归.China TMT全球卖家回归值得警惕",
+          "priorState": "亚洲IG有序走弱1-3bps wider.front-end支撑",
+          "quote": "China IG credit was not as happy as equities. Global sellers are back on China TMT",
+          "sourceRefs": [
+            "Barclays EOD",
+            "JEFFERIES EOD",
+            "HSBC EOD",
+            "GS Credit Recap"
+          ],
+          "threadId": "thread-asia-ig-resilience"
+        },
+        {
+          "id": "sig-20260716-06",
+          "headline": "NAB AUD 3Y Senior新发:DB估FV ASW+56-57bp,预期无溢价.澳洲大行YTD已发AUD58bn senior超全年58%",
+          "topic": "NAB AUD 3Y New Issue",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "NEW"
+          ],
+          "action": "WATCH",
+          "impactScore": 35,
+          "conviction": "Medium",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "oneLine": "NAB AUD 3Y FRN/Fixed.DB估FV+56-57bp.预期无溢价.供给量超前",
+          "evidence": [
+            "DB: NAB mandated AUD 3Y. WSTPF 06/29s at DM+55bp. FV at ASW+56-57bp",
+            "DB: Major banks AUD58bn senior YTD, over 58% of year end estimate"
+          ],
+          "soWhat": "AUD IG primary良好.仅限本币,对USD IG无直接信号",
+          "priorState": "NAB为新发.前日United Energy AUD 5Y pricing",
+          "quote": "We see fair value for NAB 3Y at ASW+56-57bp. Expect little to no new issue concession",
+          "sourceRefs": [
+            "DB Aussie Credit Desk"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260716-07",
+          "headline": "Warsh重分类AI基建为通胀威胁：与关税/能源危机并列.此前AI=deflationary tech→叙事转向.GS desk提出'保险加息'假说",
+          "topic": "Warsh Reclassifies AI as Inflationary",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "SHIFT",
+            "NON_CONSENSUS"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 76,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "Warsh将AI基建重分类为通胀威胁(与关税/能源并列).GS:现在加息可避免更严重紧缩.'保险加息'假说",
+          "evidence": [
+            "GS Credit Desk: Warsh reclassified AI infrastructure as inflationary threat (tariffs+energy crisis+AI)",
+            "GS: Hypothesis — if FED hikes now, prevents more severe prolonged tightening later. Insurance hike?",
+            "Bloomberg: Warsh cools talk that AI boom is spurring inflation (counter-narrative)"
+          ],
+          "soWhat": "AI deflation→inflation重分类=叙事层面重大转变.若被接受改变:1)科技股估值 2)Fed降息时点 3)利率终点.Bloomberg counter-narrative需核实",
+          "priorState": "AI被视为提升生产力→deflationary force→有利于Fed降息叙事",
+          "quote": "Interesting shift from Warsh with AI infrastructure being reclassified as inflationary threat",
+          "sourceRefs": [
+            "GS Credit Recap",
+            "GS Asia Macro",
+            "Bloomberg"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260716-08",
+          "headline": "美元信用risk-on确认：CDX IG-0.78bp/CDX HY+15cts.Money centers-3bps.$24.2bn IG供给充分吸收.与亚洲反向",
+          "topic": "USD Credit Risk-On vs Asia Wider",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "CONFIRMED",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "High",
+          "brokers": [
+            "Goldman Sachs",
+            "Jane Street"
+          ],
+          "oneLine": "CDX IG-0.78bp/HY+15cts.Money centers-3bps despite $24.2bn供给.IG ETF偏买.transatlantic分化",
+          "evidence": [
+            "GS: CDX IG -.78bps, HY +15cts. IG cash -1bp. Money centers -3bps despite GS/MS/JPM supply. $24.2bn/5 deals",
+            "Jane Street: IG ETFs skewed to buyers. Credit spreads tighter across board (Comms -2.1bp led)"
+          ],
+          "soWhat": "美元信用与亚洲完全相反—$24.2bn供给被顺利吸收.Transatlantic信用分化:US risk-on vs Asia drifting wider",
+          "priorState": "CPI后US IG小幅走强.Money center bank供给待消化",
+          "quote": "Macro credit continued to rebound. Money centers -3bps tighter despite new issue supply",
+          "sourceRefs": [
+            "GS Credit Recap",
+            "Jane Street ETF"
+          ],
+          "threadId": "thread-us-asia-credit-divergence"
+        },
+        {
+          "id": "sig-20260716-09",
+          "headline": "Jane Street ETF flows: IG偏买,TIPS+可转债净流入.HY XBB流入vsHYG流出.EM:TW/Korea流入vsEM ex-China流出",
+          "topic": "ETF Flow Signals",
+          "assetClass": "Multi-Asset",
+          "direction": "Mixed",
+          "signalType": [
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 55,
+          "conviction": "Medium",
+          "brokers": [
+            "Jane Street"
+          ],
+          "oneLine": "FI ETF:IG偏买/HY混合.TIPS+可转债流入.EM rotation:TW+KR in/EM ex-China out.DM欧金融+价值流入",
+          "evidence": [
+            "Jane Street: IG ETFs skewed to buyers. HY mixed (XBB in vs HYG out). TIPS(VTIP)+convertibles(ICVT) inflows",
+            "Jane Street: EM TW inflows(EWT,FLTW)+Korea(EWY,FLKR). EM ex-China outflows(EMXC)",
+            "Jane Street: DM inflows Value(EFV),Europe Financials(EUFN). Japan(EWJ)+Australia(EWA) underperformed"
+          ],
+          "soWhat": "ETF流量确认:IG偏买与美元信用risk-on一致.HY高质量in/低质量out.EM rotation与供应链重组叙事一致",
+          "priorState": "前日无ETF流量覆盖",
+          "quote": "IG ETFs were skewed to buyers over the day",
+          "sourceRefs": [
+            "Jane Street ETF Commentary"
+          ],
+          "threadId": null
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "emails": 3,
+          "stance": "【最强来源3封】Credit:亚洲IG+1bp/Ex-China tighter,China TMT global sellers,Warsh AI=通胀威胁,'保险加息'假说.US IG:CDX-0.78bp,$24.2bn供给吸收.Macro:PPI+7bp,$100/bbl,Houthi海峡,equity/credit beta背离.BoC:TD鸽派",
+          "sourceRefs": [
+            "GS Credit Recap",
+            "GS Asia Macro",
+            "TD BoC"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "emails": 1,
+          "stance": "PPI downside surprise→Bull Steepening.DXY-0.4%.GBP+1.1%.美伊升级→原油+1.2%",
+          "sourceRefs": [
+            "MS Global Macro"
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "emails": 1,
+          "stance": "FI ETF:IG偏买/HY混合.TIPS+可转债流入.EM rotation:TW+SK in/EM ex-China out.DM欧金融+价值流入.Comms-2.1bp领涨信用",
+          "sourceRefs": [
+            "Jane Street ETF"
+          ]
+        },
+        {
+          "broker": "SSA",
+          "emails": 1,
+          "stance": "EDC$2bn 5yr MS+32bps.World Bank 7yr FRN SOFR+40bps.NBD 3yr SOFR+45bps.需求稳健.中东风险最大变数",
+          "sourceRefs": [
+            "SSA/BMO New Issue"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "emails": 1,
+          "stance": "Mixed.China HY unch.Japan firmer(SOFTBK squeeze).SEA IG 0-2bps tighter",
+          "sourceRefs": [
+            "HSBC EOD"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "emails": 1,
+          "stance": "China IG not happy.TMT 1-2bps wider.Global sellers back.SOFTBK CDS+4bps.CNH constructive",
+          "sourceRefs": [
+            "Barclays EOD"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "emails": 1,
+          "stance": "Japan/Aus IG 1-2bps wider.RM sidelined.Hybrid insurance/AT1 weaker",
+          "sourceRefs": [
+            "JEF EOD"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "emails": 1,
+          "stance": "PPI weaker→breaks lower,dip buyers.FM selling 5s/10s.BE flattened.美伊升级",
+          "sourceRefs": [
+            "BMO TIPS"
+          ]
+        },
+        {
+          "broker": "Deutsche Bank",
+          "emails": 1,
+          "stance": "NAB AUD 3Y.FV ASW+56-57bp.无溢价.AUD58bn YTD senior超58%预估",
+          "sourceRefs": [
+            "DB Aussie Credit"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "chk-1",
+          "type": "观点分歧",
+          "subject": "SOFTBK现金vsCDS背离",
+          "status": "Monitor",
+          "detail": "HSBC现金+1pt vs Barclays CDS+4bps"
+        },
+        {
+          "id": "chk-2",
+          "type": "观点分歧",
+          "subject": "亚洲IG:HSBC/GS中性vsBarclays/JEF偏弱",
+          "status": "Monitor",
+          "detail": "一致:RM sidelined.GS列equity/credit背离为主题"
+        },
+        {
+          "id": "chk-3",
+          "type": "数据一致",
+          "subject": "PPI miss→Bull Steepening",
+          "status": "Confirmed",
+          "detail": "MS/BMO/GS一致.July hike基本排除"
+        },
+        {
+          "id": "chk-4",
+          "type": "数据一致",
+          "subject": "美伊+胡塞升级",
+          "status": "Confirmed",
+          "detail": "MS/BMO/GS/SSA均提及.Houthi海峡关闭"
+        },
+        {
+          "id": "chk-5",
+          "type": "观点分歧",
+          "subject": "Warsh AI通胀vsBloomberg counter",
+          "status": "Monitor",
+          "detail": "GS:AI=通胀.Bloomberg:Warsh说AI不一定是通胀.需核实"
+        },
+        {
+          "id": "chk-6",
+          "type": "数据一致",
+          "subject": "USD/Asia信用分化",
+          "status": "Confirmed",
+          "detail": "GS+Jane Street:US risk-on.Barclays+JEF:Asia wider"
+        }
+      ],
+      "qualityLog": [
+        "GS Credit Recap(13KB)今日最强来源,覆盖全品种(Asia/US/CEEMEA/European AT1)",
+        "GS Asia Macro(43KB)最详细宏观,含2篇Research:Top of Mind+Oil/Fed/AI",
+        "Jane Street ETF(3KB)填补ETF flow空白,首次纳入ETF流量信号",
+        "SSA新发覆盖USD/GBP一级.EDC$2bn定价2bp内移需求稳健",
+        "GS今日3封=最强单一来源,弥补前日仅TD转发.Bloomberg counter-narrative需关注",
+        "MS全面宏观.HSBC/Barclays亚洲信用全品种.BMO TIPS单一.JEFFERIES仅Japan/Aus",
+        "mkt recap被GS替代.11封邮件/9券商/4信息维度(宏观/信用/ETF flow/新发)"
+      ],
       "tone": {
         "dir": "mixed",
-        "label": "两向偏弱",
-        "note": ""
+        "label": "PPI双确认·美伊+Houthi升级·USD/Asia信用分化·AI通胀叙事转向",
+        "note": "CPI+PPI双miss→Bull Steepening延续.但:1)美伊+Houthi→$100/桶油风险 2)Warsh AI=通胀叙事转向 3)美元信用risk-on vs亚洲wider→transatlantic分化"
       },
-      "macro": [],
-      "flow": {},
-      "issuers": [],
-      "insights": []
+      "macro": [
+        "PPI第二日下行:headline-0.3%vs0%预期.July hike仅2.75bp.年末~1次full hike.GS:1y1y+7bps",
+        "美伊+胡塞双升级:Trump扩大行动+Houthi关闭Bab El-Mandeb.GS:$100/bbl→CPI+3-4bp",
+        "Warsh重分类AI为通胀威胁(与关税/能源并列).GS desk:'保险加息'假说",
+        "DXY-0.4%.GBP+1.1%(保守财相).NZD+1.1%(hawkish RBNZ).BoC hold 2.25%鸽派",
+        "UST bull-steepening:2y-6bp/10y-4bp/30y-2bp.Swap spreads widening.BE tightening",
+        "US equities:SPX+0.4%/NASDAQ+0.6%.CommSvcs+2.8%.semiconductor承压.PYPL+17.2%",
+        "亚洲信用:IG 1-3bps wider,RM在场外.China TMT全球卖家回归.与US IG risk-on反向",
+        "美元信用:CDX IG-0.78bp/CDX HY+15cts.$24.2bn IG供给吸收.IG ETF偏买"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "宏观宽松·地缘紧张·信用区域分化",
+          "note": "CPI+PPI双miss→dovish.但Houthi+美伊→地缘溢价.USD risk-on vs Asia wider→transatlantic分化.Warsh AI通胀叙事可能改变中期利率定价"
+        },
+        "activeNames": [
+          {
+            "name": "软银",
+            "ticker": "SOFTBK",
+            "tone": "mixed",
+            "activity": "hybrids+1pt squeeze但CDS+4bps背离",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "日本保险/AT1",
+            "ticker": "Japan Insco/AT1",
+            "tone": "sell",
+            "activity": "rate rally中反而走弱,流动性差",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "NAB新发",
+            "ticker": "NAB",
+            "tone": "new_issue",
+            "activity": "AUD 3Y FV+56-57bp,无溢价",
+            "brokers": [
+              "DB"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "MS/BMO/GS",
+            "type": "基本面",
+            "summary": "CPI+PPI双miss→dovish→Bull Steepening.GS:$100/bbl油为上行风险"
+          },
+          {
+            "broker": "GS",
+            "type": "叙事",
+            "summary": "Warsh AI=通胀→叙事转向.若接受将改变科技股估值+降息时点"
+          },
+          {
+            "broker": "MS/GS/SSA",
+            "type": "事件",
+            "summary": "美伊+Houthi双升级→地缘溢价重燃.盘后risk-off"
+          },
+          {
+            "broker": "GS/Jane Street",
+            "type": "跨市场",
+            "summary": "USD风险on vs Asia wider.Transatlantic分化为今日最鲜明特征"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "SOFTBK",
+          "name": "SoftBank Group",
+          "inFocus": false,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "TMT",
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "Short squeeze in hybrids +¾-1pt. '65s up 1pt no sellers",
+          "analysis": "日内反转.cash+1pt/CDS+4bps背离",
+          "excludeReason": "HY市场"
+        },
+        {
+          "ticker": "NAB",
+          "name": "National Australia Bank",
+          "inFocus": false,
+          "region": "Australia",
+          "ccy": "AUD",
+          "assetClass": "IG",
+          "sector": "金融",
+          "newIssue": true,
+          "flow": "new_issue",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "quote": "FV at ASW+56-57bp. No NIC expected",
+          "analysis": "AUD本币市场,对USD IG无传导",
+          "excludeReason": "本币市场(AUD)"
+        }
+      ],
+      "insights": [
+        {
+          "broker": "MS/GS",
+          "topic": "CPI+PPI双miss对dovish定价",
+          "point": "连续两次下行通胀意外为终端利率提供下行选项.但Warsh坚持通胀仍高于目标+GS$100/桶油情境提醒尾部风险.前端定价合理但中期路径依赖后续数据",
+          "quote": "A second consecutive downside US inflation surprise reduced near-term tightening expectations"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "Warsh AI通胀重分类的叙事含义",
+          "point": "GS desk捕捉到Warsh将AI基建与关税/能源危机并列作为通胀威胁.此前AI=deflationary tech.此转变若被接受将改变科技股估值框架+Fed降息时点.GS'保险加息'假说提供新的对冲思路",
+          "quote": "Interesting shift from Warsh with AI infrastructure being reclassified as inflationary threat"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "Equity/Credit beta背离",
+          "point": "GS Research将equity/credit beta背离列为核心宏观主题.亚洲信用在CPI+PPI双rally中持续wider而美股涨.RM summer carry+观望+China TMT global sellers.此背离若持续信用将重新定价",
+          "quote": "Equity/credit beta divergence as a key macro theme"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "$100/bbl情境→Fed路径",
+          "point": "GS测算$100/桶油推高核心CPI 3-4bp,但政策冲击远超数字本身:1)供给冲击叠加AI/关税通胀叙事 2)通胀预期可能unanchor 3)Houthi海峡关闭增加现实概率.这是当前最大tail risk",
+          "quote": "A sustained $100/bbl would boost core inflation 3-4bp. Policy impact could be more significant"
+        },
+        {
+          "broker": "Jane Street",
+          "topic": "ETF流量确认的资产轮动信号",
+          "point": "IG偏买+HY高质量in/低质量out确认美元信用risk-on.EM TW/Korea inflows vs EM ex-China outflows与GS供应链重组叙事一致.欧洲金融inflow值得关注(可能是GBP新政府预期)",
+          "quote": "IG ETFs were skewed to buyers over the day"
+        }
+      ]
     },
     {
       "reportDate": "2026-07-15",
