@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-15 09:51 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-16 07:58 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -705,6 +705,36 @@ window.REPORT_DATA =
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-16",
+      "coverage": {
+        "emails": 8,
+        "brokers": [
+          "BMO",
+          "Barclays",
+          "Deutsche Bank",
+          "Goldman Sachs",
+          "HSBC",
+          "JEFFERIES",
+          "Morgan Stanley",
+          "mkt"
+        ],
+        "lookbackDays": 15
+      },
+      "signals": [],
+      "brokerNotes": [],
+      "dataChecks": [],
+      "qualityLog": [],
+      "tone": {
+        "dir": "mixed",
+        "label": "两向偏弱",
+        "note": ""
+      },
+      "macro": [],
+      "flow": {},
+      "issuers": [],
+      "insights": []
+    },
     {
       "reportDate": "2026-07-15",
       "coverage": {
