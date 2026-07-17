@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-16 15:55 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-17 09:09 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -100,6 +100,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Weaker tone with renewed US-Iran tensions. Oil higher, equities lower."
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "No real reaction.Asia CDS unch"
             }
           ]
         },
@@ -117,6 +123,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Front-end breaks closed positive as conflict escalated"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Front-end at mercy of oil/Iran"
             }
           ]
         },
@@ -139,6 +151,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "FLAG",
               "note": "Trump expanding vs Iran. Brent+1.2%"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Hormuz shipping falling.Brent/WTI lower"
             }
           ]
         },
@@ -150,6 +168,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "FLAG",
               "note": "Houthis closing Bab El-Mandeb. $100/bbl→core CPI+3-4bp"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Tensions elevated.Brent-0.1%.Profit-taking"
             }
           ]
         },
@@ -302,6 +326,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "VIEW",
               "note": "Ex-China~1bp tighter.TMT selling eased.Equity/credit divergence=key theme"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "TMT better bid.BABA long+BIDU belly.EM US selling"
             }
           ]
         },
@@ -331,6 +361,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "COLOR",
               "note": "Mixed tone.Japan firmer.SEA IG 0-2bps tighter"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Firmer across region.Japan constructive.SEA firm"
             }
           ]
         },
@@ -360,6 +396,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "China IG not happy.TMT 1-2bps wider.Global sellers back"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "China IG firm.More buyers duration.TENCENT block"
             }
           ]
         },
@@ -512,6 +554,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "COLOR",
               "note": "SOFTBK hybrids+¾-1pt squeeze.'65s+1pt.No sellers"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Best session all week.Broad buying.S&P stable"
             }
           ]
         },
@@ -541,6 +589,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "CDS+4bps.FM buying protection.Cash still offered"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Risk paused.Buying back.Unch to 1bp tighter"
             }
           ]
         },
@@ -558,6 +612,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Cash 1-2bps wider.RM sidelined"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "+1-3bps.MIZUHO 100M.RM duration.Compression convincing"
             }
           ]
         }
@@ -662,6 +722,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "2nd downside inflation surprise. Bull-steepening: 2y-5.9bp"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "Hawkish Schmid+Logan.Philly Fed 41.4.2y+0.6bp"
             }
           ]
         },
@@ -679,6 +745,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "1y1y+7bps. Swap spreads widening. But $100/bbl oil risk"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "USTs cheapened 1bp.Data resilient.GDP+2.4%"
             }
           ]
         },
@@ -696,6 +768,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "COLOR",
               "note": "Weaker inflation. Dip buyers. FM selling 5s/10s"
+            },
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "BE lower.FM flipped sellers"
             }
           ]
         }
@@ -872,9 +950,709 @@ window.REPORT_DATA =
           ]
         }
       ]
+    },
+    {
+      "id": "thread-kospi-leveraged-crash",
+      "name": "KOSPI杠杆ETF崩跌",
+      "status": "新开·监管冲击",
+      "assetClass": "Equity",
+      "latestChange": "KOSPI-6.4% on leveraged ETF curbs.但ETF抄底流入.HSI+1.33%逆势",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "FLAG",
+              "note": "Kospi-6.4% leveraged-ETF curbs"
+            }
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "points": [
+            {
+              "date": "2026-07-17",
+              "tilt": "neg",
+              "mode": "FLOW",
+              "note": "Korea EWY inflows despite-6.4%.Dip buying"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-07-17",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "KOSPI-6.37%.HSI+1.33%.Rotation"
+            }
+          ]
+        }
+      ],
+      "divergences": [
+        {
+          "date": "2026-07-17",
+          "crux": "Fundamental vs technical dip-buying.监管性质→是否contagion",
+          "camps": [
+            {
+              "label": "系统性risk",
+              "tilt": "neg",
+              "mode": "FLAG",
+              "brokers": [
+                "MS"
+              ],
+              "point": "Leverage curbs→margin calls"
+            },
+            {
+              "label": "买入机会",
+              "tilt": "pos",
+              "mode": "FLOW",
+              "brokers": [
+                "JS"
+              ],
+              "point": "ETF inflows=smart money"
+            }
+          ]
+        }
+      ]
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-17",
+      "coverage": {
+        "emails": 8,
+        "brokers": [
+          "BMO",
+          "Barclays",
+          "Goldman Sachs",
+          "HSBC",
+          "JEFFERIES",
+          "Jane Street",
+          "Morgan Stanley"
+        ],
+        "lookbackDays": 15
+      },
+      "signals": [
+        {
+          "id": "sig-20260717-01",
+          "headline": "Hawkish Fed逆转CPI/PPI rally:Philly Fed 41.4(21y高),Schmid/Logan鹰派,GDP+2.4%.USTs+1bp.仅一天dovish被完全逆转",
+          "topic": "Hawkish Fed Reverses Dovish Rally",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "SHIFT",
+            "ALERT"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs",
+            "BMO"
+          ],
+          "oneLine": "Philly Fed 41.4 vs 12.5est.Claims 208k.GDP+2.4%.Schmid:too hot.Logan:modestly higher.USTs cheapened",
+          "evidence": [
+            "MS:Philly Fed 41.4(C:12.5).Claims 208k.Schmid/Logan hawkish.2y+0.6,10y+0.6",
+            "GS:USTs cheapened 1bp.Retail+0.2%.GDPrevised+2.4%.Philly Fed 2021high",
+            "BMO:Breakevens lower.FM flipped sellers"
+          ],
+          "soWhat": "Philly Fed 3.3x超出预期推翻dovish narrative.Growth resilience→higher for longer.CPI/PPI双miss或为一次性noise",
+          "priorState": "CPI+PPI双miss→Bull Steepening(2y-6bp).July hike仅2.75bp",
+          "quote": "Hawkish Fed commentary and resilient US data pushed yields and the dollar higher",
+          "sourceRefs": [
+            "MS Global Macro",
+            "GS Asia Macro",
+            "BMO TIPS"
+          ],
+          "threadId": "thread-cpi-relief-rally"
+        },
+        {
+          "id": "sig-20260717-02",
+          "headline": "KOSPI暴跌6.4%:韩国杠杆ETF监管收紧→margin calls/Chip连锁暴跌.但ETF流入抄底.HSI+1.33%逆势",
+          "topic": "KOSPI -6.4% Leveraged ETF Crash",
+          "assetClass": "Equity",
+          "direction": "Bearish",
+          "signalType": [
+            "ALERT",
+            "CATALYST"
+          ],
+          "action": "WATCH",
+          "impactScore": 80,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Jane Street",
+            "Barclays"
+          ],
+          "oneLine": "KOSPI-6.4%监管冲击.AI+chip selloff.ETF抄底EWY流入.HSI逆势+1.33%",
+          "evidence": [
+            "MS:Kospi-6.4% on leveraged-ETF curbs.Chip selloff",
+            "JS:Korea EWY inflows despite-6.4%.FXI sole EM outperformer",
+            "Barclays:KOSPI-6.37%.HSI+1.33%.Regional rotation"
+          ],
+          "soWhat": "6.4%=监管/技术性事件.ETF抄底=买入机会信号.HK逆势=rotation.关注chip→信用传导",
+          "priorState": "No prior state available.",
+          "quote": "Regulatory crackdown on leveraged trading deepened global selloff in chip and AI-linked equities",
+          "sourceRefs": [
+            "MS Global Macro",
+            "Jane Street ETF",
+            "Barclays EOD"
+          ],
+          "threadId": "thread-kospi-leveraged-crash"
+        },
+        {
+          "id": "sig-20260717-03",
+          "headline": "日本信用全面恢复:HSBC'本周最佳session'.JEFFERIES+1-3bps.MIZUHO~100M.RM加久期.S&P SoftBank→stable.连续两日强力反转",
+          "topic": "Japan Credit Full Recovery",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "MOMENTUM"
+          ],
+          "action": "TRADE_NOW",
+          "impactScore": 78,
+          "conviction": "High",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays",
+            "Goldman Sachs"
+          ],
+          "oneLine": "Japan IG 1-3bps tighter.MIZUHO~100M.RM duration bid.SOFTBK seniors>hybrids.S&P BB+stable",
+          "evidence": [
+            "HSBC:Most constructive session all week.Broad buying.SOFTBK seniors outper.RM insurance bid",
+            "JEFFERIES:Very active.+1-3bps.MIZUHO~100M.FM profit vs RM duration.Compression convincing",
+            "Barclays:Risk reduction paused.Buying resurfaced.Unch to 1bp tighter",
+            "GS:JGB bear steepened.30y+7.5bp to 3.83%"
+          ],
+          "soWhat": "连续两日反转=Japan IG情绪拐点.RM加久期=最重要信号.但JGB 30y 3.83%=利率风险",
+          "priorState": "SOFTBK hybrids+1pt squeeze但CDS+4bps背离",
+          "quote": "The most constructive session we have seen all week, with healthy and broad-based buying",
+          "sourceRefs": [
+            "HSBC EOD",
+            "JEFFERIES EOD",
+            "Barclays EOD",
+            "GS Asia Macro"
+          ],
+          "threadId": "thread-japan-softbk-underperform"
+        },
+        {
+          "id": "sig-20260717-04",
+          "headline": "中国IG回暖:GS TMT better bid(BABA长端/BIDU belly).Barclays更多buyers甚至要duration.TENCENT 36 block.与前日'global sellers'逆转",
+          "topic": "China IG Firm Buyers Return",
+          "assetClass": "Credit",
+          "direction": "Constructive",
+          "signalType": [
+            "SHIFT",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 65,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs",
+            "Barclays"
+          ],
+          "oneLine": "China IG买家回归.BABA/BIDU bid.TENCENT 36 block.Dim sum one-way",
+          "evidence": [
+            "GS:TMT better bid.BABA long end+BIDU belly.TENCNT lag(new issue digestion)",
+            "Barclays:China IG firm-ish.More buyers even duration.TENCENT 36 block"
+          ],
+          "soWhat": "China IG从昨日global sellers逆转为买家回归.Dim sum+CNH demand为结构性支撑",
+          "priorState": "China IG not happy.TMT 1-2bps wider.Global sellers back",
+          "quote": "More buyers showing up today even for duration",
+          "sourceRefs": [
+            "GS Credit Recap",
+            "Barclays EOD"
+          ],
+          "threadId": "thread-asia-ig-resilience"
+        },
+        {
+          "id": "sig-20260717-05",
+          "headline": "EM IG双速:US撤出back end vs local+ETF买前端.INDON/PHILIP 5/10y bid.Malay long end orphaned.S&P affirms Indonesia stable",
+          "topic": "EM IG US Selling vs Local Front-End Bid",
+          "assetClass": "EM Credit",
+          "direction": "Mixed",
+          "signalType": [
+            "CONTINUATION",
+            "DIVERGENCE"
+          ],
+          "action": "WATCH",
+          "impactScore": 62,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs",
+            "Barclays",
+            "HSBC"
+          ],
+          "oneLine": "US still selling EM IG despite stronger US IG.Local+ETF买前端.Back end orphaned",
+          "evidence": [
+            "GS:Continued US selling EM sovs.Rotated out 10y.Local+ETF arb INDON/PHILIP",
+            "Barclays:Asia Sovs+0.125-0.25p.Net<10y demand.Long end off.INDON CDS buying",
+            "HSBC:SEA IG firm 0-1bp tighter.Front-end buying"
+          ],
+          "soWhat": "双速固化:前端local支撑,back end US撤离.INDON S&P affirmation巩固front-end.但back end orphaned=warning",
+          "priorState": "INDON under crossover pressure.Malay long end weak",
+          "quote": "Despite stronger US IG overnight, continued selling from US account base in EM IG sovs",
+          "sourceRefs": [
+            "GS Credit Recap",
+            "Barclays EOD",
+            "HSBC EOD"
+          ],
+          "threadId": "thread-asia-ig-resilience"
+        },
+        {
+          "id": "sig-20260717-06",
+          "headline": "美股tech selloff第三天:NDX-1.6%.NFLX盘后-8.7%.EW S&P+149bps.Defensive rotation加剧.AI叙事压力测试",
+          "topic": "US Tech Selloff Defensive Rotation",
+          "assetClass": "Equity",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 70,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Jane Street",
+            "Goldman Sachs"
+          ],
+          "oneLine": "NDX-1.6%.NFLX-8.7%.EW+149bps.Cons Staples+2.9%/HC+2.2%.VIX 16.7",
+          "evidence": [
+            "MS:SPX-0.5%.Comm-2.8%/IT-1.8%.Cons Staples+2.9%.VIX+6.8%",
+            "JS:Nasdaq-1.5%.Cons Staples+2.9% outperformer",
+            "GS:NDX-162bps.EW S&P+149bps.370 names gains.NFLX-8.7%"
+          ],
+          "soWhat": "Tech selloff第三天.EW+149bps=最极端rotation.KOSPI+NFLX→AI叙事面临多重压力",
+          "priorState": "US equities rotation out of momentum.EW+149bps",
+          "quote": "US equities end Thursday in the red, as rotation out of momentum continued with strong breadth",
+          "sourceRefs": [
+            "MS Global Macro",
+            "Jane Street ETF",
+            "GS Credit Recap"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260717-07",
+          "headline": "CINDBK perps强势首发:USD 5%→straightly tightened 50c(11bps).CNH+1pt.RM/银行自营参与.中国银行AT1需求强劲",
+          "topic": "CINDBK Perps Strong Debut",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "NEW",
+            "CONFIRMED"
+          ],
+          "action": "WATCH",
+          "impactScore": 48,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "CINDBK USD perp 5%→+50c(11bps).CNH+1pt.RM参与.AT1s better bid",
+          "evidence": [
+            "GS:CINDBK USD perp came at 5% straight tightened 50c(11bps).RM/bank prop book.CNH+1pt.AT1s fare better"
+          ],
+          "soWhat": "中国银行AT1需求强劲.RM参与=risk appetite.为后续银行资本工具提供positive read-through",
+          "priorState": "No prior state available.",
+          "quote": "USD perp came at 5% and straightly tightened 50c (11bps) in secondary",
+          "sourceRefs": [
+            "GS Credit Recap"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260717-08",
+          "headline": "UK新财相催化GBP-0.5%+Gilts+3bp:Mahmood(保守派)影响BoE定价.GDP+0.1%超预期→Q2+0.4%.GBP获growth floor",
+          "topic": "UK Political Fiscal Repricing",
+          "assetClass": "Macro",
+          "direction": "Mixed",
+          "signalType": [
+            "CATALYST",
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 55,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "oneLine": "GBP-0.5% worst G10.Mahmood=保守财相.Gilts+3bp 4.966%.GDP+0.1%→Q2+0.4%",
+          "evidence": [
+            "MS:GBP weakest.Mahmood UK Chancellor fiscally conservative.Next key 1.36 GBPUSD",
+            "GS:Gilts+3bp 4.966%.GDP+0.1% above.GIR Q2 GDP+0.4%"
+          ],
+          "soWhat": "财政保守→BoE space但GDP超预期→hold longer.GBP获growth floor",
+          "priorState": "GBP+1.1% on UK political optimism",
+          "quote": "Mahmood is front-runner to become UK Chancellor, seen as more fiscally conservative",
+          "sourceRefs": [
+            "MS Global Macro",
+            "GS Asia Macro"
+          ],
+          "threadId": null
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "emails": 2,
+          "sourceRefs": [
+            "GS Asia Macro",
+            "GS Credit Recap"
+          ],
+          "stance": "Macro:Hawkish shift—Philly Fed 41.4+Schmid/Logan+GDP+2.4%.USTs cheapened.Credit:China TMT better bid.CINDBK perps+50c.EM US selling vs local"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "emails": 1,
+          "sourceRefs": [
+            "MS Global Macro"
+          ],
+          "stance": "全面宏观.Hawkish Fed+Philly Fed+claims.KOSPI-6.4%.GBP-0.5%.DXY+0.2%.10y 4.55%.Tech rotation"
+        },
+        {
+          "broker": "Jane Street",
+          "emails": 1,
+          "sourceRefs": [
+            "Jane Street ETF"
+          ],
+          "stance": "FI:IG choppy balanced.HY tilted buyers.EM:Korea EWY inflows.DM:Europe/UK/HK outperformed"
+        },
+        {
+          "broker": "HSBC",
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC EOD"
+          ],
+          "stance": "Most constructive Japan session.SOFTBK broad buying.S&P BB+ stable.SEA IG firm"
+        },
+        {
+          "broker": "Barclays",
+          "emails": 1,
+          "sourceRefs": [
+            "Barclays EOD"
+          ],
+          "stance": "China IG firm.TENCENT block.Asia HY+0.125/0.25pt.Asia Sovs higher.INDON CDS buying"
+        },
+        {
+          "broker": "JEFFERIES",
+          "emails": 1,
+          "sourceRefs": [
+            "JEF EOD"
+          ],
+          "stance": "Japan/Aus IG active.+1-3bps.MIZUHO~100M.FM profit vs RM duration"
+        },
+        {
+          "broker": "BMO",
+          "emails": 1,
+          "sourceRefs": [
+            "BMO TIPS"
+          ],
+          "stance": "BE lower.FM flipped sellers.Oil/Iran driving front end.Selling afternoon"
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "chk-1",
+          "type": "观点分歧",
+          "subject": "CPI/PPI dovish已被Hawkish数据逆转",
+          "status": "Monitor",
+          "detail": "MS/GS/BMO一致.仅一天即逆转"
+        },
+        {
+          "id": "chk-2",
+          "type": "数据一致",
+          "subject": "Japan信用全面恢复",
+          "status": "Confirmed",
+          "detail": "HSBC/JEF/Barclays一致:best session this week"
+        },
+        {
+          "id": "chk-3",
+          "type": "数据一致",
+          "subject": "KOSPI-6.4%监管冲击",
+          "status": "Confirmed",
+          "detail": "MS/JS/Barclays均提及.JS抄底流入"
+        },
+        {
+          "id": "chk-4",
+          "type": "数据一致",
+          "subject": "美股tech rotation第三天",
+          "status": "Confirmed",
+          "detail": "NDX-1.6%.EW+149bps.Defensive outsized"
+        },
+        {
+          "id": "chk-5",
+          "type": "数据一致",
+          "subject": "China IG回暖",
+          "status": "Confirmed",
+          "detail": "GS+Barclays一致:buyers return duration bid"
+        }
+      ],
+      "qualityLog": [
+        "GS Credit Recap+Asia Macro为今日最强来源.覆盖EM/China/Japan/UST全品种",
+        "MS全貌宏观最佳.UK政治+KOSPI分析为独有信号",
+        "Jane Street ETF补充Korea dip-buying flow",
+        "7券商/8封邮件/3维度(宏观/信用/ETF flow).新增:KOSPI crash+S&P SoftBank upgrade+UK political"
+      ],
+      "tone": {
+        "dir": "mixed",
+        "label": "Hawkish逆转dovish·Japan恢复·KOSPI暴跌·中国回暖",
+        "note": "Growth resilience推翻前日通胀下行.Japan信用强力恢复+中国回暖为亮点.KOSPI不具contagion"
+      },
+      "macro": [
+        "Hawkish Fed逆转CPI/PPI:Philly Fed 41.4(3.3x beat).Claims 208k.Schmid/Logan鹰派.GDP+2.4%.USTs+1bp",
+        "KOSPI-6.4%监管冲击:leveraged ETF curbs→margin calls→chip连锁.HSI+1.33%逆势.ETF抄底盘",
+        "美伊/Houthi:地缘紧张但无新恶化.Hormuz航运下滑.Brent/WTI lower.Asia CDS无反应",
+        "UK政治:Mahmood(保守)为财相→GBP-0.5%.Gilts+3bp 4.966%.GDP+0.1%→Q2+0.4%",
+        "美股rotation第三天:NDX-1.6%.NFLX-8.7%盘后.EW S&P+149bps.Defensive连续outperform",
+        "Japan信用全面恢复:spreads+1-3bps.RM加久期.S&P SoftBank BB+ stable.JGB 30y+7.5bp 3.83%"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "Growth resilience vs Tech selloff",
+          "note": "Hawkish Fed→higher for longer但Japan+China回暖.风险分化"
+        },
+        "activeNames": [
+          {
+            "name": "软银",
+            "ticker": "SOFTBK",
+            "tone": "buy",
+            "activity": "连续两日recovery.S&P BB+ stable",
+            "brokers": [
+              "HSBC",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "MIZUHO",
+            "ticker": "MIZUHO",
+            "tone": "buy",
+            "activity": "~100M成交.FM获利vs RM久期",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "腾讯",
+            "ticker": "TENCNT",
+            "tone": "mixed",
+            "activity": "36年block但lag BABA/BIDU.新发消化",
+            "brokers": [
+              "GS",
+              "Barclays"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "MS/GS/BMO",
+            "type": "基本面",
+            "summary": "Philly Fed+Claims+GDP→growth resilience"
+          },
+          {
+            "broker": "HSBC/JEF",
+            "type": "仓位",
+            "summary": "Japan RM加久期→short covering+structural bid"
+          },
+          {
+            "broker": "MS/JS",
+            "type": "技术性",
+            "summary": "KOSPI-6.4%杠杆ETF监管→margin call cascade"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "SOFTBK",
+          "name": "SoftBank Group",
+          "inFocus": false,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "TMT",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "excludeReason": "HY市场",
+          "quote": "Seniors outper hybrids.S&P BB+ stable",
+          "analysis": "两日反转→全面恢复.RM bid.S&P upgrade催化"
+        },
+        {
+          "ticker": "TENCNT",
+          "name": "Tencent Holdings",
+          "inFocus": true,
+          "priority": 1,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "TMT",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "twoway",
+          "brokers": [
+            "GS",
+            "Barclays"
+          ],
+          "quote": "TENCNT still lagging given recent new issues",
+          "analysis": "36年block成交但lag BABA/BIDU.新发供给消化中"
+        },
+        {
+          "ticker": "BABA",
+          "name": "Alibaba Group",
+          "inFocus": true,
+          "priority": 1,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "TMT",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "quote": "BABA long end lifted",
+          "analysis": "长端买家回归.TMT板块回暖代表"
+        },
+        {
+          "ticker": "CINDBK",
+          "name": "Cinda Bank",
+          "inFocus": true,
+          "priority": 2,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "金融",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "quote": "USD perp tightened 50c(11bps) with RM/bank prop book",
+          "analysis": "perps首发强势.RM需求确认risk appetite回暖"
+        },
+        {
+          "ticker": "NACF",
+          "name": "NACF Korea",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Korea",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "金融",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "twoway",
+          "brokers": [
+            "GS",
+            "HSBC"
+          ],
+          "quote": "3.5yr FRN+60/5yr Fxd+42 wrapped around reoffer",
+          "analysis": "新发wrapped reoffer稳定.KOSPI暴跌未影响一级"
+        },
+        {
+          "ticker": "TATSON",
+          "name": "Tata Sons",
+          "inFocus": true,
+          "priority": 2,
+          "region": "India",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "工业",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "GS",
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "Better buying at break.Retail accounts",
+          "analysis": "印度IG首秀稳定.散户+FMT top-up"
+        },
+        {
+          "ticker": "INDYIJ",
+          "name": "Indika Energy",
+          "inFocus": false,
+          "region": "Indonesia",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "能源",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Barclays"
+          ],
+          "excludeReason": "HY市场",
+          "quote": "Potential Kideco sale.Mixed read-through",
+          "analysis": "Kideco资产出售传闻.active day"
+        },
+        {
+          "ticker": "VEDLN",
+          "name": "Vedanta Resources",
+          "inFocus": false,
+          "region": "India",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "能源",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Barclays"
+          ],
+          "excludeReason": "HY市场",
+          "quote": "Redeployment flows from consent/tender payments",
+          "analysis": "consent/tender payment redeployment"
+        }
+      ],
+      "insights": [
+        {
+          "broker": "MS/GS",
+          "topic": "Hawkish Fed→CPI/PPI rally仅一天",
+          "point": "Philly Fed 3.3x beat的magnitude极罕见.Growth resilience数据推翻通胀下行预期.若下周data继续→higher for longer重新定价完全.关键:下一个inflation print",
+          "quote": "Hawkish Fed commentary and resilient US data pushed yields and dollar higher"
+        },
+        {
+          "broker": "HSBC/JEF/Barclays",
+          "topic": "Japan信用情绪拐点",
+          "point": "从周一暴跌→周三squeeze→周四全面恢复.S&P SoftBank upgrade催化但RM久期加仓是结构信号.若下周持续→Japan IG outperformance可期",
+          "quote": "The most constructive session we have seen all week"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "EM IG双速市场的风险含义",
+          "point": "US account持续撤离EM back end=美元信用risk-on在EM未传导.Local+ETF防守前端但若UST rally不持续→前端需求也脆弱",
+          "quote": "Back end feels a bit more orphaned"
+        },
+        {
+          "broker": "MS/JS",
+          "topic": "AI叙事面临多重压力测试",
+          "point": "KOSPI-6.4%(监管)+NFLX-8.7%(EPS)+TSM-2.3%(capex).AI从productivity miracle→inflation threat→regulatory risk.若此叙事无法recover→影响tech估值+利率定价"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "CINDBK perps=中国银行risk appetite试金石",
+          "point": "5% coupon+50c tightening→需求远超供给.RM参与而非仅FM/pb短线→信号质量更高.若此趋势持续→中国银行AT1整体受益"
+        }
+      ]
+    },
     {
       "reportDate": "2026-07-16",
       "coverage": {
