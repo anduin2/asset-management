@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-20 10:14 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-20 17:43 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -95,6 +95,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "Gulf tensions + Strait of Hormuz closure pushed oil/Treasury yields higher. No panic selling in China HY."
+            },
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "FLAG",
+              "note": "US-Iran attacks escalated over weekend.Brent>$90.HKD IRS+3-6bps bear flatten"
             }
           ]
         },
@@ -401,6 +407,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "COLOR",
               "note": "Firmer across region.Japan constructive.SEA firm"
+            },
+            {
+              "date": "2026-07-20",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "CNH IG~5bp tighter WoW.10Y benchmarks领涨.一级骤停→二级被机构全面追逐"
             }
           ]
         },
@@ -663,6 +675,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "COLOR",
               "note": "无日本信用更新.JGB twist-steepened.GPIF comments→futures rally"
+            },
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "HSBC午间:Japan再次走弱但flow比周五balanced更多.RM buy.ETF two-way.Not panic"
             }
           ]
         }
@@ -1132,14 +1150,15 @@ window.REPORT_DATA =
     {
       "reportDate": "2026-07-20",
       "coverage": {
-        "emails": 4,
+        "emails": 5,
         "brokers": [
           "Goldman Sachs",
+          "HSBC",
           "Jane Street",
           "Deutsche Bank"
         ],
         "lookbackDays": 15,
-        "sourceDateNote": "周一报告，4封邮件实际讨论上周五07-17交易 | GS宏观:07-17收盘(UST bear flatten+伊朗升级+油价WTD+15.9%+CPI/PPI miss被fade) | GS信用:07-13~07-17周度回顾(标题含20 JULY但内容为上周主题) | JS ETF:07-17周五行情(rotation day4,Nasdaq-1.4%,Energy+1.2%) | DB Aussie:07-13~07-17周度回顾(标题明确Last Week in Credit)"
+        "sourceDateNote": "5封邮件：HSBC午间★唯一当日07-20周一实时交易，其余4封为上周回顾 | GS宏观:07-17收盘 | GS信用:07-13~07-17周度 | JS ETF:07-17周五 | DB:07-13~07-17周度"
       },
       "signals": [
         {
@@ -1158,15 +1177,17 @@ window.REPORT_DATA =
           "brokers": [
             "Goldman Sachs",
             "Jane Street",
-            "Deutsche Bank"
+            "Deutsche Bank",
+            "HSBC"
           ],
           "oneLine": "Iran abandons interim deal→WTI $82.25(+4.2%).Oil WTD+15.9%.Energy sole outper.EM HY selling",
           "evidence": [
             "GS Macro:Market torn between equity risk-off and Iran escalation.Oil caught a bid",
             "GS Credit:Restart of US/Iran conflict→Tehran abandoned interim peace deal.Oil+15.9% WTD→RM selling EM HY",
-            "JS:Energy notable outperformer+1.2%.WTI crude rose 4.2% to $82.25/barrel"
+            "JS:Energy notable outperformer+1.2%.WTI crude rose 4.2% to $82.25/barrel",
+            "HSBC午间:US-Iran attacks escalated over weekend.Brent>$90"
           ],
-          "soWhat": "伊朗放弃临时协议=冲突从'对峙'升级为'重启'.WTI突破$82+周涨15.9%→通胀预期+能源信用双重压力",
+          "soWhat": "伊朗放弃临时协议→周末进一步升级→Brent从$82.25→$90+.WTI/Brent双双突破.油价上涨且冲突扩大化→通胀+风险双压",
           "quote": "Restart of the conflict between US/Iran over SoH disagreements leading to Tehran's abandonment of the interim peace deal",
           "sourceRefs": [
             "GS Asia Macro",
@@ -1256,7 +1277,7 @@ window.REPORT_DATA =
             "GS Credit:US selling pressure on back-end.10yr 3-6bps wider.long-end 8-12bps wider",
             "GS Credit:Philippines underperformed.5-10bps wider belly.8-10bps wider long-end"
           ],
-          "soWhat": "Back-end orphaned状况恶化.8-12bps=significant.INDON S&P affirm未能逆转→EM情绪由geopolitics+oil主导",
+          "soWhat": "EM IG back-end孤儿化 vs CNH IG bullish→同亚洲不同命运.CNH供给稀缺+需求强劲=结构性bullish",
           "quote": "The move proved to be short-lived as EM sentiment deteriorated on the back of worsening geopolitics",
           "sourceRefs": [
             "GS Credit Recap"
@@ -1336,7 +1357,8 @@ window.REPORT_DATA =
           "evidence": [
             "DB:AUD credit quiet.Spreads flat despite geopolitical escalation,rates vol and mixed offshore sentiment",
             "DB:Compression theme.Higher beta BBB bonds and hybrids outperforming",
-            "DB:NAB AUD2.5bn 3Y senior+57.Traded tighter on break.UELAU AUD400m 5Y no concession"
+            "DB:NAB AUD2.5bn 3Y senior+57.Traded tighter on break.UELAU AUD400m 5Y no concession",
+            "HSBC午间:AUD spreads stable/slightly wider.Offshore selling.FRN profit-taking"
           ],
           "soWhat": "AUD信用展现结构性韧性.spreads flat vs 宏观vol→'decoupling'信号.Compression=risk appetite仍在但偏好higher carry",
           "quote": "Australian credit markets were quiet over the week, with spreads remaining flat despite geopolitical escalation",
@@ -1370,6 +1392,117 @@ window.REPORT_DATA =
             "GS Asia Macro"
           ],
           "threadId": null
+        },
+        {
+          "id": "sig-20260720-09",
+          "headline": "伊朗周末升级→Brent>$90(+$8 from上周五$82.25).WTI/Brent双双突破关口.HKD IRS bear flatten+3-6bps.日本假期无UST→亚太信用承压",
+          "topic": "Iran Escalation Weekend Update",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "ESCALATION",
+            "ALERT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 88,
+          "conviction": "High",
+          "brokers": [
+            "HSBC",
+            "Goldman Sachs"
+          ],
+          "oneLine": "Iran weekend escalation→Brent>$90.WTI/Brent gap blowout.HKD IRS bear flatten+3-6bps",
+          "evidence": [
+            "HSBC午间:US-Iran attacks escalated over weekend.Brent rising above $90 first time since mid-June",
+            "HSBC午间:HKD IRS up 3-6bps bear-flattening tracking UST futures.Japan out on holiday(no UST)",
+            "GS Credit上周五:Restart of US/Iran conflict.WTI+4.2%→$82.25"
+          ],
+          "soWhat": "周末伊朗进一步升级→Brent从$82→$90+.亚太开盘普遍承压.Japan假期=UST无定价→亚太独立risk-off",
+          "sourceRefs": [
+            "HSBC Midday Commentary",
+            "GS Credit Recap"
+          ],
+          "threadId": "thread-iran-escalation"
+        },
+        {
+          "id": "sig-20260720-10",
+          "headline": "CNH IG延续bullish:IG spreads再紧~5bp WoW→10Y IG benchmarks领涨.二级被机构全面追逐.一级骤停(7月初HK FIC/Bond Connect Summit新措施后)→供给稀缺推升二级",
+          "topic": "CNH IG Bullish Extension",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "MOMENTUM",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 65,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC"
+          ],
+          "oneLine": "CNH IG~5bp tighter WoW.10Y IG benchmarks领涨.一级骤停→二级被机构全面追逐",
+          "evidence": [
+            "HSBC午间:Bullish tone in CNH FI extends further.IG spreads WoW another~5bp tighter led by 10Y IG benchmarks",
+            "HSBC午间:Primary not picking up since new measures from HK FIC/Bond Connect Summit early July",
+            "HSBC午间:Quality corporates/financials well-chased by onshore/offshore institutions.Interbank bidding aggressively"
+          ],
+          "soWhat": "CNH IG供给稀缺+需求强劲=结构性bullish.与EM USD IG恶化形成鲜明对比.关注HKEX 5-yr CGB future(8月3日)+CFETS电子平台",
+          "sourceRefs": [
+            "HSBC Midday Commentary"
+          ],
+          "threadId": "thread-asia-ig-resilience"
+        },
+        {
+          "id": "sig-20260720-11",
+          "headline": "Japan信用再次走弱:IG+1-2bps,Insurance-1/8pt,HY-1/8~3/4pt.但flow balanced→RM买+ETF双向+fast money卖新股.非恐慌",
+          "topic": "Japan Credit Weaker But Balanced",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 50,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC"
+          ],
+          "oneLine": "Japan IG+1-2bps.HY-1/8~3/4pt but balanced flows→not panic.RM buying.ETF two-way",
+          "evidence": [
+            "HSBC午间:Japan IG+1-2bps.Insurance-1/8pt.HY-1/8~3/4pt.Weaker but flows more balanced than Friday",
+            "HSBC午间:RM buying.ETFs two-way.Fast money selling recent new issues.Not panic",
+            "HSBC午间:In more meaningful sizes/flows,net lifted out of risk this morning"
+          ],
+          "soWhat": "Japan信用持续走弱但周五panic已消退.结构性RM+ETF需求提供支撑.fast money新股sell=正常换手",
+          "sourceRefs": [
+            "HSBC Midday Commentary"
+          ],
+          "threadId": "thread-japan-softbk-underperform"
+        },
+        {
+          "id": "sig-20260720-12",
+          "headline": "China HY benchmark property names GRNCH/LNGFOR吸引RM+onshore买盘.市场broadly-0~0.125pts.无UST→安静开盘.机构持续配置",
+          "topic": "China HY Property Bid",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 45,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC"
+          ],
+          "oneLine": "China HY quiet.GRNCH/LNGFOR RM+onshore buying.-0~0.125pts.No UST=quiet start",
+          "evidence": [
+            "HSBC午间:China HY relatively quiet.Market broadly 0-0.125pts lower.Benchmark property names GRNCH/LNGFOR continue to attract RM and onshore buying",
+            "HSBC午间:Limited guidance without UST"
+          ],
+          "soWhat": "China HY无恐慌.RM+onshore持续买品牌地产=政策预期+估值支撑.与EM HY反差较大",
+          "sourceRefs": [
+            "HSBC Midday Commentary"
+          ],
+          "threadId": null
         }
       ],
       "brokerNotes": [
@@ -1397,6 +1530,14 @@ window.REPORT_DATA =
             "DB Aussie Credit"
           ],
           "stance": "【AUD信用】Spreads flat→宏观vol下展现结构性韧性.Compression theme持续→higher beta BBB bonds+hybrids outperforming(risk appetite仍在但偏好carry).【一级】NAB AUD2.5bn 3Y senior+57(tight concession,break+tighter=需求健康).UELAU AUD400m 5Y no concession.【二级Flow】5Y AUD corporates卖出 vs 10Y+low-beta买入=curve陡峭化bid.AUD financial seniors stable.T2s unch/+1bp.【USD对比】USD corporates marginally wider WoW→AUD vs USD decoupling.USD financials heavier mid-week(T2s+1-2bp)→week-end firmed.【Corporate事件】Fonterra milk price↓→credit negative.Coles 放弃Greencross→credit positive(deleverage).Ampol closed AUD400m hybrids KKR support.Auckland Airport traffic-4% YoY"
+        },
+        {
+          "broker": "HSBC",
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC Asia Credit Midday Commentary"
+          ],
+          "stance": "【宏观】伊朗周末继续升级→Brent>$90(6月中以来首次).HKD IRS bear flatten+3-6bps.Japan假期无UST→亚太独立risk-off.【China HY】相对quiet.基准地产名GRNCH/LNGFOR吸引RM+onshore买入.-0~0.125pts.【China HKD】bullish momentum持续.front-end/belly well-bid.IG spreads unchanged/slightly tighter.【China CNH】Bullish延续.IG spreads再紧~5bp WoW led by 10Y IG benchmarks.一级骤停→二级被机构全面追逐.市场关注HKEX 5-yr CGB future(8月3日)+CFETS电子平台.【Japan】IG+1-2bps.Insurance-1/8pt.HY-1/8~3/4pt.Flow balanced:RM买+ETF双向+fast money卖出新股.非恐慌.【SEA IG/Ex-China HY】+0-2bps.ETF+RM better buying.HDFC 27/29/Perp.SBI 30.RPVIN 28.INCLEN 27+GENTMK 27 hit.Adani front-end+Thai T2s demand.【SGD】PB/retail constructive→redeploying from UOB AT1/SINTEC perp.Cash 5-15c lower on higher rates.【AUD】Offshore selling.FRN 3-4yr profit-taking.Spreads stable/slightly wider.【SG IG】Very quiet.Japan holiday no UST.Spreads unch.【新股】Hanwahaero 3Y IPT CT3+115.Linyi City Construction 3Y IPT 5.7%"
         }
       ],
       "dataChecks": [
@@ -1427,18 +1568,33 @@ window.REPORT_DATA =
           "subject": "AUD信用vs EM IG韧性分化",
           "status": "Monitor",
           "detail": "DB:AUD spreads flat.GS:EM IG long-end 8-12bps wider.区域性韧性差异显著"
+        },
+        {
+          "id": "chk5",
+          "type": "数据一致",
+          "subject": "伊朗周末升级→Brent>$90",
+          "status": "Confirmed",
+          "detail": "HSBC确认Weekend escalation.Brent>$90(+$8 from周五).HKD IRS bear flatten+3-6bps"
+        },
+        {
+          "id": "chk6",
+          "type": "观点分歧",
+          "subject": "CNH IG bullish vs EM IG恶化",
+          "status": "Monitor",
+          "detail": "HSBC:CNH IG~5bp tighter WoW vs GS:EM IG long-end 8-12bps wider.同亚洲不同命运.需关注驱动差异"
         }
       ],
       "qualityLog": [
         "GS Macro+Credit为最强来源.覆盖UST/Bunds/Gilts/JGBs+EM/Asia信用+EM HY",
         "Jane Street ETF补充美股rotation granular view.ETF flow信号质量高",
         "Deutsche Bank提供AUD信用独有视角",
-        "3券商/4封邮件.覆盖:宏观/利率/信用/股票/ETF flow.AUD为今日独有区域"
+        "4券商/5封邮件.覆盖:宏观/利率/信用/股票/ETF flow.AUD为今日独有区域",
+        "HSBC Midday唯一当日实时来源→填补周一实时交易gap.Brent>$90=关键升级信号.CNH IG bullish=区域亮点"
       ],
       "tone": {
         "dir": "weak",
-        "label": "伊朗冲突升级·油价飙升·Hawkish Fed确认·美股rotation第四天·EM IG恶化",
-        "note": "伊朗放弃临时协议=geopolitics从对峙升级为重启.WTI+15.9%改变市场逻辑.CPI/PPI rally已被Warsh确认fade.AUD信用为罕见亮点"
+        "label": "伊朗周末升级→Brent>$90·CNH IG bullish~5bp tighter·EM IG恶化·Japan信用weak但balanced",
+        "note": "伊朗周末进一步升级→Brent>$90(+$8 from周五).亚太早盘risk-off但非panic.Japan balanced=分歧.CNH IG bullish=亚洲亮点(与EM IG恶化形成鲜明对比)"
       },
       "macro": [
         "伊朗放弃SoH临时和平协议→WTI+4.2%至$82.25.周涨+15.9%.Energy rotation→oil-driven risk-off",
@@ -1446,7 +1602,9 @@ window.REPORT_DATA =
         "美股rotation第四天:Nasdaq-1.4%.Energy+1.2% sole outper.ETF strong inflows",
         "JGB twist-steepening→Takaichi GPIF催化.30y JGB 3.83%",
         "UK新首相Burnham就任(第7位).Gilts energy-sensitive.BoE MPC ahead",
-        "Bunds/Gilts:Energy price risk定价.10y Bund→3% year-end.1y1y+30bp since Jul 2"
+        "Bunds/Gilts:Energy price risk定价.10y Bund→3% year-end.1y1y+30bp since Jul 2",
+        "伊朗周末升级→Brent>$90(6月中以来首次).HKD IRS bear flatten+3-6bps",
+        "Japan Marine Day holiday→无UST→亚太独立定价"
       ],
       "flow": {
         "sentiment": {
@@ -1671,6 +1829,105 @@ window.REPORT_DATA =
             "brokers": [
               "Deutsche Bank"
             ]
+          },
+          {
+            "tone": "buy",
+            "name": "Greenland Holdings",
+            "ticker": "GRNCH",
+            "activity": "China HY benchmark.持续吸引RM+onshore买入.相对抗跌",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "Longfor Group",
+            "ticker": "LNGFOR",
+            "activity": "China HY benchmark.持续吸引RM+onshore买入.相对抗跌",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "HDFC Bank",
+            "ticker": "HDFC",
+            "activity": "SEA IG demand.27/29/Perp lifted.ETF+RM buying",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "SBI",
+            "ticker": "SBI",
+            "activity": "SEA IG demand.30 benchmark lifted",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "RPVIN",
+            "ticker": "RPVIN",
+            "activity": "Ex-China HY front-end demand.28 lifted",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "INCLEN",
+            "ticker": "INCLEN",
+            "activity": "Ex-China HY front-end hit.27 sold",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "GENTMK",
+            "ticker": "GENTMK",
+            "activity": "Ex-China HY front-end hit.27 sold",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "Adani",
+            "ticker": "ADANI",
+            "activity": "Front-end demand.Thai T2s also bid",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Japan HY",
+            "ticker": "JP-HY",
+            "activity": "IG+1-2bps.Insurance-1/8.HY-1/8~3/4pt.Fast money selling new issues",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "new_issue",
+            "name": "Hanwha Aerospace",
+            "ticker": "HANWHA",
+            "activity": "3Y IPT CT3+115.Mandate announced",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "tone": "new_issue",
+            "name": "Linyi City Construction",
+            "ticker": "LINYI",
+            "activity": "3Y IPT 5.7%.China LGFV",
+            "brokers": [
+              "HSBC"
+            ]
           }
         ],
         "drivers": [
@@ -1713,6 +1970,26 @@ window.REPORT_DATA =
             "broker": "Deutsche Bank",
             "type": "一级市场",
             "summary": "NAB AUD2.5bn+57需求健康.UELAU no concession→confidence signal.USD financials mid-week heavier→week-end firmed"
+          },
+          {
+            "broker": "HSBC",
+            "type": "地缘升级",
+            "summary": "伊朗周末继续升级→Brent>$90(+$8 from周五).HKD IRS bear flatten+3-6bps.Japan假期无UST→亚太独立risk-off"
+          },
+          {
+            "broker": "HSBC",
+            "type": "区域分化",
+            "summary": "CNH IG~5bp tighter WoW(10Y benchmarks领涨) vs EM IG back-end orphaned 8-12bps→亚洲内部分化加剧"
+          },
+          {
+            "broker": "HSBC",
+            "type": "供给稀缺",
+            "summary": "CNH一级骤停(7月初HK FIC/Bond Connect Summit新措施后)→二级被全面追逐.Aug 3 HKEX 5-yr CGB future+CFETS电子平台待推出"
+          },
+          {
+            "broker": "HSBC",
+            "type": "流动结构",
+            "summary": "Japan:RM buying+ETF two-way+fast money selling新股=balanced.China HY:RM+onshore持续buy benchmark.Property bid≠全面risk-on"
           }
         ]
       },
@@ -1997,6 +2274,137 @@ window.REPORT_DATA =
             "Deutsche Bank"
           ],
           "analysis": "June pax-4% YoY→运营偏弱.旅游恢复速度低于预期.基础设施信用稳定但流量风险增加"
+        },
+        {
+          "name": "Greenland Holdings",
+          "ticker": "GRNCH",
+          "assetClass": "China_HY",
+          "region": "China",
+          "ccy": "USD",
+          "sector": "Property",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": false,
+          "excludeReason": "China HY",
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "China HY benchmark.持续吸引RM+onshore买入.Relative value bid"
+        },
+        {
+          "name": "Longfor Group",
+          "ticker": "LNGFOR",
+          "assetClass": "China_HY",
+          "region": "China",
+          "ccy": "USD",
+          "sector": "Property",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": false,
+          "excludeReason": "China HY",
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "China HY benchmark.持续吸引RM+onshore买入.Relative value bid"
+        },
+        {
+          "name": "HDFC Bank",
+          "ticker": "HDFC",
+          "assetClass": "EM_Financial",
+          "region": "SouthAsia",
+          "ccy": "USD",
+          "sector": "Banking",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": true,
+          "priority": 4,
+          "newIssue": false,
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "SEA IG demand.27/29/Perp lifted by ETFs+RMs.Indian top-tier financial"
+        },
+        {
+          "name": "SBI",
+          "ticker": "SBI",
+          "assetClass": "EM_Financial",
+          "region": "SouthAsia",
+          "ccy": "USD",
+          "sector": "Banking",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": true,
+          "priority": 5,
+          "newIssue": false,
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "SEA IG demand.30 benchmark lifted.Investor confidence in Indian public banks"
+        },
+        {
+          "name": "RPVIN",
+          "ticker": "RPVIN",
+          "assetClass": "EM_HY",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Energy",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": false,
+          "excludeReason": "HY",
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "Ex-China HY front-end 28 lifted.Oil price=double-edged for energy credit"
+        },
+        {
+          "name": "INCLEN",
+          "ticker": "INCLEN",
+          "assetClass": "EM_HY",
+          "region": "SouthAsia",
+          "ccy": "USD",
+          "sector": "Energy",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "HY",
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "Ex-China HY front-end 27 hit.具体原因不明"
+        },
+        {
+          "name": "GENTMK",
+          "ticker": "GENTMK",
+          "assetClass": "EM_HY",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Conglomerate",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "HY",
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "Ex-China HY front-end 27 hit.马来西亚企业"
+        },
+        {
+          "name": "Hanwha Aerospace",
+          "ticker": "HANWHA",
+          "assetClass": "Asia_IG",
+          "region": "Korea",
+          "ccy": "USD",
+          "sector": "Defense",
+          "sovereign": false,
+          "flow": "new_issue",
+          "inFocus": false,
+          "newIssue": true,
+          "excludeReason": "新股IPO",
+          "brokers": [
+            "HSBC"
+          ],
+          "analysis": "3Y IPT CT3+115.韩国军工.一级试水"
         }
       ],
       "insights": [
@@ -2035,6 +2443,24 @@ window.REPORT_DATA =
           "topic": "AUD信用结构性能",
           "point": "AUD spreads flat despite geopolitical escalation+rates vol→区域性decoupling.Compression:BBB+hybrids outperform→risk appetite仍在但偏好carry",
           "quote": "Australian credit markets were quiet over the week, with spreads remaining flat despite geopolitical escalation"
+        },
+        {
+          "broker": "HSBC",
+          "topic": "伊朗周末升级→Brent>$90",
+          "point": "周五WTI$82.25→周末攻击升级→周一Brent>$90(6月中以来首次).HKD IRS bear flatten+3-6bps tracking UST futures.Japan假期无UST→亚太独立定价risk-off",
+          "quote": "US-Iran attacks escalated over weekend with Brent rising above $90 first time since mid-June"
+        },
+        {
+          "broker": "HSBC",
+          "topic": "CNH IG:亚洲信用最亮眼区域",
+          "point": "CNH IG spreads再紧~5bp WoW led by 10Y IG benchmarks.一级骤停(7月初HK FIC/Bond Connect Summit新措施后)→二级被机构全面追逐.onshore+offshore合力.与EM IG恶化形成极端对比",
+          "quote": "Bullish tone in CNH FI extends further, IG spreads overall WoW another ~5bp tighter led by 10Y IG benchmarks"
+        },
+        {
+          "broker": "HSBC",
+          "topic": "Japan信用:走弱但非恐慌",
+          "point": "IG+1-2bps.Insurance-1/8pt.HY-1/8~3/4pt.周五曾panic→周一flow balanced.RM buying+ETF two-way+fast money selling新股→结构性health而非systemic risk",
+          "quote": "Another weaker session though flows are more balanced than Friday and nothing at all resembling panic"
         }
       ]
     },
