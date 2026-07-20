@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-17 09:09 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-20 09:26 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -50,6 +50,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "VIEW",
               "note": "Trump backed away from 20% Hormuz charge after Gulf allies urged him to drop it. Blockade reinstatement still in place."
+            },
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "FLAG",
+              "note": "Iran abandoned interim peace deal.WTI+4.2%.Oil+15.9% WTD"
             }
           ]
         },
@@ -185,6 +191,28 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "COLOR",
               "note": "Middle East=largest market-moving potential"
+            }
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "points": [
+            {
+              "date": "2026-07-20",
+              "tilt": "pos",
+              "mode": "FLOW",
+              "note": "Energy+1.2% sole outper.WTI+4.2%$82.25"
+            }
+          ]
+        },
+        {
+          "broker": "Deutsche Bank",
+          "points": [
+            {
+              "date": "2026-07-20",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "AUD credit quiet despite geopolitical escalation"
             }
           ]
         }
@@ -332,6 +360,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "TMT better bid.BABA long+BIDU belly.EM US selling"
+            },
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "Asia IG+0.6bps wider.EM IG back-end 8-12bps wider.US AM selling.INDON S&P affirm→short covering short-lived"
             }
           ]
         },
@@ -620,6 +654,17 @@ window.REPORT_DATA =
               "note": "+1-3bps.MIZUHO 100M.RM duration.Compression convincing"
             }
           ]
+        },
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-20",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "无日本信用更新.JGB twist-steepened.GPIF comments→futures rally"
+            }
+          ]
         }
       ],
       "divergences": []
@@ -751,6 +796,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "USTs cheapened 1bp.Data resilient.GDP+2.4%"
+            },
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "CPI/PPI rally faded.Warsh hawkish.UST bear flatten.Front-end selloff.2s10s-4bps"
             }
           ]
         },
@@ -1018,9 +1069,423 @@ window.REPORT_DATA =
           ]
         }
       ]
+    },
+    {
+      "id": "thread-us-tech-rotation",
+      "name": "美股Tech Selloff+Defensive Rotation",
+      "status": "延续中·第四天·Energy取代Defensive成为新leader",
+      "assetClass": "Equity",
+      "latestChange": "Nasdaq-1.4%第四天.Energy+1.2% sole outper(oil bid).ETF strong inflows=买入dip",
+      "brokerViews": [
+        {
+          "broker": "Jane Street",
+          "points": [
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "Nasdaq-1.4%.Energy+1.2% sole outper.XLK/XLC/XLY underperform.ETF strong inflows"
+            }
+          ]
+        },
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-20",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Macro-sentiment deteriorated on weak equity.Asia credit struggled"
+            }
+          ]
+        }
+      ],
+      "divergences": [
+        {
+          "date": "2026-07-20",
+          "crux": "Rotation:从Defensive→Energy(oil bid).ETF inflows=buying dip not panic",
+          "camps": [
+            {
+              "label": "Rotation加速",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "brokers": [
+                "JS"
+              ],
+              "point": "Nasdaq-1.4%.Energy sole outper"
+            },
+            {
+              "label": "结构性买入",
+              "tilt": "pos",
+              "mode": "FLOW",
+              "brokers": [
+                "JS"
+              ],
+              "point": "ETF strong net inflows.VOO/QQQM"
+            }
+          ]
+        }
+      ]
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-20",
+      "coverage": {
+        "emails": 4,
+        "brokers": [
+          "Goldman Sachs",
+          "Jane Street",
+          "Deutsche Bank"
+        ],
+        "lookbackDays": 15
+      },
+      "signals": [
+        {
+          "id": "sig-20260720-01",
+          "headline": "伊朗放弃临时和平协议→WTI+4.2%至$82.25→油价WTD+15.9%.Energy+1.2% sole outper.EM HY RM全线卖出",
+          "topic": "Iran Escalation + Oil Spike",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "ALERT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 85,
+          "conviction": "High",
+          "brokers": [
+            "Goldman Sachs",
+            "Jane Street",
+            "Deutsche Bank"
+          ],
+          "oneLine": "Iran abandons interim deal→WTI $82.25(+4.2%).Oil WTD+15.9%.Energy sole outper.EM HY selling",
+          "evidence": [
+            "GS Macro:Market torn between equity risk-off and Iran escalation.Oil caught a bid",
+            "GS Credit:Restart of US/Iran conflict→Tehran abandoned interim peace deal.Oil+15.9% WTD→RM selling EM HY",
+            "JS:Energy notable outperformer+1.2%.WTI crude rose 4.2% to $82.25/barrel"
+          ],
+          "soWhat": "伊朗放弃临时协议=冲突从'对峙'升级为'重启'.WTI突破$82+周涨15.9%→通胀预期+能源信用双重压力",
+          "quote": "Restart of the conflict between US/Iran over SoH disagreements leading to Tehran's abandonment of the interim peace deal",
+          "sourceRefs": [
+            "GS Asia Macro",
+            "GS Credit Recap",
+            "Jane Street ETF"
+          ],
+          "threadId": "thread-iran-escalation"
+        },
+        {
+          "id": "sig-20260720-02",
+          "headline": "CPI-0.02%+PPI-0.3%双miss rally仅一天→Warsh'one data point'+'no tolerance for inflation'→UST bear flatten.2s10s-4bps.Front-end selloff",
+          "topic": "CPI Relief Rally Faded - Hawkish Confirmed",
+          "assetClass": "Rates",
+          "direction": "Bearish",
+          "signalType": [
+            "SHIFT",
+            "CONFIRMED"
+          ],
+          "action": "WATCH",
+          "impactScore": 80,
+          "conviction": "High",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "Core CPI-0.02%+PPI-0.3%→rally仅一天→Warsh hawkish→UST bear flatten→2s10s-4bps",
+          "evidence": [
+            "GS Credit:Core CPI-0.02% well below GS+0.17%.PPI-0.3%.Rally in front-end but market faded.2s10s+1.5bps from tights",
+            "GS Credit:Warsh'one data point''no tolerance for persistently elevated inflation'",
+            "GS Macro:USTs bear flattened.Front-end selloff.July FOMC 3.5bps hikes.31bps year-end"
+          ],
+          "soWhat": "CPI+PPI双miss仅一天被fade.Imports/housing/UMich all beat→higher for longer根深蒂固",
+          "quote": "Warsh said that 'it's one data point' and he didn't 'want to overread or cherry-pick data'",
+          "sourceRefs": [
+            "GS Credit Recap",
+            "GS Asia Macro"
+          ],
+          "threadId": "thread-cpi-relief-rally"
+        },
+        {
+          "id": "sig-20260720-03",
+          "headline": "美股rotation第四天:Nasdaq-1.4%.Energy+1.2% sole outper(oil驱动).XLK/XLC/XLY全线underperform.ETF strong inflows=buying dip非panic",
+          "topic": "US Equity Defensive Rotation Day 4",
+          "assetClass": "Equity",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "High",
+          "brokers": [
+            "Jane Street",
+            "Goldman Sachs"
+          ],
+          "oneLine": "Nasdaq-1.4%第四天.Energy+1.2% sole outper.XLK/XLC/XLY underperform.ETF strong inflows=buying dip",
+          "evidence": [
+            "JS:Dow-0.8%.S&P500-1.0%.Nasdaq-1.4%.Energy+1.2% sole outper.Comm-2.4%",
+            "JS:US Equity ETFs strong net inflows above average volume.VOO/SPYM/QQQM/XLK buyers.Seller IWF",
+            "GS Credit:Asia credit struggled as macro-sentiment deteriorated due to weak equity price action"
+          ],
+          "soWhat": "Defensive rotation第四天.Energy受oil驱动取代Defensive成为新leader.ETF inflows=rotation not rout",
+          "sourceRefs": [
+            "Jane Street ETF",
+            "GS Credit Recap"
+          ],
+          "threadId": "thread-us-tech-rotation"
+        },
+        {
+          "id": "sig-20260720-04",
+          "headline": "EM IG双速恶化:US持续sell back-end→long-end 8-12bps wider.INDON S&P affirm短暂short covering.Philippines relative underperform.前端local+ETF支撑但脆弱",
+          "topic": "EM IG Back-End Orphaned Deepens",
+          "assetClass": "EM Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 65,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "EM IG 10yr+3-6bps.long-end+8-12bps.INDON S&P affirm短暂.US AM back-end selling持续",
+          "evidence": [
+            "GS Credit:INDON S&P affirm BBB stable→short covering from global HFs but short-lived.EM sentiment deteriorated on geopolitics",
+            "GS Credit:US selling pressure on back-end.10yr 3-6bps wider.long-end 8-12bps wider",
+            "GS Credit:Philippines underperformed.5-10bps wider belly.8-10bps wider long-end"
+          ],
+          "soWhat": "Back-end orphaned状况恶化.8-12bps=significant.INDON S&P affirm未能逆转→EM情绪由geopolitics+oil主导",
+          "quote": "The move proved to be short-lived as EM sentiment deteriorated on the back of worsening geopolitics",
+          "sourceRefs": [
+            "GS Credit Recap"
+          ],
+          "threadId": "thread-asia-ig-resilience"
+        },
+        {
+          "id": "sig-20260720-05",
+          "headline": "油价WTD+15.9%→EM HY RM全线卖出.PKSTAN-1.25pts/SRILAN-1.5pts/MONGOL 12-15bps wider.逆势:LAOSIN 30s+0.5pts→历史新高",
+          "topic": "EM HY Oil Pressure",
+          "assetClass": "EM Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "ALERT"
+          ],
+          "action": "WATCH",
+          "impactScore": 68,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "Oil+15.9%→RM sell EM HY.PKSTAN-1.25/SRILAN-1.5/MONGOL 12-15bps wider.LAOSIN逆势ATH",
+          "evidence": [
+            "GS Credit:Oil move(+15.9% WTD)prompted better selling from RMs.Dealer community taken out of aged shorts",
+            "GS Credit:PKSTAN 0.625-1.25pts lower.SRILAN 1.25-1.5pts lower.MONGOL 12-15bps wider",
+            "GS Credit:LAOSIN 30s outperformed+0.5pts higher.All-time highs"
+          ],
+          "soWhat": "油价飙升=EM HY最大risk factor.若WTI>$85→EM HY全面承压.LAOSIN独立走强=idiosyncratic",
+          "sourceRefs": [
+            "GS Credit Recap"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260720-06",
+          "headline": "JGB twist-steepening:前端sell→ultra-long foreign bid→5yr strong bid→ultra-long sell反转→PM Takaichi GPIF催化→JGB futures rally",
+          "topic": "JGB Twist Steepening + GPIF Catalyst",
+          "assetClass": "Rates",
+          "direction": "Mixed",
+          "signalType": [
+            "CATALYST"
+          ],
+          "action": "WATCH",
+          "impactScore": 55,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "JGB twist-steepened:前端sell→bid→ultra-long sell反转→Takaichi GPIF→futures rally",
+          "evidence": [
+            "GS Macro:AM front-end selling(new issuance).Ultra-long foreign buying initially flattened",
+            "GS Macro:PM strong 5yr buying.Ultra-long overseas+domestic selling→unwinding flattening→twist-steepened at close",
+            "GS Macro:PM Takaichi GPIF investment→JGB futures rally"
+          ],
+          "soWhat": "JGB日内大幅波动:flattening→twist-steepening→GPIF rally三阶段.技术性仓位unwind驱动",
+          "sourceRefs": [
+            "GS Asia Macro"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260720-07",
+          "headline": "AUD信用逆势抗跌:spreads flat despite geopolitics+rates vol.Compression→higher beta BBB+hybrids outperforming.NAB AUD2.5bn 3Y+57 tight",
+          "topic": "AUD Credit Resilience",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 45,
+          "conviction": "Medium",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "oneLine": "AUD credit quiet spreads flat.Compression:BBB+hybrids outperform.NAB AUD2.5bn+57 tight",
+          "evidence": [
+            "DB:AUD credit quiet.Spreads flat despite geopolitical escalation,rates vol and mixed offshore sentiment",
+            "DB:Compression theme.Higher beta BBB bonds and hybrids outperforming",
+            "DB:NAB AUD2.5bn 3Y senior+57.Traded tighter on break.UELAU AUD400m 5Y no concession"
+          ],
+          "soWhat": "AUD信用展现结构性韧性.spreads flat vs 宏观vol→'decoupling'信号.Compression=risk appetite仍在但偏好higher carry",
+          "quote": "Australian credit markets were quiet over the week, with spreads remaining flat despite geopolitical escalation",
+          "sourceRefs": [
+            "DB Aussie Credit"
+          ],
+          "threadId": null
+        },
+        {
+          "id": "sig-20260720-08",
+          "headline": "UK新首相Burnham就任(脱欧后第7位).Gilts energy-sensitive.BoE MPC前能源风险突出.本周密集UK数据(PMI+labour+CPI+retail)",
+          "topic": "UK New PM Burnham + Gilts",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "CATALYST"
+          ],
+          "action": "WATCH",
+          "impactScore": 50,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "Andy Burnham sworn in UK PM(7th since Brexit).Gilts energy-sensitive.Data week ahead",
+          "evidence": [
+            "GS Macro:Andy Burnham sworn in as UK PM today.7th premier since 2016 Brexit vote",
+            "GS Macro:UK curve remained sensitive to energy prices.Due this week:flash PMIs,labour market,inflation and retail sales"
+          ],
+          "soWhat": "Burnham就任=政治不确定性降低但政策方向待观察.Energy sensitivity=油价上涨→Gilts/GBP双承压",
+          "sourceRefs": [
+            "GS Asia Macro"
+          ],
+          "threadId": null
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "emails": 2,
+          "sourceRefs": [
+            "GS Asia Macro",
+            "GS Credit Recap"
+          ],
+          "stance": "Macro:Iran escalation→oil+15.9%.CPI/PPI rally faded.Warsh hawkish.UST bear flatten.JGB twist-steepening.Credit:Asia IG+0.6bps wider.EM IG back-end 8-12bps wider.EM HY oil pressure"
+        },
+        {
+          "broker": "Jane Street",
+          "emails": 1,
+          "sourceRefs": [
+            "Jane Street ETF"
+          ],
+          "stance": "US Equity:Nasdaq-1.4% rotation day 4.Energy+1.2% sole outper on oil.Tech/Comm underperform.ETF strong inflows.FI:2yr+4bps.IG choppy.HY tilted buyers"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "emails": 1,
+          "sourceRefs": [
+            "DB Aussie Credit"
+          ],
+          "stance": "AUD Credit:Spreads flat逆势抗跌.Compression:BBB+hybrids outperform.NAB AUD2.5bn+57.UELAU AUD400m.Fonterra/Coles/Ampol corp events"
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "chk1",
+          "type": "数据一致",
+          "subject": "伊朗冲突升级+油价飙升",
+          "status": "Confirmed",
+          "detail": "GS+JS+DB一致确认.WTI+4.2%$82.25.Oil WTD+15.9%.Energy sole outper"
+        },
+        {
+          "id": "chk2",
+          "type": "数据一致",
+          "subject": "CPI/PPI双miss rally faded",
+          "status": "Confirmed",
+          "detail": "GS确认Core CPI-0.02%+PPI-0.3%.Rally仅一天→2s10s从tights+6bps→WTD+1.5bps"
+        },
+        {
+          "id": "chk3",
+          "type": "数据一致",
+          "subject": "美股rotation第四天",
+          "status": "Confirmed",
+          "detail": "JS/GS一致确认Nasdaq-1.4%.Energy leader change.ETF inflows=buying dip"
+        },
+        {
+          "id": "chk4",
+          "type": "观点分歧",
+          "subject": "AUD信用vs EM IG韧性分化",
+          "status": "Monitor",
+          "detail": "DB:AUD spreads flat.GS:EM IG long-end 8-12bps wider.区域性韧性差异显著"
+        }
+      ],
+      "qualityLog": [
+        "GS Macro+Credit为最强来源.覆盖UST/Bunds/Gilts/JGBs+EM/Asia信用+EM HY",
+        "Jane Street ETF补充美股rotation granular view.ETF flow信号质量高",
+        "Deutsche Bank提供AUD信用独有视角",
+        "3券商/4封邮件.覆盖:宏观/利率/信用/股票/ETF flow.AUD为今日独有区域"
+      ],
+      "tone": {
+        "dir": "weak",
+        "label": "伊朗冲突升级·油价飙升·Hawkish Fed确认·美股rotation第四天·EM IG恶化",
+        "note": "伊朗放弃临时协议=geopolitics从对峙升级为重启.WTI+15.9%改变市场逻辑.CPI/PPI rally已被Warsh确认fade.AUD信用为罕见亮点"
+      },
+      "macro": [
+        "伊朗放弃SoH临时和平协议→WTI+4.2%至$82.25.周涨+15.9%.Energy rotation→oil-driven risk-off",
+        "CPI-0.02%+PPI-0.3%双miss rally仅一天→Warsh'one data point'→UST bear flatten",
+        "美股rotation第四天:Nasdaq-1.4%.Energy+1.2% sole outper.ETF strong inflows",
+        "JGB twist-steepening→Takaichi GPIF催化.30y JGB 3.83%",
+        "UK新首相Burnham就任(第7位).Gilts energy-sensitive.BoE MPC ahead",
+        "Bunds/Gilts:Energy price risk定价.10y Bund→3% year-end.1y1y+30bp since Jul 2"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "Oil-driven risk-off vs结构性韧性",
+          "note": "伊朗+油价=EM HY/EM IG承压.AUD信用flat+ETF inflows=并非全面risk-off"
+        }
+      },
+      "issuers": [
+        {
+          "name": "NAB",
+          "ticker": "NAB",
+          "activity": "AUD2.5bn 3Y senior+57.Traded tighter",
+          "brokers": [
+            "Deutsche Bank"
+          ]
+        },
+        {
+          "name": "UELAU",
+          "ticker": "UELAU",
+          "activity": "AUD400m 5Y no concession",
+          "brokers": [
+            "Deutsche Bank"
+          ]
+        },
+        {
+          "name": "Indonesia",
+          "ticker": "INDON",
+          "activity": "S&P affirm BBB stable→short covering短暂.Long-end wider",
+          "brokers": [
+            "Goldman Sachs"
+          ]
+        }
+      ],
+      "insights": [
+        "今日最强信号:伊朗冲突从对峙升级为重启.WTI+4.2%+WTD+15.9%=上周最大变量.EM HY+EM IG back-end承压",
+        "CPI/PPI双miss rally已被Warsh确认fade.higher for longer narrative持续",
+        "AUD信用flat逆势=区域性decoupling信号.与EM IG deterioration对比鲜明"
+      ]
+    },
     {
       "reportDate": "2026-07-17",
       "coverage": {
