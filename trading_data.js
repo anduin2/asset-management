@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-20 09:26 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-20 10:14 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -1138,7 +1138,8 @@ window.REPORT_DATA =
           "Jane Street",
           "Deutsche Bank"
         ],
-        "lookbackDays": 15
+        "lookbackDays": 15,
+        "sourceDateNote": "周一报告，4封邮件实际讨论上周五07-17交易 | GS宏观:07-17收盘(UST bear flatten+伊朗升级+油价WTD+15.9%+CPI/PPI miss被fade) | GS信用:07-13~07-17周度回顾(标题含20 JULY但内容为上周主题) | JS ETF:07-17周五行情(rotation day4,Nasdaq-1.4%,Energy+1.2%) | DB Aussie:07-13~07-17周度回顾(标题明确Last Week in Credit)"
       },
       "signals": [
         {
@@ -1379,7 +1380,7 @@ window.REPORT_DATA =
             "GS Asia Macro",
             "GS Credit Recap"
           ],
-          "stance": "Macro:Iran escalation→oil+15.9%.CPI/PPI rally faded.Warsh hawkish.UST bear flatten.JGB twist-steepening.Credit:Asia IG+0.6bps wider.EM IG back-end 8-12bps wider.EM HY oil pressure"
+          "stance": "【宏观】伊朗放弃临时协议→oil+15.9%为上周最大变量.UST bear flatten(2s10s-4bps).CPI/PPI双miss rally仅一天被Warsh确认fade→higher for longer根深蒂固.Imports/housing/UMich beat=growth resilience.JGB twist-steepening+Takaichi GPIF催化.UK Burnham就任.【信用·EM IG】Asi IG basket+0.6bps wider(vs iTraxx+3bps/CDX+1bp/EU+1.5bps=表现居中).EM IG back-end orphaned恶化:10yr+3-6bps,long-end+8-12bps→US AM持续卖出.INDON S&P affirm→HF短暂short cover→geopolitics逆转.Philippines相对underperform→relative value trade.【信用·EM HY】Oil+15.9%→RM全线卖出→dealer community持仓出清.PKSTAN/SRILAN/MONGOL广泛下跌.LAOSIN逆势ATH=idiosyncratic.【信用·Asia Corp】Asia Corp/Fin IG窄区间.spread韧性受all-in yield需求支撑.当周6笔deals$4.4bn定价"
         },
         {
           "broker": "Jane Street",
@@ -1387,7 +1388,7 @@ window.REPORT_DATA =
           "sourceRefs": [
             "Jane Street ETF"
           ],
-          "stance": "US Equity:Nasdaq-1.4% rotation day 4.Energy+1.2% sole outper on oil.Tech/Comm underperform.ETF strong inflows.FI:2yr+4bps.IG choppy.HY tilted buyers"
+          "stance": "【股票】Dow-0.8%/S&P-1.0%/Nasdaq-1.4%(rotation第四天).Energy+1.2%唯一outperformer(WTI+4.2%→$82.25).Communications-2.4%/ConsDisc-1.6%最大underperformers.XLE sole sector outper,XLC/XLK/XLY/XLF underperform.【ETF flow】US Equity strong net inflows+above avg volume→VOO/SPYM/QQQM/XLK/UJUL buyers→仅IWF(large-cap growth)净卖出.'buying dip非panic'.【FI ETF】Muni inflows via JMUB.IG ETFs开强→回落→反弹.HY ETFs先outflows→午间chop→close inflows.【FI Cash】IG cash even(inflows PTs vs outflows RFQ).HY cash tilted inflows(PTs).【国际·EM】Korea EWY outflows但outperform(与India/Mexico).Taiwan EWT+China ASHR underperformed.【国际·DM】Value EFV inflows vs Small-cap DFIS outflows.Outperformers:Australia EWA/Europe VGK/Canada EWC/UK EWU.Underperformer:Japan EWJ"
         },
         {
           "broker": "Deutsche Bank",
@@ -1395,7 +1396,7 @@ window.REPORT_DATA =
           "sourceRefs": [
             "DB Aussie Credit"
           ],
-          "stance": "AUD Credit:Spreads flat逆势抗跌.Compression:BBB+hybrids outperform.NAB AUD2.5bn+57.UELAU AUD400m.Fonterra/Coles/Ampol corp events"
+          "stance": "【AUD信用】Spreads flat→宏观vol下展现结构性韧性.Compression theme持续→higher beta BBB bonds+hybrids outperforming(risk appetite仍在但偏好carry).【一级】NAB AUD2.5bn 3Y senior+57(tight concession,break+tighter=需求健康).UELAU AUD400m 5Y no concession.【二级Flow】5Y AUD corporates卖出 vs 10Y+low-beta买入=curve陡峭化bid.AUD financial seniors stable.T2s unch/+1bp.【USD对比】USD corporates marginally wider WoW→AUD vs USD decoupling.USD financials heavier mid-week(T2s+1-2bp)→week-end firmed.【Corporate事件】Fonterra milk price↓→credit negative.Coles 放弃Greencross→credit positive(deleverage).Ampol closed AUD400m hybrids KKR support.Auckland Airport traffic-4% YoY"
         }
       ],
       "dataChecks": [
@@ -1452,38 +1453,589 @@ window.REPORT_DATA =
           "dir": "mixed",
           "label": "Oil-driven risk-off vs结构性韧性",
           "note": "伊朗+油价=EM HY/EM IG承压.AUD信用flat+ETF inflows=并非全面risk-off"
-        }
+        },
+        "etf_flows": {
+          "us_equity": {
+            "dir": "strong_inflows",
+            "detail": "VOO/SPYM/QQQM/XLK/UJUL buyers.Seller IWF(large-cap growth).Above avg volume→buying dip",
+            "source": "Jane Street"
+          },
+          "fi": {
+            "dir": "mixed",
+            "detail": "Muni inflows(JMUB).IG ETFs open strong→choppy→tilt buyers.HY ETFs outflows→chop→inflows into close",
+            "source": "Jane Street"
+          },
+          "em_equity": {
+            "dir": "mixed",
+            "detail": "IEMG/AVEM buyers.SPEM sellers.Korea EWY outflows but~flat.India INDA/Mexico EWW flattish.Taiwan EWT+China ASHR underperformed",
+            "source": "Jane Street"
+          },
+          "dm_equity": {
+            "dir": "mixed",
+            "detail": "Value EFV inflows vs Small-cap DFIS outflows.Australia EWA/Europe VGK/Canada EWC/UK EWU outperform→inflows.Japan EWJ underperform→outflows",
+            "source": "Jane Street"
+          },
+          "sectors": {
+            "dir": "rotating",
+            "detail": "Energy XLE sole sector buyer(oil bid).Communications XLC/ConsDisc XLY/Tech XLK/Financials XLF all selling",
+            "source": "Jane Street"
+          }
+        },
+        "credit_flows": {
+          "em_ig_cash": {
+            "dir": "sell_backend",
+            "detail": "US AM持续卖出back-end.10yr+3-6bps,long-end+8-12bps wider.Front-end local+ETF bid支撑→双速分化加剧",
+            "source": "Goldman Sachs"
+          },
+          "em_hy_cash": {
+            "dir": "sell",
+            "detail": "Oil+15.9%→RM全线卖出.Dealer community持仓出清.PKSTAN/SRILAN/MONGOL下行→LAOSIN逆势ATH",
+            "source": "Goldman Sachs"
+          },
+          "asia_corp_ig": {
+            "dir": "resilient",
+            "detail": "Asia Corp/Fin IG窄区间.Spread韧性来自all-in yield demand.当周6 deals$4.4bn",
+            "source": "Goldman Sachs"
+          },
+          "ig_cash_us": {
+            "dir": "even",
+            "detail": "Overall even flows.Inflows via PTs,outflows via RFQ",
+            "source": "Jane Street"
+          },
+          "hy_cash_us": {
+            "dir": "tilt_inflows",
+            "detail": "Tilted towards inflows(PTs)",
+            "source": "Jane Street"
+          },
+          "aud_credit": {
+            "dir": "flat",
+            "detail": "5Y selling vs 10Y+low-beta buying→curve陡峭化需求.AUD financial seniors stable.T2s unch/+1bp",
+            "source": "Deutsche Bank"
+          },
+          "usd_financials": {
+            "dir": "weaker",
+            "detail": "Heavier mid-week→T2s+1-2bp(selling recent deals)→firmed into week-end",
+            "source": "Deutsche Bank"
+          }
+        },
+        "activeNames": [
+          {
+            "tone": "sell",
+            "name": "Indonesia Sovereign",
+            "ticker": "INDON",
+            "activity": "S&P affirm→short cover→geopolitics逆转.10yr+3-6,long-end+8-12bps wider",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Philippines Sovereign",
+            "ticker": "PHILIP",
+            "activity": "Underperform INDON.Belly+5-10,long-end+8-10bps wider.RelVal unwind",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "PLN/Pertamina",
+            "ticker": "PLNIJ/PERTIJ",
+            "activity": "SOEs跟随sovereign卖压.Long-end+4-8bps",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "mixed",
+            "name": "Dai-ichi/Indosat",
+            "ticker": "DAINMA/IDASAL",
+            "activity": "Outperform仅+1-2bps.相对INDON/PHILIP显著抗跌",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "First Rand",
+            "ticker": "FRIDPT",
+            "activity": "+6-12bps wider.外资account卖出",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Malaysia Sovereign",
+            "ticker": "MALAYS",
+            "activity": "Long-end+8bps.Insurance selling",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Petronas",
+            "ticker": "PETMK",
+            "activity": "+4-8bps wider.跟随sovereign卖压",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Pakistan Sovereign",
+            "ticker": "PKSTAN",
+            "activity": "Oil+15.9%→全线卖出.29s/31s-0.875pts,51s-1.25pts",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Sri Lanka Sovereign",
+            "ticker": "SRILAN",
+            "activity": "MLBs-1.5pts,GLBs-1.375pts.油价+geopolitics双重打击",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Mongolia Sovereign",
+            "ticker": "MONGOL",
+            "activity": "-0.5pts,12-15bps wider.DBMMN 31s unch",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "Laos Sovereign",
+            "ticker": "LAOSIN",
+            "activity": "30s+0.5pts→历史新高!EM HY唯一逆势上涨",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "tone": "new_issue",
+            "name": "NAB",
+            "ticker": "NAB",
+            "activity": "AUD2.5bn 3Y senior+57.Break+tighter→需求健康",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "tone": "new_issue",
+            "name": "UELAU",
+            "ticker": "UELAU",
+            "activity": "AUD400m 5Y no concession→市场接受",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Fonterra",
+            "ticker": "FCENZ",
+            "activity": "Milk price forecast↓→NZD9.75/kg.Credit negative",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "Coles",
+            "ticker": "COLES",
+            "activity": "Ceased Greencross acquisition→deleveraging.Credit positive",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "tone": "buy",
+            "name": "Ampol",
+            "ticker": "AMPOL",
+            "activity": "Closed AUD400m hybrids KKR support→信用正面",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "tone": "sell",
+            "name": "Auckland Airport",
+            "ticker": "AUKNZ",
+            "activity": "June pax-4% YoY→运营偏弱",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "Goldman Sachs",
+            "type": "地缘政治",
+            "summary": "伊朗放弃临时协议→WTI+15.9%WTD→EM IG back-end orphaned+8-12bps.EM HY全线卖出.US AM持续卖出→最大变量"
+          },
+          {
+            "broker": "Goldman Sachs",
+            "type": "宏观政策",
+            "summary": "CPI/PPI双miss rally仅一天被Warsh hawkish确认fade.UST bear flatten.higher for longer叙事根深蒂固"
+          },
+          {
+            "broker": "Goldman Sachs",
+            "type": "技术性",
+            "summary": "Asia Corp/Fin IG narrow range→spread韧性来自all-in yield需求.当周6 deals$4.4bn定价"
+          },
+          {
+            "broker": "Jane Street",
+            "type": "资金流",
+            "summary": "ETF strong net inflows→buying dip非panic.Energy XLE sole sector buyer(oil bid).Nasdaq-1.4% rotation day4"
+          },
+          {
+            "broker": "Jane Street",
+            "type": "持仓轮动",
+            "summary": "IWF large-cap growth净卖出→Value EFV/Intl inflows.Rotation持续:Tech→Energy/Defensives"
+          },
+          {
+            "broker": "Jane Street",
+            "type": "区域分化",
+            "summary": "Korea EWY outflow但outperform vs TW/CN underperform.DM:AU/EU/CA/UK outperform流入 vs JP underperform流出"
+          },
+          {
+            "broker": "Deutsche Bank",
+            "type": "结构性",
+            "summary": "AUD信用展现结构性韧性.Spreads flat→宏观vol下区域性decoupling.Compression持续→BBB+outperform"
+          },
+          {
+            "broker": "Deutsche Bank",
+            "type": "一级市场",
+            "summary": "NAB AUD2.5bn+57需求健康.UELAU no concession→confidence signal.USD financials mid-week heavier→week-end firmed"
+          }
+        ]
       },
       "issuers": [
         {
+          "name": "Indonesia Sovereign",
+          "ticker": "INDON",
+          "assetClass": "EM_Sovereign",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "S&P affirm BBB stable→HF短暂short cover→geopolitics逆转.10yr+3-6bps,long-end+8-12bps wider.US AM持续卖出back-end"
+        },
+        {
+          "name": "Philippines Sovereign",
+          "ticker": "PHILIP",
+          "assetClass": "EM_Sovereign",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "Underperform INDON(both BBB).Belly+5-10bps,long-end+8-10bps wider.Looked rich→relative value unwind"
+        },
+        {
+          "name": "PLN/Pertamina",
+          "ticker": "PLNIJ",
+          "assetClass": "EM_Corp",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Energy",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": true,
+          "priority": 2,
+          "newIssue": false,
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "SOEs跟随sovereign卖压.Long-end+4-8bps wider.油价上行=double-edged:利好energy信用但利空EM风险偏好",
+          "quote": "SOEs followed sovereign weakness with long-end 4-8bps wider"
+        },
+        {
+          "name": "Dai-ichi/Indosat",
+          "ticker": "DAINMA",
+          "assetClass": "EM_Corp",
+          "region": "Japan/SEA",
+          "ccy": "USD",
+          "sector": "Insurance/Telco",
+          "sovereign": false,
+          "flow": "mixed",
+          "inFocus": true,
+          "priority": 1,
+          "newIssue": false,
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "Outperformer仅+1-2bps wider.相对INDON/PHILIP显著抗跌.高质量IG在宏观vol下展现防御属性",
+          "quote": "Dai-ichi and Indosat managed to outperform, only 1-2bps wider"
+        },
+        {
+          "name": "First Rand",
+          "ticker": "FRIDPT",
+          "assetClass": "EM_Financial",
+          "region": "Africa",
+          "ccy": "USD",
+          "sector": "Banking",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "非洲区域",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "+6-12bps wider.外资account卖出.非洲区域风险溢价扩大"
+        },
+        {
+          "name": "Malaysia Sovereign",
+          "ticker": "MALAYS",
+          "assetClass": "EM_Sovereign",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "Long-end+8bps wider.Insurance selling驱动"
+        },
+        {
+          "name": "Petronas",
+          "ticker": "PETMK",
+          "assetClass": "EM_Corp",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Energy",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": true,
+          "priority": 3,
+          "newIssue": false,
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "+4-8bps wider跟随MALAYS卖压.油价上行利好基本面但主权关联拖累.估值机会",
+          "quote": "Petronas +4-8bps wider, following sovereign"
+        },
+        {
+          "name": "Pakistan Sovereign",
+          "ticker": "PKSTAN",
+          "assetClass": "EM_Sovereign",
+          "region": "SouthAsia",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "HY+主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "Oil+15.9%→RM全线卖出.29s/31s-0.625-0.875pts,51s-1.25pts.油价=巴基斯坦最大宏观风险"
+        },
+        {
+          "name": "Sri Lanka Sovereign",
+          "ticker": "SRILAN",
+          "assetClass": "EM_Sovereign",
+          "region": "SouthAsia",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "HY+主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "MLBs-1.25-1.5pts,GLBs-1.375pts.油价+geopolitics双重打击.HY中跌幅最大"
+        },
+        {
+          "name": "Mongolia Sovereign",
+          "ticker": "MONGOL",
+          "assetClass": "EM_Sovereign",
+          "region": "NorthAsia",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "HY+主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "-0.375-0.5pts,12-15bps wider.DBMMN 31s unch(单独估值独立).矿业国家受油价溢出影响"
+        },
+        {
+          "name": "Laos Sovereign",
+          "ticker": "LAOSIN",
+          "assetClass": "EM_Sovereign",
+          "region": "SEA",
+          "ccy": "USD",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "flow": "buy",
+          "inFocus": false,
+          "excludeReason": "HY+主权",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "analysis": "30s+0.5pts→历史新高!EM HY唯一逆势上涨.idiosyncratic逻辑.独立于油价+geopolitics",
+          "quote": "LAOSIN 30s outperformed, +0.5pts higher and trading at all-time highs"
+        },
+        {
           "name": "NAB",
           "ticker": "NAB",
-          "activity": "AUD2.5bn 3Y senior+57.Traded tighter",
+          "assetClass": "DM_Financial",
+          "region": "Australia",
+          "ccy": "AUD",
+          "sector": "Banking",
+          "sovereign": false,
+          "flow": "new_issue",
+          "inFocus": false,
+          "newIssue": true,
+          "excludeReason": "AUD市场",
           "brokers": [
             "Deutsche Bank"
-          ]
+          ],
+          "analysis": "AUD2.5bn 3Y senior+57.Concession tight.Break+tighter→一级需求健康.AUD benchmark size signaling confidence"
         },
         {
           "name": "UELAU",
           "ticker": "UELAU",
-          "activity": "AUD400m 5Y no concession",
+          "assetClass": "DM_Corp",
+          "region": "Australia",
+          "ccy": "AUD",
+          "sector": "Utilities",
+          "sovereign": false,
+          "flow": "new_issue",
+          "inFocus": false,
+          "newIssue": true,
+          "excludeReason": "AUD市场",
           "brokers": [
             "Deutsche Bank"
-          ]
+          ],
+          "analysis": "AUD400m 5Y no concession→市场接受度好.小众名字但定价顺利"
         },
         {
-          "name": "Indonesia",
-          "ticker": "INDON",
-          "activity": "S&P affirm BBB stable→short covering短暂.Long-end wider",
+          "name": "Fonterra",
+          "ticker": "FCENZ",
+          "assetClass": "DM_Corp",
+          "region": "NZ",
+          "ccy": "NZD",
+          "sector": "Agri",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "NZD市场",
           "brokers": [
-            "Goldman Sachs"
-          ]
+            "Deutsche Bank"
+          ],
+          "analysis": "Lower milk price forecast→NZD9.75/kg.Credit negative.乳制品价格下行=现金流压力"
+        },
+        {
+          "name": "Coles",
+          "ticker": "COLES",
+          "assetClass": "DM_Corp",
+          "region": "Australia",
+          "ccy": "AUD",
+          "sector": "Retail",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": false,
+          "excludeReason": "AUD市场",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "analysis": "Ceased Greencross acquisition talks with TPG→deleveraging尾风险消除.Credit positive.防御性零售信用"
+        },
+        {
+          "name": "Ampol",
+          "ticker": "AMPOL",
+          "assetClass": "DM_Corp",
+          "region": "Australia",
+          "ccy": "AUD",
+          "sector": "Energy",
+          "sovereign": false,
+          "flow": "buy",
+          "inFocus": false,
+          "excludeReason": "AUD市场",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "analysis": "Closed AUD400m delayed draw hybrids with KKR support→融资确定性增强.油价上行=基本面利好"
+        },
+        {
+          "name": "Auckland Airport",
+          "ticker": "AUKNZ",
+          "assetClass": "DM_Corp",
+          "region": "NZ",
+          "ccy": "NZD",
+          "sector": "Infra",
+          "sovereign": false,
+          "flow": "sell",
+          "inFocus": false,
+          "excludeReason": "NZD市场",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "analysis": "June pax-4% YoY→运营偏弱.旅游恢复速度低于预期.基础设施信用稳定但流量风险增加"
         }
       ],
       "insights": [
-        "今日最强信号:伊朗冲突从对峙升级为重启.WTI+4.2%+WTD+15.9%=上周最大变量.EM HY+EM IG back-end承压",
-        "CPI/PPI双miss rally已被Warsh确认fade.higher for longer narrative持续",
-        "AUD信用flat逆势=区域性decoupling信号.与EM IG deterioration对比鲜明"
+        {
+          "broker": "Goldman Sachs",
+          "topic": "伊朗冲突升级→油价WTD+15.9%",
+          "point": "伊朗放弃SoH临时和平协议=上周最大变量.EM HY RM全线卖出.EM IG back-end orphaned 8-12bps wider.WTI突破$82→通胀预期+能源信用双重压力",
+          "quote": "Restart of the conflict between US/Iran over SoH disagreements leading to Tehran's abandonment of the interim peace deal"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "CPI/PPI双miss rally被fade",
+          "point": "Core CPI-0.02%+PPI-0.3%→rally仅一天.Warsh'one data point'确认hawkish→UST bear flatten.higher for longer根深蒂固.Imports/housing/UMich beat=growth resilience",
+          "quote": "Warsh said it's one data point and he didn't want to overread or cherry-pick data"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "Asia Corp IG结构性韧性",
+          "point": "Asia Corp/Fin IG窄区间.Spread韧性来自all-in yield需求→dealer inventory lighter.当周6 deals$4.4bn定价→一级供给健康但不压制",
+          "quote": "Asia Corp/Fin IG traded in a narrow range with strong demand for all-in yield"
+        },
+        {
+          "broker": "Jane Street",
+          "topic": "美股Rotation第四天:Energy取代Defensive",
+          "point": "Nasdaq-1.4%.Energy+1.2% sole outper(oil bid).ETF strong inflows=buying dip非panic.XLE sole sector buyer vs XLC-2.4%/XLY-1.6% underperform",
+          "quote": "US Equity ETFs had another day of strong net inflows coming in above average volume"
+        },
+        {
+          "broker": "Jane Street",
+          "topic": "ETF Flow:Value/Intl入 vs Growth出",
+          "point": "IWF large-cap growth净卖出→Value EFV流入.Rotation从Growth→Value+International.DM outperformers:Australia/Europe/Canada/UK",
+          "quote": "IWF was the only notable net seller in the large-cap segment"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "topic": "AUD信用结构性能",
+          "point": "AUD spreads flat despite geopolitical escalation+rates vol→区域性decoupling.Compression:BBB+hybrids outperform→risk appetite仍在但偏好carry",
+          "quote": "Australian credit markets were quiet over the week, with spreads remaining flat despite geopolitical escalation"
+        }
       ]
     },
     {
@@ -1499,7 +2051,8 @@ window.REPORT_DATA =
           "Jane Street",
           "Morgan Stanley"
         ],
-        "lookbackDays": 15
+        "lookbackDays": 15,
+        "sourceDateNote": ""
       },
       "signals": [
         {
@@ -2133,7 +2686,8 @@ window.REPORT_DATA =
           "Morgan Stanley",
           "SSA"
         ],
-        "lookbackDays": 15
+        "lookbackDays": 15,
+        "sourceDateNote": ""
       },
       "signals": [
         {
@@ -2711,7 +3265,8 @@ window.REPORT_DATA =
           "Morgan Stanley",
           "TD Securities"
         ],
-        "lookbackDays": 15
+        "lookbackDays": 15,
+        "sourceDateNote": ""
       },
       "signals": [
         {
@@ -3471,7 +4026,8 @@ window.REPORT_DATA =
           "Jefferies",
           "Deutsche Bank"
         ],
-        "lookbackDays": 15
+        "lookbackDays": 15,
+        "sourceDateNote": ""
       },
       "signals": [
         {
@@ -4328,7 +4884,8 @@ window.REPORT_DATA =
           "TD Securities",
           "UBS"
         ],
-        "lookbackDays": 15
+        "lookbackDays": 15,
+        "sourceDateNote": ""
       },
       "signals": [
         {
