@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-21 11:24 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-21 18:20 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -1271,6 +1271,28 @@ window.REPORT_DATA =
               "note": "Asia IG muted widener.ETF buying front-end.SEA IG+1-2bp PETMK seller.Korea/Japan/Aus+1-2bp TKY Holiday thin"
             }
           ]
+        },
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-21",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "IG sov cash lower, RHS flows dominant, wider ahead"
+            }
+          ]
+        },
+        {
+          "broker": "UBS",
+          "points": [
+            {
+              "date": "2026-07-21",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "IG 2-way at unch to 1bp tighter, Indon outperforming with RM buying"
+            }
+          ]
         }
       ],
       "divergences": []
@@ -1901,6 +1923,55 @@ window.REPORT_DATA =
           "threadId": "thread-fed-repricing",
           "date": "2026-07-21",
           "quote": ""
+        },
+        {
+          "topic": "亚洲HY/博彩板块承压",
+          "oneLine": "GS: China HY & gaming underperforming with sellers in LNGFOR/GRNCH, MGMCHI/WYNMAC hitting new lows",
+          "direction": "Bearish",
+          "signalType": [
+            "Flow-driven"
+          ],
+          "assetClass": "Asia Hy",
+          "threadId": "thread-asia-hy-gaming",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "evidence": [
+            "HY saw sellers 0.25-0.5pt lower",
+            "Property better sold: LNGFOR/GRNCH sellers",
+            "Gaming underperforming: MGMCHI/WYNMAC another leg lower"
+          ],
+          "soWhat": "博彩/地产HY成为新的走弱焦点，可能与NDX科技股联动risk-off",
+          "impactRank": 5,
+          "action": "WATCH",
+          "date": "2026-07-21",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "topic": "印尼IG双向分化",
+          "oneLine": "UBS: Indon IG names benefitting from RM buying (MINCAP/BBNIIJ/CIKLIS/PERHUL) vs PALPM/IIFOIN/DBMMN under pressure",
+          "direction": "Mixed",
+          "signalType": [
+            "Flow-driven"
+          ],
+          "assetClass": "Asia Ig",
+          "threadId": "thread-asia-ig",
+          "brokers": [
+            "UBS"
+          ],
+          "evidence": [
+            "Indon IG names RM buying through on MINCAP/BBNIIJ/CIKLIS/PERHUL",
+            "PALPM 2-way with RM selling into retail",
+            "DBMMN 25c lower post tap news",
+            "IIFOIN heavy -12.5c street trading down on 30s"
+          ],
+          "soWhat": "印尼IG内部资金轮动——国油/银行/基建获机构买盘vs企业债承压，印度风险偏好改善",
+          "impactRank": 4,
+          "action": "WATCH",
+          "date": "2026-07-21",
+          "priorState": "No prior state available.",
+          "quote": ""
         }
       ],
       "brokerNotes": [
@@ -2001,6 +2072,33 @@ window.REPORT_DATA =
             "Deutsche Bank Credit",
             "Aussie Credit: DWPFAU 7Y New Issue"
           ]
+        },
+        {
+          "broker": "Goldman Sachs",
+          "date": "2026-07-21",
+          "emails": 2,
+          "sourceRefs": [
+            "GS Global Credit Market Recap",
+            "GS Asia Macro: Global Market Recap"
+          ],
+          "topic": "全球信用与亚洲资金流向",
+          "assetClass": "Multi-Asset",
+          "summary": "亚洲IG/主权债卖方主导+CDS宽1-1.5bp，中国HY和博彩板块承压，TENCNT有小量买入，US IG受中东升级+IBM软件暴跌+NDX-4%拖累",
+          "stance": "bearish",
+          "keyTakeaway": "GS观察到亚洲卖方压力普遍——IG主权现金低0.25-0.375pt、HY低0.25-0.5pt、CDS宽1-1.5bp，中国博彩/地产HY为新卖压焦点"
+        },
+        {
+          "broker": "UBS",
+          "date": "2026-07-21",
+          "emails": 1,
+          "sourceRefs": [
+            "UBS ASIA: Non-China Midday Recap"
+          ],
+          "topic": "亚洲非中国信用午盘",
+          "assetClass": "Asia Credit",
+          "summary": "印度/印尼risk-on忽略地缘噪音，HY不变至+12.5c双向，VEDLN+12.5-25c零售需求，PALPM双向机构卖零售买，DBMMN-25c增发压力，IIFOIN-12.5c，印尼IG机构买盘集中",
+          "stance": "neutral",
+          "keyTakeaway": "UBS看到印印市场risk-on，但非中国亚洲内部资金分化显著——印尼IG机构买vs部分HY/企业债承压"
         }
       ],
       "dataChecks": [
@@ -2045,6 +2143,20 @@ window.REPORT_DATA =
           "subject": "DB新发",
           "id": "chk-06",
           "type": "数据核对"
+        },
+        {
+          "id": "chk-07",
+          "type": "数据一致",
+          "subject": "亚洲HY卖压确认",
+          "status": "Confirmed",
+          "detail": "GS与Barclays均观察到亚洲HY卖方主导，GS补充博彩板块为新增走弱焦点"
+        },
+        {
+          "id": "chk-08",
+          "type": "数据差异",
+          "subject": "印度/印尼方向分歧",
+          "status": "Monitor",
+          "detail": "UBS报告risk-on但Barclays/HSBC偏谨慎，需确认下午方向"
         }
       ],
       "qualityLog": [
@@ -2057,7 +2169,7 @@ window.REPORT_DATA =
         "DB Aussie Credit [评级:B] AUD单一名字→范围窄但提供一级定价参考"
       ],
       "tone": {
-        "dir": "cautious",
+        "dir": "weak",
         "label": "谨慎偏空",
         "note": "7家5家偏空→伊朗升级+Brent>$90+UK财政→利率上行+信用分化。CDX保护$7.4bn=宏观对冲。亚洲信用偏弱但非恐慌→ETF+RM仍有需求"
       },
@@ -2070,7 +2182,7 @@ window.REPORT_DATA =
       ],
       "flow": {
         "sentiment": {
-          "dir": "cautious",
+          "dir": "weak",
           "label": "谨慎偏空",
           "note": "7家5家偏空→伊朗升级+Brent>$90+UK财政→利率上行+信用分化。CDX保护$7.4bn=宏观对冲。亚洲信用偏弱但非恐慌→ETF+RM仍有需求"
         },
@@ -2119,6 +2231,60 @@ window.REPORT_DATA =
             "brokers": [
               "Barclays"
             ]
+          },
+          {
+            "name": "IIFOIN",
+            "ticker": "IIFOIN",
+            "tone": "sell",
+            "activity": "street trading down on 30s, -12.5c",
+            "brokers": [
+              "UBS"
+            ]
+          },
+          {
+            "name": "PALPM",
+            "ticker": "PALPM",
+            "tone": "mixed",
+            "activity": "2-way, RM selling into retail demand",
+            "brokers": [
+              "UBS"
+            ]
+          },
+          {
+            "name": "DBMMN",
+            "ticker": "DBMMN",
+            "tone": "sell",
+            "activity": "25c lower post tap announcement",
+            "brokers": [
+              "UBS"
+            ]
+          },
+          {
+            "name": "MINCAP",
+            "ticker": "MINCAP",
+            "tone": "buy",
+            "activity": "Indon IG RM buying, outperforming",
+            "brokers": [
+              "UBS"
+            ]
+          },
+          {
+            "name": "LNGFOR",
+            "ticker": "LNGFOR",
+            "tone": "sell",
+            "activity": "China property better sold, sellers active",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "name": "MGMCHI",
+            "ticker": "MGMCHI",
+            "tone": "sell",
+            "activity": "Gaming sector underperforming, new lows",
+            "brokers": [
+              "Goldman Sachs"
+            ]
           }
         ],
         "drivers": [
@@ -2151,6 +2317,16 @@ window.REPORT_DATA =
             "broker": "BMO",
             "type": "事件催化",
             "summary": "周四7/36 10年期TIPS拍卖→通胀重定价关键事件→BEI方向信号"
+          },
+          {
+            "broker": "Goldman Sachs",
+            "type": "风险偏好",
+            "summary": "IBM软件暴跌+NDX-4%+中东升级三重压制→亚洲信用全线卖方→博彩/地产HY成为新弱焦点"
+          },
+          {
+            "broker": "UBS",
+            "type": "资金流向",
+            "summary": "印度/印尼risk-on无视地缘噪音→但印尼内部资金分化→机构买国油银行vs企业债承压"
           }
         ],
         "etf_flows": [
@@ -2170,7 +2346,7 @@ window.REPORT_DATA =
           "ticker": "HDFC",
           "name": "HDFC Bank",
           "inFocus": true,
-          "priority": "Low",
+          "priority": 3,
           "region": "APAC",
           "ccy": "USD",
           "assetClass": "IG",
@@ -2189,7 +2365,7 @@ window.REPORT_DATA =
           "ticker": "PETMK",
           "name": "PETRONAS",
           "inFocus": true,
-          "priority": "High",
+          "priority": 1,
           "region": "APAC",
           "ccy": "USD",
           "assetClass": "IG",
@@ -2208,7 +2384,7 @@ window.REPORT_DATA =
           "ticker": "VEDLN",
           "name": "Vedanta Resources",
           "inFocus": true,
-          "priority": "Medium",
+          "priority": 2,
           "region": "APAC",
           "ccy": "USD",
           "assetClass": "HY",
@@ -2227,7 +2403,7 @@ window.REPORT_DATA =
           "ticker": "YI BRIGHT",
           "name": "YI BRIGHT",
           "inFocus": true,
-          "priority": "Low",
+          "priority": 3,
           "region": "APAC",
           "ccy": "USD",
           "assetClass": "HY",
@@ -2246,7 +2422,7 @@ window.REPORT_DATA =
           "ticker": "HANWHA",
           "name": "Hanwha Aerospace",
           "inFocus": true,
-          "priority": "Medium",
+          "priority": 2,
           "region": "APAC",
           "ccy": "USD",
           "assetClass": "IG",
@@ -2266,7 +2442,7 @@ window.REPORT_DATA =
           "ticker": "GRNCH",
           "name": "Greenland Holdings",
           "inFocus": true,
-          "priority": "Low",
+          "priority": 3,
           "region": "APAC",
           "ccy": "USD",
           "assetClass": "HY",
