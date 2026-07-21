@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-20 17:43 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-21 07:58 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -1147,6 +1147,28 @@ window.REPORT_DATA =
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-21",
+      "coverage": {
+        "emails": 0,
+        "brokers": [],
+        "lookbackDays": 15,
+        "sourceDateNote": ""
+      },
+      "signals": [],
+      "brokerNotes": [],
+      "dataChecks": [],
+      "qualityLog": [],
+      "tone": {
+        "dir": "mixed",
+        "label": "两向偏弱",
+        "note": ""
+      },
+      "macro": [],
+      "flow": {},
+      "issuers": [],
+      "insights": []
+    },
     {
       "reportDate": "2026-07-20",
       "coverage": {
