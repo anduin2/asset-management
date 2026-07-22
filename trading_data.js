@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-21 18:20 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-22 09:00 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -1512,6 +1512,924 @@ window.REPORT_DATA =
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-22",
+      "coverage": {
+        "emails": 9,
+        "brokers": [
+          "Goldman Sachs",
+          "Morgan Stanley",
+          "HSBC",
+          "Barclays",
+          "BMO",
+          "JEFFERIES",
+          "Jane Street"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": "9封：GS信用+GS宏观/MS宏观+MS US IG/HSBC信用/Barclays信用/BMO TIPS/JEF日本IG/JS ETF|均为07-21交易日评论"
+      },
+      "signals": [
+        {
+          "id": "sig-20260722-01",
+          "headline": "美伊冲突第10天→Brent$91.35(+2.4%)WTI$84.49→通胀+加息预期回升→UST bear-flattening",
+          "topic": "US-Iran Escalation Day10",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "ALERT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 88,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs",
+            "Barclays",
+            "HSBC"
+          ],
+          "oneLine": "US-Iran Day10: Brent>$91 WTI>$84. Oil-driven inflation→UST bear-flatten. 10y 4.63% 2-mo high",
+          "evidence": [
+            "MS:US-Iran tensions lifted oil,Brent+2.4%to$91.35,WTI+2.4%to$84.49.Energy-supply concerns raised inflation+policy-rate expectations",
+            "MS:Fed OIS+futures partially restored near-term hike expectations.10y/30y at two-month highs",
+            "Barclays:Asia credit holding up fairly well despite macro backdrop",
+            "HSBC:Credit space closed firmer,higher UST yields",
+            "GS Macro:Oil continued to climb higher (Brent>$90).US 10y 4.63% two-month high.2y+5.5bp.CTAs turned bearish adding selling pressure"
+          ],
+          "soWhat": "冲突第10天无缓和→油价高位→通胀预期上行→Fed加息概率回升→曲线熊平→风险资产面临重定价",
+          "quote": "Renewed energy-supply concerns raised inflation and policy-rate expectations,lifting the dollar and global yields",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-02",
+          "headline": "UST熊平→2y+5.5bp 10y+3.6bp→10y 4.63%两月新高→real yield持续攀升5y~2.10%/10y 2.35%/30y>2.90%",
+          "topic": "UST Bear Flattening+Real Yields",
+          "assetClass": "Rates",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "TREND"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt"
+          ],
+          "oneLine": "UST bear-flatten:2y+5.5bp,10y 4.63%.Real yields:5y~2.10% 10y 2.35% 30y>2.90%",
+          "evidence": [
+            "MS:2y+5.5bp 30y+1.9bp.10y/30y two-month highs",
+            "BMO:BEI wider but lagged beta.Real yields grinding higher.RM demand offset by systematic/auction selling+profit taking",
+            "mkt:10yr 4.50-4.63%bearish flag formation.Curve steepening near exhaustion→flattening bias",
+            "GS Macro:Hedge funds receiving belly+steepening curve.NY fear 20y auction.Real money light.Fed Dec pricing 40bp hikes"
+          ],
+          "soWhat": "实值收益率持续攀升→金融条件收紧→对风险资产形成压力。10yr突破4.63%后上看4.73%。关注周四TIPS拍卖需求",
+          "quote": "The net result is a continued grind higher in real yields",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-03",
+          "headline": "亚洲信用维持韧性→China IG 1-2bp tighter→PB/银行前端买盘→Japan IG-1-3bp→SGD/AUD零售买盘",
+          "topic": "Asia Credit Resilience",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "CONTRARIAN",
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 75,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "oneLine": "Asia IG 1-3bp tighter. PB/bank buying front-end. TMT squeeze dealer-driven. Credit vs UST divergence",
+          "evidence": [
+            "HSBC:China IG 1-2bps tighter,PBs+banks buying.Curve steepened as buying focused front end",
+            "HSBC:Japan IG-1-3bps consistent all-in demand,preference 2-5yr",
+            "Barclays:China IG constructive 1-2bp tighter.Locals chasing shorter duration for all-in",
+            "JEF:Flow slightly buy-skewed.Absolute yield buyer on bank OPCO",
+            "GS:IG sovs tightened 2-3bps reversing yesterday's widening.Back end Indon clearing.RM+bank buying.Front end bank desks on Indon"
+          ],
+          "soWhat": "亚洲信用逆宏观走强→短端all-in yield吸引力驱动→但长端+BBB承压→分化加剧。关注信用能否持续脱离利率",
+          "quote": "Credit holding up fairly well.Better buying especially out of the PBs and banks",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-04",
+          "headline": "JPY跌至1986年新低→USD/JPY 163.17(+0.4%)→干预预期升温→JGB 30y/40y承压→40y拍卖在即",
+          "topic": "JPY at 40-Year Low",
+          "assetClass": "FX",
+          "direction": "Bearish",
+          "signalType": [
+            "EXTREME",
+            "ALERT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 80,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "oneLine": "JPY weakest since 1986:USD/JPY 163.17.Intervention speculation.JGB 40y auction Wed",
+          "evidence": [
+            "MS:JPY reached weakest level since 1986.USD/JPY+0.4%to 163.17.Increasing speculation around FX intervention",
+            "MS:JGBs weaker except 20y.30y/40y concession selling ahead of 40y auction.10y+1.5bp to 2.72%"
+          ],
+          "soWhat": "JPY 163突破→干预门槛→若MoF行动可能引发USD/JPY大幅回调。40y拍卖+利率上行+干预风险三重压力→日本资产波动加大",
+          "quote": "JPY reached its weakest level since 1986 at 163.17,increasing speculation around FX intervention",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-05",
+          "headline": "China HY分化→GRNCH/CHJMAO获RM+HF买入→LNGFOR两向→Asia HY+0.125-0.375pt",
+          "topic": "China HY Divergence",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "DIVERGENCE",
+            "FLOW"
+          ],
+          "action": "VERIFY",
+          "impactScore": 68,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "oneLine": "China HY分化:GRNCH/CHJMAO RM bid,LNGFOR mixed,Asia HY+0.125-0.375pt",
+          "evidence": [
+            "HSBC:GRNCH+CHJMAO continued to attract RM+HF demand.LNGFOR mixed interests",
+            "Barclays:Asia HY closing at highs+0.125-0.375pt,spreads-2-5bps.Technical session summer clean-up flows",
+            "Barclays:VEDLN benefiting reinvestment flows,new bonds better buying in long end"
+          ],
+          "soWhat": "China HY内部轮动→GRNCH/CHJMAO成核心→LNGFOR分歧→关注万科1H26预警后的传染",
+          "quote": "GRNCH and CHJMAO continued to attract real money and hedge fund demand",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-06",
+          "headline": "AI/半导体强势反弹→S&P500 IT+2.3% NASDAQ+1.3%→台韩芯片出口数据强劲→VIX-8.6%至17.05",
+          "topic": "AI/Semiconductor Rebound",
+          "assetClass": "Equity",
+          "direction": "Bullish",
+          "signalType": [
+            "REVERSAL",
+            "SENTIMENT"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Barclays"
+          ],
+          "oneLine": "AI/semi rebound:SPX IT+2.3% NASDAQ+1.3%.Taiwan/Korea chip exports strong.VIX-8.6%",
+          "evidence": [
+            "MS:AI+semiconductor shares rebounded S&P500 IT+2.3%.Strong chip-export data Taiwan+Korea.Price increase reports encouraged dip-buying",
+            "MS:VIX fell 8.6%to 17.05",
+            "Barclays:Asia equities firm AI themes rebound KOSPI+TAIEX",
+            "JS:Technology(XLK)+2.3% notable outperformer. Energy(XLE)+1.2%. Consumer Staples(XLP)-1% laggard"
+          ],
+          "soWhat": "芯片反弹+风险偏好回升→与利率上行形成分化→通胀(油价)+增长(芯片)双信号→Fed政策两难→跨资产相关性减弱",
+          "quote": "Chips Diverge from Higher Yields:semiconductor strength supported equities and broader risk appetite",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-07",
+          "headline": "SEA/India资金轮动→ETF/bank前端买入HDFC/CBKIN→beta纸MEDCIJ卖出让位供给→新发活跃Hanwha/KOMIPO",
+          "topic": "SEA/India Flow Rotation+Supply",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "FLOW",
+            "DIVERGENCE"
+          ],
+          "action": "VERIFY",
+          "impactScore": 65,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "oneLine": "India front-end ETF bank lifted.MEDCIJ sold for supply.Hanwha 3Y CT3+83 from IPT+115",
+          "evidence": [
+            "HSBC:India/Indo lifted by bank desks+ETFs front end(HDFC 27 CBKIN 29 BPCL 27)vs selling MEDCIJ 29/30 for supply",
+            "HSBC:New Issues:Hanwha 3Y CT3+83 IPT+115.Linyi 3Y 5.15%.Fubon 15NC10+165.Continuum 5NC2 8.125%",
+            "Barclays:INDON CNH more active upcoming PANDA issuance.KOREAT lifted SHNHAN/POHANG better selling"
+          ],
+          "soWhat": "一级活跃→二级轮动→前端ETF驱动 vs 卖出beta让位供给→Hanwha定价大幅收窄显示需求强劲→关注一级对二级利差传导",
+          "quote": "India/Indo been lifted by bank desks and ETFs in front end vs selling in beta paper to make room for supply",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-08",
+          "headline": "SGD/AUD零售买盘持续→外资银行AT1+永续债→绝对收益率驱动→短端银行债受追捧",
+          "topic": "SGD/AUD Retail All-In Yield",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "FLOW",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 62,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC"
+          ],
+          "oneLine": "SGD/AUD retail buying foreign bank AT1s/subs+corp perps.All-in yield attractive.AUD tighter 0-2bp",
+          "evidence": [
+            "HSBC:SGD firm undertone.PB/retail follow-through buying foreign bank AT1s/subs+corp perpetuals.Cash+5-10cts",
+            "HSBC:AUD net better buying PB/retail FXDs.Bank sub/senior favored.All-in yields attractive at elevated rates",
+            "HSBC:SG IG firmer afternoon front-end<3yrs.SIA recovering+0-2bps tighter"
+          ],
+          "soWhat": "零售资金持续流入→短端银行/AT1形成稳固支撑→但集中于高评级短久期→reach for all-in yield而非spread compression",
+          "quote": "Another session of net better buying as underlying rates remain elevated,making all-in yields attractive",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-09",
+          "headline": "GS:Asia IG spread回到接近历史最紧→OAS 55bp vs lifetime 50bp→TMT squeeze 3-4bp→HY长端gaming未clearing",
+          "topic": "Asia IG Valuation Stretched",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "VALUATION",
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 67,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "Asia IG OAS 55bp vs lifetime tights 50bp. TMT squeezed 3-4bp. HY long-end gaming still heavy. New issues underwhelming",
+          "evidence": [
+            "GS:Asia IG spreads back to almost the tights (OAS 55bps vs 50bps lifetime). China spreads even tighter—avg spread diff vs US IG decompressed to >35bps",
+            "GS:TMT risks squeezed 3-4 tighter—mostly dealers short covering, not inhouse buying",
+            "GS:HY cash still bruised—long end (>5Y) starts to feel heavy. Gaming hasn't found clearing level from RMs",
+            "GS:New issues still underwhelming—explains some of the rallies. I dun like the valuation as much now"
+          ],
+          "soWhat": "GS对Asia IG估值发出谨慎信号→OAS接近life-time tights→TMT squeeze非真实买盘→上涨空间有限→关注回调风险",
+          "quote": "Asia IG spread are back to almost the tights. I dun like the valuation as much now but with rates doing all the hard work we probably can stay here near term",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-10",
+          "headline": "ETF资金流分化→IG ETFs开盘强但上午流出→HY ETFs早盘大幅流出→EM-wide inflows via EEM→Taiwan/Korea standout",
+          "topic": "ETF Flow Divergence",
+          "assetClass": "Flow",
+          "direction": "Neutral",
+          "signalType": [
+            "FLOW",
+            "DIVERGENCE"
+          ],
+          "action": "VERIFY",
+          "impactScore": 63,
+          "conviction": "Medium",
+          "brokers": [
+            "Jane Street"
+          ],
+          "oneLine": "IG ETFs morning outflows, HY ETFs strong outflows. EM-wide inflows EEM. Taiwan/Korea standout. Tech/Energy/Healthcare sector leaders",
+          "evidence": [
+            "JS:IG ETFs opened strong, saw outflows in the morning, and fairly even flows through the close",
+            "JS:HY ETFs opened modestly, saw strong morning outflows that gradually eased through afternoon",
+            "JS:Broad-based EM inflows via EEM. Taiwan(EWT)+Korea(EWY) standout outperformers",
+            "JS:US sector:Technology(XLK)+Energy(XLE)+Health Care(XLV) outperformers. Communications(XLC)+Cons Disc(XLY) underperformers"
+          ],
+          "soWhat": "ETF flow信号偏谨慎→IG/HY morning outflows→但EM inflows持续→Taiwan/Korea领涨→tech leadership确认→关注GOOGL earnings后的AI capex信号",
+          "quote": "IG ETFs opened strong, saw outflows in the morning. HY ETFs saw strong morning outflows",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260722-11",
+          "headline": "US IG TMT widening→ORCL+5/+8(+20两日)→Data Centers weak HUT+7/QTS+16→AI credit ecosystem under pressure before GOOGL earnings",
+          "topic": "US IG AI Credit Ecosystem Stress",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "ALERT",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 73,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "oneLine": "ORCL+20 in 2 days. Data Centers HUT+7 QTS+16. AI credit ecosystem shaky pre-GOOGL earnings. TMT ~850mm traded",
+          "evidence": [
+            "MS US IG:ORCL+5/+8 off wides+10 after+20 two-day move. Stock+4.67% but market more concerned with hyperscaler indigestion+overwhelming supply",
+            "MS US IG:Data Centers weak HUT+7 QTS+16. AI capex expectations driving px action.Weighing on entire AI corporate credit ecosystem",
+            "MS US IG:GOOGL earnings tomorrow—next update re AI capex expectations. Big earnings day:RCICN/ATT/TEL am, CCI/GOOGL/IBM/NOW/TXN after close",
+            "GS:US IG cash lagged risk-on tone. Tech+1.2bps wider.Front-end Money Centers outperformed"
+          ],
+          "soWhat": "AI credit ecosystem面临考验→ORCL两日+20→Data Centers压力→GOOGL earnings为关键催化剂→若capex不及预期→可能触发AI信用链式抛售",
+          "quote": "Data Centers weak with HUT+7 and QTS+16 as the higher beta AI names feel like they are on shaky ground into GOOGL tomorrow",
+          "date": "2026-07-22",
+          "priorState": "No prior state available."
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "assetClass": "Asia Credit",
+          "tone": "Neutral-Constructive",
+          "coreTheme": "Asia IG Valuations Stretched Near Lifetime Tights",
+          "keyTakeaway": "Asia IG OAS 55bp vs 50bp lifetime.Sovs tightened 2-3bps.TMT squeezed 3-4bp dealer-driven. HY still bruised long-end heavy. China spreads vs US IG decompressed >35bps. Valuation cautious but rates supportive near-term.",
+          "emails": 2,
+          "sourceRefs": [
+            "GS Global Credit Market Recap 22 Jul",
+            "GS Asia Macro Daily 22 Jul"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "assetClass": "Macro",
+          "tone": "Cautious",
+          "coreTheme": "Oil-Driven Inflation+Chip Divergence",
+          "keyTakeaway": "US-Iran→Oil→UST bear-flatten.Chips Diverge from Higher Yields.JPY 163.17→40y low.US IG:TMT+2 ORCL+20 two-day.AI capex uncertainty into GOOGL.DXY+0.2%.",
+          "emails": 2,
+          "sourceRefs": [
+            "Global Macro Commentary:July 21",
+            "MS US IG Trading Commentary 7.21.26"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "assetClass": "US IG Trading",
+          "tone": "Cautious (TMT)",
+          "coreTheme": "AI Credit Ecosystem Under Pressure — GOOGL Earnings Key",
+          "keyTakeaway": "TMT+1/+2. ORCL+5/+8(+20 two-day).Data Centers weak HUT+7/QTS+16.Big 6/Regionals+0.5.Front end bid 10yr lagging.Industrials better buying.CAG new 5y+107→inside+103.~700mm Big6+~850mm TMT traded.",
+          "emails": 1,
+          "sourceRefs": [
+            "MS US IG Trading Commentary 7.21.26"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "assetClass": "Asia Credit",
+          "tone": "Constructive",
+          "coreTheme": "Asia IG Firmer Against Macro Headwinds",
+          "keyTakeaway": "China IG 1-2bp tighter PB/bank buying front-end.China HY mixed GRNCH/CHJMAO bid LNGFOR two-way.Japan IG-1-3bp.SGD/AUD retail buying sustained.India/Indo ETF bank lifted.",
+          "emails": 1,
+          "sourceRefs": [
+            "Asia Credit Trading EOD Commentary 21 Jul"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "assetClass": "Asia Credit",
+          "tone": "Neutral-Constructive",
+          "coreTheme": "Credit Resilience Despite Oil/UST Sell-off",
+          "keyTakeaway": "China IG constructive 1-2bp tighter.Asia HY+0.125-0.375pt.Japan IG two-way Korea mixed.VEDLN outperforming on reinvestment.New issues active.CDS-0.5bp Asia IG.",
+          "emails": 1,
+          "sourceRefs": [
+            "Asian Credit Trading Commentary EOD 21 Jul"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "assetClass": "TIPS/Real Yields",
+          "tone": "Bearish real yields",
+          "coreTheme": "Real Yields Grinding Higher",
+          "keyTakeaway": "BEI wider but lagged beta.Real yields:5y~2.10%10y 2.35%30y>2.90%.RM demand offset by systematic selling+BEI profit-taking.TIPS buyback Wed+10y auction Thu key.",
+          "emails": 1,
+          "sourceRefs": [
+            "TIPS:END OF DAY COMMENTARY"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "assetClass": "Japan/Aus IG",
+          "tone": "Cautious-Mixed",
+          "coreTheme": "Japan IG Recovering But BBB Still Under Pressure",
+          "keyTakeaway": "Sentiment recovered post-weekend.Spreads mixed-1/+1.Absolute yield buyer on bank OPCO.BBB(NOMURA SMPHD)under fast money selling.Flow slightly buy-skewed.",
+          "emails": 1,
+          "sourceRefs": [
+            "Japan/Aus IG EOD Commentary"
+          ]
+        },
+        {
+          "broker": "mkt(Jefferies)",
+          "assetClass": "UST Technical",
+          "tone": "Neutral ST Bearish LT",
+          "coreTheme": "Bearish Flag+Curve Flattening Bias",
+          "keyTakeaway": "10yr 4.50-4.63% bearish flag.Yield-driven buying emerging but RM may wait for higher levels.Curve steepening near exhaustion→flattening bias.LT bearish intact above 3.85%.",
+          "emails": 1,
+          "sourceRefs": [
+            "mkt recap for Monday and Outlook for Tuesday"
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "assetClass": "ETF Flow",
+          "tone": "Neutral",
+          "coreTheme": "ETF Flow Divergence: IG/HY Outflows vs EM Inflows",
+          "keyTakeaway": "IG ETFs morning outflows → even close.HY ETFs strong morning outflows.EM-wide inflows via EEM.Taiwan/Korea standout.US Tech+Energy+Healthcare sector outperformers.IG OTC USIG inflows.HY cash slight outflow tilt.",
+          "emails": 1,
+          "sourceRefs": [
+            "US ETF Market Commentary 21 Jul"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "dc-20260722-01",
+          "type": "数据一致",
+          "subject": "亚洲信用走强",
+          "status": "Confirmed",
+          "detail": "HSBC+Barclays一致确认:China IG 1-2bp tighter Asia HY firmer Japan IG constructive",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "flagged": false
+        },
+        {
+          "id": "dc-20260722-02",
+          "type": "数据一致",
+          "subject": "UST熊平+10y两月新高",
+          "status": "Confirmed",
+          "detail": "MS×BMO×mkt三方确认:UST bear-flattening 10y 4.63%.real yield上行趋势一致",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt"
+          ],
+          "flagged": false
+        },
+        {
+          "id": "dc-20260722-03",
+          "type": "数据一致",
+          "subject": "前端/短久期all-in yield买盘主导",
+          "status": "Confirmed",
+          "detail": "HSBC/Barclays/JEF三方确认:PBs/banks/retail追逐2-5yr短端absolute yield.长端/BBB相对承压",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "flagged": false
+        },
+        {
+          "id": "dc-20260722-04",
+          "type": "数据核对",
+          "subject": "JPY干预风险",
+          "status": "Monitor",
+          "detail": "MS:JPY 163.17→1986年来最低→干预预期升温。JEF未提及。关注周三40y拍卖+MoF动态",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "flagged": true
+        },
+        {
+          "id": "dc-20260722-05",
+          "type": "数据核对",
+          "subject": "TIPS真实需求vs系统性卖盘",
+          "status": "Monitor",
+          "detail": "BMO:RM demand offset by systematic/auction selling+profit taking。周四10y TIPS拍卖为需求试金石",
+          "brokers": [
+            "BMO"
+          ],
+          "flagged": true
+        },
+        {
+          "id": "dc-20260722-06",
+          "type": "数据核对",
+          "subject": "亚洲信用能否持续脱离宏观",
+          "status": "Monitor",
+          "detail": "Barclays/HSBC报告信用走强但MS宏观持续恶化。信用与利率脱钩能否持续存疑",
+          "brokers": [
+            "Barclays",
+            "HSBC",
+            "Morgan Stanley"
+          ],
+          "flagged": true
+        },
+        {
+          "id": "dc-20260722-07",
+          "type": "数据核对",
+          "subject": "ETF资金流vs亚洲信用走强",
+          "status": "Monitor",
+          "detail": "JS:IG ETFs morning outflows HY ETFs strong outflows vs HSBC/Barclays:Asia credit firmer.ETF flows显示美国信用偏谨慎→亚洲信用相对独立→但若US IG持续走宽→亚洲可能滞后反映",
+          "brokers": [
+            "Jane Street",
+            "HSBC",
+            "Barclays"
+          ],
+          "flagged": true
+        },
+        {
+          "id": "dc-20260722-08",
+          "type": "数据核对",
+          "subject": "AI credit ecosystem stress (ORCL+20)",
+          "status": "Monitor",
+          "detail": "MS US IG:ORCL+5/+8(+20两日) Data Centers HUT+7/QTS+16.GS:Tech+1.2bps wider.跨US IG/Asia IG AI相关信用均承压→关注GOOGL earnings后是否触发连锁反应",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "flagged": true
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "mixed",
+        "label": "宏观偏空vs信用偏强",
+        "note": "UST bear-flatten+油价高位→宏观偏空。但亚洲信用逆势走强。跨资产信号分化。关注周四TIPS拍卖+JPY干预+新发供给",
+        "bias": "neutral-negative",
+        "conviction": "Medium"
+      },
+      "macro": [
+        "[Goldman Sachs] Asia IG OAS 55bp vs lifetime 50bp→valuations stretched.TMT squeeze 3-4bp mostly dealer short covering.HY long-end gaming still not clearing",
+        "[Goldman Sachs/Global] CTAs turned bearish UST→adding selling pressure.Hedge funds receiving belly+steepening.Real money light.20y auction today fear",
+        "[Morgan Stanley] 美伊冲突第10天→Brent$91.35(+2.4%)→通胀+加息预期回升。DXY 101.19(+0.2%)",
+        "[Morgan Stanley] UST熊平→2y+5.5bp 10y+3.6bp 30y+1.9bp。10y 4.63%两月新高。Fed加息概率<25%",
+        "[BMO] TIPS real yields持续攀升→5y~2.10% 10y 2.35% 30y>2.90%。RM买盘被系统卖盘+BEI获利了结抵消",
+        "[mkt] 10yr 4.50-4.63%bearish flag。曲线陡峭化接近尾声→flattening bias。长期看空(>3.85%)不变",
+        "[Morgan Stanley] JPY 163.17→1986年最弱→干预预期。GBP承压(新政府财政)。CAD受关税谈判影响",
+        "[Jane Street] US ETF flows:IG outflows AM→even close.HY strong AM outflows→gradually eased.EM-wide inflows.Tech+Energy+Healthcare sector leaders",
+        "[Morgan Stanley US IG] Big earnings day ahead:GOOGL/IBM/NOW/TXN after close.AI capex expectations to drive credit ecosystem.$850mm TMT traded"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "宏观偏空vs信用偏强",
+          "note": "UST bear-flatten+油价高位→宏观偏空。但亚洲信用逆势走强。跨资产信号分化。关注周四TIPS拍卖+JPY干预+新发供给"
+        },
+        "activeNames": [
+          {
+            "name": "GRNCH/CHJMAO",
+            "ticker": "GRNCH",
+            "tone": "buy",
+            "activity": "RM+HF持续买入→China HY核心持仓",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "VEDLN",
+            "ticker": "VEDLN",
+            "tone": "buy",
+            "activity": "再投资资金流入→新债长端outperform",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "HDFC/CBKIN/BPCL",
+            "ticker": "HDFC",
+            "tone": "buy",
+            "activity": "ETF+银行买盘→印度/印尼前端",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "MEDCIJ",
+            "ticker": "MEDCIJ",
+            "tone": "sell",
+            "activity": "beta纸卖出→为一级发行腾仓位",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "NOMURA/SMPHD",
+            "ticker": "NOMURA",
+            "tone": "sell",
+            "activity": "BBB承压→fast money减仓",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "LNGFOR",
+            "ticker": "LNGFOR",
+            "tone": "mixed",
+            "activity": "两向分歧→RM兴趣混合",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "SOFTBK",
+            "ticker": "SOFTBK",
+            "tone": "buy",
+            "activity": "onshore买盘→hybrids/perps",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "外资银行AT1/永续",
+            "ticker": "AT1/Perps",
+            "tone": "buy",
+            "activity": "SGD PB/零售买入→cash+5-10cts",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "US IG TMT/ORCL",
+            "ticker": "ORCL",
+            "tone": "sell",
+            "activity": "ORCL+20两日→Data Centers拖累→AI信用链压力。~850mm TMT traded",
+            "brokers": [
+              "Morgan Stanley"
+            ]
+          },
+          {
+            "name": "US IG Industrials (EMR/FERG/CAG)",
+            "ticker": "CAG/EMR",
+            "tone": "buy",
+            "activity": "Industrials better buying→first time in few sessions.CAG new 5y performed inside+103",
+            "brokers": [
+              "Morgan Stanley"
+            ]
+          },
+          {
+            "name": "Asia IG TMT (Tencent/Alibaba)",
+            "ticker": "TMT_Asia",
+            "tone": "buy",
+            "activity": "TMT squeezed 3-4bp tighter→mostly dealer short covering→not real inhouse buying",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "Jane Street",
+            "type": "ETF资金流",
+            "summary": "IG ETFs morning outflows→even close.HY ETFs strong morning outflows.EM-wide inflows EEM.Taiwan(EWT)+Korea(EWY)standout.Tech(XLK)+Energy(XLE)+Healthcare(XLV) sector leaders"
+          },
+          {
+            "broker": "Morgan Stanley",
+            "type": "地缘政治",
+            "summary": "美伊冲突第10天→Brent>$91 WTI>$84→能源供应担忧→通胀预期+加息概率回升"
+          },
+          {
+            "broker": "Morgan Stanley",
+            "type": "利率",
+            "summary": "UST熊平→10y 4.63%两月新高→real yield持续攀升→金融条件收紧→跨资产分化"
+          },
+          {
+            "broker": "HSBC/Barclays/JEF",
+            "type": "资金流向",
+            "summary": "亚洲信用逆势走强→PB/银行追逐短端all-in yield→ETF前端买盘→零售SGD/AUD持续流入"
+          },
+          {
+            "broker": "BMO",
+            "type": "TIPS/通胀定价",
+            "summary": "BEI偏宽但beta不足→real yield攀升→RM买盘被系统性卖盘抵消→周四10y TIPS拍卖为需求试金石"
+          },
+          {
+            "broker": "JEFFERIES",
+            "type": "信用分化",
+            "summary": "Japan IG两向→高评级银行OPCO vs BBB快钱卖出→信用分层加剧"
+          },
+          {
+            "broker": "Barclays/HSBC",
+            "type": "一级市场",
+            "summary": "新发活跃：Hanwha/KOMIPO/CMBIL/Fubon→Hanwha IPT+115→CT3+83大幅收窄→需求强劲→二级挤压"
+          },
+          {
+            "broker": "Morgan Stanley",
+            "type": "汇率风险",
+            "summary": "JPY 163.17→1986年最弱→干预预期→若MoF行动可能触发USD/JPY大幅回调→JGB+亚洲资产波动"
+          },
+          {
+            "broker": "Morgan Stanley US IG",
+            "type": "AI信用压力",
+            "summary": "ORCL+20两日.Data Centers HUT+7/QTS+16.AI capex不确定性→GOOGL earnings为关键催化剂→AI credit ecosystem under pressure"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "GRNCH",
+          "name": "GRNCH",
+          "assetClass": "Credit",
+          "region": "China HY",
+          "sector": "Property",
+          "flow": "buy",
+          "inFocus": true,
+          "priority": 1,
+          "analysis": "RM+HF持续买入→China HY核心持仓",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "GRNCH continued to attract real money and hedge fund demand",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "VEDLN",
+          "name": "VEDLN",
+          "assetClass": "Credit",
+          "region": "EM HY",
+          "sector": "Commodity",
+          "flow": "buy",
+          "inFocus": true,
+          "priority": 1,
+          "analysis": "再投资资金流入→新债长端outperform",
+          "brokers": [
+            "Barclays"
+          ],
+          "quote": "VEDLN benefiting from reinvestment flows,new bonds better buying long end",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "LNGFOR",
+          "name": "LNGFOR",
+          "assetClass": "Credit",
+          "region": "China HY",
+          "sector": "Property",
+          "flow": "mixed",
+          "inFocus": true,
+          "priority": 2,
+          "analysis": "两向分歧RM兴趣混合→需监控",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "LNGFOR had mixed interest from real money accounts",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "MEDCIJ",
+          "name": "MEDCIJ",
+          "assetClass": "Credit",
+          "region": "SEA IG",
+          "sector": "Industrial",
+          "flow": "sell",
+          "inFocus": true,
+          "priority": 2,
+          "analysis": "beta纸卖出→为一级供应腾挪仓位",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "Selling in beta paper like MEDCIJ 29/30 to make room for supply",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "NOMURA/SMPHD",
+          "name": "NOMURA/SMPHD",
+          "assetClass": "Credit",
+          "region": "Japan IG",
+          "sector": "Financial",
+          "flow": "sell",
+          "inFocus": true,
+          "priority": 2,
+          "analysis": "BBB承压fast money卖出→高评级银行OPCO vs BBB分化",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "High beta BBB rating still under pressure like NOMURA SMPHD",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "HANWHA/KOMIPO",
+          "name": "HANWHA/KOMIPO",
+          "assetClass": "Credit",
+          "region": "Korea IG",
+          "sector": "Industrial/Utility",
+          "flow": "new_issue",
+          "inFocus": true,
+          "priority": 2,
+          "analysis": "新发定价大幅收窄:Hanwha IPT+115→CT3+83。需求强劲",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "Hanwha Aerospace 3Y priced CT3+83 from IPT+115",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "SOFTBK/NIPLIF",
+          "name": "SOFTBK/NIPLIF",
+          "assetClass": "Credit",
+          "region": "Japan HY",
+          "sector": "Financial/Tech",
+          "flow": "buy",
+          "inFocus": false,
+          "priority": 3,
+          "analysis": "Japan HY discreet demand:SOFTBK onshore buying hybrids/perps",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "Sneaky demand for SOFTBK complex,particularly onshore buying in new bonds",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        },
+        {
+          "ticker": "ORCL",
+          "name": "ORCL (Oracle)",
+          "assetClass": "Credit",
+          "region": "US IG TMT",
+          "sector": "Technology",
+          "flow": "sell",
+          "inFocus": true,
+          "priority": 1,
+          "analysis": "+20两日→+5/+8 off wides→GOOGL earnings前AI capex不确定性→AI credit ecosystem核心压力指标",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "quote": "ORCL+5/+8 albeit off the wides of the day+10 after a+20 two day move",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "Morgan Stanley+Goldman Sachs",
+          "topic": "AI信用链尾部风险",
+          "point": "US IG:ORCL+20→Data Centers压力→GS:Tech+1.2bp wider→Asia IG虽是短期反弹但估值接近life-time tights→GOOGL earnings若AI capex不及预期→AI信用链双向承压(US IG direct+Asia IG valuation unwind)",
+          "quote": "Data Centers weak as higher beta AI names feel like they are on shaky ground into GOOGL tomorrow"
+        },
+        {
+          "broker": "Jane Street",
+          "topic": "ETF Flow作为early warning",
+          "point": "IG/HY ETFs morning outflows→美国信用资金面转弱→与Asia credit走强形成对比→若outflows持续→Asia credit面临滞后调整风险→关注US IG primary supply消化情况($5.8bn IG+$1.075bn HY)",
+          "quote": "IG ETFs saw outflows in the morning. HY ETFs saw strong morning outflows"
+        },
+        {
+          "broker": "系统分析",
+          "topic": "集中度风险",
+          "point": "Asia IG OAS 55bp接近life-time tights 50bp→TMT squeeze为dealer short covering非真实买盘→短端all-in yield策略高度拥挤→若UST突破4.63%+GOOGL触发AI回调→双重压力",
+          "quote": "Optically Asia IG spread are back to almost the tights (OAS 55bps vs 50bps life-time tights)"
+        },
+        {
+          "broker": "系统分析",
+          "topic": "跨资产分化",
+          "point": "UST bear-flatten vs亚洲信用走强+芯片反弹→三向信号分歧→关联度下降→但不可持续→一方终将被牵引",
+          "quote": "Chips Diverge from Higher Yields"
+        },
+        {
+          "broker": "系统分析",
+          "topic": "一级供给压力",
+          "point": "Hanwha/KOMIPO/CMBIL等多笔新发→定价均从IPT大幅收窄→但供给量增加→二级轮动卖出(MEDCIJ)→关注消化能力",
+          "quote": "New issues tightened significantly from IPT.India/Indo selling beta to make room for supply"
+        },
+        {
+          "broker": "系统分析",
+          "topic": "JPY干预尾部风险",
+          "point": "JPY 163→1986年新低→干预概率上升→若触发→USD/JPY可能急跌3-5个大数→日本资产波动→亚洲信用波及",
+          "quote": "JPY reached its weakest level since 1986"
+        },
+        {
+          "broker": "系统分析",
+          "topic": "TIPS拍卖关键信号",
+          "point": "周四10y TIPS拍卖→真实资金对real yield 2.35%的需求→若拍卖疲弱→real yield进一步上冲→对风险资产构成压力",
+          "quote": "Thursday 10y TIPS auction will be a good barometer for real yield appetite"
+        },
+        {
+          "broker": "系统分析",
+          "topic": "建议：分散久期+关注拍卖",
+          "point": "Short:关注周三JGB 40y拍卖+周四TIPS 10y拍卖→均为需求试金石。Medium:亚洲信用前端策略拥挤→考虑逐步分散至3-5y中期。Long:JPY干预+油价→宏观尾部风险上升",
+          "quote": "Stay cautious with data dependent"
+        }
+      ]
+    },
     {
       "reportDate": "2026-07-21",
       "coverage": {
