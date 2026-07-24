@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-23 17:02 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-24 08:00 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -1509,9 +1509,828 @@ window.REPORT_DATA =
         }
       ],
       "divergences": []
+    },
+    {
+      "id": "thread-ust-bear-flatten",
+      "topic": "UST Bear Flatten → Wave(iii)III",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-24",
+      "status": "Intensifying",
+      "days": [
+        "7/22",
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/22:初现苗头→July hike 33%. 7/23:升级→2y-5y 2026 highs, wave(iii)III. 7/24:确认→10y 4.69%年内最高, TIPS auction disaster→Brent>$100加速→target 5%+",
+      "nextWatch": "FOMC 7/29→hike or not; 10y能否突破4.75%",
+      "name": "UST Bear Flatten → Wave(iii)III",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-oil-escalation",
+      "topic": "Oil Price Escalation / Middle East",
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-24",
+      "status": "Escalating",
+      "days": [
+        "7/20",
+        "7/21",
+        "7/22",
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/20:WTI $82.25 Iran abandons deal. 7/21:WTI+3.5% Saudi tensions. 7/22:Oil持续上涨. 7/23:Brent $87-90 target. 7/24:Brent+6.9%>$100, Saudi tankers attacked→supply shock→Trump close to larger operation",
+      "nextWatch": "周末前是否进一步升级→Red Sea route→Strait of Hormuz",
+      "name": "Oil Price Escalation / Middle East",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-asia-ig-buyer-strike",
+      "topic": "Asia IG Demand Evaporation",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-24",
+      "status": "Worsening",
+      "days": [
+        "7/22",
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/22:dealer short covering为主→clients net sellers. 7/23:3券商确认全部short covering→虚假反弹. 7/24:全面buyer strike→rates breakout kills demand→technical bonds开始被砸→chgrid 30yr OLB+0",
+      "nextWatch": "FOMC前仓位调整→spreads能否守住当前水平",
+      "name": "Asia IG Demand Evaporation",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-softbk-hy",
+      "topic": "SOFTBK Credit Under Pressure",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24",
+      "status": "Escalating",
+      "days": [
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/23:cash+1pt short covering vs CDS+5→divergence→SNRs lag. 7/24:HY-0.5 to -0.875pt→HY underperforming IG→support buyers absent→RM sellers→全面恶化",
+      "nextWatch": "SOFTBK CDS是否进一步扩大→Cash-CDS basis",
+      "name": "SOFTBK Credit Under Pressure",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-tech-sell-off",
+      "topic": "Tech/AI Capex Sell-off",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-24",
+      "status": "Intensifying",
+      "days": [
+        "7/22",
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/22:US IG AI credit stress→ORCL+20→Data Centers. 7/23:GOOGL capex↑+FCF负→回报率质疑. 7/24:Nasdaq-2.2%→Comm Svcs-5.2%→rising financing costs+FCF压力→sector rotation",
+      "nextWatch": "其他hyperscaler earnings→AI capex returns debate",
+      "name": "Tech/AI Capex Sell-off",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-em-fx-pressure",
+      "topic": "EM/FX Oil Importer Stress",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24",
+      "status": "Intensifying",
+      "days": [
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/23:Oil进口国承压→Indon/SRILAN/Mongol→本地需求缓冲. 7/24:DXY+0.3%→NZD-0.8%→ZAR underperform→USD/JPY 163.87→Japan NEER new lows→全面恶化",
+      "nextWatch": "BoJ加息预期→carry trade unwind→JPY reversal risk",
+      "name": "EM/FX Oil Importer Stress",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-boj-jgb",
+      "topic": "BoJ Rate Hike + JGB Twist",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24",
+      "status": "Developing",
+      "days": [
+        "7/23",
+        "7/24"
+      ],
+      "evolution": "7/23:2y JGB 1995年最高→BoJ faster hikes→JGB twist flatten. 7/24:USD/JPY 163.87+0.4%→Japan NEER new lows→widening US-Japan yield differential→BoJ更激进加息压力增大",
+      "nextWatch": "BoJ下周会议→是否加速加息节奏",
+      "name": "BoJ Rate Hike + JGB Twist",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-ecb-rate-path",
+      "topic": "ECB Rate Path",
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-24",
+      "status": "New",
+      "days": [
+        "7/24"
+      ],
+      "evolution": "7/24:ECB held 2.25%→Sept hike door open→inflationary pressures highlighted→EUR muted→favor long front-end",
+      "nextWatch": "ECB Sept meeting→Oil>$100 impact on ECB inflation assessment",
+      "name": "ECB Rate Path",
+      "assetClass": "",
+      "latestChange": ""
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-24",
+      "coverage": {
+        "emails": 7,
+        "brokers": [
+          "Morgan Stanley",
+          "HSBC",
+          "BMO",
+          "Deutsche Bank",
+          "TD Securities",
+          "JEFFERIES",
+          "mkt"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": "7封：MS宏观/BMO TIPS/HSBC信用/JEF日本IG/DB Aussie信用/TD ECB/mkt技术分析|均为07-23交易日"
+      },
+      "signals": [
+        {
+          "id": "sig-20260724-01",
+          "topic": "Brent Breaks $100: Oil Shock Intensifies",
+          "assetClass": "Macro/Commodity",
+          "direction": "Bearish",
+          "signalType": [
+            "ALERT",
+            "CONTINUATION"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 95,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt"
+          ],
+          "headline": "Brent+6.9%突破$100→Saudi tanker遇袭→Red Sea出口路线受胁→jobless claims 187k→UST 10y 4.69%→S&P-1.2% Nasdaq-2.2%",
+          "oneLine": "Brent+6.9%>$100/bbl.Saudi tankers attacked,Red Sea+Strait of Hormuz threatened.10y 4.69% highest since early 2025.VIX+12.4% to 18.70",
+          "evidence": [
+            "MS:Brent+6.9% above $100/bbl after attacks on Saudi tankers threatened Red Sea export route+Strait of Hormuz disruption",
+            "MS:Jobless claims 187k vs 210k consensus,well below expectations→tighter Fed policy expectations",
+            "MS:S&P500-1.2%,Nasdaq-2.2%,Comm Svcs-5.2%,Cons Disc-5.1%.Energy+0.6%,VIX+12.4% to 18.70",
+            "MS:10y 4.69% highest since early 2025.2y+4.7bp 30y+1.5bp bear flatten",
+            "BMO:Long end real yields broke 3% on off-the-run 30s,hesitant to catch falling knife",
+            "mkt:Oil $87-90 target zone→profit-taking+long oil/short bonds unwinding could emerge"
+          ],
+          "soWhat": "Brent突破$100是质变→从'油价上涨'到'能源供给危机'→Red Sea+Saudi tanker遇袭=供给面冲击→若冲突扩大→Brent可能进一步冲向$110-120→通胀预期+利率双重上行→credit spread全面承压→关注周末风险升级",
+          "quote": "Oil topped $100 on renewed Middle East tensions after reported attacks on Saudi tankers threatened the Red Sea export route",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-02",
+          "topic": "UST Bear Flatten Confirms Wave(iii)III + TIPS Auction Disaster",
+          "assetClass": "Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "ALERT",
+            "CONTINUATION"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 90,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt"
+          ],
+          "headline": "10y 4.69%→wave(iii)III confirmed→$21bn TIPS auction tails 2.5bp→highest real yield since 2008→no dip buying→5yr +7bp real yields",
+          "oneLine": "10y 4.69% highest since early 2025.2y+4.7bp 30y+1.5bp bear flatten.Wave(iii)III confirmed.TIPS auction disaster.5y real+7bp",
+          "evidence": [
+            "MS:10y 4.69% highest since early 2025.2y+4.7bp,bear flatten",
+            "MS:$21bn 10y TIPS auction cleared 2.438% real yield→highest since 2008→2-3bp tail→2.30 bid-to-cover vs 2.52",
+            "BMO:5s real yields+7bp,long end off-the-run 30s broke 3%→no demand→street hesitant to catch falling knife",
+            "mkt:Wave(iii)III underway→break above 4.61/4.63% confirms→10y target 5%+",
+            "mkt:20yr bearish flag breakdown→vulnerable to 5.20-5.25% zone",
+            "mkt:But 5yr at 4.42%+ appears relatively cheap→tactical long opportunity"
+          ],
+          "soWhat": "TIPS拍卖灾难=真实资金不愿接飞刀→real yield 2.44%是2008年来最高→若Brent>100持续→通胀预期+real yield双升→10y名义收益率可能快速突破4.75%→5%目标进入可触及范围→信用利差面临重新定价→但mkt提示5yr战术性做多机会→市场分歧加大",
+          "quote": "The 10y TIPS auction cleared at 2.438% real yield, the highest since 2008, tailed 2-3bp",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-03",
+          "topic": "Asia IG Buyer Strike: UST Breakout Kills Demand",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "FLOW",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 78,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "headline": "Asia IG全面买方罢工→China IG+1-3bps wider→technical bonds仍持稳但新发/street longs被砸→oil+rates破位=买家离场",
+          "oneLine": "China IG+1-3bps wider.Macro weaker led by oil,rates breaking out→buyer strike.Technical bonds held but new issues/street longs hit",
+          "evidence": [
+            "HSBC:China IG+1-3bps wider→macro weaker led by oil,rates breaking out of range→buyer strike→chgrid 30yr finally hit down at OLB+0",
+            "HSBC:Technical bank book bonds remain well held,but new issues/street longs got hit down",
+            "JEF:Rate sell off further,spreads wider→flow subdued→clients don't have convincing view on credit or rate",
+            "JEF:Japan IG 0-1bps wider→selective buying high quality Japan banks 5-10yr driven by inflow",
+            "JEF:Insurance hybrids another soft day 15-25c lower→some RM dip buying at cash level→fast money/street better seller"
+          ],
+          "soWhat": "UST突破年内区间→Asia IG全面买方罢工→这是关键转变：之前dealer short covering还能撑住→现在连technical bond也开始被砸→若10y继续上行→China IG利差面临更大幅度reprice→关注周末前仓位调整和Brent>$100的溢出效应",
+          "quote": "Macro weaker led by oil, rates breaking out of range resulting in a buyer strike here in my space",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-04",
+          "topic": "SOFTBK HY Sell-off: Rate Sell-off Triggers HY Underperformance",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "SHIFT",
+            "ALERT"
+          ],
+          "action": "WATCH",
+          "impactScore": 75,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "headline": "SOFTBK-0.5 to -0.875pt across 5-10yr fixed+hybrids→HY underperforms IG→RM selling Aussie HY→support buyers absent",
+          "oneLine": "SOFTBK-0.5 to -0.875pt 5-10yr.HY underperforming IG for first time.RM+Aussie HY sellers.Support buyers largely absent",
+          "evidence": [
+            "HSBC:Japan weaker second half→SOFTBK wave of down prints→bonds -0.5-0.875pt in 5-10yr fixed and hybrids",
+            "HSBC:HY traded worse than IG today for a change→support buyers largely absent→flow skewed more sellers than buyers",
+            "HSBC:RM selling Aussie HY+retail sellers NSANY and RAKUTN→trend of spreads widening 1-3bps daily shows no sign of slowing",
+            "JEF:Flow skewed with client slightly better selling→some RM dip buying at cash level→but fast money/street remains better seller"
+          ],
+          "soWhat": "SOFTBK HY领跌→这是利率冲击向信用传导的信号→HY underperforming IG表明风险偏好急剧恶化→support buyers缺席→若UST继续走弱→HY可能成为下一轮risk-off的震中→关注SOFTBK CDS是否扩大",
+          "quote": "HY traded worse than IG today for a change as we saw a wave of down prints in the SOFTBK curve",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-05",
+          "topic": "US Equities: Tech Sell-off Deepens on AI Capex + Oil",
+          "assetClass": "Equity/Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "EARNINGS"
+          ],
+          "action": "WATCH",
+          "impactScore": 80,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "Nasdaq-2.2%→Comm Svcs-5.2%/Cons Disc-5.1%→rising financing costs+FCF压力→sector dispersion加剧→但Industrials+1.8%",
+          "oneLine": "Nasdaq-2.2%.Comm Svcs-5.2% Cons Disc-5.1%.Rising financing costs+FCF pressure.Industrials+1.8% Energy+0.6%.Sector rotation",
+          "evidence": [
+            "MS:Nasdaq-2.2%→communication services-5.2%,consumer discretionary-5.1%",
+            "MS:Info Tech-1.1%→rising financing costs+reduced FCF support across tech complex",
+            "MS:Industrials+1.8%,Energy+0.6%,Healthcare+1.3%→substantial sector dispersion",
+            "MS:S&P500-1.2% as oil-driven rates sell-off compounded AI capex concerns"
+          ],
+          "soWhat": "科技股抛售从AI capex担忧→扩大到全部利率敏感板块→Comm Svcs-5.2%表明GOOGL/META等面临双重压力→但sector rotation到industrials+energy表明并非全面崩盘→关注科技信用利差是否滞后反应",
+          "quote": "Investors focused on rising financing costs and reduced free-cash-flow support across the broader technology complex",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-06",
+          "topic": "ECB Holds but September Hike Door Open",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "SHIFT",
+            "WATCH"
+          ],
+          "action": "WATCH",
+          "impactScore": 60,
+          "conviction": "Medium",
+          "brokers": [
+            "TD Securities",
+            "Morgan Stanley"
+          ],
+          "headline": "ECB depo rate held 2.25%→inflationary pressures highlighted→Sept hike door open→EUR muted→favor long EUR front-end",
+          "oneLine": "ECB held 2.25%.Meeting-by-meeting approach.Sept hike door open.Market reaction muted.Favor long EUR front-end",
+          "evidence": [
+            "TD:ECB left deposit rate at 2.25%→statement highlighted inflationary pressures→meeting-by-meeting→Sept hike door open",
+            "TD:Market reaction fairly muted→favor long bias EUR front-end→EURUSD muted on unchanged guidance",
+            "MS:SARB also held rates→global central banks still on guard against inflation"
+          ],
+          "soWhat": "ECB按兵不动但保持Sept加息选项→与Fed的July hike概率上升形成对比→EUR front-end相对价值显现→但Oil冲击对EUR区域通胀影响更大→关注ECB对油价上涨的反应",
+          "quote": "Captain Lagarde steers toward September rate hike — the statement continued to mention inflationary pressures",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-07",
+          "topic": "Aussie Energy Credit: STOAU + KARAU Quarterly Updates",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "EARNINGS",
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 55,
+          "conviction": "Medium",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "headline": "STOAU 2Q revenue+6% QoQ→higher LNG prices支持→Moody's positive outlook→KARAU weak but expected→Who Dat overhang until 4Q27",
+          "oneLine": "STOAU:revenue+6% QoQ,production+3%,Moody's positive outlook.KARAU:weak 2Q but expected,Bauna restored 22kbopd",
+          "evidence": [
+            "DB:STOAU 2Q26 revenue+6% QoQ to $1.35bn,production+3% QoQ→Barossa 97% planned rates→Pikka progressing toward plateau",
+            "DB:STOAU FCF muted 1H26 ~$378mn but one-off commissioning costs→$300mn cargo proceeds received after quarter-end",
+            "DB:STOAU bonds held in well→supported by higher oil prices+Moody's rating positive outlook",
+            "DB:KARAU production-44% QoQ to 1.08mmboe→Bauna FPSO maintenance→Who Dat E manifold shut-in→current Bauna 22kbopd",
+            "DB:KARAU 2029s 8.6% ytw→likely rangebound until production recovery evidence"
+          ],
+          "soWhat": "Oil突破$100利好STOAU→Moody's positive outlook+deleveraging story→但Barossa/Pikka ramp-up仍需时间→KARAU Who Dat overhang持续到4Q27→高收益O&G分化：oil producer winners vs service-exposed losers",
+          "quote": "STOAU bonds have held in well... the curve will be supported by higher oil prices and Moody's rating on positive outlook",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260724-08",
+          "topic": "Dollar Strengthens + EM/FX Pressure: Oil Importers Hit",
+          "assetClass": "Fx/Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "DIVERGENCE"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "TD Securities"
+          ],
+          "headline": "DXY+0.3% to 101.44→NZD-0.8% underperforms→USD/JPY+0.4% to 163.87→Japan NEER new lows→ZAR underperforms EMFX→oil importers hit",
+          "oneLine": "DXY 101.44(+0.3%).NZD-0.8% underperforms.USD/JPY 163.87(+0.4%).Japan NEER new lows.ZAR underperforms EMFX",
+          "evidence": [
+            "MS:DXY+0.3% to 101.44→higher US yields+safe-haven demand outweighed risk sentiment deterioration",
+            "MS:EUR/USD-0.3%,GBP/USD-0.5%,NZD-0.8% underperform,AUD/USD-0.4% despite stronger employment data",
+            "MS:USD/JPY+0.4% to 163.87→widening US-Japan yield differential→Japan NEER new lows",
+            "MS:ZAR underperforms EMFX→oil importing EM currencies under pressure",
+            "TD:EURUSD muted on unchanged ECB guidance→near-term EUR downside pressure stays"
+          ],
+          "soWhat": "Brent>$100+UST yield上升=Dollar双重支撑→oil importing EM/FX面临最大压力→JPY/INR/ZAR underperform→若Japan NEER持续走低→BoJ可能被迫更激进加息→关注carry trade unwind风险",
+          "quote": "The dollar strengthened against most G10 currencies as higher US yields and safe-haven demand outweighed the deterioration in risk sentiment",
+          "date": "2026-07-24",
+          "priorState": "No prior state available."
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Morgan Stanley",
+          "date": "2026-07-23",
+          "assetClass": "Macro",
+          "summary": "Brent+6.9%突破$100→Saudi tanker遇袭→10y 4.69%年内最高→S&P-1.2% Nasdaq-2.2%→jobless claims 187k远低于预期→TIPS auction disaster→DXY+0.3%→科技板块领跌而能源/工业上涨",
+          "stance": "Bearish",
+          "keyQuote": "Oil topped $100 on renewed Middle East tensions; US jobless claims fell to 187k; global bonds sold off; tech led US equity losses"
+        },
+        {
+          "broker": "HSBC",
+          "date": "2026-07-23",
+          "assetClass": "Credit",
+          "summary": "Asia信用mixed→China IG+1-3bps wider buyer strike→technical bonds仍持稳但新发被砸→HY constructive GLP/FAEACO+1pt→Japan/SEA weaker→SOFTBK-0.5-0.875pt HY underperform IG→buyers absent",
+          "stance": "Bearish",
+          "keyQuote": "Macro weaker led by oil, rates breaking out of range resulting in a buyer strike"
+        },
+        {
+          "broker": "BMO",
+          "date": "2026-07-23",
+          "assetClass": "Rates",
+          "summary": "TIPS real yields+7bp 5s→10y auction tailed 2.5bp→long end off-the-run 30s broke 3%→no demand→street hesitant to catch falling knife→US/Iran escalating→front-end swaps supported by energy but lagged on beta→1y CPI vs crude questions surfacing",
+          "stance": "Bearish",
+          "keyQuote": "Long end real yields broke 3% on some of the off-the-run 30s, yet we still don't see a ton of demand at these levels"
+        },
+        {
+          "broker": "mkt (JEFFERIES)",
+          "date": "2026-07-23",
+          "assetClass": "Rates",
+          "summary": "UST bear flatten持续→wave(iii)III underway→break 4.61/4.63% confirms→20yr bearish flag breakdown→5yr at 4.42%+ appears relatively cheap→tactical long front-end→oil $87-90 target→caution with data dependent",
+          "stance": "Neutral",
+          "keyQuote": "Wave (iii) of III is now underway. A decisive break above 4.61%/4.63% would confirm. But market has overpriced Fed tightening."
+        },
+        {
+          "broker": "JEFFERIES",
+          "date": "2026-07-23",
+          "assetClass": "Credit",
+          "summary": "Japan/Aus IG 0-1bps wider→flow subdued→clients no conviction→selective buying high quality Japan banks 5-10yr→insurance hybrids-15-25c→some RM dip buying at cash level→fast money/street better seller",
+          "stance": "Bearish",
+          "keyQuote": "Flow is still subdued as clients don't have convincing view on both credit and rate at the moment"
+        },
+        {
+          "broker": "TD Securities",
+          "date": "2026-07-23",
+          "assetClass": "Macro",
+          "summary": "ECB depo rate held 2.25%→inflationary pressures highlighted→meeting-by-meeting→Sept hike door open→favor long EUR front-end→EURUSD muted→near-term EUR downside pressure stays",
+          "stance": "Neutral",
+          "keyQuote": "Captain Lagarde steers toward September rate hike — the door remains open"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "date": "2026-07-23",
+          "assetClass": "Credit",
+          "summary": "STOAU 2Q revenue+6% QoQ→higher LNG prices→Moody's positive outlook→bonds supported by oil→KARAU weak 2Q but expected→Bauna restored 22kbopd→KARAU 2029s 8.6% ytw rangebound",
+          "stance": "Neutral",
+          "keyQuote": "STOAU bonds will be supported by higher oil prices and Moody's rating on positive outlook"
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "dc-20260724-01",
+          "topic": "Brent>$100 + oil supply disruption",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt"
+          ],
+          "consensus": "Confirmed",
+          "note": "MS Brent+6.9%>$100，BMO real yields break 3%，mkt oil $87-90 target→三家一致确认供给冲击"
+        },
+        {
+          "id": "dc-20260724-02",
+          "topic": "UST bear flatten + wave(iii)III",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt"
+          ],
+          "consensus": "Confirmed",
+          "note": "MS 10y 4.69% highest since early 2025，BMO 5s+7bp real，mkt wave(iii)III confirmed→三家共振"
+        },
+        {
+          "id": "dc-20260724-03",
+          "topic": "TIPS auction tail + no demand",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "consensus": "Confirmed",
+          "note": "MS tail 2-3bp highest since 2008，BMO tail 2.5bp no demand→完全一致"
+        },
+        {
+          "id": "dc-20260724-04",
+          "topic": "Asia IG buyer strike + spreads wider",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "consensus": "Confirmed",
+          "note": "HSBC China IG+1-3bps wider buyer strike，JEF Japan IG 0-1bps wider→两家一致"
+        },
+        {
+          "id": "dc-20260724-05",
+          "topic": "SOFTBK HY sell-off",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "consensus": "Confirmed",
+          "note": "HSBC SOFTBK-0.5-0.875pt HY underperform IG，JEF insurance hybrids-15-25c→两家一致"
+        },
+        {
+          "id": "dc-20260724-06",
+          "topic": "5yr front-end relatively cheap",
+          "brokers": [
+            "mkt",
+            "BMO"
+          ],
+          "consensus": "Monitor",
+          "note": "mkt 5yr at 4.42%+ appears cheap+tactical long，BMO front-end swaps supported but lagged beta→分歧：bear flatten中前端是否确实便宜"
+        },
+        {
+          "id": "dc-20260724-07",
+          "topic": "ECB Sept hike door open",
+          "brokers": [
+            "TD Securities",
+            "Morgan Stanley"
+          ],
+          "consensus": "Confirmed",
+          "note": "TD ECB held 2.25% Sept hike open，MS global central banks still on guard→两家一致"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "weak",
+        "bias": "Bearish",
+        "summary": "Brent>$100+UST 4.69%+Nasdaq-2.2%=triple risk-off→credit spreads widening across Asia/US→buyer strike→HY underperforming IG→5yr tactical long信号出现但整体情绪极其谨慎",
+        "catalyst": "Saudi tanker attacks→Red Sea route threatened→Oil supply shock→UST break YTD range→TIPS auction disaster→Tech sell-off",
+        "riskLevel": "Elevated",
+        "nextSessionBias": "Bearish/Defensive"
+      },
+      "macro": [
+        {
+          "topic": "Oil Supply Shock",
+          "detail": "Brent+6.9%>$100/bbl.Saudi tankers attacked.Red Sea+Strait of Hormuz threatened.Trump close to deciding larger Iran operation",
+          "impact": "High",
+          "direction": "Bearish"
+        },
+        {
+          "topic": "US Labor Market",
+          "detail": "Jobless claims 187k vs 210k consensus→well below expectations→labor market not weakening→supports Fed tightening",
+          "impact": "Medium-High",
+          "direction": "Bearish"
+        },
+        {
+          "topic": "TIPS Market Stress",
+          "detail": "10y TIPS auction tails 2.5bp→highest real yield since 2008→bid-to-cover 2.30 vs 2.52→no demand→long end real yields break 3%",
+          "impact": "Medium-High",
+          "direction": "Bearish"
+        },
+        {
+          "topic": "ECB on Hold",
+          "detail": "Deposit rate held 2.25%→Sept hike door open→inflationary pressures persist→market muted→long EUR front-end favored",
+          "impact": "Medium",
+          "direction": "Neutral"
+        }
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "weak",
+          "label": "",
+          "note": ""
+        },
+        "activeNames": [
+          {
+            "name": "SOFTBK",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "-0.5 to -0.875pt 5-10yr fixed+hybrids→HY underperform IG→support buyers absent",
+            "brokers": []
+          },
+          {
+            "name": "Santos (STOAU)",
+            "ticker": "",
+            "tone": "Outperform",
+            "activity": "2Q revenue+6%→higher oil supports→Moody's positive outlook→deleveraging story",
+            "brokers": []
+          },
+          {
+            "name": "GLP/FAEACO",
+            "ticker": "",
+            "tone": "Outperform",
+            "activity": "China HY CRE benchmarks+1pt→RM+FM buying→oil support for select names",
+            "brokers": []
+          },
+          {
+            "name": "Karoon (KARAU)",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "2Q weak→Who Dat overhang until 4Q27→2029s 8.6% ytw rangebound",
+            "brokers": []
+          },
+          {
+            "name": "ICICI",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "Recent 5yr senior+2bps post new deal announcement→India supply pressure",
+            "brokers": []
+          },
+          {
+            "name": "BIOLIN 29s",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "-1.5pts off recent highs→Trump pharma tariff→better selling",
+            "brokers": []
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Oil supply shock→Saudi tanker attacks→Red Sea route disruption"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "UST breakout YTD range→10y 4.69%→rate sensitivity crushing duration"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "TIPS auction disaster→real money no bid→liquidity stress"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Tech sell-off→Nasdaq-2.2%→sector rotation to energy/industrials"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "ECB+SARB hold but hawkish→global tightening posture"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "name": "SOFTBK",
+          "sector": "Technology/Telecom",
+          "assetClass": "HY Credit",
+          "tilt": "negative",
+          "signal": "HY sell-off: -0.5 to -0.875pt across 5-10yr fixed+hybrids. Support buyers absent. CDS likely wider",
+          "priority": 1,
+          "inFocus": true,
+          "ticker": "SOFTBK",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Santos (STOAU)",
+          "sector": "Energy",
+          "assetClass": "IG Credit",
+          "tilt": "positive",
+          "signal": "Oil>$100 benefits: revenue+6% QoQ, Moody's positive outlook, bonds held in well, deleveraging",
+          "priority": 2,
+          "inFocus": true,
+          "ticker": "Santos (STOA",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "GLP/FAEACO",
+          "sector": "China CRE",
+          "assetClass": "HY Credit",
+          "tilt": "positive",
+          "signal": "+1pt→RM+FM buying across benchmarks. Resilient China HY CRE demand",
+          "priority": 3,
+          "inFocus": true,
+          "ticker": "GLP/FAEACO",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Karoon (KARAU)",
+          "sector": "Energy",
+          "assetClass": "HY Credit",
+          "tilt": "negative",
+          "signal": "2Q weak production-44%→Who Dat overhang 4Q27→2029s 8.6% ytw→rangebound until recovery",
+          "priority": 4,
+          "inFocus": true,
+          "ticker": "Karoon (KARA",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "ICICI",
+          "sector": "Financials",
+          "assetClass": "IG Credit",
+          "tilt": "negative",
+          "signal": "New deal→recent 5yr+2bps→India supply pressure→front-end widening",
+          "priority": 5,
+          "inFocus": true,
+          "ticker": "ICICI",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "BIOLIN 29s",
+          "sector": "Pharma",
+          "assetClass": "HY Credit",
+          "tilt": "negative",
+          "signal": "-1.5pts off highs→Trump pharma tariff impact→continued better selling",
+          "priority": 6,
+          "inFocus": true,
+          "ticker": "BIOLIN 29s",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "NSANY/RAKUTN",
+          "sector": "Auto/Internet",
+          "assetClass": "HY Credit",
+          "tilt": "negative",
+          "signal": "Retail sellers→part of broader HY sell-off→risk appetite deteriorating",
+          "priority": 7,
+          "inFocus": true,
+          "ticker": "NSANY/RAKUTN",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "China IG (benchmark)",
+          "sector": "Diversified",
+          "assetClass": "IG Credit",
+          "tilt": "negative",
+          "signal": "Buyer strike→+1-3bps wider→technical bonds held but new issues hit→chgrid 30yr OLB+0",
+          "priority": 8,
+          "inFocus": true,
+          "ticker": "China IG (be",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        }
+      ]
+    },
     {
       "reportDate": "2026-07-23",
       "coverage": {
