@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-27 17:02 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-28 08:00 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -1746,9 +1746,848 @@ window.REPORT_DATA =
       "name": "CNH IG Independent Bull Run",
       "assetClass": "",
       "latestChange": ""
+    },
+    {
+      "id": "thread-oil",
+      "topic": "Oil: Supply Shock → Diplomacy Reversal",
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-28",
+      "status": "Reversing",
+      "days": [
+        "7/20",
+        "7/21",
+        "7/22",
+        "7/23",
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/20:WTI $82.25 Iran deal collapse. 7/21:WTI+3.5%. 7/23:Brent $87-90 target. 7/24:Brent+6.9%>$100 Saudi tankers. 7/28:Brent-9.4%→$87.66→US暂停打击→diplomacy→shipping restoration→BEI collapse→但风险未消",
+      "nextWatch": "Iran diplomacy持续性→若冲突再升级→Brent可能重回$100→FOMC对油价评估",
+      "name": "Oil: Supply Shock → Diplomacy Reversal",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-ust",
+      "topic": "UST Bear Structure → Oil-Led Correction",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-28",
+      "status": "Correcting",
+      "days": [
+        "7/22",
+        "7/23",
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/22:July hike 33%. 7/23:2y-5y 2026 highs wave(iii). 7/24:10y 4.69% TIPS auction disaster. 7/28:10y-2.8bp→4.65%→oil-led correction→但5y auction tail→front-end cheap→bear structure intact→FOMC catalyst",
+      "nextWatch": "FOMC Wed→若hike→10y可能重回4.69%+→若不hike+dovish→可能突破4.50%",
+      "name": "UST Bear Structure → Oil-Led Correction",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-tmt-credit",
+      "topic": "TMT/Hyperscaler Credit Stress",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-28",
+      "status": "Intensifying",
+      "days": [
+        "7/22",
+        "7/23",
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/22:US IG AI credit stress→ORCL+20. 7/23:GOOGL capex↑+FCF负. 7/24:Nasdaq-2.2% Comm Svcs-5.2%. 7/28:hs 60-70bp wider MTD→NVDA+8→GOOGL real$→Data Centers fragile→credit picker→$30bn supply",
+      "nextWatch": "本周$30bn IG supply+TMT新发→hyperscaler能否吸收→supply digestion=关键测试",
+      "name": "TMT/Hyperscaler Credit Stress",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-softbk",
+      "topic": "SOFTBK Credit: HY Sell-off → Protection Bid",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-28",
+      "status": "Persistent",
+      "days": [
+        "7/23",
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/23:cash-CDS divergence. 7/24:HY-0.5-0.875pt buyers absent. 7/28:1Y CDS at 200→protection bid persists→cash not well bid despite rally→rate relief not translating to credit relief→negative signal",
+      "nextWatch": "CDS spread→若1Y CDS继续上升→cash可能跟随下跌→FOMC后risk-on能否传导到SOFTBK",
+      "name": "SOFTBK Credit: HY Sell-off → Protection Bid",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-tech-equity",
+      "topic": "Tech/Semis: AI Capex + China Competition",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-28",
+      "status": "Intensifying",
+      "days": [
+        "7/22",
+        "7/23",
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/22:AI credit stress. 7/23:GOOGL capex. 7/24:Nasdaq-2.2%. 7/28:China chipmaking mass production→NVDA+8→semiconductor competition→但breadth改善Comm Svcs+1.5%→sector rotation",
+      "nextWatch": "China chip progress→NVDA/AMD/INTC→semiconductor credit→是否加速TMT信用分化",
+      "name": "Tech/Semis: AI Capex + China Competition",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-em-sov",
+      "topic": "EM/Frontier Sovs: Oil Divergence",
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-28",
+      "status": "Reversing",
+      "days": [
+        "7/23",
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/23:oil importers bearish. 7/24:DXY+0.3% EM FX stress. 7/28:oil -9.4%→SRILAN+0.75-1.5pt→Phil/Indon strong→但Indon CB governor resignation→divergent→oil sensitivity rules",
+      "nextWatch": "Oil能否稳定在$85以下→若持续→SRILAN/Pakistan/Mongol继续反弹→关注FOMC Dollar方向",
+      "name": "EM/Frontier Sovs: Oil Divergence",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-fomc",
+      "topic": "FOMC Decision + Warsh Tipping Point",
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-28",
+      "status": "New",
+      "days": [
+        "7/28"
+      ],
+      "evolution": "7/28:WSJ Timiraos→most unpredictable meeting→Warsh 50/50 split→oil de-escalation可能降低hike urgency→但underlying inflation仍高→PCE+BoJ+BoE本周密集事件",
+      "nextWatch": "FOMC Wed decision→hike/hold/dovish/hawkish→四种场景→信用市场反应将是关键alpha",
+      "name": "FOMC Decision + Warsh Tipping Point",
+      "assetClass": "",
+      "latestChange": ""
+    },
+    {
+      "id": "thread-tips",
+      "topic": "TIPS Underperformance / Real Yield Stress",
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-28",
+      "status": "Persistent",
+      "days": [
+        "7/24",
+        "7/28"
+      ],
+      "evolution": "7/24:TIPS auction tail 2.5bp→highest real yield 2008→no demand. 7/28:oil-8%但TIPS still underperformed→5s BEI-6bp RY+4bp→RM/FM stops→thin→5y5y CPI sub-235→dip buying 1-2bp away",
+      "nextWatch": "5y5y CPI若能守住228-235→可能触发dip buying→若跌破→real yield继续上升→bearish for duration",
+      "name": "TIPS Underperformance / Real Yield Stress",
+      "assetClass": "",
+      "latestChange": ""
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-28",
+      "coverage": {
+        "emails": 7,
+        "brokers": [
+          "Morgan Stanley",
+          "Citi",
+          "BMO",
+          "Barclays",
+          "HSBC",
+          "JEFFERIES",
+          "mkt"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": "7封：MS宏观/Citi IG信用/BMO TIPS/Barclays亚洲信用/HSBC亚洲信用/JEF日本IG/mkt技术|交易日07-27(周一)"
+      },
+      "signals": [
+        {
+          "id": "sig-20260728-01",
+          "topic": "Oil Plunges: US-Iran Diplomacy Pauses Strikes",
+          "assetClass": "Macro/Commodity",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "REVERSAL"
+          ],
+          "action": "WATCH",
+          "impactScore": 92,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Barclays",
+            "mkt"
+          ],
+          "headline": "Brent-9.4%→$87.66→WTI-8.3%→$81.90→US暂停对Iran打击→恢复Strait of Hormuz航运→通胀预期骤降→global bonds rally",
+          "oneLine": "Brent-9.4% from $100+ to $87.66.WTI-8.3% to $81.90.US pauses strikes.Diplomacy restores shipping.Breakevens:2y-8.7bp,5y-6.4bp",
+          "evidence": [
+            "MS:Brent-9.4% to $87.66/bbl,WTI-8.3% to $81.90→US paused strikes against Iran→diplomatic efforts restoring Strait of Hormuz shipping",
+            "MS:Breakevens tightened materially:2y-8.7bp,5y-6.4bp,10y-4.4bp→energy move passed directly into market-based inflation expectations",
+            "Barclays:SRILAN gapping up 0.75-1.5pt higher as sensitivity to oil prices remain very high",
+            "mkt:Renewed diplomatic efforts and lower energy price added fuel to corrective rally→counter-trend correction",
+            "MS:Energy sector-2.0% alongside crude→consumption-sensitive sectors outperformed"
+          ],
+          "soWhat": "Oil从$100+暴跌至$87是重大逆转→从supply shock到diplomacy de-escalation→2y BEI-8.7bp直接传导→若diplomacy持续→Brent可能回到$80-85区间→通胀预期进一步下降→Fed hike概率降低→但Iran风险未消除→油价反弹风险仍在→关注FOMC对油价评估",
+          "quote": "The pause in US-Iran strikes reduced near-term energy-supply concerns, lowering inflation compensation and sovereign yields",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-02",
+          "topic": "UST Rally: Oil-Led Corrective Bounce, Bear Structure Intact",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "CONTINUATION",
+            "VALUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 85,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "mkt",
+            "Citi"
+          ],
+          "headline": "10y-2.8bp→4.65%→bullish steepening→但5y auction tails 0.9bp(B/C 4年最低)+wave(iii)III intact+front-end cheap→反弹非反转",
+          "oneLine": "10y-2.8bp to 4.65%.2y auction 0.5bp through.5y auction tails 0.9bp weakest B/C ~4yrs.Front-end 2-5yr relatively cheap",
+          "evidence": [
+            "MS:10y-2.8bp to 4.65%, 2y-0.8bp, 30y-2.1bp→bullish steepening led by oil decline",
+            "MS:$69bn 2y auction stopped 0.5bp through WI→but $70bn 5y auction tailed 0.9bp, weakest B/C in nearly 4 years",
+            "BMO:5s close over 6bp lower on BEI and over 4bp cheaper on RY→TIPS still underperformed broader moves",
+            "mkt:Counter-trend correction→yields will make new highs again in coming weeks/months→front-end 2-5yr appears relatively cheap",
+            "mkt:Wave(iii)III underway→10y above 4.61/4.63% confirms→target 5%+",
+            "Citi:Rates have seemingly found a decent bit of footing in current context→but TMT dispersion dominates focus"
+          ],
+          "soWhat": "Oil-led反弹是counter-trend→5y auction disaster表明real money不愿在FOMC前追涨→front-end 2-5yr cheap=tactical long→但长期bear thesis完整→若FOMC意外hawkish→10y可能快速回到4.69%以上→关注周三FOMC+BoJ+BoE三连弹",
+          "quote": "Yields will make new highs again in coming weeks/months — the corrective rally is a counter-trend move driven by oil diplomacy",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-03",
+          "topic": "FOMC: Most Unpredictable Meeting in Years",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "EVENT_RISK",
+            "ALERT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 88,
+          "conviction": "High",
+          "brokers": [
+            "mkt",
+            "Morgan Stanley",
+            "HSBC",
+            "BMO"
+          ],
+          "headline": "Warsh立场成谜→50/50 split→WSJ Timiraos称「多年来最不可预测」→oil de-escalation降低hike压力但underlying inflation仍高→PCE+FOMC本周",
+          "oneLine": "FOMC Wednesday.Warsh hasn't tipped hand.50/50 split among officials.Cooler CPI vs Middle East jitters.PCE Thursday",
+          "evidence": [
+            "mkt(WSJ Timiraos):The Fed Is Heading Into One of Its Most Unpredictable Meetings in Years→Warsh hasn't revealed if he favors a hike",
+            "mkt:Half of Warsh's 18 colleagues expected a rate hike this year, while the other half didn't→Warsh could tip the balance",
+            "MS:Investors continued to assign some probability to a Fed hike and prepared for the policy decision later in the week",
+            "HSBC:Looking at benchmark price actions, the conviction on the macro-led rally seems low ahead of Wed's FOMC→position collapsing till then",
+            "BMO:We haven't seen many accounts take the other side, especially not ahead of the Fed meeting on Wednesday"
+          ],
+          "soWhat": "FOMC本周三→Warsh立场成最大不确定性→若hike→UST可能再破4.69%→credit全面reprice→若不hike但hawkish→bear flatten→最bullish:hold+dovish+oil de-escalation→breakeven→实际场景取决于Warsh票数→仓位collapse=FOMC后暴力方向性突破→双向对冲建议",
+          "quote": "The Fed Is Heading Into One of Its Most Unpredictable Meetings in Years — Warsh could tip the balance",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-04",
+          "topic": "TMT/Hyperscaler Credit Stress: 60-70bp Wider MTD",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "DIVERGENCE"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "Citi",
+            "Barclays",
+            "HSBC"
+          ],
+          "headline": "Citi:hs 60-70bp wider MTD→NVDA+8 on China chip news→GOOGL seeing real$ at +15→Data Centers on egg shells→TMT roulette→dispersing",
+          "oneLine": "Hyperscalers 60-70bp wider MTD.NVDA+8 wider.AMZN laggard.GOOGL real$ buying starting.Data Centers marginally better but fragile",
+          "evidence": [
+            "Citi:Hyperscaler 60/70 wider mtd→NVDA 56s+8 on China chip mass production news→AMZN laggard→META gave back gains",
+            "Citi:GOOGL starting to see real$ sponsorship after capex guide has taken us 15+ wider",
+            "Citi:Data center space marginally better after barrage all last week→huge lag existings v new TXEDCI→space still totally on egg shells",
+            "Citi:Becoming more a credit picker environment→hypers outperformers v others→no one really inclined to buy outright risk given px action",
+            "Barclays:TMT names about 1 tighter but didn't see much follow through buying apart from street short covering→long end still heavy",
+            "HSBC:Street longs and TMT long end underperforming macro massively→new tencnt 1-2bp wider vs xover 8bp tighter"
+          ],
+          "soWhat": "TMT信用分化加剧：NVDA/AMZN继续扩大vs GOOGL开始见real money→Data Centers仍然脆弱→credit picker environment=做多quality vs short beta→关注本周hyperscaler supply→$30bn IG supply中TMT占比→supply消化能力是关键测试",
+          "quote": "It's becoming more a credit picker environment as we've seen more meaningful outperformers hypers v others. No one really inclined to buy outright risk.",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-05",
+          "topic": "Asia IG Low-Conviction Rally Ahead of FOMC",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "FLOW",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "headline": "China IG开高0-2bp→收+/-2bp→street longs/TMT long end拖累→FOMC前低信心→position collapsing→SEA/SGD better bid",
+          "oneLine": "China IG opened 0-2bp tighter closed +/-2bp.SEA IG 0-1bp tighter.SGD prices still catching up to rates.ICICI new+1.5tighter",
+          "evidence": [
+            "HSBC:China IG opened 0-2bp tighter but closed +/-2bp→street longs and TMT long end underperforming macro→conviction low ahead of FOMC",
+            "HSBC:SEA IG broadly 0-1bp tighter with consistent demand in 26/27 lines→new ICICI outperformed+1.5 tighter",
+            "HSBC:SGD cash prices continued to play catch-up→dealer community pricing to make sales→month-end ahead",
+            "Barclays:TMT names about 1 tighter→didn't see much follow through buying apart from street short covering→long end heavy",
+            "JEF:Active 2way flow→RM keep outright buying or switch to higher beta for compression trade→RM selling Yankee space taking profit"
+          ],
+          "soWhat": "FOMC=position collapsing→Asia IG rally缺乏conviction→street longs被卖出→TMT长端拖累→SEA front-end stable→若FOMC dovish→short squeeze可能→若hawkish→Asia IG可能回到buyer strike模式→关注ICICI新发表现作为benchmark",
+          "quote": "Looking at the benchmark price actions, the conviction on the macro-led rally seems low ahead of Wednesday's FOMC",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-06",
+          "topic": "TIPS Underperformance: Ugly Day Despite Oil -8%",
+          "assetClass": "Rates",
+          "direction": "Bearish",
+          "signalType": [
+            "DIVERGENCE",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 65,
+          "conviction": "Medium",
+          "brokers": [
+            "BMO",
+            "Morgan Stanley"
+          ],
+          "headline": "TIPS ugly:5s BEI-6bp RY+4bp→oil-8%但TIPS跑输→RM/FM net selling含stops→极薄成交量→5y5y CPI sub-235→dip buying at 1-2bp lower",
+          "oneLine": "TIPS:5s BEI-6bp RY+4bp.Net selling RM/FM including stops.Very thin volume.5y5y CPI<235.Dip buying still 1-2bp away",
+          "evidence": [
+            "BMO:Ugly day for TIPS→5s close over 6bp lower on BEI and over 4bp cheaper on RY→oil down 8% but TIPS still underperformed broader moves",
+            "BMO:Net selling from RM/FM accounts including a few stops→volumes very thin, quietest day of month→exacerbated price action",
+            "BMO:5y5y CPI sub-235,10y20y sub-228→last saw meaningful dip buying 1-2bps lower→perhaps that's where support could be",
+            "MS:Breakevens tightened materially led by front end:2y-8.7bp,5y-6.4bp,10y-4.4bp"
+          ],
+          "soWhat": "TIPS跑输nominal→真实资金不愿在FOMC前重新配置→BEI压缩但RY上升=真实利率压力持续→5y5y CPI sub-235接近支撑→若FOMC dovish→TIPS可能出现catch-up rally→若hawkish→TIPS继续跑输",
+          "quote": "Ugly day for TIPS — despite oil down 8%, TIPS still underperformed broader moves in rates and energy",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-07",
+          "topic": "Frontier Sovs + EM Bounce on Oil Relief",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "FLOW",
+            "REVERSAL"
+          ],
+          "action": "WATCH",
+          "impactScore": 60,
+          "conviction": "Medium",
+          "brokers": [
+            "Barclays",
+            "Morgan Stanley"
+          ],
+          "headline": "SRILAN+0.75-1.5pt→oil sensitivity极高→Phil/Indon strong→Indon CB governor resignation→divergent→Mongol+0.25pt",
+          "oneLine": "SRILAN+0.75-1.5pt on oil relief.Phil+0.125-0.875pt.Indon+0.125-0.625pt but CB governor resigns.Mongol+0.25pt stable",
+          "evidence": [
+            "Barclays:SRILAN gapping up 0.75-1.5pt→sensitivity to oil prices remains very high→36/38s bulk of action→RMs+HFs buyers alike",
+            "Barclays:Phil+0.125-0.875pt,Indon+0.125-0.625pt→Indo seeing headlines of CB governor replacement→mixed reaction",
+            "Barclays:Mongol stable with less sensitivity→0.25pt higher across curve",
+            "Barclays:Sovs risk seeing better buying→locals returning after weekend→RM sell agenda slowing",
+            "MS:Indonesia assets weakened after central-bank governor resigned"
+          ],
+          "soWhat": "Oil暴跌利好oil importers→SRILAN最大受益者→但Indon CB governor resignation添加不确定性→divergent EM performance→若oil持续de-escalation→Frontier rally可持续→关注FOMC对EM spillover",
+          "quote": "SRILAN gapping up to 0.75-1.5pts higher as sensitivity to oil prices remain very high in the complex",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260728-08",
+          "topic": "US Equities: Tech Semi Sell-off on China Competition",
+          "assetClass": "Equity/Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "EARNINGS",
+            "DIVERGENCE"
+          ],
+          "action": "WATCH",
+          "impactScore": 70,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Citi"
+          ],
+          "headline": "Nasdaq-0.2% IT-1.0%→China chipmaking mass production→AI capex returns→Comm Svcs+1.5% Energy-2.0%→sector rotation→VIX 18.67",
+          "oneLine": "Nasdaq-0.2% IT-1.0%.China chipmaking equipment mass production.NVDA+8bp wider.Comm Svcs+1.5% safe rotation.VIX 18.67",
+          "evidence": [
+            "MS:Nasdaq-0.2%,IT sector-1.0%→China began mass-producing domestic chipmaking equipment→intensified competition concerns",
+            "MS:Comm Svcs+1.5%,Cons Staples+1.6%,Financials+1.0%→more resilient breadth beneath headline→Energy-2.0%",
+            "MS:S&P500 nearly unchanged→VIX+0.5% to 18.67→investors cautious not broad risk-off",
+            "Citi:NVDA 56s trading as wide as+115,+8 on day→curve parallel shifted→China chip news late yesterday"
+          ],
+          "soWhat": "China自主芯片消息打击半导体→NVDA+8bp→但整体市场breadth改善(Comm Svcs+1.5%)→sector rotation从energy到消费→若semiconductor持续走弱→TMT信用利差可能进一步扩大→但AI capex story仍在→关注NVDA earnings后的信用反应",
+          "quote": "China had begun mass-producing domestic chipmaking equipment, intensifying concerns around competition and AI capex returns",
+          "date": "2026-07-28",
+          "priorState": "No prior state available."
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Morgan Stanley",
+          "date": "2026-07-27",
+          "assetClass": "Macro",
+          "summary": "Brent-9.4%>$87.66 WTI-8.3%>$81.90→US暂停Iran打击→BEI骤降→global bonds rally→10y-2.8bp→Nasdaq-0.2% IT-1.0%→China芯片竞争→S&P平→DXY+0.1%→JGB bull-steepen→EGBs rally→$69bn 2y auction通过$70bn 5y tail→FOMC本周",
+          "stance": "Neutral/Hawkish",
+          "keyQuote": "The pause in US-Iran strikes reduced near-term energy-supply concerns, lowering inflation compensation and sovereign yields"
+        },
+        {
+          "broker": "Citi",
+          "date": "2026-07-27",
+          "assetClass": "Credit",
+          "summary": "TMT vol extreme→hyperscalers 60-70bp wider MTD→NVDA+8 on China chip news→GOOGL real$ sponsorship→Data Centers fragile→credit picker environment→Financials +/-1-2bp mixed→HY +0.125-0.5pt→Industrials unch to +1bp→40yr steepening→$30bn IG supply→TMT roulette",
+          "stance": "Bearish",
+          "keyQuote": "It's becoming more a credit picker environment. No one really inclined to buy outright risk in the face of price action of late."
+        },
+        {
+          "broker": "BMO",
+          "date": "2026-07-27",
+          "assetClass": "Rates",
+          "summary": "TIPS ugly→5s BEI-6bp RY+4bp→oil-8%但TIPS跑输→RM/FM net selling含stops→极薄成交量→5y5y CPI sub-235→dip buying 1-2bp lower→FOMC前无人接盘",
+          "stance": "Bearish",
+          "keyQuote": "Ugly day for TIPS — despite oil down 8%, TIPS still underperformed broader moves in rates and energy"
+        },
+        {
+          "broker": "mkt (JEFFERIES/SQiu)",
+          "date": "2026-07-27",
+          "assetClass": "Rates",
+          "summary": "UST周五bullish steepening(counter-trend)→oil de-escalation+diplomacy→yields将再创新高在未来→FOMC高度不可预测→Warsh split 50/50→front-end 2-5yr cheap→wave(iii)III intact→10y>4.61/4.63% bearish→长期target 5%+",
+          "stance": "Neutral/Bearish",
+          "keyQuote": "The corrective rally is a counter-trend move — yields will make new highs again in coming weeks/months"
+        },
+        {
+          "broker": "HSBC",
+          "date": "2026-07-27",
+          "assetClass": "Credit",
+          "summary": "Asia Credit mixed→China IG开高收平→TMT长端拖累→FOMC前低信心→SEA IG 0-1bp tighter→SGD继续catch-up lower→China HY开高回落→IIFOIN better→ICICI new+1.5 outperforms→Month-end drift expected",
+          "stance": "Neutral",
+          "keyQuote": "The conviction on the macro-led rally seems low ahead of Wednesday's FOMC. It's all about position collapsing till then."
+        },
+        {
+          "broker": "Barclays",
+          "date": "2026-07-27",
+          "assetClass": "Credit",
+          "summary": "China HG light better→TMT约1 tighter仅short covering→long end heavy→SEA IG unch→Perp+0.25-0.5pt→Asia HY+0.125/+0.5pt→SRILAN+0.75-1.5pt on oil→Softbank CDS bid(1Y 200)→S45 61.25(-0.63)→Japan IG firm→Korea better RM buying→QIC selling Epic energy",
+          "stance": "Neutral",
+          "keyQuote": "SRILAN gapping up 0.75-1.5pt higher as sensitivity to oil prices remain very high; Softbank protection still had a bid"
+        },
+        {
+          "broker": "JEFFERIES",
+          "date": "2026-07-27",
+          "assetClass": "Credit",
+          "summary": "Japan/Aus IG firm→credit 0-2bps tighter→active 2way flow→RM outright buying+compression trade→RM selling Yankee taking profit→fast money getting rid of Japan bank FRNs→Hybrid insurance 15-25c higher→front-end demand",
+          "stance": "Bullish",
+          "keyQuote": "We did see real money keep outright buying or switch to higher beta for compression trade as sentiment improved"
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "dc-20260728-01",
+          "topic": "Oil -9.4% diplomacy pause",
+          "brokers": [
+            "Morgan Stanley",
+            "Barclays",
+            "mkt",
+            "BMO"
+          ],
+          "consensus": "Confirmed",
+          "note": "MS Brent-9.4% WTI-8.3%，Barclays SRILAN+1.5pt，mkt diplomatic efforts，BMO oil-8%→四家一致确认oil de-escalation"
+        },
+        {
+          "id": "dc-20260728-02",
+          "topic": "UST rally + 5y auction weakness",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO",
+            "Citi"
+          ],
+          "consensus": "Confirmed",
+          "note": "MS 5y tailed 0.9bp weakest B/C~4yrs，BMO TIPS ugly underperformance，Citi rates found footing→三家一致：反弹但5y脆弱"
+        },
+        {
+          "id": "dc-20260728-03",
+          "topic": "FOMC highly unpredictable",
+          "brokers": [
+            "mkt",
+            "HSBC",
+            "BMO",
+            "Morgan Stanley"
+          ],
+          "consensus": "Confirmed",
+          "note": "mkt(WSJ)Warsh 50/50 split，HSBC position collapsing，BMO no accounts taking side，MS probability assigned→四家一致确认不确定性"
+        },
+        {
+          "id": "dc-20260728-04",
+          "topic": "TMT credit stress ongoing",
+          "brokers": [
+            "Citi",
+            "HSBC",
+            "Barclays"
+          ],
+          "consensus": "Confirmed",
+          "note": "Citi hs 60-70bp wider MTD，HSBC TMT long end underperforming，Barclays TMT 1 tighter only short covering→三家一致"
+        },
+        {
+          "id": "dc-20260728-05",
+          "topic": "Asia IG low conviction rally",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "consensus": "Confirmed",
+          "note": "HSBC China IG开高收平+/-2bp，Barclays TMT no follow through，JEF active 2way→三家一致：rally缺conviction"
+        },
+        {
+          "id": "dc-20260728-06",
+          "topic": "SRILAN/EM Sov bounce on oil relief",
+          "brokers": [
+            "Barclays",
+            "Morgan Stanley"
+          ],
+          "consensus": "Confirmed",
+          "note": "Barclays SRILAN+0.75-1.5pt oil sensitivity，MS Indonesia weakened CB→两家一致：oil sensitivity驱动EM分化"
+        },
+        {
+          "id": "dc-20260728-07",
+          "topic": "Front-end 2-5yr cheap",
+          "brokers": [
+            "mkt",
+            "Citi"
+          ],
+          "consensus": "Monitor",
+          "note": "mkt 2-5yr appears relatively cheap tactical long→Citi rates found footing→两家暗示前端做多机会但FOMC前不确定"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "mixed",
+        "bias": "Cautious",
+        "summary": "Oil de-escalation驱动risk-on bounce但FOMC前conviction极低→credit firm but fragile→TMT stress持续→position collapsing→等待周三催化剂→双向风险(multi-directional event risk)",
+        "catalyst": "US-Iran diplomacy→Oil-9.4%→BEI compression→FOMC Wednesday→Warsh decision critical→PCE Thursday→BoJ+BoE also this week",
+        "riskLevel": "Elevated",
+        "nextSessionBias": "Cautious/Wait-and-See"
+      },
+      "macro": [
+        {
+          "topic": "Oil Diplomacy Reversal",
+          "detail": "Brent-9.4% from $100+ to $87.66→US pauses Iran strikes→diplomatic efforts restore Strait of Hormuz shipping→BEI:2y-8.7bp,5y-6.4bp,10y-4.4bp→但Iran风险未消除",
+          "impact": "High",
+          "direction": "Bullish"
+        },
+        {
+          "topic": "FOMC Week: Triple Central Bank Risk",
+          "detail": "FOMC Wed+BoE Thu+BoJ→WSJ:Warsh 50/50 split→market torn between cooler CPI and persistent underlying inflation→PCE Thu→$99bn supply(2y+5y) mixed results",
+          "impact": "High",
+          "direction": "Neutral"
+        },
+        {
+          "topic": "China Domestic Chipmaking",
+          "detail": "China mass-produced domestic chipmaking equipment→intensified semiconductor competition→NVDA+8bp wider on credit→AI capex returns under scrutiny→semiconductor sell-off",
+          "impact": "Medium-High",
+          "direction": "Bearish"
+        },
+        {
+          "topic": "Indonesia CB Governor Resignation",
+          "detail": "Indonesia assets weakened after central-bank governor resigned→IDR underperform→mixed reaction:ETF/RM selling vs HF short covering through CDS→policy continuity concern",
+          "impact": "Medium",
+          "direction": "Bearish"
+        }
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "",
+          "note": ""
+        },
+        "activeNames": [
+          {
+            "name": "NVDA",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "+8bp wider on China chip news→parallel curve shift→key hyperscaler divergence name",
+            "brokers": []
+          },
+          {
+            "name": "GOOGL",
+            "ticker": "",
+            "tone": "Outperform",
+            "activity": "Real$ sponsorship starting after capex guide took us 15+ wider→value emerging for quality TMT",
+            "brokers": []
+          },
+          {
+            "name": "SOFTBK",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "1Y CDS at 200 still bid→cash not well bid despite rates rally→protection demand persistent",
+            "brokers": []
+          },
+          {
+            "name": "SRILAN",
+            "ticker": "",
+            "tone": "Outperform",
+            "activity": "+0.75-1.5pt on oil collapse→extreme oil sensitivity→RM+HFs buyers alike→36/38s action",
+            "brokers": []
+          },
+          {
+            "name": "ICICI",
+            "ticker": "",
+            "tone": "Outperform",
+            "activity": "New 5yr+1.5 tighter→strong demand→India bank credit resilient→benchmark for new issue performance",
+            "brokers": []
+          },
+          {
+            "name": "Data Centers (TXEDCI)",
+            "ticker": "",
+            "tone": "Underperform",
+            "activity": "Marginally better after barrage last week→huge lag v new issues→still on egg shells→foreign duration demand real",
+            "brokers": []
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Oil -9.4%: US-Iran diplomacy pause→BEI collapse→global bond rally"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "FOMC Wed: Warsh 50/50 split→position collapsing→双向对冲需求"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "TMT supply fear: $30bn IG supply includes potential hyperscaler→credit picker environment"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "China chip competition: mass production of domestic equipment→NVDA/Semis under pressure"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Month-end: SGD catching up to rates→dealer pricing to make sales"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "name": "NVDA",
+          "sector": "Technology/Semiconductor",
+          "assetClass": "IG Credit",
+          "tilt": "negative",
+          "signal": "+8bp wider on China chip competition news→curve parallel shift→key hyperscaler pain point",
+          "priority": 1,
+          "inFocus": true,
+          "ticker": "NVDA",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "GOOGL",
+          "sector": "Technology/Hyperscaler",
+          "assetClass": "IG Credit",
+          "tilt": "positive",
+          "signal": "Real$ sponsorship emerging after +15bp wider post-capex guide→value entry for quality TMT",
+          "priority": 2,
+          "inFocus": true,
+          "ticker": "GOOGL",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "SOFTBK",
+          "sector": "Technology/Telecom",
+          "assetClass": "HY Credit",
+          "tilt": "negative",
+          "signal": "1Y CDS at 200→protection bid persists→cash not well bid despite rates→continued stress",
+          "priority": 3,
+          "inFocus": true,
+          "ticker": "SOFTBK",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "SRILAN",
+          "sector": "Sovereign",
+          "assetClass": "EM Sovereign",
+          "tilt": "positive",
+          "signal": "+0.75-1.5pt on oil collapse→highest oil sensitivity in complex→RM+HFs buying→weekend gap closed",
+          "priority": 4,
+          "inFocus": true,
+          "ticker": "SRILAN",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "ICICI",
+          "sector": "Financials",
+          "assetClass": "IG Credit",
+          "tilt": "positive",
+          "signal": "New 5yr outperformed+1.5 tighter→strong demand→benchmark for India/Asia new issue→supply absorption",
+          "priority": 5,
+          "inFocus": true,
+          "ticker": "ICICI",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Data Centers",
+          "sector": "Infrastructure/Digital",
+          "assetClass": "IG Credit",
+          "tilt": "negative",
+          "signal": "Still on egg shells→huge lag v new issues(TXEDCI)→foreign duration demand real but short bases growing→fragile",
+          "priority": 6,
+          "inFocus": true,
+          "ticker": "Data Centers",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "SGD Corporates",
+          "sector": "Diversified",
+          "assetClass": "IG Credit",
+          "tilt": "negative",
+          "signal": "Prices still catching up to higher rates→dealer community pricing to make sales→month-end drift lower",
+          "priority": 7,
+          "inFocus": true,
+          "ticker": "SGD Corporat",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Indon Sovereign",
+          "sector": "Sovereign",
+          "assetClass": "EM Sovereign",
+          "tilt": "negative",
+          "signal": "CB governor resignation→mixed reaction→ETF/RM selling v HF short covering→policy continuity concern",
+          "priority": 8,
+          "inFocus": true,
+          "ticker": "Indon Sovere",
+          "region": "APAC",
+          "ccy": "CNY",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        },
+        {
+          "broker": "",
+          "topic": "",
+          "point": "",
+          "quote": ""
+        }
+      ]
+    },
     {
       "reportDate": "2026-07-27",
       "coverage": {
