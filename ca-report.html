@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公司行动事件报告</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --ink: #18212c;
+      --muted: #687382;
+      --line: #d8dee6;
+      --head: #f8fafc;
+      --green: #17624f;
+      --green-soft: #e3f0eb;
+      --amber: #9a5a12;
+      --amber-soft: #f6ead8;
+      --blue: #245b89;
+      --blue-soft: #e2edf7;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef3f6 0, var(--bg) 260px);
+      color: var(--ink);
+    }
+
+    .page {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .source, .toolbar, .metric-strip, .summary-line, .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+      box-shadow: 0 8px 24px rgba(31, 42, 55, .04);
+    }
+
+    .source {
+      padding: 14px 16px;
+      min-width: 230px;
+    }
+
+    .source strong {
+      display: block;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .source span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 16px;
+      margin: 18px 0;
+    }
+
+    .toolbar label {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .toolbar select {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+      color: var(--ink);
+      padding: 10px 12px;
+      min-width: 280px;
+      outline-color: var(--green);
+      font: inherit;
+    }
+
+    .toolbar-copy {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      text-align: right;
+    }
+
+    .metric-strip {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      overflow: hidden;
+      margin: 14px 0;
+    }
+
+    .metric {
+      border-right: 1px solid var(--line);
+      padding: 14px 16px;
+      min-height: 78px;
+    }
+
+    .metric:last-child { border-right: 0; }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 8px;
+      font-size: clamp(21px, 2.4vw, 30px);
+      line-height: 1;
+    }
+
+    .summary-line {
+      padding: 11px 14px;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .summary-line strong { color: var(--ink); }
+
+    .panel {
+      overflow: hidden;
+      margin-top: 14px;
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      background: var(--head);
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .panel-head p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(36, 91, 137, .24);
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: #244e75;
+      padding: 5px 9px;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .badge.warn {
+      border-color: rgba(154, 90, 18, .24);
+      background: var(--amber-soft);
+      color: #71430f;
+    }
+
+    .badge.ok {
+      border-color: rgba(23, 98, 79, .24);
+      background: var(--green-soft);
+      color: #194c3f;
+    }
+
+    .archive-list {
+      display: grid;
+      gap: 8px;
+      padding: 12px 14px;
+    }
+
+    .archive-item {
+      display: grid;
+      grid-template-columns: 122px minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: #fbfcfd;
+    }
+
+    .archive-date {
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .archive-date span,
+    .archive-copy span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+
+    .archive-copy strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .viz-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .viz-body { padding: 18px; }
+
+    .legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      background: var(--green);
+    }
+
+    .swatch.pending { background: var(--amber); }
+
+    .timeline, .account-bars { display: grid; gap: 14px; }
+
+    .time-row {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr) 118px;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .account-row {
+      display: grid;
+      grid-template-columns: 138px minmax(0, 1fr) 122px;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .time-date, .account {
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    .time-date span,
+    .time-value span,
+    .account-value span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+
+    .track, .stack {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #edf1f4;
+      overflow: hidden;
+    }
+
+    .track { height: 38px; }
+    .stack { display: flex; height: 34px; }
+
+    .fill, .segment {
+      height: 100%;
+      min-width: 2px;
+      background: var(--green);
+    }
+
+    .fill.pending, .segment.pending { background: var(--amber); }
+
+    .time-value, .account-value {
+      text-align: right;
+      font-weight: 800;
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1580px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 1.35;
+      white-space: nowrap;
+    }
+
+    th {
+      color: var(--muted);
+      background: var(--head);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    td.security {
+      min-width: 260px;
+      white-space: normal;
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    td.money, td.number {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .empty {
+      color: var(--muted);
+      padding: 18px;
+    }
+
+    @media (max-width: 960px) {
+      header, .toolbar, .metric-strip, .viz-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toolbar { display: grid; }
+      .toolbar-copy, .time-value, .account-value { text-align: left; }
+      .metric { border-right: 0; border-bottom: 1px solid var(--line); }
+      .metric:last-child { border-bottom: 0; }
+      .time-row, .account-row, .archive-item { grid-template-columns: 1fr; }
+      .page { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <p class="eyebrow">Corporate Action Status Report</p>
+        <h1>公司行动事件报告</h1>
+        <p class="intro">本报告汇总所选邮件批次中的托管行公司行动事项，供运营复核、现金流安排及后续入账跟进使用。历史批次保留原始处理结果，便于按日期回看。</p>
+      </div>
+      <div class="source">
+        <strong id="sourceDate">-</strong>
+        <span id="sourceMeta">-</span>
+      </div>
+    </header>
+
+    <section class="toolbar" aria-label="历史批次选择">
+      <label>选择历史批次
+        <select id="batchSelect"></select>
+      </label>
+      <div class="toolbar-copy" id="batchCopy">请选择批次。</div>
+    </section>
+
+    <section class="metric-strip" aria-label="处理结果">
+      <div class="metric">
+        <span>涉及账户</span>
+        <strong id="accountCount">-</strong>
+      </div>
+      <div class="metric">
+        <span>确认应收金额</span>
+        <strong id="confirmedAmount">-</strong>
+      </div>
+    </section>
+
+    <section class="summary-line">
+      <strong>摘要：</strong><span id="summaryBody">-</span>
+    </section>
+
+    <section class="panel" aria-label="历史批次内容">
+      <div class="panel-head">
+        <div>
+          <h2>历史批次内容</h2>
+          <p>按邮件批次保留当日处理结果，仅展示所选日期内容。</p>
+        </div>
+      </div>
+      <div class="archive-list" id="historyList"></div>
+    </section>
+
+    <section class="viz-grid" aria-label="可视化摘要">
+      <div class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>付款日期分布</h2>
+            <p>按 Payment Date 聚合，区分已列示应收金额与待确认金额。</p>
+          </div>
+        </div>
+        <div class="viz-body">
+          <div class="legend">
+            <span><i class="swatch"></i>已列示应收金额</span>
+            <span><i class="swatch pending"></i>待确认金额</span>
+          </div>
+          <div class="timeline" id="timelineRows"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>账户影响金额</h2>
+            <p>按 Custody Account 汇总赎回相关金额。</p>
+          </div>
+        </div>
+        <div class="viz-body">
+          <div class="legend">
+            <span><i class="swatch"></i>已列示应收金额</span>
+            <span><i class="swatch pending"></i>待确认金额</span>
+          </div>
+          <div class="account-bars" id="accountBars"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>公司行动事件明细</h2>
+          <p>按账户列示所选日期批次的需呈现事项。</p>
+        </div>
+        <span class="badge" id="detailCount">0 events</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Custody Account</th>
+              <th>Batch</th>
+              <th>Branch</th>
+              <th>Status</th>
+              <th>Event Reference</th>
+              <th>ISIN</th>
+              <th>Security Name</th>
+              <th>Event</th>
+              <th>Record Date</th>
+              <th>Payment Date</th>
+              <th>Entitled Holding</th>
+              <th>Distribution Ratio</th>
+              <th>Selected Holding</th>
+              <th>Currency</th>
+              <th>Amount Receivable</th>
+              <th>Follow-up</th>
+              <th>Source Report</th>
+            </tr>
+          </thead>
+          <tbody id="detailRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const batches = {
+  "20260728-0300": {
+    "date": "2026/07/28",
+    "meta": "03:00 批次 · AGHK",
+    "optionLabel": "2026/07/28 03:00 · 3 events",
+    "batchCopy": "来源：转发: BOC文件处理通知 - 2026-07-28。用时：2026/07/28 10:05:25。共 3 笔需呈现公司行动事件。",
+    "accountCount": "2",
+    "confirmedAmount": "USD 71.96m",
+    "summary": "共 3 笔需呈现事件（2 MCAL, 1 REDM），涉及 2 个账户，合计应收金额约 USD 71.96m。",
+    "history": [
+      {
+        "date": "2026/07/28",
+        "time": "03:00 batch",
+        "title": "当前查看",
+        "body": "AGHK · 3 reportable events",
+        "badge": "Selected",
+        "badgeClass": "ok"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026/07/28",
+        "count": "3 events",
+        "amount": "USD 71.96m",
+        "pending": false,
+        "width": "100.0%",
+        "status": "已列示应收金额"
+      }
+    ],
+    "accounts": [
+      {
+        "account": "012-228-71-51542-4",
+        "total": "USD 60.46m",
+        "confirmedWidth": "100.0%",
+        "pendingWidth": "",
+        "note": "2 events"
+      },
+      {
+        "account": "012-228-71-51902-8",
+        "total": "USD 11.50m",
+        "confirmedWidth": "19.0%",
+        "pendingWidth": "",
+        "note": "1 event"
+      }
+    ],
+    "rows": [
+      {
+        "account": "012-228-71-51542-4",
+        "batch": "20260728/0",
+        "branch": "AGHK",
+        "status": "Confirmed",
+        "statusClass": "ok",
+        "eventRef": "BOCCSS4341060000",
+        "isin": "US025816DG18",
+        "security": "AMERICAN EXPRESS",
+        "eventType": "MCAL",
+        "recordDate": "2026/07/27",
+        "paymentDate": "2026/07/28",
+        "entitledHolding": "60,455,000.00",
+        "ratio": "DIST RATE: USD 1000 PER 1000 SHARE(S)",
+        "selectedHolding": "60,455,000.00",
+        "currency": "USD",
+        "amountReceivable": "60,455,000.00",
+        "followUp": "—",
+        "sourceReport": "Outstanding CA Entitlement Roport 202607281000.csv"
+      },
+      {
+        "account": "012-228-71-51542-4",
+        "batch": "20260728/0",
+        "branch": "AGHK",
+        "status": "Confirmed",
+        "statusClass": "ok",
+        "eventRef": "BOCCSS4225810000",
+        "isin": "US912797UR65",
+        "security": "TREASURY BILL 0",
+        "eventType": "REDM",
+        "recordDate": "2026/07/27",
+        "paymentDate": "2026/07/28",
+        "entitledHolding": "220,000,000.00",
+        "ratio": "DIST RATE: USD 0.00001 PER 1 SHARE(S)",
+        "selectedHolding": "220,000,000.00",
+        "currency": "USD",
+        "amountReceivable": "2,200.00",
+        "followUp": "—",
+        "sourceReport": "Outstanding CA Entitlement Roport 202607281000.csv"
+      },
+      {
+        "account": "012-228-71-51902-8",
+        "batch": "20260728/0",
+        "branch": "AGHK",
+        "status": "Confirmed",
+        "statusClass": "ok",
+        "eventRef": "BOCCSS4341060000",
+        "isin": "US025816DG18",
+        "security": "AMERICAN EXPRESS",
+        "eventType": "MCAL",
+        "recordDate": "2026/07/27",
+        "paymentDate": "2026/07/28",
+        "entitledHolding": "11,500,000.00",
+        "ratio": "DIST RATE: USD 1000 PER 1000 SHARE(S)",
+        "selectedHolding": "11,500,000.00",
+        "currency": "USD",
+        "amountReceivable": "11,500,000.00",
+        "followUp": "—",
+        "sourceReport": "Outstanding CA Entitlement Roport 202607281000.csv"
+      }
+    ]
+  }
+};
+
+    function renderOptions() {
+      const select = document.getElementById("batchSelect");
+      select.innerHTML = Object.entries(batches).map(([id, batch]) => (
+        `<option value="${id}">${batch.optionLabel}</option>`
+      )).join("");
+    }
+
+    function renderBatch(id) {
+      const batch = batches[id];
+      document.getElementById("sourceDate").textContent = batch.date;
+      document.getElementById("sourceMeta").textContent = batch.meta;
+      document.getElementById("batchCopy").textContent = batch.batchCopy;
+      document.getElementById("accountCount").textContent = batch.accountCount;
+      document.getElementById("confirmedAmount").textContent = batch.confirmedAmount;
+      document.getElementById("summaryBody").textContent = batch.summary;
+      document.getElementById("detailCount").textContent = `${batch.rows.length} events`;
+
+      document.getElementById("historyList").innerHTML = batch.history.map(item => `
+        <div class="archive-item">
+          <div class="archive-date">${item.date}<span>${item.time}</span></div>
+          <div class="archive-copy">
+            <strong>${item.title}</strong>
+            <span>${item.body}</span>
+          </div>
+          <span class="badge ${item.badgeClass || ""}">${item.badge}</span>
+        </div>
+      `).join("");
+
+      document.getElementById("timelineRows").innerHTML = batch.timeline.length ? batch.timeline.map(item => `
+        <div class="time-row">
+          <div class="time-date">${item.date}<span>${item.count}</span></div>
+          <div class="track" aria-label="${item.date} ${item.amount}">
+            <div class="fill ${item.pending ? "pending" : ""}" style="width:${item.width}"></div>
+          </div>
+          <div class="time-value">${item.amount}<span>${item.status}</span></div>
+        </div>
+      `).join("") : `<div class="empty">该批次无付款日期分布。</div>`;
+
+      document.getElementById("accountBars").innerHTML = batch.accounts.length ? batch.accounts.map(item => `
+        <div class="account-row">
+          <div class="account">${item.account}</div>
+          <div class="stack" aria-label="${item.account} ${item.total}">
+            ${item.confirmedWidth ? `<div class="segment" style="width:${item.confirmedWidth}"></div>` : ""}
+            ${item.pendingWidth ? `<div class="segment pending" style="width:${item.pendingWidth}"></div>` : ""}
+          </div>
+          <div class="account-value">${item.total}<span>${item.note}</span></div>
+        </div>
+      `).join("") : `<div class="empty">该批次无账户影响金额。</div>`;
+
+      document.getElementById("detailRows").innerHTML = batch.rows.length ? batch.rows.map(row => `
+        <tr>
+          <td>${row.account}</td>
+          <td>${row.batch}</td>
+          <td>${row.branch}</td>
+          <td><span class="badge ${row.statusClass || ""}">${row.status}</span></td>
+          <td>${row.eventRef}</td>
+          <td>${row.isin}</td>
+          <td class="security">${row.security}</td>
+          <td>${row.eventType}</td>
+          <td>${row.recordDate}</td>
+          <td>${row.paymentDate}</td>
+          <td class="number">${row.entitledHolding}</td>
+          <td>${row.ratio}</td>
+          <td class="number">${row.selectedHolding}</td>
+          <td>${row.currency}</td>
+          <td class="money">${row.amountReceivable}</td>
+          <td>${row.followUp}</td>
+          <td>${row.sourceReport}</td>
+        </tr>
+      `).join("") : `<tr><td colspan="17" class="empty">该批次无需要呈现的公司行动事件。</td></tr>`;
+    }
+
+    renderOptions();
+    document.getElementById("batchSelect").addEventListener("change", event => renderBatch(event.target.value));
+    renderBatch(document.getElementById("batchSelect").value);
+  </script>
+</body>
+</html>
