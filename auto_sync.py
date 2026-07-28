@@ -15,23 +15,27 @@ SOURCES = {
     "repo.html":              ROOT / "repo-tool-main" / "output" / "每日REPO报价汇总.html",
     "交易台报告.html":         ROOT / "交易台报告" / "卖方每日情报.html",
     "trading_data.js":        ROOT / "交易台报告" / "report-data.js",
+    "ca-report.html":         ROOT / "Corporate Actions" / "ca-report.html",
 }
 
 AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
 INJECT_BLOCK = f'{AUTH_TAG}\n{REFRESH_TAG}'
 
+REPORT_DATA_RE = re.compile(r'<script src="report-data\.js"[^>]*></script>')
 TRADING_DATA_RE = re.compile(r'<script src="trading_data\.js"(\?v=[^"]*)?"></script>')
 
 def fixup_trading_desk_html(html_path: Path):
     """修复 交易台报告.html：将 report-data.js 引用替换为 trading_data.js + 缓存破坏"""
     content = html_path.read_text(encoding="utf-8")
-    # 替换源文件中的 report-data.js 引用为 trading_data.js
-    content = content.replace('<script src="report-data.js"></script>', '<script src="trading_data.js"></script>')
-    # 添加缓存破坏参数
+    # Step 1: 把 report-data.js 引用替换为 trading_data.js（兼容带/不带版本号）
     ts = datetime.now().strftime("%Y%m%d%H%M")
     new_tag = f'<script src="trading_data.js?v={ts}"></script>'
-    content = TRADING_DATA_RE.sub(new_tag, content)
+    if REPORT_DATA_RE.search(content):
+        content = REPORT_DATA_RE.sub(new_tag, content)
+    else:
+        # fallback: 如果已有 trading_data.js 引用，更新版本号
+        content = TRADING_DATA_RE.sub(new_tag, content)
     html_path.write_text(content, encoding="utf-8")
     print(f"  [ok] {html_path.name}: script ref fixed → trading_data.js (v={ts})")
 
