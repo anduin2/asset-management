@@ -22,7 +22,7 @@ AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
 INJECT_BLOCK = f'{AUTH_TAG}\n{REFRESH_TAG}'
 
-REPORT_DATA_RE = re.compile(r'<script src="report-data\.js"[^>]*></script>')
+REPORT_DATA_RE = re.compile(r'<script src="report-data\.js[^"]*"></script>')
 TRADING_DATA_RE = re.compile(r'<script src="trading_data\.js"(\?v=[^"]*)?"></script>')
 
 def fixup_trading_desk_html(html_path: Path):
