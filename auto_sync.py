@@ -92,13 +92,12 @@ def main():
         if name == "交易台报告.html":
             fixup_trading_desk_html(dst)
     
-    # 更新 version.txt
-    version = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-    ver_path = DEPLOY / "version.txt"
-    ver_path.write_text(version, encoding="utf-8")
-    print(f"  [ver] version.txt → {version}")
-    
     if changed:
+        # 只有真正有变更时才更新 version.txt
+        version = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        ver_path = DEPLOY / "version.txt"
+        ver_path.write_text(version, encoding="utf-8")
+        print(f"  [ver] version.txt → {version}")
         print(f"\n*** CHANGED=true ***")
         try:
             subprocess.run(["git", "add", "-A"], cwd=str(DEPLOY), check=True)
