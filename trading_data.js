@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-07-29 12:05 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-07-30 10:29 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -289,6 +289,17 @@ window.REPORT_DATA =
               "note": "Energy worst equity sector. Crude-4.5% vs Friday's $96.78."
             }
           ]
+        },
+        {
+          "broker": "HG",
+          "points": [
+            {
+              "date": "2026-07-30",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "BHI2Q adj EBITDA$574m.DINO$295m.OVV$600m.Energy earnings mixed post-crash"
+            }
+          ]
         }
       ],
       "divergences": [],
@@ -300,10 +311,11 @@ window.REPORT_DATA =
         "7/24",
         "7/25",
         "7/27",
-        "7/28"
+        "7/28",
+        "7/30"
       ],
-      "lastSeen": "2026-07-28",
-      "evolution": " 7/20:WTI $82.25 Iran abandons deal. 7/21:WTI+3.5% Saudi tensions. 7/22:Oil持续上涨. 7/23:Brent $87-90 target. 7/24:Brent+6.9%>$100, Saudi tankers attacked→supply shock→Trump close to larger operation 7/20:WTI $82伊朗放弃→7/21-22:持续上涨→7/23:Brent $87-90→7/24:Brent +6.9%>$100+Red Sea escalation→7/25:Brent>$100 peak→7/27:周末停火,oil -4.5%至$92,但仍比6月FOMC高~$20 7/20:WTI$82.25 Iran abandons deal. 7/21:WTI+3.5% Saudi tensions. 7/22:Oil持续上涨. 7/23:Brent$87-90. 7/24:Brent+6.9%>$100 Saudi tankers→supply shock. 7/27:Brent high→维持>95. 7/28:Brent-9.4%→$87.66→US暂停Iran打击13天→NYMEX第9大单日跌幅→9th worst in history→停火仍脆弱→crude仍above pre-conflict",
+      "lastSeen": "2026-07-30",
+      "evolution": " 7/20:WTI $82.25 Iran abandons deal. 7/21:WTI+3.5% Saudi tensions. 7/22:Oil持续上涨. 7/23:Brent $87-90 target. 7/24:Brent+6.9%>$100, Saudi tankers attacked→supply shock→Trump close to larger operation 7/20:WTI $82伊朗放弃→7/21-22:持续上涨→7/23:Brent $87-90→7/24:Brent +6.9%>$100+Red Sea escalation→7/25:Brent>$100 peak→7/27:周末停火,oil -4.5%至$92,但仍比6月FOMC高~$20 7/20:WTI$82.25 Iran abandons deal. 7/21:WTI+3.5% Saudi tensions. 7/22:Oil持续上涨. 7/23:Brent$87-90. 7/24:Brent+6.9%>$100 Saudi tankers→supply shock. 7/27:Brent high→维持>95. 7/28:Brent-9.4%→$87.66→US暂停Iran打击13天→NYMEX第9大单日跌幅→9th worst in history→停火仍脆弱→crude仍above pre-conflict 7/20:WTI$82.25 Iran deal abandoned.7/21:WTI+3.5%.7/22:oil up.7/23:Brent$87-90.7/24:Brent>$100 Saudi tankers.7/27:Brent>95.7/28:Brent-9.4%→$87.66→US暂停13天→NYMEX 9th largest.7/30:Iran strikes→WTI+6.9%→ceasefire仅1天→US+Saudi retaliate→Brent回$88+→EM reversal",
       "firstSeen": "",
       "description": " 7/20:WTI $82.25 Iran abandons deal. 7/21:WTI+3.5% Saudi tensions. 7/22:Oil持续上涨. 7/23:Brent $87-90 target. 7/24:Brent+6.9%>$100, Saudi tankers attacked→supply shock→Trump close to larger operation 7/2",
       "tags": [
@@ -431,7 +443,7 @@ window.REPORT_DATA =
     {
       "id": "thread-asia-ig-demand",
       "name": "亚洲IG信用韧性 & 利差收窄",
-      "status": "evolving",
+      "status": "ongoing",
       "assetClass": "Credit",
       "latestChange": "亚洲IG现金篮子~2bp收窄，新发5-10bp，韩国TMT突出",
       "brokerViews": [
@@ -653,10 +665,11 @@ window.REPORT_DATA =
         "7/24",
         "7/25",
         "7/27",
-        "7/28"
+        "7/28",
+        "7/30"
       ],
-      "lastSeen": "2026-07-28",
-      "evolution": " 7/22:dealer short covering为主→clients net sellers. 7/23:3券商确认全部short covering→虚假反弹. 7/24:全面buyer strike→rates breakout kills demand→technical bonds开始被砸→chgrid 30yr OLB+0 7/22:dealer cover客户sell→7/23:3券商确认虚假反弹→7/24:buyer strike→7/25:Asia IG Sovs+3-11bp,HK/Sing liquidity thinning→7/27:CHIG+0-2bp tighter但conviction极低,RM売り 7/22:dealer short covering→clients net sellers. 7/23:3券商确认全部short covering→虚假反弹. 7/24:全面buyer strike→rates breakout kills demand. 7/27:CHIG方向分歧→RM卖涨→low conviction. 7/28:关键discrepancy GS+0-2bp wider vs HSBC 0-2bp tighter→conviction极低→RM selling into strength→SEA IG+0-1bp consistent→FOMC决定一切",
+      "lastSeen": "2026-07-30",
+      "evolution": " 7/22:dealer short covering为主→clients net sellers. 7/23:3券商确认全部short covering→虚假反弹. 7/24:全面buyer strike→rates breakout kills demand→technical bonds开始被砸→chgrid 30yr OLB+0 7/22:dealer cover客户sell→7/23:3券商确认虚假反弹→7/24:buyer strike→7/25:Asia IG Sovs+3-11bp,HK/Sing liquidity thinning→7/27:CHIG+0-2bp tighter但conviction极低,RM売り 7/22:dealer short covering→clients net sellers. 7/23:3券商确认全部short covering→虚假反弹. 7/24:全面buyer strike→rates breakout kills demand. 7/27:CHIG方向分歧→RM卖涨→low conviction. 7/28:关键discrepancy GS+0-2bp wider vs HSBC 0-2bp tighter→conviction极低→RM selling into strength→SEA IG+0-1bp consistent→FOMC决定一切 Tech selloff+oil volatility→Asia credit resilient→HYUELE bonds unch=positive→CIMAU upgrade outlier→Japan IG steady→primary supply bid",
       "firstSeen": "",
       "description": " 7/22:dealer short covering为主→clients net sellers. 7/23:3券商确认全部short covering→虚假反弹. 7/24:全面buyer strike→rates breakout kills demand→technical bonds开始被砸→chgrid 30yr OLB+0 7/22:dealer cover客户sell→7/23:3",
       "tags": [
@@ -1463,7 +1476,7 @@ window.REPORT_DATA =
     {
       "id": "thread-tech-semis-meltdown",
       "name": "美股Tech Selloff+Defensive Rotation",
-      "status": "intensifying",
+      "status": "escalating",
       "assetClass": "Equity",
       "latestChange": "Nasdaq-1.4%第四天.Energy+1.2% sole outper(oil bid).ETF strong inflows=买入dip",
       "brokerViews": [
@@ -1521,6 +1534,17 @@ window.REPORT_DATA =
               "note": "TMT credit wider in Asia. Tech overhang. Mixed risk appetite pre-FOMC."
             }
           ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-07-30",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "HYUELE stocks-10%but bonds unch.Memory capex supply.Hynix/Samsung/TSMC weakness"
+            }
+          ]
         }
       ],
       "divergences": [
@@ -1554,10 +1578,11 @@ window.REPORT_DATA =
         "7/23",
         "7/24",
         "7/27",
-        "7/28"
+        "7/28",
+        "7/30"
       ],
-      "lastSeen": "2026-07-28",
-      "evolution": " 7/22:US IG AI credit stress→ORCL+20→Data Centers. 7/23:GOOGL capex↑+FCF负→回报率质疑. 7/24:Nasdaq-2.2%→Comm Svcs-5.2%→rising financing costs+FCF压力→sector rotation 7/22:US IG AI credit stress→ORCL+20. 7/23:GOOGL capex↑+FCF负→回报率质疑. 7/24:Nasdaq-2.2%→Comm Svcs-5.2%. 7/27:Tech/Semis下行延续. 7/28:NVDA-5%→SOX/Semis-3%→China chipmaking export controls→SOX>15% from highs→TMT credit spread开始wider→JTSOFT/BIOLIN→credit lag equity未完成→FOMC可能加速",
+      "lastSeen": "2026-07-30",
+      "evolution": " 7/22:US IG AI credit stress→ORCL+20→Data Centers. 7/23:GOOGL capex↑+FCF负→回报率质疑. 7/24:Nasdaq-2.2%→Comm Svcs-5.2%→rising financing costs+FCF压力→sector rotation 7/22:US IG AI credit stress→ORCL+20. 7/23:GOOGL capex↑+FCF负→回报率质疑. 7/24:Nasdaq-2.2%→Comm Svcs-5.2%. 7/27:Tech/Semis下行延续. 7/28:NVDA-5%→SOX/Semis-3%→China chipmaking export controls→SOX>15% from highs→TMT credit spread开始wider→JTSOFT/BIOLIN→credit lag equity未完成→FOMC可能加速 7/22:US IG AI stress ORCL+20.7/23:GOOGL capex+FCF-.7/24:Nasdaq-2.2%.7/27:Tech reset.7/28:NVDA-5% export controls.7/30:Hynix-25%→KOSPI-6%→META-10.3%AH→HYUELE bonds/CDS unch=de-coupling",
       "firstSeen": "",
       "description": " 7/22:US IG AI credit stress→ORCL+20→Data Centers. 7/23:GOOGL capex↑+FCF负→回报率质疑. 7/24:Nasdaq-2.2%→Comm Svcs-5.2%→rising financing costs+FCF压力→sector rotation 7/22:US IG AI credit stress→ORCL+20. 7/23:",
       "tags": [
@@ -2222,9 +2247,1869 @@ window.REPORT_DATA =
         "EM Credit"
       ],
       "drivers": []
+    },
+    {
+      "id": "thread_0729_01",
+      "name": "AI Capex: Hyperscaler vs Data Center vs NVDA",
+      "assetClass": "CREDIT",
+      "description": "AI capex可持续性成核心关切。Hyperscaler+30-90bps但Google未出deal后反弹4-5bp→供应面是主因。Data center-6bps tighter。NVDA历史性AA走阔。分化创造alpha机会。",
+      "brokerViews": [
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "Hyperscaler+30-90bps vs non-tech+5-35bps. Credit-to-equity beta elevated. Declining capex=credit positive"
+            }
+          ]
+        },
+        {
+          "broker": "Citi",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "TMT+5-10bp. NVDA historic AA widening. Hyperscalers chaotic, bounced 4-5bp after Google no-deal"
+            }
+          ]
+        },
+        {
+          "broker": "Citi",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Data centers well bid. TXEDCI+6bps, RPLDCI-10bps. Selective longs in non-hyperscaler"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "China IG+1-5bps TMT-led. Xiaomi RM sell→dealer forced+5bp. SOFTBK-1.25pt street sell"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "AI capex可持续性成核心关切。Hyperscaler+30-90bps但Google未出deal后反弹4-5bp→供应面是主因。Data center-6bps tighter。NVDA历史性AA走阔。分化创造alpha机会。",
+      "days": [],
+      "tags": [
+        "CREDIT"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread_0729_02",
+      "name": "FOMC July: Market 30% Hike vs GS/MS Hold",
+      "assetClass": "MACRO",
+      "description": "市场~30%加息概率 vs GS和MS预期不动。消费者信心90.8(预期92.4)弱化加息理由。TIPS经2月跑输后更均衡。Oil decline+tech weakness→bull steepening。",
+      "brokerViews": [
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "Research expects no change. Consumer confidence weakens case. Hike probability~7.5bp"
+            }
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "Toss-up hold vs hike. Oil crash+confidence miss may cause pause. US10y 4.61%/-4.2bp"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "TIPS now more balanced between hike/no-change. 5yr BE new local lows on oil decline"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "市场~30%加息概率 vs GS和MS预期不动。消费者信心90.8(预期92.4)弱化加息理由。TIPS经2月跑输后更均衡。Oil decline+tech weakness→bull steepening。",
+      "days": [],
+      "tags": [
+        "MACRO"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread_0729_03",
+      "name": "Oil Retreat & US-Iran De-escalation",
+      "assetClass": "MACRO",
+      "description": "Oil-4.5% on US-Iran diplomatic progress→Brent sub-$85→global duration bid。Bull steepening across UST/EGB/Gilt。TIPS BE承压但FOMC后可能反弹。",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Lower oil supported global duration. US10y-4.2bp, EGBs 2-5bp rallies, Gilts-4bp"
+            }
+          ]
+        },
+        {
+          "broker": "Goldman Sachs",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "USTs rallied 3-5bps as oil fell 4% on US-Iran optimism"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Energy -4-5%. 1yr ZC BE near 1.85%. 5yr BE new lows. TIPS underperforming since Fed hike concerns"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "Oil-4.5% on US-Iran diplomatic progress→Brent sub-$85→global duration bid。Bull steepening across UST/EGB/Gilt。TIPS BE承压但FOMC后可能反弹。",
+      "days": [],
+      "tags": [
+        "MACRO"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread_0729_04",
+      "name": "US Equity Defensive Rotation: Narrow→Broad",
+      "assetClass": "EQUITY",
+      "description": "Tech-1.2%/Energy-1.4% vs HC+2.4%/Staples+2.0%。Equal-weight+96bp, 7/11 sectors higher。ETF卖出Growth/Tech, 买Small-caps/Quality。牛市广度改善但防御性非risk-on。",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Equal-weight firmer. HC+2.3%, staples+2.0%, 7/11 sectors higher. AI capex primary tech pressure"
+            }
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Sellers Growth/Tech(VUG/XLK), buyers Small-caps/Quality/Financials(IJR/QUAL/XLF)"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "Tech-1.2%/Energy-1.4% vs HC+2.4%/Staples+2.0%。Equal-weight+96bp, 7/11 sectors higher。ETF卖出Growth/Tech, 买Small-caps/Quality。牛市广度改善但防御性非risk-on。",
+      "days": [],
+      "tags": [
+        "EQUITY"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread_0729_05",
+      "name": "Brazil IPCA-15 Miss: 95% Cut, Only 33bp Cycle",
+      "assetClass": "RATES",
+      "description": "Brazil IPCA-15 0.05% vs 0.22%—年通胀4.52%。下周Copom~95%降息概率但全周期仅33bp→极度保守。存在大幅re-pricing上行空间。",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "pos",
+              "mode": "FORECAST",
+              "note": "IPCA-15 well below estimates. Market 95% for 25bp cut next week but only ~33bp full cycle underpriced"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "Brazil IPCA-15 0.05% vs 0.22%—年通胀4.52%。下周Copom~95%降息概率但全周期仅33bp→极度保守。存在大幅re-pricing上行空间。",
+      "days": [],
+      "tags": [
+        "RATES"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread_0729_06",
+      "name": "Korea Cross-Asset: KOSPI vs KRW Divergence",
+      "assetClass": "FX",
+      "description": "KOSPI-11%/$33亿外流但KRW+0.4%+EWY流入→强逆势。暗示BOK干预或强劲bond inflow。Divergence能否持续有待观察。",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "KRW+0.4% despite KOSPI-11% and $3.3bn outflows. Divergence suggests intervention or bond inflow"
+            }
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "points": [
+            {
+              "date": "2026-07-29",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "EM outflows(VWO) but Korea(EWY) inflows — only EM country with positive flow"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "KOSPI-11%/$33亿外流但KRW+0.4%+EWY流入→强逆势。暗示BOK干预或强劲bond inflow。Divergence能否持续有待观察。",
+      "days": [],
+      "tags": [
+        "FX"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread-fomc-day",
+      "name": "FOMC Day:HOLD 9-3→Curve Rip-Steepening→GS:Hold Rest of 2026",
+      "topic": "FOMC July:HOLD 9-3,dissent Hammack+Kashkari+Logan,twist-steepening,GS hold rest of 2026",
+      "assetClass": "Macro",
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-30",
+      "status": "resolving",
+      "days": [
+        "7/22",
+        "7/24",
+        "7/27",
+        "7/28",
+        "7/30"
+      ],
+      "evolution": "7/22:hike33%→Warsh首关注.7/24:triple risk-off.7/27:FOMC前tactical.7/28:Warsh silent→MS'unpredictable'.7/30:HOLD9-3→3 dissents→2s30s+15bp→DXY-0.6%→GS hold rest of 2026→steepener=clearest trade",
+      "nextWatch": "Sep FOMC→CPI data→tariff impact→fiscal恢复→Warsh voting→3 dissents扩大?",
+      "brokerViews": [
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-07-30",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "FOMC no hike.No guidance.Q2 GDP lowered.UST 2y-1.5bp30y+11.2bp.Baseline hold 2026.Core PCE 2.5%"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-07-30",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "FOMC hold.USD weaker DXY-0.6%.Curve steepens.Money market front-end bid.Relief but dissents=hawkish"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-07-30",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Hawkish hold.3 dissents 25bp.Statement moderate→solid.Taper unchanged.Fed wants tariffs+CPI before hike"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-07-30",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Fed hold.3 dissents.RY leading steepening 5s30s+11bp.5y BEI+10bp.Fed fail=tightening not ready"
+            }
+          ]
+        }
+      ],
+      "latestChange": "",
+      "description": "7/22:hike33%→Warsh首关注.7/24:triple risk-off.7/27:FOMC前tactical.7/28:Warsh silent→MS'unpredictable'.7/30:HOLD9-3→3 dissents→2s30s+15bp→DXY-0.6%→GS hold rest of 2026→steepener=clearest trade",
+      "tags": [
+        "Macro"
+      ],
+      "drivers": []
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-07-30",
+      "coverage": {
+        "emails": 11,
+        "brokers": [
+          "Goldman Sachs",
+          "HG",
+          "Jane Street",
+          "Morgan Stanley",
+          "BMO",
+          "Barclays",
+          "HSBC",
+          "Jefferies"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": ""
+      },
+      "signals": [
+        {
+          "id": "sig-20260730-1",
+          "topic": "FOMC 9-3 Hold，三位Dissent，Curve Twist-Steepening",
+          "assetClass": "Macro",
+          "direction": "Bullish",
+          "signalType": [
+            "CATALYST",
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 95,
+          "conviction": "High",
+          "brokers": [
+            "GS",
+            "MS",
+            "Barclays",
+            "BMO"
+          ],
+          "headline": "FOMC 9-3 hold，Hammack/Kashkari/Logan三位dissent，2s30s+15bp twist-steepening，USD走弱DXY-0.6%",
+          "oneLine": "FOMC 9-3 hold触发relief rally，但三位dissent释放hawkish信号——front-end bid强劲，GS明确hold rest of 2026，curve steepener是市场最清晰的共识交易",
+          "evidence": [
+            "GS:FOMC no hike.No guidance.Lowered Q2 GDP.S&P whiplash→+0.7%.UST 2y-1.5bp 30y+11.2bp",
+            "MS:FOMC hold.Curve steepens.USD weaker DXY-0.6%.Money markets front-end bid",
+            "Barclays:Hawkish hold.3 dissents for 25bp.Statement:labor market moderate→solid.Taper unchanged.Fed wants tariffs+CPI before hike",
+            "BMO:Fed hold.3 dissents.Real yield leading steepening 5s30s+11bp.5y BEI+10bp wider.Fed fail=tightening not ready"
+          ],
+          "soWhat": "hold=relief但dissent=hawkish——steepener获最强共识，front-end receive是winning trade，GS house view hold至年底，Sept FOMC前关注tariff+CPI",
+          "quote": "Our baseline:FOMC on hold for the rest of 2026.—GS(Mericle)",
+          "threadId": "thread-fomc-day",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-2",
+          "topic": "美伊停火24小时即破裂，Iran袭击美军基地，WTI+6.9%回$84.73",
+          "assetClass": "Commodity",
+          "direction": "Bearish",
+          "signalType": [
+            "REVERSAL",
+            "ALERT"
+          ],
+          "action": "WATCH",
+          "impactScore": 88,
+          "conviction": "High",
+          "brokers": [
+            "JEFFERIES",
+            "GS",
+            "HG"
+          ],
+          "headline": "美伊停火仅维持24小时，Iran strikes US base，WTI单日+6.9%至$84.73，US/Saudi展开报复",
+          "oneLine": "昨日-9.4%的ceasefire反弹被24小时内逆转——Iran袭击美军基地，WTI+6.9%回$84.73，US/Saudi retaliate，ceasefire脆弱性确认，oil陷入双向tail risk",
+          "evidence": [
+            "JEFFERIES:US-Iran re-ignited.WTI+6.9%$84.73.US/Saudi retaliated against Iranian-backed militia",
+            "GS:Oil sharply higher.US/Saudi retaliated.Ceasefire ended.Rebounded from crash partially",
+            "HG:BHI 2Q adj EBITDA$574m.DINO$295m.OVV$600m.Energy earnings mixed post-crash"
+          ],
+          "soWhat": "24小时逆转确认oil波动率极端——ceasefire脆弱、FOMC hold支撑油价、EM oil进口国面临reversal risk，Brent看$82-90区间",
+          "quote": "US-Iran re-ignited.WTI+6.9%.US & Saudi retaliated.—JEFFERIES",
+          "threadId": "thread-us-iran-oil",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-3",
+          "topic": "AI Capex三级连锁：Hynix-25%、KOSPI-6%、META AH-10.3%，但Credit De-coupling",
+          "assetClass": "Equity",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "JEFFERIES",
+            "GS",
+            "HSBC"
+          ],
+          "headline": "Hynix两天累跌25%，KOSPI-6%，META盘后-10.3%——AI capex叙事裂缝，但HYUELE bonds/CDS纹丝不动",
+          "oneLine": "Hynix-25%两天、KOSPI-6%、META AH-10.3%构成AI capex三级连锁——但credit端HYUELE bonds和CDS完全unch，credit market在discriminate equity与credit quality，TMT IG尚未被拖累",
+          "evidence": [
+            "JEFFERIES:Asian stocks dropped.KOSPI-6%.Hynix-25%.Memory capex.META-10.3% AH",
+            "GS:HYUELE-10% stock but bonds/CDS unch.Tech sentiment grim.Japan IG 0-2bp wider",
+            "HSBC:HYUELE stocks-10% but bonds unchanged.Memory capex supply.Hynix/Samsung/TSMC weakness"
+          ],
+          "soWhat": "equity panic ≠ credit panic——HYUELE de-coupling是credit mature的积极信号，但META earnings后contagion risk不可排除，TMT IG selective",
+          "quote": "Hynix-25% in 2 days.KOSPI-6%.META-10.3%AH.—JEFFERIES",
+          "threadId": "thread-tech-semis-meltdown",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-4",
+          "topic": "CIMAU S&P Upgrade BB→BB+ Rally+5-10bp，叠加AUD CPI Softer Hike概率腰斩",
+          "assetClass": "Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "CATALYST",
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "GS"
+          ],
+          "headline": "S&P上调CIMAU至BB+(from BB)，升级rally+5-10bp；AUD Q2 CPI softer(0.9% q/q)，RBA hike概率从90%腰斩至50%",
+          "oneLine": "CIMAU S&P upgrade是今日Asia credit最大单名alpha(+5-10bp)，叠加AUD Q2 CPI softer(0.9% q/q, 2.8% y/y)，hike odds halved至50%，AUD front-end bid涌现，real money买入long end",
+          "evidence": [
+            "HSBC:CIMAU upgrade rally 9-10bp tighter.Australia Q2 CPI 0.9%q/q+2.8%y/y.Rate hike odds 90%→50%",
+            "JEFFERIES:CIMAU+5-10bp post-S&P upgrade BB+ from BB.AUD IG 0-3bp wider",
+            "GS:Australia IG higher-quality 0-3bp wider.Real money buying long end.Lower quality unch"
+          ],
+          "soWhat": "CIMAU upgrade对冲tech弱势——AUD CPI softer打开front-end receive空间——fiscal uncertainty是最大尾部风险，selective AUD IG",
+          "quote": "CIMAU rallied 9-10bp tighter after S&P upgrade from BB to BB+.—HSBC",
+          "threadId": "thread-asia-credit",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-5",
+          "topic": "FOMC Hold推低USD，DXY-0.6%，但3 Dissents构成Hawkish Anchor",
+          "assetClass": "FX",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 70,
+          "conviction": "Medium",
+          "brokers": [
+            "MS",
+            "GS",
+            "Barclays"
+          ],
+          "headline": "FOMC hold推低USD，DXY-0.6%，money markets front-end bid，EUR+0.5%/JPY+0.3%",
+          "oneLine": "FOMC hold + no guidance = rate differential narrowing驱动USD sell-off，DXY-0.6%——但3 dissents构成hawkish anchor限制下行空间，tariff risk和CPI data是USD方向的下一个trigger",
+          "evidence": [
+            "MS:USD weaker DXY-0.6%.Money markets front-end bid.FOMC hold→curve steepens",
+            "GS:DXY-0.6%.FOMC hold+no guidance=rate differential narrowing→USD sell",
+            "Barclays:USD weaker.Hawkish hold=short-term weakness→but tariff risk+3 dissents=support"
+          ],
+          "soWhat": "USD-0.6%短期relief——hold narrows differentials支持front-end carry——但dissent+tariff cap下行空间——CPI critical for Sept FOMC",
+          "quote": "USD weaker.DXY-0.6%.Money markets front-end bid.—MS",
+          "threadId": "thread-usd-weakness",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-6",
+          "topic": "TIPS Oversold后BE Reversal：5y BEI+10bp，5s30s RY+11bp，BMO判断Fed Fail",
+          "assetClass": "Rates",
+          "direction": "Bullish",
+          "signalType": [
+            "REVERSAL",
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 68,
+          "conviction": "Medium",
+          "brokers": [
+            "BMO",
+            "GS"
+          ],
+          "headline": "TIPS昨日oversold后今日全面bounce，5y BEI+10bp widening，5s30s RY+11bp steepening，BMO判断Fed fail——tightening not ready",
+          "oneLine": "TIPS昨日shocking后今日BE reversal确认oversold——5y BEI+10bp、5s30s RY+11bp，oil+6.9%和FOMC hold共同支撑BE定价——但3 dissents构成BE上限，RY steepener是更优表达",
+          "evidence": [
+            "BMO:5y BEI+10bp wider.5s30s RY+11bp steeper.TIPS broad bounce.Oil+6.9%=BE support.FOMC hold=BE bid",
+            "GS:UST bull-steepening.TIPS implied BE higher.Oil reversal supporting inflation pricing"
+          ],
+          "soWhat": "TIPS BE reversal确认oversold——oil+FOMC=BE支撑——但dissent cap——RY steepener优于outright BE long",
+          "quote": "5y BEI+10bp wider.5s30s RY+11bp steeper.Broad bounce.—BMO",
+          "threadId": "thread-tips-inflation",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-7",
+          "topic": "GS Mericle Flagship：FOMC 2026全年Hold，Core PCE 2.5%，Tariffs+Fiscal双支撑",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "CONFIRMED",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 65,
+          "conviction": "High",
+          "brokers": [
+            "GS"
+          ],
+          "headline": "GS Mericle发布flagship判断——FOMC 2026全年hold，Core PCE 2.5%，tariffs支撑goods通胀，fiscal实质上已放松",
+          "oneLine": "GS house view明确——FOMC hold rest of 2026，core PCE 2.5%顽固，tariffs=inflation support，fiscal tightening on hold=de facto easing——3 dissents是hawkish reminder而非方向改变",
+          "evidence": [
+            "GS(Mericle):Baseline FOMC on hold rest of 2026.Core PCE 2.5%.Tariffs keep goods prices high.Fiscal tightening on hold=de facto eased stance.3 dissents reminder hawkish risk"
+          ],
+          "soWhat": "GS house view=hold是sell-side最明确信号——front-end receive是最优表达——但dissent+tariff+CPI=Sept FOMC之前的不确定因素",
+          "quote": "Our baseline:FOMC on hold for the rest of 2026.—GS(David Mericle)",
+          "threadId": "thread-fomc-day",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-8",
+          "topic": "HYUELE股票-10%Bonds/CDS Unch：Credit/Equity De-coupling，Asia HY Resilience",
+          "assetClass": "Credit",
+          "direction": "Constructive",
+          "signalType": [
+            "CONTRARIAN",
+            "DIVERGENCE"
+          ],
+          "action": "WATCH",
+          "impactScore": 60,
+          "conviction": "Medium",
+          "brokers": [
+            "GS",
+            "HSBC"
+          ],
+          "headline": "HYUELE股票-10%但bonds和CDS完全未动——credit市场在discriminate equity与credit quality",
+          "oneLine": "HYUELE是AI capex contagion的关键test case——股票-10%但bonds/CDS unch确认credit de-coupling——Asia HY resilience超出预期——但META AH-10.3%可能成为credit leg的contagion trigger",
+          "evidence": [
+            "GS:HYUELE-10%stock but bonds unch CDS unch.AI capex cracks but credit not pricing default",
+            "HSBC:HYUELE stocks-10% but bonds unchanged.Chairman meeting+memory capex supply"
+          ],
+          "soWhat": "de-coupling=credit mature——equity panic≠credit panic——但contagion risk不可忽视——META AH可能改变格局——selective HY",
+          "quote": "HYUELE-10% stock but bonds/CDS unch.—GS",
+          "threadId": "thread-asia-credit",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-9",
+          "topic": "AUD Q2 CPI Softer：Hike概率90%→50%，Front-End Bid涌现，Real Money Long End",
+          "assetClass": "Rates",
+          "direction": "Bullish",
+          "signalType": [
+            "CATALYST",
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 55,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "GS",
+            "JEFFERIES"
+          ],
+          "headline": "Australia Q2 CPI 0.9% q/q + 2.8% y/y，core softer，市场将hike概率从90%大幅下调至50%",
+          "oneLine": "AUD CPI softer导致hike概率腰斩(90%→50%)——front-end receiving活跃——AUD IG整体0-3bp wider，real money买入long end——但fiscal uncertainty限制rally空间，CIMAU是唯一outlier",
+          "evidence": [
+            "HSBC:Q2 CPI 0.9%q/q+2.8%y/y→hike odds 90%→50%.AUD IG 0-3bp wider",
+            "GS:Australia IG 0-3bp wider.Real money buying long end.Lower quality unch",
+            "JEFFERIES:AUD IG 0-3bp wider.CIMAU+5-10bp upgrade outlier"
+          ],
+          "soWhat": "RBA hike off→front-end receive——fiscal cap——CIMAU outlier——AUD IG selective，关注fiscal后续",
+          "quote": "Australia Q2 CPI softer 0.9%q/q.Rate hike odds 90%→50%.—HSBC",
+          "threadId": "thread-australia-rates",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260730-10",
+          "topic": "Japan/Aus IG Post-FOMC Resilience：0-2bp Wider，Insurance Tight，Primary Supply Bid",
+          "assetClass": "Credit",
+          "direction": "Constructive",
+          "signalType": [
+            "CONTINUATION",
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 50,
+          "conviction": "Medium",
+          "brokers": [
+            "GS",
+            "JEFFERIES",
+            "HSBC"
+          ],
+          "headline": "Japan IG post-FOMC 0-2bp wider，insurance买盘tight，KEB Hana 3Y/HFH CNH/Power Finance新发primary——real money回归",
+          "oneLine": "Japan IG resilient 0-2bp wider，insurance买盘tight支撑，financials 0-3bp小幅走宽——AUD IG同样0-3bp——primary端KEB Hana 3Y AAA、HFH CNH、Power Finance USD 5Y活跃——CIMAU是唯一outlier",
+          "evidence": [
+            "GS:Japan IG 0-2bp wider.Insurance tight.Financials 0-3bp wider.Australia IG 0-3bp wider",
+            "JEFFERIES:Japan IG 0-2bp.Quiet session.KEB Hana 3Y AAA.HFH CNH.Power Finance Corp USD 5Y",
+            "HSBC:Japan IG 0-2bp after morning rally fades.Insurance tight.Fin no change to 2bp wider"
+          ],
+          "soWhat": "JP/AU IG post-FOMC normalization——insurance tight=flight to quality——primary supply absorbing bid——secondary follow-through是确认信号",
+          "quote": "Japan IG 0-2bp wider.Insurance tight.Financials 0-3bp wider.—GS",
+          "threadId": "thread-japan-aus-credit",
+          "date": "2026-07-30",
+          "priorState": "No prior state available."
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "date": "2026-07-30",
+          "topic": "Global Credit Market+FOMC Recap+GS Research",
+          "assetClass": "Multi-Asset",
+          "summary": "3 emails:(1)Asia credit resilience HYUELE-10%but bonds/CDS unch Japan IG 0-2bp AUD IG 0-3bp oil rebound.(2)Asia Macro:FOMC no hike S&P+0.7% UST bull-steepening.(3)GS Mericle:hold rest of 2026 core PCE 2.5% tariffs=fiscal eased",
+          "stance": "Neutral→Constructive",
+          "keyTakeaway": "FOMC hold→relief但3dissents=hawkish→steepener clearest→front-end recv→Asia credit resilient→GS house view hold 2026",
+          "emails": 3,
+          "sourceRefs": [
+            "gs_global_credit_20260730.md",
+            "gs_asia_macro_20260730.md",
+            "gs_us_daily_fomc_20260730.md"
+          ]
+        },
+        {
+          "broker": "HG",
+          "date": "2026-07-30",
+          "topic": "Energy Relative Value:EXE Acquisition+2Q Results",
+          "assetClass": "Commodity/Energy",
+          "summary": "EXE acquisition of KOS→spreads widened 30-40bp.2Q:BHI adj EBITDA$574m(vs$581m)DINO$295m(vs$358m)OVV$600m(vs$636m)SLB$3.05B.Capex slowdown BHI$203m→$343m prior.Cash margins high.Energy digesting crash",
+          "stance": "Neutral→Bearish on spreads",
+          "keyTakeaway": "BHI 2Q mixed→capex slowdown significant$203m vs$343m→EXE spreads 30-40bp wider→energy sector pricing crash+ceasefire uncertainty",
+          "emails": 1,
+          "sourceRefs": [
+            "hg_energy_rv_20260730.md"
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "date": "2026-07-30",
+          "topic": "US ETF Market Commentary:FOMC Day Flows",
+          "assetClass": "Equity/ETF",
+          "summary": "US ETF Market Commentary 29 Jul:ETF flows on FOMC day.Market reacting to hold+3 dissents→equity chop→front-end ETF bid→sector rotation US equities whipsawed",
+          "stance": "Neutral",
+          "keyTakeaway": "FOMC day ETF flows→equity chop→front-end bid→sector rotation→ETF flow=real-time positioning signal",
+          "emails": 1,
+          "sourceRefs": [
+            "janestreet_etf_20260730.md"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "date": "2026-07-30",
+          "topic": "Global Macro:FOMC Hold→Curve Steepens→USD Weaker→Money Market Bid",
+          "assetClass": "Macro",
+          "summary": "FOMC hold→curve steepens→USD weaker DXY-0.6%→money markets front-end bid.Front end remain well bid→back end shy.Dissents hawkish→curvesteeper clearest trade post-FOMC",
+          "stance": "Constructive",
+          "keyTakeaway": "FOMC relief→Front end bid→Back end shy→Curve steepener consensus→USD-0.6% supportive→Money market bid front-loaded",
+          "emails": 1,
+          "sourceRefs": [
+            "ms_global_macro_20260730.md"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "date": "2026-07-30",
+          "topic": "TIPS End of Day:Fed Hold→Real Yield Steepening→BE Rebound",
+          "assetClass": "Rates",
+          "summary": "Fed hold.Hammack+Kashkari+Logan dissenting for hike.Real yield curve leading steepening.5s30s RY+11bp.5y BEI+10bp wider.TIPS broad bounce.Fed fail=tightening cycle not ready.Oil rebound support",
+          "stance": "Bearish→Neutral",
+          "keyTakeaway": "TIPS bounce from shocking day→5y BEI+10bp→5s30s RY+11bp→BE reversal but RY steepener=better trade→Fed fail=tightening cycle not ready",
+          "emails": 1,
+          "sourceRefs": [
+            "bmo_tips_20260730.md"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "date": "2026-07-30",
+          "topic": "FOMC Hawkish Hold+Asia Credit Trading EOD",
+          "assetClass": "Macro/Credit",
+          "summary": "2 emails:(1)Hawkish hold→3 dissents for 25bp→statement moderate→solid→taper unchanged→Fed wants tariffs+CPI before hike.(2)Asian credit stable open→TMT bench shorts covering→EM/SEA IG quiet→HY closing at highs→IND73-78 FILIP85-88→markets resilient despite oil/tech",
+          "stance": "Hawkish-Neutral on FOMC / Constructive on Credit",
+          "keyTakeaway": "FOMC hawkish hold 3 dissents→but credit markets resilient→TMT shorts covering→HY closing at highs→Asia credit resilient on oil+tech",
+          "emails": 2,
+          "sourceRefs": [
+            "barclays_fomc_20260730.md",
+            "barclays_asia_credit_20260730.md"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "date": "2026-07-30",
+          "topic": "Asia Credit Trading EOD:Japan Firmer+CIMAU Upgrade+AUD CPI Soft",
+          "assetClass": "Credit",
+          "summary": "Asia reopening mixed tone.Japan firmer.CIMAU upgrade rally 9-10bp tighter.Australia Q2 CPI softer→rate hike odds 90%→50%.AUD IG 0-3bp wider.CHIG 42-47 CNY.New issue pipeline:CNPC Chuanqing Drilling.Insurance tight",
+          "stance": "Neutral→Constructive",
+          "keyTakeaway": "Asia credit mixed→Japan firmer→CIMAU upgrade outlier rally→AUD CPI softer front-end bid→CHIG range→primary pipeline",
+          "emails": 1,
+          "sourceRefs": [
+            "hsbc_asia_credit_20260730.md"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "date": "2026-07-30",
+          "topic": "JEF Asia Japan/Aus IG EOD:Quiet Session Post-FOMC",
+          "assetClass": "Credit",
+          "summary": "Quiet session.US-Iran re-ignited→Asian stocks dropped→credit 0-2bp wider resilient.CIMAU+5-10bp post-S&P upgrade.Japan IG 0-2bp.AUD IG 0-3bp wider.Kospi-6% Hynix-25%.Primary:KEB Hana 3Y AAA.HFH CNH.Power Finance Corp USD 5Y",
+          "stance": "Neutral→Constructive",
+          "keyTakeaway": "Quiet but resilient→credit firm despite stocks→CIMAU upgrade outlier→primary pipeline active→KEB Hana+HFH+Power Finance",
+          "emails": 1,
+          "sourceRefs": [
+            "jefferies_japan_aus_20260730.md"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "aspect": "FOMC Dissent→Hawkish or Dovish?",
+          "brokers": {
+            "GS": "Dovish market reaction→hold rest of 2026",
+            "MS": "Relief but 3 dissents=hawkish overlays",
+            "Barclays": "Hawkish hold→3 dissents+statement upgrade",
+            "BMO": "Fed fail=tightening not ready→BE rebound"
+          },
+          "resolution": "Hawkish dissent trio=structural hawkish risk→但market reaction=dovish→front-end recv→back-end shy→分歧存在于dissent interpretion→curve steepener bridges both",
+          "status": "resolved",
+          "reason": "Market voting=relief rally→front-end bid→但dissent=hawkish protection→two-way risk"
+        },
+        {
+          "aspect": "Oil Ceasefire→Broken 24h→Direction?",
+          "brokers": {
+            "JEFFERIES": "US-Iran re-ignited→WTI+6.9% upward",
+            "GS": "Oil sharply higher→ceasefire ended",
+            "BMO": "Oil rebound support to BE"
+          },
+          "resolution": "Ceasefire仅维持1天→bidirectional tail risk→oil trading range$82-90→Hormuz=key→FOMC hold=mild support",
+          "status": "resolved",
+          "reason": "All agree ceasefire broken→uncertainty=volatility regime→range-bound"
+        },
+        {
+          "aspect": "Credit/Equity De-Coupling→HYUELE bonds/CDS unch despite stock-10%",
+          "brokers": {
+            "GS": "AI capex cracks→credit not pricing default→positive",
+            "HSBC": "HYUELE bonds unchanged→credit discriminating"
+          },
+          "resolution": "De-coupling=positive credit quality signal→但META AH-10.3% may trigger credit leg→de-coupling not complete→watchful",
+          "status": "monitoring",
+          "reason": "2 brokers agree de-coupling positive→but META AH=A new risk→need credit follow-through"
+        }
+      ],
+      "qualityLog": {
+        "version": "3.0",
+        "generatedAt": "2026-07-30T23:59+08",
+        "note": "Schema aligned to 7/28 format.Source brokers corrected:Federal→Barclays,FixedIncome Intern→GS.Signals 10,Threads 4,Broker Notes 8,Data Checks 3,Flow,Issuers 8,Insights 8"
+      },
+      "tone": {
+        "dir": "mixed",
+        "label": "FOMC决议日：hold但3 dissents(Hammack/Kashkari/Logan)→relief rally→但hawkish tone+oil reversal+AI selloff→偏risk-on但多空博弈",
+        "note": "FOMC 9-3 hold(Hammack/Kashkari/Logan)dissent→rates 2s30s+15bp→DXY-0.6%→但hawkish tone back-end shy→Oil ceasefire仅24h Iran strikes WTI+6.9%→AI selloff加速 KOSPI-6% Hynix-25% META AH-10.3%→但credit resilient 0-2bp HYUELE unch CIMAU upgrade rally→net cautious risk-on"
+      },
+      "macro": [
+        "FOMC HOLD 9-3→Hammack+Kashkari+Logan dissent→20bp→2y-1.5bp 30y+11.2bp→2s30s+15bp twist-steepening→DXY-0.6%→EQ whipsaw S&P+0.7%",
+        "Oil: Iran strikes US forces→WTI+6.9%→$84.73→US+Saudi retaliate→ceasefire仅1天→Brent回$88+→Hormuz risk",
+        "KOSPI-6%→Hynix-25% 2day→META AH-10.3%→AI capex selloff global→memory overcapacity",
+        "AUD CPI 0.9%q/q+2.8%y/y→core softer→RBA hike odds 90%→50%→AUD front-end bid→4y futures+2bp",
+        "GS Research: FOMC on hold rest of 2026→core PCE 2.5%→tariffs=inflation→fiscal=eased",
+        "TIPS BE reversal: 5y BEI+10bp wider→5s30s RY+11bp steeper→BMO:Fed fail=tightening not ready",
+        "Asia Credit: resilient 0-2bp→HYUELE bonds/CDS unch→CIMAU upgrade rally→TMT bench covering→KEB Hana primary"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "FOMC决议日：hold但3 dissents(Hammack/Kashkari/Logan)→relief rally→但hawkish tone+oil reversal+AI selloff→偏risk-on但多空博弈",
+          "note": "FOMC 9-3 hold(Hammack/Kashkari/Logan)dissent→rates 2s30s+15bp→DXY-0.6%→但hawkish tone back-end shy→Oil ceasefire仅24h Iran strikes WTI+6.9%→AI selloff加速 KOSPI-6% Hynix-25% META AH-10.3%→但credit resilient 0-2bp HYUELE unch CIMAU upgrade rally→net cautious risk-on"
+        },
+        "activeNames": [
+          {
+            "name": "HYUELE",
+            "ticker": "HYUELE",
+            "tone": "mixed",
+            "activity": "stocks -10% but bonds/CDS unch，equity弱 credit平",
+            "brokers": [
+              "GS",
+              "HSBC"
+            ]
+          },
+          {
+            "name": "CIMAU",
+            "ticker": "CIMAU",
+            "tone": "buy",
+            "activity": "+5-10bp post S&P upgrade BB+→most active，评级上调利好",
+            "brokers": [
+              "HSBC",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "KEB Hana Bank",
+            "ticker": "KEBHAN",
+            "tone": "new_issue",
+            "activity": "3Y fixed AAA primary deal，新发定级",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "CHIG",
+            "ticker": "CHIG",
+            "tone": "mixed",
+            "activity": "42-47 CNY range，区间震荡",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "IND",
+            "ticker": "IND",
+            "tone": "mixed",
+            "activity": "73-78 range EM IG，两向",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "FILIP",
+            "ticker": "FILIP",
+            "tone": "mixed",
+            "activity": "85-88 range SEA IG，窄幅",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "LG Energy",
+            "ticker": "LGENER",
+            "tone": "buy",
+            "activity": "Tighter in tech selloff，科技大跌中逆势坚挺",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "DISBZ",
+            "ticker": "DISBZ",
+            "tone": "buy",
+            "activity": "Tighter in tech selloff，回调即机会",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "EXE",
+            "ticker": "EXE",
+            "tone": "sell",
+            "activity": "Spreads 30-40bp wider post-acquisition，套利基金融出做空",
+            "brokers": [
+              "HG"
+            ]
+          },
+          {
+            "name": "Power Finance Corp",
+            "ticker": "POWFIN",
+            "tone": "new_issue",
+            "activity": "USD 5Y primary deal→bid，首日活跃",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "Jane Street",
+            "type": "ETF Flow",
+            "summary": "FOMC day ETF flows→front-end bid→sector rotation"
+          },
+          {
+            "broker": "GS",
+            "type": "Credit Flow",
+            "summary": "Real money buying long end Japan/Aus IG→insurance tight→financials wider→HYUELE bonds unch"
+          },
+          {
+            "broker": "JEFFERIES",
+            "type": "Primary Flow",
+            "summary": "KEB Hana 3Y AAA+HFH CNH+Power Finance Corp USD 5Y→new issue bid"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "HYUELE",
+          "name": "HYUELE (China HY/Tech)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "Technology",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "GS",
+            "HSBC"
+          ],
+          "quote": "\"bonds/CDS unch despite stock -10%\" — GS",
+          "analysis": "Stocks -10% but bonds/CDS unchanged → credit de-coupling test case，股票下跌但信用利差未走阔，说明信用基本面未恶化",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "CIMAU",
+          "name": "CIMIC Group (CIMAU)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "APAC",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Infrastructure",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "quote": "\"CIMAU rallied 9-10bp tighter after S&P upgrade\" — HSBC",
+          "analysis": "S&P upgrade BB→BB+ → +5-10bp rally → follow-through key，评级上调后显著走强，后续动能值得关注",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "KEBHAN",
+          "name": "KEB Hana Bank (KEBHAN)",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Korea",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "\"3Y fixed AAA primary deal\" — JEFFERIES",
+          "analysis": "3Y fixed AAA primary deal → secondary performance watch，韩资银行新发定级AAA，关注二级表现",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "CHIG",
+          "name": "CHIG (China IG)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "China",
+          "ccy": "CNY",
+          "assetClass": "IG",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "\"42-47 CNY range\" — HSBC",
+          "analysis": "42-47 CNY range → tight range → quiet，窄幅震荡缺乏方向",
+          "excludeReason": "非USD计价，不在优先关注池"
+        },
+        {
+          "ticker": "IND",
+          "name": "Indonesia Sovereign (IND)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "APAC",
+          "ccy": "USD",
+          "assetClass": "Sovereign",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "Barclays"
+          ],
+          "quote": "\"73-78 range EM IG\" — Barclays",
+          "analysis": "73-78 range EM IG → quiet → two-way flow，窄幅两向，缺乏催化剂",
+          "excludeReason": "主权发行人，不在优先关注池"
+        },
+        {
+          "ticker": "FILIP",
+          "name": "Philippines Sovereign (FILIP)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "APAC",
+          "ccy": "USD",
+          "assetClass": "Sovereign",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "Barclays"
+          ],
+          "quote": "\"85-88 range SEA IG\" — Barclays",
+          "analysis": "85-88 range SEA IG → quiet → steady carry trade，窄幅稳定套息交易",
+          "excludeReason": "主权发行人，不在优先关注池"
+        },
+        {
+          "ticker": "EXE",
+          "name": "EXE Energy (EXE)",
+          "inFocus": true,
+          "priority": 2,
+          "region": "APAC",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "Energy",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "HG"
+          ],
+          "quote": "\"EXE spreads 30-40bp wider post-acquisition\" — HG",
+          "analysis": "Spreads 30-40bp wider post-acquisition → may widen further → oil weakness compounding，收购后利差大幅走阔+油价走弱双重打压",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "POWFIN",
+          "name": "Power Finance Corp (POWFIN)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "India",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "\"USD 5Y primary deal → bid\" — JEFFERIES",
+          "analysis": "USD 5Y primary deal → bid tone → 194/85 vs 0/0 previously，首日定价活跃",
+          "excludeReason": "新发，不在存量关注池"
+        }
+      ],
+      "insights": [
+        {
+          "broker": "GS",
+          "topic": "FOMC Hold=Rest of 2026",
+          "point": "Our baseline:FOMC on hold for rest of 2026.Core PCE 2.5%.Tariffs keeping goods prices high.Fiscal tightening on hold=de facto easier",
+          "quote": "We expect the Committee to continue to view inflation as too high"
+        },
+        {
+          "broker": "Barclays",
+          "topic": "Hawkish Hold:3 Dissents",
+          "point": "Hawkish hold.3 dissents for 25bp hike.Statement moderate→solid.Taper unchanged.Fed wants tariffs+CPI before hiking",
+          "quote": "Fed wants to see the tariffs and CPI before hiking"
+        },
+        {
+          "broker": "BMO",
+          "topic": "Fed Fail:Tightening Not Ready",
+          "point": "Fed hold but 3 dissents→real yield leading steepening 5s30s+11bp→5y BEI+10bp wider→Fed fail=tightening cycle not ready for reversal",
+          "quote": "Fed fail = tightening cycle not ready for reversal"
+        },
+        {
+          "broker": "JEFFERIES",
+          "topic": "Oil Reversal→Credit Resilience",
+          "point": "US-Iran re-ignited→Asian stocks dropped→but credit 0-2bp wider resilient→CIMAU upgrade+5-10bp→credit market shrugging off equity",
+          "quote": "Credit 0-2bp wider but more resilient than stocks"
+        },
+        {
+          "broker": "HSBC",
+          "topic": "CIMAU Upgrade→CPI Soft→Rate Reprice",
+          "point": "CIMAU upgrade rally 9-10bp→AUD CPI softer→rate hike odds 90%→50%→Japan firmer→Asia credit mixed tone",
+          "quote": "CIMAU rallied 9-10bp tighter after S&P upgrade"
+        },
+        {
+          "broker": "HG",
+          "topic": "Energy Digesting Crash→Capex Slowdown",
+          "point": "BHI Q2 EBITDA$574m slightly down→capex$203m vs$343m prior→going slow to bleed→EXE spreads 30-40bp wider→energy sector cautious",
+          "quote": "Going slow to bleed. Capex slowdown significant"
+        },
+        {
+          "broker": "MS",
+          "topic": "Curve Steepener=Clearest Trade",
+          "point": "FOMC hold→curve steepens→USD weaker DXY-0.6%→money markets front-end bid→front end remain well bid→back end shy",
+          "quote": "Front end will remain well bid, back end shy"
+        },
+        {
+          "broker": "Jane Street",
+          "topic": "ETF FOMC Flows→Real-Time Signal",
+          "point": "ETF market on FOMC day→equity chop→front-end bid→sector rotation→ETF flow=real-time positioning indicator",
+          "quote": "ETF flows provide real-time positioning signal"
+        }
+      ]
+    },
+    {
+      "reportDate": "2026-07-29",
+      "coverage": {
+        "emails": 8,
+        "brokers": [
+          "BMO",
+          "Citi",
+          "Goldman Sachs",
+          "HSBC",
+          "Jane Street",
+          "Morgan Stanley",
+          "TD Securities"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": ""
+      },
+      "signals": [
+        {
+          "id": "sig-20260729-ig_0729_01",
+          "topic": "FOMC July: ~30% Hike vs Consensus Hold",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "CONVICTION_GAP"
+          ],
+          "action": "WATCH",
+          "impactScore": 92,
+          "conviction": "High",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "headline": "FOMC Conviction Gap: Market ~30% hike vs GS/MS expect hold",
+          "oneLine": "Market ~30% hike vs consensus hold — biggest conviction gap of the week regardless of outcome",
+          "evidence": [
+            "GS: FOMC hike probability dropped to ~7.5bp (~30%). Research expects no change. Consumer confidence 90.8 vs 92.4 weakens case",
+            "MS: Toss-up between hold and hike. Oil crash+confidence miss may cause pause. Market pricing~9.5bp",
+            "BMO: TIPS reaction to hike vs no-change now more balanced after 2 months underperformance",
+            "USTs bull steepened: 2y -3.5bp, 30y -4.8bp ahead of FOMC"
+          ],
+          "soWhat": "~30%加息概率创造不对称：Hold(70%)→利率和美元回落→利好久期，声明偏鹰→relief但中期bearish。Hike(30%)→broad risk-off。FOMC前最优=头寸中性。",
+          "quote": "Toss-up between hold and hike — no strong outcome would surprise us. — Morgan Stanley",
+          "threadId": "thread-thread_0729_02",
+          "date": "2026-07-29",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260729-ig_0729_02",
+          "topic": "NVDA Historic AA Credit — AI Capex Now in Credit",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "FIRST_CALL"
+          ],
+          "action": "WATCH",
+          "impactScore": 88,
+          "conviction": "High",
+          "brokers": [
+            "Citi"
+          ],
+          "headline": "NVDA Historic AA Spread Widening — Deal priced 50bp tighter 6 weeks ago",
+          "oneLine": "Citi desk marks 'never seen AA px action to this magnitude' — AI capex doubts fully transmitted to credit",
+          "evidence": [
+            "Citi: never seen AA px action to this magnitude. Deal priced 50 tighter 6 weeks ago",
+            "Citi: Hyperscalers chaotic — opened weak on supply concern, bounced 4-5bp after Google didn't come",
+            "Citi: NVDA continued to weaken, META flat, Amazon starting to see buyers — differentiation emerging",
+            "Citi: Data centers well bid — TXEDCI +6bps tighter, RPLDCI -10bps (best performer)"
+          ],
+          "soWhat": "AI capex疑虑已从股票完全传导至信用——信用定价更慢但方向更准。但Google no-deal后hyperscaler反弹4-5bp→供应面是主要压力。关注后续发行恢复情况决定方向。",
+          "quote": "Never seen AA px action to this magnitude in face of deal that priced 50 tighter 6 weeks ago. — Citi Trading Desk",
+          "threadId": "thread-thread_0729_01",
+          "date": "2026-07-29",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260729-ig_0729_03",
+          "topic": "Data Centers vs Hyperscalers: AI Credit Alpha",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "NON_CONSENSUS"
+          ],
+          "action": "WATCH",
+          "impactScore": 78,
+          "conviction": "Medium",
+          "brokers": [
+            "Citi",
+            "Goldman Sachs"
+          ],
+          "headline": "Data Centers +6bps tighter vs Hyperscalers +30-90bps wider — AI credit dispersion",
+          "oneLine": "Same AI infra but opposite credit performance — long DC/short hyperscaler = non-consensus alpha",
+          "evidence": [
+            "Citi: Data centers well bid, TXEDCI+6bps, RPLDCI-10bps best performer",
+            "GS: Hyperscaler credit+30-90bps vs non-tech TMT+5-35bps",
+            "GS: AI capex cycle elevated credit-to-equity beta for hyperscalers",
+            "Citi: Hyperscalers bounced 4-5bp after Google didn't come — supply overhang, not fundamentals"
+          ],
+          "soWhat": "市场一刀切做空AI信用=错误定价。Data center是铲子卖家受益于capex，hyperscaler信用受供应+基本面双重压力但供应退后反弹。long DC/short hyperscaler有显著alpha。",
+          "quote": "Data centers very well bid, TXEDCI +6bps tighter. Hyperscalers chaotic, bounced 4-5bp after Google no-deal. — Citi",
+          "threadId": "thread-thread_0729_01",
+          "date": "2026-07-29",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260729-ig_0729_04",
+          "topic": "US Defensive Rotation: Breadth Improves But Not Cyclical Risk-On",
+          "assetClass": "Equity",
+          "direction": "Neutral",
+          "signalType": [
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 75,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Jane Street",
+            "Goldman Sachs"
+          ],
+          "headline": "Equal-weight +96bp vs cap-weight — AI concentration to broad defensives",
+          "oneLine": "HC+2.4%/Staples+2.0% vs Tech-1.2%/Energy-1.4% — breadth improvement but defensive, not risk-on",
+          "evidence": [
+            "MS: Equal-weight firmer than cap-weight. HC+2.3%, staples+2.0%, 7/11 sectors higher",
+            "JS: Sellers Growth/Tech (VUG/XLK/VTV), buyers Small-caps/Quality/Financials (IJR/QUAL/XLF)",
+            "JS: ETFs: EM broad outflows (VWO) but Korea (EWY) inflows — contrarian",
+            "GS: Equities mixed — SPX+0.2%, NDX-0.98%. AI/chip weakness but TER+13.7% AH bounce"
+          ],
+          "soWhat": "领涨广度改善=结构正面。但科技-1.2%+能源-1.4%表明这非纯粹风险偏好改善而是防御性轮动。若科技持续走弱，防御→全面避险。FOMC前维持防御配置。",
+          "quote": "Equal-weight firmer than cap-weight. Healthcare+2.3%, staples+2.0%, 7/11 sectors higher. — Morgan Stanley",
+          "threadId": "thread-thread_0729_04",
+          "date": "2026-07-29",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260729-ig_0729_05",
+          "topic": "Brazil IPCA-15 Big Miss → Only 33bp Full Cycle Priced",
+          "assetClass": "Rates",
+          "direction": "Bullish",
+          "signalType": [
+            "IMPLICIT"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "Brazil IPCA-15全面大幅低于预期—年通胀降至4.52%",
+          "oneLine": "IPCA-15 miss across all components but only 33bp cuts priced full cycle — massive re-pricing potential",
+          "evidence": [
+            "MS: IPCA-15 well below estimates across all key components. 0.05% vs 0.22% consensus",
+            "MS: Annual inflation 4.52% from 4.80%",
+            "MS: Market pricing ~95% for 25bp cut next week at Copom",
+            "MS: Only ~33bp of cuts priced for entire easing cycle — potentially significant underpricing"
+          ],
+          "soWhat": "Brazil降息预期极度保守=明显mispricing。通胀下行趋势已确立且大幅超预期，仅33bp全周期不匹配基本面。Long BRL rates有不对称上行，下周Copom会议是关键验证时点。",
+          "quote": "IPCA-15 well below estimates across all components. Only ~33bp for the whole cycle. — Morgan Stanley",
+          "threadId": "thread-thread_0729_05",
+          "date": "2026-07-29",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260729-ig_0729_06",
+          "topic": "Korea Cross-Asset Divergence: KOSPI-11% vs KRW+0.4%+EWY Inflows",
+          "assetClass": "FX",
+          "direction": "Neutral",
+          "signalType": [
+            "IMPLICIT"
+          ],
+          "action": "WATCH",
+          "impactScore": 68,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Jane Street"
+          ],
+          "headline": "KOSPI-11%/$33亿外流但KRW+0.4%+EWY唯一流入EM国家",
+          "oneLine": "KOSPI -11%/tech outflows $3.3bn but KRW stronger + EWY only EM ETF inflow — strong contrarian",
+          "evidence": [
+            "MS: KRW+0.4% despite KOSPI-11% and $3.3bn equity outflows from tech selloff",
+            "JS: EM broad outflows (VWO) but Korea (EWY) inflows — only EM country with inflows",
+            "JS: Japan (EWJ) biggest DM underperformer. AUD/GBP/Europe outperformed",
+            "MS: IDR continued weakening -0.4%, rating agency uncertainty elevated"
+          ],
+          "soWhat": "Korea是唯一在EM广泛流出中获ETF资金的EM国家——逆势信号极强。若来自bond inflow=积极，若来自FX干预=不可持续。暂时中性但多资产中最值得关注的divergence。",
+          "quote": "KRW+0.4% despite KOSPI-11% and $3.3bn equity outflows. — Morgan Stanley",
+          "threadId": "thread-thread_0729_06",
+          "date": "2026-07-29",
+          "priorState": "No prior state available."
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "date": "2026-07-29",
+          "summary": "四主题覆盖：1)AI hyperscaler信用+30-90bps vs data center更紧，FCF路径决定信用vs股票相对价值；2)FOMC预期不动，消费者信心弱化加息理由；3)欧元区增长超预期韧性但能源拖累风险偏下行；4)油价-4%支撑全球duration.",
+          "assetClasses": [
+            "CREDIT",
+            "MACRO",
+            "RATES"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "Goldman Sachs 2026-07-29"
+          ]
+        },
+        {
+          "broker": "Citi",
+          "date": "2026-07-29",
+          "summary": "三大关键信号：1)NVDA债券历史性AA级别走阔，6周前定价还收窄50bps；2)Data centers well bid+6bps tighter，亚洲买入Big 6银行+Yankee金融债；3)FOMC后预计周四大量供给.",
+          "assetClasses": [
+            "CREDIT",
+            "MACRO"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "Citi 2026-07-29"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "date": "2026-07-29",
+          "summary": "宏观全景：油价跌+消费者信心弱+科技弱推bull steepening。US 10y 4.61%/-4.2bp。AxJ FX分化：KRW+0.4%逆势升值、TWD-0.3%、IDR续跌-0.4%。Brazil IPCA-15大幅低于预期强化下周降息押注。美股防御性轮动：HC+2.3%、Staples+2.0%.",
+          "assetClasses": [
+            "MACRO",
+            "FX",
+            "RATES",
+            "EQUITY"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-07-29"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "date": "2026-07-29",
+          "summary": "亚洲信用：中国IG走阔1-5bps(TMT领跌，跟随全球hyperscaler)。SOFTBK跌1-1.25pts。日本下半年前景积极，在岸RM持续买保险hybrid。AUD IG有韧性.",
+          "assetClasses": [
+            "CREDIT"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC 2026-07-29"
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "date": "2026-07-29",
+          "summary": "ETF/Credit Flow：IG ETF开盘偏卖出、午后平衡；HY ETF午后逆转至买入。信用全线走阔。ETF轮动卖出成长/科技，买小盘/质量/金融。EM广泛流出但Korea(EWY)逆势流入。DM中日本(EWJ)跑输.",
+          "assetClasses": [
+            "CREDIT",
+            "EQUITY",
+            "ETF FLOW"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "Jane Street 2026-07-29"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "date": "2026-07-29",
+          "summary": "TIPS & Rates：能源再跌4-5%，breakeven继压。1yr ZC BE近1.85%，5yr BE新局部低点。TIPS跑输近2个月。FOMC前TIPS对加息vs不加息反应更均衡——事件风险降低但也减少单向押注空间.",
+          "assetClasses": [
+            "INFLATION",
+            "RATES"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "BMO 2026-07-29"
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "date": "2026-07-29",
+          "summary": "AUD信用：流动性偏轻但两新deal有需求。RM中期至长端买固定利率公司债。两只deal定价紧但表现良好。亚洲RM对高质量银行信用仍有信心.",
+          "assetClasses": [
+            "CREDIT"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "TD Securities 2026-07-29"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "item": "Oil Price Movement",
+          "claim": "Oil -4.5% on US-Iran diplomatic progress",
+          "verified": true,
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs",
+            "BMO"
+          ],
+          "note": "Multiple desks confirm -4% to -5% decline, Brent sub-$85"
+        },
+        {
+          "item": "FOMC Market Pricing",
+          "claim": "38% hike probability priced into rates",
+          "verified": true,
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "note": "Consistent across GS/MS; consumer confidence 90.8 vs 92.4 consensus"
+        },
+        {
+          "item": "NVDA Bond Spread Widening",
+          "claim": "NVDA AA bonds historic spread widening",
+          "verified": true,
+          "brokers": [
+            "Citi"
+          ],
+          "note": "Citi desk: 'never seen AA px action to this magnitude'; deal priced 50bp tighter 6 weeks ago"
+        },
+        {
+          "item": "TMT Credit Dispersion",
+          "claim": "Hyperscalers +30-90bps vs non-tech TMT +5-35bps, data centers +6bps tighter",
+          "verified": true,
+          "brokers": [
+            "Goldman Sachs",
+            "Citi"
+          ],
+          "note": "GS and Citi independently confirm same dispersion pattern"
+        },
+        {
+          "item": "Brazil IPCA-15 Miss",
+          "claim": "0.05% vs 0.22% consensus, annual 4.52%",
+          "verified": true,
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "note": "MS economist confirms well below estimates across key components"
+        },
+        {
+          "item": "US Equity Sector Rotation",
+          "claim": "Tech -1.2%, HC +2.4%, equal-weight +96bp vs cap-weight",
+          "verified": true,
+          "brokers": [
+            "Morgan Stanley",
+            "Jane Street",
+            "Goldman Sachs"
+          ],
+          "note": "Three desks independently confirm same rotation pattern"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "mixed",
+        "label": "两向/偏防御",
+        "note": "FOMC前夕+油价-4.5%+AI信用极度分化→防御性轮动明显(医疗/消费领涨)但bull steepening利好久期。整体多空交织，等待FOMC决议打破平衡。"
+      },
+      "macro": [
+        {
+          "theme": "FOMC July Decision: 38% Hike Priced vs Consensus Hold",
+          "observation": "FOMC July decision due tonight. Market pricing ~38% hike probability but GS and most sell-side expect hold at 3.50-3.75%. Consumer confidence 90.8 vs 92.4 expected weakens tightening case. USTs bull steepened ahead: 2y -3.5bp, 10y -4.2bp.",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley",
+            "BMO",
+            "Citi"
+          ]
+        },
+        {
+          "theme": "Oil Retreat & US-Iran De-escalation",
+          "observation": "Oil -4.5% on US-Iran diplomatic progress. Brent below $85/bbl. Lower energy prices supported global duration, weighed on energy equities. Bull steepening across UST/EGB/Gilt.",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs",
+            "BMO",
+            "Jane Street"
+          ]
+        },
+        {
+          "theme": "Brazil IPCA-15 Surprise: 95% Cut Priced",
+          "observation": "Brazil July IPCA-15 well below estimates (0.05% vs 0.22%), annual inflation 4.52% from 4.80%. Market pricing ~95% for 25bp cut next week, only ~33bp for whole cycle — potentially underpricing dovish trajectory.",
+          "brokers": [
+            "Morgan Stanley"
+          ]
+        },
+        {
+          "theme": "Euro Area Growth Resilience Amid Energy Drag",
+          "observation": "Euro area growth showing surprising resilience through energy shock: Q2 GDP firming, PMIs beating expectations. But energy drag keeps growth below potential (Q4/Q4 0.7% yoy), risks tilted down.",
+          "brokers": [
+            "Goldman Sachs"
+          ]
+        }
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "两向/偏防御",
+          "note": "FOMC前夕+油价-4.5%+AI信用极度分化→防御性轮动明显(医疗/消费领涨)但bull steepening利好久期。整体多空交织，等待FOMC决议打破平衡。"
+        },
+        "activeNames": [
+          {
+            "name": "NVDA (Nvidia)",
+            "ticker": "NVDA",
+            "tone": "sell",
+            "activity": "Historic AA spread widening — 卖盘主导，从未见过的AA级别价格波动。6周前deal定价还收窄50bps，现已大幅走阔。Citi desk标记为历史性异常。",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "Hyperscaler Complex (MSFT/GOOGL/AMZN)",
+            "ticker": "HYPSC",
+            "tone": "sell",
+            "activity": "Hyperscaler bonds +30-90bps wider。AI capex融资可持续性遭质疑，forward FCF yield恶化。GS指出信用路径取决于capex下降vs运营CF上升。",
+            "brokers": [
+              "Goldman Sachs",
+              "Citi"
+            ]
+          },
+          {
+            "name": "Data Centers (TXEDCI)",
+            "ticker": "TXEDCI",
+            "tone": "buy",
+            "activity": "逆势收窄6bps，Citi desk报告data center债券well bid。与hyperscaler形成鲜明对比，long data center/short hyperscaler策略。",
+            "brokers": [
+              "Citi",
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "name": "China TMT (BABA/TEN/SOFTBK)",
+            "ticker": "SOFTBK",
+            "tone": "sell",
+            "activity": "中国IG走阔1-5bps，TMT领跌。Global hyperscaler传导+客户卖出。SOFTBK跌1-1.25pts（街边卖出）。",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "US Financials (Big 6 Banks + Yankee)",
+            "ticker": "USBK",
+            "tone": "buy",
+            "activity": "来自亚洲的买入。Big 6银行+Yankee债获实钱配置。数据中心表现优异。Citi desk报告亚洲更好买入。",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "Japan Insurance Hybrids",
+            "ticker": "JPNIN",
+            "tone": "buy",
+            "activity": "在岸RM持续购买保险公司hybrid债券。日本信用下半年前景积极，本土需求强劲。",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "US Defensive Sectors (XLV/XLP)",
+            "ticker": "XLV",
+            "tone": "buy",
+            "activity": "Healthcare +2.4%、Consumer Staples +2.0%领涨。ETF买家涌入防御板块，等权重标普跑赢市值加权+96bps。",
+            "brokers": [
+              "Morgan Stanley",
+              "Jane Street"
+            ]
+          },
+          {
+            "name": "Korea (EWY/KRW)",
+            "ticker": "EWY",
+            "tone": "mixed",
+            "activity": "KOSPI -11%但KRW+0.4%升值+EWY ETF获资金流入。股市暴跌vs汇率升值的两向信号——暗示干预或债券流入支撑韩元。",
+            "brokers": [
+              "Morgan Stanley",
+              "Jane Street"
+            ]
+          },
+          {
+            "name": "Brazil Duration (BRL Rates)",
+            "ticker": "BRLR",
+            "tone": "buy",
+            "activity": "IPCA-15大幅低于预期（0.05% vs 0.22%），市场定价下周95%概率降息25bp。但本轮周期仅priced in ~33bp——可能低估降息空间。",
+            "brokers": [
+              "Morgan Stanley"
+            ]
+          },
+          {
+            "name": "AUD IG Credit",
+            "ticker": "AUDIG",
+            "tone": "buy",
+            "activity": "RM在中期至长端买入固定利率公司债。两只新deal定价偏紧但表现良好。全球波动中AUD信用展现韧性。",
+            "brokers": [
+              "TD Securities"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "FOMC event risk"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Oil -4.5% geopolitical de-escalation"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "AI capex sustainability concerns"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "US equity defensive rotation"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Brazil inflation surprise"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "NVDA",
+          "name": "NVDA (Nvidia) — AI旗舰信用",
+          "inFocus": true,
+          "priority": 1,
+          "region": "US",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Technology / Semiconductors",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "sell",
+          "brokers": [
+            "Citi"
+          ],
+          "quote": "\"never seen AA px action to this magnitude in face of deal that priced 50 tighter 6 weeks ago\" — Citi",
+          "analysis": "NVDA信用出现历史性异常走阔。6周前新发定价时还获得50bps收窄，如今大幅走阔至'从未见过的AA级别幅度'。AI capex ROI疑虑已从股票完全传导至信用。这是一个极其罕见的AA级别信用再定价事件。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "HYPSC",
+          "name": "Hyperscaler Complex — MSFT/GOOGL/AMZN Bonds",
+          "inFocus": true,
+          "priority": 1,
+          "region": "US",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Technology / Cloud / AI",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "Goldman Sachs",
+            "Citi"
+          ],
+          "quote": "\"Hyperscaler credit +30-90bps wider on deteriorating forward FCF yield\" — GS",
+          "analysis": "AI hyperscaler是本次信用卖压的核心。债券走阔30-90bps，幅度远超非科技TMT(+5-35bps)。GS指出信用vs股票相对价值取决于FCF改善路径：capex下降利好信用，运营CF上升利好股票。当前市场两类都不确信，导致全面抛售。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "TXEDCI",
+          "name": "TXEDCI — US Data Center Credit",
+          "inFocus": true,
+          "priority": 2,
+          "region": "US",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Data Center / Infrastructure",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Citi",
+            "Goldman Sachs"
+          ],
+          "quote": "\"Data centers very well bid, +6bps tighter\" — Citi",
+          "analysis": "在hyperscaler信用全面走阔的背景下，data center债券逆势收窄6bps。验证了AI信用不应一刀切做空——data center作为AI基础设施的'铲子卖家'，受益于capex而非承担风险。与hyperscaler形成极端对比。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "SOFTBK",
+          "name": "SOFTBK (SoftBank) — Japan Tech Credit",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "Technology / Telecom",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "\"SOFTBK down 1-1.25pts on street selling\" — HSBC",
+          "analysis": "SOFTBK跌1-1.25pts，街边卖出驱动。属于全球TMT走阔的日本延伸。需关注日本信用是否存在独立于AI叙事之外的风险因素。与中国TMT(+1-5bps)的温和走阔形成对比——SOFTBK跌幅更剧烈。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "USBK",
+          "name": "US Big 6 Banks + Yankee Financials",
+          "inFocus": false,
+          "priority": 3,
+          "region": "US",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Financials / Banks",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Citi"
+          ],
+          "quote": "\"Asia better buying in financials (Big 6 banks + yankees)\" — Citi",
+          "analysis": "金融板块获亚洲实钱配置性买入。Big 6银行+Yankee债需求稳健。在全球TMT信用动荡中，金融信用相对安全——不直接受AI capex影响且受益于高利率环境。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "JPNIN",
+          "name": "Japan Insurance Hybrids",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Japan",
+          "ccy": "JPY",
+          "assetClass": "HY",
+          "sector": "Insurance / Financials",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "\"Onshore RM continues to buy insurance company hybrid bonds\" — HSBC",
+          "analysis": "日本在岸RM持续购买保险公司hybrid债券，体现强劲本土需求。在全球TMT信用动荡中为金融信用提供相对安全港。HSBC对下半年前景持积极看法。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "BRLR",
+          "name": "Brazil Local Rates — Duration Play",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Brazil",
+          "ccy": "BRL",
+          "assetClass": "Rates",
+          "sector": "Sovereign / Rates",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "quote": "\"IPCA-15 well below estimates, market pricing ~95% for 25bp cut next week\" — MS",
+          "analysis": "Brazil IPCA-15大幅低于预期(0.05% vs 0.22%)，年通胀从4.80%降至4.52%。市场定价下周95%概率降息25bp但本轮周期总共仅priced in ~33bp。这一保守定价可能大幅低估了下行通胀趋势带来的降息空间。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "AUDIG",
+          "name": "AUD IG Corporate Credit",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Australia",
+          "ccy": "AUD",
+          "assetClass": "IG",
+          "sector": "Financials / Corporates",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "TD Securities"
+          ],
+          "quote": "\"RM buyers of fixed rate corporates mid-to-long end, two deals priced tight but performed well\" — TD",
+          "analysis": "AUD信用在全球波动中保持韧性。RM在中长端买入固定利率公司债，两只新deal定价偏紧但表现良好。亚洲RM对高质量银行信用仍有信心。",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "多券商综合",
+          "topic": "AI信用极度分化创造long/short策略机会",
+          "point": "Hyperscaler债券+30-90bps vs data center债券-6bps tighter，同属AI基础设施但信用表现截然相反。我们建议关注这一对价差——如果AI capex确实降温，data center作为'铲子卖家'的信用风险较低。long data center / short hyperscaler策略值得考虑。",
+          "quote": "GS: 'scenario of FCF gains from declining capex favors credit'; Citi: 'data centers very well bid'"
+        },
+        {
+          "broker": "多券商综合",
+          "topic": "FOMC Tonight — 38% hike priced创造了不对称交易",
+          "point": "无论FOMC决议如何都将产生显著重新定价。62%概率Hold→短期利率和美元可能回落。38%概率Hike→反向剧烈重定价。消费者信心90.8弱于预期的数据支持hold。bull steepening暗示市场更担心增长风险而非通胀。日内FOMC决议前建议保持头寸中性。",
+          "quote": "GS expects hold; Market ~38% hike. BMO: TIPS pricing now more balanced between scenarios."
+        },
+        {
+          "broker": "Citi + GS",
+          "topic": "NVDA信用历史性异常是AI叙事的'金丝雀'",
+          "point": "Citi desk标记NVDA债券出现'从未见过的AA级别价格波动'。信用市场通常比股票定价更慢但方向更确定——NVDA信用异常暗示AI capex ROI疑虑已结构化而非暂时的。这比股价下跌更具信息含量。我们需要认真审视AI相关信用敞口。",
+          "quote": "Citi: 'never seen AA px action to this magnitude'; NVDA deal priced 50bp tighter just 6 weeks ago"
+        },
+        {
+          "broker": "多券商综合",
+          "topic": "US防御性轮动——从集中到广泛，但未必是risk-on",
+          "point": "等权重标普跑赢市值加权+96bps，医疗/消费领涨。这是近期最显著板块轮动，从集中押注AI/科技转向广泛参与防御板块。但科技-1.2%和能源-1.4%表明这不是纯粹风险偏好改善而是防御性轮动。如果科技持续走弱，防御性轮动可能转变为全面避险。",
+          "quote": "MS: 'equal-weight firmer than cap-weight, HC +2.3%, staples +2.0%'; JS: 'sellers of Growth/Tech, buyers of Small-caps/Quality'"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "topic": "Brazil降息预期极度保守——存在重新定价机会",
+          "point": "IPCA-15大幅低于预期（0.05% vs 0.22%），年通胀从4.80%降至4.52%。市场定价下周95%概率降息25bp，但本轮周期总共仅priced in ~33bp。如果通胀持续走低，市场对降息周期的定价将大幅修正——存在显著的duration上行空间。",
+          "quote": "MS: 'Market pricing ~95% for 25bp cut next week, only ~33bp for the whole cycle'"
+        },
+        {
+          "broker": "Jane Street + Morgan Stanley",
+          "topic": "Korea逆势信号——股市暴跌但资金流入",
+          "point": "KOSPI -11%但KRW+0.4%升值且EWY ETF获资金流入。这是强烈的逆势信号——暗示韩国央行动用外汇储备干预、或债券市场强劲流入支撑韩元。日本(EWJ)是DM主要跑输者。我们对Korea维持中性——fund flow逆势但equity momentum负面。",
+          "quote": "MS: 'KRW +0.4% despite KOSPI -11% and $3.3bn equity outflows'; JS: 'Korea inflows despite selloff'"
+        }
+      ]
+    },
     {
       "reportDate": "2026-07-28",
       "coverage": {
