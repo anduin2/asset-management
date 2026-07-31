@@ -432,7 +432,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   </div>
 </main>
 
-<script src="trading_data.js?v=202607291032fix"></script>
+<script src="trading_data.js?v=202607310941"></script>
 <script>
 (function () {
   const D = window.REPORT_DATA || {};
@@ -752,7 +752,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       <h3>${esc(b.broker)}</h3>
       <div class="panel-sub">${esc(b.emails)} email(s)</div>
       <p>${esc(b.stance)}</p>
-      <div class="meta">${b.sourceRefs.map(r=>`<span class="badge">${esc(r)}</span>`).join("")}</div>
+      <div class="meta">${(b.sourceRefs||[]).map(r=>`<span class="badge">${esc(r)}</span>`).join("")}</div>
     </div>`).join(""):'<div class="empty">当日无券商记录</div>';
   }
 
@@ -841,12 +841,12 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 
   function renderDayScoped(){
     const signals=daySignalsSorted();
-    renderKpis(signals);
-    renderFlow();
-    renderBoard(signals);
-    renderSources();
-    renderData();
-    renderIssuers();
+    try{ renderKpis(signals); }catch(e){ console.error("renderKpis",e); }
+    try{ renderFlow(); }catch(e){ console.error("renderFlow",e); }
+    try{ renderBoard(signals); }catch(e){ console.error("renderBoard",e); }
+    try{ renderSources(); }catch(e){ console.error("renderSources",e); }
+    try{ renderData(); }catch(e){ console.error("renderData",e); }
+    try{ renderIssuers(); }catch(e){ console.error("renderIssuers",e); }
   }
 
   function renderAll(){
