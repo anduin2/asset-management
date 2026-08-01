@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-01 08:41 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-01 17:05 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -3037,8 +3037,18 @@ window.REPORT_DATA =
     {
       "reportDate": "2026-08-03",
       "coverage": {
-        "emails": 6,
-        "brokers": [],
+        "emails": [
+          "BMO TIPS EOD",
+          "MS Global Macro Commentary",
+          "GS Strategy Inc 2Q26"
+        ],
+        "brokers": [
+          "BMO",
+          "Barclays",
+          "GS (via Barclays)",
+          "Jefferies",
+          "Morgan Stanley"
+        ],
         "lookbackDays": 15,
         "sourceDateNote": ""
       },
