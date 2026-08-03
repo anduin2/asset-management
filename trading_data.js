@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-01 17:05 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-03 16:31 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -3402,6 +3402,8 @@ window.REPORT_DATA =
             "JPY intervention $53bn→USD/JPY-1.3% 157.40→BoJ hold hawkish→carry unwind deepening",
             "S&P+0.7% Nasdaq+1.0%→Consumer Disc+6.1% Comm Serv+4.6%→broad rotation vs narrow tech"
           ],
+          "assetClass": "Rates/Macro",
+          "keyQuote": "ECI +0.9% q/q >0.8% est + Chicago PMI beat + UMich beat → labor tight, consumer resilient",
           "emails": 1,
           "sourceRefs": [
             "Morgan Stanley 2026-08-03"
@@ -3420,6 +3422,8 @@ window.REPORT_DATA =
             "CIMAU -3bps→cumulatively ~20bps tighter post S&P upgrade→Chinese AM buying",
             "Asia CDS firm→Itraxx Asia S45-1.75→INDON/PHILIP-2bps"
           ],
+          "assetClass": "Credit",
+          "keyQuote": "SEA IG 1-3bps tighter led by India IG→no sellers on weak days→risk-on durable",
           "emails": 1,
           "sourceRefs": [
             "Barclays 2026-08-03"
@@ -3438,6 +3442,8 @@ window.REPORT_DATA =
             "Month-end RM better appetite: VEDLN/MONDFI/SHFLIN/GRNKEN/MTCTB→liquid benchmarks",
             "Bearish steepening→any pullback=correction→short bonds on rallies→10yr Wave III"
           ],
+          "assetClass": "Credit",
+          "keyQuote": "SOFTBK strongest: long-end bullets+3pts→9984 JT+13.8%→risk tone materially improved across Asia HY",
           "emails": 1,
           "sourceRefs": [
             "JEFFERIES 2026-08-03"
@@ -3453,6 +3459,8 @@ window.REPORT_DATA =
             "Late headline: US/Israel preparing to strike Iran energy→oil spiking into weekend→'Monday should be fun'",
             "BEI chopped 1-2bp during session→4pm index buying pushed to highs→Iran repricing Monday expected"
           ],
+          "assetClass": "Rates",
+          "keyQuote": "Month-end flows active→front-end selling vs buying further out→long-end real yields broke >3%→brought outright RM buying",
           "emails": 1,
           "sourceRefs": [
             "BMO 2026-08-03"
@@ -3468,6 +3476,8 @@ window.REPORT_DATA =
             "Replenished USD reserve to 2.1 years dividend coverage→liquidity position strong",
             "PT $125 (lowered from $130)→current $93.33→+33.9% upside→OW rating unchanged"
           ],
+          "assetClass": "Credit",
+          "keyQuote": "MSTR weathered Bitcoin bear market→STRC trading ~$89 committed to bringing back to par",
           "emails": 1,
           "sourceRefs": [
             "GS (via BarCap MA) 2026-08-03"
@@ -3543,792 +3553,224 @@ window.REPORT_DATA =
       ],
       "qualityLog": [],
       "tone": {
-        "overall": "Friday全面反转：周四PCE软叙事→周五ECI+PMI+UMich triple beat→bear-steepening 30y 5.28% YTD→Iran energy strike escalation→oil surge→SOFTBK暴力short cover→Asia credit risk-on→JPY $53bn继续→weekend risk elevated→Monday gap risk in oil+rates→NFP下周pivotal",
-        "risk_appetite": "Moderate (Risk-On Asia Credit / Elevated Geopolitical Risk)",
-        "key_themes": [
-          "Data Beat Reflation",
-          "Iran Energy Strike Escalation",
-          "SOFTBK Short Squeeze",
-          "Asia Credit Risk-On",
-          "JPY Carry Unwind",
-          "UST Bear-Steepening",
-          "Month-End Positioning",
-          "Weekend Gap Risk"
-        ],
-        "market_regime": "Reversal Friday: PCE soft→ECI hawk→bear-steepening regains control→30y 5.28% YTD→oil gap risk into Monday→Asia credit decoupled risk-on→SOFTBK violent retrace→JPY intervention achieving results→NFP week pivotal for Fed path"
+        "dir": "firm",
+        "label": "Bear-Steepening确立(ECI+PMI+UMich triple beat) | Iran Energy Strike escalation → 周末gap risk | SOFTBK暴力short cover",
+        "note": "Friday全面反转：周四PCE软叙事→周五ECI+PMI+UMich triple beat→bear-steepening 30y 5.28% YTD→Iran energy strike escalation→oil surge→SOFTBK暴力short cover→Asia credit risk-on→JPY $53bn继续→weekend risk elevated→Monday gap risk in oil+rates→NFP下周pivotal"
       },
-      "macro": {
-        "us_data": {
-          "eci": "ECI +0.9% q/q (vs +0.8% est)→employment cost re-accelerating→labor market tight",
-          "pmi": "MNI Chicago PMI beat→manufacturing sentiment improving",
-          "umich": "UMich sentiment beat→consumer resilient despite rates",
-          "claims": "Initial jobless claims 197k (<200k consensus)→labor not weakened materially",
-          "rates": "UST bear-steepened: 2y+4.5bp→10y+6.1bp 4.73%→30y+5.9bp 5.28% YTD high"
-        },
-        "fx": {
-          "dxy": "99.74 (-0.1%)",
-          "usdjpy": "157.40 (-1.3%)→$53bn intervention→BoJ hold 1%",
-          "eur": "+0.5%",
-          "gbp": "+0.7%",
-          "aud": "+1.0%",
-          "nzd": "+1.4%",
-          "chf": "+1.1%"
-        },
-        "commodities": {
-          "brent": "90.12 (+1.2%)→US/Israel Iran energy strike prep→weekend gap risk",
-          "wti": "85.95 (+2.8%)",
-          "gold": "+0.9%",
-          "silver": "+2.2%"
-        },
-        "equity": {
-          "sp500": "+0.7%→broad rotation",
-          "nasdaq": "+1.0%",
-          "consumer_disc": "+6.1%→leading",
-          "comm_serv": "+4.6%",
-          "vix": "15.99 (-6.4%)→below fear",
-          "kospi": "stabilizing closing highs"
-        },
-        "central_banks": {
-          "fed": "FOMC dissent data验证→ECI+PMI+UMich beat→Sept hawk repriced→30y 5.28% market voting",
-          "boj": "Hold 1% + hawkish Ueda→JGB 10y+5bp→intervention $53bn→carry unwind"
-        },
-        "geopolitical": "US/Israel preparing to strike energy targets in Iran→oil spiking→weekend risk→Monday gap→BMO:'Monday should be fun'",
-        "events_ahead": [
-          "Weekend: Iran energy strike development→oil/UST gap risk Monday open",
-          "Monday: Nissan HY earnings→Asia IG open→SOFTBK continuation test",
-          "Next week: NFP Friday→labor data pivotal for Fed Sept decision"
-        ]
-      },
+      "macro": [
+        "[Us Data]",
+        "  • eci: ECI +0.9% q/q (vs +0.8% est)→employment cost re-accelerating→labor market tight",
+        "  • pmi: MNI Chicago PMI beat→manufacturing sentiment improving",
+        "  • umich: UMich sentiment beat→consumer resilient despite rates",
+        "  • claims: Initial jobless claims 197k (<200k consensus)→labor not weakened materially",
+        "  • rates: UST bear-steepened: 2y+4.5bp→10y+6.1bp 4.73%→30y+5.9bp 5.28% YTD high",
+        "[Fx]",
+        "  • dxy: 99.74 (-0.1%)",
+        "  • usdjpy: 157.40 (-1.3%)→$53bn intervention→BoJ hold 1%",
+        "  • eur: +0.5%",
+        "  • gbp: +0.7%",
+        "  • aud: +1.0%",
+        "  • nzd: +1.4%",
+        "  • chf: +1.1%",
+        "[Commodities]",
+        "  • brent: 90.12 (+1.2%)→US/Israel Iran energy strike prep→weekend gap risk",
+        "  • wti: 85.95 (+2.8%)",
+        "  • gold: +0.9%",
+        "  • silver: +2.2%",
+        "[Equity]",
+        "  • sp500: +0.7%→broad rotation",
+        "  • nasdaq: +1.0%",
+        "  • consumer_disc: +6.1%→leading",
+        "  • comm_serv: +4.6%",
+        "  • vix: 15.99 (-6.4%)→below fear",
+        "  • kospi: stabilizing closing highs",
+        "[Central Banks]",
+        "  • fed: FOMC dissent data验证→ECI+PMI+UMich beat→Sept hawk repriced→30y 5.28% market voting",
+        "  • boj: Hold 1% + hawkish Ueda→JGB 10y+5bp→intervention $53bn→carry unwind",
+        "[Geopolitical] US/Israel preparing to strike energy targets in Iran→oil spiking→weekend risk→Monday gap→BMO:'Monday should be fun'",
+        "[Events Ahead]",
+        "  • Weekend: Iran energy strike development→oil/UST gap risk Monday open",
+        "  • Monday: Nissan HY earnings→Asia IG open→SOFTBK continuation test",
+        "  • Next week: NFP Friday→labor data pivotal for Fed Sept decision"
+      ],
       "flow": {
         "sentiment": {
-          "dir": "mixed",
-          "label": "",
-          "note": ""
+          "dir": "firm",
+          "label": "Bear-Steepening确立(ECI+PMI+UMich triple beat) | Iran Energy Strike escalation → 周末gap risk | SOFTBK暴力short cover",
+          "note": "Friday全面反转：周四PCE软叙事→周五ECI+PMI+UMich triple beat→bear-steepening 30y 5.28% YTD→Iran energy strike escalation→oil surge→SOFTBK暴力short cover→Asia credit risk-on→JPY $53bn继续→weekend risk elevated→Monday gap risk in oil+rates→NFP下周pivotal"
         },
-        "activeNames": [],
-        "drivers": []
-      },
-      "issuers": [
-        {
-          "ticker": "SOFTBK",
-          "name": "SoftBank Group(SOFTBK)",
-          "inFocus": true,
-          "priority": 1,
-          "region": "Japan",
-          "ccy": "USD",
-          "assetClass": "IG",
-          "sector": "Technology/Telecom",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "quote": "Snr+1/+3pts hybrids+1.875/+2pts→5Y CDS-28 to 347→9984 JT+13.8%→massive short cover→retracing week's widening",
-          "analysis": "一周暴跌后暴力反弹。Snr+1/+3pts、CDS-28bp→street aggressive covering→9984 JT+13.8% equity配合。但MoM仍100bp wider+e年wide 375未修复。反弹=short squeeze→周一延续性关键。战术可参与但347 CDS距375有空间。注意disorderly unwind风险未根除。",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "CIMAU",
-          "name": "CIMIC Group(CIMAU)",
-          "inFocus": true,
-          "priority": 1,
-          "region": "Australia",
-          "ccy": "USD",
-          "assetClass": "IG",
-          "sector": "Infrastructure",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "quote": "-3bps tighter→累计~20bp tighter post S&P upgrade→Chinese AM buying→AUD IG outperformer",
-          "analysis": "S&P upgrade BB→BB+ rally持续→累计~20bp tighter。Chinese AM持续买入，AUD IG best relative value post-FOMC。建议维持buy，all-in yield吸引。关注CIMAU 27s/29s。",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "VNKRLE",
-          "name": "Vanke Real Estate(VNKRLE)",
-          "inFocus": true,
-          "priority": 2,
-          "region": "China",
-          "ccy": "USD",
-          "assetClass": "HY",
-          "sector": "Property",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "JEFFERIES"
-          ],
-          "quote": "+1pt→China HY best performer→HF/RM buying→sector outperformance continues",
-          "analysis": "连续领跑China HY。HF和RM持续买入，China property differentiation明显。维持buy but sector concentration risk。关注property sector-wide sentiment。",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "VEDLN",
-          "name": "Vedanta Resources(VEDLN)",
-          "inFocus": true,
-          "priority": 2,
-          "region": "India",
-          "ccy": "USD",
-          "assetClass": "HY",
-          "sector": "Metals & Mining",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "JEFFERIES"
-          ],
-          "quote": "Retail buying wave→long end spread outperformance→month-end RM demand→best Asia HY outside China",
-          "analysis": "VEDLN retail buying wave持续驱动long end spread outperformance→month-end RM追加liquid benchmarks→Asia HY最强非中国名→India risk-on配合→建议buy→关注Nissan earnings后sector rotation。",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "NWDEVL",
-          "name": "New World Development(NWDEVL)",
-          "inFocus": false,
-          "priority": 3,
-          "region": "China",
-          "ccy": "USD",
-          "assetClass": "HY",
-          "sector": "Property",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "JEFFERIES"
-          ],
-          "quote": "Perps +1-2pts→HF buying→rates sensitive lines outperforming→property perp rebound",
-          "analysis": "NWDEVL perps+1-2pts→HF buying恢复→rates sensitive property perps outperforming→配合Macau long end/Genting perps→China property perps选择性反弹→需关注directional beta risk。",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "KIOXIA",
-          "name": "Kioxia Holdings(KIOXIA)",
-          "inFocus": false,
-          "priority": 3,
-          "region": "Japan",
-          "ccy": "USD",
-          "assetClass": "IG",
-          "sector": "Technology",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "quote": "+50c/+75c→slight income miss but strong results→recovered from wide→technical position adjustment",
-          "analysis": "Kioxia从wide反弹+50/+75c→earnings slight miss但strong results→technical position adjustment→30 squeezed→33 more two-way→monitor ex-earnings→Korea tech credit de-coupling supportive。",
-          "excludeReason": ""
-        }
-      ],
-      "insights": [
-        {
-          "broker": "Multi-Broker",
-          "topic": "周一开盘Gap Risk",
-          "point": "US/Israel Iran energy strike prep→oil spiking into weekend→BMO:'Monday should be fun'→UST sell-off+oil gap→Asia opening under pressure→best positioned short UST+long oil",
-          "quote": "Late headline: US/Israel preparing to strike energy targets in Iran, oil spiking — BMO Monday should be fun"
-        },
-        {
-          "broker": "Morgan Stanley",
-          "topic": "Data Narrative Flip Risk",
-          "point": "PCE soft→ECI beat 24h后来→FOMC dissent vindicated→Sept hawk repriced→30y 5.28%→NFP下周=终极验证→bull steepen window closed→bear-steepening regime",
-          "quote": "ECI +0.9% q/q... MNI Chicago PMI beat... UMich beat... Rates bear-steepened, 30y 5.28%"
-        },
-        {
-          "broker": "JEFFERIES/Barclays",
-          "topic": "SOFTBK Contra Trade",
-          "point": "一周暴跌+100bp MoM→暴力short cover+1/+3pts→CDS-28→short squeeze可延续但MoM structural unresolved→战术做tactical long→周一延续→347 vs 375 wide",
-          "quote": "SOFTBK cash snr+1/+3pts, 5Y CDS-28 to 347, 9984 JT+13.8%"
-        },
-        {
-          "broker": "Morgan Stanley",
-          "topic": "JPY Intervention Momentum",
-          "point": "$53bn purchased→USD/JPY 157→carry unwind→BoJ hawkish backing→USD全面走弱→JPY long→155 target→但周一USD/JPY gap risk",
-          "quote": "JPY intervention estimated $53bn purchased, USD/JPY-1.3% to 157.40"
-        },
-        {
-          "broker": "Barclays",
-          "topic": "Asia Credit Best RV",
-          "point": "India IG leading risk-on→no sellers→retail back AT1/Hybrids→CIMAU+20bp→Korea Fins on-the-run→best post-FOMC RV→周一延续看Iran+UST→India/AUD outperform",
-          "quote": "SEA IG 1-3bps tighter India IG led, no sellers on weak days"
-        },
-        {
-          "broker": "集體判断",
-          "topic": "Concentration: Energy+UST Weekend",
-          "point": "周末Iran风险高→oil+UST周一gap→bear-steepening+energy strike=双重headwind→持仓建议oil long+UST short hedge→避免naked risk into Monday open",
-          "quote": "US/Israel preparing energy strikes + ECI beat bear-steepening = double headwind into Monday"
-        }
-      ]
-    },
-    {
-      "reportDate": "2026-08-01",
-      "coverage": {
-        "emails": 6,
-        "brokers": [],
-        "lookbackDays": 15,
-        "sourceDateNote": ""
-      },
-      "signals": [
-        {
-          "id": "sig-20260803-01",
-          "headline": "UST Bear-Steepening大反转：ECI+PMI+UMich全面beat→2y+4.5bp 10y+6.1bp 30y+5.9bp→30y触及5.28% YTD新高→PCE-soft叙事24h内被推翻",
-          "topic": "UST Bear-Steepening Reversal on Data Beat",
-          "assetClass": "Rates",
-          "direction": "Bearish",
-          "signalType": [
-            "REVERSAL",
-            "BREAKOUT"
-          ],
-          "action": "WATCH",
-          "impactScore": 95,
-          "conviction": "High",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "JEFFERIES"
-          ],
-          "oneLine": "ECI +0.9% q/q(est 0.8%)+Chicago PMI beat+UMich beat→全面beat→2y+4.5bp 10y+6.1bp 30y+5.9bp→30y触及5.28% YTD新高→PCE-soft反弹仅存活24h→bear-steepening确立→labor tight+consumer resilient→Fed dissent获数据验证→Sept hawk repriced",
-          "evidence": [
-            "MS: ECI +0.9% q/q vs 0.8% est→MNI Chicago PMI beat→UMich beat→labor still tight",
-            "MS: Rates bear-steepened: 2y+4.5bp 10y+6.1bp 30y+5.9bp→30y 5.28% intraday YTD high",
-            "BMO: Active month-end flows→front-end selling vs buying further out→long-end real>3% brought RM",
-            "JEFFERIES tech: bearish steepening intact→short bonds rallies→10yr>4.61% Wave III"
-          ],
-          "soWhat": "PCE soft rally存活不到24h→data全面beat宣告labor+consumer双强→FOMC dissent验证→bear-steepening主导→30y 5.28% new YTD→short duration/steepeners→周末伊朗风险叠加→周一高波动",
-          "quote": "ECI +0.9% q/q vs +0.8% est... Rates bear-steepened, 30y 5.28%",
-          "whyItMatters": "PCE miss=false dawn→data beat flips→bear-steepening confirmed→30y 5.28% YTD→dissent vindicated→Sept hawk repriced",
-          "relatedThreads": [
-            "UST Twist-Steepen→Bear-Steepen",
-            "FOMC Aftermath + Fed Credibility"
-          ],
-          "tags": [
-            "UST",
-            "bear-steepen",
-            "ECI",
-            "PMI",
-            "30y",
-            "reflation"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-02",
-          "headline": "伊朗局势急剧升级：US/Israel准备打击伊朗能源目标→Brent+1.2%至$90.12 WTI+2.8%→BMO称Monday should be fun→周末风险premium积聚",
-          "topic": "Iran Energy Strike Escalation",
-          "assetClass": "Commodities/Geopolitical",
-          "direction": "Bullish",
-          "signalType": [
-            "BREAKOUT",
-            "CATALYST"
-          ],
-          "action": "WATCH",
-          "impactScore": 95,
-          "conviction": "High",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "Barclays"
-          ],
-          "oneLine": "US/Israel preparing to strike energy targets in Iran→late headline→Brent+1.2% $90.12 WTI+2.8% $85.95→BMO评'Monday should be fun'→周末risk premium积聚→BEI全面重定价→Gold+0.9% Silver+2.2%→diplomacy让位military prep",
-          "evidence": [
-            "BMO: Late headline: US/Israel preparing to strike energy targets in Iran→oil spiking→'Monday should be fun'",
-            "MS: Brent +1.2% to $90.12→WTI +2.8% to $85.95→energy equities bid",
-            "MS: Gold +0.9%, Silver +2.2%→safe-haven complex active",
-            "Barclays: Asia Sovs +0.125-0.5pt→more US involvement→SRILAN stabilising alongside oil"
-          ],
-          "soWhat": "Iran从diplomacy升级为active military strike prep→能源基础设施成目标→周一跳空高开→BEI reprice→inflation narrative回归→与bear-steepening双重压力→oil long+UST short hedge→周末持仓高风险",
-          "quote": "Late headline: US/Israel preparing to strike energy targets in Iran — 'Monday should be fun'",
-          "whyItMatters": "Iran escalation diplomacy→military→energy targets→oil gap risk Monday→BEI repricing→inflation revival",
-          "relatedThreads": [
-            "Oil Spike + Iran Geopolitics"
-          ],
-          "tags": [
-            "Iran",
-            "oil",
-            "Brent",
-            "WTI",
-            "energy strike",
-            "weekend risk"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-03",
-          "headline": "SOFTBK暴力反弹：Snr+1/+3pts hybrids+1.875/+2pts→5Y CDS-28至347→9984 JT+13.8%→一周暴跌后首次大规模short cover→结构性担忧未消",
-          "topic": "SOFTBK Massive Short-Covering Rebound",
-          "assetClass": "Asia Ig/Japan",
-          "direction": "Bullish",
-          "signalType": [
-            "REVERSAL",
-            "SHORT_SQUEEZE"
-          ],
-          "action": "WATCH",
-          "impactScore": 90,
-          "conviction": "Medium",
-          "brokers": [
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "oneLine": "SOFTBK snr+1/+3pts(-27/-53bp)→hybrids+1.875/+2pts→5Y CDS-28 to 347(前日370+)→9984 JT+13.8%→long-end bullets+3pts→一周widen回补→street aggressive covering+month-end助力→MoM仍100bp wider→年wide 375→short squeeze非线性反弹",
-          "evidence": [
-            "Barclays: SOFTBK cash snr+1/+3pts(-27/-53bps)→hybrids+1.875/+2pts→5Y CDS-28 to 347",
-            "JEFFERIES: SOFTBK strongest: long-end bullets+3pts→9984 JT+13.8%→risk tone improved materially",
-            "JEFFERIES: Non-China HY beta+0.25pt→SOFTBK leading rebound"
-          ],
-          "soWhat": "一周暴跌后首次反弹→street aggressive covering→9984 JT+13.8% equity配合→MoM 100bp wider+年wide 375未修复→反弹=short squeeze非fundamental→战术参与→347 vs 375 wide有空间→周一延续性关键",
-          "quote": "SOFTBK cash snr+1/+3pts, hybrids+1.875/+2pts, 5Y CDS-28 to 347, 9984 JT+13.8%",
-          "whyItMatters": "SOFTBK一周暴跌后暴力反弹→short squeeze→347 CDS仍距375 wide→structural unresolved→周一判定",
-          "relatedThreads": [
-            "SOFTBK Deepening Decline"
-          ],
-          "tags": [
-            "SOFTBK",
-            "Japan",
-            "short squeeze",
-            "CDS",
-            "9984 JT",
-            "rebound"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-04",
-          "headline": "JPY Intervention $53bn确认：MS估算Japan购入$53bn→USD/JPY-1.3%至157.40→BoJ hold 1% Ueda强调通胀上行→Carry unwind第二波→DXY 99.74",
-          "topic": "JPY Intervention $53bn + BoJ Hawkish Hold",
-          "assetClass": "FX",
-          "direction": "Bullish Jpy",
-          "signalType": [
-            "CONTINUATION",
-            "MONITOR"
-          ],
-          "action": "WATCH",
-          "impactScore": 85,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley",
-            "JEFFERIES"
-          ],
-          "oneLine": "MS估算Japan购入$53bn→USD/JPY-1.3% 157.40(前日159.53续跌)→BoJ hold 1% Ueda强调upside通胀风险→JGB 10y+5bp→carry unwind加速→DXY 99.74→USD全面走弱→JPY long基本面和干预双支撑",
-          "evidence": [
-            "MS: JPY intervention estimated $53bn purchased→USD/JPY-1.3% to 157.40",
-            "MS: BoJ held at 1%→Ueda emphasized upside inflation risks",
-            "JEFFERIES: USD/JPY moved weaker sharply overnight and late afternoon→real money sidelined"
-          ],
-          "soWhat": "$53bn非小打小闹→carry unwind加速→USD/JPY 157→155→BoJ hawkish支持→JGB sell-off增大unwind→JPY long→周一USD/JPY gap risk→155 target",
-          "quote": "JPY intervention estimated $53bn purchased, USD/JPY-1.3% to 157.40",
-          "whyItMatters": "$53bn干预确认→carry unwind加速→USD/JPY 157→155→BoJ hawkish支持→JPY long conviction",
-          "relatedThreads": [
-            "USD/JPY Intervention + Carry Unwind"
-          ],
-          "tags": [
-            "JPY",
-            "intervention",
-            "BoJ",
-            "USDJPY",
-            "carry unwind",
-            "$53bn"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-05",
-          "headline": "Asia Credit全面Risk-On：SEA IG 1-3bps tighter→HY+0.125/+0.375pt→KOSPI企稳→Korea IG POINTL/DAESEC-3bps→CIMAU-3bps累计~20bp→AT1/Hybrids零售买盘",
-          "topic": "Asia Credit Broad Risk-On Rally",
-          "assetClass": "Asia Ig/Hy",
-          "direction": "Bullish",
-          "signalType": [
-            "REVERSAL",
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 80,
-          "conviction": "Medium",
-          "brokers": [
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "oneLine": "SEA IG 1-3bps tighter(India IG led, no sellers)→HY+0.125/+0.375pt→KOSPI closing highs→AT1/Hybrids+0.125-0.25pt retail→Korea IG POINTL/DAESEC-3bps→CIMAU-3bps累计~20bp tighter→Asia CDS firm Itraxx S45-1.75→INDON/PHILIP-2bps→risk-on durable?",
-          "evidence": [
-            "Barclays: SEA IG 1-3bps tighter led by India IG→no sellers on weak days",
-            "Barclays: Asia HY+0.125/+0.375pt→KOSPI stabilizing→HFs responsive",
-            "Barclays: AT1/Hybrids+0.125-0.25pt retail buying→Korea IG POINTL/DAESEC-3bps",
-            "Barclays: CIMAU-3bps→cumulatively ~20bps tighter post S&P upgrade→CDS Itraxx-1.75"
-          ],
-          "soWhat": "FOMC后首个完整risk-on→SEA IG无卖家→HY跟随→零售买AT1→KOSPI企稳→CIMAU累计+20bp→Korea Fins on-the-run→周一看伊朗+UST→India IG best→可持续性待验证",
-          "quote": "SEA IG 1-3bps tighter India led... AT1/Hybrids+0.125-0.25pt retail... CIMAU-3bps (~20bp post upgrade)",
-          "whyItMatters": "FOMC后risk-on session→broad-based→India IG leading→retail back AT1→credit+equity同步→周一验证",
-          "relatedThreads": [
-            "Asia IG Post-FOMC Divergence",
-            "KOSPI / Korea Equity Stress"
-          ],
-          "tags": [
-            "Asia IG",
-            "Asia HY",
-            "India",
-            "AT1",
-            "Hybrids",
-            "CIMAU",
-            "KOSPI"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-06",
-          "headline": "Data全面Beat反转通胀叙事：ECI+PMI+UMich三重beat→labor tight+consumer resilient→PCE miss一日后被否定→FOMC dissent获数据支撑→Sept加息回table",
-          "topic": "Data Beat Revives Hawk Narrative",
-          "assetClass": "Macro/Rates",
-          "direction": "Bearish",
-          "signalType": [
-            "REVERSAL",
-            "CATALYST"
-          ],
-          "action": "WATCH",
-          "impactScore": 90,
-          "conviction": "High",
-          "brokers": [
-            "Morgan Stanley"
-          ],
-          "oneLine": "ECI+0.9%(est 0.8%)→Chicago PMI beat→UMich beat→claims 197k<200k→labor firm→consumer resilient→PCE miss 24h后被推翻→FOMC dissent(Hammack/Kashkari/Logan)获数据背书→Sept加息回table→30y 5.28%=市场投票→NFP下周pivotal",
-          "evidence": [
-            "MS: ECI+0.9% q/q vs 0.8% est→employment cost re-accelerating→labor still tight",
-            "MS: MNI Chicago PMI beat→UMich sentiment beat→consumer resilient",
-            "MS: Claims 197k(<200k consensus)→labor not weakened",
-            "MS: Fed dissenters argued for tighter policy→data supports them"
-          ],
-          "soWhat": "PCE miss=false dawn→ECI+PMI+UMich反转→labor cost加速+消费强=dissent验证→Sept hike回升→30y 5.28% market voting→bearish steepening→any UST rally=sell→NFP key→labor pivotal",
-          "quote": "ECI+0.9% q/q vs+0.8%... dissenters argued for tighter policy... 30y 5.28% YTD high",
-          "whyItMatters": "PCE miss reversed 24h→data hawk→dissent vindicated→Sept hike back→30y 5.28% new regime→NFP pivotal",
-          "relatedThreads": [
-            "FOMC Aftermath + Fed Credibility"
-          ],
-          "tags": [
-            "ECI",
-            "PMI",
-            "UMich",
-            "hawk",
-            "FOMC",
-            "data beat",
-            "NFP"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-07",
-          "headline": "Equities Broad Rotation：S&P+0.7% Nasdaq+1.0%→Consumer Disc+6.1% Comm Serv+4.6%→周四narrow tech→周五broad→KOSPI企稳→VIX-6.4% 15.99→但Iran+UST risk",
-          "topic": "Equities Steady Broad Rotation",
-          "assetClass": "Equity",
-          "direction": "Bullish",
-          "signalType": [
-            "REVERSAL"
-          ],
-          "action": "WATCH",
-          "impactScore": 70,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley",
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "oneLine": "S&P+0.7% Nasdaq+1.0%→Consumer Disc+6.1% Comm Serv+4.6%→broad-based vs Thursday narrow tech→KOSPI closing highs→VIX-6.4% 15.99→oil spike+UST sell-off headwind→Iran+UST gap risk Monday→consumer strength vs energy cost tension",
-          "evidence": [
-            "MS: S&P 500+0.7%→NASDAQ+1.0%→Consumer Disc+6.1%→Comm Serv+4.6%→broad rotation",
-            "MS: VIX-6.4% to 15.99→back below fear",
-            "Barclays: KOSPI closing at highs stabilizing risk",
-            "JEFFERIES: Market bounced→Asian stocks rally→cash spreads 1-3bps"
-          ],
-          "soWhat": "Narrow tech→broad rotation→消费+通信领涨→breadth改善→VIX<16→但oil+UST headwind→Iran+UST gap考验周一→consumer strength vs energy cost矛盾→balanced positioning",
-          "quote": "S&P 500+0.7%, Consumer Disc+6.1%, Comm Serv+4.6%, VIX-6.4% to 15.99",
-          "whyItMatters": "Broad rotation→participation widens→VIX sub-16→但oil+UST risk loom→consumer vs energy tension→balanced",
-          "relatedThreads": [
-            "KOSPI / Korea Equity Stress"
-          ],
-          "tags": [
-            "equity",
-            "S&P",
-            "rotation",
-            "consumer",
-            "VIX",
-            "KOSPI"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260803-08",
-          "headline": "Asia HY Selective + Month-End Demand：VNKRLE+1pt最强→NWDEVL perps+1-2pts HF→VEDLN/MONDFI/SHFLIN/GRNKEN liquid→month-end RM→Nissan earnings Mon",
-          "topic": "Asia HY Selective + Month-End",
-          "assetClass": "Asia Hy",
-          "direction": "Bullish",
-          "signalType": [
-            "CONTINUATION",
-            "MONITOR"
-          ],
-          "action": "WATCH",
-          "impactScore": 75,
-          "conviction": "Medium",
-          "brokers": [
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "oneLine": "China HY selective→VNKRLE+1pt best→NWDEVL perps+1-2pts HF→GLP+0.25pt two-way→Non-China beta+0.25pt(SOFTBK)→month-end RM: VEDLN/MONDFI/SHFLIN/GRNKEN/MTCTB→liquid only→HY earnings下周(Nissan Mon+HY reporting)→rates sensitives outperform",
-          "evidence": [
-            "JEFFERIES: China HY selective→VNKRLE+1pt→NWDEVL perps+1-2pts HF→GLP+0.25pt",
-            "JEFFERIES: Month-end RM appetite: VEDLN/MONDFI/SHFLIN/GRNKEN/MTCTB liquid benchmarks",
-            "JEFFERIES: Non-China HY beta+0.25pt→SOFTBK strongest",
-            "Barclays: Rates sensitive lines outperforming(Macau long end, Genting perps)",
-            "JEFFERIES: Next week HY earnings, Nissan Monday"
-          ],
-          "soWhat": "Asia HY selective→VNKRLE领跑→NWDEVL HF恢复→month-end RM向liquid集中→non-China跟SOFTBK反弹→下周HY earnings→Nissan catalyst→VEDLN MONDFI outperforming延续→Macau rates敏感+oil risk",
-          "quote": "China HY selective, VNKRLE+1pt, NWDEVL perps+1-2pts HF, month-end RM liquid benchmarks",
-          "whyItMatters": "Asia HY selective→VNKRLE best→NWDEVL HF→month-end liquid→Nissan Mon catalyst→VEDLN MONDFI outperforming",
-          "relatedThreads": [
-            "China TMT Widening/Liquidity",
-            "SOFTBK Deepening Decline"
-          ],
-          "tags": [
-            "Asia HY",
-            "VNKRLE",
-            "VEDLN",
-            "NWDEVL",
-            "month-end",
-            "earnings",
-            "Nissan"
-          ],
-          "date": "2026-08-01",
-          "priorState": "No prior state available."
-        }
-      ],
-      "brokerNotes": [
-        {
-          "broker": "Morgan Stanley",
-          "date": "2026-08-03",
-          "stance": "Hawkish/Bearish Duration",
-          "summary": "ECI+PMI+UMich triple beat→rates bear-steepen 30y 5.28%→Iran energy strike escalation→JPY $53bn intervention→equities broad rotation",
-          "key_points": [
-            "ECI +0.9% q/q >0.8% est + Chicago PMI beat + UMich beat → labor tight, consumer resilient",
-            "UST bear-steepened: 2y+4.5bp 10y+6.1bp 30y+5.9bp→30y 5.28% YTD high→PCE soft reversed in 24h",
-            "Fed dissenters (Hammack/Kashkari/Logan) vindicated by data→Sept hike repriced",
-            "US/Israel preparing to strike Iran energy targets→Brent+1.2% $90.12 WTI+2.8%→weekend risk elevated",
-            "JPY intervention $53bn→USD/JPY-1.3% 157.40→BoJ hold hawkish→carry unwind deepening",
-            "S&P+0.7% Nasdaq+1.0%→Consumer Disc+6.1% Comm Serv+4.6%→broad rotation vs narrow tech"
-          ],
-          "emails": 1,
-          "sourceRefs": [
-            "Morgan Stanley 2026-08-01"
-          ]
-        },
-        {
-          "broker": "Barclays",
-          "date": "2026-08-03",
-          "stance": "Bullish Asia Credit",
-          "summary": "SEA IG 1-3bps tighter India-led→HY+0.125/+0.375pt→SOFTBK massive rebound→AT1/Hybrids retail→CIMAU-3bps(~20bp tighter)→KOSPI stabilizing",
-          "key_points": [
-            "SEA IG 1-3bps tighter led by India IG→no sellers on weak days→risk-on durable",
-            "Asia HY +0.125/+0.375pt→KOSPI closing highs stabilizing→HFs responsive to offers",
-            "AT1/Hybrids +0.125-0.25pt on retail buying→Korea IG POINTL/DAESEC-3bps",
-            "SOFTBK cash snr+1/+3pts hybrids+1.875/+2pts→5Y CDS-28 to 347→retracing week's widening",
-            "CIMAU -3bps→cumulatively ~20bps tighter post S&P upgrade→Chinese AM buying",
-            "Asia CDS firm→Itraxx Asia S45-1.75→INDON/PHILIP-2bps"
-          ],
-          "emails": 1,
-          "sourceRefs": [
-            "Barclays 2026-08-01"
-          ]
-        },
-        {
-          "broker": "JEFFERIES",
-          "date": "2026-08-03",
-          "stance": "Bullish Short-Term / Bearish Rates",
-          "summary": "Market bounce→Asia HY risk tone improved materially→SOFTBK strongest→Japan/Aus IG 1-3bps tighter→China HY selective VNKRLE+1pt→bearish UST steepening intact",
-          "key_points": [
-            "SOFTBK strongest: long-end bullets+3pts→9984 JT+13.8%→risk tone materially improved across Asia HY",
-            "USD/JPY moved weaker sharply overnight and late afternoon→real money sidelined month-end→BOJ no drama",
-            "Japan/Aus IG 1-3bps tighter→fast money buying on-the-run Fins→street aggressively buying financials",
-            "China HY selective: VNKRLE+1pt→GLP+0.25pt two-way→NWDEVL perps+1-2pts HF buying",
-            "Month-end RM better appetite: VEDLN/MONDFI/SHFLIN/GRNKEN/MTCTB→liquid benchmarks",
-            "Bearish steepening→any pullback=correction→short bonds on rallies→10yr Wave III"
-          ],
-          "emails": 1,
-          "sourceRefs": [
-            "JEFFERIES 2026-08-01"
-          ]
-        },
-        {
-          "broker": "BMO",
-          "date": "2026-08-03",
-          "stance": "Bullish TIPS / Weekend Risk",
-          "summary": "Active month-end flows→long-end real>3% brought RM→late Iran headline→oil spiking→'Monday should be fun'→BEI repricing expected",
-          "key_points": [
-            "Month-end flows active→front-end selling vs buying further out→long-end real yields broke >3%→brought outright RM buying",
-            "Late headline: US/Israel preparing to strike Iran energy→oil spiking into weekend→'Monday should be fun'",
-            "BEI chopped 1-2bp during session→4pm index buying pushed to highs→Iran repricing Monday expected"
-          ],
-          "emails": 1,
-          "sourceRefs": [
-            "BMO 2026-08-01"
-          ]
-        },
-        {
-          "broker": "GS (via BarCap MA)",
-          "date": "2026-08-03",
-          "stance": "Bullish MSTR",
-          "summary": "MSTR 2Q26 weathered Bitcoin bear market→STRC ~$89 committed to par→replenished USD reserve 2.1yr→PT $125 +33.9% upside OW",
-          "key_points": [
-            "MSTR weathered Bitcoin bear market→STRC trading ~$89 committed to bringing back to par",
-            "Replenished USD reserve to 2.1 years dividend coverage→liquidity position strong",
-            "PT $125 (lowered from $130)→current $93.33→+33.9% upside→OW rating unchanged"
-          ],
-          "emails": 1,
-          "sourceRefs": [
-            "GS (via BarCap MA) 2026-08-01"
-          ]
-        }
-      ],
-      "dataChecks": [
-        {
-          "topic": "UST Bear-Steepening on Data Beat",
-          "finding": "ECI+PMI+UMich triple beat→2y+4.5bp 10y+6.1bp 30y+5.9bp→30y 5.28% YTD",
-          "brokers_agreeing": [
-            "Morgan Stanley",
-            "BMO",
-            "JEFFERIES"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
-          "note": "三家一致→data beat是驱动→bear-steepening confirmed→30y 5.28%"
-        },
-        {
-          "topic": "Iran Energy Strike Preparation",
-          "finding": "US/Israel preparing to strike energy targets in Iran→oil spiking into weekend",
-          "brokers_agreeing": [
-            "Morgan Stanley",
-            "BMO"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
-          "note": "MS+BMO一致→late headline→Monday gap risk→weekend breaking news risk"
-        },
-        {
-          "topic": "SOFTBK Massive Short-Cover Rebound",
-          "finding": "Snr+1/+3pts hybrids+1.875/+2pts→CDS-28 to 347→9984 JT+13.8%",
-          "brokers_agreeing": [
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
-          "note": "两家一致→暴力反弹→short squeeze性质→但MoM+100bp→周一延续性关键"
-        },
-        {
-          "topic": "JPY Intervention $53bn",
-          "finding": "MS estimates $53bn purchased→USD/JPY-1.3% 157.40",
-          "brokers_agreeing": [
-            "Morgan Stanley"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Monitor",
-          "note": "MS单一来源→$53bn可能偏高→但方向明确→intervention未官宣"
-        },
-        {
-          "topic": "Asia Credit Broad Risk-On",
-          "finding": "SEA IG 1-3bps tighter→HY+0.125/0.375pt→KOSPI stabilising→AT1/Hybrids retail",
-          "brokers_agreeing": [
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
-          "note": "两家一致→FOMC后首个risk-on→India IG led→credit+equity同步"
-        },
-        {
-          "topic": "ECI Re-acceleration",
-          "finding": "ECI +0.9% q/q vs 0.8% est→employment cost accelerating→hawkish",
-          "brokers_agreeing": [
-            "Morgan Stanley"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Monitor",
-          "note": "MS单一来源→但ECI是官方数据→reliable→NFP下周验证"
-        }
-      ],
-      "qualityLog": [],
-      "tone": {
-        "overall": "Friday全面反转：周四PCE软叙事→周五ECI+PMI+UMich triple beat→bear-steepening 30y 5.28% YTD→Iran energy strike escalation→oil surge→SOFTBK暴力short cover→Asia credit risk-on→JPY $53bn继续→weekend risk elevated→Monday gap risk in oil+rates→NFP下周pivotal",
-        "risk_appetite": "Moderate (Risk-On Asia Credit / Elevated Geopolitical Risk)",
-        "key_themes": [
-          "Data Beat Reflation",
-          "Iran Energy Strike Escalation",
-          "SOFTBK Short Squeeze",
-          "Asia Credit Risk-On",
-          "JPY Carry Unwind",
-          "UST Bear-Steepening",
-          "Month-End Positioning",
-          "Weekend Gap Risk"
+        "activeNames": [
+          {
+            "name": "软银集团 (SOFTBK)",
+            "ticker": "SOFTBK",
+            "tone": "buy",
+            "activity": "大幅反弹，优先级债券收窄1-1.625个点，混合资本债收窄1.875-2个点，5年期CDS收窄28bp至347。受益于日元升值（USDJPY跌至147）、日本央行7月加息预期消退以及空头回补推动的股市大涨（9984 JT单日+13.8%）。但月环比利差仍走阔约100bp，反弹可持续性存疑。",
+            "brokers": [
+              "Barclays",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "中资投资级 (CIMAU/China IG)",
+            "ticker": "CIMAU",
+            "tone": "buy",
+            "activity": "CIMIC Group在标普上调评级至BB+后累计收窄约20bp，中国AM持续买入。AUD IG市场整体需求旺盛，印度IG板块无卖家，CIMAU成为当日最活跃名字。Street bidding积极，前周小量获利了结很快被吸收。",
+            "brokers": [
+              "Barclays",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "万科地产 (VNKRLE)",
+            "ticker": "VNKRLE",
+            "tone": "buy",
+            "activity": "价格上涨约1个点，为中国高收益板块最佳表现名字之一。对冲基金和实钱账户均有买入，地产板块持续跑赢大市，不同名字之间分化明显，万科因流动性好而更受青睐。",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "新世界发展 (NWDEVL)",
+            "ticker": "NWDEVL",
+            "tone": "buy",
+            "activity": "永续债上涨1-2个点，对冲基金买入回归。利率敏感型债券表现领先，澳门长端和云顶永续债同步反弹。市场从前期超卖中修复，但成交量有限，反弹更多由空头回补而非新资金推动。",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "Vedanta Resources (VEDLN)",
+            "ticker": "VEDLN",
+            "tone": "buy",
+            "activity": "散户买入浪潮推动长端持续跑赢，月末实钱账户追加流动性基准配置。作为亚洲高收益中表现最强的非中国名字，印度risk-on情绪配合，新发债券长端尤其活跃。",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "Kioxia Holdings (KIOXIA)",
+            "ticker": "KIOXIA",
+            "tone": "buy",
+            "activity": "上涨50-75美分。季度收入略低于预期但业绩仍属强劲，价格从前期低位反弹。技术性仓位调整和空头回补驱动，30年期债券表现突出。",
+            "brokers": [
+              "JEFFERIES",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "韩国投资级 (POINTL/DAESEC)",
+            "ticker": "POINTL",
+            "tone": "buy",
+            "activity": "收窄约3bp，在韩国KOSPI创收盘新高的背景下，信用债与股市同步反弹。金融板块表现最佳，on-the-run债券领涨。但韩国CDS仍微幅走阔0.25bp，股票与信用之间的背离有所修复但未完全消除。",
+            "brokers": [
+              "Barclays",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "MicroStrategy (MSTR/STCCN)",
+            "ticker": "MSTR",
+            "tone": "buy",
+            "activity": "STRC成交价约89美元，高盛给出125美元目标价（+33.9%）并给予增持评级。公司在比特币熊市中保持韧性，承诺按面值偿付，持有2.1年期美元储备覆盖。",
+            "brokers": [
+              "GS"
+            ]
+          },
+          {
+            "name": "通用汽车金融 (GMALT)",
+            "ticker": "GMALT",
+            "tone": "neu",
+            "activity": "双向交易活跃，汽车经销商库存融资ABS中期（8月中旬）发行预期引发关注。月末实钱账户有配置需求，但新发供应预期也限制了上行空间，整体中性。",
+            "brokers": [
+              "JEFFERIES",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "iTraxx Asia S45",
+            "ticker": "ITRAXX",
+            "tone": "buy",
+            "activity": "收窄1.75bp，整体走势偏强。FOMC后风险偏好恢复，亚洲CDS出现广泛保护卖出。市场对9月暂停加息的定价更为坚定，推动利差收窄。",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "印尼/菲律宾主权 CDS",
+            "ticker": "INDON",
+            "tone": "buy",
+            "activity": "收窄约2bp。印尼央行行长辞职事件已被消化，CDS重回紧缩趋势。斯里兰卡在油价背景下企稳，更多美国介入预期提供支撑。新兴市场主权CDS整体向好。",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "软银5年期 CDS",
+            "ticker": "SOFTBK",
+            "tone": "buy",
+            "activity": "大幅收窄28bp至347，回补了上周走阔至370+的大部分幅度。basis买入盘活跃，现金和CDS之间的分歧有所收窄。但周一延续性仍需观察，空头回补后的真实买盘强度待验证。",
+            "brokers": [
+              "Barclays",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "韩国主权 CDS",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "微幅走阔0.25bp，与KOSPI收盘新高的走势形成背离。股票和信用之间的脱钩仍在持续，反映了earnings驱动的个股走势而非系统性风险偏好改善。",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          }
         ],
-        "market_regime": "Reversal Friday: PCE soft→ECI hawk→bear-steepening regains control→30y 5.28% YTD→oil gap risk into Monday→Asia credit decoupled risk-on→SOFTBK violent retrace→JPY intervention achieving results→NFP week pivotal for Fed path"
-      },
-      "macro": {
-        "us_data": {
-          "eci": "ECI +0.9% q/q (vs +0.8% est)→employment cost re-accelerating→labor market tight",
-          "pmi": "MNI Chicago PMI beat→manufacturing sentiment improving",
-          "umich": "UMich sentiment beat→consumer resilient despite rates",
-          "claims": "Initial jobless claims 197k (<200k consensus)→labor not weakened materially",
-          "rates": "UST bear-steepened: 2y+4.5bp→10y+6.1bp 4.73%→30y+5.9bp 5.28% YTD high"
-        },
-        "fx": {
-          "dxy": "99.74 (-0.1%)",
-          "usdjpy": "157.40 (-1.3%)→$53bn intervention→BoJ hold 1%",
-          "eur": "+0.5%",
-          "gbp": "+0.7%",
-          "aud": "+1.0%",
-          "nzd": "+1.4%",
-          "chf": "+1.1%"
-        },
-        "commodities": {
-          "brent": "90.12 (+1.2%)→US/Israel Iran energy strike prep→weekend gap risk",
-          "wti": "85.95 (+2.8%)",
-          "gold": "+0.9%",
-          "silver": "+2.2%"
-        },
-        "equity": {
-          "sp500": "+0.7%→broad rotation",
-          "nasdaq": "+1.0%",
-          "consumer_disc": "+6.1%→leading",
-          "comm_serv": "+4.6%",
-          "vix": "15.99 (-6.4%)→below fear",
-          "kospi": "stabilizing closing highs"
-        },
-        "central_banks": {
-          "fed": "FOMC dissent data验证→ECI+PMI+UMich beat→Sept hawk repriced→30y 5.28% market voting",
-          "boj": "Hold 1% + hawkish Ueda→JGB 10y+5bp→intervention $53bn→carry unwind"
-        },
-        "geopolitical": "US/Israel preparing to strike energy targets in Iran→oil spiking→weekend risk→Monday gap→BMO:'Monday should be fun'",
-        "events_ahead": [
-          "Weekend: Iran energy strike development→oil/UST gap risk Monday open",
-          "Monday: Nissan HY earnings→Asia IG open→SOFTBK continuation test",
-          "Next week: NFP Friday→labor data pivotal for Fed Sept decision"
+        "drivers": [
+          {
+            "broker": "综合",
+            "type": "ETF/HY Flow",
+            "summary": "Risk-on post-FOMC→broad buying→no sellers in IG"
+          },
+          {
+            "broker": "综合",
+            "type": "ETF/HY Flow",
+            "summary": "China HY selective→VNKRLE best→NWDEVL HF→month-end RM to liquid"
+          },
+          {
+            "broker": "综合",
+            "type": "ETF/HY Flow",
+            "summary": "Non-China HY beta+0.25pt→SOFTBK strongest rebound→9984 JT+13.8%"
+          },
+          {
+            "broker": "综合",
+            "type": "ETF/HY Flow",
+            "summary": "Rates sensitive lines outperforming→Macau long end→Genting perps"
+          },
+          {
+            "broker": "综合",
+            "type": "Rates Flow",
+            "summary": "ECI+PMI+UMich beat→bear-steepening→30y 5.28%"
+          },
+          {
+            "broker": "综合",
+            "type": "Rates Flow",
+            "summary": "Month-end +0.20→July busiest→10s buying+sell 7/27 buy 7/31"
+          },
+          {
+            "broker": "综合",
+            "type": "Rates Flow",
+            "summary": "BMO: long-end real>3%→outright RM buying"
+          },
+          {
+            "broker": "综合",
+            "type": "Rates Flow",
+            "summary": "Late Iran energy strike→oil spiking→BEI repricing Monday"
+          },
+          {
+            "broker": "综合",
+            "type": "Rates Flow",
+            "summary": "JEFFERIES: bearish steepening→short bonds rallies→10yr Wave III"
+          }
         ]
-      },
-      "flow": {
-        "sentiment": {
-          "dir": "mixed",
-          "label": "",
-          "note": ""
-        },
-        "activeNames": [],
-        "drivers": []
       },
       "issuers": [
         {
@@ -5101,8 +4543,185 @@ window.REPORT_DATA =
           "label": "",
           "note": ""
         },
-        "activeNames": [],
-        "drivers": []
+        "activeNames": [
+          {
+            "name": "SOFTBK seniors -1.125~1.625pts 100bp MoM→hybrids -0.75~1p",
+            "ticker": "SOFTBK",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "CIMAU 3bp tighter street bidding",
+            "ticker": "CIMAU",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "OWICs aggressive levels Japan",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "VNKRLE 1pt HF/RM buying HY",
+            "ticker": "VNKRLE",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "VEDLN outperforming retail wave",
+            "ticker": "VEDLN",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "MUTHIN 0.25pt RM selling",
+            "ticker": "MUTHIN",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "LASUDE active two-way HFs/PBs",
+            "ticker": "LASUDE",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "KIOXIA still watching street reaction",
+            "ticker": "KIOXIA",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "XIAOMI /JD long end bid-less",
+            "ticker": "XIAOMI",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "Pepper CMBS new deal ABS",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "Credit Flow",
+            "brokers": []
+          },
+          {
+            "name": "Itraxx Asia +1bp 71.25/72.25",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "CDS Flow",
+            "brokers": []
+          },
+          {
+            "name": "China +0.25bp",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "CDS Flow",
+            "brokers": []
+          },
+          {
+            "name": "Korea +0.25bp",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "CDS Flow",
+            "brokers": []
+          },
+          {
+            "name": "Indon +1.25bp→basis buyers overnight+afternoon",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "CDS Flow",
+            "brokers": []
+          },
+          {
+            "name": "SRILAN renewed Iran concern lower",
+            "ticker": "SRILAN",
+            "tone": "mixed",
+            "activity": "CDS Flow",
+            "brokers": []
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "综合",
+            "type": "ETF/HY Flow",
+            "summary": "Post-FOMC risk-off→HY moderate outflow→China HY differentiated(VNKRLE+1pt)→retail buying VEDLN long end→street selling spread outperformance→non-China beta -0.25pt"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Risk-off post-FOMC hawkish hold→HY positioning trim"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Non-China HY beta sold→China HY differentiated (VNKRLE+1pt LASUDE two-way)"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Retail buying wave VEDLN→outperforming→ sellers correcting duration-neutral"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Japan: street-led SOFTBK selling→all-in yield buyers 2-5yr→10yr+ for sale"
+          },
+          {
+            "broker": "综合",
+            "type": "Credit Flow",
+            "summary": "Asia IG mixed: China +/-1bp low conviction→Japan SOFTBK-led weaker→AUD resilient +2/-2bp all-in yield nibbling→SGD month-end rebalancing→ABS stable"
+          },
+          {
+            "broker": "综合",
+            "type": "CDS Flow",
+            "summary": "Itraxx Asia +1bp at 71.25/72.25→CTAs degrossing→China +0.25bp wider→Korea +0.25bp→Indon +1.25bp wider→basis buyers active"
+          },
+          {
+            "broker": "综合",
+            "type": "Rates Flow",
+            "summary": "Post-FOMC positioning UW→slightly OW→no follow-through Thursday→month-end +.20→expect 10s buying+matching→front-end bid 2-5yr→long-end offered 10yr+"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Front-end bid on PCE soft"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Long-end sell on Fed credibility/term premium"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "Month-end flows upcoming (+.20)"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "TIPS: BEI -1~2.5bps→front-end bigger hit gasoline -4%"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "2y JGB auction smooth→BoJ hikes priced in"
+          },
+          {
+            "broker": "综合",
+            "type": "归因",
+            "summary": "JGB sell-off 10y +5bp→Takaichi tax cut talk"
+          }
+        ]
       },
       "issuers": [
         {
@@ -14351,6 +13970,776 @@ window.REPORT_DATA =
           "topic": "ETF流量确认的资产轮动信号",
           "point": "IG偏买+HY高质量in/低质量out确认美元信用risk-on.EM TW/Korea inflows vs EM ex-China outflows与GS供应链重组叙事一致.欧洲金融inflow值得关注(可能是GBP新政府预期)",
           "quote": "IG ETFs were skewed to buyers over the day"
+        }
+      ]
+    },
+    {
+      "reportDate": "2026-07-15",
+      "coverage": {
+        "emails": 9,
+        "brokers": [
+          "BMO",
+          "Barclays",
+          "Goldman Sachs",
+          "HSBC",
+          "Jefferies",
+          "Morgan Stanley",
+          "TD Securities"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": ""
+      },
+      "signals": [
+        {
+          "id": "sig-20260715-01",
+          "date": "2026-07-15",
+          "headline": "CPI全面不及预期：headline-0.4%vs预期-0.1%(六年来首次月跌),核心0.0%vs预期+0.2%,Shelter+0.1%为2021来最小→UST Bull Steepening",
+          "topic": "June CPI Big Downside Surprise",
+          "assetClass": "Macro",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "ALERT"
+          ],
+          "action": "TRADE_NOW",
+          "impactScore": 92,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs",
+            "BMO"
+          ],
+          "oneLine": "CPI全面miss,2y-9bp/10y-3.4bp Bull Steepening,July hike 50%→16%,DXY-0.3%,SPX+0.4%/NDX+0.9%",
+          "evidence": [
+            "MS: Headline CPI fell 0.4% m/m vs -0.1% exp. Core unchanged vs +0.2% consensus. July hike 50%→16%",
+            "BMO: Big miss. 333.952 vs 334.75. First monthly headline decline in 6 years. Shelter+0.1% smallest since 2021",
+            "GS: Strong bull steepening. 2y-9bp to 4.193%. July hike unwound to 6bps. 2s10s+5.6bps",
+            "MS: 2y breakevens tightened 14.4bp. Curve closed materially steeper"
+          ],
+          "soWhat": "CPI全面miss为risk assets开门。但Warsh鹰派+PPI为cap。核心问题是6月weakness是否持续(BMO认为不会).关注今日PPI+Warsh Day2",
+          "priorState": "市场预期7月加息50%,Waller鹰派助涨前端。CPI预期核心+0.2%",
+          "quote": "June CPI came in at 333.952 vs 334.75. First monthly decline in headline inflation in 6 years",
+          "sourceRefs": [
+            "MS Global Macro",
+            "GS Asia Macro",
+            "BMO TIPS"
+          ],
+          "threadId": "thread-cpi-relief-rally"
+        },
+        {
+          "id": "sig-20260715-02",
+          "date": "2026-07-15",
+          "headline": "Warsh鹰派遏制CPI后全面兴奋:'通胀使命未完成','没有容忍持续高通胀','one data point',UST部分回吐涨幅",
+          "topic": "Warsh Hawkish Testimony Caps CPI Rally",
+          "assetClass": "Rates",
+          "direction": "Mixed",
+          "signalType": [
+            "CONTINUATION",
+            "ALERT"
+          ],
+          "action": "WATCH",
+          "impactScore": 80,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "oneLine": "Warsh:'inflation mission not accomplished','one data point'→UST部分回吐。PPI(今日)和Day2继续",
+          "evidence": [
+            "GS: Warsh: 'no tolerance for persistently elevated inflation'. CPI 'one data point'",
+            "MS: Warsh: inflation mission not accomplished. Yields retraced part of initial decline"
+          ],
+          "soWhat": "CPI+Warsh形成双向拉力.前端定价合理:July仅4-6bp=几乎排除加息.PPI和Warsh Day2为下一步关键",
+          "priorState": "Waller鹰派推动7月加息至50%,Warsh今日首次国会听证",
+          "quote": "Warsh: 'no tolerance for persistently elevated inflation', CPI was 'one data point'",
+          "sourceRefs": [
+            "GS Asia Macro",
+            "MS Global Macro"
+          ],
+          "threadId": "thread-cpi-relief-rally"
+        },
+        {
+          "id": "sig-20260715-03",
+          "date": "2026-07-15",
+          "headline": "伊朗局势边际缓和:特朗普在盟友施压后撤回20%霍尔木兹通行费提案,原油回吐涨幅",
+          "topic": "Iran Tensions Ease",
+          "assetClass": "Macro",
+          "direction": "Constructive",
+          "signalType": [
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 72,
+          "conviction": "Medium",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "oneLine": "Trump backed away from 20% Hormuz charge,地缘溢价从'封锁+20%费'降级为仅'封锁',边际缓和",
+          "evidence": [
+            "GS: Trump backed away from 20% charge on Hormuz cargo after Gulf allies urged him to drop it"
+          ],
+          "soWhat": "地缘风险边际降级但原油仍在$80+高位,海军封锁威胁未消.关注后续军事行动进展",
+          "priorState": "特朗普宣布'新战争'+海军封锁,WTI+9.4%至$78",
+          "quote": "Trump backed away from his plan to impose a 20% charge on cargo shipments through the Strait of Hormuz",
+          "sourceRefs": [
+            "GS Asia Macro"
+          ],
+          "threadId": "thread-iran-escalation"
+        },
+        {
+          "id": "sig-20260715-04",
+          "date": "2026-07-15",
+          "headline": "亚洲IG继续有序走弱:spreads 1-3bps wider但无恐慌,front-end+低beta持稳,金融承压",
+          "topic": "Asia IG Orderly Weakening",
+          "assetClass": "Credit",
+          "direction": "Mixed",
+          "signalType": [
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 66,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "Goldman Sachs",
+            "JEFFERIES"
+          ],
+          "oneLine": "Ex-China IG+1-3bps,TMT略宽,front-end biddish,Korea+2/-1bp,Japan 1-3bps wider.关注CPI后是否能传导支撑",
+          "evidence": [
+            "GS: Ex-China IG ~1bp wider. Better buying from RM+Korea onshore on higher all-in yields",
+            "HSBC: Weaker tone. IG+0-4bps. SEA IG 1-2bps wider",
+            "Barclays: China IG largely unch. Front end stuff still very biddish. SEA constructive flows",
+            "JEFFERIES: Overall sentiment weaker,1-3bps wider. Financials under pressure from supply"
+          ],
+          "soWhat": "韧性叙事持续但边际走弱(从前日broadly unch到1-3bps wider).CPI risk rally能否传导至亚洲信用今日关键",
+          "priorState": "Ex-China IG spreads broadly unch,全收益+空头回补双支撑",
+          "quote": "Front end stuff still very biddish. Level wasn't crazy, call it 2 wider",
+          "sourceRefs": [
+            "GS Global Credit Recap",
+            "HSBC EOD",
+            "Barclays EOD",
+            "JEFFERIES EOD"
+          ],
+          "threadId": "thread-asia-ig-resilience"
+        },
+        {
+          "id": "sig-20260715-05",
+          "date": "2026-07-15",
+          "headline": "SOFTBK暴跌加速:2-2.5pts lower since Friday,CDS+22bps,FM shorting cash+CDS vs retail buying",
+          "topic": "SOFTBK Accelerating Sell-off",
+          "assetClass": "Credit",
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 78,
+          "conviction": "High",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "oneLine": "SOFTBK-1-1.25pts日内/-2.5pts since Fri。FM做空cash+CDS(5y+22bps),equity回弹无支撑",
+          "evidence": [
+            "HSBC: SOFTBK continuing to trend downwards,2-2.5pts lower since last Friday",
+            "Barclays: SOFTBK very weak. FM shorting cash+CDS. -1-1.25pts,5y+22bps. Failing to bounce despite equities recovering",
+            "JEFFERIES: Financial side under pressure given supply. Hybrid insurance 25-35c lower"
+          ],
+          "soWhat": "SOFTBK已成日本信用情绪晴雨表.CDS+22bps远超IG正常范围.关注是否波及更广泛金融(bank senior+insco已承压)",
+          "priorState": "SOFTBK领跌日本HY,新发供给压制二级买家",
+          "quote": "SOFTBK very weak day in credit and failing to bounce back despite equities recovering midday",
+          "sourceRefs": [
+            "HSBC EOD",
+            "Barclays EOD",
+            "JEFFERIES EOD"
+          ],
+          "threadId": "thread-japan-softbk-underperform"
+        },
+        {
+          "id": "sig-20260715-06",
+          "date": "2026-07-15",
+          "headline": "JGB 20y Auction异常强劲→Bull-Flattening:lowest price 100.85 vs预期100.50,20y+17bp,GPIF+MHLW叙事延续",
+          "topic": "JGB 20y Auction Exceptionally Strong",
+          "assetClass": "Rates",
+          "direction": "Bullish",
+          "signalType": [
+            "NEW",
+            "FLOW"
+          ],
+          "action": "WATCH",
+          "impactScore": 60,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "oneLine": "20y lowest 100.85(vs 100.50 exp)→Bull-Flattening:20y+17bp/10y+8bp。MHLW Ueno+Katayama减少short ahead of supply",
+          "evidence": [
+            "MS: Auction massively exceeded expectations. Lowest accepted 100.85 vs ~100.50 exp. Single-price result",
+            "GS: Front-running demand from short-term accounts. Auction ultimately exceptionally firm"
+          ],
+          "soWhat": "JGB形成独特alpha与UST/EU脱钩.Super-long duration需求结构性增强.关注是否持续",
+          "priorState": "GPIF叙事一日游回吐,Reuters确认不改变GPIF配置.20y auction等待测试",
+          "quote": "Auction outcome massively exceeded expectations. Lowest accepted 100.85 vs market expectation ~100.50",
+          "sourceRefs": [
+            "MS Global Macro",
+            "GS Asia Macro"
+          ],
+          "threadId": "thread-jgb-gpif"
+        },
+        {
+          "id": "sig-20260715-07",
+          "date": "2026-07-15",
+          "headline": "一级供给持续密集:EIBKOR 3y-7bp(最佳)/MUFG wrapped/KORELE+half bp/GS$10bn concession/FRN outperforming",
+          "topic": "Primary Supply Wave Mixed Performance",
+          "assetClass": "Credit",
+          "direction": "Neutral",
+          "signalType": [
+            "FLOW",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 58,
+          "conviction": "High",
+          "brokers": [
+            "JEFFERIES",
+            "Barclays",
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "oneLine": "KR新发-7bp(EIBKOR)to-1bp(KORELE).MUFG around reoffer.GS$10bn 6-7bp concession.FRN>fixed",
+          "evidence": [
+            "JEFFERIES: Busy with MUFG most active. FRN+5bps tighter. Mixed performance",
+            "Barclays: KR-5bp to-1bp. MUFG without much concession. Clean books,rates sell-off helping",
+            "GS: KORELE+half bp, EIBKOR 3yr 7bps/5yr 3bps tighter",
+            "MS: GS $10bn 6-7bps concession. Didn't perform initially"
+          ],
+          "soWhat": "供给承接力尚可但边际走弱:日韩deal OK,但GS$10bn concession偏大.FRN outperformance暗示短端需求>长端",
+          "priorState": "MUFG$3B+SMBC+KEXIM+KEPCO等10+笔同日记价",
+          "quote": "Clean books, decent concessions and rates sell off helping new issue performance",
+          "sourceRefs": [
+            "JEFFERIES EOD",
+            "Barclays EOD",
+            "GS Global Credit Recap",
+            "MS US IG Trading"
+          ],
+          "threadId": "thread-supply-tapering"
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "emails": 2,
+          "stance": "CPI miss→Bull Steepening(2y-9bp).July hike unwound.Warsh鹰派retrace.伊朗缓和(撤回20%费).亚洲IG+1bp wider但RM/Korea买盘.Korea quasi新发mixed.TEMASE YTD wides interesting.GS$10bn 6-7bp concession",
+          "sourceRefs": [
+            "GS Global Credit Recap 15 Jul",
+            "GS Asia Macro 15 Jul"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "emails": 2,
+          "stance": "CPI miss→risk rally.July 50%→16%.DXY-0.3%.Warsh:inflation mission not accomplished.JGB 20y auction超预期.US IG RM回归(first sign).GS$10bn concession.Kenvue wider on lawsuits.NZD+1.1% hawkish RBNZ",
+          "sourceRefs": [
+            "MS Global Macro Jul 14",
+            "MS US IG Trading 7.14"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "emails": 1,
+          "stance": "Weak tone.China HY-0-0.25pts.Japan closing lows SOFTBK-2.5pts.Korea+2/-1bp.SEA IG 1-2bps wider.DM US IG stable.ABS better secondary buying",
+          "sourceRefs": [
+            "HSBC Asia Credit EOD 14 Jul"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "emails": 1,
+          "stance": "China IG unch front end biddish.TMT slightly wider.SOFTBK very weak(-1-1.25pts CDS+22bps).MUFG without concession.KR-5bp to-1bp.CDS+1-1.5bps.SRILAN selling",
+          "sourceRefs": [
+            "Barclays Asian Credit EOD 14 Jul"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "emails": 1,
+          "stance": "Japan/Aus IG 1-3bps wider.Financials under pressure.MUFG most active FRN+5bps.BBB onshore demand.Hybrid insurance 25-35c lower",
+          "sourceRefs": [
+            "JEF Asia Japan/Aus IG EOD 14 Jul"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "emails": 1,
+          "stance": "Big CPI miss:headline-0.4% core-0.017%.First monthly headline decline in 6 years.Shelter+0.1% smallest since 2021.TIPS held up well.Street doesn't expect June weakness to repeat",
+          "sourceRefs": [
+            "BMO TIPS End of Day 14 Jul"
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "emails": 1,
+          "stance": "AUD Credit light.Short-dated selling to fund new 5y United Energy.FV pricing.FM active break trading reoffer to 1bp tighter",
+          "sourceRefs": [
+            "TD Securities AUD Credit 14 Jul"
+          ]
+        },
+        {
+          "broker": "mkt",
+          "emails": 1,
+          "stance": "Bearish flattening Mon.US-Iran+Waller.CPI key.10yr wave(iii)of III.Long oil/short bonds workable.RM wait 5-10bp sell-off.JGB GPIF rally didn't make sense(Japanese fund JGB buys by reducing overseas bonds=negative for DM bonds)",
+          "sourceRefs": [
+            "mkt recap Monday+Outlook Tuesday"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "chk-1",
+          "type": "观点分歧(opinion)",
+          "subject": "亚洲IG方向判断",
+          "status": "Monitor",
+          "detail": "HSBC/JEFFERIES偏弱(wider tone,1-3bps),Barclays/GS中性(front-end biddish,constructive).维度不同,一致同意无恐慌"
+        },
+        {
+          "id": "chk-2",
+          "type": "数据一致(consensus)",
+          "subject": "CPI miss+UST Bull Steepening",
+          "status": "Confirmed",
+          "detail": "MS/GS/BMO三家一致确认:CPI全面不及预期→UST Bull Steepening→July hike几乎排除"
+        },
+        {
+          "id": "chk-3",
+          "type": "数据一致(consensus)",
+          "subject": "SOFTBK暴跌加速",
+          "status": "Confirmed",
+          "detail": "HSBC/Barclays/JEFFERIES三家一致确认SOFTBK-2-2.5pts since Friday,为亚洲信用最大风险点"
+        },
+        {
+          "id": "chk-4",
+          "type": "来源缺失(source)",
+          "subject": "Deutsche Bank/Macquarie/Citi/UBS未覆盖",
+          "status": "Monitor",
+          "detail": "本期未收到DB/Macquarie/Citi/UBS邮件.DB连续两期缺失"
+        }
+      ],
+      "qualityLog": [
+        "GS发送两封邮件:Global Credit Recap(信用全覆盖)和Asia Macro(宏观/利率),为本日信息量最大来源",
+        "MS发送两封:Global Macro Commentary(CPI+全球覆盖)和US IG Trading Commentary(US信用微观)",
+        "HSBC和Barclays邮件均为7月14日收盘评论,覆盖面广但限于信用",
+        "JEFFERIES发送两封:mkt recap(宏观技术面)和Japan/Aus IG(日本信用微观)",
+        "BMO为TIPS收盘评论,时效性最佳但仅覆盖TIPS单一品种",
+        "TD Securities邮件仅涉及AUD单一交易(UELAU新发),对全市场贡献有限",
+        "本期10封邮件覆盖8家券商,为近期覆盖最广"
+      ],
+      "tone": {
+        "dir": "mixed",
+        "label": "CPI Relief · 信用有序走弱 · 伊朗缓和",
+        "note": "CPI全面不及预期触发risk rally(UST Bull Steepening/Equities up/DXY down),但Warsh鹰派遏制全面dovish.伊朗边际缓和(撤回20%费).亚洲信用有序走弱1-3bps(从'surprisingly resilient'转向'weaker tone'),SOFTBK急剧恶化(-2.5pts).PPI+Warsh Day2为今日双核心事件"
+      },
+      "macro": [
+        "CPI全面不及预期:headline-0.4%vs-0.1%预期(六年来首次月跌),核心0.0%vs+0.2%预期.Shelter+0.1%为2021来最小.UST Bull Steepening:2y-9bp/10y-3.4bp,July hike 50%→16%",
+        "Warsh鹰派国会证词Day1:'inflation mission not accomplished','one data point'→UST部分回吐涨幅.Day2今日继续+PPI数据",
+        "伊朗局势边际缓和:特朗普在盟友施压后撤回20%霍尔木兹通行费提案,但海军封锁仍在.原油回吐部分涨幅",
+        "DXY-0.3%至100.92.USD全面走弱.NZD+1.1%(hawkish RBNZ),AUD+0.8%.JPY仅+0.1%",
+        "JGB 20y Auction异常强劲:lowest price 100.85 vs预期100.50,单价格成交.Bull-Flattening:20y+17bp/10y+8bp/30y强势上涨",
+        "US Equities:SPX+0.4%/NDX+0.9%.InfoTech+1.3%/Comm Svcs+1.1%.IBM-25.2% post preliminary Q2 miss",
+        "US IG Credit RM buyers回归(first sign since Trump ceasefire两週前).CDX IG-.44bps tighter",
+        "韩国KOSPI一度-5%后恢复(on market stabilisation headlines).外资情绪脆弱",
+        "GS$10bn 3-tranche deal concession 6-7bps,初表现差后recovery.一级供给持续密集测试承接力"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "CPI Relief · 信用有序走弱 · 伊朗缓和",
+          "note": "CPI全面不及预期触发risk rally(UST Bull Steepening/Equities up/DXY down),但Warsh鹰派遏制全面dovish.伊朗边际缓和(撤回20%费).亚洲信用有序走弱1-3bps(从'surprisingly resilient'转向'weaker tone'),SOFTBK急剧恶化(-2.5pts).PPI+Warsh Day2为今日双核心事件"
+        },
+        "activeNames": [
+          {
+            "name": "软银",
+            "ticker": "SOFTBK",
+            "tone": "sell",
+            "activity": "暴跌-1-1.25pts日内/-2.5pts since Fri.FM做空cash+CDS.Retail接盘",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "淡马锡",
+            "ticker": "TEMASE",
+            "tone": "buy",
+            "activity": "GS首call interesting.接近YTD wides对AAA过度.retail buyers incoming",
+            "brokers": [
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "name": "EIBKOR/KORELE新发",
+            "ticker": "EIBKOR/KORELE",
+            "tone": "new_issue",
+            "activity": "EIBKOR 3y-7bp(最佳).KORELE+half bp.Onshore buyers on higher yields",
+            "brokers": [
+              "Goldman Sachs",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "MUFG新发",
+            "ticker": "MUFG",
+            "tone": "new_issue",
+            "activity": "多tranche wrapped around reoffer.FRN+5bps.最活跃",
+            "brokers": [
+              "JEFFERIES",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "SMBCAC/MITHCC新发",
+            "ticker": "SMBCAC/MITHCC",
+            "tone": "new_issue",
+            "activity": "Closing around reoffer.相对quiet",
+            "brokers": [
+              "HSBC",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "马来石油",
+            "ticker": "PETMK",
+            "tone": "mixed",
+            "activity": "长端2way ETF flows.constructive",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "菲律宾",
+            "ticker": "PHILIP",
+            "tone": "firm",
+            "activity": "well bid post overnight buying.CDS+1.5bps.vs INDON glaringly rich",
+            "brokers": [
+              "Barclays",
+              "Goldman Sachs"
+            ]
+          },
+          {
+            "name": "印尼",
+            "ticker": "INDON",
+            "tone": "mixed",
+            "activity": "1-2bp wider balanced.street lighter after short covering",
+            "brokers": [
+              "Goldman Sachs",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "Kenvue",
+            "ticker": "Kenvue",
+            "tone": "sell",
+            "activity": "Tylenol lawsuits revived→stock-2.4%.complex+2 wider",
+            "brokers": [
+              "Morgan Stanley"
+            ]
+          },
+          {
+            "name": "GS新发$10bn",
+            "ticker": "GS",
+            "tone": "new_issue",
+            "activity": "3-tranche 6-7bps concession.初表现差后recovery",
+            "brokers": [
+              "Morgan Stanley"
+            ]
+          },
+          {
+            "name": "日本保险/AT1",
+            "ticker": "Japan Insco/AT1",
+            "tone": "sell",
+            "activity": "Hybrid insurance 25-35c lower.client selling with rate move",
+            "brokers": [
+              "JEFFERIES",
+              "Barclays",
+              "HSBC"
+            ]
+          },
+          {
+            "name": "日本低beta Corp",
+            "ticker": "TOYOTA/MITEST",
+            "tone": "mixed",
+            "activity": "RM adding on rate sell-off.street selling down risk",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "中国HY高质名",
+            "ticker": "PINGRE/LNGFOR/FTL",
+            "tone": "firm",
+            "activity": "Front-end carry buyers支撑.RM better sellers benchmark",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "AUD United Energy新发",
+            "ticker": "UELAU",
+            "tone": "new_issue",
+            "activity": "5Y FV pricing.FM active break.reoffer to 1bp tighter",
+            "brokers": [
+              "TD Securities"
+            ]
+          },
+          {
+            "name": "韩国准主权",
+            "ticker": "NHSECS/DAESEC",
+            "tone": "sell",
+            "activity": "Recent new issues underperforming.front-end still bid",
+            "brokers": [
+              "HSBC"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "MS/GS/BMO",
+            "type": "宏观数据",
+            "summary": "CPI全面miss→Bull Steepening→July hike几乎排除→risk rally.Warsh鹰派+PPI ahead限制全面dovish"
+          },
+          {
+            "broker": "GS",
+            "type": "地缘政治",
+            "summary": "伊朗边际缓和(撤回20%Hormuz费),但海军封锁仍在.原油$80+高位"
+          },
+          {
+            "broker": "HSBC/Barclays/JEFFERIES",
+            "type": "信用情绪",
+            "summary": "亚洲IG有序走弱1-3bps.SOFTBK急剧恶化(-2.5pts).金融供给压力传导"
+          },
+          {
+            "broker": "JEFFERIES/Barclays/MS",
+            "type": "供给冲击",
+            "summary": "一级供给持续密集.MUFG+KR quasi+GS$10bn.FRN>fixed.承接力边际走弱"
+          },
+          {
+            "broker": "MS/GS",
+            "type": "央行政策",
+            "summary": "Warsh Day1鹰派遏制CPI relief.Day2+PPI今日.前端定价合理(July仅4-6bp)"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "SOFTBK",
+          "name": "SoftBank Group",
+          "inFocus": true,
+          "priority": 1,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "TMT",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "SOFTBK very weak day in credit and failing to bounce back despite equities recovering midday",
+          "analysis": "日本信用情绪晴雨表.连续3日暴跌(-2.5pts since Fri).CDS+22bps单日.FM主导做空,retail接盘.equity回弹无任何支撑作用",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "TEMASE",
+          "name": "Temasek Holdings",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Singapore",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "quote": "TEMASE curve has started to look interesting for the first time in a while. Spreads moving close to YTD wides",
+          "analysis": "GS首call interesting in a while.39s/61s/70s接近YTD wides,对AAA credit似过度.41s vs 42s yield inverted 15bps.retail buyers incoming",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "EIBKOR/KORELE",
+          "name": "韩国准主权新发",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Korea",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": true,
+          "flow": "new_issue",
+          "brokers": [
+            "Goldman Sachs",
+            "Barclays"
+          ],
+          "quote": "Clean books, decent concessions and rates sell off helping new issue performance",
+          "analysis": "EIBKOR 3y-7bp(今日最佳新发),5y-3bp.KORELE+half bp.Onshore buyers on higher all-in yields",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "MUFG",
+          "name": "Mitsubishi UFJ Financial",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "金融",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "new_issue",
+          "brokers": [
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "quote": "MUFG most active, wrapped around reoffer. FRN once traded 5bps tighter",
+          "analysis": "今日最活跃新发.FRN outperforming暗示短端需求>长端.整体around reoffer无大concession",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "PHILIP",
+          "name": "Philippines Sovereign",
+          "inFocus": true,
+          "priority": 3,
+          "region": "Philippines",
+          "ccy": "USD",
+          "assetClass": "Sovereign",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "firm",
+          "brokers": [
+            "Barclays",
+            "Goldman Sachs"
+          ],
+          "quote": "PHILIP feeling well bid following better buying overnight. Same rating same outlook vs INDON but a lot tighter=glaringly rich",
+          "analysis": "vs INDON同评级同展望但利差更紧,GS称'glaringly rich'.CDS+1.5bps但bid through",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "INDON",
+          "name": "Indonesia Sovereign",
+          "inFocus": true,
+          "priority": 3,
+          "region": "Indonesia",
+          "ccy": "USD",
+          "assetClass": "Sovereign",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "Goldman Sachs",
+            "Barclays"
+          ],
+          "quote": "INDON traded more balanced, still widening 1-2bp but street feeling lighter after short covering",
+          "analysis": "S&P affirmation消化中.早上1-2bp wider但balanced.street lighter after HF short covering.新空头是否入场待观察",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "Kenvue",
+          "name": "Kenvue (J&J Consumer)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "US",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Consumer",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "quote": "Kenvue leaked wider as stock continued to slide after Tylenol-autism lawsuits revived",
+          "analysis": "诉讼风险事件驱动.FDA appeals court revived lawsuits.stock-2.4%+complex+2 wider",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "PINGRE/LNGFOR/FTL",
+          "name": "中国HY高质名",
+          "inFocus": false,
+          "priority": 3,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "HY",
+          "sector": "地产",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "firm",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "Front end papers in PINGRE LNGFOR FTL remained supported by carry buyers",
+          "analysis": "中国HY韧性标杆.front-end carry buyers持续支撑.RM better sellers但非issuer specific原因",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "Toyota/MITEST",
+          "name": "日本低beta IG Corp",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "多元",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "RM still adding given the rate sell off overnight but street/fast money selling down risk",
+          "analysis": "日本IG内部分化:RM持续加仓低beta Corp(rate sell-off提供all-in yield机会),但street/FM减仓",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "Morgan Stanley",
+          "topic": "CPI后的dovish定价空间:July hike几乎被排除但曲线已price in",
+          "point": "CPI全面miss→July hike 50%→16%→最终仅4-6bp(几乎排除).2y-8.8bp领涨,2y breakevens-14.4bp.前端定价合理.Warsh遏制了全面dovish,但soft CPI细节(shelter+0.1% smallest since 2021)为中期dovish提供理由",
+          "quote": "The market treated the CPI details, including softer shelter and services inflation, as reducing the need for near-term tightening"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "亚洲IG韧性边际走弱:from broadly unch to +1-3bps wider",
+          "point": "连续两日的叙事转变:前日'surprisingly resilient broadly unch',今日'1-3bps wider但front-end still biddish'.信用情绪正在边际恶化但尚未到恐慌程度.TEMASE接近YTD wides是opportunistic买入信号",
+          "quote": "Spreads ~1bp wider broadly with no real signs of risk-off tone just yet as flows were skewed to better buying"
+        },
+        {
+          "broker": "BMO",
+          "topic": "TIPS抗住了CPI大miss:市场对通胀后续不悲观",
+          "point": "Breakevens CPI后remark lower但RM/FM dip buyers随后入场.TIPS整体held up well despite how bad CPI was.Street doesn't expect June weakness to repeat in July—这意味着breakevens下行空间有限,但如果7月CPI继续弱则可能下破",
+          "quote": "TIPS held up fairly well considering how bad CPI was. It seems like the street doesn't expect much of June's weakness to repeat in July"
+        },
+        {
+          "broker": "Barclays/MS",
+          "topic": "SOFTBK暴跌为信用情绪的早期预警信号",
+          "point": "SOFTBK-2.5pts since Fri,CDS+22bps单日,FM主导做空(shorting cash+CDS).这是自上周五Trump结束ceasefire以来亚洲信用最显著的恶化信号.equity midday回弹未产生任何支撑,暗示信用卖家高度坚定",
+          "quote": "SOFTBK very weak day in credit and failing to bounce back despite equities recovering midday"
+        },
+        {
+          "broker": "JEFFERIES/Barclays",
+          "topic": "一级供给:FRN outperformance暗示市场偏好短端",
+          "point": "MUFG FRN+5bps vs fixed around reoffer.EIBKOR 3y-7bp vs 5y-3bp.整体pattern:短端/FRN demand > 长端/fixed.与HSBC'front-end very well-bid,duration much less so'一致",
+          "quote": "FRN was once traded 5bps tighter. New issue is pretty mixed, haunting around reoffer except FRN"
         }
       ]
     }
