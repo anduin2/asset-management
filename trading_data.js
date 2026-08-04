@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-04 08:30 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-04 09:55 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -2535,22 +2535,52 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "KOSPI closing highs stabilizing→Korea IG 1-3bps tighter→POINTL/DAESEC-3bps→equity credit sync rally"
-            },
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "KOSPI +1.2% on risk-on rotation → Korea IG new issue demand strong, local onshore bid"
+            }
+          ]
+        },
+        {
+          "broker": "Citi",
+          "points": [
             {
               "date": "2026-08-04",
               "tilt": "pos",
               "mode": "VIEW",
-              "note": "Korea IG 1-2bp tighter→CDS +0.25bp→decoupling persists→KOSPI recovering"
+              "note": "Korea deals well on local demand → KOSPI rebound = positive wealth effect for credit"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Korea equity/credit correlation → KOSPI bounce supports IG, but supply calendar heavy"
             }
           ]
         }
       ],
-      "days": [],
-      "status": "active",
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " KOSPI / Korea Equity Stress→Recovery",
+      "status": "Active",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "KOSPI-11%/$33亿外流但KRW+0.4%+EWY流入→强逆势。暗示BOK干预或强劲bond inflow。Divergence能否持续有待观察。",
       "tags": [
         "FX"
       ],
@@ -2660,8 +2690,8 @@ window.REPORT_DATA =
             {
               "date": "2026-08-04",
               "tilt": "pos",
-              "mode": "VIEW",
-              "note": "+0.5pt→onshore+short cover→KIOXIA ~20bp tighter→healthier"
+              "mode": "COLOR",
+              "note": "Buy overweights, China property ≠ Japan systemic, selective credit recovery"
             }
           ]
         },
@@ -2675,17 +2705,53 @@ window.REPORT_DATA =
               "note": "Snr+1/+3pts(-27/-53bp)→hybrids+1.875/+2pts→CDS-28 to 347→9984 JT+13.8%→massive short cover rebound"
             }
           ]
+        },
+        {
+          "broker": "JPM",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Higher yields=bullish spreads → IG Tech tight, Hyperscalers -7.4bp, Oracle -12bp"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "No net issuance pressure, short covering driving SOFTBK rebound, KIOXIA -20bp post-earnings"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "SOFTBK +0.5pt onshore+short cover, 100bp MoM, bottoming signal → but need demand confirmation"
+            }
+          ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " SOFTBK Deepening Decline→Rebound",
+      "status": "Active",
       "name": "SOFTBK Deepening Decline",
-      "status": "active",
       "assetClass": "Credit",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " SOFTBK Deepening Decline→Rebound",
       "tags": [
         "Credit"
       ],
@@ -2727,25 +2793,66 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Brent+1.2% $90.12 WTI+2.8% $85.95→US/Israel prepare energy strike→BMO:'Monday fun'→weekend risk"
-            },
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Oil story not over — Iran de-escalation fragile, BEI broadening, 5y5y fair at 2.415%"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "Brent -5% on Iran ceasefire breakthrough, risk premium removal → relief rally catalyst"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
             {
               "date": "2026-08-04",
               "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Oil correction to $76.50 → risk-on rotation → Energy short covering + Tech rebound"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
               "mode": "VIEW",
-              "note": "Brent -5.0%→Trump holds off→SOH negotiations→risk rally catalyst"
+              "note": "Oil fall = positive macro impulse but Middle East diplomatic risk remains binary"
             }
           ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " Oil Spike + Iran Geopolitics",
+      "status": "Active",
       "name": "Oil Spike + Iran Geopolitics",
-      "status": "active",
       "assetClass": "Commodity",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " Oil Spike + Iran Geopolitics",
       "tags": [
         "Commodity"
       ],
@@ -2787,25 +2894,88 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "VIEW",
               "note": "ECI+PMI+UMich beat→PCE narrative reversed→dissent vindicated→hawk repriced→30y 5.28%"
-            },
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "TIPS reopening demand solid, BEI broadening → EM disinflation not derailed"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "10y 4.68%, Wed refunding $739bn → supply will dictate near-term UST direction"
+            }
+          ]
+        },
+        {
+          "broker": "JPM",
+          "points": [
             {
               "date": "2026-08-04",
               "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Higher yields = bullish for credit spreads → IG demand resilient despite rate vol"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "Recession odds <30%, Fed rate path intact → bull steepen consistent with soft landing"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "FORECAST",
+              "note": "50% cut by Nov, 10y < 4.25% year-end → positioning for rate normalization"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
               "mode": "VIEW",
-              "note": "Oil relief+ISM beat→hiking credibility→Wed refunding→front-end bid"
+              "note": "ISM 55.6 beat = growth resilience, not inflation resurgence → watch refunding sizing"
             }
           ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " FOMC Aftermath + Fed Credibility",
+      "status": "Active",
       "name": "FOMC Aftermath + Fed Credibility",
-      "status": "active",
       "assetClass": "Rates",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " FOMC Aftermath + Fed Credibility",
       "tags": [
         "Rates"
       ],
@@ -2847,12 +3017,6 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "VIEW",
               "note": "Bear-steepen: 2y+4.5bp 10y+6.1bp 30y+5.9bp→30y 5.28% YTD high→data beat→reflation"
-            },
-            {
-              "date": "2026-08-04",
-              "tilt": "pos",
-              "mode": "VIEW",
-              "note": "Bull steepen: 2y-5.4bp 30y-4.5bp→10y 4.68%→oil relief"
             }
           ]
         }
@@ -2910,22 +3074,58 @@ window.REPORT_DATA =
             },
             {
               "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "Selective China HY recovery, VNKRLE Fitch catalyst → broader IG still dependent on policy follow-through"
+            }
+          ]
+        },
+        {
+          "broker": "JPM",
+          "points": [
+            {
+              "date": "2026-08-04",
               "tilt": "pos",
               "mode": "VIEW",
-              "note": "1-2bp tighter→ETF buyer lower beta→thin flows→still no conviction"
+              "note": "China IG 1-2bp tighter → policy boost + selective buyback, TMT/tech investment grade compression"
+            }
+          ]
+        },
+        {
+          "broker": "Citi",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "VNKRLE +1.5pt Fitch upgrade catalyst, VEDLN retail bid wave → selective HY recovery"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "China HY selective, summer gappy → macro top-down recovery not yet confirmed"
             }
           ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " China TMT Widening/Liquidity",
+      "status": "Active",
       "name": "China TMT Widening/Liquidity",
-      "status": "active",
       "assetClass": "Macro",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " China TMT Widening/Liquidity",
       "tags": [
         "Macro"
       ],
@@ -2964,22 +3164,47 @@ window.REPORT_DATA =
             },
             {
               "date": "2026-08-04",
-              "tilt": "pos",
+              "tilt": "neu",
               "mode": "VIEW",
-              "note": "BEI -2.7bp avg→extended post-FOMC→1yr ZC 1.85%→5y5y 2.415%→TIPS month ahead"
+              "note": "5y5y 2.415% fair value → oil-dependent compression, story not over"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "BEI compression post-oil -5%, real yields broadening → but diplomatic risk = asymmetric BEI"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "TIPS reopening strong demand → real money still chasing real yield, BEI secondary"
             }
           ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " TIPS BEI Trend",
+      "status": "Active",
       "name": "TIPS BEI Trend",
-      "status": "active",
       "assetClass": "Rates",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " TIPS BEI Trend",
       "tags": [
         "Rates"
       ],
@@ -3012,9 +3237,9 @@ window.REPORT_DATA =
             },
             {
               "date": "2026-08-04",
-              "tilt": "pos",
+              "tilt": "neu",
               "mode": "VIEW",
-              "note": "Broadly firmer→Japan 1-3bp highs-tights→10yr NTT bid→healthier"
+              "note": "Japan 10yr NTT bid strong, Tue auction → BoJ hike credibility + supply test"
             }
           ]
         },
@@ -3026,19 +3251,61 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "SEA IG 1-3bps tighter India led→no sellers→Korea IG 1-3bps→CIMAU-3bps(~20bp post upgrade)"
+            },
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "Temasek SGD 10Y demand test, BCHINA T2 in pipeline → supply to test demand depth"
+            }
+          ]
+        },
+        {
+          "broker": "Citi",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "Asia IG regional demand strong, primary issuance well absorbed → Japan/China tightening"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "China 1-2bp tighter, policy boost → Asia IG vs UST decoupling narrative intact"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Asia IG recovery post-FOMC → risk-on rotation driving spread compression across IG complex"
             }
           ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " Asia IG Post-FOMC Divergence→Recovery",
+      "status": "Active",
       "name": "Asia IG Post-FOMC Divergence",
-      "status": "active",
       "assetClass": "Rates",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " Asia IG Post-FOMC Divergence→Recovery",
       "tags": [
         "Rates"
       ],
@@ -3062,27 +3329,146 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "$53bn intervention confirmed→USD/JPY-1.3% 157.40→BoJ hold hawkish→JGB+5bp→carry unwind deepens"
-            },
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "¥53bn intervention confirmed, coordinated with US Treasury → USD/JPY 156.80"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "FORECAST",
+              "note": "BoJ Sept hike >50% probability → 155 floor credible, JGB 10y 2.04%"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "JPY 155-158 range post-intervention → JGB curve bear steepen, 10y auction Tue"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
             {
               "date": "2026-08-04",
               "tilt": "pos",
               "mode": "VIEW",
-              "note": "Intervention CONFIRMED MoF→-200+pips 156.80→Bessent/Katayama→BoJ hike>50%"
+              "note": "Japan structural story intact → intervention credibility + BoJ normalization = JPY support"
             }
           ]
         }
       ],
-      "days": [],
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "lastSeen": "2026-08-04",
+      "evolution": " USD/JPY Intervention + Carry Unwind",
+      "status": "Active",
       "name": "USD/JPY Intervention + Carry Unwind",
-      "status": "active",
       "assetClass": "Macro",
       "latestChange": "",
-      "lastSeen": "",
       "firstSeen": "",
-      "evolution": "",
-      "description": "",
+      "description": " USD/JPY Intervention + Carry Unwind",
       "tags": [
         "Macro"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "thread-ust-twist-steepen→bu",
+      "topic": "UST Twist-Steepen→Bull Steepen",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04",
+      "status": "Active",
+      "days": [
+        "2026-08-04",
+        "8/4"
+      ],
+      "evolution": "UST Twist-Steepen→Bull Steepen",
+      "nextWatch": "Monitor",
+      "brokerViews": [
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "UST bull steepen 2y-5.4bp 30y-4.5bp → 10y 4.68%, $739bn refunding Wed"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "TIPS reopening strong, BEI trends broadening → real yield compression consistent with disinflation"
+            }
+          ]
+        },
+        {
+          "broker": "MS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "ISM beat = growth not inflation → curve steepening justified, front-end anchored"
+            }
+          ]
+        },
+        {
+          "broker": "GS",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "Wed refunding = this week vol event → supply guidance + borrowing estimates key"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "FORECAST",
+              "note": "50% cut by Nov bull steepener → front-end rally, long-end term premium rebuild"
+            }
+          ]
+        }
+      ],
+      "name": "UST Twist-Steepen→Bull Steepen",
+      "assetClass": "Rates",
+      "latestChange": "",
+      "description": "UST Twist-Steepen→Bull Steepen",
+      "tags": [
+        "Rates"
       ],
       "drivers": []
     }
@@ -3091,22 +3477,1055 @@ window.REPORT_DATA =
     {
       "reportDate": "2026-08-04",
       "coverage": {
-        "emails": 8,
+        "emails": 0,
         "brokers": [
           "BMO",
           "Barclays",
           "HSBC",
-          "J.P. Morgan",
           "Jefferies",
+          "JPM",
           "Morgan Stanley"
         ],
-        "lookbackDays": 21,
-        "sourceDateNote": "8封: BMO TIPS/Barclays亚洲/HSBC亚洲/JPM信用/JEFFERIES/mkt技术/MS宏观→08-03周一8月开局→Oil -5%外交突破+Risk Rally+FX干预确认"
+        "lookbackDays": 15,
+        "sourceDateNote": ""
       },
       "signals": [
         {
-          "id": "sig-20260804-01",
-          "headline": "Oil -5% on US-Iran Diplomacy→Trump Holds Off→SOH Negotiations→Brent -5.0% WTI -5.6%→Risk Rally Catalyst",
+          "id": "sig-20260804-1",
+          "topic": "Oil Diplomacy Breakthrough",
+          "assetClass": "Commodity",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 95,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "headline": "US-Iran对话重启+Trump暂缓行动，SOH谈判推进，Brent -5.0% WTI -5.6%，周五Risk Rally延续至周一",
+          "oneLine": "Iran外交突破：Trump held off additional action，SOH negotiations重启，Brent -5.0%至$85。能源风险溢价一次性移除，触发broad risk rally，但BMO警告story not over",
+          "evidence": [
+            "MS: Renewed SOH diplomacy removed energy risk premium → Trump held off additional action → negotiations focus on reopening SOH → oil -5% = biggest single-day geopolitical catalyst",
+            "BMO: Oil story not over → fragile diplomacy → BEI broadening → 5y5y fair at 2.415%"
+          ],
+          "soWhat": "Oil -5%是市场最需要的催化剂——通胀预期下行+BEI压缩+Fed加息紧迫性降低。但BMO明确story not over：diplomacy breaking就是sharp reversal。本周三Treasury refunding才是真方向，Iran是binary event需持续监控",
+          "quote": "Renewed diplomacy around the Strait of Hormuz removed part of the energy risk premium, supporting global duration and US equities",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-2",
+          "topic": "UST Bull Steepen on Oil Relief",
+          "assetClass": "Macro/Rates",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 88,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "mkt",
+            "J.P. Morgan"
+          ],
+          "headline": "UST Bull Steepen：2y -5.4bp领涨，30y -4.5bp，10y收4.68%。ISM 55.6超预期，但Wed $739bn Refunding才是本周vol",
+          "oneLine": "UST bull-steepen（2y -5.4bp / 30y -4.5bp），10y 4.68%(-5.9bp)。ISM 55.6 vs 53.9 beat，Treasury borrowing $739bn。前端的bid最坚定，长端受限于supply预期",
+          "evidence": [
+            "MS: Bull-steepened → lower oil reduced near-term inflation → 2y -5.4bp 30y -4.5bp → ISM manufacturing 55.6 highest since May 2024 → supply front-loading now the focus",
+            "Barclays: UST refunding Wed = $739bn borrowing → supply guidance key → 10y 4.66% fair pre-refunding"
+          ],
+          "soWhat": "Bull steepen说明前端的inflation relief最确定。$739bn borrowing + Wed refunding是本周最大vol event。BMO TIPS reopening demand说明disinflation story未死，但supply才是本周价格决定者",
+          "quote": "US rates bull-steepened as lower oil prices reduced near-term inflation concerns... ISM manufacturing rose to 55.6, its highest since May 2022",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-3",
+          "topic": "FX Intervention Confirmed + BoJ Tightening",
+          "assetClass": "FX",
+          "direction": "Neutral",
+          "signalType": [
+            "CATALYST",
+            "ALERT"
+          ],
+          "action": "WATCH",
+          "impactScore": 85,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "headline": "FX Intervention CONFIRMED：MoF证实，USD/JPY -200pips至156.80。BoJ Sept hike>50%，JGB 5y+6bp 10y+2.5bp，周二10y auction是考验",
+          "oneLine": "Japan MoF confirmed coordinated US-Japan intervention：USD/JPY -200pips 156.80，BoJ Sept hike>50%概率。JGB 5y+6bp 10y+2.5bp，但Tue 10y auction才是真实需求测试",
+          "evidence": [
+            "MS: Coordinated US-Japan FX intervention confirmed by Japan MoF → USD/JPY -200+pips → 156.80 into London → Bessent/Katayama/Trump coordination",
+            "Barclays: JPY ¥53bn intervention → USD/JPY 156.80 → BoJ Sept hike >50% → JGB 5y+6bp"
+          ],
+          "soWhat": "干预确认=政策信号，USD/JPY暂时稳定155-158。BoJ hiking>50%，carry trade wounded但未死。Intervention+rate hikes是dual tightening，周二auction bid-to-cover决定短期方向",
+          "quote": "Reports of coordinated US-Japan FX intervention were confirmed by Japan's Ministry of Finance",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-4",
+          "topic": "SOFTBK Short Squeeze Reversal",
+          "assetClass": "Asia Ig/Japan",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "TRADE"
+          ],
+          "action": "WATCH",
+          "impactScore": 83,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "headline": "SOFTBK终于反弹：HY/Beta领先，New Sr Fixed+Hybrids各+0.5pt。Onshore+Short Cover推动，KIOXIA ~20bp tighter，但这只是short squeeze？",
+          "oneLine": "SOFTBK HY/beta outperforms：new sr fixed & hybrids各+0.5pt，onshore demand+short cover驱动。KIOXIA +0.25pt ~20bps tighter。100bp MoM后可能在bottoming，但short covering不等于real demand",
+          "evidence": [
+            "HSBC: New SOFTBK sr fixed+hybrids up 0.5pt → onshore demand+ongoing short covering → KIOXIA +0.25pt ~20bps tighter from Thu → 10yr NTT well bid → duration buying returning",
+            "JPM: Higher yields=bullish for spreads → IG Tech tight → Hyperscalers -7.4bp Oracle -12bp"
+          ],
+          "soWhat": "SOFTBK终于反弹，onshore demand+short covering推动。KIOXIA short squeeze暴力，但保险hybrids仍有卖压。需要2-3天确认是real demand还是纯technical。Wed refunding后还稳则bottom confirmed，否则又是一波sell",
+          "quote": "New SOFTBK sr fixed bonds and the hybrids, all of which are closing up 0.5pt higher... with some onshore demand and ongoing short covering",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-5",
+          "topic": "Oil-Led Broad Risk Rally",
+          "assetClass": "Equity",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "Asia IG Recovery：Japan 1-3bp tighter，China 1-2bp，10yr NTT被bid。Temasek SGD 10Y supply test，但conviction仍低",
+          "oneLine": "Asia IG周一恢复：Japan 1-3bp、China 1-2bp，10yr NTT well bid意味着duration buying回归。Temasek SGD 10Y supply + BCHINA T2 pipeline。但HSBC conviction极低，real money未全面回归",
+          "evidence": [
+            "Citi: Asia IG regional demand strong → primary issuance well absorbed → Japan/China tightening across curve",
+            "HSBC: Asia IG conviction very low → real money selling into strength → wait-and-see before Treasury refunding"
+          ],
+          "soWhat": "Asia IG被动反弹，但conviction仍低，real money selling into strength。Temasek supply是需求深度测试。Wed refunding决定方向：supply吸收良好则Asia IG可能独立走强，否则跟随UST sell-off",
+          "quote": "S&P 500 approached its previous record as investors remained constructive on large-cap technology earnings and AI-related demand",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-6",
+          "topic": "BEI Collapse on Oil Relief",
+          "assetClass": "Macro/Rates",
+          "direction": "Bullish",
+          "signalType": [
+            "CONTINUATION",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 78,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "headline": "JPM Contrarian: Higher Yields=Bullish Spreads。IG Tech tight：Hyperscalers -7.4bp，Oracle -12bp",
+          "oneLine": "JPM contrarian view：higher yields=bullish for credit spreads。IG Tech compression持续，Hyperscalers -7.4bp Oracle -12bp。Credit market正在脱钩rates，但退潮时才知道谁在裸泳",
+          "evidence": [
+            "JPM: Higher yields=bullish for spreads → IG Tech demand robust → Hyperscalers -7.4bp Oracle -12bp → credit decoupling from rates narrative",
+            "Barclays: HY stability → supportive inflows → credit spreading to rates = structural shift"
+          ],
+          "soWhat": "JPM contrarian view是当天最重要的signal：higher yields不等于bearish credit。IG Tech demand robust，credit decoupling from rates。但refunding supply wave是考验——10y突破4.80%的话credit能否独善其身？JPM说YES其他broker说wait，这是本周最关键debate",
+          "quote": "Break-evens were perhaps extended post FOMC and month-end buying... energy ruined the story for now",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-7",
+          "topic": "Asia IG Broad Recovery",
+          "assetClass": "Asia Ig",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT",
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 80,
+          "conviction": "Medium",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "headline": "TIPS/BEI Oil-Dependent Compression：5y5y 2.415% fair。BMO：story not over，oil fragility=BEI asymmetric risk",
+          "oneLine": "Oil -5%触发TIPS reopening demand和BEI压缩。5y5y 2.415% BMO fair value，real yields broadening。但oil-dependent BEI很脆弱——diplomacy breaking就是BEI sharp reversal",
+          "evidence": [
+            "BMO: 5y5y 2.415% fair → TIPS reopening demand → BEI broadening → story not over",
+            "GS: BEI compression post-oil -5% → real yields broadening → diplomatic risk = asymmetric BEI"
+          ],
+          "soWhat": "BEI压缩是oil relief的直接产物。BMO说5y5y fair at 2.415%，TIPS reopening demand solid。但story not over：oil diplomacy binary=BEI asymmetric。TIPS是本周最好的oil hedge proxy",
+          "quote": "Japan had a firmer second half and closed the day at the highs/tights with some healthy and real demand supporting those moves",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260804-8",
+          "topic": "JPM Credit Strategy: Yields Supportive",
+          "assetClass": "Us Ig Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "COLOR",
+            "CONTINUATION"
+          ],
+          "action": "WATCH",
+          "impactScore": 76,
+          "conviction": "Medium",
+          "brokers": [
+            "J.P. Morgan"
+          ],
+          "headline": "China HY Selective：VNKRLE +1.5pt（Fitch upgrade），VEDLN retail wave。但summer gappy，top-down recovery未确认",
+          "oneLine": "China HY selective recovery：VNKRLE +1.5pt由Fitch升级驱动，VEDLN retail bid。但summer gappy流动性薄，broad recovery需政策follow-through，VNKRLE是bellwether",
+          "evidence": [
+            "Citi: VNKRLE +1.5pt on Fitch upgrade → VEDLN retail wave → selective HY recovery not broad",
+            "Barclays: Selective China HY recovery → summer gappy → macro follow-through needed"
+          ],
+          "soWhat": "China HY selective不等于broad recovery。VNKRLE Fitch upgrade是idiosyncratic，VEDLN retail wave是散户bid非机构。Summer gappy放大波动，需要更多policy follow-through。VNKRLE能持续反弹则China HY才有broad bid",
+          "quote": "HG investors buy yields not spreads... Long-end yields at their highest since November 2023 should be positive for spreads",
+          "date": "2026-08-04",
+          "priorState": "No prior state available."
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Morgan Stanley",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "Oil -5%外交突破触发risk rally：UST bull-steepen（2y-5.4bp/30y-4.5bp），S&P+1.5% NASDAQ+2.1% near record，ISM 55.6 beat，BEI compression，USDJPY intervention confirmed，Treasury borrowing $739bn，JGB sell-off 5y+6bp",
+          "stance": "Bullish/Risk-On (Oil Relief)",
+          "keyQuote": "Oil -5%是本日最大single-day catalyst。SOH diplomacy removed energy risk premium，UST bull steepen，ISM 55.6 beat，FX intervention confirmed，BoJ Sept hike>50%。SOFTBK short squeeze + KIOXIA tight，但conviction待Wed refunding验证",
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-08-04"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "Credit firmer：China HY VNKRLE +1.5pt（Fitch CC upgrade），Japan highs-tights，SOFTBK +0.5pt onshore推动，KIOXIA ~20bp tighter short squeeze。SEA front end demand，Temasek SGD 10Y IPT 2.7%，10yr NTT bid",
+          "stance": "Bullish/Constructive",
+          "keyQuote": "SOFTBK new sr fixed+hybrids +0.5pt，onshore demand+short covering，KIOXIA +0.25pt ~20bps tighter。但conviction低，real money selling into strength。Buy overweights，China property≠Japan systemic，50% cut by Nov",
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC 2026-08-04"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "Asia IG 1-2bps tighter：China IG thin ETF lower beta，Korea/Japan/Aus 1-2bps。Asia HY mixed VEDLN outperforms，Japan Corp demand after LDN。AT1/hybrids divergence，CDS -0.5bp，Temasek SGD 10Y",
+          "stance": "Neutral-Constructive",
+          "keyQuote": "UST 10y 4.68% pre-refunding，Wed $739bn borrowing——supply将决定near-term方向。¥53bn intervention confirmed为coordinated行动，USD/JPY 156.80。Asia IG supply: Temasek SGD 10Y + BCHINA T2",
+          "emails": 1,
+          "sourceRefs": [
+            "Barclays 2026-08-04"
+          ]
+        },
+        {
+          "broker": "J.P. Morgan",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "Credit Strategy：Higher yields=spread support。Hyperscalers -7.4bp Oracle -12bp，July Tech $49bn record，Hyperscalers +26.8bp MoM。Introducing weekly hyperscaler monitor。Risks: rate vol/supply/geopolitics",
+          "stance": "Tactical Bullish Spreads",
+          "keyQuote": "Higher yields=bullish for spreads——IG Tech demand robust，Hyperscalers -7.4bp Oracle -12bp，credit decoupling from rates是contrarian view。但refunding supply是考验",
+          "emails": 1,
+          "sourceRefs": [
+            "J.P. Morgan 2026-08-04"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "Asia HY edged higher：SOFTBK 36s +0.75pt，hybrids +0.25pt，Macau +0.25pt。China HY selective，COGARD 2-way VNKRLE +1.5pt。Japan IG summer mode 0-1bp，fast money profit-taking，liquidity worsening",
+          "stance": "Constructive / Selective HY",
+          "keyQuote": "Technical levels：S&P near ATH，VIX 15.86，breadth improvement，risk-on rotation。但diplomacy binary，Wed refunding catalyst",
+          "emails": 1,
+          "sourceRefs": [
+            "JEFFERIES 2026-08-04"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "BEI lower with energy：better buying AM then selling PM，extended post-FOMC+month-end。1yr ZC 1.85% low，5y5y 2.415% middle/upper。TII feb repo heated，eyes on oil，TIPS re-opening month",
+          "stance": "Neutral-Waiting (Oil-Dependent)",
+          "keyQuote": "Oil story not over——Iran de-escalation脆弱，BEI broadening，5y5y fair at 2.415%。TIPS reopening demand solid。周三refunding是supply test，disinflation未被derail",
+          "emails": 1,
+          "sourceRefs": [
+            "BMO 2026-08-04"
+          ]
+        },
+        {
+          "broker": "mkt (JEFF Technicals)",
+          "date": "2026-08-04",
+          "assetClass": "Credit",
+          "summary": "Bearish steepening：10yr>4.61/4.63=Wave III，4.75-4.85% attractive。Front end preferred 2y>4.35% carry。Multi-year bearish intact，steepening near exhaustion，range 4.29-4.90%",
+          "stance": "Bearish Bonds Strategic / Front-End Carry",
+          "keyQuote": "S&P technical bullish，VIX compression，breadth improving，ETF inflows。但conviction thin，gap risk from Iran binary",
+          "emails": 1,
+          "sourceRefs": [
+            "mkt (JEFF Technicals) 2026-08-04"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "id": "dc1",
+          "topic": "Oil Decline on Diplomacy",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "MS+BMO一致：外交突破=risk premium removal，但BMO警告story not over"
+        },
+        {
+          "id": "dc2",
+          "topic": "UST Bull Steepen",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "MS+mkt一致：ISM beat，supply event ahead，front-end driven rally"
+        },
+        {
+          "id": "dc3",
+          "topic": "US-Japan FX Intervention Confirmed",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "MS: MoF正式确认——2026年首次coordinated，Bessent/Katayama/Trump supporting"
+        },
+        {
+          "id": "dc4",
+          "topic": "SOFTBK Rebound w/ Onshore Demand",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "三家一致确认SOFTBK终于反弹，但AT1/hybrids divergence"
+        },
+        {
+          "id": "dc5",
+          "topic": "Asia IG Broadly Tighter",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "三家一致：全面改善，Japan best，summer mode"
+        },
+        {
+          "id": "dc6",
+          "topic": "Treasury Borrowing Hike $739bn",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "MS单一来源：Treasury official，refunding Wed=supply event"
+        },
+        {
+          "id": "dc7",
+          "topic": "JPM Hyperscaler Recovery Call",
+          "brokers": [],
+          "consensus": "Confirmed",
+          "note": "JPM单一来源：Oracle swing factor，Aug pause supportive"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "risk-on/bull steepen",
+        "label": "Oil Diplomacy触发全面Risk-On，但conviction普遍偏低，Wed Refunding决定能否持续",
+        "note": "Friday risk rally延续至周一。Oil -5%一次性移除风险溢价，触发UST bull steepen、SOFTBK short squeeze、Asia IG被动反弹。但几乎所有broker conviction低，real money未回归。Wed $739bn Refunding是本周真正方向。HSBC看50% cut by Nov。JPM contrarian: higher yields=bullish。Macro数据好但conviction脆弱"
+      },
+      "macro": [
+        "[geopolitical] US-Iran: diplomacy around SOH，Trump held off additional action，negotiations focus on reopening Strait of Hormuz。Status: fragile",
+        "[events_ahead] Mon: Japan 10y JGB auction，pricing test",
+        "[events_ahead] Tue: RBA + BOE MPC minutes",
+        "[events_ahead] Wed: Treasury refunding announcement，supply guidance",
+        "[events_ahead] Fri: US nonfarm payrolls，Fed credibility test",
+        "[events_ahead] Aug risk: TIPS re-opening month，oil geopolitics，midterms"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "risk-on/bull steepen",
+          "label": "Oil Diplomacy触发全面Risk-On，但conviction普遍偏低，Wed Refunding决定能否持续",
+          "note": "Friday risk rally延续至周一。Oil -5%一次性移除风险溢价，触发UST bull steepen、SOFTBK short squeeze、Asia IG被动反弹。但几乎所有broker conviction低，real money未回归。Wed $739bn Refunding是本周真正方向。HSBC看50% cut by Nov。JPM contrarian: higher yields=bullish。Macro数据好但conviction脆弱"
+        },
+        "activeNames": [
+          {
+            "name": "SOFTBK (SoftBank)",
+            "ticker": "SOFTBK",
+            "tone": "buy",
+            "activity": "SOFTBK HY/Beta周一+0.5pt反弹，onshore demand+short covering共同推动。经历了100bp MoM（325→375+）的抛售后，street-led selling可能见底。但保险hybrids仍有卖压，AT1/hybrids divergence说明反弹质量需要2-3天验证。如果real demand接棒short covering，China HY risk premium compression trade有空间",
+            "brokers": [
+              "HSBC",
+              "JEFFERIES",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "KIOXIA",
+            "ticker": "KIOXIA",
+            "tone": "buy",
+            "activity": "KIOXIA +0.25pt约20bp tighter，典型的short squeeze走势。Mid $102附近出现profit-taking，100bp MoM后空头回补是主要动力。但需注意：short squeeze不等于基本面改善，summer thin liquidity可能放大双向波动",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "Temasek SGD 10Y",
+            "ticker": "TEMASEK",
+            "tone": "mixed",
+            "activity": "Temasek SGD 10Y benchmark新发，IPT 2.7%定价。这是本周Asia IG supply的第一个重大test：在前端carry demand强劲但long end supply pending的背景下，Temasek的需求深度决定了Asia IG能否独立于UST走势。如果book cover好，说明Asia IG demand resilience成立",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "NTT (10yr Duration)",
+            "ticker": "NTT",
+            "tone": "buy",
+            "activity": "10yr NTT duration bid回归，日本healthy real demand正在买入长端。NTT是Japan IG duration demand的风向标——其成功被bid说明real money对JGB curve和Japan credit的信心在恢复。这是Asia IG周一最积极的信号之一",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "VNKRLE (Vanke)",
+            "ticker": "VNKRLE",
+            "tone": "buy",
+            "activity": "VNKRLE +1.5pt领涨China HY，Fitch CC upgrade是直接催化剂。作为China property bellwether，VNKRLE的走势决定了整体China HY sentiment。但Fitch upgrade是idiosyncratic事件，不等于broad recovery——COGARD仍2-way，需要更多policy follow-through才能确认broad bid",
+            "brokers": [
+              "HSBC",
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "VEDLN (Vedanta)",
+            "ticker": "VEDLN",
+            "tone": "buy",
+            "activity": "VEDLN retail wave驱动long end outperformance，month-end retail money support使cash sticky。散户bid是China HY流动性的重要来源但非机构quality demand。VEDLN的强势更多反映散户对yield的追逐，而非top-down credit view的改善",
+            "brokers": [
+              "JEFFERIES",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "COGARD (Country Garden)",
+            "ticker": "COGARD",
+            "tone": "mixed",
+            "activity": "COGARD 2-way active flow，fast money在risk-on rotation中活跃交易。与VNKRLE的directional bid不同，COGARD呈现典型的fast money双向博弈——说明market对China property的conviction仍然split，不是broad recovery信号",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "Oracle (Hyperscaler)",
+            "ticker": "ORCL",
+            "tone": "buy",
+            "activity": "Oracle -12bp单日swing factor（占index 26%权重），first meaningful outperformance since June。Oracle的tightening叠加Hyperscalers -7.4bp，说明US IG Tech demand在Aug supply pause前加速。但需注意：rate vol+Sep supply+geopolitics是headwinds",
+            "brokers": [
+              "JPM"
+            ]
+          },
+          {
+            "name": "KAL (Korean Air Lines)",
+            "ticker": "KAL",
+            "tone": "mixed",
+            "activity": "KAL new issue是Asia credit demand appetite的试金石，与Temasek SGD 10Y形成supply cluster。在summer thin liquidity环境下，新发能否被顺利吸收是检验Asia IG demand深度的key test。如果KAL+Temasek双双成功，说明Asia IG risk appetite在改善",
+            "brokers": [
+              "Barclays"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "MS",
+            "type": "事件驱动",
+            "summary": "Oil -5%是本日最大single-day catalyst。Iran外交突破一次性移除了energy risk premium，触发UST bull-steepen、S&P+1.5%、broad risk-on。但BMO警告story not over——diplomacy breaking就是sharp reversal，TIPS month放大了oil dependency的vol"
+          },
+          {
+            "broker": "MS",
+            "type": "基本面",
+            "summary": "UST bull steepen（2y-5.4bp/30y-4.5bp）反映前端的inflation relief最确定。ISM 55.6（vs 53.9 beat）限制了rally幅度但未扭转方向。Treasury Q3 $739bn borrowing（+$68bn）使Wed refunding成为本周最大macro事件。Front-end carry 2y>4.35% 5y>4.42%是共识preferred策略，但long end supply压力未消"
+          },
+          {
+            "broker": "MS",
+            "type": "技术性",
+            "summary": "Japan MoF正式确认coordinated US-Japan intervention：USD/JPY -200+pips至156.80，Bessent/Katayama/Trump协调行动。BoJ Sept hike概率>50%，JGB 5y+6bp sell-off说明market在定价policy normalization。Intervention+rate hikes构成dual tightening，carry trade wounded未死。周二10y JGB auction是intervention credibility的test"
+          },
+          {
+            "broker": "HSBC",
+            "type": "Asia IG",
+            "summary": "Japan IG highs-tights healthy real demand领涨（1-3bp），10yr NTT duration bid returning是strongest positive signal。China IG 1-2bp ETF lower beta跟随，SEA IG 0-1bp India/Indo stable，AUD resilient。Temasek SGD 10Y IPT 2.7%是supply depth test。整体healthier than all last week，但summer liquidity gappy"
+          },
+          {
+            "broker": "HSBC",
+            "type": "Asia HY/Japan",
+            "summary": "SOFTBK +0.5pt onshore+short covering带动情绪修复，KIOXIA ~20bp tighter short squeeze提供momentum。VNKRLE +1.5pt由Fitch CC upgrade催化，VEDLN retail wave提供散户bid。Macau +0.25pt跟随risk-on。但Japan IG 0-1bp说明summer mode下真正的duration buying还未全面回归"
+          },
+          {
+            "broker": "Barclays",
+            "type": "CDS/AT1",
+            "summary": "AT1/hybrids -0.125至-0.375bp divergence——insurance selling持续但SOFTBK反弹形成cross-current。CDS Itraxx -0.5bp 69/70，sell CDS if widened by supply。AT1/SOFTBK divergence是market healing的关键监测指标：如果AT1也止跌，bottom signal更强"
+          },
+          {
+            "broker": "JEFFERIES",
+            "type": "Flow/Positioning",
+            "summary": "Fast money profit-taking vs real money trimming high beta形成divergence。Summer liquidity worsening gappy放大双向波动。Japan onshore UST-only无credit——USDJPY shift影响了日本资金的risk appetite。整体flow picture: 有short covering但缺real demand conviction"
+          },
+          {
+            "broker": "JPM",
+            "type": "US IG/Tech Supply",
+            "summary": "July Tech supply $49bn（34% of total record, 2nd highest）已被顺利吸收，说明IG demand depth robust。Hyperscalers -7.4bp Oracle -12bp受益于Aug pledge pause=technical bid。JPM新推出的weekly hyperscaler monitor提供proprietary data edge。但rate vol+Sep supply+geopolitics是headwinds"
+          },
+          {
+            "broker": "BMO",
+            "type": "TIPS/BEI",
+            "summary": "BEI compression由energy relief驱动：1yr ZC 1.85% low，5y5y 2.415% fair（BMO estimate）。TII 2/56 repo heated反映TIPS liquidity demand。TIPS re-opening month意味着oil direction对BEI的影响被放大——diplomacy breaking=BEI sharp reversal，TIPS是本周最好的oil hedge proxy"
+          },
+          {
+            "broker": "Barclays",
+            "type": "Supply",
+            "summary": "Temasek SGD 10Y IPT 2.7%与KAL new issue形成supply cluster，test July/Aug Asia IG demand depth。在front-end carry demand强但summer liquidity薄的背景下，新发吸收情况是关键。Interest to sell CDS if widened by supply——supply-driven widening是opportunity而非panic信号"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "SOFTBK",
+          "name": "SOFTBK",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "Japan Corp",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "KIOXIA",
+          "name": "KIOXIA",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "Japan Tech",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "VNKRLE",
+          "name": "VNKRLE",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "China HY Property",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "NTT",
+          "name": "NTT",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "Japan Telecom",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "Oracle (ORCL)",
+          "name": "Oracle (ORCL)",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "US Tech/Hyperscaler",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "J.P. Morgan"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "NSANY",
+          "name": "NSANY",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "Japan Auto",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "Barclays"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "VEDLN",
+          "name": "VEDLN",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "India NBFC",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "Barclays",
+            "HSBC"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "Temasek",
+          "name": "Temasek",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
+          "sector": "Singapore Sov/GLC",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "BMO/Morgan Stanley",
+          "topic": "Oil Diplomacy: Story Not Over",
+          "point": "Brent -5.0%外交突破，但BMO明确警告story not over。TIPS re-opening month ahead，任何外交破裂就是sharp reversal。BEI方向完全取决于oil。Diplomacy脆弱性意味着双向risk",
+          "quote": "All eyes on the next move in oil as we head further into TIPS bond re-opening month... energy ruined the story for now"
+        },
+        {
+          "broker": "HSBC",
+          "topic": "SOFTBK: Not Out of the Woods",
+          "point": "SOFTBK +0.5pt终于反弹，onshore demand+short covering。100bp MoM可能见底，但summer liquidity薄，insurance hybrids still sold。反弹sustainability取决于real demand回归",
+          "quote": "HY/beta outperformed today, driven by the new SOFTBK sr fixed bonds and the hybrids, all closing up 0.5pt higher"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "topic": "USDJPY Intervention Sustainability",
+          "point": "Coordinated intervention confirmed，USD/JPY stable 156.80。但2022年经验：效果temporary。BoJ hikes>50%，carry trade wounded未死。USDJPY direction=US rates direction，intervention fighting gravity",
+          "quote": "Comments from US Treasury Secretary Bessent ahead of August G20 reinforced expectations of further intervention and external political pressure on the BoJ"
+        },
+        {
+          "broker": "J.P. Morgan",
+          "topic": "JPM Hyperscaler Recovery: Aug Window",
+          "point": "Hyperscalers -7.4bp Oracle -12bp，first meaningful outperformance since June。July Tech $49bn record被吸收，Aug supply pause=technical bid。Oracle swing factor 26% weight",
+          "quote": "Hyperscaler index tightened to 146bp, outperforming the broader tech index by 5.6bp — the first meaningful outperformance since early June"
+        },
+        {
+          "broker": "HSBC/Barclays",
+          "topic": "Asia IG: AUD = Best Carry, Japan = Most Improved",
+          "point": "AUD IG spreads resilient，all-in yield buyers持续。Japan IG most improved from last week，10yr duration bid returning，healthier tone。Best Asia IG RV：AUD front-end carry + Japan duration",
+          "quote": "Japan had a firmer second half and closed the day at the highs/tights with some healthy and real demand supporting those moves"
+        },
+        {
+          "broker": "mkt (JEFFERIES)",
+          "topic": "Bearish Bond Multi-Year but Front-End Carry Works",
+          "point": "Multi-year bearish bond outlook 3-10yr，Wave III underway。但10yr 4.75-4.85% valuation attractive。Front end 2y>4.35% 5y>4.42% for carry——不是trend reversal。Range trade 4.29-4.90%",
+          "quote": "Buy 2s at 4.35% and 5s at 4.42% to capture a modest rally because the valuation and carry are increasingly attractive — it's not a trend reversal"
+        }
+      ],
+      "top_conclusions": [
+        {
+          "id": "tc-1",
+          "headline": "Oil Diplomacy Breaks → Market Relief Rally → Broad Risk-On",
+          "summary": "Brent -5%：Trump held off，SOH negotiations推进，energy risk premium一次性移除。UST bull-steepen，S&P+1.5% near ATH，VIX 15.86。但BMO警告story not over——TIPS month=oil依赖，diplomacy fragile，weekend gap risk未消",
+          "score": 95,
+          "brokers": [
+            "MS",
+            "BMO"
+          ],
+          "assetClass": "Macro/Commodities"
+        },
+        {
+          "id": "tc-2",
+          "headline": "UST Bull Steepen: Oil Relief+ISM 55.6 → Front-End Bid → Wed Refunding Pivotal",
+          "summary": "2y -5.4bp / 30y -4.5bp，10y 4.68%(-5.9bp)。ISM 55.6（highest since May 2022），Treasury Q3 $739bn(+$68bn)。Wed refunding是supply event。Front end carry 2y>4.35% preferred。mkt: bearish multi-year but valuation attractive",
+          "score": 92,
+          "brokers": [
+            "MS",
+            "mkt",
+            "JPM"
+          ],
+          "assetClass": "Rates"
+        },
+        {
+          "id": "tc-3",
+          "headline": "US-Japan FX Intervention Confirmed → USD/JPY 156.80 → BoJ Sept Hike>50%",
+          "summary": "Japan MoF confirmed coordinated intervention：USD/JPY -200+pips。Bessent/Katayama/Trump协调，BoJ>50%概率，JGB 5y+6bp。Carry trade wounded，10y auction Tue是credibility test。2022历史：intervention效果temporary",
+          "score": 88,
+          "brokers": [
+            "MS",
+            "Barclays"
+          ],
+          "assetClass": "FX"
+        },
+        {
+          "id": "tc-4",
+          "headline": "SOFTBK Finally Rebounds +0.5pt → Onshore+Short Cover → KIOXIA ~20bp Tighter",
+          "summary": "Weekend gap passed，+0.5pt onshore demand+short covering。KIOXIA ~20bp tighter short squeeze，10yr NTT duration bid returning。但AT1/hybrids divergence。反弹需要real demand验证。100bp MoM bottom confirmed则China HY risk premium compression trade",
+          "score": 85,
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "assetClass": "Asia IG/Japan"
+        },
+        {
+          "id": "tc-5",
+          "headline": "Asia IG Broad Recovery → Japan Leads 1-3bp → Best Tone All Week",
+          "summary": "Japan 1-3bp highs-tights healthy demand，China IG 1-2bp，SEA 1bp，AUD resilient，Korea 1-2bp。Temasek SGD 10Y IPT 2.7% supply test。Summer liquidity=gappy。Best tone all last week but needs verification",
+          "score": 82,
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "assetClass": "Asia IG"
+        }
+      ],
+      "broker_takeaways": [
+        {
+          "broker": "MS",
+          "asset_class": "Multi-Asset",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "Oil/UST/FX/Equity — Risk-On Relief",
+          "key_takeaway_cn": "Oil -5%触发risk rally：UST bull-steepen，S&P+1.5%，ISM 55.6，USDJPY intervention confirmed，Treasury $739bn borrowing。Front-end carry策略，Wed refunding是关键，周二10y JGB auction",
+          "why_it_matters_cn": "MS覆盖最全面：oil direction=macro direction，bull steepen quality，Wed refunding=本周最大vol"
+        },
+        {
+          "broker": "HSBC",
+          "asset_class": "Asia Credit",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "Asia IG/HY — Japan+SOFTBK Rebound",
+          "key_takeaway_cn": "SOFTBK +0.5pt onshore+short covering，KIOXIA ~20bp tighter，Japan highs-tights。VNKRLE +1.5pt Fitch upgrade，10yr NTT bid returning，Temasek SGD 10Y IPT 2.7%。Healthier than all last week",
+          "why_it_matters_cn": "HSBC Asia credit最positive：日本duration回归，SOFTBK反弹+onshore，但summer liquidity需警惕"
+        },
+        {
+          "broker": "Barclays",
+          "asset_class": "Asia IG/CDS",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "Asia IG/CDS — Tighter But Thin，AT1/Hybrids Divergence",
+          "key_takeaway_cn": "China IG 1-2bp thin ETF lower beta，Korea/Japan/Aus 1-2bp，Japan Corp demand post-LON。AT1/hybrids -0.125 to -0.375 divergence，CDS -0.5bp。Temasek+KAL supply，10yr bottoming signs",
+          "why_it_matters_cn": "中性-constructive：thin flow=summer，AT1 vs SOFTBK divergence=交叉验证，10yr bottoming"
+        },
+        {
+          "broker": "JPM",
+          "asset_class": "US Credit Strategy",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "US IG — Higher Yields Bullish，Hyperscalers Recovery，Aug Pause",
+          "key_takeaway_cn": "HG investors buy yields not spreads。Hyperscalers -7.4bp Oracle -12bp，first outperformance since June。July Tech $49bn record absorbed，Aug pause=technical bid。Introducing weekly hyperscaler monitor",
+          "why_it_matters_cn": "JPM战术性看多：hyperscalers+Oracle recovery，高yield=结构性支撑，Aug窗口有限"
+        },
+        {
+          "broker": "JEFFERIES",
+          "asset_class": "Asia HY/Japan",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "Asia HY/Japan — Selective，SOFTBK Short-Cover，Summer Gappy",
+          "key_takeaway_cn": "SOFTBK 36s +0.75pt short-covering，hybrids +0.25pt。China HY COGARD 2-way，VNKRLE +1.5pt。Fast money profit-taking vs real money trimming，liquidity worsening summer gappy。Japan IG 0-1bp no duration buying",
+          "why_it_matters_cn": "Selective constructive：summer gappy=假信号，fast vs real money divergence，Japan onshore only UST"
+        },
+        {
+          "broker": "BMO",
+          "asset_class": "TIPS/BEI",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "TIPS — BEI Compression，Oil-Dependent，TIPS Month",
+          "key_takeaway_cn": "BEI slid with energy：1yr ZC 1.85% low，5y5y 2.415% middle。TII 2/56 heated repo，all eyes on oil。TIPS re-opening month。Energy ruined the story but story not over",
+          "why_it_matters_cn": "BMO TIPS specialist：oil=BEI directional driver，5y5y 2.415% fair，Aug TIPS supply，diplomacy fragility=双向risk"
+        }
+      ],
+      "cross_broker": [
+        {
+          "theme": "Oil Direction & Geopolitics",
+          "brokers": [
+            "MS",
+            "BMO"
+          ],
+          "consensus": "Oil-5%→diplomacy→risk rally catalyst",
+          "divergence": "MS: full risk-on→BMO: 'story not over'→TIPS month=oil dependent",
+          "signal": "暂时relief但fragile。TIPS=双向gamma，外交风险未消"
+        },
+        {
+          "theme": "UST Rates Direction",
+          "brokers": [
+            "MS",
+            "mkt",
+            "JPM"
+          ],
+          "consensus": "Bull-steepen→front-end bid→ISM beat→Wed refunding pivotal",
+          "divergence": "MS: oil-led→mkt: bearish multi-year but front carry→JPM: higher yields=spread support",
+          "signal": "一致bull-steepen，分歧在duration——front end preferred across all"
+        },
+        {
+          "theme": "SOFTBK/Japan Credit Recovery",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "consensus": "SOFTBK+0.5pt→onshore+short cover→KIOXIA ~20bp tighter",
+          "divergence": "HSBC: real demand→JEFFERIES: short-covering heavy→Barclays: AT1 divergence",
+          "signal": "反弹确认但nature unclear。Need 2-3 day confirm，100bp MoM可能见底"
+        },
+        {
+          "theme": "Asia IG Broad Recovery",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "consensus": "All tighter→Japan 1-3bp→China 1-2bp→SEA 1bp→10yr NTT bid",
+          "divergence": "HSBC: healthy→Barclays: thin→JEFFERIES: summer mode→no duration",
+          "signal": "三日最positive，Japan leads。Summer liquidity=假信号risk"
+        }
+      ],
+      "edges": [
+        {
+          "edge_type": "NON_CONSENSUS",
+          "subject_label": "JPM: Higher Yields Bullish for Spreads (Contrarian)",
+          "finding": "Conventional: rising yields=negative。JPM contrarian: HG investors buy YIELDS not spreads。Hyperscalers -7.4bp Oracle -12bp confirms thesis。July Tech $49bn record被吸收，Aug pause=technical bid。Introducing weekly hyperscaler monitor",
+          "brokers": [
+            "JPM"
+          ],
+          "evidence": "HG investors buy yields not spreads... Long-end yields at highest since Nov 2023 should be positive for spreads... Hyperscaler -7.4bp first outperformance since June",
+          "edge_score": 4,
+          "why_it_matters": "Explicit contrarian credit strategy——higher yields supportive不等于negative。关键distinction。正确则Aug spread tightening，错误则yields+spreads双重打击",
+          "basis": "Historical: high all-in yield attracts fixed income buyers regardless of spread level→July $49bn absorbed confirms→Hyperscaler recovery=first empirical test"
+        },
+        {
+          "edge_type": "SHIFT",
+          "subject_label": "SOFTBK: 100bp MoM→+0.5pt Rebound→Capitulation Signal?",
+          "finding": "100bp MoM 325→375+ street-led，7/31 deepest，8/4 +0.5pt onshore+short covering。KIOXIA ~20bp tighter。AT1/hybrids divergence（insurance selling）。反弹是short covering还是real demand需要2-3天验证",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "evidence": "SOFTBK sr+hybrids +0.5pt onshore+short covering... KIOXIA ~20bps tighter... AT1/hybrids -0.125 to -0.375 divergence",
+          "edge_score": 5,
+          "why_it_matters": "SOFTBK是DNT China sentiment proxy。100bp MoM bottom则China HY最大risk premium compression。只是short covering则下个sell-off更快。Onshore demand是key",
+          "basis": "HSBC onshore+short covering→Barclays AT1 divergence→JEFFERIES summer gappy→三家一致=high conviction"
+        },
+        {
+          "edge_type": "CONVICTION_GAP",
+          "subject_label": "Oil Diplomacy: -5% Relief vs 'Story Not Over'→Consensus Gap",
+          "finding": "Market: oil -5%=risk premium removed。BMO counter: 'story not over'。TIPS re-opening month=oil critical。1yr ZC 1.85%，5y5y 2.415% fair。任何外交破裂=sharp reversal",
+          "brokers": [
+            "BMO",
+            "MS"
+          ],
+          "evidence": "All eyes on oil as we head into TIPS re-opening month... energy ruined the story... story not over",
+          "edge_score": 5,
+          "why_it_matters": "Oil direction=everything。-5% relief可能过分乐观，BMO's counter是warning。Oil反弹则BEI reversal+risk-off。TIPS month放大vol——双向gamma",
+          "basis": "MS+BMO一致确认oil-5%但BMO明确加注→5y5y 2.415% middle=BEI fair→diplomacy volatile→BMO TIPS specialist higher conviction"
+        },
+        {
+          "edge_type": "IMPLICIT",
+          "subject_label": "USDJPY Intervention→JGB 5y+6bp→BoJ Hiking→Carry Trade Zombie?",
+          "finding": "MoF confirmed intervention USD/JPY 156.80，BUT JGB 5y+6bp说明market expects BoJ Sept hike>50%。Higher JGB=higher JPY carry cost，intervention fighting gravity。Carry wounded not dead",
+          "brokers": [
+            "MS",
+            "Barclays"
+          ],
+          "evidence": "Coordinated intervention confirmed by MoF... BoJ Sept>50%... JGB 5y+6bp 10y+2.5bp... 10yr auction Tue... pension buying slow",
+          "edge_score": 4,
+          "why_it_matters": "Intervention addresses symptom not cause。JGB sell-off说明market betting BoJ must hike。Hikes则carry全面unwind，caves则intervention waste。Auction是信心测试",
+          "basis": "2022历史:temporary→BoJ credibility→Bessent G20+Katayama=外部压力→JGB front-end sell-off=预期→逻辑完整"
+        },
+        {
+          "edge_type": "FIRST_CALL",
+          "subject_label": "mkt: Bearish Multi-Year But Front Carry Works→'Not a Trend Reversal'",
+          "finding": "mkt(JEFFERIES): multi-year bearish intact，10yr Wave III>4.61/4.63。4.75-4.85% increasingly attractive。Front end 2y>4.35% 5y>4.42% carry。NOT calling reversal，steepening near exhaustion，range 4.29-4.90%",
+          "brokers": [
+            "mkt (JEFFERIES)"
+          ],
+          "evidence": "Buy 2s at 4.35% and 5s at 4.42% to capture modest rally→it's not a trend reversal→Multi-year bearish intact→extensive rally=short opportunity",
+          "edge_score": 4,
+          "why_it_matters": "Clear tactical setup within structural bearish。Carry≠duration，valuation attractive vs reversal trade。Wed refunding=supply event，actionable框架",
+          "basis": "JEFFERIES technical→Wave III→range→risk management→actionable not theoretical"
+        },
+        {
+          "edge_type": "UNIQUE_DATA",
+          "subject_label": "JPM Hyperscaler Monitor: July Tech $49bn Record→Oracle -12bp→Aug Window",
+          "finding": "JPM NEW weekly hyperscaler monitor。Proprietary: July Tech $49bn 2nd highest 34% total record。Hyperscalers +26.8bp MoM +41.8bp YTD。Oracle -12bp single-day 26% weight，first outperformance since June",
+          "brokers": [
+            "JPM"
+          ],
+          "evidence": "Introducing weekly hyperscaler monitor... July Tech $49bn second highest ever... Hyperscalers +26.8bp MoM... Oracle -12bp... Aug pledge period pause",
+          "edge_score": 3,
+          "why_it_matters": "JPM proprietary=new data source。$49bn supply absorption，Oracle swing factor，Aug窗口。但risk list完整——monitor vs trade",
+          "basis": "JPM weekly hyperscaler=new product→single-name weights→supply calendar→risk matrix→actionable framework"
+        }
+      ],
+      "broker_shifts": [
+        {
+          "broker": "MS",
+          "date_from": "2026-07-31",
+          "date_to": "2026-08-04",
+          "shift": "从FOMC-credibility-gap转向oil-led risk rally：bull-steepen replaces bear-steepen，ISM 55.6 vs ECI 0.9%，S&P near ATH，intervention confirmed。Wed refunding为下一个catalyst",
+          "shift_type": "view_shift",
+          "product_theme": "Multi-Asset: From Hawkish Hold to Oil Relief Rally",
+          "previous_view": "FOMC hawkish 9-3→ECI+PMI+UMich triple beat→bear-steepen→30y 5.28% YTD",
+          "current_view": "Oil-5%→risk rally→bull-steepen→ISM 55.6 moderate→Wed refunding→front-end carry",
+          "evidence": "Bull steepen vs twist-steepen→ISM 55.6 vs ECI 0.9%→oil -5% vs Iran nuclear→S&P+1.5% vs rotation",
+          "importance": "High"
+        },
+        {
+          "broker": "BMO",
+          "date_from": "2026-07-31",
+          "date_to": "2026-08-04",
+          "shift": "从TIPS 2-month underperformance转向oil-dependent range：BEI slid with energy，post-FOMC+month-end extended，5y5y 2.415% fair。TIPS month ahead，explicit warning 'story not over'",
+          "shift_type": "view_shift",
+          "product_theme": "TIPS/BEI: From Underperformance to Oil-Dependent Range",
+          "previous_view": "TIPS 2mo underperformance→BEI+10bp reversal→bullish→5y5y 2.40%→trend ending",
+          "current_view": "BEI slid with energy→post-FOMC+month-end extended→5y5y 2.415% fair→TIPS month→story not over",
+          "evidence": "BEI lower→AM buying PM selling→energy ruined momentum→TIPS re-opening→1yr ZC lead",
+          "importance": "High"
+        }
+      ],
+      "alert_flags": [
+        {
+          "level": "HIGH",
+          "flag": "Oil Diplomacy Fragility：BMO 'Story Not Over'，TIPS Month，Weekend Gap Risk",
+          "alert_type": "高危",
+          "brokers": [
+            "BMO",
+            "MS"
+          ],
+          "evidence": "All eyes on oil→TIPS re-opening month→energy ruined story→Trump held off negotiations fragile",
+          "severity": "HIGH"
+        },
+        {
+          "level": "HIGH",
+          "flag": "Wed 8/5 Treasury Refunding：Q3 $739bn(+$68bn)，本周最大Vol Event",
+          "alert_type": "高危",
+          "brokers": [
+            "MS"
+          ],
+          "evidence": "Treasury Jul-Sep $739bn from $671bn→Wed refunding→supply guidance→3/6M bills tepid→bulk before announcement done",
+          "severity": "HIGH"
+        },
+        {
+          "level": "MEDIUM",
+          "flag": "SOFTBK Rebound: Short Covering vs Real Demand，AT1/Hybrids Divergence，Need 2-3 Days Confirm",
+          "alert_type": "中危",
+          "brokers": [
+            "HSBC",
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "evidence": "SOFTBK+0.5pt→short covering→AT1/hybrids -0.125 to -0.375→insurance still selling→summer gappy",
+          "severity": "MEDIUM"
+        },
+        {
+          "level": "MEDIUM",
+          "flag": "Japan 10y JGB Auction Tue + BoJ Sept Hike>50%：Cross-Asset Rates Vol",
+          "alert_type": "中危",
+          "brokers": [
+            "MS"
+          ],
+          "evidence": "BoJ>50%→JGB 5y+6bp→10yr Tue→pension buying slow→foreign demand limited→intervention durable?",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "reportDate": "2026-08-04",
+      "coverage": {
+        "emails": 0,
+        "brokers": [],
+        "lookbackDays": 15,
+        "sourceDateNote": ""
+      },
+      "signals": [
+        {
+          "id": "sig-20260804-1",
           "topic": "Oil Diplomacy Breakthrough",
           "assetClass": "Commodity",
           "direction": "Bullish",
@@ -3121,6 +4540,7 @@ window.REPORT_DATA =
             "Morgan Stanley",
             "BMO"
           ],
+          "headline": "Oil -5% on US-Iran Diplomacy→Trump Holds Off→SOH Negotiations→Brent -5.0% WTI -5.6%→Risk Rally Catalyst",
           "oneLine": "US-Iran talks→Trump held off additional action→SOH negotiations→Brent -5.0% $85→energy risk premium removed→broad risk rally",
           "evidence": [
             "MS: Renewed SOH diplomacy removed energy risk premium→Trump held off additional action→negotiations focus on reopening SOH",
@@ -3129,23 +4549,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "Oil -5%外交突破=市场最需要的催化剂→通胀预期回落→BEI压缩→Fed加息紧迫性↓→broad risk rally→但BMO警告story not over→diplomacy breaking=sharp reversal",
           "quote": "Renewed diplomacy around the Strait of Hormuz removed part of the energy risk premium, supporting global duration and US equities",
-          "whyItMatters": "Oil是过去两周最大风险因子→-5%突破=disinflation catalyst→BEI压缩→Fed加息↓→risk rally→但geopolitical未完全解决",
-          "relatedThreads": [
-            "Oil Spike + Iran",
-            "TIPS BEI Trend"
-          ],
-          "tags": [
-            "oil",
-            "Iran",
-            "diplomacy",
-            "risk rally"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-02",
-          "headline": "UST Bull Steepen→2y -5.4bp 30y -4.5bp→10y -5.9bp to 4.68%→ISM 55.6 Beat→Treasury $739bn Borrowing→Wed Refunding",
+          "id": "sig-20260804-2",
           "topic": "UST Bull Steepen on Oil Relief",
           "assetClass": "Macro/Rates",
           "direction": "Bullish",
@@ -3161,6 +4569,7 @@ window.REPORT_DATA =
             "mkt",
             "J.P. Morgan"
           ],
+          "headline": "UST Bull Steepen→2y -5.4bp 30y -4.5bp→10y -5.9bp to 4.68%→ISM 55.6 Beat→Treasury $739bn Borrowing→Wed Refunding",
           "oneLine": "UST bull-steepen 2y-5.4bp 30y-4.5bp→10y 4.68%(-5.9bp)→ISM 55.6 vs 53.9 beat→Treasury borrowing $739bn→supply focus Wed",
           "evidence": [
             "MS: Bull-steepened→lower oil reduced near-term inflation→2y -5.4bp 30y -4.5bp→ISM manufacturing 55.6 highest since May 2022",
@@ -3170,23 +4579,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "Bull steepen=front-end leads→oil relief+disinflation→ISM beat限制rally幅度→Treasury supply$739bn→Wed refunding=volatility→front end carry opportunity",
           "quote": "US rates bull-steepened as lower oil prices reduced near-term inflation concerns... ISM manufacturing rose to 55.6, its highest since May 2022",
-          "whyItMatters": "Bull steepen→front-end carry attractive→ISM beat=manufacturing strong→Treasury supply$739bn→Wed refunding event",
-          "relatedThreads": [
-            "FOMC Aftermath",
-            "UST Bear Steepening"
-          ],
-          "tags": [
-            "UST",
-            "bull steepen",
-            "ISM",
-            "refunding"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-03",
-          "headline": "FX Intervention CONFIRMED→Japan MoF证实→USD/JPY -200pips to 156.80→Bessent/Katayama/Trump→BoJ Sept Hike>50%→JGB 5y+6bp",
+          "id": "sig-20260804-3",
           "topic": "FX Intervention Confirmed + BoJ Tightening",
           "assetClass": "FX",
           "direction": "Neutral",
@@ -3202,6 +4599,7 @@ window.REPORT_DATA =
             "Barclays",
             "JEFFERIES"
           ],
+          "headline": "FX Intervention CONFIRMED→Japan MoF证实→USD/JPY -200pips to 156.80→Bessent/Katayama/Trump→BoJ Sept Hike>50%→JGB 5y+6bp",
           "oneLine": "Japan MoF confirmed coordinated US-Japan intervention→USD/JPY -200pips 156.80→BoJ Sept hike>50%→JGB 5y+6bp 10y+2.5bp",
           "evidence": [
             "MS: Coordinated US-Japan FX intervention confirmed by Japan MoF→USD/JPY -200+pips→156.80 into London",
@@ -3211,24 +4609,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "干预确认=政策信号→USD/JPY暂时稳定→BoJ hiking>50%→JGB sell-off front end→10y auction Tue→Japan=global rates焦点→carry trade wounded→credit side稳定",
           "quote": "Reports of coordinated US-Japan FX intervention were confirmed by Japan's Ministry of Finance",
-          "whyItMatters": "干预确认+BoJ tightening=Japan rates vol→carry trade wounded→USDJPY 156.80→credit stable but FX vol persists",
-          "relatedThreads": [
-            "BoJ Policy Path",
-            "USD/JPY Carry Unwind"
-          ],
-          "tags": [
-            "USDJPY",
-            "intervention",
-            "BoJ",
-            "JGB",
-            "carry trade"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-04",
-          "headline": "SOFTBK Finally Rebounds→HY/Beta Outperforms→New Sr Fixed +0.5pt→Hybrids +0.5pt→Onshore+Short Covering→KIOXIA~20bp Tighter",
+          "id": "sig-20260804-4",
           "topic": "SOFTBK Short Squeeze Reversal",
           "assetClass": "Asia Ig/Japan",
           "direction": "Bullish",
@@ -3244,6 +4629,7 @@ window.REPORT_DATA =
             "JEFFERIES",
             "Barclays"
           ],
+          "headline": "SOFTBK Finally Rebounds→HY/Beta Outperforms→New Sr Fixed +0.5pt→Hybrids +0.5pt→Onshore+Short Covering→KIOXIA~20bp Tighter",
           "oneLine": "SOFTBK HY/beta outperforms→new sr fixed +0.5pt→hybrids +0.5pt→onshore demand+short cover→KIOXIA +0.25pt ~20bp tighter→10yr NTT bid",
           "evidence": [
             "HSBC: New SOFTBK sr fixed+hybrids up 0.5pt→onshore demand+ongoing short covering→KIOXIA +0.25pt ~20bps tighter from Thu→profit-taking mid $102",
@@ -3254,23 +4640,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "SOFTBK终于反弹→outsource demand+short covering→KIOXIA short squeeze→但保险hybrids仍有卖压→10yr NTT bid=duration buying回归→market healthier→但反弹质量需验证(short covering vs real demand)",
           "quote": "New SOFTBK sr fixed bonds and the hybrids, all of which are closing up 0.5pt higher... with some onshore demand and ongoing short covering",
-          "whyItMatters": "SOFTBK rebound→100bp MoM可能见底→onshore demand positive→KIOXIA short squeeze→summer liquidity=rebound sustainability question",
-          "relatedThreads": [
-            "SOFTBK CDS Widening",
-            "Japan Corp Stress"
-          ],
-          "tags": [
-            "SOFTBK",
-            "KIOXIA",
-            "short covering",
-            "Japan"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-05",
-          "headline": "Risk Rally→S&P+1.5% NASDAQ+2.1%→Comm+4.3%→Near Record→Oil Relief+Lower Yields→VIX 15.86 Calm",
+          "id": "sig-20260804-5",
           "topic": "Oil-Led Broad Risk Rally",
           "assetClass": "Equity",
           "direction": "Bullish",
@@ -3284,6 +4658,7 @@ window.REPORT_DATA =
           "brokers": [
             "Morgan Stanley"
           ],
+          "headline": "Risk Rally→S&P+1.5% NASDAQ+2.1%→Comm+4.3%→Near Record→Oil Relief+Lower Yields→VIX 15.86 Calm",
           "oneLine": "S&P+1.5% NASDAQ+2.1%→Comm+4.3%→ConsDisc+2.7%→S&P near record→VIX 15.86→…",
           "evidence": [
             "MS: S&P+1.5% NASDAQ+2.1%→Comm+4.3% lead→ConsDisc+2.7%→Industrials+1.9%→Energy -1.2%",
@@ -3293,24 +4668,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "Oil diplomacy risk rally→S&P near ATH→Tech+AI thesis intact→VIX 15.86=calm→copper+1.3%=growth optimism→Energy sector lag=rotation out of commodity→bullish into Aug",
           "quote": "S&P 500 approached its previous record as investors remained constructive on large-cap technology earnings and AI-related demand",
-          "whyItMatters": "Broad risk rally→S&P near ATH→AI thesis intact→但oil relief可能temporary→VIX calm→momentum into summer",
-          "relatedThreads": [
-            "KOSPI Crash",
-            "AI/Tech De-gross"
-          ],
-          "tags": [
-            "equity",
-            "S&P",
-            "tech",
-            "AI",
-            "oil relief"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-06",
-          "headline": "BEI Compression→2y -4.3bp 10y -2.2bp→1yr ZC 1.85% Low→5y5y 2.415%→Post-FOMC+Month-End Extended→Oil-Driven",
+          "id": "sig-20260804-6",
           "topic": "BEI Collapse on Oil Relief",
           "assetClass": "Macro/Rates",
           "direction": "Bullish",
@@ -3325,6 +4687,7 @@ window.REPORT_DATA =
             "Morgan Stanley",
             "BMO"
           ],
+          "headline": "BEI Compression→2y -4.3bp 10y -2.2bp→1yr ZC 1.85% Low→5y5y 2.415%→Post-FOMC+Month-End Extended→Oil-Driven",
           "oneLine": "BEI 2y -4.3bp 10y -2.2bp→1yr ZC back to 1.85% low→5y5y 2.415% middle/upper range→post-FOMC+month-end extended→energy ruined momentum",
           "evidence": [
             "MS: BEI tightened 2y-4.3bp 10y-2.2bp→front-end led in line with energy decline",
@@ -3333,23 +4696,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "BEI全面压缩→front-end led→post-FOMC/month-end extended→5y5y 2.415% fair middle→oil direction=BEI direction→1yr ZC 1.85% low→TIPS month→range trade",
           "quote": "Break-evens were perhaps extended post FOMC and month-end buying... energy ruined the story for now",
-          "whyItMatters": "BEI collapse→disinflation trade→oil fragile→TIPS month positioning→5y5y 2.415% fair→monitor oil as leading indicator",
-          "relatedThreads": [
-            "TIPS BEI Trend",
-            "Oil Spike + Iran"
-          ],
-          "tags": [
-            "TIPS",
-            "BEI",
-            "oil",
-            "5y5y"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-07",
-          "headline": "Asia IG Broadly Firmer→China 1-2bp Tighter→Japan 1-3bp Healthier→10yr NTT Duration Bid→SEA 1bp→Temasek SGD 10Y IPT 2.7%",
+          "id": "sig-20260804-7",
           "topic": "Asia IG Broad Recovery",
           "assetClass": "Asia Ig",
           "direction": "Bullish",
@@ -3365,6 +4716,7 @@ window.REPORT_DATA =
             "Barclays",
             "JEFFERIES"
           ],
+          "headline": "Asia IG Broadly Firmer→China 1-2bp Tighter→Japan 1-3bp Healthier→10yr NTT Duration Bid→SEA 1bp→Temasek SGD 10Y IPT 2.7%",
           "oneLine": "China IG 1-2bp tighter→Japan 1-3bp tighter healthier tone→10yr NTT caught bid→SEA 1bp→Temasek SGD 10Y IPT 2.7%→Summer mode",
           "evidence": [
             "HSBC: Japan firmer second half→highest-tightest→healthy real demand→10yr duration caught bid especially NTT→SOFTBK+0.5pt",
@@ -3374,24 +4726,11 @@ window.REPORT_DATA =
           ],
           "soWhat": "Asia IG全面改善→Japan最健康(highs-tights)→10yr NTT bid=长期投资者回归→Temasek supply=benchmark test→summer mode liquidity→反弹质量需验证但tone明显改善",
           "quote": "Japan had a firmer second half and closed the day at the highs/tights with some healthy and real demand supporting those moves",
-          "whyItMatters": "Asia IG全面tighter→Japan最positive→10yr duration bid=信心→Temasek supply test→summer liquidity=假信号风险",
-          "relatedThreads": [
-            "China TMT Widening",
-            "Asia IG Supply/Demand"
-          ],
-          "tags": [
-            "Asia IG",
-            "Japan",
-            "China",
-            "NTT",
-            "Temasek"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         },
         {
-          "id": "sig-20260804-08",
-          "headline": "JPM: Higher Yields Bullish for Spreads→Hyperscaler Index -7.4bp→Oracle -12bp→July Tech Supply $49bn Record→Introducing Hyperscaler Monitor",
+          "id": "sig-20260804-8",
           "topic": "JPM Credit Strategy: Yields Supportive",
           "assetClass": "Us Ig Credit",
           "direction": "Bullish",
@@ -3405,6 +4744,7 @@ window.REPORT_DATA =
           "brokers": [
             "J.P. Morgan"
           ],
+          "headline": "JPM: Higher Yields Bullish for Spreads→Hyperscaler Index -7.4bp→Oracle -12bp→July Tech Supply $49bn Record→Introducing Hyperscaler Monitor",
           "oneLine": "JPM: HG investors buy yields not spreads→hyperscalers -7.4bp Oracle -12bp→July Tech $49bn 34% record→Aug supply pause=bid",
           "evidence": [
             "JPM: Yields hyper-bolic→supportive for spreads→HG investors buy yields not spreads→long-end yields highest since Nov 2023",
@@ -3414,17 +4754,6 @@ window.REPORT_DATA =
           ],
           "soWhat": "JPM tactical bullish spreads→high yields attract insurance/Taiwan→hyperscalers recovery→Oracle swing factor→Aug pause=spread tightening窗口→但Sept supply+rate vol=temper",
           "quote": "HG investors buy yields not spreads... Long-end yields at their highest since November 2023 should be positive for spreads",
-          "whyItMatters": "JPM Credit Strategy tactical→hyperscalers+Oracle recovery→July supply absorbed→Aug pause=technical bid→但结构性问题未解",
-          "relatedThreads": [
-            "FOMC Aftermath",
-            "UST Bear Steepening"
-          ],
-          "tags": [
-            "JPM",
-            "credit strategy",
-            "hyperscalers",
-            "Oracle"
-          ],
           "date": "2026-08-04",
           "priorState": "No prior state available."
         }
@@ -3433,16 +4762,10 @@ window.REPORT_DATA =
         {
           "broker": "Morgan Stanley",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "Oil -5% diplomacy→risk rally: UST bull-steepen 2y-5.4bp 30y-4.5bp→S&P+1.5% NASDAQ+2.1% near record→ISM 55.6 beat→BEI compression→USDJPY intervention confirmed→Treasury borrowing $739bn→JGB sell-off 5y+6bp",
           "stance": "Bullish/Risk-On (Oil Relief)",
-          "key_points": [
-            "Oil -5%: Trump held off→SOH diplomatic negotiations→removed energy risk premium",
-            "UST bull-steepen: 2y-5.4bp 30y-4.5bp→10y 4.68%(-5.9bp)→ISM 55.6 beat",
-            "S&P+1.5% NASDAQ+2.1%→Comm+4.3% near record→VIX 15.86",
-            "USDJPY intervention MoF confirmed→-200+pips 156.80→BoJ Sept hike>50%",
-            "JGB: 5y+6bp 10y+2.5bp 30y unch→10y auction Tue→pension slow",
-            "BEI 2y-4.3bp 10y-2.2bp→Treasury $739bn→Wed refunding"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "Morgan Stanley 2026-08-04"
@@ -3451,15 +4774,10 @@ window.REPORT_DATA =
         {
           "broker": "HSBC",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "Credit firmer→China HY VNKRLE +1.5pt Fitch CC upgrade→Japan highs-tights→SOFTBK +0.5pt onshore→KIOXIA ~20bp tighter short squeeze→SEA front end demand→Temasek SGD 10Y IPT 2.7%→10yr NTT bid",
           "stance": "Bullish/Constructive",
-          "key_points": [
-            "VNKRLE +1.5pt Fitch CC upgraded on distressed exchange→NWD perps+1→GLP perps+1",
-            "SOFTBK sr+hybrids +0.5pt→onshore+short covering→KIOXIA ~20bp tighter nasty short squeeze",
-            "Japan firmer second half→10yr NTT caught bid→healthier vs last week",
-            "SEA IG 0-1bp tighter→India/Indo lifted→AUD quiet holiday",
-            "Temasek SGD 10Y IPT 2.7%→stable +/-5c profit-taking"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "HSBC 2026-08-04"
@@ -3468,15 +4786,10 @@ window.REPORT_DATA =
         {
           "broker": "Barclays",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "Asia IG 1-2bps tighter→China IG thin ETF lower beta→Korea/Japan/Aus 1-2bps→Asia HY mixed VEDLN outperforms→Japan Corp demand after LDN→AT1/hybrids divergence→CDS -0.5bp→Temasek SGD 10Y",
           "stance": "Neutral-Constructive",
-          "key_points": [
-            "China IG srpd 1-2 tighter→ETF better buyer lower beta→thin flow",
-            "Japan Corp: 10yr sector bottoming signs→NSANY ahead of earnings→LON demand",
-            "AT1/hybrids -0.125 to -0.375pts→divergence vs SOFTBK→fast money selling insurance hybrids",
-            "Asia HY flat to -0.125-0.25pt→VEDLN long end outperforms→cash sticky",
-            "CDS Itraxx -0.5bp 69/70→Japan CDS stable→sell CDS if widened→Temasec 10Y→Korean Air 3Y"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "Barclays 2026-08-04"
@@ -3485,15 +4798,10 @@ window.REPORT_DATA =
         {
           "broker": "J.P. Morgan",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "Credit Strategy: Higher yields=spread support→Hyperscalers -7.4bp Oracle -12bp→July Tech $49bn record→Hyperscalers +26.8bp MoM→introducing weekly hyperscaler monitor→risks: rate vol/supply/geopolitics",
           "stance": "Tactical Bullish Spreads",
-          "key_points": [
-            "Higher yields positive for spreads→HG investors buy yields not spreads",
-            "Hyperscaler -7.4bp to 146bp→first meaningful outperformance since June→Oracle -12bp",
-            "July Tech supply $49bn 34% record share→absorbed→Aug pause=bid",
-            "Hyperscalers +26.8bp MoM +41.8bp YTD→Oracle swing factor",
-            "Near-term risks: rate vol, Labor Day supply, geopolitics→weekly monitor"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "J.P. Morgan 2026-08-04"
@@ -3502,15 +4810,10 @@ window.REPORT_DATA =
         {
           "broker": "JEFFERIES",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "Asia HY edged higher→SOFTBK 36s +0.75pt→hybrids +0.25pt→Macau +0.25pt→China HY selective→COGARD 2-way VNKRLE +1.5pt→Japan IG summer mode 0-1bp→no duration buying→fast money profit-taking→liquidity worsening",
           "stance": "Constructive / Selective HY",
-          "key_points": [
-            "SOFTBK 36s +0.75pt short-covering→hybrids +0.25pt→Non-China HY +0~0.25pt",
-            "China HY: COGARD 2-way active→GLPSP +1→VNKRLE +1.5pt→WESCHI buying",
-            "Japan IG 0-1bp tighter→firmer than other Asian credit→no duration buying",
-            "Fast money profit-taking→real money trimming high beta→liquidity worsening→summer gappy",
-            "USDJPY sharp drop→Japan onshore UST buying but nothing on credit"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "JEFFERIES 2026-08-04"
@@ -3519,14 +4822,10 @@ window.REPORT_DATA =
         {
           "broker": "BMO",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "BEI lower with energy→better buying AM then selling PM→extended post-FOMC+month-end→1yr ZC 1.85% low→5y5y 2.415% middle/upper→TII feb repo heated→eyes on oil→TIPS re-opening month",
           "stance": "Neutral-Waiting (Oil-Dependent)",
-          "key_points": [
-            "BEI slid→opened lower with energy→sold off into close→post-FOMC+month-end extended",
-            "1yr ZC back to 1.85% low→5y5y 2.415% middle/upper micro range",
-            "TII 2/56 heated repo→Feb auction common→secondary not caring",
-            "All eyes on oil→TIPS bond re-opening month ahead→positioning key"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "BMO 2026-08-04"
@@ -3535,14 +4834,10 @@ window.REPORT_DATA =
         {
           "broker": "mkt (JEFF Technicals)",
           "date": "2026-08-04",
+          "assetClass": "Credit",
           "summary": "Bearish steepening→10yr>4.61/4.63=Wave III→4.75-4.85% attractive→front end preferred 2y>4.35% carry→multi-year bearish intact→steepening near exhaustion→range 4.29-4.90%",
           "stance": "Bearish Bonds Strategic / Front-End Carry",
-          "key_points": [
-            "10yr>4.61/4.63=Wave III→4.75-4.85% valuation attractive→front end 2y>4.35% carry",
-            "Multi-year bearish intact→hold >3.85/3.81→extensive rally=short opportunity",
-            "Steepening near exhaustion→range-bound to modest flattening bias",
-            "10yr range: 4.29/4.37/4.41 to 4.78/4.85/4.90 through year-end"
-          ],
+          "keyQuote": "",
           "emails": 1,
           "sourceRefs": [
             "mkt (JEFF Technicals) 2026-08-04"
@@ -3551,497 +4846,232 @@ window.REPORT_DATA =
       ],
       "dataChecks": [
         {
+          "id": "dc1",
           "topic": "Oil Decline on Diplomacy",
-          "finding": "Brent -5.0% WTI -5.6%→Trump held off→SOH negotiations→BMO confirmed",
-          "brokers_agreeing": [
-            "Morgan Stanley",
-            "BMO"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "MS+BMO一致→外交突破=risk premium removal→但BMO警告story not over"
         },
         {
+          "id": "dc2",
           "topic": "UST Bull Steepen",
-          "finding": "2y-5.4bp 30y-4.5bp→10y 4.68%→ISM 55.6 beat→Treasury borrowing $739bn",
-          "brokers_agreeing": [
-            "Morgan Stanley",
-            "mkt"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "MS+mkt一致→ISM beat→supply event ahead→front-end driven"
         },
         {
+          "id": "dc3",
           "topic": "US-Japan FX Intervention Confirmed",
-          "finding": "Japan MoF confirmed coordinated intervention→USD/JPY -200+pips→156.80",
-          "brokers_agreeing": [
-            "Morgan Stanley"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "MS: MoF正式确认→2026年首次coordinated→Bessent/Katayama/Trump supporting"
         },
         {
+          "id": "dc4",
           "topic": "SOFTBK Rebound w/ Onshore Demand",
-          "finding": "New sr fixed+hybrids +0.5pt→KIOXIA ~20bp tighter→short covering+onshore→but insurance hybrids still sold",
-          "brokers_agreeing": [
-            "HSBC",
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "三家一致确认→SOFTBK终于反弹→但AT1/hybrids divergence"
         },
         {
+          "id": "dc5",
           "topic": "Asia IG Broadly Tighter",
-          "finding": "China 1-2bp→Japan 1-3bp→SEA 1bp→10yr NTT bid→healthier tone",
-          "brokers_agreeing": [
-            "HSBC",
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Confirmed",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "三家一致→全面改善→Japan best→summer mode"
         },
         {
+          "id": "dc6",
           "topic": "Treasury Borrowing Hike $739bn",
-          "finding": "Jul-Sep net borrowing $739bn from $671bn→Wed refunding",
-          "brokers_agreeing": [
-            "Morgan Stanley"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Monitor",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "MS单一来源→Treasury official→refunding Wed=supply event"
         },
         {
+          "id": "dc7",
           "topic": "JPM Hyperscaler Recovery Call",
-          "finding": "Hyperscalers -7.4bp Oracle -12bp→first meaningful outperformance since June→July $49bn",
-          "brokers_agreeing": [
-            "J.P. Morgan"
-          ],
-          "brokers_disagreeing": [],
-          "status": "Monitor",
+          "brokers": [],
+          "consensus": "Confirmed",
           "note": "JPM单一来源→Oracle swing factor→Aug pause supportive"
         }
       ],
       "qualityLog": [],
       "tone": {
-        "dir": "firm",
-        "label": "Moderate-High (Relief Rally) | Oil Diplomacy -5%、UST Bull Steepen + ISM Beat、FX ",
-        "note": "Risk-On Relief—Oil -5% diplomacy突破=市场最佳催化剂→通胀预期回落→UST bull steepen→equity近ATH→Asia IG全面tighter→SOFTBK终于反弹→summer mode→multiple risks remain: rate vol/geopolitical fragility/supply wave→monitor rather than chase"
+        "dir": "risk-on-relief—oil--5%-diplomacy突破=市场最佳催化剂→通胀预期回落→ust-bull-steepen→equity近ath→asia-ig全面tighter→softbk终于反弹→summer-mode→multiple-risks-remain:-rate-vol/geopolitical-fragility/supply-wave→monitor-rather-than-chase",
+        "label": "Risk-On Relief—Oil -5% diplomacy突破=市场最佳催化剂→通胀预期回落→UST bull steepen→equity近ATH→Asia IG全面tighter→SOFTBK终于反弹→summer mode→multiple risks remain: rate vol/geopolitical fragility/supply wave→monitor rather than chase",
+        "note": "Oil -5% diplomacy→broad risk rally→UST bull-steepen→S&P+1.5% near ATH→Asia IG broad recovery→SOFTBK rebounds→but oil fragility+Treasury supply+summer liquidity limits conviction"
       },
       "macro": [
-        "[美数据] ism: 55.6 (vs 53.9 est)→highest since May 2022",
-        "[美数据] construction: -0.1% m/m vs +0.2% est",
-        "[美数据] rates: Bull-steepen: 2y-5.4bp 30y-4.5bp→10y 4.68%(-5.9bp)→30y 5.15%",
-        "[美数据] treasury: Q3 borrowing $739bn(was $671bn)→Wed refunding→3/6M bills tepid",
-        "[美数据] beis: 2y-4.3bp 10y-2.2bp→1yr ZC 1.85%→5y5y 2.415%",
-        "[外汇] dxy: +0.1%",
-        "[外汇] usdjpy: 156.80 (-200pips+) intervention confirmed",
-        "[外汇] eur: -0.2%",
-        "[外汇] gbp: +0.1%",
-        "[外汇] aud: +0.4%",
-        "[外汇] cny: +0.1%",
-        "[商品] brent: 85.00 area (-5.0%)",
-        "[商品] wti: ~80 (-5.6%)",
-        "[商品] gold: +0.2% $4,110",
-        "[商品] silver: +1.0%",
-        "[商品] copper: +1.3%",
-        "[股市] sp500: +1.5% near record",
-        "[股市] nasdaq: +2.1%",
-        "[股市] comm_svcs: +4.3%",
-        "[股市] cons_disc: +2.7%",
-        "[股市] energy: -1.2%",
-        "[股市] vix: 15.86 (-0.8%)",
-        "[股市] hsi: +0.48%",
-        "[股市] nifty: +0.8%",
-        "[央行] fed: ISM beat→hiking credibility→Wed refunding→Sept hike odds↓ after oil relief",
-        "[央行] boj: Sept hike >50%→JGB 5y+6bp→10y auction Tue→intervention confirmed",
-        "[央行] boe: Data flows this week→Tue meeting minutes",
-        "[地缘] US-Iran: diplomacy around SOH→Trump held off additional action→negotiations focus on reopening Strait of Hormuz→fragile",
-        "[前瞻] Mon: Japan 10y JGB auction→pricing test",
-        "[前瞻] Tue: RBA→BOE MPC minutes",
-        "[前瞻] Wed: Treasury refunding announcement→supply guidance",
-        "[前瞻] Fri: US nonfarm payrolls→Fed credibility test",
-        "[前瞻] Aug risk: TIPS re-opening month→oil geopolitics→midterms"
+        "[geopolitical] US-Iran: diplomacy around SOH→Trump held off additional action→negotiations focus on reopening Strait of Hormuz→fragile",
+        "[events_ahead] Mon: Japan 10y JGB auction→pricing test",
+        "[events_ahead] Tue: RBA→BOE MPC minutes",
+        "[events_ahead] Wed: Treasury refunding announcement→supply guidance",
+        "[events_ahead] Fri: US nonfarm payrolls→Fed credibility test",
+        "[events_ahead] Aug risk: TIPS re-opening month→oil geopolitics→midterms"
       ],
       "flow": {
         "sentiment": {
-          "dir": "firm",
-          "label": "Moderate-High (Relief Rally) | Oil Diplomacy -5%、UST Bull Steepen + ISM Beat、FX ",
-          "note": "Risk-On Relief—Oil -5% diplomacy突破=市场最佳催化剂→通胀预期回落→UST bull steepen→equity近ATH→Asia IG全面tighter→SOFTBK终于反弹→summer mode→multiple risks remain: rate vol/geopolitical fragility/supply wave→monitor rather than chase"
+          "dir": "risk-on-relief—oil--5%-diplomacy突破=市场最佳催化剂→通胀预期回落→ust-bull-steepen→equity近ath→asia-ig全面tighter→softbk终于反弹→summer-mode→multiple-risks-remain:-rate-vol/geopolitical-fragility/supply-wave→monitor-rather-than-chase",
+          "label": "Risk-On Relief—Oil -5% diplomacy突破=市场最佳催化剂→通胀预期回落→UST bull steepen→equity近ATH→Asia IG全面tighter→SOFTBK终于反弹→summer mode→multiple risks remain: rate vol/geopolitical fragility/supply wave→monitor rather than chase",
+          "note": "Oil -5% diplomacy→broad risk rally→UST bull-steepen→S&P+1.5% near ATH→Asia IG broad recovery→SOFTBK rebounds→but oil fragility+Treasury supply+summer liquidity limits conviction"
         },
-        "activeNames": [
-          {
-            "name": "SOFTBK",
-            "ticker": "SOFTBK",
-            "tone": "mixed",
-            "activity": "sr+hybrids +0.5pt",
-            "brokers": []
-          },
-          {
-            "name": "KIOXIA",
-            "ticker": "KIOXIA",
-            "tone": "buy",
-            "activity": "0.25pt ~20bp tighter",
-            "brokers": []
-          },
-          {
-            "name": "NTT",
-            "ticker": "NTT",
-            "tone": "buy",
-            "activity": "10yr caught bid",
-            "brokers": []
-          },
-          {
-            "name": "VNKRLE",
-            "ticker": "VNKRLE",
-            "tone": "mixed",
-            "activity": "1.5pt",
-            "brokers": []
-          },
-          {
-            "name": "CIMAU",
-            "ticker": "CIMAU",
-            "tone": "buy",
-            "activity": "tighter",
-            "brokers": []
-          },
-          {
-            "name": "Temasek SGD 10Y IPT 2.7%",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "Credit Flow",
-            "brokers": []
-          },
-          {
-            "name": "Korean Air 3Y CT3+90",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "Credit Flow",
-            "brokers": []
-          },
-          {
-            "name": "Itraxx Asia -0.5bp 69/70",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "China +0.25bp",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "Korea +0.25bp",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "Indon +1.25bp",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "Japan CDS stable",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "SRILAN",
-            "ticker": "SRILAN",
-            "tone": "mixed",
-            "activity": "Iran concern renewed",
-            "brokers": []
-          }
-        ],
-        "drivers": [
-          {
-            "broker": "综合",
-            "type": "ETF/HY Flow",
-            "summary": "Asia HY edged higher→SOFTBK short-covering→China HY selective VNKRLE +1.5pt→VEDLN outperforms long end→fast money profit-taking→real money trimming high beta→liquidity worsening summer mode"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "SOFTBK +0.5~0.75pt short-covering rebound"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "China differentiated: VNKRLE+1.5pt Fitch upgrade → COGARD active 2-way → GLPSP+1"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Non-China HY +0~0.25pt → India unch → Macau +0.25pt"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Fast money profit-taking spread tightening → liquidity worsening → gappy into summer"
-          },
-          {
-            "broker": "Morgan Stanley",
-            "type": "归因",
-            "summary": "VEDLN long end retail outperforms → cash sticky higher"
-          },
-          {
-            "broker": "综合",
-            "type": "Credit Flow",
-            "summary": "Asia IG broadly tighter→China IG 1-2bp ETF lower beta→Japan 1-3bp healthier→Korea/Aus 1-2bp→SEA front end demand→10yr duration bid returning→Temasek SGD 10Y supply test"
-          },
-          {
-            "broker": "综合",
-            "type": "CDS Flow",
-            "summary": "Itraxx Asia -0.5bp at 69/70→Japan CDS stable post-intervention→CTAs degrossing→interest to sell CDS if widened→basis buyers active"
-          },
-          {
-            "broker": "综合",
-            "type": "Rates Flow",
-            "summary": "Bull-steepen→front-end bid 2-5yr→long-end offered→ISM beat moderated→Treasury supply $739bn→Wed refunding→front end carry preferred mkt技术"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Oil -5% → inflation expectations↓ → front-end rally"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Treasury borrowing $739bn → supply pressure long-end"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Front end carry: 2y>4.35% 5y>4.42% preferred"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "JGB: 5y+6bp → 10y auction Tue → pension buying slow → ..."
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Month-end extended → post-FOMC buying → next: Wed refunding"
-          }
-        ]
+        "activeNames": [],
+        "drivers": []
       },
       "issuers": [
         {
+          "ticker": "SOFTBK",
           "name": "SOFTBK",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "Japan Corp",
-          "rating": "BBB+",
-          "cds_spread": "~375 (year wides area)",
-          "credit_spreads": "Seniors+hybrids +0.5pt→onshore+short covering→KIOXIA ~20bp tighter short squeeze",
-          "sentiment": "Recovering (Short Squeeze)",
-          "key_point": "SOFTBK finally rebounds→new sr fixed+hybrids +0.5pt→onshore demand+short covering→100bp MoM可能见底→但反弹性质(short vs real)需验证",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "HSBC",
             "JEFFERIES",
             "Barclays"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "SOFTBK",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "BBB+",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "KIOXIA",
           "name": "KIOXIA",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "Japan Tech",
-          "rating": "BB+",
-          "cds_spread": "—",
-          "credit_spreads": "+0.25pt→~20bp tighter from last Thu→nasty short squeeze",
-          "sentiment": "Bullish (Short Squeeze)",
-          "key_point": "KIOXIA continues outperforming→'30s +0.25pt→~20bps tighter from Thu→profit-taking mid $102→short squeeze classic",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "HSBC"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "KIOXIA",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "BB+",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "VNKRLE",
           "name": "VNKRLE",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "China HY Property",
-          "rating": "CC (Fitch upgraded)",
-          "cds_spread": "—",
-          "credit_spreads": "+1.5pt on Fitch CC upgrade after distressed debt exchange",
-          "sentiment": "Bullish",
-          "key_point": "VNKRLE +1.5pt→Fitch upgraded to CC after distressed exchange→highest gainer in China HY→HF/RM/PB buying",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "HSBC",
             "JEFFERIES"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "VNKRLE",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "CC (Fitch upgraded)",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "NTT",
           "name": "NTT",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "Japan Telecom",
-          "rating": "A",
-          "cds_spread": "—",
-          "credit_spreads": "10yr duration caught bid→tightening",
-          "sentiment": "Bullish",
-          "key_point": "NTT 10yr caught bid→duration buying returning→Japan credit healthier than most of last week→long-end investor confidence",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "HSBC"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "NTT",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "A",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "Oracle (ORCL)",
           "name": "Oracle (ORCL)",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "US Tech/Hyperscaler",
-          "rating": "A",
-          "cds_spread": "—",
-          "credit_spreads": "-12bp single-day→swing factor for hyperscaler index",
-          "sentiment": "Bullish",
-          "key_point": "Oracle -12bp→single strongest hyperscaler gainer→JPM: swing factor at 26% weight→July Tech supply $49bn absorbed→Aug pause=bid",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "J.P. Morgan"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "Oracle (ORCL",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "A",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "NSANY",
           "name": "NSANY",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "Japan Auto",
-          "rating": "BBB+",
-          "cds_spread": "—",
-          "credit_spreads": "Tightening ahead of earnings→LON demand",
-          "sentiment": "Positive",
-          "key_point": "NSANY ahead of earnings→LON demand emerging→Japan Corp 10yr sector bottoming signs",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "Barclays"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "NSANY",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "BBB+",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "VEDLN",
           "name": "VEDLN",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "India NBFC",
-          "rating": "BB+",
-          "cds_spread": "—",
-          "credit_spreads": "Long end outperforms→retail buying wave→cash sticky higher→best Asia HY",
-          "sentiment": "Bullish",
-          "key_point": "VEDLN long end outperforms→retail buying wave→cash sticky even slightly higher→spread outperformance continuing→best Asia HY name",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "Barclays",
             "HSBC"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "VEDLN",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "BB+",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
         },
         {
+          "ticker": "Temasek",
           "name": "Temasek",
+          "inFocus": false,
+          "priority": "P2",
+          "region": "Asia",
+          "ccy": "USD",
+          "assetClass": "Asia IG",
           "sector": "Singapore Sov/GLC",
-          "rating": "Aaa/AAA",
-          "cds_spread": "—",
-          "credit_spreads": "SGD 10Y IPT 2.7%→supply benchmark→testing SGD market",
-          "sentiment": "Positive (Supply)",
-          "key_point": "Temasek SGD 10Y IPT 2.7%→1st Temasek SGD bond in years→supply benchmark→SGD profit-taking in rated IG on announcement but stable",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "monitoring",
           "brokers": [
             "HSBC",
             "Barclays"
           ],
-          "date": "2026-08-04",
-          "inFocus": true,
-          "ticker": "Temasek",
-          "region": "APAC",
-          "ccy": "CNY",
-          "assetClass": "Aaa/AAA",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
           "quote": "",
           "analysis": "",
           "excludeReason": ""
@@ -4085,316 +5115,12 @@ window.REPORT_DATA =
           "quote": "Buy 2s at 4.35% and 5s at 4.42% to capture a modest rally because the valuation and carry are increasingly attractive — it's not a trend reversal"
         }
       ],
-      "top_conclusions": [
-        {
-          "id": "tc-1",
-          "headline": "Oil Diplomacy Breaks → Market Relief Rally → Risk-On",
-          "summary": "Brent -5.0%→Trump held off→SOH diplomatic negotiations→energy risk premium removal→UST bull-steepen→S&P+1.5% near ATH→broad risk-on→但BMO警告'story not over'→diplomacy fragile→oil short squeeze风险未消",
-          "score": 95,
-          "brokers": [
-            "Morgan Stanley",
-            "BMO"
-          ],
-          "assetClass": "Macro/Commodities"
-        },
-        {
-          "id": "tc-2",
-          "headline": "UST Bull Steepen: Oil Relief + ISM 55.6 Beat → Front-End Bid → Wed Refunding Pivotal",
-          "summary": "2y-5.4bp 30y-4.5bp→10y 4.68%(-5.9bp)→ISM manufacturing 55.6 highest since May 2022→Treasury Q3 borrowing $739bn(+$68bn)→Wed refunding=supply event→front end carry 2y>4.35% preferred→bearish multi-year but valuation attractive",
-          "score": 92,
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "mkt"
-          ],
-          "assetClass": "Rates"
-        },
-        {
-          "id": "tc-3",
-          "headline": "US-Japan Coordinated FX Intervention Confirmed → USD/JPY Stable 156.80 → BoJ Sept Hike >50%",
-          "summary": "Japan MoF formally confirmed coordinated US-Japan intervention→USD/JPY -200+pips→156.80→Bessent/Katayama/Trump all supporting→BoJ Sept hike probability >50%→JGB 5y+6bp→carry trade wounded→10y auction Tue→intervention sustainability debated",
-          "score": 88,
-          "brokers": [
-            "Morgan Stanley",
-            "Barclays"
-          ],
-          "assetClass": "FX"
-        },
-        {
-          "id": "tc-4",
-          "headline": "SOFTBK Finally Rebounds +0.5pt → Short Covering + Onshore → KIOXIA ~20bp Tighter",
-          "summary": "SOFTBK new sr fixed+hybrids +0.5pt→onshore demand+short covering→KIOXIA +0.25pt ~20bp tighter→100bp MoM可能见底→但AT1/hybrids divergence(insurance still sold)→OWS levels still aggressive→REBOUND需要real demand验证→10yr NTT bid=正向信号",
-          "score": 85,
-          "brokers": [
-            "HSBC",
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "assetClass": "Asia IG/Japan"
-        },
-        {
-          "id": "tc-5",
-          "headline": "Asia IG Broad Recovery → Japan Leads 1-3bp → 10yr NTT Bid → China 1-2bp Tighter → Summer Mode",
-          "summary": "Japan 1-3bp tighter highs-tights→10yr NTT duration bid returning→China IG 1-2bp ETF lower beta→SEA 1bp India/Indo→AUD resilient→Korea 1-2bp→Temasek SGD 10Y IPT 2.7% supply test→summer liquidity=gappy→反弹quality需要本周验证",
-          "score": 82,
-          "brokers": [
-            "HSBC",
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "assetClass": "Asia IG"
-        }
-      ],
-      "broker_takeaways": [
-        {
-          "broker": "Morgan Stanley",
-          "asset_class": "Multi-Asset",
-          "stance": "bullish",
-          "direction_cn": "看多",
-          "product_theme": "Oil/UST/FX/Equity — Risk-On Relief",
-          "key_takeaway_cn": "Oil -5%外交突破→risk rally→UST bull-steepen 2y-5.4bp 30y-4.5bp→S&P+1.5% near ATH→ISM 55.6 beat→USDJPY intervention confirmed→Treasury borrowing $739bn→front-end carry→Wed refunding key",
-          "why_it_matters_cn": "MS覆盖最全面跨资产→oil direction=macro direction→bull steepen quality depends on ISM beat vs oil relief→Wed refunding=volatility event"
-        },
-        {
-          "broker": "HSBC",
-          "asset_class": "Asia Credit",
-          "stance": "bullish",
-          "direction_cn": "看多",
-          "product_theme": "Asia IG/HY — Japan+SOFTBK Rebound",
-          "key_takeaway_cn": "SOFTBK +0.5pt终于反弹→onshore+short covering→KIOXIA ~20bp tighter→Japan highs-tights healthy→China HY VNKRLE +1.5pt Fitch upgrade→VEDLN retail wave→Temasek SGD 10Y IPT 2.7%→10yr NTT bid returning→healthier than all last week",
-          "why_it_matters_cn": "HSBC Asia credit全面positive→日本duration买盘回归→SOFTBK反弹+onshore需求→但summer liquidity需警惕假信号"
-        },
-        {
-          "broker": "Barclays",
-          "asset_class": "Asia IG/CDS",
-          "stance": "neutral",
-          "direction_cn": "中性",
-          "product_theme": "Asia IG — Tighter But Thin → AT1/Hybrids Divergence",
-          "key_takeaway_cn": "China IG 1-2bp tighter ETF lower beta→Korea/Japan/Aus 1-2bp→Japan Corp demand post-LON→AT1/hybrids -0.125 to -0.375pts divergence→CDS -0.5bp→VEDLN long end outperforms→Temasek+KAL supply→interest to sell CDS if widened",
-          "why_it_matters_cn": "Barclays neutral-constructive→thin flow=summer mode→AT1/hybrids vs SOFTBK divergence=交叉验证信号→10yr sector bottoming signs"
-        },
-        {
-          "broker": "J.P. Morgan",
-          "asset_class": "US Credit Strategy",
-          "stance": "bullish",
-          "direction_cn": "看多",
-          "product_theme": "US IG — Higher Yields Supportive → Hyperscalers Recovery → Aug Pause = Bid",
-          "key_takeaway_cn": "Higher yields bullish for spreads→HG investors buy yields not spreads→Hyperscalers -7.4bp Oracle -12bp first outperformance since June→July Tech supply $49bn record→Aug pause=technical bid→introducing hyperscaler weekly monitor→risks: rate vol/supply/geopolitics",
-          "why_it_matters_cn": "JPM战术性看多credit spreads→hyperscalers+Oracle recovery→但高yield=结构性支撑非持续性→Aug window有限→需monitor hyperscaler index"
-        },
-        {
-          "broker": "JEFFERIES",
-          "asset_class": "Asia HY/Japan",
-          "stance": "neutral",
-          "direction_cn": "中性",
-          "product_theme": "Asia HY — Selective → SOFTBK Short-Cover → Summer Gappy",
-          "key_takeaway_cn": "SOFTBK 36s +0.75pt short-covering→hybrids +0.25pt→China HY COGARD 2-way active→VNKRLE +1.5pt→fast money profit-taking→real money trimming high beta→liquidity worsening summer gappy→Japan IG 0-1bp summer mode→no duration buying",
-          "why_it_matters_cn": "JEFFERIES selective constructive→summer gappy=假信号风险→fast money vs real money divergence→USDJPY drop→Japan onshore only UST no credit"
-        },
-        {
-          "broker": "BMO",
-          "asset_class": "TIPS/BEI",
-          "stance": "neutral",
-          "direction_cn": "中性",
-          "product_theme": "TIPS — BEI Compression → Oil-Dependent → Aug TIPS Month",
-          "key_takeaway_cn": "BEI slid with energy→better buying AM then selling PM→post-FOMC+month-end extended→1yr ZC back to 1.85% low→5y5y 2.415% middle/upper→TII 2/56 heated repo→all eyes on oil→TIPS bond re-opening month→story not over",
-          "why_it_matters_cn": "BMO TIPS specialist→oil=BEI directional driver→5y5y 2.415% fair→Aug TIPS supply→positioning key→diplomacy fragility=双向risk"
-        }
-      ],
-      "cross_broker": [
-        {
-          "theme": "Oil Direction & Geopolitics",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO"
-          ],
-          "consensus": "Oil -5%→外交突破→risk rally catalyst",
-          "divergence": "MS: full risk-on→BMO: 'story not over'→TIPS month=oil dependent",
-          "signal": "暂时relief→但fragile→TIPS re-opening=双向gamma risk"
-        },
-        {
-          "theme": "UST Rates Direction",
-          "brokers": [
-            "Morgan Stanley",
-            "mkt (JEFF)",
-            "J.P. Morgan"
-          ],
-          "consensus": "Bull-steepen→front-end bid→ISM beat→Wed refunding pivotal",
-          "divergence": "MS: oil-led→mkt: bearish multi-year but front carry works→JPM: higher yields=spread support",
-          "signal": "一致bull-steepen→分歧在duration→front end preferred across所有brokers"
-        },
-        {
-          "theme": "SOFTBK / Japan Credit Recovery",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "consensus": "SOFTBK +0.5pt rebound→onshore+short covering→KIOXIA ~20bp tighter",
-          "divergence": "HSBC: real demand→JEFFERIES: short-covering heavy→Barclays: AT1/hybrids divergence",
-          "signal": "反弹确认→但nature unclear→需要2-3天验证→100bp MoM可能见底"
-        },
-        {
-          "theme": "Asia IG Broad Recovery",
-          "brokers": [
-            "HSBC",
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "consensus": "All regions tighter→Japan 1-3bp→China 1-2bp→SEA 1bp→10yr NTT bid",
-          "divergence": "HSBC: healthy demand→Barclays: thin flow→JEFFERIES: summer mode→no duration buying",
-          "signal": "三日最positive→Japan leads→但summer liquidity=假信号risk"
-        }
-      ],
-      "edges": [
-        {
-          "edge_type": "NON_CONSENSUS",
-          "subject_label": "JPM: Higher Yields = Bullish for Spreads (Contrarian to Conventional View)",
-          "finding": "Conventional wisdom: rising yields=negative for credit→JPM contrarian: HG investors buy YIELDS not spreads→long-end yields highest since Nov 2023→higher yields attract insurance/Taiwan buyers→hyperscalers -7.4bp confirms thesis→Oracle -12bp single-day→Aug pause=technical bid window",
-          "brokers": [
-            "J.P. Morgan"
-          ],
-          "evidence": "HG investors buy yields not spreads... Long-end yields at their highest since November 2023 should be positive for spreads... Hyperscaler index tightened to 146bp, first meaningful outperformance since early June",
-          "edge_score": 4,
-          "why_it_matters": "JPM explicit contrarian credit strategy→higher yields supportive≠higher yields negative→关键distinction in forward guidance→如果正确→Aug spread tightening窗口→如果错误→yields+spreads双重打击",
-          "basis": "Historical evidence: high all-in yield attracts fixed income buyers regardless of spread level→July $49bn Tech supply absorbed confirms demand→Hyperscaler recovery since early June=first empirical test"
-        },
-        {
-          "edge_type": "SHIFT",
-          "subject_label": "SOFTBK: From 100bp MoM Wides to +0.5pt Rebound — Capitulation Signal?",
-          "finding": "SOFTBK经历100bp MoM从325→375+→street-led selling→7/31 deepest→8/4：+0.5pt rebound with onshore demand+short covering→KIOXIA ~20bp tighter short squeeze→但AT1/hybrids仍有divergence(insurance selling)→反弹nature=short covering vs real demand→100bp MoM 可能见底",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "evidence": "New SOFTBK sr fixed bonds and hybrids closing up 0.5pt higher... with some onshore demand and ongoing short covering... KIOXIA +0.25pt ~20bps tighter from Thu... AT1/hybrids -0.125 to -0.375pts lower divergence",
-          "edge_score": 5,
-          "why_it_matters": "SOFTBK=DNT China sentiment proxy→如果100bp MoM见底→China HY最大risk premium compression trade→但如果只是short covering→summer liquidity→下个sell-off更快→onshore demand是关键信号→need 2-3 days confirm",
-          "basis": "HSBC confirmed onshore demand+short covering→Barclays confirmed divergence with insurance hybrids→JEFFERIES confirmed summer gappy→三家一致=high conviction"
-        },
-        {
-          "edge_type": "CONVICTION_GAP",
-          "subject_label": "Oil Diplomacy: -5% Relief vs 'Story Not Over' — Consensus Gap",
-          "finding": "Market consensus: oil -5%=risk premium removed→instant risk rally→BMO explicit counter-narrative: 'story not over'→TIPS re-opening month=oil direction critical→1yr ZC back to 1.85% low→5y5y 2.415% middle→任何外交破裂=sharp oil reversal→position sizing critical",
-          "brokers": [
-            "BMO",
-            "Morgan Stanley"
-          ],
-          "evidence": "All eyes on the next move in oil as we head further into TIPS bond re-opening month... energy ruined the story for now... Oil -5%: Trump held off and diplomatic negotiations have been happening around Strait of Hormuz",
-          "edge_score": 5,
-          "why_it_matters": "Oil direction=everything right now→-5% relief rally可能过分乐观→BMO's 'story not over'=implicit warning→如果oil反弹→BEI reversal→risk-off→TIPS month=volatility放大镜→双向gamma risk",
-          "basis": "MS+BMO一致确认oil-5%但BMO明确加注'story not over'→5y5y 2.415% middle/upper=BEI at fair value→diplomacy volatile→BMO TIPS specialist higher conviction on oil fragility"
-        },
-        {
-          "edge_type": "IMPLICIT",
-          "subject_label": "USDJPY Intervention Confirmed → JGB 5y+6bp → BoJ Hiking → Carry Trade Zombie?",
-          "finding": "Japan MoF confirmed coordinated intervention→USD/JPY stable 156.80→BUT JGB 5y+6bp suggests rates market expects BoJ Sept hike>50%→higher JGB yields=higher JPY carry cost→intervention fighting gravity of rate differentials→carry trade wounded not dead→10y JGB auction Tue=credibility test",
-          "brokers": [
-            "Morgan Stanley",
-            "Barclays"
-          ],
-          "evidence": "Coordinated US-Japan FX intervention confirmed by Japan's Ministry of Finance... BoJ Sept hike probability >50%... JGB 5y+6bp 10y+2.5bp 30y unch... 10yr auction Tue... pension buying slow",
-          "edge_score": 4,
-          "why_it_matters": "Intervention addresses symptom (weak JPY) not cause (rate differential)→JGB sell-off=market betting BoJ must hike→如果BoJ hikes→carry trade全面unwind→如果BoJ caves→intervention waste→10y auction=市场信心测试",
-          "basis": "2022 intervention历史:效果temporary→BoJ credibility→Bessent G20+Katayama+Trump=外部压力→JGB sell-off front-end=市场预期BoJ必须行动→逻辑链条完整"
-        },
-        {
-          "edge_type": "FIRST_CALL",
-          "subject_label": "mkt: Bearish Multi-Year But Front-End Carry Works — 'Not a Trend Reversal'",
-          "finding": "mkt(JEFFERIES技术): multi-year bearish bond intact→10yr Wave III>4.61/4.63→BUT 4.75-4.85% valuation increasingly attractive→front end preferred 2y>4.35% 5y>4.42% carry→explicitly NOT calling a trend reversal→steepening near exhaustion→range 4.29-4.90% through year-end→Wed refunding=key event",
-          "brokers": [
-            "mkt (JEFFERIES Technical)"
-          ],
-          "evidence": "Buy 2s at 4.35% and 5s at 4.42% to capture a modest rally because the valuation and carry are increasingly attractive — it's not a trend reversal... Multi-year bearish intact... hold above 3.85/3.81... extensive rally=short opportunity",
-          "edge_score": 4,
-          "why_it_matters": "Clear tactical setup within structural bearish→front-end carry trade≠duration bet→distinction between valuation attractive vs reversal→Wed refunding=supply event may accelerate→如果2y stays>4.35%=carry works→如果rally extends=short opportunity per mkt",
-          "basis": "JEFFERIES technical analysis with specific level framework→Wave III counts→range boundaries→clear risk management→actionable≠theoretical"
-        },
-        {
-          "edge_type": "UNIQUE_DATA",
-          "subject_label": "JPM Hyperscaler Monitor: July Tech Supply $49bn Record → Oracle -12bp Swing Factor → Aug Window",
-          "finding": "JPM introducing NEW weekly hyperscaler monitor→proprietary data: July Tech supply $49bn 2nd highest ever 34% total record→hyperscalers +26.8bp MoM +41.8bp YTD→Oracle -12bp single-day at 26% index weight→first meaningful outperformance since early June→Aug supply pause=technical bid window→rate vol+Sep supply+geopolitics=headwinds",
-          "brokers": [
-            "J.P. Morgan"
-          ],
-          "evidence": "Introducing a weekly hyperscaler monitor... July Tech supply $49bn second highest ever... Hyperscalers widened 26.8bp MoM... Oracle tightened 12bp... Aug pledge period pause=bid... Near-term risks: rate vol negative for spreads, post-Labor Day supply surge, geopolitics unresolved",
-          "edge_score": 3,
-          "why_it_matters": "JPM proprietary hyperscaler monitor=new data source→detailed tracking of $49bn supply absorption→Oracle swing factor analysis→Aug window opportunity→但risk list完整(rate vol/supply/geopolitics)→monitor vs trade",
-          "basis": "JPM weekly hyperscaler monitor=proprietary new product→first ever introduced→detailed single-name weights→supply calendar→risk matrix→actionable framework"
-        }
-      ],
-      "broker_shifts": [
-        {
-          "broker": "Morgan Stanley",
-          "date_from": "2026-07-31",
-          "date_to": "2026-08-04",
-          "shift": "Hawkish FOMC+PCE→Oil Relief Bullish: MS shifted from FOMC-credibility-gap narrative to oil-led risk rally→bull-steepen 2y-5.4bp 30y-4.5bp→ISM 55.6 beat→S&P near ATH→intervention confirmed→VIX 15.86",
-          "shift_type": "view_shift",
-          "product_theme": "Multi-Asset — From Hawkish Hold to Oil Relief Rally",
-          "previous_view": "FOMC hawkish hold 9-3→credibility gap→ECI+PMI+UMich triple beat→bear-steepen→30y 5.28% YTD→front-end sold",
-          "current_view": "Oil -5% diplomacy→risk rally→bull-steepen front-end→ISM 55.6 beat moderate→S&P near record→Wed refunding→front-end carry",
-          "evidence": "Bull steepen 2y-5.4bp 30y-4.5bp vs last week's twist-steepen→ISM 55.6 vs ECI 0.9%→oil -5% vs Iran nuclear→S&P+1.5% vs rotation",
-          "importance": "High"
-        },
-        {
-          "broker": "BMO",
-          "date_from": "2026-07-31",
-          "date_to": "2026-08-04",
-          "shift": "From TIPS Underperformance→BEI Compression→'Story Not Over': BMO shifted from 2-month TIPS underperformance thesis to BEI compression with oil→but explicit warning 'story not over'→1yr ZC 1.85% low→5y5y 2.415% fair",
-          "shift_type": "view_shift",
-          "product_theme": "TIPS/BEI — From Underperformance to Oil-Dependent Range",
-          "previous_view": "TIPS underperformance 2 months→BEI reversal+10bp→bullish momentum→5y5y 2.40%→2mo trend ending",
-          "current_view": "BEI slid with energy→post-FOMC+month-end extended→1yr ZC 1.85% low→5y5y 2.415% fair→oil dependent→TIPS month ahead→story not over",
-          "evidence": "BEI opened lower with energy→better buying AM→sold off into close→extended post-FOMC/month-end→eyes on oil→TIPS re-opening month",
-          "importance": "High"
-        }
-      ],
-      "alert_flags": [
-        {
-          "level": "HIGH",
-          "flag": "Oil Diplomacy Fragility — Brent -5% Relief但BMO警告'Story Not Over'",
-          "alert_type": "高危",
-          "brokers": [
-            "BMO",
-            "Morgan Stanley"
-          ],
-          "evidence": "All eyes on the next move in oil as we head further into TIPS bond re-opening month... energy ruined the story for now... Trump held off / SOH negotiations fragile",
-          "severity": "HIGH"
-        },
-        {
-          "level": "HIGH",
-          "flag": "Wed 8/5 Treasury Refunding — Q3 Borrowing $739bn (+$68bn) — Supply Event",
-          "alert_type": "高危",
-          "brokers": [
-            "Morgan Stanley"
-          ],
-          "evidence": "Treasury Jul-Sep borrowing $739bn from $671bn→Wed refunding announcement→supply guidance ahead→3/6M bills tepid→bulk of purchasing before announcement likely done",
-          "severity": "HIGH"
-        },
-        {
-          "level": "MEDIUM",
-          "flag": "SOFTBK Rebound: Short Covering Not Real Demand → AT1/Hybrids Still Diverging",
-          "alert_type": "中危",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES",
-            "Barclays"
-          ],
-          "evidence": "SOFTBK +0.5pt onshore+short covering→but AT1/hybrids -0.125 to -0.375pts→fast money selling insurance hybrids→OWS levels aggressive→summer liquidity=gappy→反弹sustainability unproven",
-          "severity": "MEDIUM"
-        },
-        {
-          "level": "MEDIUM",
-          "flag": "Japan 10y JGB Auction Tue + BoJ Sept Hike >50% → Rates Vol Cross-Asset",
-          "alert_type": "中危",
-          "brokers": [
-            "Morgan Stanley"
-          ],
-          "evidence": "BoJ Sept hike >50%→JGB 5y+6bp 10y+2.5bp→10yr auction Tue→pension buying slow→foreign demand limited→USDJPY intervention durable?",
-          "severity": "MEDIUM"
-        }
-      ]
+      "top_conclusions": [],
+      "broker_takeaways": [],
+      "cross_broker": [],
+      "edges": [],
+      "broker_shifts": [],
+      "alert_flags": []
     },
     {
       "reportDate": "2026-08-03",
@@ -16199,605 +16925,6 @@ window.REPORT_DATA =
           "topic": "CINDBK perps=中国银行risk appetite试金石",
           "point": "5% coupon+50c tightening→需求远超供给.RM参与而非仅FM/pb短线→信号质量更高.若此趋势持续→中国银行AT1整体受益",
           "quote": ""
-        }
-      ],
-      "top_conclusions": [],
-      "broker_takeaways": [],
-      "cross_broker": [],
-      "edges": [],
-      "broker_shifts": [],
-      "alert_flags": []
-    },
-    {
-      "reportDate": "2026-07-16",
-      "coverage": {
-        "emails": 11,
-        "brokers": [
-          "BMO",
-          "Barclays",
-          "Deutsche Bank",
-          "Goldman Sachs",
-          "HSBC",
-          "Jane Street",
-          "Jefferies",
-          "Morgan Stanley"
-        ],
-        "lookbackDays": 15,
-        "sourceDateNote": ""
-      },
-      "signals": [
-        {
-          "id": "sig-20260716-01",
-          "headline": "PPI连续第二日通胀下行：headline-0.3%vs预期0%,5月下修→UST Bull-Steepening(2y-6bp/10y-4bp).July hike仅2.75bp定价",
-          "topic": "June PPI Downside Surprise Confirms CPI",
-          "assetClass": "Macro",
-          "direction": "Bullish",
-          "signalType": [
-            "CONFIRMED",
-            "MOMENTUM"
-          ],
-          "action": "WATCH",
-          "impactScore": 85,
-          "conviction": "High",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "Goldman Sachs"
-          ],
-          "oneLine": "PPI-0.3% vs 0% expected,5月下修.CPI+PPI双miss→2y-6bp.July hike仅2.75bp.GS:1y1y+7bps,swap spreads widening.但$100/bbl风险仍存",
-          "evidence": [
-            "MS: PPI declined 0.3% m/m vs 0%. Core+0.2% vs+0.3%. May revised lower. 2y-5.9bp, 30y-2.5bp",
-            "BMO: Weaker inflation sent breaks lower. Dip buyers showed up. FM selling 5s/10s",
-            "GS: 1y1y+7bps. 2s10s+2bps steeper. July hike compressed to 2.75bps. Swap spreads widening"
-          ],
-          "soWhat": "CPI+PPI双miss确认通胀下行.July hike基本排除.GS:$100/桶油情境推高核心CPI 3-4bp,Houthi关闭海峡增加此风险",
-          "priorState": "CPI全面miss→Bull Steepening.July hike 50%→16%",
-          "quote": "A second consecutive downside US inflation surprise reduced near-term tightening expectations",
-          "sourceRefs": [
-            "MS Global Macro",
-            "BMO TIPS",
-            "GS Asia Macro"
-          ],
-          "threadId": "thread-cpi-relief-rally",
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-02",
-          "headline": "SOFTBK日内急剧反转：昨日-2.5pts→今日hybrids+¾-1pt short squeeze.'65s+1pt收盘零卖盘.CDS仍+4bps",
-          "topic": "SOFTBK Short Squeeze Reversal",
-          "assetClass": "Credit",
-          "direction": "Mixed",
-          "signalType": [
-            "SHIFT",
-            "MOMENTUM"
-          ],
-          "action": "TRADE_NOW",
-          "impactScore": 82,
-          "conviction": "High",
-          "brokers": [
-            "HSBC",
-            "Barclays",
-            "JEFFERIES"
-          ],
-          "oneLine": "SOFTBK日内反转:hybrids+1pt short squeeze但CDS+4bps.现金端技术性vs衍生品端对冲",
-          "evidence": [
-            "HSBC: Short squeeze in SOFTBK hybrids +¾-1pt. '65s up 1pt, cannot find sellers",
-            "Barclays: SOFTBK CDS +4bps. FM buying protection. Cash still offered",
-            "JEFFERIES: Credit underperforms stock. 1-2bps wider. RM sidelined"
-          ],
-          "soWhat": "现金端+1pt squeeze vs CDS+4bps背离.现金可能仅为技术性挤压.CDS更准确反映FM对冲需求",
-          "priorState": "SOFTBK-1-1.25pts日内/-2.5pts since Fri.FM做空cash+CDS",
-          "quote": "There was a bit of a short squeeze in SOFTBK, best evidenced in the hybrids",
-          "sourceRefs": [
-            "HSBC EOD",
-            "Barclays EOD",
-            "JEFFERIES EOD"
-          ],
-          "threadId": "thread-japan-softbk-underperform",
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-03",
-          "headline": "美伊+胡塞双重升级：Trump扩大伊朗军事行动,盘后Houthi宣布关闭Bab El-Mandeb海峡.GS:油飙$100/bbl→核心CPI+3-4bp",
-          "topic": "US-Iran-Houthi Escalation",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "SHIFT",
-            "ALERT"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 82,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "Goldman Sachs",
-            "SSA"
-          ],
-          "oneLine": "Trump扩大伊朗行动+Houthi关闭Bab El-Mandeb.昨日缓和逆转.Brent+1.2%.盘后risk-off.GS:$100/bbl→CPI+3-4bp",
-          "evidence": [
-            "MS: Trump expanding operations vs Iran. Discussed Hormuz islands. Brent+1.2%",
-            "BMO: Front-end breaks/swaps closed positive as US/Iran conflict escalated",
-            "GS: Houthis closing Bab El-Mandeb Strait pushed credit wider after hours. $100/bbl→core CPI+3-4bp",
-            "SSA: Middle East developments retain largest market-moving potential"
-          ],
-          "soWhat": "昨日缓和被逆转+新前线(胡塞).GS:$100/桶情境下政策响应远超通胀数字.地缘→石油供给瓶颈→Fed再定价演变",
-          "priorState": "特朗普撤回20%霍尔木兹通行费,地缘溢价降级",
-          "quote": "Risk-off headlines after the close regarding the potential closure of the Bab El-Mandeb Strait",
-          "sourceRefs": [
-            "MS Global Macro",
-            "GS Asia Macro",
-            "SSA New Issue"
-          ],
-          "threadId": "thread-iran-escalation",
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-04",
-          "headline": "BoC按兵不动于2.25%,删除加息/降息双向指引→鸽派措辞软化.Market took mildly dovish.TD预计USDCAD回撤<1.40",
-          "topic": "BoC Neutral Hold with Dovish Guidance",
-          "assetClass": "Rates",
-          "direction": "Cautious",
-          "signalType": [
-            "SHIFT"
-          ],
-          "action": "WATCH",
-          "impactScore": 50,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "BoC hold 2.25%,removed reference to both rate cuts and consecutive hikes.CAD仅+0.1%",
-          "evidence": [
-            "GS/TD: BoC held rates at 2.25%, watered down guidance by removing reference to both rate cuts and consecutive hikes"
-          ],
-          "soWhat": "BoC淡化双向指引=通胀/增长更平衡.短期对CAD影响有限",
-          "priorState": "BoC此前声明提及双向风险(加息和降息)",
-          "quote": "BoC watered down its guidance by removing the reference to both rate cuts and consecutive hikes",
-          "sourceRefs": [
-            "TD Securities via GS"
-          ],
-          "threadId": null,
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-05",
-          "headline": "亚洲IG与美股脱钩加剧：spreads 1-3bps wider,RM在场外.CPI/PPI双rally未传导.GS:equity/credit beta divergence为核心主题",
-          "topic": "Asia IG Diverging from Rally",
-          "assetClass": "Credit",
-          "direction": "Cautious",
-          "signalType": [
-            "DIVERGENCE",
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 70,
-          "conviction": "Medium",
-          "brokers": [
-            "Barclays",
-            "JEFFERIES",
-            "HSBC",
-            "Goldman Sachs"
-          ],
-          "oneLine": "Asia IG 1-3bps wider,credit underperform.RM sidelined.China TMT全球卖家回归.GS视equity/credit背离为核心主题",
-          "evidence": [
-            "Barclays: China IG not happy as equities. TMT 1-2bps wider. Global sellers back on China TMT",
-            "JEFFERIES: Credit underperforms stock. 1-2bps wider. RM sidelined. Street trimming",
-            "HSBC: Mixed tone. Japan firmer second half. SEA IG 0-2bps tighter",
-            "GS: China TMT selling eased. Global sellers back. Equity/credit beta divergence key theme"
-          ],
-          "soWhat": "GS明确将equity/credit背离列为宏观核心主题.CPI+PPI仍不能吸引RM回归.China TMT全球卖家回归值得警惕",
-          "priorState": "亚洲IG有序走弱1-3bps wider.front-end支撑",
-          "quote": "China IG credit was not as happy as equities. Global sellers are back on China TMT",
-          "sourceRefs": [
-            "Barclays EOD",
-            "JEFFERIES EOD",
-            "HSBC EOD",
-            "GS Credit Recap"
-          ],
-          "threadId": "thread-asia-ig-resilience",
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-06",
-          "headline": "NAB AUD 3Y Senior新发:DB估FV ASW+56-57bp,预期无溢价.澳洲大行YTD已发AUD58bn senior超全年58%",
-          "topic": "NAB AUD 3Y New Issue",
-          "assetClass": "Credit",
-          "direction": "Neutral",
-          "signalType": [
-            "NEW"
-          ],
-          "action": "WATCH",
-          "impactScore": 35,
-          "conviction": "Medium",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "oneLine": "NAB AUD 3Y FRN/Fixed.DB估FV+56-57bp.预期无溢价.供给量超前",
-          "evidence": [
-            "DB: NAB mandated AUD 3Y. WSTPF 06/29s at DM+55bp. FV at ASW+56-57bp",
-            "DB: Major banks AUD58bn senior YTD, over 58% of year end estimate"
-          ],
-          "soWhat": "AUD IG primary良好.仅限本币,对USD IG无直接信号",
-          "priorState": "NAB为新发.前日United Energy AUD 5Y pricing",
-          "quote": "We see fair value for NAB 3Y at ASW+56-57bp. Expect little to no new issue concession",
-          "sourceRefs": [
-            "DB Aussie Credit Desk"
-          ],
-          "threadId": null,
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-07",
-          "headline": "Warsh重分类AI基建为通胀威胁：与关税/能源危机并列.此前AI=deflationary tech→叙事转向.GS desk提出'保险加息'假说",
-          "topic": "Warsh Reclassifies AI as Inflationary",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "SHIFT",
-            "NON_CONSENSUS"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 76,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "Warsh将AI基建重分类为通胀威胁(与关税/能源并列).GS:现在加息可避免更严重紧缩.'保险加息'假说",
-          "evidence": [
-            "GS Credit Desk: Warsh reclassified AI infrastructure as inflationary threat (tariffs+energy crisis+AI)",
-            "GS: Hypothesis — if FED hikes now, prevents more severe prolonged tightening later. Insurance hike?",
-            "Bloomberg: Warsh cools talk that AI boom is spurring inflation (counter-narrative)"
-          ],
-          "soWhat": "AI deflation→inflation重分类=叙事层面重大转变.若被接受改变:1)科技股估值 2)Fed降息时点 3)利率终点.Bloomberg counter-narrative需核实",
-          "priorState": "AI被视为提升生产力→deflationary force→有利于Fed降息叙事",
-          "quote": "Interesting shift from Warsh with AI infrastructure being reclassified as inflationary threat",
-          "sourceRefs": [
-            "GS Credit Recap",
-            "GS Asia Macro",
-            "Bloomberg"
-          ],
-          "threadId": null,
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-08",
-          "headline": "美元信用risk-on确认：CDX IG-0.78bp/CDX HY+15cts.Money centers-3bps.$24.2bn IG供给充分吸收.与亚洲反向",
-          "topic": "USD Credit Risk-On vs Asia Wider",
-          "assetClass": "Credit",
-          "direction": "Bullish",
-          "signalType": [
-            "CONFIRMED",
-            "MOMENTUM"
-          ],
-          "action": "WATCH",
-          "impactScore": 72,
-          "conviction": "High",
-          "brokers": [
-            "Goldman Sachs",
-            "Jane Street"
-          ],
-          "oneLine": "CDX IG-0.78bp/HY+15cts.Money centers-3bps despite $24.2bn供给.IG ETF偏买.transatlantic分化",
-          "evidence": [
-            "GS: CDX IG -.78bps, HY +15cts. IG cash -1bp. Money centers -3bps despite GS/MS/JPM supply. $24.2bn/5 deals",
-            "Jane Street: IG ETFs skewed to buyers. Credit spreads tighter across board (Comms -2.1bp led)"
-          ],
-          "soWhat": "美元信用与亚洲完全相反—$24.2bn供给被顺利吸收.Transatlantic信用分化:US risk-on vs Asia drifting wider",
-          "priorState": "CPI后US IG小幅走强.Money center bank供给待消化",
-          "quote": "Macro credit continued to rebound. Money centers -3bps tighter despite new issue supply",
-          "sourceRefs": [
-            "GS Credit Recap",
-            "Jane Street ETF"
-          ],
-          "threadId": "thread-us-asia-credit-divergence",
-          "date": "2026-07-16"
-        },
-        {
-          "id": "sig-20260716-09",
-          "headline": "Jane Street ETF flows: IG偏买,TIPS+可转债净流入.HY XBB流入vsHYG流出.EM:TW/Korea流入vsEM ex-China流出",
-          "topic": "ETF Flow Signals",
-          "assetClass": "Macro",
-          "direction": "Mixed",
-          "signalType": [
-            "FLOW"
-          ],
-          "action": "WATCH",
-          "impactScore": 55,
-          "conviction": "Medium",
-          "brokers": [
-            "Jane Street"
-          ],
-          "oneLine": "FI ETF:IG偏买/HY混合.TIPS+可转债流入.EM rotation:TW+KR in/EM ex-China out.DM欧金融+价值流入",
-          "evidence": [
-            "Jane Street: IG ETFs skewed to buyers. HY mixed (XBB in vs HYG out). TIPS(VTIP)+convertibles(ICVT) inflows",
-            "Jane Street: EM TW inflows(EWT,FLTW)+Korea(EWY,FLKR). EM ex-China outflows(EMXC)",
-            "Jane Street: DM inflows Value(EFV),Europe Financials(EUFN). Japan(EWJ)+Australia(EWA) underperformed"
-          ],
-          "soWhat": "ETF流量确认:IG偏买与美元信用risk-on一致.HY高质量in/低质量out.EM rotation与供应链重组叙事一致",
-          "priorState": "前日无ETF流量覆盖",
-          "quote": "IG ETFs were skewed to buyers over the day",
-          "sourceRefs": [
-            "Jane Street ETF Commentary"
-          ],
-          "threadId": null,
-          "date": "2026-07-16"
-        }
-      ],
-      "brokerNotes": [
-        {
-          "broker": "Goldman Sachs",
-          "emails": 3,
-          "stance": "【最强来源3封】Credit:亚洲IG+1bp/Ex-China tighter,China TMT global sellers,Warsh AI=通胀威胁,'保险加息'假说.US IG:CDX-0.78bp,$24.2bn供给吸收.Macro:PPI+7bp,$100/bbl,Houthi海峡,equity/credit beta背离.BoC:TD鸽派",
-          "sourceRefs": [
-            "GS Credit Recap",
-            "GS Asia Macro",
-            "TD BoC"
-          ]
-        },
-        {
-          "broker": "Morgan Stanley",
-          "emails": 1,
-          "stance": "PPI downside surprise→Bull Steepening.DXY-0.4%.GBP+1.1%.美伊升级→原油+1.2%",
-          "sourceRefs": [
-            "MS Global Macro"
-          ]
-        },
-        {
-          "broker": "Jane Street",
-          "emails": 1,
-          "stance": "FI ETF:IG偏买/HY混合.TIPS+可转债流入.EM rotation:TW+SK in/EM ex-China out.DM欧金融+价值流入.Comms-2.1bp领涨信用",
-          "sourceRefs": [
-            "Jane Street ETF"
-          ]
-        },
-        {
-          "broker": "SSA",
-          "emails": 1,
-          "stance": "EDC$2bn 5yr MS+32bps.World Bank 7yr FRN SOFR+40bps.NBD 3yr SOFR+45bps.需求稳健.中东风险最大变数",
-          "sourceRefs": [
-            "SSA/BMO New Issue"
-          ]
-        },
-        {
-          "broker": "HSBC",
-          "emails": 1,
-          "stance": "Mixed.China HY unch.Japan firmer(SOFTBK squeeze).SEA IG 0-2bps tighter",
-          "sourceRefs": [
-            "HSBC EOD"
-          ]
-        },
-        {
-          "broker": "Barclays",
-          "emails": 1,
-          "stance": "China IG not happy.TMT 1-2bps wider.Global sellers back.SOFTBK CDS+4bps.CNH constructive",
-          "sourceRefs": [
-            "Barclays EOD"
-          ]
-        },
-        {
-          "broker": "JEFFERIES",
-          "emails": 1,
-          "stance": "Japan/Aus IG 1-2bps wider.RM sidelined.Hybrid insurance/AT1 weaker",
-          "sourceRefs": [
-            "JEF EOD"
-          ]
-        },
-        {
-          "broker": "BMO",
-          "emails": 1,
-          "stance": "PPI weaker→breaks lower,dip buyers.FM selling 5s/10s.BE flattened.美伊升级",
-          "sourceRefs": [
-            "BMO TIPS"
-          ]
-        },
-        {
-          "broker": "Deutsche Bank",
-          "emails": 1,
-          "stance": "NAB AUD 3Y.FV ASW+56-57bp.无溢价.AUD58bn YTD senior超58%预估",
-          "sourceRefs": [
-            "DB Aussie Credit"
-          ]
-        }
-      ],
-      "dataChecks": [
-        {
-          "id": "chk-1",
-          "type": "观点分歧",
-          "subject": "SOFTBK现金vsCDS背离",
-          "status": "Monitor",
-          "detail": "HSBC现金+1pt vs Barclays CDS+4bps"
-        },
-        {
-          "id": "chk-2",
-          "type": "观点分歧",
-          "subject": "亚洲IG:HSBC/GS中性vsBarclays/JEF偏弱",
-          "status": "Monitor",
-          "detail": "一致:RM sidelined.GS列equity/credit背离为主题"
-        },
-        {
-          "id": "chk-3",
-          "type": "数据一致",
-          "subject": "PPI miss→Bull Steepening",
-          "status": "Confirmed",
-          "detail": "MS/BMO/GS一致.July hike基本排除"
-        },
-        {
-          "id": "chk-4",
-          "type": "数据一致",
-          "subject": "美伊+胡塞升级",
-          "status": "Confirmed",
-          "detail": "MS/BMO/GS/SSA均提及.Houthi海峡关闭"
-        },
-        {
-          "id": "chk-5",
-          "type": "观点分歧",
-          "subject": "Warsh AI通胀vsBloomberg counter",
-          "status": "Monitor",
-          "detail": "GS:AI=通胀.Bloomberg:Warsh说AI不一定是通胀.需核实"
-        },
-        {
-          "id": "chk-6",
-          "type": "数据一致",
-          "subject": "USD/Asia信用分化",
-          "status": "Confirmed",
-          "detail": "GS+Jane Street:US risk-on.Barclays+JEF:Asia wider"
-        }
-      ],
-      "qualityLog": [
-        "GS Credit Recap(13KB)今日最强来源,覆盖全品种(Asia/US/CEEMEA/European AT1)",
-        "GS Asia Macro(43KB)最详细宏观,含2篇Research:Top of Mind+Oil/Fed/AI",
-        "Jane Street ETF(3KB)填补ETF flow空白,首次纳入ETF流量信号",
-        "SSA新发覆盖USD/GBP一级.EDC$2bn定价2bp内移需求稳健",
-        "GS今日3封=最强单一来源,弥补前日仅TD转发.Bloomberg counter-narrative需关注",
-        "MS全面宏观.HSBC/Barclays亚洲信用全品种.BMO TIPS单一.JEFFERIES仅Japan/Aus",
-        "mkt recap被GS替代.11封邮件/9券商/4信息维度(宏观/信用/ETF flow/新发)"
-      ],
-      "tone": {
-        "dir": "mixed",
-        "label": "PPI双确认·美伊+Houthi升级·USD/Asia信用分化·AI通胀叙事转向",
-        "note": "CPI+PPI双miss→Bull Steepening延续.但:1)美伊+Houthi→$100/桶油风险 2)Warsh AI=通胀叙事转向 3)美元信用risk-on vs亚洲wider→transatlantic分化"
-      },
-      "macro": [
-        "PPI第二日下行:headline-0.3%vs0%预期.July hike仅2.75bp.年末~1次full hike.GS:1y1y+7bps",
-        "美伊+胡塞双升级:Trump扩大行动+Houthi关闭Bab El-Mandeb.GS:$100/bbl→CPI+3-4bp",
-        "Warsh重分类AI为通胀威胁(与关税/能源并列).GS desk:'保险加息'假说",
-        "DXY-0.4%.GBP+1.1%(保守财相).NZD+1.1%(hawkish RBNZ).BoC hold 2.25%鸽派",
-        "UST bull-steepening:2y-6bp/10y-4bp/30y-2bp.Swap spreads widening.BE tightening",
-        "US equities:SPX+0.4%/NASDAQ+0.6%.CommSvcs+2.8%.semiconductor承压.PYPL+17.2%",
-        "亚洲信用:IG 1-3bps wider,RM在场外.China TMT全球卖家回归.与US IG risk-on反向",
-        "美元信用:CDX IG-0.78bp/CDX HY+15cts.$24.2bn IG供给吸收.IG ETF偏买"
-      ],
-      "flow": {
-        "sentiment": {
-          "dir": "mixed",
-          "label": "PPI双确认·美伊+Houthi升级·USD/Asia信用分化·AI通胀叙事转向",
-          "note": "CPI+PPI双miss→Bull Steepening延续.但:1)美伊+Houthi→$100/桶油风险 2)Warsh AI=通胀叙事转向 3)美元信用risk-on vs亚洲wider→transatlantic分化"
-        },
-        "activeNames": [
-          {
-            "name": "软银",
-            "ticker": "SOFTBK",
-            "tone": "mixed",
-            "activity": "hybrids+1pt squeeze但CDS+4bps背离",
-            "brokers": [
-              "HSBC",
-              "Barclays"
-            ]
-          },
-          {
-            "name": "日本保险/AT1",
-            "ticker": "Japan Insco/AT1",
-            "tone": "sell",
-            "activity": "rate rally中反而走弱,流动性差",
-            "brokers": [
-              "JEFFERIES"
-            ]
-          },
-          {
-            "name": "NAB新发",
-            "ticker": "NAB",
-            "tone": "new_issue",
-            "activity": "AUD 3Y FV+56-57bp,无溢价",
-            "brokers": [
-              "DB"
-            ]
-          }
-        ],
-        "drivers": [
-          {
-            "broker": "MS/BMO/GS",
-            "type": "基本面",
-            "summary": "CPI+PPI双miss→dovish→Bull Steepening.GS:$100/bbl油为上行风险"
-          },
-          {
-            "broker": "GS",
-            "type": "叙事",
-            "summary": "Warsh AI=通胀→叙事转向.若接受将改变科技股估值+降息时点"
-          },
-          {
-            "broker": "MS/GS/SSA",
-            "type": "事件",
-            "summary": "美伊+Houthi双升级→地缘溢价重燃.盘后risk-off"
-          },
-          {
-            "broker": "GS/Jane Street",
-            "type": "跨市场",
-            "summary": "USD风险on vs Asia wider.Transatlantic分化为今日最鲜明特征"
-          }
-        ]
-      },
-      "issuers": [
-        {
-          "ticker": "SOFTBK",
-          "name": "SoftBank Group",
-          "inFocus": false,
-          "region": "Japan",
-          "ccy": "USD",
-          "assetClass": "HY",
-          "sector": "TMT",
-          "newIssue": false,
-          "flow": "mixed",
-          "brokers": [
-            "HSBC",
-            "Barclays"
-          ],
-          "quote": "Short squeeze in hybrids +¾-1pt. '65s up 1pt no sellers",
-          "analysis": "日内反转.cash+1pt/CDS+4bps背离",
-          "excludeReason": "HY市场",
-          "sovereign": false,
-          "priority": "Medium"
-        },
-        {
-          "ticker": "NAB",
-          "name": "National Australia Bank",
-          "inFocus": false,
-          "region": "Australia",
-          "ccy": "AUD",
-          "assetClass": "IG",
-          "sector": "金融",
-          "newIssue": true,
-          "flow": "new_issue",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "quote": "FV at ASW+56-57bp. No NIC expected",
-          "analysis": "AUD本币市场,对USD IG无传导",
-          "excludeReason": "本币市场(AUD)",
-          "sovereign": false,
-          "priority": "Medium"
-        }
-      ],
-      "insights": [
-        {
-          "broker": "MS/GS",
-          "topic": "CPI+PPI双miss对dovish定价",
-          "point": "连续两次下行通胀意外为终端利率提供下行选项.但Warsh坚持通胀仍高于目标+GS$100/桶油情境提醒尾部风险.前端定价合理但中期路径依赖后续数据",
-          "quote": "A second consecutive downside US inflation surprise reduced near-term tightening expectations"
-        },
-        {
-          "broker": "Goldman Sachs",
-          "topic": "Warsh AI通胀重分类的叙事含义",
-          "point": "GS desk捕捉到Warsh将AI基建与关税/能源危机并列作为通胀威胁.此前AI=deflationary tech.此转变若被接受将改变科技股估值框架+Fed降息时点.GS'保险加息'假说提供新的对冲思路",
-          "quote": "Interesting shift from Warsh with AI infrastructure being reclassified as inflationary threat"
-        },
-        {
-          "broker": "Goldman Sachs",
-          "topic": "Equity/Credit beta背离",
-          "point": "GS Research将equity/credit beta背离列为核心宏观主题.亚洲信用在CPI+PPI双rally中持续wider而美股涨.RM summer carry+观望+China TMT global sellers.此背离若持续信用将重新定价",
-          "quote": "Equity/credit beta divergence as a key macro theme"
-        },
-        {
-          "broker": "Goldman Sachs",
-          "topic": "$100/bbl情境→Fed路径",
-          "point": "GS测算$100/桶油推高核心CPI 3-4bp,但政策冲击远超数字本身:1)供给冲击叠加AI/关税通胀叙事 2)通胀预期可能unanchor 3)Houthi海峡关闭增加现实概率.这是当前最大tail risk",
-          "quote": "A sustained $100/bbl would boost core inflation 3-4bp. Policy impact could be more significant"
-        },
-        {
-          "broker": "Jane Street",
-          "topic": "ETF流量确认的资产轮动信号",
-          "point": "IG偏买+HY高质量in/低质量out确认美元信用risk-on.EM TW/Korea inflows vs EM ex-China outflows与GS供应链重组叙事一致.欧洲金融inflow值得关注(可能是GBP新政府预期)",
-          "quote": "IG ETFs were skewed to buyers over the day"
         }
       ],
       "top_conclusions": [],
