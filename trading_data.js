@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-04 17:03 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-04 17:48 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -3871,7 +3871,7 @@ window.REPORT_DATA =
             "name": "SOFTBK (SoftBank)",
             "ticker": "SOFTBK",
             "tone": "buy",
-            "activity": "SOFTBK HY/Beta周一+0.5pt反弹，onshore demand+short covering共同推动。经历了100bp MoM（325→375+）的抛售后，street-led selling可能见底。但保险hybrids仍有卖压，AT1/hybrids divergence说明反弹质量需要2-3天验证。如果real demand接棒short covering，China HY risk premium compression trade有空间",
+            "activity": "SOFTBK HY/Beta周一+0。经历100bp MoM抛售后street selling可能见底，但保险hybr",
             "brokers": [
               "HSBC",
               "JEFFERIES",
@@ -3882,7 +3882,7 @@ window.REPORT_DATA =
             "name": "KIOXIA",
             "ticker": "KIOXIA",
             "tone": "buy",
-            "activity": "KIOXIA +0.25pt约20bp tighter，典型的short squeeze走势。Mid $102附近出现profit-taking，100bp MoM后空头回补是主要动力。但需注意：short squeeze不等于基本面改善，summer thin liquidity可能放大双向波动",
+            "activity": "KIOXIA +0。mid $102附近出现profit-taking，100bp MoM后空头回补",
             "brokers": [
               "HSBC"
             ]
@@ -3891,7 +3891,7 @@ window.REPORT_DATA =
             "name": "Temasek SGD 10Y",
             "ticker": "TEMASEK",
             "tone": "mixed",
-            "activity": "Temasek SGD 10Y benchmark新发，IPT 2.7%定价。这是本周Asia IG supply的第一个重大test：在前端carry demand强劲但long end supply pending的背景下，Temasek的需求深度决定了Asia IG能否独立于UST走势。如果book cover好，说明Asia IG demand resilience成立",
+            "activity": "Temasek SGD 10Y benchmark新发IPT 2。front-end carry demand强但summer liquidity",
             "brokers": [
               "HSBC",
               "Barclays"
@@ -3901,7 +3901,7 @@ window.REPORT_DATA =
             "name": "NTT (10yr Duration)",
             "ticker": "NTT",
             "tone": "buy",
-            "activity": "10yr NTT duration bid回归，日本healthy real demand正在买入长端。NTT是Japan IG duration demand的风向标——其成功被bid说明real money对JGB curve和Japan credit的信心在恢复。这是Asia IG周一最积极的信号之一",
+            "activity": "NTT 10yr duration bid回归，Japan real money买入长端。NTT是Japan IG duration demand风向标，在UST rally背景下是最积极的IG需求信号之一",
             "brokers": [
               "HSBC"
             ]
@@ -3910,7 +3910,7 @@ window.REPORT_DATA =
             "name": "VNKRLE (Vanke)",
             "ticker": "VNKRLE",
             "tone": "buy",
-            "activity": "VNKRLE +1.5pt领涨China HY，Fitch CC upgrade是直接催化剂。作为China property bellwether，VNKRLE的走势决定了整体China HY sentiment。但Fitch upgrade是idiosyncratic事件，不等于broad recovery——COGARD仍2-way，需要更多policy follow-through才能确认broad bid",
+            "activity": "VNKRLE +1.5pt领涨China HY，Fitch CC upgrade为直接催化剂。作为China property bellwether，与COGARD等2-way分化明显，非broad recovery",
             "brokers": [
               "HSBC",
               "JEFFERIES"
@@ -3920,7 +3920,7 @@ window.REPORT_DATA =
             "name": "VEDLN (Vedanta)",
             "ticker": "VEDLN",
             "tone": "buy",
-            "activity": "VEDLN retail wave驱动long end outperformance，month-end retail money support使cash sticky。散户bid是China HY流动性的重要来源但非机构quality demand。VEDLN的强势更多反映散户对yield的追逐，而非top-down credit view的改善",
+            "activity": "VEDLN retail wave推动long end outperformance，month-end retail 。散户追逐yield而非机构quality demand，持续性取决于retail",
             "brokers": [
               "JEFFERIES",
               "Barclays"
@@ -3930,7 +3930,7 @@ window.REPORT_DATA =
             "name": "COGARD (Country Garden)",
             "ticker": "COGARD",
             "tone": "mixed",
-            "activity": "COGARD 2-way active flow，fast money在risk-on rotation中活跃交易。与VNKRLE的directional bid不同，COGARD呈现典型的fast money双向博弈——说明market对China property的conviction仍然split，不是broad recovery信号",
+            "activity": "COGARD 2-way active flow，fast money双向博弈。与VNKRLE directional bid明显分化，conviction仍split，说明China HY反弹非系统性修复",
             "brokers": [
               "JEFFERIES"
             ]
@@ -3939,7 +3939,7 @@ window.REPORT_DATA =
             "name": "Oracle (Hyperscaler)",
             "ticker": "ORCL",
             "tone": "buy",
-            "activity": "Oracle -12bp单日swing factor（占index 26%权重），first meaningful outperformance since June。Oracle的tightening叠加Hyperscalers -7.4bp，说明US IG Tech demand在Aug supply pause前加速。但需注意：rate vol+Sep supply+geopolitics是headwinds",
+            "activity": "Oracle -12bp单日swing（占index 26%权重），first meaningful outperfor。4bp，受益于Aug pledge pause造成的technical supp",
             "brokers": [
               "JPM"
             ]
@@ -3948,7 +3948,7 @@ window.REPORT_DATA =
             "name": "KAL (Korean Air Lines)",
             "ticker": "KAL",
             "tone": "mixed",
-            "activity": "KAL new issue是Asia credit demand appetite的试金石，与Temasek SGD 10Y形成supply cluster。在summer thin liquidity环境下，新发能否被顺利吸收是检验Asia IG demand深度的key test。如果KAL+Temasek双双成功，说明Asia IG risk appetite在改善",
+            "activity": "KAL new issue是Asia credit demand试金石，与Temasek SGD 10Y形成supply cluster。在IG supply重开+UST vol双重背景下，需求吸收情况是关键观察点",
             "brokers": [
               "Barclays"
             ]
@@ -3958,52 +3958,52 @@ window.REPORT_DATA =
           {
             "broker": "MS",
             "type": "事件驱动",
-            "summary": "Oil -5%是本日最大single-day catalyst。Iran外交突破一次性移除了energy risk premium，触发UST bull-steepen、S&P+1.5%、broad risk-on。但BMO警告story not over——diplomacy breaking就是sharp reversal，TIPS month放大了oil dependency的vol"
+            "summary": "Oil -5%是本日最大catalyst，Iran外交突破移除energy risk premium，触发broad risk-on"
           },
           {
             "broker": "MS",
             "type": "基本面",
-            "summary": "UST bull steepen（2y-5.4bp/30y-4.5bp）反映前端的inflation relief最确定。ISM 55.6（vs 53.9 beat）限制了rally幅度但未扭转方向。Treasury Q3 $739bn borrowing（+$68bn）使Wed refunding成为本周最大macro事件。Front-end carry 2y>4.35% 5y>4.42%是共识preferred策略，但long end supply压力未消"
+            "summary": "UST bull steepen反映前端inflation relief最确定，ISM beat限制幅度但未扭转方向"
           },
           {
             "broker": "MS",
             "type": "技术性",
-            "summary": "Japan MoF正式确认coordinated US-Japan intervention：USD/JPY -200+pips至156.80，Bessent/Katayama/Trump协调行动。BoJ Sept hike概率>50%，JGB 5y+6bp sell-off说明market在定价policy normalization。Intervention+rate hikes构成dual tightening，carry trade wounded未死。周二10y JGB auction是intervention credibility的test"
+            "summary": "Japan MoF确认美日联合intervention，USD/JPY -200pips至156.80，BoJ Sept hike概率过半"
           },
           {
             "broker": "HSBC",
             "type": "Asia IG",
-            "summary": "Japan IG highs-tights healthy real demand领涨（1-3bp），10yr NTT duration bid returning是strongest positive signal。China IG 1-2bp ETF lower beta跟随，SEA IG 0-1bp India/Indo stable，AUD resilient。Temasek SGD 10Y IPT 2.7%是supply depth test。整体healthier than all last week，但summer liquidity gappy"
+            "summary": "Japan IG real demand领涨（1-3bp），NTT 10yr duration bid回归是最积极信号"
           },
           {
             "broker": "HSBC",
             "type": "Asia HY/Japan",
-            "summary": "SOFTBK +0.5pt onshore+short covering带动情绪修复，KIOXIA ~20bp tighter short squeeze提供momentum。VNKRLE +1.5pt由Fitch CC upgrade催化，VEDLN retail wave提供散户bid。Macau +0.25pt跟随risk-on。但Japan IG 0-1bp说明summer mode下真正的duration buying还未全面回归"
+            "summary": "SOFTBK +0.5pt onshore+short covering，KIOXIA short squeeze，VNKRLE +1.5pt CC upgrade催化"
           },
           {
             "broker": "Barclays",
             "type": "CDS/AT1",
-            "summary": "AT1/hybrids -0.125至-0.375bp divergence——insurance selling持续但SOFTBK反弹形成cross-current。CDS Itraxx -0.5bp 69/70，sell CDS if widened by supply。AT1/SOFTBK divergence是market healing的关键监测指标：如果AT1也止跌，bottom signal更强"
+            "summary": "AT1/hybrids小幅收窄但insurance selling持续，SOFTBK反弹形成cross-current"
           },
           {
             "broker": "JEFFERIES",
             "type": "Flow/Positioning",
-            "summary": "Fast money profit-taking vs real money trimming high beta形成divergence。Summer liquidity worsening gappy放大双向波动。Japan onshore UST-only无credit——USDJPY shift影响了日本资金的risk appetite。整体flow picture: 有short covering但缺real demand conviction"
+            "summary": "Fast money profit-taking与real money trimming高beta分化，summer liquidity放大波动"
           },
           {
             "broker": "JPM",
             "type": "US IG/Tech Supply",
-            "summary": "July Tech supply $49bn（34% of total record, 2nd highest）已被顺利吸收，说明IG demand depth robust。Hyperscalers -7.4bp Oracle -12bp受益于Aug pledge pause=technical bid。JPM新推出的weekly hyperscaler monitor提供proprietary data edge。但rate vol+Sep supply+geopolitics是headwinds"
+            "summary": "July Tech supply $49bn被顺利吸收，Hyperscalers -7.4bp，Oracle -12bp受益于Aug pledge pause"
           },
           {
             "broker": "BMO",
             "type": "TIPS/BEI",
-            "summary": "BEI compression由energy relief驱动：1yr ZC 1.85% low，5y5y 2.415% fair（BMO estimate）。TII 2/56 repo heated反映TIPS liquidity demand。TIPS re-opening month意味着oil direction对BEI的影响被放大——diplomacy breaking=BEI sharp reversal，TIPS是本周最好的oil hedge proxy"
+            "summary": "BEI compression由energy relief驱动，1yr ZC 1.85% low，TIPS re-opening bidirectional risk"
           },
           {
             "broker": "Barclays",
             "type": "Supply",
-            "summary": "Temasek SGD 10Y IPT 2.7%与KAL new issue形成supply cluster，test July/Aug Asia IG demand depth。在front-end carry demand强但summer liquidity薄的背景下，新发吸收情况是关键。Interest to sell CDS if widened by supply——supply-driven widening是opportunity而非panic信号"
+            "summary": "Temasek SGD 10Y IPT 2.7%与KAL新发形成supply cluster，测试Asia IG demand depth"
           }
         ]
       },
@@ -12656,7 +12656,7 @@ window.REPORT_DATA =
             "name": "US20y/US30y Long End",
             "ticker": "US20Y/US30Y",
             "tone": "sell",
-            "activity": "20y reopening tailed 0.5bp bid-to-cover 2.64.30y above 5% 12th session.Volumes below avg=sentiment not liquidation",
+            "activity": "20y reopening tailed 0。Volumes below avg=sentiment not liquidat",
             "brokers": [
               "Morgan Stanley",
               "Goldman Sachs"
