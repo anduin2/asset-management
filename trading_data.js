@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-05 08:33 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-05 09:43 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -5442,88 +5442,65 @@ window.REPORT_DATA =
           {
             "name": "SOFTBK (SoftBank)",
             "ticker": "SOFTBK",
-            "tone": "buy",
-            "activity": "SOFTBK HY/Beta周一+0。经历100bp MoM抛售后street selling可能见底，但保险hybr",
-            "brokers": [
-              "HSBC",
-              "JEFFERIES",
-              "Barclays"
-            ]
+            "tone": "volatile",
+            "activity": "SOFTBK HY/Beta 周一反弹 0.5pt，主要由 onshore demand 和 short covering 推动。经历 100bp 的 MoM 抛售后，street selling 压力可能接近见底，但保险 hybrids 仍有卖压，反弹质量需要 2-3 天来验证。",
+            "brokers": []
           },
           {
             "name": "KIOXIA",
             "ticker": "KIOXIA",
-            "tone": "buy",
-            "activity": "KIOXIA +0。mid $102附近出现profit-taking，100bp MoM后空头回补",
-            "brokers": [
-              "HSBC"
-            ]
+            "tone": "volatile",
+            "activity": "KIOXIA 上行 0.25pt 约 20bp tighter，是典型的 short squeeze 走势。mid $102 附近出现 profit-taking，100bp MoM 之后空头回补为主要驱动力，summer thin liquidity 放大了价格波动。",
+            "brokers": []
           },
           {
             "name": "Temasek SGD 10Y",
             "ticker": "TEMASEK",
-            "tone": "mixed",
-            "activity": "Temasek SGD 10Y benchmark新发IPT 2。front-end carry demand强但summer liquidity",
-            "brokers": [
-              "HSBC",
-              "Barclays"
-            ]
+            "tone": "positive",
+            "activity": "Temasek SGD 10Y benchmark 新发 IPT 2.7%，是本周 Asia IG supply 的第一个重大测试。front-end carry demand 很强但 summer liquidity 较薄，需求深度将决定 Asia IG decoupling thesis 能否成立。",
+            "brokers": []
           },
           {
             "name": "NTT (10yr Duration)",
             "ticker": "NTT",
-            "tone": "buy",
-            "activity": "NTT 10yr duration bid回归，Japan real money买入长端。NTT是Japan IG duration demand风向标，在UST rally背景下是最积极的IG需求信号之一",
-            "brokers": [
-              "HSBC"
-            ]
+            "tone": "positive",
+            "activity": "NTT 10yr duration bid 回归，Japan real money 买入长端，是 UST rally 背景下最积极的 IG 需求信号之一。NTT 作为 Japan IG duration demand 的风向标，此次回归具有指标意义。",
+            "brokers": []
           },
           {
             "name": "VNKRLE (Vanke)",
             "ticker": "VNKRLE",
-            "tone": "buy",
-            "activity": "VNKRLE +1.5pt领涨China HY，Fitch CC upgrade为直接催化剂。作为China property bellwether，与COGARD等2-way分化明显，非broad recovery",
-            "brokers": [
-              "HSBC",
-              "JEFFERIES"
-            ]
+            "tone": "positive",
+            "activity": "VNKRLE 领涨 China HY 上行 1.5pt，Fitch 将其评级从 CC 上调为直接催化剂。作为 China property 的风向标，与 COGARD 等双向分化明显，属于个股修复而非 broad recovery。",
+            "brokers": []
           },
           {
             "name": "VEDLN (Vedanta)",
             "ticker": "VEDLN",
-            "tone": "buy",
-            "activity": "VEDLN retail wave推动long end outperformance，month-end retail 。散户追逐yield而非机构quality demand，持续性取决于retail",
-            "brokers": [
-              "JEFFERIES",
-              "Barclays"
-            ]
+            "tone": "positive",
+            "activity": "VEDLN retail wave 推动 long end outperformance，month-end retail money 使得 cash 保持 sticky。散户追逐 yield 而非机构 quality demand，持续性取决于 retail flow 的惯性。",
+            "brokers": []
           },
           {
             "name": "COGARD (Country Garden)",
             "ticker": "COGARD",
             "tone": "mixed",
-            "activity": "COGARD 2-way active flow，fast money双向博弈。与VNKRLE directional bid明显分化，conviction仍split，说明China HY反弹非系统性修复",
-            "brokers": [
-              "JEFFERIES"
-            ]
+            "activity": "COGARD 呈现双向活跃 flow，fast money 多空博弈激烈。与 VNKRLE 的方向性 bid 明显分化，conviction 仍然 split，说明 China HY 反弹并非系统性修复，而是 selective。",
+            "brokers": []
           },
           {
             "name": "Oracle (Hyperscaler)",
             "ticker": "ORCL",
-            "tone": "buy",
-            "activity": "Oracle -12bp单日swing（占index 26%权重），first meaningful outperfor。4bp，受益于Aug pledge pause造成的technical supp",
-            "brokers": [
-              "JPM"
-            ]
+            "tone": "positive",
+            "activity": "Oracle 单日收窄 12bp（占 index 26% 权重），是 6 月以来 first meaningful outperformance。Hyperscalers 整体收窄 7.4bp，受益于 Aug pledge pause 造成的 technical supply crunch。",
+            "brokers": []
           },
           {
             "name": "KAL (Korean Air Lines)",
             "ticker": "KAL",
-            "tone": "mixed",
-            "activity": "KAL new issue是Asia credit demand试金石，与Temasek SGD 10Y形成supply cluster。在IG supply重开+UST vol双重背景下，需求吸收情况是关键观察点",
-            "brokers": [
-              "Barclays"
-            ]
+            "tone": "neutral",
+            "activity": "KAL new issue 是 Asia credit demand 的重要试金石，与 Temasek SGD 10Y 形成 supply cluster。在 IG supply 重开与 UST vol 的双重背景下，需求吸收情况是关键观察点。",
+            "brokers": []
           }
         ],
         "drivers": [
@@ -14228,7 +14205,7 @@ window.REPORT_DATA =
             "name": "US20y/US30y Long End",
             "ticker": "US20Y/US30Y",
             "tone": "sell",
-            "activity": "20y reopening tailed 0。Volumes below avg=sentiment not liquidat",
+            "activity": "20y reopening tailed 0.5bp bid-to-cover 2.64.30y above 5% 12th session.Volumes below avg=sentiment not liquidation",
             "brokers": [
               "Morgan Stanley",
               "Goldman Sachs"
