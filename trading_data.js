@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-05 12:05 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-05 17:04 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4308,9 +4308,9 @@ window.REPORT_DATA =
       ],
       "qualityLog": [],
       "tone": {
-        "dir": "firm",
-        "label": "未评估",
-        "note": "Bullish Risk-On Day 2 — Accelerating"
+        "dir": "pos",
+        "label": "Hormuz Deal Day 2: Oil跌破$76, S&P ATH, UST Bull-Flatten, JGB Auction Fail是最大意外",
+        "note": "Oil+Broad Risk-On Day 2加速：S&P ATH，AI semis+6.1%，PLTR+29.5%，credit $17.25bn primary轻松吸收。但JGB 10y auction fail是最大的'故事之外'事件——Japan独自bearish。Fed Paulson support hold，JOLTs miss支持dovish。BMO：BEI tumbled but dislocated from risk assets。Wednesday refunding是本周方向决定者"
       },
       "macro": [
         "US ISM Manufacturing 55.6（2022年5月以来最高）,prices paid 71.1,new orders 56.7,employment 52.8,被oil overshadow",
@@ -4323,179 +4323,103 @@ window.REPORT_DATA =
       ],
       "flow": {
         "sentiment": {
-          "dir": "firm",
-          "label": "未评估",
-          "note": "Bullish Risk-On Day 2 — Accelerating"
+          "dir": "pos",
+          "label": "Hormuz Deal Day 2: Oil跌破$76, S&P ATH, UST Bull-Flatten, JGB Auction Fail是最大意外",
+          "note": "Oil+Broad Risk-On Day 2加速：S&P ATH，AI semis+6.1%，PLTR+29.5%，credit $17.25bn primary轻松吸收。但JGB 10y auction fail是最大的'故事之外'事件——Japan独自bearish。Fed Paulson support hold，JOLTs miss支持dovish。BMO：BEI tumbled but dislocated from risk assets。Wednesday refunding是本周方向决定者"
         },
         "activeNames": [
           {
-            "name": "SOFTBK",
-            "ticker": "SOFTBK",
-            "tone": "mixed",
-            "activity": "/insurance hybrids — morning rally +1 London retrace half, C",
+            "name": "HYUELE (Hyundai Electric)",
+            "ticker": "HYUELE",
+            "tone": "positive",
+            "activity": "HYUELE 继续收窄2bp，Moody's升A3为直接催化剂。继昨晚约3bp move后连续第二日强势，street与onshore buying共同推动。作为Korea IG的demand signal具有指标意义。",
             "brokers": []
           },
           {
-            "name": "VNKRLE",
+            "name": "DAESEC (Daesung)",
+            "ticker": "DAESEC",
+            "tone": "positive",
+            "activity": "DAESEC curve近期laggard后出现street/onshore buying，overnight RM demand同步回归。Korea IG laggard catch-up trade启动，说明beta compression扩散至此前落后的名字。",
+            "brokers": []
+          },
+          {
+            "name": "Oracle / Hyperscalers",
+            "ticker": "ORCL",
+            "tone": "positive",
+            "activity": "Hyperscalers/TMT领涨credit，Oracle再收窄2-4bp。SPCX正面earnings print进一步提供支撑。Data centers firm at tights -5/10bp，但hyperscalers marginally lagged macro in afternoon。",
+            "brokers": []
+          },
+          {
+            "name": "VNKRLE (Vanke)",
             "ticker": "VNKRLE",
-            "tone": "mixed",
-            "activity": "1pt, GLP +50c, WESCHI +1.5pts, NWD perps — China HY risk-on",
+            "tone": "positive",
+            "activity": "VNKRLE连续第二日有需求，China HY risk-on扩散至更多名字。GLP/LNGFOR同步看到demand，但China IG仍是mixed（RM selling low beta）。Property beta trade selective，非broad recovery。",
             "brokers": []
           },
           {
-            "name": "GARUDA",
-            "ticker": "GARUDA",
-            "tone": "buy",
-            "activity": "— airline risk outperforming, HF+RM buying",
+            "name": "VEDLN 37 (Vedanta)",
+            "ticker": "VEDLN",
+            "tone": "positive",
+            "activity": "VEDLN 37 HF/RM需求活跃，India HY整体bid。India recent IG issues（ICICI/AXSBIN/HDFC 31s, SBIIN 30s）top-up demand持续，印度信用是Asia demand depth最強信号。",
             "brokers": []
           },
           {
-            "name": "Temasek SGD 10Y 2.65% — switching flows,",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "Credit Flow",
+            "name": "Genting Complex",
+            "ticker": "GENMMK",
+            "tone": "positive",
+            "activity": "Genting complex全线走强，RWLVCA/GENMMK/GENTMK均有good buying。作为SEA IG的风向标，Genting的强势反映Hormuz deal optimism对Asia risk appetite的传导。",
             "brokers": []
           },
           {
-            "name": "TMT",
-            "ticker": "TMT",
-            "tone": "buy",
-            "activity": "China IG — opened 1-2 tighter, RM sellers low beta, retail h",
+            "name": "INCLEN 27 / RPVIN 31",
+            "ticker": "INCLEN",
+            "tone": "positive",
+            "activity": "Ex-China HY整体+0.125-0.375pt，INCLEN与RPVIN领涨。PB+HF buying推动，India renewables故事在risk-on环境下获得额外traction。低流动性环境放大了bid intensity。",
             "brokers": []
           },
           {
-            "name": "SNE",
-            "ticker": "SNE",
-            "tone": "mixed",
-            "activity": "36 — recent laggard lifted, dealer aggressive",
-            "brokers": []
-          },
-          {
-            "name": "Japan Bank TLAC 10y — fast money selling",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "Credit Flow",
-            "brokers": []
-          },
-          {
-            "name": "SUMICH",
-            "ticker": "SUMICH",
-            "tone": "mixed",
-            "activity": "— Gotham City negative report, CDS +18 retraced to +12",
-            "brokers": []
-          },
-          {
-            "name": "Mapletree Logistics PerpNC5 3.75% / Sich",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "Credit Flow",
-            "brokers": []
-          },
-          {
-            "name": "iTraxx Asia S45 68/69 -1.00 , firm open,",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "iTraxx Aus S45 68.25/69.25 -1.50 , outpe",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "Japan S45 60.5 -0.38 , FV 62.02 -0.2 , s",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "SOFTBK",
-            "ticker": "SOFTBK",
-            "tone": "sell",
-            "activity": "CDS -5 , CLN selling quiet",
-            "brokers": []
-          },
-          {
-            "name": "SUMICH",
-            "ticker": "SUMICH",
-            "tone": "mixed",
-            "activity": "CDS 66 +18 , Gotham City report , +12 close",
-            "brokers": []
-          },
-          {
-            "name": "Sovs -0.5-1.5bps , better selling of pro",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
-            "brokers": []
-          },
-          {
-            "name": "China 37/37.75 -0.25, Indon 90.75/92.25 ",
-            "ticker": "",
-            "tone": "mixed",
-            "activity": "CDS Flow",
+            "name": "PLTR (Palantir)",
+            "ticker": "PLTR",
+            "tone": "positive",
+            "activity": "PLTR post-earnings +29.5%单日暴漲，领涨AI semis整体+6.1%。作为AI earnings season的风向标，PLTR超强业绩reinforce了AI capex thesis，推动tech sector +4.1%领涨S&P。",
             "brokers": []
           }
         ],
         "drivers": [
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Oil -6% Hormuz deal , risk premium removal , broad risk-on continuation"
+            "broker": "MS",
+            "type": "事件驱动",
+            "summary": "{'broker': 'MS', 'type': '事件驱动', 'note': 'Hormuz deal optimism是唯一driver。Oil -6%移除energy risk premium，触发broad risk-on。但Iran否认和平=sharp reversal risk，skeptical of rally beyond post-FOMC lows。10s on 5s10s30s fly richest since 2023，考虑scale belly shorts'}"
           },
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "UST bull-flatten 10y 4.61% , lower discount rates , spread products attractive"
+            "broker": "GS",
+            "type": "宏观",
+            "summary": "{'broker': 'GS', 'type': '宏观', 'note': 'S&P fresh ATH first since June，tech +4.1%领涨。JOLTs miss + factory orders weak支持dovish。Paulson支持hold但open mind。14bp Sept hike priced。Credit decompression: CDX IG -0.68bp, HY +10c'}"
           },
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "RM buying IG + duration interest , fundamental demand intact"
+            "broker": "BMO TIPS",
+            "type": "通胀",
+            "summary": "{'broker': 'BMO TIPS', 'type': '通胀', 'note': 'BEI 5y -5bp，与risk assets impressive dislocation。Flows skewed to better selling front end/belly，BEI curve steeper。30y TIPS hit on repo heat，street cleaning up longs via RV flows'}"
           },
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Profit-taking in beta (SOFTBK/hybrid insurance) , summer consolidation not reversal"
+            "broker": "MS Global Macro",
+            "type": "跨资产",
+            "summary": "{'broker': 'MS Global Macro', 'type': '跨资产', 'note': 'Hormuz deal hope降低near-term energy+inflation premium。Gold +0.6%, copper +1.6%, Bitcoin +0.9%同步上涨。USD flat(DXY -0.0%)，EM FX broadly gained。JGB auction fail: tail 6bp, bid-to-cover 2.56x vs prior 3.13x'}"
           },
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "New issue supply restart , Temasek SGD + China SOEs + Mapletree , absorption test"
+            "broker": "Jefferies",
+            "type": "技术",
+            "summary": "{'broker': 'Jefferies', 'type': '技术', 'note': 'UST bull-flatten，10y 4.61%进入4.61-4.73% range。secular bearish intact但front-end carry attractive。10yr above 4.51%/4.47%则path of least resistance仍为higher yields'}"
           },
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Onshore China gradually back to credit , incremental bid post rates buying"
+            "broker": "HSBC",
+            "type": "Asia Credit",
+            "summary": "{'broker': 'HSBC', 'type': 'Asia Credit', 'note': 'SEA IG very strong(2-3bp tighter)，India IG top-up demand活跃。China IG mixed(RM selling vs beta compression)，HY +0.125-0.375pt。Perps +0.25-0.375pt，Duration bid回归（PETMK curve）'}"
           },
           {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Summer liquidity thinning , JGB weak auction , primary absorption watch"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Oil diplomacy , broad risk-on , CDS tighter across Asia"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "CTAs selling index , two-way but better buying away"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Sovs -0.5-1.5bps tighter on better selling of protection"
-          },
-          {
-            "broker": "综合",
-            "type": "归因",
-            "summary": "Japan stable cyclical -1-2bps , SUMICH single-name exception"
+            "broker": "Barclays",
+            "type": "Asia Credit",
+            "summary": "{'broker': 'Barclays', 'type': 'Asia Credit', 'note': 'China IG tried to rally但rates move带来更多seller，1-2bp wider on low beta。Perp strong +0.25-0.375pt。Asia CDS -1~1.25bp。New issue: HSBC $BMARK 6NC5/11NC10, CEBI CNH 3Y 2.45%'}"
           }
         ]
       },
