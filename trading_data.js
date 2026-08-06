@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-05 17:04 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-06 08:34 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -3485,6 +3485,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "US-Iran外交突破,Trump held off,SOH谈判重启,Brent -5.0% $85,风险溢价一次性移除"
+            },
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Gold +4.1% silver +4.2% despite elevated real yields，DXY -0.2% 99.68，portfolio diversification + geopolitical demand overwhelming rates headwind，regime change：gold trading as hedge not yield-inverse"
             }
           ]
         },
@@ -3522,12 +3528,12 @@ window.REPORT_DATA =
           ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Commodity"
@@ -3547,6 +3553,18 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Bull steepen: 2y-5.4bp 30y-4.5bp,10y 4.68%,ISM 55.6 beat,Treasury $739bn"
+            },
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Hormuz，Qatar drafts short-term language，Bessent optimistic，Brent -5.9% $78.85"
+            },
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Hormuz deal near final，Iran+Oman agreed route，oil risk premium removed，DXY -0.2%，Gold +4.1%，EM rally"
             }
           ]
         },
@@ -3571,14 +3589,47 @@ window.REPORT_DATA =
               "note": "Bull-flatten: 2y-4.6/10y-6.3/30y-5.3,10y 4.61%,oil/inflation relief,BEI crash,JOLTS 7.359mn soft,Wednesday refunding focus"
             }
           ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-03",
+              "tilt": "pos",
+              "mode": "FORECAST",
+              "note": "Oil story not over，BEI，5y5y 2.415%，fragile diplomacy"
+            }
+          ]
+        },
+        {
+          "broker": "TD",
+          "points": [
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Axios: US nears Hormuz deal，strait open 60-day toll free，Iran+Oman agreed shipping route，final details under review，risk tone improved materially"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Very strong session on hopes of another truce in US-Iran saga，SEA IG +2-3bp，Asia credit surge"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Rates"
@@ -3598,6 +3649,18 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "S&P+1.5% near record,Comm+4.3%,VIX 15.86,AI thesis intact,Tech narrow bounce"
+            },
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Bull-flatten: 2y-4.6/10y-6.3/30y-5.3，10y 4.61%，oil/inflation relief"
+            },
+            {
+              "date": "2026-08-05",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "UST 10y 4.61% unchanged，2y-1.1bp，30y-0.6bp，2s30s flattener，ADP 44k miss vs Kashkari/Cook hawkish offset，refunding non-event，NFP Friday pivot"
             }
           ]
         },
@@ -3611,14 +3674,25 @@ window.REPORT_DATA =
               "note": "S&P+1.8% record,NASDAQ+2.6%,Tech+4.1%,cross-asset gold/silver/copper/bitcoin,dealer+leveraged buying,Energy-0.5%唯一跌"
             }
           ]
+        },
+        {
+          "broker": "mkt",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "Range-bound ISM overshadowed，10y 4.75-4.85% attractive，front-end prefer，steepening exhaustion"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Equity"
@@ -3649,6 +3723,12 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Japan weaker second half,profit-taking Europe in SOFTBK+insurance hybrids,overall tone firm,RM buying IG+duration"
+            },
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Panic-type buying，closing highs/tights，duration bid curves flattening，SOFTBK retraced ~half widening，SEA +2-3bp，onshore broad demand，Japan panic"
             }
           ]
         },
@@ -3660,16 +3740,33 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "COLOR",
               "note": "SOFTBK cash 36s rallied to +1 morning,London retrace half,CDS -5 60.5,rally intact but momentum fading"
+            },
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "COLOR",
+              "note": "China IG 1-2 wider RM sellers on rate rally，perps strong +0.25-0.375，SEA India top-up，CDS protection buying into NFP"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC/Barclays/JEF",
+          "points": [
+            {
+              "date": "2026-08-03",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "全面firmer，China 1-2bp，Japan 1-3bp highs-tights，10yr NTT bid，onshore back，Temasek SGD"
             }
           ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Asia HY/Japan"
@@ -3713,14 +3810,58 @@ window.REPORT_DATA =
               "note": "DXY 99.89 flat,AUD+0.7% outperforms,lower US yields offset risk,carry trades mixed"
             }
           ]
+        },
+        {
+          "broker": "Barclays/HSBC",
+          "points": [
+            {
+              "date": "2026-08-03",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Finally rebounds +0.5pt，KIOXIA ~20bp，onshore+short cover，CDS 350 area"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Japan weaker PM，profit-taking Europe in SOFTBK，overall firm，RM buying IG+duration"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Cash 36s rallied +1 morning，London retrace half，CDS -5，rally intact but momentum fading"
+            }
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "SOFTBK retracing ~half of last month's spread widening，laggard outperforming，onshore healthy demand，liquidity clearing quickly，still well off tights"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "FX"
@@ -3775,14 +3916,47 @@ window.REPORT_DATA =
               "note": "1-2bp tighter,hybrid insurance +15-25c,onshore to credit,street short cover,3-5yr banking quality bid"
             }
           ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-03",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Compression: 2y-4.3bp 10y-2.2bp，1yr ZC 1.85%，5y5y 2.415%，TIPS month ahead"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Crash 5y -5bp，dislocation from risk，front-end selling，BEI steeper，off-the-run 30y hit"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-05",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "BEI cheapened 1bp uniformly，FM/RM selling，dip buyers emerged late，5y5y 2.385%，orderly with dip bid"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Asia Credit"
@@ -3815,14 +3989,47 @@ window.REPORT_DATA =
               "note": "BEI crash 5y -5bp,dislocation from risk,front-end selling,BEI steeper,off-the-run 30y hit,basis tightened"
             }
           ]
+        },
+        {
+          "broker": "mkt/MS",
+          "points": [
+            {
+              "date": "2026-08-03",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Intervention CONFIRMED，MoF，USD/JPY -200pips 156.80，BoJ Sept>50%"
+            }
+          ]
+        },
+        {
+          "broker": "mkt",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "FIMA Repo not sell UST，154-152=buy USDJPY，sustained yen need fundamental shift，potentially >160"
+            }
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-05",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "DXY -0.2% 99.68，Gold +4.1% bid，Gold/silver all-time highs，USD weakness broad-based，lower oil+Hormuz+soft data"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Inflation"
@@ -3842,16 +4049,22 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "VIEW",
               "note": "JGB 10y auction weak tail 6bp BTC 2.56x vs 3.13x,fiscal concerns,5y outperform,30y auction Thu danger。10y +2.5bp 2.845%/30y +1bp 3.99%/5y -0.5bp 2.08%"
+            },
+            {
+              "date": "2026-08-05",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Kashkari: begin raising rates incrementally，Cook: tighten if disinflation doesn't continue，two 2026 voting members same-day deliberate hawkish counter-signal to ADP 44k miss。Market dependent on NFP Friday to resolve"
             }
           ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Rates/Japan"
@@ -3873,14 +4086,36 @@ window.REPORT_DATA =
               "note": "Temasek SGD 10Y 2.65%,Mapletree PerpNC5 3.75%,Sichuan Dev 3Y 5%,Fujian Zhanglong 5Y 3.1%,Korean Air 3Y CT3+57,EDL 5NC3 11.125%。TD: AUD supply drought supporting secondary demand"
             }
           ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-04",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "JGB 10y weak tail 6bp BTC 2.56x，fiscal concerns，30y auction Thu danger"
+            }
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-05",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "JGBs slightly firmer，5y+ sectors gave back early gains，Tokyo PM futures-led，super-long bid into 30y auction Thu"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Credit/Primary"
@@ -3889,6 +4124,1110 @@ window.REPORT_DATA =
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-08-06",
+      "coverage": {
+        "emails": 9,
+        "brokers": [
+          "BMO",
+          "Barclays",
+          "Goldman Sachs",
+          "HSBC",
+          "Jefferies",
+          "Morgan Stanley",
+          "TD Securities",
+          "Paylocity"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": "9封:BMO TIPS+Barclays Asia+GS Credit+GS Strategy+HSBC Asia+JEFFERIES Japan+MS Multi-Asset+Paylocity SPCX+TD Asia | 08-05交易日 | Hormuz 60-day+Gold+4.1%+ADP miss+Refunding in-line+NFP loom"
+      },
+      "signals": [
+        {
+          "id": "sig-20260806-1",
+          "topic": "Gold +4.1% Massive Rally Despite High Real Yields",
+          "assetClass": "Commodity",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 92,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "Gold +4.1% to all-time highs despite elevated real yields。Silver +4.2%。DXY -0.2% 99.68 + Hormuz deal = USD weakness = gold bid。Portfolio diversification demand overwhelming rates headwind",
+          "oneLine": "Gold +4.1% is a massive divergence from rates fundamentals：real yields elevated但gold拒绝下跌→weaker dollar + Hormuz deal → USD debasement trade → silver +4.2% follow-through。MS attributes to renewed demand for portfolio diversification outweighing traditional rates headwind。This is a regime-change signal：gold trading as geopolitical hedge and diversification instrument, not just real-yield inverse",
+          "evidence": [
+            "MS: Gold +4.1% silver +4.2% despite elevated real yields → weaker dollar + renewed portfolio diversification demand outweighed traditional rates headwind",
+            "MS: DXY -0.2% 99.68 → lower oil prices + softer employment data + crowded long positioning encouraged profit-taking",
+            "MS: Lower energy-risk premium from Hormuz deal + weaker dollar = EM asset support + gold tailwind"
+          ],
+          "soWhat": "Gold +4.1%单日move = extreme tail event。Gold decoupling from real yields=regime change signal→central bank buying + geopolitical hedge + dollar diversification all converging。若Payrolls Friday弱于预期=gold further rally。若gold break above all-time high decisively=positioning squeeze potential。Asia gold miners/equities follow-through likely",
+          "quote": "Gold and silver advanced despite elevated real yields, as the weaker dollar and renewed demand for portfolio diversification outweighed the traditional rates headwind",
+          "date": "2026-08-06",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260806-2",
+          "topic": "Treasury Refunding $125bn In-Line → Unchanged Guidance",
+          "assetClass": "Rates",
+          "direction": "Neutral",
+          "signalType": [
+            "INSIGHT"
+          ],
+          "action": "WATCH",
+          "impactScore": 90,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "Treasury $125bn refunding in-line：$58bn 3y + $42bn 10y + $25bn 30y → nominal coupon+FRN auction sizes unchanged 'at least next several quarters' → greater reliance on bill issuance → brief yield pop retraced",
+          "oneLine": "Refunding exactly as expected：$125bn package → maintained guidance that coupon sizes unchanged for at least next several quarters → officials continue to signal greater reliance on bill issuance → yields briefly higher post-announcement then fully retraced → market had largely anticipated the outcome。Front-end swap spreads supported by elevated bill supply + potential changes to bank capital requirements",
+          "evidence": [
+            "MS: Treasury set refunding at $125bn → retained guidance nominal coupon+FRN sizes unchanged for at least next several quarters",
+            "MS: Package $58bn 3y + $42bn 10y + $25bn 30y → continued signal of greater reliance on bill issuance",
+            "MS: Yields briefly moved higher post announcement then retraced → investors had largely anticipated → front-end swap spreads supported"
+          ],
+          "soWhat": "Refunding no-surprise=market moves on to Payrolls Friday。But bill reliance continued=front-end supply pressure→swap spread widening→2y relative value。Coupon stability is mildly positive for duration（no supply shock）but the real story is bill issuance substituting for coupon→at some point=market capacity test",
+          "date": "2026-08-06",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "sig-20260806-3",
+          "topic": "ADP 44k Miss + ISM Services Employment 47.4 Contraction → Stagflation-Lite",
+          "assetClass": "Macro",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 88,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "ADP private payrolls 44k vs 65k consensus（vs 95k June revised）→ISM services employment 47.4（contraction）→但prices paid 70.3（up）→stagflation-lite narrative。NFP Friday under intense scrutiny",
+          "oneLine": "Dual labor miss：ADP +44k far below consensus → June revised down from 95k → ISM services employment sub-index 47.4 = contraction territory。But prices paid 70.3（up）→ ISM services overall 54.1 slightly below expectations but still expansionary。Business activity + new orders 60.3/56.9 strong offsetting weak employment。Markets remained focused on Friday NFP for clarity on whether resilient demand or softer hiring dominates",
+          "evidence": [
+            "MS: ADP +44k below 65k consensus vs revised 95k June → ISM services 54.1 slightly below expectations",
+            "MS: ISM services employment 47.4 contraction → prices paid 70.3 up → business activity + new orders strong",
+            "MS: Markets focused on Friday employment report for clearer indication → resilient demand vs softer hiring"
+          ],
+          "soWhat": "ADP 44k=Payrolls Friday now loaded with asymmetry：a weak NFP could trigger sharp rally in rates + gold。Stagflation-lite narrative growing：employment softening but prices sticky→Fed 'insurance hike' logic weakening。Kashkari hawkish but data going soft→Friday NFP=pivotal。2s30s flattener positioning reflects this tension",
+          "quote": "ADP private payrolls rose 44k in July, below the 65k consensus. ISM services employment fell to 47.4, though business activity and new orders remained strong",
+          "date": "2026-08-06",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260806-4",
+          "topic": "Hormuz Deal Near Final: 60-Day Toll Free",
+          "assetClass": "Commodity/Geopolitics",
+          "direction": "Bullish",
+          "signalType": [
+            "SHIFT"
+          ],
+          "action": "WATCH",
+          "impactScore": 85,
+          "conviction": "High",
+          "brokers": [
+            "TD Securities",
+            "Morgan Stanley",
+            "HSBC"
+          ],
+          "headline": "Axios: US nears Hormuz deal → Strait open 60-day toll free → Iran+Oman agreed on shipping route → final details under review。Gold +4.1%→DXY -0.2%→…",
+          "oneLine": "Hormuz deal接近落地：Axios reports US nears deal → strait open for 60 days toll-free → Iran+Oman agreed on potential shipping route → final details under review。Oil risk premium removed→WTI -0.7% on inventory build but Brent +0.1%。Asia credit surged on optimism→SEA +2-3bp tighter。TD: 'risk tone continued to improve as Axios reported US nears Hormuz deal'",
+          "evidence": [
+            "TD: Risk tone improved as Axios reported US nears Hormuz deal where strait will be open for 60-day toll free",
+            "MS: Reports Iran+Oman agreed on potential shipping route through SOH → reduced immediate energy-risk premium → final details under review",
+            "MS: WTI -0.7% after US crude inventories rose 2.5mn barrels → Brent +0.1% after intraday volatility",
+            "HSBC: Very strong session on hopes of another truce in the US-Iran saga → SEA IG +2-3bp"
+          ],
+          "soWhat": "Hormuz从周一Trump held off→周二Qatar draft→周三Axios 60-day toll free→deal rapidly congealing。若周四final=Q3最大geopolitical tail risk正式解除→gold/silver rally justified→EM/Asia credit further upside。但细节仍在review→不可排除最后一刻breakdown。Oil below $80=global growth positive",
+          "quote": "Risk tone continued to improve as Axios reported US nears Hormuz deal where the strait will be open for 60 days toll free",
+          "date": "2026-08-06",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260806-5",
+          "topic": "Asia Credit Surge Day 3: Japan Panic-Buying Duration",
+          "assetClass": "Asia Credit",
+          "direction": "Bullish",
+          "signalType": [
+            "MOMENTUM"
+          ],
+          "action": "WATCH",
+          "impactScore": 82,
+          "conviction": "High",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES",
+            "TD"
+          ],
+          "headline": "Asia credit连续第三天surge：Japan IG -1-4bp→duration panic-buy→closing highs/tights→SOFTBK retrace ~half of last month widening→SEA +2-3bp→…",
+          "oneLine": "HSBC: closing at the highs/tights across the board→strong bid for duration→curves flattening→buying bordered at times on panic-type buying→loose inventory clearing very quickly→…",
+          "evidence": [
+            "HSBC: Closing at highs/tights → bidding bordered on panic-type buying → rush to add risk → loose inventory clearing quickly",
+            "HSBC: SOFTBK only retracing roughly half the spread widening from last month → SOEs outperforming",
+            "Barclays: China IG 1-2 wider on RM sellers taking profit on rates rally → perps +0.25-0.375 strong",
+            "Barclays: India IG 1-3bp tighter → SEA top-up demand → INDON bank seniors higher → PETMK 1-3bp tighter",
+            "JEF: 0-2bp tighter → flow turns more selling → hybrid insurance +25-35c → dealers still short covering",
+            "TD: Onshore PHILIP buying → AM selling Japan lifer subs → India complex two-way"
+          ],
+          "soWhat": "Asia credit Day 3 rush→从周一全面tighter→周二firm但tempered→周三HSBC描述为panic-type buying→risk-on acceleration into NFP。但China IG divergence（RM sellers→outflows）暗示duration bid在高beta外有选择性。SOFTBK still half-widened→仍有恢复空间。周五NFP若弱=positioning squeeze risk for shorts",
+          "quote": "Closing at the highs/tights across the board with a strong bid for duration helping curves to flatten. The buying bordered at times on panic-type buying",
+          "date": "2026-08-06",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260806-6",
+          "topic": "UST 10y 4.61% Unchanged → Payrolls Standoff",
+          "assetClass": "Rates",
+          "direction": "Neutral",
+          "signalType": [
+            "INSIGHT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 80,
+          "conviction": "High",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "UST 10y 4.61% 0.0bp→2y-1.1bp front-end outperform→30y-0.6bp→2s30s flattener→mixed data（soft ADP vs hawkish Kashkari/Cook）→…",
+          "oneLine": "UST little changed：2y -1.1bp outperform→30y -0.6bp→10y 4.61% unchanged。Soft ADP+ISM services 54.1→dovish data vs hawkish Kashkari（begin raising rates incrementally）+ Cook（tighten if disinflation doesn't continue）→perfect offset。Large futures block consistent with 2s30s flattener→options demand for protection against reduction in Fed hike pricing after payrolls+CPI。Belly/long end unchanged despite short covering in 2y futures",
+          "evidence": [
+            "MS: US rates little changed → modest front-end outperform 2y -1.1bp → 30y -0.6bp → 10y 4.61% flat",
+            "MS: Mixed soft labor data vs hawkish Fed commentary → Kashkari: begin raising rates incrementally → Cook: tighten if disinflation doesn't continue",
+            "MS: Large futures block consistent with 2s30s flattener → options demand for downside payrolls protection → focus on Friday NFP"
+          ],
+          "soWhat": "10y 4.61%=perfect standoff→dovish data hawkish Fed cancel out→refunding non-event→market waiting for Payrolls Friday。2s30s flattener positioning=bet on front-end repricing（if NFP weak→2y rally）or 30y underperformance（supply+hawkish）。From Mon 4.68%→Tue 4.61%→Wed 4.61% unchanged=consolidation before NFP breakout",
+          "quote": "US rates unchanged as mixed data and hawkish Fed commentary offset each other. Markets focused on Friday's employment report",
+          "date": "2026-08-06",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260806-7",
+          "topic": "Kashkari + Cook Hawkish: Fed Pushing Back",
+          "assetClass": "Rates/Macro",
+          "direction": "Bearish",
+          "signalType": [
+            "FLAG"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 75,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "Kashkari: 应逐步加息 → Cook: 若disinflation不延续则准备收紧 → 两位FOMC投票委员同一天hawkish → Payrolls成判断resilient demand vs soft hiring的关键",
+          "oneLine": "Fed pushback against market easing expectations：Minneapolis Fed Kashkari→policymakers should begin raising rates incrementally→Governor Cook→prepared to tighten if disinflation does not continue。两位都是2026 FOMC voting members→hawkish rhetoric在ADP 44k miss同日=有意识counter-signal。Markets now fully dependent on Friday NFP to resolve data vs rhetoric tension",
+          "evidence": [
+            "MS: Kashkari said policymakers should begin raising rates incrementally → Governor Cook reiterated prepared to tighten if disinflation didn't continue",
+            "MS: Both 2026 FOMC voting members → hawkish commentary same day as ADP miss → deliberate counter-signal",
+            "MS: Markets remained focused on Friday employment for clearer indication of whether resilient demand or softer hiring dominates outlook"
+          ],
+          "soWhat": "Fed拒绝被soft data带偏→Kashkari+Cook同天hawkish=policy put被移除→market cannot count on Fed pivot on weak data alone。若NFP beat→hawkish rhetoric validated→rates sell-off risk。若NFP miss→Fed credibility challenged→gold+rates both rally。Payrolls Friday=binary risk event",
+          "quote": "Minneapolis Fed President Kashkari said policymakers should begin raising rates incrementally, while Governor Cook reiterated she was prepared to tighten if disinflation did not continue",
+          "date": "2026-08-06",
+          "priorState": "No prior state available."
+        },
+        {
+          "id": "sig-20260806-8",
+          "topic": "Gold-Equity Disconnect: S&P -0.2% vs Gold +4.1%",
+          "assetClass": "Macro",
+          "direction": "Neutral",
+          "signalType": [
+            "INSIGHT"
+          ],
+          "action": "RISK_FLAG",
+          "impactScore": 72,
+          "conviction": "Medium",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "headline": "S&P -0.2% NASDAQ -0.8% muted → comm -2.4% energy -2.0%→healthcare +1.3% materials +1.5%→four-day re-grossing pause。Gold +4.1% stark divergence → earnings-led vs geopolitical-led",
+          "oneLine": "Equity muted after 4-day strong re-grossing：S&P -0.2%→NASDAQ -0.8%→comm services -2.4%→energy -2.0%→healthcare+1.3%/materials+1.5% outperformed→…",
+          "evidence": [
+            "MS: S&P -0.2% NASDAQ -0.8% → comm -2.4% energy -2.0% → healthcare +1.3% materials +1.5%",
+            "MS: Weakness followed strong four-day re-grossing → subdued volumes → positioning pressures eased → breadth less negative than Tech move implied",
+            "MS: Gold +4.1% silver +4.2% in stark contrast → earnings cycle vs geopolitical diversification divide"
+          ],
+          "soWhat": "Gold-equity disconnect是本周最有趣的cross-asset signal：gold says geopolitical risk/portfolio diversification urgent→equity says earnings fine positioning reset done。If gold right→equity eventually catch down。If equity right→gold fade as Hormuz finalized。NFP周五=catalyst to resolve",
+          "date": "2026-08-06",
+          "priorState": "No prior state available.",
+          "quote": ""
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Morgan Stanley",
+          "summary": "Refunding Day：Gold +4.1% massive divergence，ADP 44k miss，ISM services 54.1，employment 47.4 contraction，prices 70.3 up，Treasury $125bn refunding in-line unchanged guidance，Kashkari+Cook hawkish counterweight，UST 10y 4.61% unch，DXY -0.2% 99.68，S&P -0.2% muted。Hormuz deal near final，oil risk premium removed。JGBs firmer，30y auction Thu。Friday NFP=pivotal",
+          "stance": "Neutral",
+          "assetClass": "Multi-Asset",
+          "keySignals": [
+            "Gold +4.1%",
+            "ADP miss",
+            "Refunding in-line",
+            "Kashkari hawk"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-08-06"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "summary": "BEI cheapened 1bp uniformly，FM/RM selling，dip buyers emerged late，5y5y 2.385%，surprising given poor forwards earlier when energy spiked，front-end steady cheapening well behaved，off-the-runs okay despite net selling，selling maybe concentrated in on-the-runs",
+          "stance": "Neutral",
+          "assetClass": "Inflation/TIPS",
+          "keySignals": [
+            "BEI cheapened 1bp",
+            "5y5y 2.385%",
+            "dip buyers",
+            "orderly cheapening"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "BMO 2026-08-06"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "summary": "Asia credit surge Day 3：firmer across most markets，China HY +0.125-0.25pt GLP/VNKRLE/LNGFOR，Japan duration bid panic-type，closing highs/tights，SOFTBK retraced ~half last month widening，SEA IG +2-3bp，India IG top-up ICICI/AXSBIN/HDFC，SGD switching flows，Mapletree Perp 3.5% priced，Sichuan Dev 4.55%，AUD FRNs+corporate buying",
+          "stance": "Bullish",
+          "assetClass": "Asia Credit",
+          "keySignals": [
+            "Panic-type buying",
+            "SOFTBK half retrace",
+            "SEA +2-3bp",
+            "Mapletree 3.5%"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC 2026-08-06"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "summary": "Asia active Day 3：China IG 1-2 wider RM sellers on rate rally，perps strong +0.25-0.375，SEA India IG 1-3bp tighter top-up，AUD 1-2 tighter，Sovs Quasis profit-taking met short cover+new additions，Indon +0.25-0.75pt，PETMK 1-3bp tighter，CDS better buying protection，new issues HSBC 6NC5/11NC10+Everbright CNH+Black Peony，India NBFCs research",
+          "stance": "Neutral",
+          "assetClass": "Asia Credit",
+          "keySignals": [
+            "China IG RM outflows",
+            "perps strong",
+            "SEA top-up",
+            "CDS protection buying"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "Barclays 2026-08-06"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "summary": "Japan/Aus firm 0-2bp tighter，flow turns more selling on rate rally，Asian RM profit-taking yield，hybrid insurance +25-35c，dealers still short covering/better buying Fin side，corp side more bonds to digest，dealers using tightening to reduce long，dealers very light on inventory",
+          "stance": "Bullish",
+          "assetClass": "Japan/Aus IG",
+          "keySignals": [
+            "0-2bp tighter",
+            "hybrid +25-35c",
+            "dealers short covering",
+            "flow selling"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "JEFFERIES 2026-08-06"
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "summary": "Very active day，risk tone improved on Hormuz deal Axios report 60-day toll free，spreads broadly unch ±1-2bp，onshore buying front-end PHILIP，AM selling Japan lifer subs，India complex two-way front end，better selling 3-5Y financials after ICICI rally。AUD short-dated bank FRNs+mid-curve corp demand，hybrids absorbing May/June supply tightening 2-5bp，new TD 5y traded reoffer area",
+          "stance": "Bullish",
+          "assetClass": "Asia/AUD Credit",
+          "keySignals": [
+            "Hormuz 60-day",
+            "PHILIP offshore bid",
+            "India financials",
+            "TD new issue"
+          ],
+          "emails": 1,
+          "sourceRefs": [
+            "TD Securities 2026-08-06"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "item": "Gold +4.1% divergence",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "status": "Monitor",
+          "note": "MS唯一覆盖gold，+4.1% extreme move。无其他券商提供commodity视角，cross-check gap。BMO BEI cheapened 1bp，gold/inflation divergence"
+        },
+        {
+          "item": "Treasury $125bn refunding in-line",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "status": "Confirmed",
+          "note": "MS: set at $125bn + unchanged guidance，market already priced，brief pop retraced。一致确认non-event"
+        },
+        {
+          "item": "ADP 44k miss + ISM employment 47.4",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "status": "Confirmed",
+          "note": "MS双软数据确认。无其他券商cross-check但数据point清晰。NFP Friday需验证"
+        },
+        {
+          "item": "Hormuz deal 60-day toll free",
+          "brokers": [
+            "TD",
+            "Morgan Stanley",
+            "HSBC"
+          ],
+          "status": "Confirmed",
+          "note": "TD: Axios report，strait open 60-day，MS: Iran+Oman shipping route agreed，HSBC: hopes of another truce。三券商一致"
+        },
+        {
+          "item": "Asia credit surge Day 3",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES",
+            "TD"
+          ],
+          "status": "Confirmed",
+          "note": "四券商一致，Japan panic-buy，SEA+2-3bp，但China IG divergence（Barclays 1-2 wider vs HSBC +0.125-0.25 HY）。IG vs HY分化"
+        },
+        {
+          "item": "Kashkari + Cook hawkish",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "status": "Confirmed",
+          "note": "MS唯一覆盖Fed speak，两位voting members同天hawkish，deliberate counter-signal to soft ADP data"
+        },
+        {
+          "item": "Payrolls Friday = pivotal binary",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "status": "Monitor",
+          "note": "Market holding pattern，10y 4.61% perfect freeze，NFP breakout direction unresolved，2s30s flattener positioning=front-end repricing bet"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "mixed",
+        "label": "未评估",
+        "note": "Gold-Driven Risk Repricing — Payrolls Standoff"
+      },
+      "macro": [
+        "Treasury $125bn refunding in-line：$58bn 3y+$42bn 10y+$25bn 30y，nominal coupon+FRN sizes unchanged at least next several quarters，greater bill reliance",
+        "ADP private payrolls 44k vs 65k consensus（95k June revised），ISM services 54.1 miss，employment sub-index 47.4 contraction，prices paid 70.3 up，stagflation-lite",
+        "Kashkari: begin raising rates incrementally，Cook: prepare to tighten if disinflation doesn't continue，2026 voting members deliberate hawkish counter-signal",
+        "Hormuz deal near final：Axios reports US nears deal，strait open 60-day toll free，Iran+Oman agreed shipping route，final details under review",
+        "Gold +4.1% Silver +4.2% despite elevated real yields，DXY -0.2% 99.68，portfolio diversification + geopolitical demand overwhelming rates headwind",
+        "US crude inventories +2.5mn barrels unexpected build，WTI -0.7%。Brent +0.1% intraday vol on Hormuz headlines",
+        "JGBs firmer，5y+ sectors gave back early gains，Tokyo PM session led by futures，30y auction Thu，super-long bid into auction",
+        "Brazil central bank cut 25bp，EM easing cycle continues，supportive for EM credit carry",
+        "New Zealand unemployment 5.6% 11-year high，NZD -0.1%，labor slack reinforcing no-hike stance"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "mixed",
+          "label": "未评估",
+          "note": "Gold-Driven Risk Repricing — Payrolls Standoff"
+        },
+        "activeNames": [
+          {
+            "name": "SOFTBK",
+            "ticker": "SOFTBK",
+            "tone": "mixed",
+            "activity": "— retracing ~half of last month's widening, onshore broad de",
+            "brokers": []
+          },
+          {
+            "name": "Japan duration bid — panic-type buying, ",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "Japan lifer subs — AM selling after rall",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "China IG TMT — 1-2 wider, RM sellers tak",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "China HY GLP/VNKRLE/LNGFOR — +0.125-0.25",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "China perps — strong +0.25-0.375, driven",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "SEA",
+            "ticker": "SEA",
+            "tone": "buy",
+            "activity": "IG India ICICI/AXSBIN/HDFC — top-up buy demand, +1-3bp tight",
+            "brokers": []
+          },
+          {
+            "name": "INDON",
+            "ticker": "INDON",
+            "tone": "buy",
+            "activity": "bank seniors — +0.25-0.75pt higher, dip buyers after recent ",
+            "brokers": []
+          },
+          {
+            "name": "PETMK",
+            "ticker": "PETMK",
+            "tone": "buy",
+            "activity": "— 1-3bp tighter, dip buyers emerged after pullback",
+            "brokers": []
+          },
+          {
+            "name": "PHILIP",
+            "ticker": "PHILIP",
+            "tone": "buy",
+            "activity": "— onshore buying front-end after rates rally, offshore bid c",
+            "brokers": []
+          },
+          {
+            "name": "Japan hybrid insurance — +25-35c on rate",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "SGD Mapletree PerpNC5 3.5%",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          },
+          {
+            "name": "TD AUD 5y new issue — traded reoffer are",
+            "ticker": "",
+            "tone": "mixed",
+            "activity": "",
+            "brokers": []
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Hormuz deal 60-day toll free → geopolitical risk premium removal → risk-on acceleration Day 3"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Japan panic-type duration bid → end-of-summer positioning fear → loose inventory clearing"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "RM profit-taking in China IG → rate rally trigger selling → rotation into higher beta perps"
+          },
+          {
+            "broker": "HSBC",
+            "type": "归因",
+            "summary": "New issue pipeline restarting → Mapletree/Sichuan/HSBC AT1 → absorption test with summer liquidity"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Dealers short covering Japan hybrid insurance → very light inventory → forced buyers"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "Onshore Japan healthy broad demand → supporting quality names"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "India two-way flow → financials front-end demand → ICICI rally profit-taking in 3-5Y"
+          },
+          {
+            "broker": "",
+            "type": "归因",
+            "summary": "AUD FRN demand → short-dated bank papers absorbing → hybrid supply digestion almost done"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "name": "Gold +4.1% Regime",
+          "topic": "Gold decoupling from real yields",
+          "point": "Gold +4.1% to all-time highs despite elevated real yields，regime change：not trading as real-yield inverse but as geopolitical hedge + portfolio diversification + USD debasement。Silver +4.2% confirming。若payrolls弱，further rally。Decisive break above ATH=positioning squeeze",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "signals": [
+            "s1"
+          ],
+          "inFocus": true,
+          "ticker": "Gold +4.1% R",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "SOFTBK",
+          "topic": "Retracing half of last month's widening",
+          "point": "SOFTBK only retraced ~half of spread widening from last month，well off the tights，still solid recovery potential。HSBC: onshore healthy broad demand，liquidity clearing quickly。CDS stable，no single-name stress",
+          "brokers": [
+            "HSBC"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "SOFTBK",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Japan Lifer Subs",
+          "topic": "AM profit-taking after rally",
+          "point": "AM selling Japan lifer subs after recent strong run，profit-taking on duration bid，but fundamental bid intact，onshore broad demand backing。Dealers bidding to cover short but flow more selling today",
+          "brokers": [
+            "TD",
+            "JEFFERIES"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "Japan Lifer ",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "China IG TMT",
+          "topic": "RM outflows on rate rally",
+          "point": "China IG 1-2 wider，RM sellers taking profit on rates rally via low beta long end，higher beta perps +0.25-0.375，retail demand strong，divergence IG vs HY within China",
+          "brokers": [
+            "Barclays"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "China IG TMT",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "PHILIP (Philippines)",
+          "topic": "Onshore front-end buying",
+          "point": "Onshore PHILIP buying front-end，offshore bid constructive，yielding duration after rates rally。Sov credit improving on Hormuz optimism + EM rate cuts（Brazil -25bp）",
+          "brokers": [
+            "TD"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "PHILIP (Phil",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Mapletree PerpNC5 3.5%",
+          "topic": "Priced at lower end",
+          "point": "Mapletree Logistics PerpNC5 SGD 3.5%，priced at lower end on strong momentum，Sichuan Dev 3Y 4.55%，HSBC AT1 IPG 4.95%，primary pipeline restarting after August lull",
+          "brokers": [
+            "HSBC"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "Mapletree Pe",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "India Financials",
+          "topic": "ICICI rally profit-taking two-way",
+          "point": "ICICI rally，profit-taking in 3-5Y financials，top-up demand in seniors，India complex very active，NBFC research Barclays。Two-way flow but demand bias intact",
+          "brokers": [
+            "TD",
+            "Barclays"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "India Financ",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "PETMK (Petronas)",
+          "topic": "Dip demand across cash+CDS",
+          "point": "PETMK 1-3bp tighter，dip buyers emerged after ~10-12bp pullback，CDS also tightening，Indon bank seniors +0.25-0.75pt，SEA IG 2-3bp top-up demand",
+          "brokers": [
+            "Barclays"
+          ],
+          "signals": [
+            "s5"
+          ],
+          "inFocus": true,
+          "ticker": "PETMK (Petro",
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "Morgan Stanley",
+          "topic": "Gold +4.1% Regime Change: The Signal vs Noise Problem",
+          "point": "Gold +4.1%单日move=daily return尾部~3.5 sigma。在高real yields背景下gold本该下跌而非暴涨，这意味着gold正在从real-yield inverse regime transition到geopolitical hedge + USD debasement + central bank diversification regime。若此regime change成立，gold在risk-on和risk-off环境下都可能上涨：risk-on=DXY weak，gold bid，risk-off=geopolitical hedge，gold bid。对AUM而言=gold tactical allocation urgency。但单日extreme move也可能是short squeeze/positioning noise而非signal，需观察后续2-3天continuation",
+          "quote": "Gold and silver advanced despite elevated real yields, as the weaker dollar and renewed demand for portfolio diversification outweighed the traditional rates headwind"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "topic": "Treasury Bill Reliance: The Hidden Duration Time Bomb",
+          "point": "Treasury refunding确认：nominal coupon+FRN sizes unchanged at least next several quarters，但继续signal greater reliance on bill issuance。Bill reliance=short-term fix with longer-tail risk：when Treasury eventually needs to extend duration，coupon supply shock，curve bear steepening。同时bill supply expansion=front-end swap spread widening。Market conditioned to non-event but structural duration risk building in background—not immediate but eventually crystallizes",
+          "quote": "Treasury officials continue to signal greater reliance on bill issuance"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "topic": "Stagflation-Lite: The Messy Middle",
+          "point": "ADP 44k miss（vs 65k consensus, 95k June revised）+ ISM services employment 47.4 contraction + prices 70.3 rising = classic stagflation-lite signal。But ISM business activity + new orders 60.3/56.9 strong，demand resilience vs labor softening。Kashkari+Cook deliberate hawkish same-day pushback=they see the growth slowdown but still worried about sticky inflation，policy paralysis risk。This 'messy middle'=worst environment for markets，data too soft to hike but inflation too sticky to cut，NFP Friday resolution urgent but may not resolve the tension",
+          "quote": "ADP rose 44k vs 65k consensus. ISM services employment fell to 47.4 contraction territory, but business activity and new orders remained strong"
+        },
+        {
+          "broker": "HSBC / Barclays / JEFFERIES / TD",
+          "topic": "Asia Credit Day 3 Panic: FOMO into NFP",
+          "point": "HSBC用panic-type buying描述，连续三天risk-on加速，Japan duration bid，SOFTBK retraced half widening，SEA +2-3bp，dealers still short，rising FOMO sentiment。但China IG RM sellers 1-2 wider=divergence信号，说明部分投资者在NFP前选择离场而非加仓。HSBC vs Barclays divergence：one sees panic-buying the other sees RM selling，information edge：NFP Friday=pivotal。Strategically：若NFP弱，short squeeze，若NFP强，China RM sellers right，wider。Pre-NFP neutral delta prudent",
+          "quote": "The buying bordered at times on panic-type buying as accounts rushed to add risk. Loose inventory clearing very quickly"
+        },
+        {
+          "broker": "TD / Morgan Stanley / HSBC",
+          "topic": "Hormuz Deal Final: From Headline to Reality",
+          "point": "三天trajectory：Mon Trump held off，Tue Qatar drafted language，Wed Axios 60-day toll free，deal accelerating toward final。TD: 'risk tone continued to improve'，HSBC: 'hopes of another truce'，MS: 'final details under review'。If finalized Thu/Fri=Q3最大geopolitical tail risk正式解除，gold surge justified，EM/Asia credit further upside。But market partly priced（three-day rally），actual deal announcement可能sell-the-fact。Payrolls+NFP Friday overshadow deal finalization",
+          "quote": "Risk tone continued to improve as Axios reported US nears Hormuz deal where the strait will be open for 60 days toll free"
+        },
+        {
+          "broker": "Morgan Stanley / Multi-Broker Synthesis",
+          "topic": "NFP Friday Binary: Cross-Asset Positioning Map",
+          "point": "NFP Friday is ultimate binary this week。Scenario A（弱NFP）：ADP miss validated，Kashkari/Cook hawkish stance undermined，2y rally front-end，gold further surge，Asia credit short squeeze，USDJPY below 154。Scenario B（强NFP）：Fed hawkish validated，rates sell-off 10y test 4.75-4.85%，gold fade，Asia credit sell-off，DXY bounce。Scenario C（mixed）：current standoff continues，range-bound into weekend。Governmental employment skews data higher（summer seasonal）but ADP miss=warning。Positioning: 2s30s flattener options demand for downside payrolls protection=market leaning Scenario A",
+          "quote": "Markets remained focused on Friday's employment report for clearer indication of whether resilient demand or softer hiring trend dominates the outlook"
+        }
+      ],
+      "top_conclusions": [
+        {
+          "id": "tc1",
+          "headline": "Gold +4.1% Regime Change：Real Yield Decoupling=Portfolio Diversification Bid",
+          "summary": "Gold +4.1% to ATH despite elevated real yields是本周最significant cross-asset信号。DXY -0.2% 99.68，Hormuz deal+DXY weakness+portfolio diversification demand overwhelming traditional rates headwind。Silver +4.2% follow-through confirmation。若Payrolls弱=further rally，decisive ATH break=positioning squeeze。Gold从real-yield inverse transition到geopolitical hedge+USD debasement trade=长期结构性变化",
+          "direction": "Bullish",
+          "asset_class": "Commodity",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "confidence": "High",
+          "impact": 92
+        },
+        {
+          "id": "tc2",
+          "headline": "ADP 44k Miss→Stagflation-Lite→Kashkari+Cook Deliberate Hawkish Counter-Signal",
+          "summary": "ADP 44k miss vs 65k consensus+ISM employment 47.4 contraction+prices paid 70.3 rising=stagflation-lite。但business activity 60.3 strong。Kashkari（begin raising incrementally）+Cook（tighten if disinflation doesn't continue）同天deliberate hawkish=policy paralysis risk。NFP Friday必须解决data vs rhetoric tension",
+          "direction": "Neutral",
+          "asset_class": "Macro/Rates",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "confidence": "High",
+          "impact": 88
+        },
+        {
+          "id": "tc3",
+          "headline": "Hormuz Deal 60-Day Toll Free Near Final=Q3 Geopolitical Tail Risk Removal",
+          "summary": "三天trajectory：Mon Trump held off→Tue Qatar draft→Wed Axios 60-day。TD: risk tone improved materially，MS: final details under review，HSBC: hopes of another truce。若周四finalize=Q3最大geopolitical tail risk正式解除，但三天rally已部分price in sell-the-fact风险",
+          "direction": "Bullish",
+          "asset_class": "Commodity/Geopolitics",
+          "brokers": [
+            "TD Securities",
+            "Morgan Stanley",
+            "HSBC"
+          ],
+          "confidence": "High",
+          "impact": 85
+        },
+        {
+          "id": "tc4",
+          "headline": "Treasury $125bn Refunding In-Line=Bill Reliance Structural Duration Risk Building",
+          "summary": "$58bn 3y+$42bn 10y+$25bn 30y→nominal coupon+FRN unchanged at least next several quarters→greater reliance on bill issuance。Yields briefly higher then retraced。Bill reliance=short-term fix with structural duration risk in background",
+          "direction": "Neutral",
+          "asset_class": "Rates",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "confidence": "High",
+          "impact": 90
+        },
+        {
+          "id": "tc5",
+          "headline": "Asia Credit Japan Panic-Buying Day 3→China IG RM Outflow Divergence",
+          "summary": "HSBC: panic-type buying，closing highs/tights，SOFTBK retraced half widening。Barclays: China IG 1-2 wider RM sellers，perps +0.25-0.375。四券商一致broad risk-on但China IG vs Japan duration分化=pre-NFP positioning divergence",
+          "direction": "Bullish",
+          "asset_class": "Asia Credit",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES",
+            "TD Securities"
+          ],
+          "confidence": "High",
+          "impact": 82
+        },
+        {
+          "id": "tc6",
+          "headline": "UST 10y 4.61% Triple Freeze=NFP Friday Binary Standoff",
+          "summary": "Mon 4.68%→Tue 4.61%→Wed 4.61% perfect unchanged。ADP miss vs Kashkari hawkish完美互抵。2s30s flattener+downside payrolls protection options=market leaning弱NFP scenario。Friday=pivotal breakout",
+          "direction": "Neutral",
+          "asset_class": "Rates",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "confidence": "High",
+          "impact": 80
+        }
+      ],
+      "broker_takeaways": [
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Multi-Asset",
+          "stance": "Neutral",
+          "direction_cn": "中性",
+          "product_theme": "Gold Regime Change + Stagflation-Lite + Refunding Day",
+          "key_takeaway_cn": "Gold +4.1% massive divergence=regime change——gold trading as geopolitical hedge+portfolio diversification而非real-yield inverse。ADP 44k miss+ISM employment 47.4 contraction+prices 70.3=stagflation-lite，Kashkari+Cook同天hawkish deliberate counter-signal。Treasury refunding in-line non-event。UST 10y 4.61% freeze into NFP Friday。Hormuz deal near final 60-day toll free",
+          "why_it_matters_cn": "Gold decoupling from real yields是最significant cross-asset regime change signal of 2026。gold的drivers从real rates转向geopolitical+diversification=利率上行不再压缩gold positioning=defensive allocation结构性强于预期"
+        },
+        {
+          "broker": "HSBC",
+          "asset_class": "Asia Credit",
+          "stance": "Bullish",
+          "direction_cn": "看多",
+          "product_theme": "Asia Credit Panic-Buying Day 3 — Japan Duration Surge",
+          "key_takeaway_cn": "Closing at highs/tights across board，buying bordered on panic-type。Japan duration bid flattening curves，SOFTBK retraced half widening，loose inventory clearing quickly。SEA IG +2-3bp，India top-up。Mapletree Perp 3.5% priced at lower end",
+          "why_it_matters_cn": "Panic-type buying description from HSBC是strong language——end-of-summer positioning fear drives demand。若SOFTBK继续恢复至pre-widening水平=Japan credit risk premium normalization。NFP Friday可能打断momentum"
+        },
+        {
+          "broker": "BMO",
+          "asset_class": "Inflation/TIPS",
+          "stance": "Neutral",
+          "direction_cn": "中性",
+          "product_theme": "BEI Orderly Cheapening — Front-End Steady Selling",
+          "key_takeaway_cn": "BEI cheapened 1bp uniformly，dip buyers emerged late，5y5y 2.385%。Orderly session with bid despite poor forwards earlier when energy spiked。Front-end well behaved，off-the-runs okay despite net selling",
+          "why_it_matters_cn": "BEI cheapening in orderly fashion+gold surging=same signal different lens——inflation expectations down（BEI cheapens）但geopolitical diversification pushing gold up。TIPS market orderly=maturity profile healthy"
+        },
+        {
+          "broker": "Barclays",
+          "asset_class": "Asia Credit",
+          "stance": "Neutral",
+          "direction_cn": "中性",
+          "product_theme": "China IG RM Outflows vs Perps Strength Divergence",
+          "key_takeaway_cn": "China IG 1-2 wider RM sellers taking profit on rates rally，perps strong +0.25-0.375 retail driven。SEA India 1-3bp tighter top-up。CDS better buying protection into NFP。AUD 1-2 tighter",
+          "why_it_matters_cn": "China IG vs HY divergence指向risk appetite分化——RM selling IG into rate rally=de-risking before NFP，retail buying perps=risk-seeking。NFP Friday可能使其中一方wrong-footed"
+        },
+        {
+          "broker": "TD Securities",
+          "asset_class": "Asia/AUD Credit+Macro",
+          "stance": "Bullish",
+          "direction_cn": "看多",
+          "product_theme": "Hormuz Deal Optimism Spreads Broad Risk-On",
+          "key_takeaway_cn": "Risk tone improved materially on Axios 60-day toll free report。Spreads broadly unch ±1-2bp，onshore PHILIP front-end buying，AM selling Japan lifer subs。India two-way front-end demand。TD 5y new issue traded reoffer area。Hybrids tightening 2-5bp",
+          "why_it_matters_cn": "TD confirms Hormuz optimism diffusion across Asia credit——PHILIP front-end bid说明oil-sensitive EMs benefiting。AM selling Japan lifer subs=high duration names profit-taking"
+        }
+      ],
+      "cross_broker": [
+        {
+          "theme": "Gold +4.1% Divergence vs Rates Fundamentals",
+          "consensus": "Neutral — single broker",
+          "broker_views": {
+            "Morgan Stanley": "Gold +4.1% despite elevated real yields=weaker dollar+portfolio diversification+geopolitical demand。Regime change signal"
+          },
+          "cross_read": "MS唯一覆盖gold。BMO BEI cheapening间接印证。Gold move extreme ~3.5 sigma tail event。若regime change成立=defensive allocation最强alpha来源"
+        },
+        {
+          "theme": "Hormuz Deal 60-Day Toll Free Near Final",
+          "consensus": "Broadly Confirmed — 3 brokers",
+          "broker_views": {
+            "TD Securities": "Axios reports US nears deal—strait open 60-day toll free—risk tone improved materially",
+            "Morgan Stanley": "Iran+Oman agreed shipping route—final details under review—energy risk premium reduced",
+            "HSBC": "Hopes of another truce—SEA IG +2-3bp—very strong session"
+          },
+          "cross_read": "三券商一致：Mon hold→Tue Qatar→Wed 60-day。Deal加速congealing。Oil risk premium removal=本周risk-on最大driver。但final details仍在review=sell-the-fact risk"
+        },
+        {
+          "theme": "Asia Credit Japan Panic-Buying Day 3",
+          "consensus": "Bullish — 4 brokers with internal divergence",
+          "broker_views": {
+            "HSBC": "Panic-type buying—closing highs/tights—SOFTBK half retrace—duration bid flattening curves",
+            "Barclays": "China IG 1-2 wider RM sellers—perps strong +0.25-0.375—SEA top-up—CDS protection buying",
+            "JEFFERIES": "0-2bp tighter—flow turns more selling—hybrid +25-35c—dealers short covering",
+            "TD Securities": "Onshore PHILIP front-end—AM selling lifer subs—India two-way—AUD FRNs demand"
+          },
+          "cross_read": "四券商broad risk-on但internal divergence：HSBC panic，Barclays IG selling，JEF flow selling，TD AM selling。共识Japan duration bid最强但China分歧+hedging into NFP"
+        },
+        {
+          "theme": "Kashkari+Cook Deliberate Hawkish Counter-Signal",
+          "consensus": "Confirmed — public Fed speech",
+          "broker_views": {
+            "Morgan Stanley": "Kashkari: begin raising rates incrementally。Cook: tighten if disinflation doesn't continue。Both voting members same-day deliberate counter-signal"
+          },
+          "cross_read": "两位voting members ADP同日hawkish=data not leading policy。NFP Friday=testsignal。弱NFP=credibility damaged，强NFP=hawkish validated"
+        },
+        {
+          "theme": "Treasury $125bn Refunding In-Line=Bill Reliance",
+          "consensus": "Confirmed — non-event",
+          "broker_views": {
+            "Morgan Stanley": "Refunding $125bn in-line，unchanged coupon guidance next several quarters，continued greater bill reliance，yields briefly higher then retraced"
+          },
+          "cross_read": "In-line non-event。Bill reliance continued=structural adjustment。Market unfazed但longer-term coupon supply shock risk building。2y swap spread widening already pricing bill expansion"
+        }
+      ],
+      "edges": [
+        {
+          "edge_type": "UNIQUE_DATA",
+          "subject_label": "Gold +4.1% Real Yield Decoupling=Regime Change Audit",
+          "finding": "Gold +4.1% single-day move在elevated real yields背景下=extreme anomaly。Gold传统上=real yield inverse但8/5 gold暴涨despite 10y real yield ~2.0%=decoupling signal。若regime change成立：central bank buying+de-dollarization+geopolitical hedging+portfolio diversification=multi-driver replacing single real-yield driver",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS: Gold +4.1% silver +4.2% despite elevated real yields—weaker dollar and renewed portfolio diversification demand outweighed traditional rates headwind",
+          "edge_score": 5,
+          "why_it_matters": "Gold decoupling from real yields是2026年最重要的cross-asset regime change之一。若gold从single factor转向multi-factor，gold在risk-on和risk-off环境下都能上涨=defensive allocation urgency。需后续2-3天continuation确认",
+          "basis": "Fact: gold +4.1% single-day。MS唯一券商覆盖=信息缺口=independent analysis opportunity"
+        },
+        {
+          "edge_type": "NON_CONSENSUS",
+          "subject_label": "HSBC Panic-Buying vs Barclays China IG RM Outflow",
+          "finding": "HSBC描述Asia credit为panic-type buying，closing highs/tights。Barclays同一session报告China IG 1-2 wider RM sellers。JEF看到flow turns more selling。同一天section描述完全不同——Japan duration bid（panic）vs China IG（profit-taking）=亚洲内部risk appetite分化。NFP Friday任一方向breakout都会导致一方sharp reversal",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "evidence": "HSBC: buying bordered at times on panic-type。Barclays: China IG 1-2 wider RM sellers taking profit。JEF: flow turns more selling as rates rally but dealers still short covering",
+          "edge_score": 4,
+          "why_it_matters": "HSBC vs Barclays=本周最重要Asia credit information edge。NFP弱=Barclays sellers wrong wider reverses，NFP强=HSBC panic buyers wrong tighter reverses。Pre-NFP neutral delta most prudent",
+          "basis": "Fact: two brokers covering same session but sector views diverge。可能是地域侧重不同（HSBC偏向Japan/SEA，Barclays偏向China）"
+        },
+        {
+          "edge_type": "CONVICTION_GAP",
+          "subject_label": "Kashkari+Cook Hawkish vs ADP 44k Miss=Policy Conviction Gap",
+          "finding": "Kashkari: begin raising rates incrementally。Cook: ready to tighten if disinflation doesn't continue。Both 2026 voting members=deliberate same-day hawkish pushback。ADP 44k same session=data going soft但Fed refusing to acknowledge。Market pricing 50% cut by Nov vs dots implying more hikes",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS: Kashkari said policymakers should begin raising rates incrementally。Governor Cook reiterated prepared to tighten if disinflation didn't continue。Both voting members same-day despite ADP miss",
+          "edge_score": 4,
+          "why_it_matters": "Policy conviction gap=markets pricing one path Fed signaling another=NFP Friday collision course。弱NFP<60k=Fed credibility challenged=front-end sharply repricing。强NFP>150k=hawkish validated=rates sell-off",
+          "basis": "Fact: two voting members hawkish + ADP miss same session。Inference: NFP must resolve gap"
+        },
+        {
+          "edge_type": "FIRST_CALL",
+          "subject_label": "Treasury Bill Reliance=Structural Duration Risk Building",
+          "finding": "Refunding确认nominal coupon+FRN unchanged至少next several quarters，但continued signal of greater reliance on bill issuance。Bill reliance=short-term expedient with long-tail risk——当Treasury eventually needs to extend duration=coupon supply shock=curve bear steepening。MS first to flag as developing structural risk",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS: Treasury officials continue to signal greater reliance on bill issuance。Front-end swap spreads supported by elevated bill supply and potential changes to bank capital requirements",
+          "edge_score": 3,
+          "why_it_matters": "Bill reliance从operational adjustment到structural concern的transition=关键转折点。市场unfazed但一旦coupon supply必须增加=duration+curve全面reprice",
+          "basis": "Fact: refunding statement + unchanged coupon guidance。Inference: bill substitution = future coupon supply shock risk"
+        },
+        {
+          "edge_type": "SILENCE",
+          "subject_label": "JGB 30y Auction Thursday — No Preview Coverage",
+          "finding": "十天前JGB 10y auction failed（2.56x BTC vs 3.13x）。明天JGB 30y auction是最重要Japan macro event之一，但8/5所有券商coverage中无任何preview or positioning advice。NFP overshadowing everything。Silence on JGB 30y=信息空白——若auction again fails=Japan从局部divergence升级到cross-asset concern",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS only notes: JGBs firmer, super-long bid into 30y auction Thu。No other broker previews auction despite 10y fail history",
+          "edge_score": 3,
+          "why_it_matters": "JGB 10y fail→30y follow-through risk未获充分coverage=blind spot。若30y再次fail=SOFTBK recovery interrupted=Japan risk premium re-prices=Asia credit sentiment reverses",
+          "basis": "Inference: no broker previewing JGB 30y auction despite 10y fail = information gap"
+        },
+        {
+          "edge_type": "SHIFT",
+          "subject_label": "Gold-Equity Disconnect：Coexistence of Two Narratives",
+          "finding": "S&P -0.2% four-day rally pause vs Gold +4.1% extreme rally=stark divergence。Equities pricing earnings cycle continuation，gold pricing geopolitical+DXY weakness。Two very different narratives coexisting：one sees macro normalization，other sees geopolitical regime change。NFP Friday=which narrative gets validated",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS: S&P -0.2% NASDAQ -0.8% muted four-day re-grossing pause vs Gold +4.1% silver +4.2% stark divergence",
+          "edge_score": 4,
+          "why_it_matters": "Gold-equity classic who's right problem：if gold right=equity should catch down；if equity right=gold should fade as Hormuz finalized。Coexistence unsustainable",
+          "basis": "Fact: S&P -0.2% vs Gold +4.1%。Inference: narrative collision near resolution"
+        }
+      ],
+      "broker_shifts": [
+        {
+          "broker": "HSBC",
+          "date_from": "2026-08-04",
+          "date_to": "2026-08-05",
+          "direction": "Bullish intensification",
+          "shift_type": "view_intensification",
+          "product_theme": "Asia Credit: Firm → Panic-Buying Day 3",
+          "previous_view": "China HY +0.5-1.5pts, IG 0-3bp tighter, Japan PM profit-taking, Temasek 2.65%",
+          "current_view": "Panic-type buying, closing highs/tights, Japan duration bid flattening curves, loose inventory clearing quickly, SOFTBK retraced half widening",
+          "evidence": "8/4 overall firmer → 8/5 buying bordered at times on panic-type buying as accounts rushed to add risk",
+          "importance": "High"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "date_from": "2026-08-04",
+          "date_to": "2026-08-05",
+          "direction": "Oil-centric→Gold-centric",
+          "shift_type": "view_shift",
+          "product_theme": "Multi-Asset Narrative Pivot: Oil→Gold as Primary Driver",
+          "previous_view": "Oil -5.9% catalyst=inflation relief=risk-on acceleration=BEI compression",
+          "current_view": "Gold +4.1% regime change=portfolio diversification+geopolitical demand+DXY weakness=stagflation-lite ADP miss vs hawkish pushback=NFP Friday pivot",
+          "evidence": "8/4 focus on Oil/Hormuz crash → 8/5 focus shifted to Gold +4.1% as primary narrative, ADP+Kashkari/Cook secondary",
+          "importance": "High"
+        },
+        {
+          "broker": "BMO",
+          "date_from": "2026-08-04",
+          "date_to": "2026-08-05",
+          "direction": "From dislocation to order",
+          "shift_type": "view_shift",
+          "product_theme": "BEI: Dislocated Crash→Orderly Cheapening with Dip Bid",
+          "previous_view": "BEI 5y -5bp crash dislocated from risk assets, front-end selling dominant, TIPS vs equities disconnect",
+          "current_view": "BEI cheapened 1bp uniformly, FM/RM selling but dip buyers emerged late, orderly session with a bid, 5y5y 2.385%",
+          "evidence": "8/4 crash 5y -5bp → 8/5 cheapened 1bp uniformly, fairly orderly session with a bid",
+          "importance": "Medium"
+        }
+      ],
+      "alert_flags": [
+        {
+          "level": "HIGH",
+          "alert_type": "Cross-Asset Divergence",
+          "flag": "Gold +4.1% vs S&P -0.2%：Stark divergence between geopolitical hedge narrative and earnings cycle narrative。Coexistence unsustainable——NFP Friday likely resolves。若gold right=risk assets face catch-down。若equity right=gold faces sharp fade",
+          "brokers": "Morgan Stanley",
+          "evidence": "Gold advanced +4.1% despite elevated real yields as portfolio diversification demand outweighed rates headwind while S&P -0.2% pause",
+          "severity": "HIGH"
+        },
+        {
+          "level": "HIGH",
+          "alert_type": "Data-vs-Fed Collision",
+          "flag": "ADP 44k miss+ISM employment 47.4 contraction vs Kashkari+Cook deliberate hawkish pushback同一天=policy paralysis。NFP Friday binary resolution with asymmetric implications。Market leaning弱scenario但governmental employment季节性偏高=upside surprise risk",
+          "brokers": "Morgan Stanley",
+          "evidence": "Kashkari begin raising incrementally，Cook tighten if disinflation doesn't continue。Both voting members。ADP 44k vs prior 95k revised",
+          "severity": "HIGH"
+        },
+        {
+          "level": "MEDIUM",
+          "alert_type": "Sell-the-Fact Risk",
+          "flag": "Hormuz deal 60-day toll free三天连续progression：Mon→Tue→Wed。若周四finalize=Q3最大geopolitical tail risk解除但market三天rally已price in 60-70%。Sell-the-fact=crude could bounce and risk assets fade briefly before resuming trend",
+          "brokers": "TD Securities, Morgan Stanley",
+          "evidence": "Three-day progression: Trump held off→Qatar draft→Axios 60-day toll free。No final deal announcement yet",
+          "severity": "MEDIUM"
+        },
+        {
+          "level": "MEDIUM",
+          "alert_type": "JGB 30y Auction Blind Spot",
+          "flag": "JGB 10y auction fail十天前+JGB 30y auction明天但所有券商零coverage=NFP overshadowing critical Japan event。若30y again fails=SOFTBK recovery interrupted=Japan risk premium re-prices=Asia credit sentiment contagion risk",
+          "brokers": "Morgan Stanley",
+          "evidence": "No broker previewing JGB 30y auction。MS only notes super-long bid into auction。10y fail 2.56x BTC 6bp tail history",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "reportDate": "2026-08-05",
       "coverage": {
@@ -16323,1424 +17662,6 @@ window.REPORT_DATA =
           "topic": "TIPS BEI扩大+能源相关减弱",
           "point": "非能源渠道定价通胀→周四拍卖为关键event→BEI可能进一步扩大→推升名义收益率",
           "quote": ""
-        }
-      ],
-      "top_conclusions": [],
-      "broker_takeaways": [],
-      "cross_broker": [],
-      "edges": [],
-      "broker_shifts": [],
-      "alert_flags": []
-    },
-    {
-      "reportDate": "2026-07-20",
-      "coverage": {
-        "emails": 5,
-        "brokers": [
-          "Goldman Sachs",
-          "HSBC",
-          "Jane Street",
-          "Deutsche Bank"
-        ],
-        "lookbackDays": 15,
-        "sourceDateNote": "5封邮件：HSBC午间★唯一当日07-20周一实时交易，其余4封为上周回顾 | GS宏观:07-17收盘 | GS信用:07-13~07-17周度 | JS ETF:07-17周五 | DB:07-13~07-17周度"
-      },
-      "signals": [
-        {
-          "id": "sig-20260720-01",
-          "headline": "伊朗放弃临时和平协议→WTI+4.2%至$82.25→油价WTD+15.9%.Energy+1.2% sole outper.EM HY RM全线卖出",
-          "topic": "Iran Escalation + Oil Spike",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "CONTINUATION",
-            "ALERT"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 85,
-          "conviction": "High",
-          "brokers": [
-            "Goldman Sachs",
-            "Jane Street",
-            "Deutsche Bank",
-            "HSBC"
-          ],
-          "oneLine": "Iran abandons interim deal→WTI $82.25(+4.2%).Oil WTD+15.9%.Energy sole outper.EM HY selling",
-          "evidence": [
-            "GS Macro:Market torn between equity risk-off and Iran escalation.Oil caught a bid",
-            "GS Credit:Restart of US/Iran conflict→Tehran abandoned interim peace deal.Oil+15.9% WTD→RM selling EM HY",
-            "JS:Energy notable outperformer+1.2%.WTI crude rose 4.2% to $82.25/barrel",
-            "HSBC午间:US-Iran attacks escalated over weekend.Brent>$90"
-          ],
-          "soWhat": "伊朗放弃临时协议→周末进一步升级→Brent从$82.25→$90+.WTI/Brent双双突破.油价上涨且冲突扩大化→通胀+风险双压",
-          "quote": "Restart of the conflict between US/Iran over SoH disagreements leading to Tehran's abandonment of the interim peace deal",
-          "sourceRefs": [
-            "GS Asia Macro",
-            "GS Credit Recap",
-            "Jane Street ETF"
-          ],
-          "threadId": "thread-iran-escalation",
-          "date": "2026-07-20",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260720-02",
-          "headline": "CPI-0.02%+PPI-0.3%双miss rally仅一天→Warsh'one data point'+'no tolerance for inflation'→UST bear flatten.2s10s-4bps.Front-end selloff",
-          "topic": "CPI Relief Rally Faded - Hawkish Confirmed",
-          "assetClass": "Rates",
-          "direction": "Bearish",
-          "signalType": [
-            "SHIFT",
-            "CONFIRMED"
-          ],
-          "action": "WATCH",
-          "impactScore": 80,
-          "conviction": "High",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "Core CPI-0.02%+PPI-0.3%→rally仅一天→Warsh hawkish→UST bear flatten→2s10s-4bps",
-          "evidence": [
-            "GS Credit:Core CPI-0.02% well below GS+0.17%.PPI-0.3%.Rally in front-end but market faded.2s10s+1.5bps from tights",
-            "GS Credit:Warsh'one data point''no tolerance for persistently elevated inflation'",
-            "GS Macro:USTs bear flattened.Front-end selloff.July FOMC 3.5bps hikes.31bps year-end"
-          ],
-          "soWhat": "CPI+PPI双miss仅一天被fade.Imports/housing/UMich all beat→higher for longer根深蒂固",
-          "quote": "Warsh said that 'it's one data point' and he didn't 'want to overread or cherry-pick data'",
-          "sourceRefs": [
-            "GS Credit Recap",
-            "GS Asia Macro"
-          ],
-          "threadId": "thread-cpi-relief-rally",
-          "date": "2026-07-20",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260720-03",
-          "headline": "美股rotation第四天:Nasdaq-1.4%.Energy+1.2% sole outper(oil驱动).XLK/XLC/XLY全线underperform.ETF strong inflows=buying dip非panic",
-          "topic": "US Equity Defensive Rotation Day 4",
-          "assetClass": "Equity",
-          "direction": "Bearish",
-          "signalType": [
-            "CONTINUATION",
-            "MOMENTUM"
-          ],
-          "action": "WATCH",
-          "impactScore": 72,
-          "conviction": "High",
-          "brokers": [
-            "Jane Street",
-            "Goldman Sachs"
-          ],
-          "oneLine": "Nasdaq-1.4%第四天.Energy+1.2% sole outper.XLK/XLC/XLY underperform.ETF strong inflows=buying dip",
-          "evidence": [
-            "JS:Dow-0.8%.S&P500-1.0%.Nasdaq-1.4%.Energy+1.2% sole outper.Comm-2.4%",
-            "JS:US Equity ETFs strong net inflows above average volume.VOO/SPYM/QQQM/XLK buyers.Seller IWF",
-            "GS Credit:Asia credit struggled as macro-sentiment deteriorated due to weak equity price action"
-          ],
-          "soWhat": "Defensive rotation第四天.Energy受oil驱动取代Defensive成为新leader.ETF inflows=rotation not rout",
-          "sourceRefs": [
-            "Jane Street ETF",
-            "GS Credit Recap"
-          ],
-          "threadId": "thread-us-tech-rotation",
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-04",
-          "headline": "EM IG双速恶化:US持续sell back-end→long-end 8-12bps wider.INDON S&P affirm短暂short covering.Philippines relative underperform.前端local+ETF支撑但脆弱",
-          "topic": "EM IG Back-End Orphaned Deepens",
-          "assetClass": "EM Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 65,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "EM IG 10yr+3-6bps.long-end+8-12bps.INDON S&P affirm短暂.US AM back-end selling持续",
-          "evidence": [
-            "GS Credit:INDON S&P affirm BBB stable→short covering from global HFs but short-lived.EM sentiment deteriorated on geopolitics",
-            "GS Credit:US selling pressure on back-end.10yr 3-6bps wider.long-end 8-12bps wider",
-            "GS Credit:Philippines underperformed.5-10bps wider belly.8-10bps wider long-end"
-          ],
-          "soWhat": "EM IG back-end孤儿化 vs CNH IG bullish→同亚洲不同命运.CNH供给稀缺+需求强劲=结构性bullish",
-          "quote": "The move proved to be short-lived as EM sentiment deteriorated on the back of worsening geopolitics",
-          "sourceRefs": [
-            "GS Credit Recap"
-          ],
-          "threadId": "thread-asia-ig-resilience",
-          "date": "2026-07-20",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260720-05",
-          "headline": "油价WTD+15.9%→EM HY RM全线卖出.PKSTAN-1.25pts/SRILAN-1.5pts/MONGOL 12-15bps wider.逆势:LAOSIN 30s+0.5pts→历史新高",
-          "topic": "EM HY Oil Pressure",
-          "assetClass": "EM Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "ALERT"
-          ],
-          "action": "WATCH",
-          "impactScore": 68,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "Oil+15.9%→RM sell EM HY.PKSTAN-1.25/SRILAN-1.5/MONGOL 12-15bps wider.LAOSIN逆势ATH",
-          "evidence": [
-            "GS Credit:Oil move(+15.9% WTD)prompted better selling from RMs.Dealer community taken out of aged shorts",
-            "GS Credit:PKSTAN 0.625-1.25pts lower.SRILAN 1.25-1.5pts lower.MONGOL 12-15bps wider",
-            "GS Credit:LAOSIN 30s outperformed+0.5pts higher.All-time highs"
-          ],
-          "soWhat": "油价飙升=EM HY最大risk factor.若WTI>$85→EM HY全面承压.LAOSIN独立走强=idiosyncratic",
-          "sourceRefs": [
-            "GS Credit Recap"
-          ],
-          "threadId": null,
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-06",
-          "headline": "JGB twist-steepening:前端sell→ultra-long foreign bid→5yr strong bid→ultra-long sell反转→PM Takaichi GPIF催化→JGB futures rally",
-          "topic": "JGB Twist Steepening + GPIF Catalyst",
-          "assetClass": "Rates",
-          "direction": "Mixed",
-          "signalType": [
-            "CATALYST"
-          ],
-          "action": "WATCH",
-          "impactScore": 55,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "JGB twist-steepened:前端sell→bid→ultra-long sell反转→Takaichi GPIF→futures rally",
-          "evidence": [
-            "GS Macro:AM front-end selling(new issuance).Ultra-long foreign buying initially flattened",
-            "GS Macro:PM strong 5yr buying.Ultra-long overseas+domestic selling→unwinding flattening→twist-steepened at close",
-            "GS Macro:PM Takaichi GPIF investment→JGB futures rally"
-          ],
-          "soWhat": "JGB日内大幅波动:flattening→twist-steepening→GPIF rally三阶段.技术性仓位unwind驱动",
-          "sourceRefs": [
-            "GS Asia Macro"
-          ],
-          "threadId": null,
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-07",
-          "headline": "AUD信用逆势抗跌:spreads flat despite geopolitics+rates vol.Compression→higher beta BBB+hybrids outperforming.NAB AUD2.5bn 3Y+57 tight",
-          "topic": "AUD Credit Resilience",
-          "assetClass": "Credit",
-          "direction": "Neutral",
-          "signalType": [
-            "MOMENTUM"
-          ],
-          "action": "WATCH",
-          "impactScore": 45,
-          "conviction": "Medium",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "oneLine": "AUD credit quiet spreads flat.Compression:BBB+hybrids outperform.NAB AUD2.5bn+57 tight",
-          "evidence": [
-            "DB:AUD credit quiet.Spreads flat despite geopolitical escalation,rates vol and mixed offshore sentiment",
-            "DB:Compression theme.Higher beta BBB bonds and hybrids outperforming",
-            "DB:NAB AUD2.5bn 3Y senior+57.Traded tighter on break.UELAU AUD400m 5Y no concession",
-            "HSBC午间:AUD spreads stable/slightly wider.Offshore selling.FRN profit-taking"
-          ],
-          "soWhat": "AUD信用展现结构性韧性.spreads flat vs 宏观vol→'decoupling'信号.Compression=risk appetite仍在但偏好higher carry",
-          "quote": "Australian credit markets were quiet over the week, with spreads remaining flat despite geopolitical escalation",
-          "sourceRefs": [
-            "DB Aussie Credit"
-          ],
-          "threadId": null,
-          "date": "2026-07-20",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260720-08",
-          "headline": "UK新首相Burnham就任(脱欧后第7位).Gilts energy-sensitive.BoE MPC前能源风险突出.本周密集UK数据(PMI+labour+CPI+retail)",
-          "topic": "UK New PM Burnham + Gilts",
-          "assetClass": "Macro",
-          "direction": "Neutral",
-          "signalType": [
-            "CATALYST"
-          ],
-          "action": "WATCH",
-          "impactScore": 50,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "oneLine": "Andy Burnham sworn in UK PM(7th since Brexit).Gilts energy-sensitive.Data week ahead",
-          "evidence": [
-            "GS Macro:Andy Burnham sworn in as UK PM today.7th premier since 2016 Brexit vote",
-            "GS Macro:UK curve remained sensitive to energy prices.Due this week:flash PMIs,labour market,inflation and retail sales"
-          ],
-          "soWhat": "Burnham就任=政治不确定性降低但政策方向待观察.Energy sensitivity=油价上涨→Gilts/GBP双承压",
-          "sourceRefs": [
-            "GS Asia Macro"
-          ],
-          "threadId": null,
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-09",
-          "headline": "伊朗周末升级→Brent>$90(+$8 from上周五$82.25).WTI/Brent双双突破关口.HKD IRS bear flatten+3-6bps.日本假期无UST→亚太信用承压",
-          "topic": "Iran Escalation Weekend Update",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "ESCALATION",
-            "ALERT"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 88,
-          "conviction": "High",
-          "brokers": [
-            "HSBC",
-            "Goldman Sachs"
-          ],
-          "oneLine": "Iran weekend escalation→Brent>$90.WTI/Brent gap blowout.HKD IRS bear flatten+3-6bps",
-          "evidence": [
-            "HSBC午间:US-Iran attacks escalated over weekend.Brent rising above $90 first time since mid-June",
-            "HSBC午间:HKD IRS up 3-6bps bear-flattening tracking UST futures.Japan out on holiday(no UST)",
-            "GS Credit上周五:Restart of US/Iran conflict.WTI+4.2%→$82.25"
-          ],
-          "soWhat": "周末伊朗进一步升级→Brent从$82→$90+.亚太开盘普遍承压.Japan假期=UST无定价→亚太独立risk-off",
-          "sourceRefs": [
-            "HSBC Midday Commentary",
-            "GS Credit Recap"
-          ],
-          "threadId": "thread-iran-escalation",
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-10",
-          "headline": "CNH IG延续bullish:IG spreads再紧~5bp WoW→10Y IG benchmarks领涨.二级被机构全面追逐.一级骤停(7月初HK FIC/Bond Connect Summit新措施后)→供给稀缺推升二级",
-          "topic": "CNH IG Bullish Extension",
-          "assetClass": "Credit",
-          "direction": "Bullish",
-          "signalType": [
-            "MOMENTUM",
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 65,
-          "conviction": "Medium",
-          "brokers": [
-            "HSBC"
-          ],
-          "oneLine": "CNH IG~5bp tighter WoW.10Y IG benchmarks领涨.一级骤停→二级被机构全面追逐",
-          "evidence": [
-            "HSBC午间:Bullish tone in CNH FI extends further.IG spreads WoW another~5bp tighter led by 10Y IG benchmarks",
-            "HSBC午间:Primary not picking up since new measures from HK FIC/Bond Connect Summit early July",
-            "HSBC午间:Quality corporates/financials well-chased by onshore/offshore institutions.Interbank bidding aggressively"
-          ],
-          "soWhat": "CNH IG供给稀缺+需求强劲=结构性bullish.与EM USD IG恶化形成鲜明对比.关注HKEX 5-yr CGB future(8月3日)+CFETS电子平台",
-          "sourceRefs": [
-            "HSBC Midday Commentary"
-          ],
-          "threadId": "thread-asia-ig-resilience",
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-11",
-          "headline": "Japan信用再次走弱:IG+1-2bps,Insurance-1/8pt,HY-1/8~3/4pt.但flow balanced→RM买+ETF双向+fast money卖新股.非恐慌",
-          "topic": "Japan Credit Weaker But Balanced",
-          "assetClass": "Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 50,
-          "conviction": "Medium",
-          "brokers": [
-            "HSBC"
-          ],
-          "oneLine": "Japan IG+1-2bps.HY-1/8~3/4pt but balanced flows→not panic.RM buying.ETF two-way",
-          "evidence": [
-            "HSBC午间:Japan IG+1-2bps.Insurance-1/8pt.HY-1/8~3/4pt.Weaker but flows more balanced than Friday",
-            "HSBC午间:RM buying.ETFs two-way.Fast money selling recent new issues.Not panic",
-            "HSBC午间:In more meaningful sizes/flows,net lifted out of risk this morning"
-          ],
-          "soWhat": "Japan信用持续走弱但周五panic已消退.结构性RM+ETF需求提供支撑.fast money新股sell=正常换手",
-          "sourceRefs": [
-            "HSBC Midday Commentary"
-          ],
-          "threadId": "thread-japan-softbk-underperform",
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        },
-        {
-          "id": "sig-20260720-12",
-          "headline": "China HY benchmark property names GRNCH/LNGFOR吸引RM+onshore买盘.市场broadly-0~0.125pts.无UST→安静开盘.机构持续配置",
-          "topic": "China HY Property Bid",
-          "assetClass": "Credit",
-          "direction": "Neutral",
-          "signalType": [
-            "MOMENTUM"
-          ],
-          "action": "WATCH",
-          "impactScore": 45,
-          "conviction": "Medium",
-          "brokers": [
-            "HSBC"
-          ],
-          "oneLine": "China HY quiet.GRNCH/LNGFOR RM+onshore buying.-0~0.125pts.No UST=quiet start",
-          "evidence": [
-            "HSBC午间:China HY relatively quiet.Market broadly 0-0.125pts lower.Benchmark property names GRNCH/LNGFOR continue to attract RM and onshore buying",
-            "HSBC午间:Limited guidance without UST"
-          ],
-          "soWhat": "China HY无恐慌.RM+onshore持续买品牌地产=政策预期+估值支撑.与EM HY反差较大",
-          "sourceRefs": [
-            "HSBC Midday Commentary"
-          ],
-          "threadId": null,
-          "date": "2026-07-20",
-          "priorState": "No prior state available.",
-          "quote": ""
-        }
-      ],
-      "brokerNotes": [
-        {
-          "broker": "Goldman Sachs",
-          "emails": 2,
-          "sourceRefs": [
-            "GS Asia Macro",
-            "GS Credit Recap"
-          ],
-          "stance": "【宏观】伊朗放弃临时协议→oil+15.9%为上周最大变量.UST bear flatten(2s10s-4bps).CPI/PPI双miss rally仅一天被Warsh确认fade→higher for longer根深蒂固.Imports/housing/UMich beat=growth resilience.JGB twist-steepening+Takaichi GPIF催化.UK Burnham就任.【信用·EM IG】Asi IG basket+0.6bps wider(vs iTraxx+3bps/CDX+1bp/EU+1.5bps=表现居中).EM IG back-end orphaned恶化:10yr+3-6bps,long-end+8-12bps→US AM持续卖出.INDON S&P affirm→HF短暂short cover→geopolitics逆转.Philippines相对underperform→relative value trade.【信用·EM HY】Oil+15.9%→RM全线卖出→dealer community持仓出清.PKSTAN/SRILAN/MONGOL广泛下跌.LAOSIN逆势ATH=idiosyncratic.【信用·Asia Corp】Asia Corp/Fin IG窄区间.spread韧性受all-in yield需求支撑.当周6笔deals$4.4bn定价"
-        },
-        {
-          "broker": "Jane Street",
-          "emails": 1,
-          "sourceRefs": [
-            "Jane Street ETF"
-          ],
-          "stance": "【股票】Dow-0.8%/S&P-1.0%/Nasdaq-1.4%(rotation第四天).Energy+1.2%唯一outperformer(WTI+4.2%→$82.25).Communications-2.4%/ConsDisc-1.6%最大underperformers.XLE sole sector outper,XLC/XLK/XLY/XLF underperform.【ETF flow】US Equity strong net inflows+above avg volume→VOO/SPYM/QQQM/XLK/UJUL buyers→仅IWF(large-cap growth)净卖出.'buying dip非panic'.【FI ETF】Muni inflows via JMUB.IG ETFs开强→回落→反弹.HY ETFs先outflows→午间chop→close inflows.【FI Cash】IG cash even(inflows PTs vs outflows RFQ).HY cash tilted inflows(PTs).【国际·EM】Korea EWY outflows但outperform(与India/Mexico).Taiwan EWT+China ASHR underperformed.【国际·DM】Value EFV inflows vs Small-cap DFIS outflows.Outperformers:Australia EWA/Europe VGK/Canada EWC/UK EWU.Underperformer:Japan EWJ"
-        },
-        {
-          "broker": "Deutsche Bank",
-          "emails": 1,
-          "sourceRefs": [
-            "DB Aussie Credit"
-          ],
-          "stance": "【AUD信用】Spreads flat→宏观vol下展现结构性韧性.Compression theme持续→higher beta BBB bonds+hybrids outperforming(risk appetite仍在但偏好carry).【一级】NAB AUD2.5bn 3Y senior+57(tight concession,break+tighter=需求健康).UELAU AUD400m 5Y no concession.【二级Flow】5Y AUD corporates卖出 vs 10Y+low-beta买入=curve陡峭化bid.AUD financial seniors stable.T2s unch/+1bp.【USD对比】USD corporates marginally wider WoW→AUD vs USD decoupling.USD financials heavier mid-week(T2s+1-2bp)→week-end firmed.【Corporate事件】Fonterra milk price↓→credit negative.Coles 放弃Greencross→credit positive(deleverage).Ampol closed AUD400m hybrids KKR support.Auckland Airport traffic-4% YoY"
-        },
-        {
-          "broker": "HSBC",
-          "emails": 1,
-          "sourceRefs": [
-            "HSBC Asia Credit Midday Commentary"
-          ],
-          "stance": "【宏观】伊朗周末继续升级→Brent>$90(6月中以来首次).HKD IRS bear flatten+3-6bps.Japan假期无UST→亚太独立risk-off.【China HY】相对quiet.基准地产名GRNCH/LNGFOR吸引RM+onshore买入.-0~0.125pts.【China HKD】bullish momentum持续.front-end/belly well-bid.IG spreads unchanged/slightly tighter.【China CNH】Bullish延续.IG spreads再紧~5bp WoW led by 10Y IG benchmarks.一级骤停→二级被机构全面追逐.市场关注HKEX 5-yr CGB future(8月3日)+CFETS电子平台.【Japan】IG+1-2bps.Insurance-1/8pt.HY-1/8~3/4pt.Flow balanced:RM买+ETF双向+fast money卖出新股.非恐慌.【SEA IG/Ex-China HY】+0-2bps.ETF+RM better buying.HDFC 27/29/Perp.SBI 30.RPVIN 28.INCLEN 27+GENTMK 27 hit.Adani front-end+Thai T2s demand.【SGD】PB/retail constructive→redeploying from UOB AT1/SINTEC perp.Cash 5-15c lower on higher rates.【AUD】Offshore selling.FRN 3-4yr profit-taking.Spreads stable/slightly wider.【SG IG】Very quiet.Japan holiday no UST.Spreads unch.【新股】Hanwahaero 3Y IPT CT3+115.Linyi City Construction 3Y IPT 5.7%"
-        }
-      ],
-      "dataChecks": [
-        {
-          "id": "chk1",
-          "type": "数据一致",
-          "subject": "伊朗冲突升级+油价飙升",
-          "status": "Confirmed",
-          "detail": "GS+JS+DB一致确认.WTI+4.2%$82.25.Oil WTD+15.9%.Energy sole outper"
-        },
-        {
-          "id": "chk2",
-          "type": "数据一致",
-          "subject": "CPI/PPI双miss rally faded",
-          "status": "Confirmed",
-          "detail": "GS确认Core CPI-0.02%+PPI-0.3%.Rally仅一天→2s10s从tights+6bps→WTD+1.5bps"
-        },
-        {
-          "id": "chk3",
-          "type": "数据一致",
-          "subject": "美股rotation第四天",
-          "status": "Confirmed",
-          "detail": "JS/GS一致确认Nasdaq-1.4%.Energy leader change.ETF inflows=buying dip"
-        },
-        {
-          "id": "chk4",
-          "type": "观点分歧",
-          "subject": "AUD信用vs EM IG韧性分化",
-          "status": "Monitor",
-          "detail": "DB:AUD spreads flat.GS:EM IG long-end 8-12bps wider.区域性韧性差异显著"
-        },
-        {
-          "id": "chk5",
-          "type": "数据一致",
-          "subject": "伊朗周末升级→Brent>$90",
-          "status": "Confirmed",
-          "detail": "HSBC确认Weekend escalation.Brent>$90(+$8 from周五).HKD IRS bear flatten+3-6bps"
-        },
-        {
-          "id": "chk6",
-          "type": "观点分歧",
-          "subject": "CNH IG bullish vs EM IG恶化",
-          "status": "Monitor",
-          "detail": "HSBC:CNH IG~5bp tighter WoW vs GS:EM IG long-end 8-12bps wider.同亚洲不同命运.需关注驱动差异"
-        }
-      ],
-      "qualityLog": [
-        "GS Macro+Credit为最强来源.覆盖UST/Bunds/Gilts/JGBs+EM/Asia信用+EM HY",
-        "Jane Street ETF补充美股rotation granular view.ETF flow信号质量高",
-        "Deutsche Bank提供AUD信用独有视角",
-        "4券商/5封邮件.覆盖:宏观/利率/信用/股票/ETF flow.AUD为今日独有区域",
-        "HSBC Midday唯一当日实时来源→填补周一实时交易gap.Brent>$90=关键升级信号.CNH IG bullish=区域亮点"
-      ],
-      "tone": {
-        "dir": "weak",
-        "label": "伊朗周末升级→Brent>$90·CNH IG bullish~5bp tighter·EM IG恶化·Japan信用weak但balanced",
-        "note": "伊朗周末进一步升级→Brent>$90(+$8 from周五).亚太早盘risk-off但非panic.Japan balanced=分歧.CNH IG bullish=亚洲亮点(与EM IG恶化形成鲜明对比)"
-      },
-      "macro": [
-        "伊朗放弃SoH临时和平协议→WTI+4.2%至$82.25.周涨+15.9%.Energy rotation→oil-driven risk-off",
-        "CPI-0.02%+PPI-0.3%双miss rally仅一天→Warsh'one data point'→UST bear flatten",
-        "美股rotation第四天:Nasdaq-1.4%.Energy+1.2% sole outper.ETF strong inflows",
-        "JGB twist-steepening→Takaichi GPIF催化.30y JGB 3.83%",
-        "UK新首相Burnham就任(第7位).Gilts energy-sensitive.BoE MPC ahead",
-        "Bunds/Gilts:Energy price risk定价.10y Bund→3% year-end.1y1y+30bp since Jul 2",
-        "伊朗周末升级→Brent>$90(6月中以来首次).HKD IRS bear flatten+3-6bps",
-        "Japan Marine Day holiday→无UST→亚太独立定价"
-      ],
-      "flow": {
-        "sentiment": {
-          "dir": "weak",
-          "label": "伊朗周末升级→Brent>$90·CNH IG bullish~5bp tighter·EM IG恶化·Japan信用weak但balanced",
-          "note": "伊朗周末进一步升级→Brent>$90(+$8 from周五).亚太早盘risk-off但非panic.Japan balanced=分歧.CNH IG bullish=亚洲亮点(与EM IG恶化形成鲜明对比)"
-        },
-        "activeNames": [
-          {
-            "name": "Indonesia Sovereign",
-            "ticker": "INDON",
-            "tone": "sell",
-            "activity": "S&P affirm→short cover→geopolitics逆转.10yr+3-6,long-end+8-12bps wider",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Philippines Sovereign",
-            "ticker": "PHILIP",
-            "tone": "sell",
-            "activity": "Underperform INDON.Belly+5-10,long-end+8-10bps wider.RelVal unwind",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "PLN/Pertamina",
-            "ticker": "PLNIJ/PERTIJ",
-            "tone": "sell",
-            "activity": "SOEs跟随sovereign卖压.Long-end+4-8bps",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Dai-ichi/Indosat",
-            "ticker": "DAINMA/IDASAL",
-            "tone": "mixed",
-            "activity": "Outperform仅+1-2bps.相对INDON/PHILIP显著抗跌",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "First Rand",
-            "ticker": "FRIDPT",
-            "tone": "sell",
-            "activity": "+6-12bps wider.外资account卖出",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Malaysia Sovereign",
-            "ticker": "MALAYS",
-            "tone": "sell",
-            "activity": "Long-end+8bps.Insurance selling",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Petronas",
-            "ticker": "PETMK",
-            "tone": "sell",
-            "activity": "+4-8bps wider.跟随sovereign卖压",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Pakistan Sovereign",
-            "ticker": "PKSTAN",
-            "tone": "sell",
-            "activity": "Oil+15.9%→全线卖出.29s/31s-0.875pts,51s-1.25pts",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Sri Lanka Sovereign",
-            "ticker": "SRILAN",
-            "tone": "sell",
-            "activity": "MLBs-1.5pts,GLBs-1.375pts.油价+geopolitics双重打击",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Mongolia Sovereign",
-            "ticker": "MONGOL",
-            "tone": "sell",
-            "activity": "-0.5pts,12-15bps wider.DBMMN 31s unch",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "Laos Sovereign",
-            "ticker": "LAOSIN",
-            "tone": "buy",
-            "activity": "30s+0.5pts→历史新高!EM HY唯一逆势上涨",
-            "brokers": [
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "NAB",
-            "ticker": "NAB",
-            "tone": "new_issue",
-            "activity": "AUD2.5bn 3Y senior+57.Break+tighter→需求健康",
-            "brokers": [
-              "Deutsche Bank"
-            ]
-          },
-          {
-            "name": "UELAU",
-            "ticker": "UELAU",
-            "tone": "new_issue",
-            "activity": "AUD400m 5Y no concession→市场接受",
-            "brokers": [
-              "Deutsche Bank"
-            ]
-          },
-          {
-            "name": "Fonterra",
-            "ticker": "FCENZ",
-            "tone": "sell",
-            "activity": "Milk price forecast↓→NZD9.75/kg.Credit negative",
-            "brokers": [
-              "Deutsche Bank"
-            ]
-          },
-          {
-            "name": "Coles",
-            "ticker": "COLES",
-            "tone": "buy",
-            "activity": "Ceased Greencross acquisition→deleveraging.Credit positive",
-            "brokers": [
-              "Deutsche Bank"
-            ]
-          },
-          {
-            "name": "Ampol",
-            "ticker": "AMPOL",
-            "tone": "buy",
-            "activity": "Closed AUD400m hybrids KKR support→信用正面",
-            "brokers": [
-              "Deutsche Bank"
-            ]
-          },
-          {
-            "name": "Auckland Airport",
-            "ticker": "AUKNZ",
-            "tone": "sell",
-            "activity": "June pax-4% YoY→运营偏弱",
-            "brokers": [
-              "Deutsche Bank"
-            ]
-          },
-          {
-            "name": "Greenland Holdings",
-            "ticker": "GRNCH",
-            "tone": "buy",
-            "activity": "China HY benchmark.持续吸引RM+onshore买入.相对抗跌",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Longfor Group",
-            "ticker": "LNGFOR",
-            "tone": "buy",
-            "activity": "China HY benchmark.持续吸引RM+onshore买入.相对抗跌",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "HDFC Bank",
-            "ticker": "HDFC",
-            "tone": "buy",
-            "activity": "SEA IG demand.27/29/Perp lifted.ETF+RM buying",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "SBI",
-            "ticker": "SBI",
-            "tone": "buy",
-            "activity": "SEA IG demand.30 benchmark lifted",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "RPVIN",
-            "ticker": "RPVIN",
-            "tone": "buy",
-            "activity": "Ex-China HY front-end demand.28 lifted",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "INCLEN",
-            "ticker": "INCLEN",
-            "tone": "sell",
-            "activity": "Ex-China HY front-end hit.27 sold",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "GENTMK",
-            "ticker": "GENTMK",
-            "tone": "sell",
-            "activity": "Ex-China HY front-end hit.27 sold",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Adani",
-            "ticker": "ADANI",
-            "tone": "buy",
-            "activity": "Front-end demand.Thai T2s also bid",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Japan HY",
-            "ticker": "JP-HY",
-            "tone": "sell",
-            "activity": "IG+1-2bps.Insurance-1/8.HY-1/8~3/4pt.Fast money selling new issues",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Hanwha Aerospace",
-            "ticker": "HANWHA",
-            "tone": "new_issue",
-            "activity": "3Y IPT CT3+115.Mandate announced",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Linyi City Construction",
-            "ticker": "LINYI",
-            "tone": "new_issue",
-            "activity": "3Y IPT 5.7%.China LGFV",
-            "brokers": [
-              "HSBC"
-            ]
-          }
-        ],
-        "drivers": [
-          {
-            "broker": "Goldman Sachs",
-            "type": "地缘政治",
-            "summary": "伊朗放弃临时协议→WTI+15.9%WTD→EM IG back-end orphaned+8-12bps.EM HY全线卖出.US AM持续卖出→最大变量"
-          },
-          {
-            "broker": "Goldman Sachs",
-            "type": "宏观政策",
-            "summary": "CPI/PPI双miss rally仅一天被Warsh hawkish确认fade.UST bear flatten.higher for longer叙事根深蒂固"
-          },
-          {
-            "broker": "Goldman Sachs",
-            "type": "技术性",
-            "summary": "Asia Corp/Fin IG narrow range→spread韧性来自all-in yield需求.当周6 deals$4.4bn定价"
-          },
-          {
-            "broker": "Jane Street",
-            "type": "资金流",
-            "summary": "ETF strong net inflows→buying dip非panic.Energy XLE sole sector buyer(oil bid).Nasdaq-1.4% rotation day4"
-          },
-          {
-            "broker": "Jane Street",
-            "type": "持仓轮动",
-            "summary": "IWF large-cap growth净卖出→Value EFV/Intl inflows.Rotation持续:Tech→Energy/Defensives"
-          },
-          {
-            "broker": "Jane Street",
-            "type": "区域分化",
-            "summary": "Korea EWY outflow但outperform vs TW/CN underperform.DM:AU/EU/CA/UK outperform流入 vs JP underperform流出"
-          },
-          {
-            "broker": "Deutsche Bank",
-            "type": "结构性",
-            "summary": "AUD信用展现结构性韧性.Spreads flat→宏观vol下区域性decoupling.Compression持续→BBB+outperform"
-          },
-          {
-            "broker": "Deutsche Bank",
-            "type": "一级市场",
-            "summary": "NAB AUD2.5bn+57需求健康.UELAU no concession→confidence signal.USD financials mid-week heavier→week-end firmed"
-          },
-          {
-            "broker": "HSBC",
-            "type": "地缘升级",
-            "summary": "伊朗周末继续升级→Brent>$90(+$8 from周五).HKD IRS bear flatten+3-6bps.Japan假期无UST→亚太独立risk-off"
-          },
-          {
-            "broker": "HSBC",
-            "type": "区域分化",
-            "summary": "CNH IG~5bp tighter WoW(10Y benchmarks领涨) vs EM IG back-end orphaned 8-12bps→亚洲内部分化加剧"
-          },
-          {
-            "broker": "HSBC",
-            "type": "供给稀缺",
-            "summary": "CNH一级骤停(7月初HK FIC/Bond Connect Summit新措施后)→二级被全面追逐.Aug 3 HKEX 5-yr CGB future+CFETS电子平台待推出"
-          },
-          {
-            "broker": "HSBC",
-            "type": "流动结构",
-            "summary": "Japan:RM buying+ETF two-way+fast money selling新股=balanced.China HY:RM+onshore持续buy benchmark.Property bid≠全面risk-on"
-          }
-        ],
-        "etf_flows": {
-          "us_equity": {
-            "dir": "strong_inflows",
-            "detail": "VOO/SPYM/QQQM/XLK/UJUL buyers.Seller IWF(large-cap growth).Above avg volume→buying dip",
-            "source": "Jane Street"
-          },
-          "fi": {
-            "dir": "mixed",
-            "detail": "Muni inflows(JMUB).IG ETFs open strong→choppy→tilt buyers.HY ETFs outflows→chop→inflows into close",
-            "source": "Jane Street"
-          },
-          "em_equity": {
-            "dir": "mixed",
-            "detail": "IEMG/AVEM buyers.SPEM sellers.Korea EWY outflows but~flat.India INDA/Mexico EWW flattish.Taiwan EWT+China ASHR underperformed",
-            "source": "Jane Street"
-          },
-          "dm_equity": {
-            "dir": "mixed",
-            "detail": "Value EFV inflows vs Small-cap DFIS outflows.Australia EWA/Europe VGK/Canada EWC/UK EWU outperform→inflows.Japan EWJ underperform→outflows",
-            "source": "Jane Street"
-          },
-          "sectors": {
-            "dir": "rotating",
-            "detail": "Energy XLE sole sector buyer(oil bid).Communications XLC/ConsDisc XLY/Tech XLK/Financials XLF all selling",
-            "source": "Jane Street"
-          }
-        },
-        "credit_flows": {
-          "em_ig_cash": {
-            "dir": "sell_backend",
-            "detail": "US AM持续卖出back-end.10yr+3-6bps,long-end+8-12bps wider.Front-end local+ETF bid支撑→双速分化加剧",
-            "source": "Goldman Sachs"
-          },
-          "em_hy_cash": {
-            "dir": "sell",
-            "detail": "Oil+15.9%→RM全线卖出.Dealer community持仓出清.PKSTAN/SRILAN/MONGOL下行→LAOSIN逆势ATH",
-            "source": "Goldman Sachs"
-          },
-          "asia_corp_ig": {
-            "dir": "resilient",
-            "detail": "Asia Corp/Fin IG窄区间.Spread韧性来自all-in yield demand.当周6 deals$4.4bn",
-            "source": "Goldman Sachs"
-          },
-          "ig_cash_us": {
-            "dir": "even",
-            "detail": "Overall even flows.Inflows via PTs,outflows via RFQ",
-            "source": "Jane Street"
-          },
-          "hy_cash_us": {
-            "dir": "tilt_inflows",
-            "detail": "Tilted towards inflows(PTs)",
-            "source": "Jane Street"
-          },
-          "aud_credit": {
-            "dir": "flat",
-            "detail": "5Y selling vs 10Y+low-beta buying→curve陡峭化需求.AUD financial seniors stable.T2s unch/+1bp",
-            "source": "Deutsche Bank"
-          },
-          "usd_financials": {
-            "dir": "weaker",
-            "detail": "Heavier mid-week→T2s+1-2bp(selling recent deals)→firmed into week-end",
-            "source": "Deutsche Bank"
-          }
-        }
-      },
-      "issuers": [
-        {
-          "name": "Indonesia Sovereign",
-          "ticker": "INDON",
-          "assetClass": "EM_Sovereign",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "S&P affirm BBB stable→HF短暂short cover→geopolitics逆转.10yr+3-6bps,long-end+8-12bps wider.US AM持续卖出back-end",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Philippines Sovereign",
-          "ticker": "PHILIP",
-          "assetClass": "EM_Sovereign",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "Underperform INDON(both BBB).Belly+5-10bps,long-end+8-10bps wider.Looked rich→relative value unwind",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "PLN/Pertamina",
-          "ticker": "PLNIJ",
-          "assetClass": "EM_Corp",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Energy",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": true,
-          "priority": 2,
-          "newIssue": false,
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "SOEs跟随sovereign卖压.Long-end+4-8bps wider.油价上行=double-edged:利好energy信用但利空EM风险偏好",
-          "quote": "SOEs followed sovereign weakness with long-end 4-8bps wider",
-          "excludeReason": ""
-        },
-        {
-          "name": "Dai-ichi/Indosat",
-          "ticker": "DAINMA",
-          "assetClass": "EM_Corp",
-          "region": "Japan/SEA",
-          "ccy": "USD",
-          "sector": "Insurance/Telco",
-          "sovereign": false,
-          "flow": "mixed",
-          "inFocus": true,
-          "priority": 1,
-          "newIssue": false,
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "Outperformer仅+1-2bps wider.相对INDON/PHILIP显著抗跌.高质量IG在宏观vol下展现防御属性",
-          "quote": "Dai-ichi and Indosat managed to outperform, only 1-2bps wider",
-          "excludeReason": ""
-        },
-        {
-          "name": "First Rand",
-          "ticker": "FRIDPT",
-          "assetClass": "EM_Financial",
-          "region": "Africa",
-          "ccy": "USD",
-          "sector": "Banking",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "非洲区域",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "+6-12bps wider.外资account卖出.非洲区域风险溢价扩大",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Malaysia Sovereign",
-          "ticker": "MALAYS",
-          "assetClass": "EM_Sovereign",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "Long-end+8bps wider.Insurance selling驱动",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Petronas",
-          "ticker": "PETMK",
-          "assetClass": "EM_Corp",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Energy",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": true,
-          "priority": 3,
-          "newIssue": false,
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "+4-8bps wider跟随MALAYS卖压.油价上行利好基本面但主权关联拖累.估值机会",
-          "quote": "Petronas +4-8bps wider, following sovereign",
-          "excludeReason": ""
-        },
-        {
-          "name": "Pakistan Sovereign",
-          "ticker": "PKSTAN",
-          "assetClass": "EM_Sovereign",
-          "region": "SouthAsia",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "HY+主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "Oil+15.9%→RM全线卖出.29s/31s-0.625-0.875pts,51s-1.25pts.油价=巴基斯坦最大宏观风险",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Sri Lanka Sovereign",
-          "ticker": "SRILAN",
-          "assetClass": "EM_Sovereign",
-          "region": "SouthAsia",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "HY+主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "MLBs-1.25-1.5pts,GLBs-1.375pts.油价+geopolitics双重打击.HY中跌幅最大",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Mongolia Sovereign",
-          "ticker": "MONGOL",
-          "assetClass": "EM_Sovereign",
-          "region": "NorthAsia",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "HY+主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "-0.375-0.5pts,12-15bps wider.DBMMN 31s unch(单独估值独立).矿业国家受油价溢出影响",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Laos Sovereign",
-          "ticker": "LAOSIN",
-          "assetClass": "EM_Sovereign",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Sovereign",
-          "sovereign": true,
-          "flow": "buy",
-          "inFocus": false,
-          "excludeReason": "HY+主权",
-          "brokers": [
-            "Goldman Sachs"
-          ],
-          "analysis": "30s+0.5pts→历史新高!EM HY唯一逆势上涨.idiosyncratic逻辑.独立于油价+geopolitics",
-          "quote": "LAOSIN 30s outperformed, +0.5pts higher and trading at all-time highs",
-          "newIssue": false,
-          "priority": "Medium"
-        },
-        {
-          "name": "NAB",
-          "ticker": "NAB",
-          "assetClass": "DM_Financial",
-          "region": "Australia",
-          "ccy": "AUD",
-          "sector": "Banking",
-          "sovereign": false,
-          "flow": "new_issue",
-          "inFocus": false,
-          "newIssue": true,
-          "excludeReason": "AUD市场",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "analysis": "AUD2.5bn 3Y senior+57.Concession tight.Break+tighter→一级需求健康.AUD benchmark size signaling confidence",
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "UELAU",
-          "ticker": "UELAU",
-          "assetClass": "DM_Corp",
-          "region": "Australia",
-          "ccy": "AUD",
-          "sector": "Utilities",
-          "sovereign": false,
-          "flow": "new_issue",
-          "inFocus": false,
-          "newIssue": true,
-          "excludeReason": "AUD市场",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "analysis": "AUD400m 5Y no concession→市场接受度好.小众名字但定价顺利",
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Fonterra",
-          "ticker": "FCENZ",
-          "assetClass": "DM_Corp",
-          "region": "NZ",
-          "ccy": "NZD",
-          "sector": "Agri",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "NZD市场",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "analysis": "Lower milk price forecast→NZD9.75/kg.Credit negative.乳制品价格下行=现金流压力",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Coles",
-          "ticker": "COLES",
-          "assetClass": "DM_Corp",
-          "region": "Australia",
-          "ccy": "AUD",
-          "sector": "Retail",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": false,
-          "excludeReason": "AUD市场",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "analysis": "Ceased Greencross acquisition talks with TPG→deleveraging尾风险消除.Credit positive.防御性零售信用",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Ampol",
-          "ticker": "AMPOL",
-          "assetClass": "DM_Corp",
-          "region": "Australia",
-          "ccy": "AUD",
-          "sector": "Energy",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": false,
-          "excludeReason": "AUD市场",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "analysis": "Closed AUD400m delayed draw hybrids with KKR support→融资确定性增强.油价上行=基本面利好",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Auckland Airport",
-          "ticker": "AUKNZ",
-          "assetClass": "DM_Corp",
-          "region": "NZ",
-          "ccy": "NZD",
-          "sector": "Infra",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "NZD市场",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "analysis": "June pax-4% YoY→运营偏弱.旅游恢复速度低于预期.基础设施信用稳定但流量风险增加",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Greenland Holdings",
-          "ticker": "GRNCH",
-          "assetClass": "China_HY",
-          "region": "China",
-          "ccy": "USD",
-          "sector": "Property",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": false,
-          "excludeReason": "China HY",
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "China HY benchmark.持续吸引RM+onshore买入.Relative value bid",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Longfor Group",
-          "ticker": "LNGFOR",
-          "assetClass": "China_HY",
-          "region": "China",
-          "ccy": "USD",
-          "sector": "Property",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": false,
-          "excludeReason": "China HY",
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "China HY benchmark.持续吸引RM+onshore买入.Relative value bid",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "HDFC Bank",
-          "ticker": "HDFC",
-          "assetClass": "EM_Financial",
-          "region": "SouthAsia",
-          "ccy": "USD",
-          "sector": "Banking",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": true,
-          "priority": 4,
-          "newIssue": false,
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "SEA IG demand.27/29/Perp lifted by ETFs+RMs.Indian top-tier financial",
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "name": "SBI",
-          "ticker": "SBI",
-          "assetClass": "EM_Financial",
-          "region": "SouthAsia",
-          "ccy": "USD",
-          "sector": "Banking",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": true,
-          "priority": 5,
-          "newIssue": false,
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "SEA IG demand.30 benchmark lifted.Investor confidence in Indian public banks",
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "name": "RPVIN",
-          "ticker": "RPVIN",
-          "assetClass": "EM_HY",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Energy",
-          "sovereign": false,
-          "flow": "buy",
-          "inFocus": false,
-          "excludeReason": "HY",
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "Ex-China HY front-end 28 lifted.Oil price=double-edged for energy credit",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "INCLEN",
-          "ticker": "INCLEN",
-          "assetClass": "EM_HY",
-          "region": "SouthAsia",
-          "ccy": "USD",
-          "sector": "Energy",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "HY",
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "Ex-China HY front-end 27 hit.具体原因不明",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "GENTMK",
-          "ticker": "GENTMK",
-          "assetClass": "EM_HY",
-          "region": "SEA",
-          "ccy": "USD",
-          "sector": "Conglomerate",
-          "sovereign": false,
-          "flow": "sell",
-          "inFocus": false,
-          "excludeReason": "HY",
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "Ex-China HY front-end 27 hit.马来西亚企业",
-          "newIssue": false,
-          "priority": "Medium",
-          "quote": ""
-        },
-        {
-          "name": "Hanwha Aerospace",
-          "ticker": "HANWHA",
-          "assetClass": "Asia_IG",
-          "region": "Korea",
-          "ccy": "USD",
-          "sector": "Defense",
-          "sovereign": false,
-          "flow": "new_issue",
-          "inFocus": false,
-          "newIssue": true,
-          "excludeReason": "新股IPO",
-          "brokers": [
-            "HSBC"
-          ],
-          "analysis": "3Y IPT CT3+115.韩国军工.一级试水",
-          "priority": "Medium",
-          "quote": ""
-        }
-      ],
-      "insights": [
-        {
-          "broker": "Goldman Sachs",
-          "topic": "伊朗冲突升级→油价WTD+15.9%",
-          "point": "伊朗放弃SoH临时和平协议=上周最大变量.EM HY RM全线卖出.EM IG back-end orphaned 8-12bps wider.WTI突破$82→通胀预期+能源信用双重压力",
-          "quote": "Restart of the conflict between US/Iran over SoH disagreements leading to Tehran's abandonment of the interim peace deal"
-        },
-        {
-          "broker": "Goldman Sachs",
-          "topic": "CPI/PPI双miss rally被fade",
-          "point": "Core CPI-0.02%+PPI-0.3%→rally仅一天.Warsh'one data point'确认hawkish→UST bear flatten.higher for longer根深蒂固.Imports/housing/UMich beat=growth resilience",
-          "quote": "Warsh said it's one data point and he didn't want to overread or cherry-pick data"
-        },
-        {
-          "broker": "Goldman Sachs",
-          "topic": "Asia Corp IG结构性韧性",
-          "point": "Asia Corp/Fin IG窄区间.Spread韧性来自all-in yield需求→dealer inventory lighter.当周6 deals$4.4bn定价→一级供给健康但不压制",
-          "quote": "Asia Corp/Fin IG traded in a narrow range with strong demand for all-in yield"
-        },
-        {
-          "broker": "Jane Street",
-          "topic": "美股Rotation第四天:Energy取代Defensive",
-          "point": "Nasdaq-1.4%.Energy+1.2% sole outper(oil bid).ETF strong inflows=buying dip非panic.XLE sole sector buyer vs XLC-2.4%/XLY-1.6% underperform",
-          "quote": "US Equity ETFs had another day of strong net inflows coming in above average volume"
-        },
-        {
-          "broker": "Jane Street",
-          "topic": "ETF Flow:Value/Intl入 vs Growth出",
-          "point": "IWF large-cap growth净卖出→Value EFV流入.Rotation从Growth→Value+International.DM outperformers:Australia/Europe/Canada/UK",
-          "quote": "IWF was the only notable net seller in the large-cap segment"
-        },
-        {
-          "broker": "Deutsche Bank",
-          "topic": "AUD信用结构性能",
-          "point": "AUD spreads flat despite geopolitical escalation+rates vol→区域性decoupling.Compression:BBB+hybrids outperform→risk appetite仍在但偏好carry",
-          "quote": "Australian credit markets were quiet over the week, with spreads remaining flat despite geopolitical escalation"
-        },
-        {
-          "broker": "HSBC",
-          "topic": "伊朗周末升级→Brent>$90",
-          "point": "周五WTI$82.25→周末攻击升级→周一Brent>$90(6月中以来首次).HKD IRS bear flatten+3-6bps tracking UST futures.Japan假期无UST→亚太独立定价risk-off",
-          "quote": "US-Iran attacks escalated over weekend with Brent rising above $90 first time since mid-June"
-        },
-        {
-          "broker": "HSBC",
-          "topic": "CNH IG:亚洲信用最亮眼区域",
-          "point": "CNH IG spreads再紧~5bp WoW led by 10Y IG benchmarks.一级骤停(7月初HK FIC/Bond Connect Summit新措施后)→二级被机构全面追逐.onshore+offshore合力.与EM IG恶化形成极端对比",
-          "quote": "Bullish tone in CNH FI extends further, IG spreads overall WoW another ~5bp tighter led by 10Y IG benchmarks"
-        },
-        {
-          "broker": "HSBC",
-          "topic": "Japan信用:走弱但非恐慌",
-          "point": "IG+1-2bps.Insurance-1/8pt.HY-1/8~3/4pt.周五曾panic→周一flow balanced.RM buying+ETF two-way+fast money selling新股→结构性health而非systemic risk",
-          "quote": "Another weaker session though flows are more balanced than Friday and nothing at all resembling panic"
         }
       ],
       "top_conclusions": [],
