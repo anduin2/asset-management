@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-07 08:43 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-07 10:17 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4553,307 +4553,403 @@ window.REPORT_DATA =
         },
         "activeNames": [
           {
-            "name": "Genting Complex",
-            "ticker": "GENTMK/GENMMK",
-            "tone": "Better Buying",
-            "activity": "HK/SEA投资者在稳定宏观前景下增持永续债和优先票据，收益率吸引力推动买盘",
-            "brokers": []
-          },
-          {
             "name": "GLP/New World Dev/VNKRLE",
             "ticker": "GLPSP/NWDEVL/VNKRLE",
-            "tone": "Selective Chase",
-            "activity": "China HY三大活跃名字+0.5-1pt。HF/fast money主力买入，onshore PM也积极参与。从周三恐慌抢购转向周四选择性追涨=偏好分化",
-            "brokers": []
+            "tone": "buy",
+            "activity": "China HY三大活跃名字+0.5-1pt。HF/fast money主力买入，onshore PM参与。偏好分化中优质标的领涨",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
           },
           {
             "name": "CWENIN/RPVIN/VEDLN",
             "ticker": "CWENIN/RPVIN/VEDLN",
-            "tone": "Continued Buying",
-            "activity": "Ex-China HY持续买盘，投资者在稳定宏观管辖区寻找收益率。IG利差收窄后资金轮动至HY",
-            "brokers": []
+            "tone": "buy",
+            "activity": "Ex-China HY持续买入。IG利差收窄后收益率寻求型资金轮动至HY板块",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "Genting Complex",
+            "ticker": "GENTMK/GENMMK",
+            "tone": "buy",
+            "activity": "HK/SEA投资者增持永续债和优先票据。稳定宏观前景下的收益率配置",
+            "brokers": [
+              "HSBC"
+            ]
           },
           {
             "name": "SOFTBK",
             "ticker": "SOFTBK",
-            "tone": "Profit-Taking",
-            "activity": "-0.125-0.625pt尽管盈利超预期(LTV 17%→13%, NAV ¥40tn→¥72tn, 预订¥1.3tn Intel收益)。CDS +13bp至59.875=Japan macro overhang压制buy-the-earnings",
-            "brokers": []
+            "tone": "sell",
+            "activity": "-0.125-0.625pt。盈利超预期但Japan macro overhang压制。CDS +13bp至59.875",
+            "brokers": [
+              "HSBC",
+              "Barclays",
+              "JEFFERIES"
+            ]
           },
           {
             "name": "HSBC TLAC $6.75bn",
             "ticker": "HSBC",
-            "tone": "Well Received",
-            "activity": "3-part 6NC5 FRN+固定+11NC10定价。FRN被fast money吸纳，固定被RM认购。本周最大Asia TLAC，为后续发行设基准",
-            "brokers": []
+            "tone": "buy",
+            "activity": "3-part 6NC5 FRN+固定+11NC10。FRN被fast money吸纳，固定RM认购。本周最大Asia TLAC",
+            "brokers": [
+              "HSBC",
+              "Barclays",
+              "TD"
+            ]
           },
           {
             "name": "Stanchart",
             "ticker": "STANLN",
-            "tone": "Launching Tonight",
-            "activity": "4NC3+11NC10今晚启动，市场观察HSBC后投资者需求来确定定价指引",
-            "brokers": []
+            "tone": "new_issue",
+            "activity": "4NC3+11NC10今晚定价。市场以HSBC需求为定价参考",
+            "brokers": [
+              "TD",
+              "Barclays"
+            ]
           },
           {
             "name": "MQGAU/ACAFP",
             "ticker": "MQGAU/ACAFP",
-            "tone": "Active Trading",
-            "activity": "AUD金融类活跃：MQGAU新发A$ FRN -1~2bps，ACAFP二级较发行水平收紧+5bps。AUD前端买盘持续",
-            "brokers": []
+            "tone": "mixed",
+            "activity": "MQGAU新FRN -1~2bps，ACAFP较发行价+5bps。AUD前端双向交易活跃",
+            "brokers": [
+              "TD",
+              "HSBC"
+            ]
           },
           {
             "name": "SBI/EXIM India",
             "ticker": "SBIIN/EXIMBK",
-            "tone": "Structural Bid",
-            "activity": "onshore+区域账户净买入India IG，结构性长久期收益率配置。独立于NFP结果=防御性定位",
-            "brokers": []
+            "tone": "buy",
+            "activity": "境内+区域账户结构性长久期配置。需求独立于NFP，防御性定位",
+            "brokers": [
+              "Barclays",
+              "HSBC"
+            ]
           },
           {
             "name": "Korea 3-5Y FRNs",
             "ticker": "KOREA FRN",
-            "tone": "Renewed Buying",
-            "activity": "经历数周沉重抛售后的均值回归交易。银行treasury+RM重拾买盘。FRN结构在加息环境下受偏好",
-            "brokers": []
+            "tone": "buy",
+            "activity": "数周抛压后均值回归交易。银行treasury+RM重拾买盘。加息预期下FRN受偏好",
+            "brokers": [
+              "TD",
+              "Barclays"
+            ]
           },
           {
             "name": "Black Peony/China Everbright CNH",
             "ticker": "BLAPEO/CHEVER",
-            "tone": "New Issue",
-            "activity": "CNH 3Y新发分别2.8%/1.86%，丰富CNH信用供给管线，测试投资者对中资POE的胃口",
-            "brokers": []
+            "tone": "new_issue",
+            "activity": "CNH 3Y新发2.8%/1.86%。测试投资者对中资POE信用胃口",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
           },
           {
             "name": "Guangdong Province CNH",
             "ticker": "GUANGD",
-            "tone": "New Issue",
-            "activity": "CNH 2/3/5Y三档新发，测试投资者对长端中国LGFV的需求。NFP后二级表现关键",
-            "brokers": []
+            "tone": "new_issue",
+            "activity": "CNH 2/3/5Y三档新发。NFP后二级表现为关键观察窗口",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
           },
           {
             "name": "Japan Lifers Buying Duration",
             "ticker": "JP TLAC/Corp",
-            "tone": "Structural Bid",
-            "activity": "Japan lifers/Asian AM买入长端Japan TLAC+3-5yr Japan corp。banking account吸收高质量FRN。利率rally时结构性买盘",
-            "brokers": []
+            "tone": "buy",
+            "activity": "寿险/资管买入长端TLAC+3-5y Corp。利率rally时结构性配置。banking吸收高质量FRN",
+            "brokers": [
+              "JEFFERIES",
+              "Barclays"
+            ]
           }
         ],
         "drivers": [
           {
-            "broker": "MS+mkt+BMO",
-            "type": "Geopolitical",
-            "summary": "{'broker': 'MS+mkt+BMO', 'type': 'Geopolitical', 'note': 'Hormuz崩盘=本周最大flow catalyst：Oil +3.8%→能源板块+1.6%→BEI反弹→UST sell-off→USD走强。三天hope到崩盘的complete reversal。Aramco spare capacity有限→low$70支撑=further disruption=upside tail risk'}"
+            "broker": "Morgan Stanley",
+            "type": "Geopolitical & Hawkish Fed",
+            "summary": "能源供给担忧+有韧性经济活动→通胀与政策利率预期双升→全球利率全面抛售。Hormuz乐观消退+Warsh 9月加息=单日+6.5bp。千万亿级科技债供给叠加久期压力"
           },
           {
-            "broker": "MS+mkt",
-            "type": "Policy Shift",
-            "summary": "{'broker': 'MS+mkt', 'type': 'Policy Shift', 'note': 'Fed Warsh Hawkish=本周最大flow reversal：48小时内ADP dovish→Warsh prepared to hike。UST全面sell-off 10y+6.5bp→duration selling→credit cautious→USD strength。NFP beat→Sept hike>50%→accelerate selling'}"
-          },
-          {
-            "broker": "MS+BMO",
-            "type": "Supply Pressure",
-            "summary": "{'broker': 'MS+BMO', 'type': 'Supply Pressure', 'note': '$25bn多期限科技供给+Treasury refunding=前端+belly supply压力。大型科技发行增加久期负担至40y。HSBC+Stanchart TLAC=bank paper供应高峰'}"
-          },
-          {
-            "broker": "BMO+MS",
+            "broker": "BMO Capital Markets",
             "type": "Inflation Repricing",
-            "summary": "{'broker': 'BMO+MS', 'type': 'Inflation Repricing', 'note': 'BEI反弹5y+4bp(最大move)=能源驱动通胀预期重定价。stagflation-lite信号=长端UST面临real yield+BEI双重压力。TIPS RM/ETF在local high real yields买入=长期配置需求'}"
+            "summary": "BEI全面反弹跟随能源：5y+4bp/10y+3bp/30y+2bp。伊朗禁美以船+征通行费+Qeshm打击→通胀预期重定价。TIPS买盘活跃，RM+ETF在30y实际收益率近3%时加大买入"
           },
           {
-            "broker": "MS",
-            "type": "FX Intervention Fade",
-            "summary": "{'broker': 'MS', 'type': 'FX Intervention Fade', 'note': 'USD/JPY 800+pips干预→300pips retrace至158.43=intervention fade确认。higher US yields+oil=Japan terms of trade恶化=结构性贬值。NFP beat=test 160→二次干预可能'}"
+            "broker": "Citi",
+            "type": "Supply & Technicals",
+            "summary": "$250bn科技债供给消化远比预期有序，成交量>$550mn。TMT+2/5bp优于此前AMZN/NVDA/META发行。大规模空头回补+买盘涌入现有TMT，SpaceX曲线-5-10bp"
           },
           {
-            "broker": "MS",
-            "type": "BoJ Repricing",
-            "summary": "{'broker': 'MS', 'type': 'BoJ Repricing', 'note': 'JGB 30y auction absorbed but below expectations→BoJ hawkish concerns surfaced→front-end underperformed→XCCY basis widened→global long-end ceiling effect'}"
+            "broker": "HSBC",
+            "type": "Asia Credit Divergence",
+            "summary": "China HY风险偏好强劲：GLP+NWD perp买盘活跃，VNKRLE+0.5-1pt。日本谨慎：SOFTBK财报好仍跌-0.125-0.625pt。SEA前端买盘好，Ex-China HY获资金流入"
           },
           {
-            "broker": "HSBC+Barclays+JEF+TD",
-            "type": "NFP Eve Positioning",
-            "summary": "{'broker': 'HSBC+Barclays+JEF+TD', 'type': 'NFP Eve Positioning', 'note': '四券商一致：全资产flow universally lighter=NFP等待模式。RM获利了结利率rally→等方向后加仓。Bank treasuries重拾Korea FRNs=均值回归。India IG=独立于NFP的结构性bid'}"
+            "broker": "Barclays",
+            "type": "NFP Eve Wait-and-See",
+            "summary": "NFP前观望日。China IG利差+/-1bp窄幅波动。India IG净需求-SBI/EXIM获买盘。韩日澳IG利差持平。HSBC TLAC FRN=快钱卖/固定=RM买。Asia Sovs+CDS清淡"
           },
           {
-            "broker": "HSBC+Barclays+TD",
-            "type": "China HY Deceleration",
-            "summary": "{'broker': 'HSBC+Barclays+TD', 'type': 'China HY Deceleration', 'note': 'China HY从Wed panic-buying到Thu selective chase=上涨动能减速=健康调整。quality differentiation emerging。NFP miss→resume rally, NFP beat→profit-taking risk'}"
+            "broker": "JEFFERIES",
+            "type": "Technical & Flow",
+            "summary": "UST区间运行+趋平。Hormuz消息拉锯。Aramco：非冲突炼油产能满载→油$70支撑。10y走出扩散平台修正→修复完成或回升至4.68/4.71/4.75。Japan lifers买TLAC+corp"
           },
           {
-            "broker": "JEF+Barclays",
-            "type": "Japan Risk Premium",
-            "summary": "{'broker': 'JEF+Barclays', 'type': 'Japan Risk Premium', 'note': 'SOFTBK -0.125-0.625pt despite earnings beat+LTV/NAV improved=Japan macro overhang在定价。BoJ hawkish+JGB supply+Warsh tightening=Japan duration非risk-free'}"
+            "broker": "TD Securities",
+            "type": "Regional Flow",
+            "summary": "亚洲极端清淡平盘。Korea 3-5y FRN：沉寂数周后新一轮买盘。印尼+菲+1-2bp。HSBC $6.75bn TLAC三档均近发行价。Stanchart 4NC3+11NC10启动。MQG/ACAFP双向$60mn+"
           }
         ]
       },
       "issuers": [
         {
-          "name": "GLP/New World Dev/VNKRLE",
+          "ticker": "GLPSP/NWDEVL/VNKRLE",
+          "name": "普洛斯/新世界发展/万科 (China HY)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "China",
+          "ccy": "USD",
           "assetClass": "China HY",
-          "action": "Chase",
-          "note": "HN/Fast money+onshore PM bid +0.5-1pt, quality differentiation from panic-buying to selective chase. GLP perps+NWD perps+VNKRLE most active",
-          "inFocus": true,
-          "ticker": "GLP/New Worl",
-          "region": "APAC",
-          "ccy": "CNY",
+          "sector": "Real Estate",
           "sovereign": false,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "buy",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "对冲基金和快钱持续追逐跑赢市场的核心标的，GLP和NWD永续债买盘活跃，VNKRLE上涨约0.5-1pt，WESCHI也涨了25-50c。风险偏好从恐慌买入转向选择性追逐。",
+          "analysis": "中国高收益板块延续强势，对冲基金和快钱持续追逐跑赢市场的核心标的。高贝塔信用需求坚挺，但已从全面恐慌买入进入质量分化阶段——优质标的继续获得区分性买盘，而尾部风险仍然存在。",
           "excludeReason": ""
         },
         {
-          "name": "SOFTBK",
-          "assetClass": "Japan Corp",
-          "action": "Profit-Taking",
-          "note": "-0.125-0.625pt despite stronger earnings. LTV improved 17%→13%, NAV ¥40tn→¥72tn, raised $10bn SVF2, booked ¥1.3tn Intel. CDS +13bp to 59.875=Japan macro overhang concern",
-          "inFocus": true,
           "ticker": "SOFTBK",
-          "region": "APAC",
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
-          "excludeReason": ""
-        },
-        {
-          "name": "HSBC TLAC",
-          "assetClass": "Bank Senior",
-          "action": "Pricing",
-          "note": "$6.75bn 3-part 6NC5 FRN+fixed+11NC10 well received. FRN fast money, fixed RM. Largest Asia TLAC of the week, sets benchmark",
+          "name": "软银集团 (SOFTBK)",
           "inFocus": true,
-          "ticker": "HSBC TLAC",
-          "region": "APAC",
-          "ccy": "CNY",
+          "priority": 1,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "Japan Corp",
+          "sector": "Technology/Telco",
           "sovereign": false,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "sell",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "JEFFERIES"
+          ],
+          "quote": "收盘下跌0.125-0.625pt，尽管财报超预期——LTV 17%降至13%, NAV 40万亿增至72万亿日元，利用OpenAI股份筹集100亿美元SVF2，确认1.3万亿日元Intel股份收益。",
+          "analysis": "SOFTBK呈现典型的好财报坏价格格局。基本面持续改善，但信用市场反应冷淡——HSBC、Barclays、JEFFERIES均报告全天卖方占优。CDS前端买盘明显，5年CDS涨至+13bp，反映市场对公司治理、交叉持股及宏观敞口的担忧压倒了财报利好。这种基本面与信用价格的分化值得关注，可能提供错杀机会。",
           "excludeReason": ""
         },
         {
-          "name": "Stanchart",
-          "assetClass": "Bank Senior",
-          "action": "Launching",
-          "note": "4NC3+11NC10 launching tonight. Market watching post-HSBC demand for pricing guidance",
+          "ticker": "HSBC",
+          "name": "汇丰控股 TLAC (HSBC)",
           "inFocus": true,
-          "ticker": "Stanchart",
-          "region": "APAC",
-          "ccy": "CNY",
+          "priority": 1,
+          "region": "Global",
+          "ccy": "USD",
+          "assetClass": "Bank Senior",
+          "sector": "Financial",
           "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "TD"
+          ],
+          "quote": "67.5亿美元三档交易（6NC5 FRN+固定+11NC10），本周最大亚洲TLAC新发，所有三档均在发行价附近交易。",
+          "analysis": "汇丰控股成功定价了67.5亿美元三档TLAC交易，成为本周亚洲最大银行债发行。6NC5 FRN端吸引了快钱和银行账户，固定端获得RM买入。Barclays注意到亚洲账户聚焦FRN。HSBC的成功为随后启动的Stanchart 4NC3+11NC10提供了积极信号，市场正在验证银行TLAC供应的吸收能力。",
           "excludeReason": ""
         },
         {
-          "name": "Korea 3-5Y FRNs",
+          "ticker": "STANLN",
+          "name": "渣打银行新发行 (Stanchart)",
+          "inFocus": false,
+          "priority": 2,
+          "region": "Global",
+          "ccy": "USD",
+          "assetClass": "Bank Senior",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "launch",
+          "brokers": [
+            "TD",
+            "Barclays"
+          ],
+          "quote": "4NC3+11NC10今晚定价——市场关注HSBC TLAC后的需求作为定价参考。",
+          "analysis": "渣打银行紧随HSBC启动了4NC3和11NC10的TLAC新发行。HSBC的成功交易为Stanchart提供了正向的市场环境信号，但投资者将会将两笔交易的需求和定价进行比较，Stanchart的具体定价将提供关于银行TLAC供应吸收深度的重要信息。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "KOREA_FRN",
+          "name": "韩国3-5年期FRN板块",
+          "inFocus": true,
+          "priority": 2,
+          "region": "Korea",
+          "ccy": "USD",
           "assetClass": "Korea IG",
-          "action": "Renewed Buying",
-          "note": "Renewed buying after weeks heavy. Bank treasuries+RM mean reversion trade. FRN structure preferred in rising rate environment",
-          "inFocus": true,
-          "ticker": "Korea 3-5Y F",
-          "region": "APAC",
-          "ccy": "CNY",
+          "sector": "Financial/Sovereign",
           "sovereign": false,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "buy",
+          "brokers": [
+            "TD",
+            "Barclays"
+          ],
+          "quote": "在经受几周持续抛压后出现新一轮买盘，银行treasury和RM账户在利率上升环境下更偏好FRN结构。",
+          "analysis": "韩国3-5年FRN板块在经历了数周的持续抛压后，今天出现了新一轮买入兴趣。TD Securities和Barclays两侧均报告买盘回归，银行treasury账户和RM正在执行均值回归策略。在利率上升预期加剧的环境下，FRN结构相比固定利率更受欢迎。",
           "excludeReason": ""
         },
         {
-          "name": "India IG (SBI/EXIM)",
+          "ticker": "SBIIN/EXIMBK",
+          "name": "印度SBI/进出口银行 (India IG)",
+          "inFocus": false,
+          "priority": 2,
+          "region": "India",
+          "ccy": "USD",
           "assetClass": "India IG",
-          "action": "Accumulate",
-          "note": "Net demand from onshore+regional accounts. Structural long-duration yield play. Independent of NFP outcome=defensive positioning",
-          "inFocus": true,
-          "ticker": "India IG (SB",
-          "region": "APAC",
-          "ccy": "CNY",
-          "sovereign": false,
+          "sector": "Financial/Sovereign",
+          "sovereign": true,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "buy",
+          "brokers": [
+            "Barclays",
+            "HSBC"
+          ],
+          "quote": "净需求持续，境内和区域账户结构性买入长端收益率，需求独立于NFP结果。",
+          "analysis": "印度投资级板块出现净需求，高评级SBI和EXIM债券获得买盘。Barclays和HSBC一致报告境内和区域账户在积累该板块，主要是结构性长端收益率策略。印度IG的特点在于其需求独立于美国宏观事件，更多由境内资金驱动的长期配置需求支撑。",
           "excludeReason": ""
         },
         {
-          "name": "CWENIN/RPVIN/VEDLN",
+          "ticker": "CWENIN/RPVIN/VEDLN",
+          "name": "CWENIN/RPVIN/VEDLN (Ex-China HY)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "India/SEA",
+          "ccy": "USD",
           "assetClass": "Ex-China HY",
-          "action": "Adding",
-          "note": "Ex-China HY continued buying on stable macro jurisdictions. Yield-seeking accounts rotating from narrower IG spreads",
-          "inFocus": true,
-          "ticker": "CWENIN/RPVIN",
-          "region": "APAC",
-          "ccy": "CNY",
+          "sector": "Diversified",
           "sovereign": false,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "buy",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "稳定宏观情绪下持续买入——收益率寻求型账户在IG利差收窄后转向HY板块中宏观稳定的标的。",
+          "analysis": "Ex-China高收益板块在稳定宏观背景下继续获得买入。CWENIN 31、RPVIN 31、VEDLN 37、PTSMGP 31和AXSBIN永续债等标的均有买盘。由于投资级利差持续压缩，寻求收益的账户正在转向高收益板块中宏观基本面稳定的标的。",
           "excludeReason": ""
         },
         {
-          "name": "Genting Complex",
+          "ticker": "GENMKT/GENSP",
+          "name": "云顶集团综合体 (Genting Complex)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "SEA",
+          "ccy": "USD",
           "assetClass": "SEA HY",
-          "action": "Better Buying",
-          "note": "Better buying perps+senior from HK/SEA investors on stable macro outlook and attractive yields",
-          "inFocus": true,
-          "ticker": "Genting Comp",
-          "region": "APAC",
-          "ccy": "CNY",
+          "sector": "Gaming/Leisure",
           "sovereign": false,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "buy",
+          "brokers": [
+            "HSBC"
+          ],
+          "quote": "永续债和优先债均获买入，香港/东南亚投资者在稳定宏观前景下配置。",
+          "analysis": "云顶集团相关的永续债和优先债在稳定宏观预期下持续获得买入。Genting复杂的信用结构为有深度信用能力的投资者提供了多种参与方式，当前的买盘集中在收益率较高的永续债端。",
           "excludeReason": ""
         },
         {
-          "name": "Guangdong/Black Peony/Everbright",
+          "ticker": "GDCNH/EBSECU",
+          "name": "广东/黑牡丹/光大证券 (中国CNH)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "China",
+          "ccy": "CNH",
           "assetClass": "China LGFV/POE",
-          "action": "New Issue",
-          "note": "CNH 2/3/5Y pipeline testing investor appetite. Guangdong 3-part, Black Peony 3Y 2.8%, Everbright 3Y 1.86%. Supply pressure watch",
-          "inFocus": true,
-          "ticker": "Guangdong/Bl",
-          "region": "APAC",
-          "ccy": "CNY",
+          "sector": "Government/Financial",
           "sovereign": false,
-          "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "newIssue": true,
+          "flow": "launch",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "quote": "CNH 2/3/5年期管线测试投资者需求深度——广东三档、黑牡丹3Y 2.8%、光大证券3Y 1.86%。",
+          "analysis": "离岸人民币债券发行管线正在测试投资者需求深度。广东CNH发行2/3/5年三档，黑牡丹3年期定价2.8%，光大证券国际3年期定价1.86%。CNH市场的活跃程度正在提高，但各发行人的定价区间差异显著，反映投资者对不同信用资质的区分定价。",
           "excludeReason": ""
         },
         {
-          "name": "MQGAU / ACAFP",
+          "ticker": "MQGAU/ACAFP",
+          "name": "麦格理/法国农业信贷 (AUD Financial)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Australia",
+          "ccy": "AUD",
           "assetClass": "AUD Financial",
-          "action": "Active Trading",
-          "note": "AUD financials active: MQGAU new A$ FRN -1~2bps, ACAFP secondary +5bps tighter from new issue. Front-end buying persistent in AUD",
-          "inFocus": true,
-          "ticker": "MQGAU / ACAF",
-          "region": "APAC",
-          "ccy": "CNY",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "buy",
+          "brokers": [
+            "TD",
+            "HSBC"
+          ],
+          "quote": "MQG FRN -1至2bp reoffer价交易，ACAFP较发行价收紧约5bp——两只新发行双双重现强势。",
+          "analysis": "AUD金融板块两只新发行双双录得不错的二级表现。MQG新FRN交易在reoffer价以下1至2bp。ACAFP表现更优，较发行价收紧了约5bp，来自离岸投资者的补仓做多需求强劲。线下债券方面，银行次级和AT1在零售/私银投资者持续的收益率追求下继续获得买盘。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "INDON/PHILIP",
+          "name": "印尼/菲律宾主权 (Asia Sovs)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "SEA",
+          "ccy": "USD",
+          "assetClass": "Credit",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "TD",
+            "Barclays"
+          ],
+          "quote": "印尼和菲律宾利差收窄1-2bp，全天买入兴趣良好，利率企稳后久期获得买盘。",
+          "analysis": "亚洲主权板块中印尼和菲律宾利差均收窄了1-2bp，TD和Barclays均报告全天看到买入兴趣。Barclays指出本地账户在持续买入曲线中段，和印度IG相似，高评级亚洲主权债在当前全球利率不确定性中提供了相对稳定的收益载体。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "JP_TLAC",
+          "name": "日本银行TLAC/Japan Corp",
+          "inFocus": false,
+          "priority": 2,
+          "region": "Japan",
+          "ccy": "USD",
+          "assetClass": "Japan IG",
+          "sector": "Financial/Corporate",
           "sovereign": false,
           "newIssue": false,
-          "priority": "Medium",
-          "flow": "",
-          "quote": "",
-          "analysis": "",
+          "flow": "mixed",
+          "brokers": [
+            "JEFFERIES",
+            "Barclays"
+          ],
+          "quote": "实钱卖出获利了结 vs 寿险公司/资管买入长端TLAC和3-5年Corp——方向不明的混合流。",
+          "analysis": "日本投资级板块呈现出典型的实钱获利了结vs本土配置买入的拉锯格局。JEFFERIES报告实钱账户在本周利率反弹后卖出获利了结，而日本寿险公司和亚洲资管账户在买入长端Japan TLAC和3-5年Japan Corp。整体利差持平至+0-1bp，但背后的资金流方向高度分化。",
           "excludeReason": ""
         }
       ],
