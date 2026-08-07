@@ -130,6 +130,11 @@ blockquote { margin:8px 0 0; padding-left:10px; border-left:3px solid #c7d7fe; c
 .tab-thread::before { content:"🧵"; font-size:13px; }
 .tab-thread:hover { background:#f4f0ff; }
 .tab-thread.active { background:#f1ecfe; border-color:var(--violet); color:#5a2ca0; box-shadow:0 1px 3px rgba(105,65,198,.20); }
+.tab-macro { height:38px; padding:0 15px; border:1px solid #d1e7db; border-radius:9px; background:#f3faf5; color:#0d6e3e; font:inherit; font-weight:650; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:.12s; }
+.tab-macro::before { content:"📊"; font-size:13px; }
+.tab-macro:hover { background:#eaf7ee; }
+.tab-macro.active { background:#daf2e0; border-color:#0d6e3e; color:#0b5a32; box-shadow:0 1px 3px rgba(13,110,62,.20); }
+.tab-macro-frame { width:100%; height:calc(100vh - 180px); min-height:600px; border:1px solid #e2e8f0; border-radius:10px; background:#fff; }
 .tab-view { display:none; } .tab-view.active { display:block; }
 .board { overflow-x:auto; }
 table { width:100%; border-collapse:collapse; font-size:12px; }
@@ -372,6 +377,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       <button class="tab" data-tab="data">数据核对</button>
     </div>
     <button class="tab tab-thread" data-tab="threads">Thread View · 主题追踪</button>
+    <button class="tab tab-macro" data-tab="macro">宏观指标</button>
     <span class="cb-spacer"></span>
     <div class="filters">
       <input class="search" id="search" placeholder="搜索主题 / 券商 / 观点">
@@ -432,6 +438,10 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     </div>
   </section>
 
+  <section class="tab-view" id="tab-macro">
+    <iframe class="tab-macro-frame" src="macro-dashboard.html" title="宏观指标仪表盘"></iframe>
+  </section>
+
   <div class="quality">
     <details>
       <summary>Data Quality Log(当日运营审计)</summary>
@@ -440,7 +450,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   </div>
 </main>
 
-<script src="trading_data.js?v=202608070846"></script>
+<script src="trading_data.js?v=202608070851"></script>
 <script>
 (function () {
   const D = window.REPORT_DATA || {};

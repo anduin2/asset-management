@@ -16,6 +16,7 @@ SOURCES = {
     "交易台报告.html":         ROOT / "交易台报告" / "卖方每日情报.html",
     "trading_data.js":        ROOT / "交易台报告" / "report-data.js",
     "ca-report.html":         ROOT / "Corporate Actions" / "ca-report.html",
+    "macro-dashboard.html":   ROOT / "宏观" / "indicator_dashboard.html",
 }
 
 AUTH_TAG = '<script src="auth.js"></script>'

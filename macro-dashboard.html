@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate">
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<title>指标展望仪表盘 - 2026-08-06</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f8f9fb;color:#1e293b;line-height:1.5;-webkit-font-smoothing:antialiased}
+.hdr{background:#fff;border-bottom:1px solid #e2e8f0;padding:18px 28px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.hdr h1{font-size:18px;font-weight:700;color:#0f172a} .hdr .b{font-size:11px;color:#64748b;background:#f1f5f9;padding:3px 10px;border-radius:10px;font-weight:500}
+.main{max-width:1100px;margin:0 auto;padding:20px 24px}
+
+.stats{display:flex;gap:10px;margin-bottom:18px}
+.st{background:#fff;border-radius:8px;padding:12px 18px;flex:1;text-align:center;border:1px solid #e2e8f0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.st .n{font-size:24px;font-weight:800;color:#0f172a} .st .l{font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;margin-top:1px}
+.st.s1 .n{color:#2563eb} .st.s2 .n{color:#059669}
+
+.tabs{display:flex;gap:0;margin-bottom:16px;background:#f1f5f9;border-radius:8px;padding:3px;width:fit-content}
+.tab{padding:7px 22px;background:transparent;border:none;color:#64748b;cursor:pointer;font-size:13px;font-weight:500;border-radius:6px;transition:all .15s}
+.tab:hover{color:#334155} .tab.on{background:#fff;color:#0f172a;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.tab-body{display:none} .tab-body.on{display:block}
+
+/* Snapshot */
+.snap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+.cat-card{background:#fff;border-radius:10px;border:1px solid #e2e8f0;box-shadow:0 1px 3px rgba(0,0,0,.03);overflow:hidden;transition:box-shadow .2s}
+.cat-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.cat-hd{padding:10px 16px;display:flex;align-items:center;gap:7px;border-bottom:1px solid #f1f5f9}
+.cat-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.cat-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+.cat-cnt{font-size:10px;color:#94a3b8;margin-left:auto}
+.cat-body{padding:6px 0}
+.ind-row{display:flex;align-items:center;padding:8px 16px;gap:8px;font-size:12px;border-bottom:1px solid #f8fafc}
+.ind-row:last-child{border-bottom:none}
+.ind-name{flex:1;font-weight:600;color:#1e293b;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ind-val{font-weight:700;color:#0f172a;text-align:right;min-width:45px;font-size:13px;font-variant-numeric:tabular-nums}
+.ind-unit{font-size:9px;color:#94a3b8;min-width:16px}
+.ind-bk{font-size:10px;font-weight:600;min-width:24px;text-align:center}
+.ind-dt{font-size:9px;color:#94a3b8;min-width:38px;text-align:right}
+.db{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;font-size:10px;flex-shrink:0}
+.du{background:#dcfce7;color:#16a34a} .dd{background:#fef2f2;color:#dc2626} .df{background:#f1f5f9;color:#94a3b8}
+
+/* Outlook */
+.oc-grid{display:flex;flex-direction:column;gap:12px}
+.ot-card{background:#fff;border-radius:10px;border:1px solid #e2e8f0;box-shadow:0 1px 3px rgba(0,0,0,.03);overflow:hidden}
+.ot-hd{padding:12px 18px;background:#fafbfc;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:10px}
+.ot-hd-nm{font-size:14px;font-weight:700;color:#0f172a}
+.ot-hd-cat{font-size:9px;padding:2px 8px;border-radius:8px;color:#fff;font-weight:600;letter-spacing:.3px}
+.ot-hd-cons{font-size:11px;font-weight:600;margin-left:auto;padding:3px 8px;border-radius:5px}
+.ot-hd-cons.bullish{background:#dcfce7;color:#16a34a}
+.ot-hd-cons.bearish{background:#fef2f2;color:#dc2626}
+.ot-hd-cons.neutral{background:#f1f5f9;color:#64748b}
+
+.ot-table{width:100%;border-collapse:collapse;font-size:12px}
+.ot-table th{padding:7px 14px;text-align:left;font-size:9px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.4px;background:#fafcfd;border-bottom:1px solid #e2e8f0}
+.ot-table td{padding:9px 14px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+.ot-table tr:last-child td{border-bottom:none}
+.ot-table .tc-bk{font-weight:700;font-size:11px}
+.ot-table .tc-cv{color:#64748b;font-variant-numeric:tabular-nums}
+.ot-table .tc-arrow{color:#cbd5e1;text-align:center;width:24px}
+.ot-table .tc-fore{font-weight:600;color:#1e293b;font-variant-numeric:tabular-nums}
+.ot-table .tc-hz{font-size:10px;color:#64748b}
+.ot-table .tc-dir{text-align:center}
+.delta{display:inline-flex;align-items:center;gap:1px;font-size:10px;font-weight:600;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.delta-up{background:#dcfce7;color:#16a34a} .delta-down{background:#fef2f2;color:#dc2626} .delta-zero{background:#f1f5f9;color:#94a3b8}
+.tr-bar{padding:10px 18px;border-top:1px solid #f1f5f9;display:flex;align-items:center;gap:8px}
+.tr-btn{font-size:10px;padding:4px 12px;border-radius:5px;border:1px solid #e2e8f0;background:#fff;color:#64748b;cursor:pointer;font-weight:500;transition:all .15s}
+.tr-btn:hover{border-color:#2563eb;color:#2563eb;background:#eff6ff}
+.tr-btn.on{background:#2563eb;border-color:#2563eb;color:#fff}
+.tr-sum{font-size:10px;color:#94a3b8;margin-left:auto}
+.tr-chart{padding:6px 18px 14px 18px;overflow:auto}
+.tr-chart .gl{stroke:#e2e8f0;stroke-width:.5} .tr-chart .al{fill:#94a3b8;font-size:8px;font-family:inherit}
+.tr-chart .bl{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.tr-chart .bd{cursor:pointer;transition:r .15s} .tr-chart .bd:hover{r:5}
+.tr-chart .dm{stroke:#e2e8f0;stroke-width:1;stroke-dasharray:3 3}
+.ttr{fill:#fff;stroke:#cbd5e1;stroke-width:1;rx:3;filter:drop-shadow(0 2px 3px rgba(0,0,0,.08))}
+.ttt{fill:#334155;font-size:9px;font-family:inherit}
+
+.emp{text-align:center;padding:50px 20px;color:#94a3b8;font-size:12px}
+.emp .big{font-size:40px;margin-bottom:8px;opacity:.3}
+.ft{text-align:center;padding:18px;color:#94a3b8;font-size:10px;border-top:1px solid #e2e8f0;margin-top:20px;background:#fff}
+.tac{text-align:center}
+</style></head>
+<body>
+<script src="auth.js"></script>
+<script src="auto_refresh.js"></script>
+<div class="hdr"><h1>宏观指标追踪</h1><span class="b">2026-08-06</span></div>
+<div class="main">
+<div class="stats" id="stats-row"></div>
+<div class="tabs" id="tabs-row"></div>
+<div id="tab-snapshot" class="tab-body on"></div>
+<div id="tab-outlook" class="tab-body"></div>
+</div>
+<div class="ft" id="footer-row"></div>
+<script>
+var D={"snapshots": [{"indicator": "ISM Services PMI", "display": "ISM服务业PMI", "broker": "MS", "date": "2026-08-06", "value": 54.1, "direction": "flat", "notes": "auto-extracted from MS $Rates EoD: QRA, Data, Iran (original: ISM Services PMI (Jul))", "category": "PMI", "unit": "index"}, {"indicator": "ISM Employment", "display": "ISM就业指数", "broker": "MS", "date": "2026-08-06", "value": 47.4, "direction": "flat", "notes": "auto-extracted from MS $Rates EoD: QRA, Data, Iran (original: ISM Employment)", "category": "Employment", "unit": "index"}, {"indicator": "ISM Prices Paid", "display": "ISM价格支付指数", "broker": "MS", "date": "2026-08-06", "value": 70.3, "direction": "flat", "notes": "auto-extracted from MS $Rates EoD: QRA, Data, Iran (original: ISM Prices Paid)", "category": "Inflation", "unit": "index"}, {"indicator": "5Y UST Yield", "display": "5年期美债收益率", "broker": "JPM", "date": "2026-08-06", "value": 4.32, "direction": "down", "notes": "auto-extracted from JPM Daily Market Monitor (original: 5Y UST Yield)", "category": "Rates", "unit": "%"}, {"indicator": "10Y UST Yield", "display": "10年期美债收益率", "broker": "JPM", "date": "2026-08-06", "value": 4.61, "direction": "flat", "notes": "auto-extracted from JPM Daily Market Monitor (original: 10Y UST Yield)", "category": "Rates", "unit": "%"}, {"indicator": "30Y UST Yield", "display": "30年期美债收益率", "broker": "JPM", "date": "2026-08-06", "value": 5.17, "direction": "down", "notes": "auto-extracted from JPM Daily Market Monitor (original: 30Y UST Yield)", "category": "Rates", "unit": "%"}, {"indicator": "Brent Crude", "display": "布伦特原油", "broker": "JPM", "date": "2026-08-06", "value": 79.33, "direction": "flat", "notes": "auto-extracted from JPM Daily Market Monitor (original: Brent Crude)", "category": "Commodity", "unit": "USD/bbl"}, {"indicator": "EUR/USD", "display": "欧元/美元", "broker": "JPM", "date": "2026-08-06", "value": 0.1, "direction": "up", "notes": "auto-extracted from JPM Daily Market Monitor (original: EUR/USD (Daily))", "category": "FX", "unit": "%"}, {"indicator": "USD/JPY", "display": "美元/日元", "broker": "JPM", "date": "2026-08-06", "value": -0.3, "direction": "flat", "notes": "auto-extracted from JPM Daily Market Monitor (original: USD/JPY (Daily))", "category": "FX", "unit": "%"}, {"indicator": "Global Composite PMI", "display": "全球综合PMI", "broker": "GS", "date": "2026-08-06", "value": 52.6, "direction": "up", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: Global Composite PMI)", "category": "PMI", "unit": "index"}, {"indicator": "Global Manufacturing PMI", "display": "全球制造业PMI", "broker": "GS", "date": "2026-08-06", "value": 52.1, "direction": "down", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: Global Manufacturing PMI)", "category": "PMI", "unit": "index"}, {"indicator": "Global Services PMI", "display": "全球服务业PMI", "broker": "GS", "date": "2026-08-06", "value": 52.5, "direction": "up", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: Global Services PMI)", "category": "PMI", "unit": "index"}, {"indicator": "US Manufacturing PMI", "display": "美国制造业PMI", "broker": "GS", "date": "2026-08-06", "value": 54.8, "direction": "up", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: US Manufacturing PMI)", "category": "PMI", "unit": "index"}, {"indicator": "US Services PMI", "display": "美国服务业PMI", "broker": "GS", "date": "2026-08-06", "value": 54.4, "direction": "up", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: US Services PMI)", "category": "PMI", "unit": "index"}, {"indicator": "China Manufacturing PMI", "display": "中国制造业PMI", "broker": "GS", "date": "2026-08-06", "value": 50.0, "direction": "down", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: China Manufacturing PMI)", "category": "PMI", "unit": "index"}, {"indicator": "China Services PMI", "display": "中国服务业PMI", "broker": "GS", "date": "2026-08-06", "value": 49.8, "direction": "down", "notes": "auto-extracted from GS Global PMI Monitor - July 2026 (original: China Services PMI)", "category": "PMI", "unit": "index"}], "outlooks": {"Brent Crude": [{"broker": "GS", "date": "2026-08-06", "current": 79.33, "forecast": 82.0, "horizon": "2026Q4", "direction": "up", "conviction": "medium", "notes": "GS: Iran energy infra vulnerable, risk premium", "category": "Commodity", "unit": "USD/bbl", "display_name": "布伦特原油", "indicator": "Brent Crude", "prev_forecast": 82.0, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "MS", "date": "2026-08-06", "current": 79.33, "forecast": 78.0, "horizon": "2026Q4", "direction": "unch", "conviction": "medium", "notes": "MS: range-bound, supply-demand balanced", "category": "Commodity", "unit": "USD/bbl", "display_name": "布伦特原油", "indicator": "Brent Crude", "prev_forecast": 78.0, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "China GDP Growth": [{"broker": "GS", "date": "2026-08-06", "current": 4.6, "forecast": 4.2, "horizon": "2026YE", "direction": "down", "conviction": "high", "notes": "GS: China PMI at stagnation, policy easing needed", "category": "GDP", "unit": "% YoY", "display_name": "中国GDP增速", "indicator": "China GDP Growth", "prev_forecast": 4.2, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "JPM", "date": "2026-08-06", "current": 4.6, "forecast": 4.4, "horizon": "2026YE", "direction": "down", "conviction": "medium", "notes": "JPM: equities -2.3pct YTD, deleveraging pressure", "category": "GDP", "unit": "% YoY", "display_name": "中国GDP增速", "indicator": "China GDP Growth", "prev_forecast": 4.4, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "Fed Funds Rate": [{"broker": "GS", "date": "2026-08-06", "current": 5.5, "forecast": 5.5, "horizon": "2026YE", "direction": "unch", "conviction": "high", "notes": "GS: Cook prepared to raise if inflation persists", "category": "Rates", "unit": "%", "display_name": "联邦基金利率", "indicator": "Fed Funds Rate", "prev_forecast": 5.5, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "JPM", "date": "2026-08-06", "current": 5.5, "forecast": 5.25, "horizon": "2026Q4", "direction": "down", "conviction": "medium", "notes": "JPM: one cut by year-end if payrolls normalize", "category": "Rates", "unit": "%", "display_name": "联邦基金利率", "indicator": "Fed Funds Rate", "prev_forecast": 5.25, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "MS", "date": "2026-08-06", "current": 5.5, "forecast": 5.5, "horizon": "2026YE", "direction": "unch", "conviction": "high", "notes": "MS: rates on hold through 2026, sticky services inflation", "category": "Rates", "unit": "%", "display_name": "联邦基金利率", "indicator": "Fed Funds Rate", "prev_forecast": 5.5, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "US CPI YoY": [{"broker": "GS", "date": "2026-08-06", "current": 2.7, "forecast": 2.5, "horizon": "2026Q4", "direction": "down", "conviction": "high", "notes": "GS: supply-side disinflation intact", "category": "Inflation", "unit": "%", "display_name": "美国CPI同比", "indicator": "US CPI YoY", "prev_forecast": 2.5, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "MS", "date": "2026-08-06", "current": 2.7, "forecast": 2.8, "horizon": "2026Q4", "direction": "up", "conviction": "medium", "notes": "MS: ISM prices paid 70.3, services inflation sticky", "category": "Inflation", "unit": "%", "display_name": "美国CPI同比", "indicator": "US CPI YoY", "prev_forecast": 2.8, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "US GDP Growth": [{"broker": "GS", "date": "2026-08-06", "current": 2.6, "forecast": 2.4, "horizon": "2026YE", "direction": "down", "conviction": "medium", "notes": "GS: manufacturing resilient but labor softening", "category": "GDP", "unit": "% YoY", "display_name": "美国GDP增速", "indicator": "US GDP Growth", "prev_forecast": 2.4, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "JPM", "date": "2026-08-06", "current": 2.6, "forecast": 2.2, "horizon": "2026YE", "direction": "down", "conviction": "medium", "notes": "JPM: global growth back to DM, US leading", "category": "GDP", "unit": "% YoY", "display_name": "美国GDP增速", "indicator": "US GDP Growth", "prev_forecast": 2.2, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "MS", "date": "2026-08-06", "current": 2.6, "forecast": 2.5, "horizon": "2026YE", "direction": "down", "conviction": "low", "notes": "MS: ISM services employment 47.4 contracting", "category": "GDP", "unit": "% YoY", "display_name": "美国GDP增速", "indicator": "US GDP Growth", "prev_forecast": 2.5, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "US Unemployment Rate": [{"broker": "GS", "date": "2026-08-06", "current": 4.2, "forecast": 4.4, "horizon": "2026Q4", "direction": "up", "conviction": "medium", "notes": "GS: labor market normalization, participation rising", "category": "Employment", "unit": "%", "display_name": "美国失业率", "indicator": "US Unemployment Rate", "prev_forecast": 4.4, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "JPM", "date": "2026-08-06", "current": 4.2, "forecast": 4.3, "horizon": "2026Q4", "direction": "up", "conviction": "low", "notes": "JPM: gradual softening but no recessionary spike", "category": "Employment", "unit": "%", "display_name": "美国失业率", "indicator": "US Unemployment Rate", "prev_forecast": 4.3, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "USD/JPY": [{"broker": "GS", "date": "2026-08-06", "current": 158.0, "forecast": 155.0, "horizon": "2026Q4", "direction": "down", "conviction": "high", "notes": "GS: MOF intervention at 160+, JPY strengthening", "category": "FX", "unit": "level", "display_name": "美元/日元", "indicator": "USD/JPY", "prev_forecast": 155.0, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}, {"broker": "JPM", "date": "2026-08-06", "current": 158.0, "forecast": 152.0, "horizon": "2026Q4", "direction": "down", "conviction": "medium", "notes": "JPM: BOJ normalization + intervention", "category": "FX", "unit": "level", "display_name": "美元/日元", "indicator": "USD/JPY", "prev_forecast": 152.0, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}], "VIX": [{"broker": "GS", "date": "2026-08-06", "current": 25.0, "forecast": 22.0, "horizon": "1M", "direction": "down", "conviction": "medium", "notes": "GS: short-covering rally reducing vol", "category": "Volatility", "unit": "level", "display_name": "VIX波动率", "indicator": "VIX", "prev_forecast": 22.0, "prev_date": "2026-08-04", "delta": 0.0, "delta_pct": 0.0}]}, "history": {"Brent Crude": {"GS": [{"date": "2026-07-29", "value": 76.67}, {"date": "2026-07-31", "value": 80.7}, {"date": "2026-08-02", "value": 80.11}, {"date": "2026-08-04", "value": 82.0}, {"date": "2026-08-06", "value": 82.0}], "MS": [{"date": "2026-07-29", "value": 85.2}, {"date": "2026-07-31", "value": 73.54}, {"date": "2026-08-02", "value": 79.54}, {"date": "2026-08-04", "value": 78.0}, {"date": "2026-08-06", "value": 78.0}]}, "China GDP Growth": {"GS": [{"date": "2026-07-29", "value": 4.64}, {"date": "2026-07-31", "value": 4.27}, {"date": "2026-08-02", "value": 4.09}, {"date": "2026-08-04", "value": 4.2}, {"date": "2026-08-06", "value": 4.2}], "JPM": [{"date": "2026-07-29", "value": 4.92}, {"date": "2026-07-31", "value": 4.44}, {"date": "2026-08-02", "value": 4.52}, {"date": "2026-08-04", "value": 4.4}, {"date": "2026-08-06", "value": 4.4}]}, "Fed Funds Rate": {"GS": [{"date": "2026-07-29", "value": 5.68}, {"date": "2026-07-31", "value": 5.28}, {"date": "2026-08-02", "value": 5.58}, {"date": "2026-08-04", "value": 5.5}, {"date": "2026-08-06", "value": 5.5}], "JPM": [{"date": "2026-07-29", "value": 4.73}, {"date": "2026-07-31", "value": 4.86}, {"date": "2026-08-02", "value": 5.28}, {"date": "2026-08-04", "value": 5.25}, {"date": "2026-08-06", "value": 5.25}], "MS": [{"date": "2026-07-29", "value": 5.77}, {"date": "2026-07-31", "value": 5.46}, {"date": "2026-08-02", "value": 5.61}, {"date": "2026-08-04", "value": 5.5}, {"date": "2026-08-06", "value": 5.5}]}, "US CPI YoY": {"GS": [{"date": "2026-07-29", "value": 2.45}, {"date": "2026-07-31", "value": 2.68}, {"date": "2026-08-02", "value": 2.42}, {"date": "2026-08-04", "value": 2.5}, {"date": "2026-08-06", "value": 2.5}], "MS": [{"date": "2026-07-29", "value": 3.03}, {"date": "2026-07-31", "value": 2.94}, {"date": "2026-08-02", "value": 2.81}, {"date": "2026-08-04", "value": 2.8}, {"date": "2026-08-06", "value": 2.8}]}, "US GDP Growth": {"GS": [{"date": "2026-07-29", "value": 2.33}, {"date": "2026-07-31", "value": 2.53}, {"date": "2026-08-02", "value": 2.47}, {"date": "2026-08-04", "value": 2.4}, {"date": "2026-08-06", "value": 2.4}], "JPM": [{"date": "2026-07-29", "value": 2.31}, {"date": "2026-07-31", "value": 2.3}, {"date": "2026-08-02", "value": 2.26}, {"date": "2026-08-04", "value": 2.2}, {"date": "2026-08-06", "value": 2.2}], "MS": [{"date": "2026-07-29", "value": 2.43}, {"date": "2026-07-31", "value": 2.63}, {"date": "2026-08-02", "value": 2.44}, {"date": "2026-08-04", "value": 2.5}, {"date": "2026-08-06", "value": 2.5}]}, "US Unemployment Rate": {"GS": [{"date": "2026-07-29", "value": 4.59}, {"date": "2026-07-31", "value": 4.24}, {"date": "2026-08-02", "value": 4.26}, {"date": "2026-08-04", "value": 4.4}, {"date": "2026-08-06", "value": 4.4}], "JPM": [{"date": "2026-07-29", "value": 4.25}, {"date": "2026-07-31", "value": 4.56}, {"date": "2026-08-02", "value": 4.3}, {"date": "2026-08-04", "value": 4.3}, {"date": "2026-08-06", "value": 4.3}]}, "USD/JPY": {"GS": [{"date": "2026-07-29", "value": 158.11}, {"date": "2026-07-31", "value": 167.33}, {"date": "2026-08-02", "value": 149.93}, {"date": "2026-08-04", "value": 155.0}, {"date": "2026-08-06", "value": 155.0}], "JPM": [{"date": "2026-07-29", "value": 137.76}, {"date": "2026-07-31", "value": 159.1}, {"date": "2026-08-02", "value": 146.69}, {"date": "2026-08-04", "value": 152.0}, {"date": "2026-08-06", "value": 152.0}]}, "VIX": {"GS": [{"date": "2026-07-29", "value": 24.62}, {"date": "2026-07-31", "value": 23.66}, {"date": "2026-08-02", "value": 21.14}, {"date": "2026-08-04", "value": 22.0}, {"date": "2026-08-06", "value": 22.0}]}}, "catColors": {"Rates": "#2563eb", "GDP": "#7c3aed", "Inflation": "#dc2626", "Employment": "#059669", "PMI": "#d97706", "FX": "#0891b2", "Commodity": "#db2777", "Equity": "#65a30d", "Credit": "#ea580c", "Volatility": "#7c3aed", "Fiscal": "#64748b", "Housing": "#0d9488", "Consumption": "#c026d3", "Trade": "#d97706"}, "catCN": {"Rates": "利率", "GDP": "GDP", "Inflation": "通胀", "Employment": "就业", "PMI": "PMI", "FX": "外汇", "Commodity": "商品", "Equity": "权益", "Credit": "信用", "Volatility": "波动率", "Fiscal": "财政", "Housing": "房地产", "Consumption": "消费", "Trade": "贸易"}, "brokerColors": {"GS": "#2563eb", "MS": "#d97706", "JPM": "#059669"}, "snapTotal": 16, "outTotal": 17, "indicatorCount": 22, "brokerCount": 3, "today": "2026-08-06"};
+function esc(s){return s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'):''}
+
+document.addEventListener('DOMContentLoaded',function(){
+  renderStats();renderTabs();renderSnapshot();renderOutlook();
+  document.getElementById('footer-row').innerHTML='今日数据: '+D.snapTotal+'快照 + '+D.outTotal+'展望 | '+D.indicatorCount+'指标 | '+D.brokerCount+'券商';
+});
+
+function renderStats(){
+  document.getElementById('stats-row').innerHTML=
+    '<div class="st s1"><div class="n">'+D.snapTotal+'</div><div class="l">快照记录</div></div>'+
+    '<div class="st s2"><div class="n">'+D.outTotal+'</div><div class="l">展望记录</div></div>'+
+    '<div class="st"><div class="n">'+D.indicatorCount+'</div><div class="l">追踪指标</div></div>'+
+    '<div class="st"><div class="n">'+D.brokerCount+'</div><div class="l">券商覆盖</div></div>';
+}
+function renderTabs(){
+  document.getElementById('tabs-row').innerHTML=
+    '<button class="tab on" data-tab="snapshot">市场快照</button>'+
+    '<button class="tab" data-tab="outlook">展望追踪</button>';
+}
+
+document.addEventListener('click',function(e){
+  var btn=e.target.closest('.tab'); if(!btn)return;
+  var name=btn.getAttribute('data-tab');
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('on');});
+  document.querySelectorAll('.tab-body').forEach(function(b){b.classList.remove('on');});
+  btn.classList.add('on');
+  var body=document.getElementById('tab-'+name); if(body)body.classList.add('on');
+});
+
+// ===== 市场快照 - 按品类分组卡片 =====
+function renderSnapshot(){
+  var byCat={};
+  D.snapshots.forEach(function(s){
+    var cat=s.category||'Other'; if(!byCat[cat])byCat[cat]=[]; byCat[cat].push(s);
+  });
+  var cats=Object.keys(byCat).sort();
+  if(!cats.length){document.getElementById('tab-snapshot').innerHTML='<div class="emp"><div class="big">—</div>今日暂无快照数据</div>';return;}
+  var html='<div class="snap-grid">';
+  cats.forEach(function(cat){
+    var cc=D.catColors[cat]||'#64748b', cn=D.catCN&&D.catCN[cat]?D.catCN[cat]:cat;
+    html+='<div class="cat-card"><div class="cat-hd"><span class="cat-dot" style="background:'+cc+'"></span><span class="cat-title" style="color:'+cc+'">'+esc(cn)+'</span><span class="cat-cnt">'+byCat[cat].length+'项</span></div><div class="cat-body">';
+    byCat[cat].forEach(function(s){
+      var dir=s.direction||'flat', di=dir==='up'?'↑':dir==='down'?'↓':'↔', dc=dir==='up'?'du':dir==='down'?'dd':'df';
+      var bc=D.brokerColors[s.broker]||'#64748b', dp=s.display||s.indicator;
+      html+='<div class="ind-row"><span class="db '+dc+'">'+di+'</span><span class="ind-name" title="'+esc(dp)+'">'+esc(dp)+'</span><span class="ind-val">'+(s.value!=null?s.value:'—')+'</span><span class="ind-unit">'+esc(s.unit||'')+'</span><span class="ind-bk" style="color:'+bc+'">'+esc(s.broker)+'</span><span class="ind-dt">'+esc(s.date.slice(5))+'</span></div>';
+    });
+    html+='</div></div>';
+  });
+  html+='</div>';
+  document.getElementById('tab-snapshot').innerHTML=html;
+}
+
+// ===== 展望追踪 =====
+function renderOutlook(){
+  var outlooks=D.outlooks, indicators=Object.keys(outlooks).sort();
+  if(!indicators.length){document.getElementById('tab-outlook').innerHTML='<div class="emp"><div class="big">—</div>今日暂无展望数据</div>';return;}
+  var html='<div class="oc-grid">';
+  indicators.forEach(function(ind){
+    var entries=outlooks[ind]; if(!entries||!entries.length)return;
+    var cat=entries[0].category||'Other', cc=D.catColors[cat]||'#2563eb';
+    var dp=entries[0].display_name||ind, un=entries[0].unit||'';
+    // 共识方向
+    var dc={up:0,down:0,flat:0}; entries.forEach(function(e){dc[e.direction||'flat']=(dc[e.direction||'flat']||0)+1;});
+    var cd='neutral',cl='↔ 中性';
+    if(dc.up>=dc.down&&dc.up>dc.flat){cd='bullish';cl='↑ 偏多';}
+    else if(dc.down>dc.up&&dc.down>dc.flat){cd='bearish';cl='↓ 偏空';}
+
+    html+='<div class="ot-card"><div class="ot-hd"><span class="ot-hd-nm">'+esc(dp)+'</span><span class="ot-hd-cat" style="background:'+cc+'">'+esc(cat)+'</span><span class="ot-hd-cons '+cd+'">'+cl+'</span></div>';
+    // Table
+    html+='<table class="ot-table"><thead><tr><th>券商</th><th>当前值</th><th></th><th>展望值</th><th class="tac">相对上次变化</th><th>展望期</th><th class="tac">方向</th></tr></thead><tbody>';
+    entries.forEach(function(e){
+      var bc=D.brokerColors[e.broker]||'#64748b';
+      var di=e.direction==='up'?'↑':e.direction==='down'?'↓':'↔', dcl=e.direction==='up'?'du':e.direction==='down'?'dd':'df';
+      var cval=e.current!=null?e.current.toFixed(2):'—', fval=e.forecast!=null?e.forecast.toFixed(2):'—';
+      // Delta
+      var dh='<span style="color:#94a3b8">—</span>';
+      if(e.delta!=null){
+        var isUp=e.delta>0,isDn=e.delta<0, dcls=isUp?'delta-up':isDn?'delta-down':'delta-zero';
+        var sign=e.delta>0?'+':'', ds=sign+e.delta.toFixed(3);
+        if(e.delta_pct!=null)ds+=' ('+(e.delta_pct>0?'+':'')+e.delta_pct.toFixed(1)+'%)';
+        dh='<span class="delta '+dcls+'">'+ds+'</span>';
+        if(e.prev_date)dh+=' <span style="font-size:9px;color:#94a3b8">vs '+esc(e.prev_date.slice(5))+'</span>';
+      }
+      html+='<tr><td class="tc-bk" style="color:'+bc+'">'+esc(e.broker)+'</td><td class="tc-cv">'+cval+'</td><td class="tc-arrow">→</td><td class="tc-fore">'+fval+' <span style="font-size:9px;color:#94a3b8;font-weight:400">'+esc(un)+'</span></td><td class="tac">'+dh+'</td><td class="tc-hz">'+esc(e.horizon)+'</td><td class="tc-dir"><span class="db '+dcl+'">'+di+'</span></td></tr>';
+    });
+    html+='</tbody></table>';
+
+    // Trend bar
+    var iid=ind.replace(/[^a-zA-Z0-9一-鿿]/g,'-');
+    html+='<div class="tr-bar"><button class="tr-btn" data-trend="'+iid+'">▼ 趋势图</button><span class="tr-sum" id="trsum-'+iid+'"></span></div>';
+    html+='<div class="tr-chart" id="trchart-'+iid+'" style="display:none"></div>';
+    html+='</div>';
+  });
+  html+='</div>';
+  document.getElementById('tab-outlook').innerHTML=html;
+}
+
+// ===== 趋势图 toggle =====
+document.addEventListener('click',function(e){
+  var btn=e.target.closest('.tr-btn'); if(!btn)return;
+  var tid=btn.getAttribute('data-trend'), chartDiv=document.getElementById('trchart-'+tid);
+  if(!chartDiv)return;
+  if(chartDiv.style.display==='block'){chartDiv.style.display='none';btn.classList.remove('on');return;}
+  btn.classList.add('on'); chartDiv.style.display='block';
+  drawTrend(tid,chartDiv,btn);
+});
+
+function drawTrend(indicatorId, div, btn){
+  // 找到对应指标的数据
+  var indKeys=Object.keys(D.outlooks);
+  var indKey='';
+  for(var i=0;i<indKeys.length;i++){
+    if(indKeys[i].replace(/[^a-zA-Z0-9一-鿿]/g,'-')===indicatorId){indKey=indKeys[i];break;}
+  }
+  if(!indKey){div.innerHTML='<div style="color:#94a3b8;font-size:11px">暂无趋势数据</div>';return;}
+  var hist=D.history[indKey], entries=D.outlooks[indKey];
+  if(!hist||!Object.keys(hist).length){div.innerHTML='<div style="color:#94a3b8;font-size:11px">暂无趋势数据</div>';return;}
+
+  // 收集所有数据点，找到全局 min/max
+  var allPts=[], allDates=[];
+  Object.keys(hist).forEach(function(bk){
+    var pts=hist[bk];
+    pts.forEach(function(p){allPts.push(p.value);allDates.push(p.date);});
+  });
+  var dates=[...new Set(allDates)].sort();
+  var minV=Math.min.apply(null,allPts), maxV=Math.max.apply(null,allPts);
+  if(minV===maxV){minV-=1;maxV+=1;}
+  var pad=(maxV-minV)*0.1; minV-=pad; maxV+=pad;
+
+  var W=Math.max(340,dates.length*72), H=150, LM=42, RM=20, TM=16, BM=28;
+  var plotW=W-LM-RM, plotH=H-TM-BM;
+
+  var svg='<svg width="'+W+'" height="'+H+'" xmlns="http://www.w3.org/2000/svg">';
+  // Grid lines
+  var grids=4;
+  for(var g=0;g<=grids;g++){
+    var y=TM+(plotH*g/grids);
+    svg+='<line x1="'+LM+'" y1="'+y+'" x2="'+(W-RM)+'" y2="'+y+'" class="gl"/>';
+    var v=minV+(maxV-minV)*(grids-g)/grids;
+    svg+='<text x="'+(LM-4)+'" y="'+(y+3)+'" text-anchor="end" class="al">'+v.toFixed(2)+'</text>';
+  }
+  // Date labels
+  var step=Math.max(1,Math.floor(dates.length/6));
+  dates.forEach(function(d,i){
+    var x=LM+(plotW*i/(dates.length-1||1));
+    svg+='<line x1="'+x+'" y1="'+TM+'" x2="'+x+'" y2="'+(H-BM)+'" class="dm"/>';
+    if(i%step===0||i===dates.length-1) svg+='<text x="'+x+'" y="'+(H-8)+'" text-anchor="middle" class="al">'+d.slice(5)+'</text>';
+  });
+  // Lines & dots per broker
+  var bks=Object.keys(D.brokerColors);
+  bks.forEach(function(bk){
+    if(!hist[bk])return;
+    var pts=hist[bk], bc=D.brokerColors[bk];
+    var ptsStr='';
+    pts.forEach(function(p){
+      var di=dates.indexOf(p.date);
+      if(di<0)return;
+      var x=LM+(plotW*di/(dates.length-1||1)), y=TM+(plotH*(1-(p.value-minV)/(maxV-minV)));
+      ptsStr+=' '+x+','+y;
+      svg+='<circle cx="'+x+'" cy="'+y+'" r="3.5" fill="'+bc+'" stroke="#fff" class="bd"><title>'+bk+': '+p.value.toFixed(3)+' ('+p.date+')</title></circle>';
+    });
+    if(ptsStr) svg+='<polyline points="'+ptsStr.trim()+'" class="bl" style="stroke:'+bc+'"/>';
+  });
+  svg+='</svg>';
+  div.innerHTML=svg;
+}
+
+</script>
+</body></html>
