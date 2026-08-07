@@ -243,15 +243,24 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 #tab-issuers .sc-pri{color:#2457a6;font-weight:600}
 #tab-issuers .sc-exc{color:#b42318}
 #tab-issuers .sc-sep{color:#cbd2da;font-weight:700}
-#tab-issuers .iv-tonemacro{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;margin-bottom:14px}
-#tab-issuers .iv-tone{display:flex;gap:11px;align-items:flex-start;background:#fafbfc;border:1px solid var(--border);border-radius:9px;padding:11px 13px}
+#tab-issuers .iv-tone{display:flex;gap:11px;align-items:flex-start;background:#fafbfc;border:1px solid var(--border);border-radius:9px;padding:11px 13px;margin-bottom:14px}
 #tab-issuers .iv-tone .ta{font-size:24px;line-height:1}
 #tab-issuers .iv-tone.mixed .ta{color:#2457a6}#tab-issuers .iv-tone.firm .ta{color:#087443}#tab-issuers .iv-tone.weak .ta{color:#b42318}
 #tab-issuers .iv-tone .tl{font-weight:750;font-size:13.5px}
 #tab-issuers .iv-tone .tn{font-size:12px;color:#475467;line-height:1.5;margin-top:2px}
-#tab-issuers .iv-macro{list-style:none;margin:0;padding:11px 13px;background:#fafbfc;border:1px solid var(--border);border-radius:9px;display:grid;gap:6px}
-#tab-issuers .iv-macro li{font-size:12.5px;color:#344054;line-height:1.5;padding-left:15px;position:relative}
-#tab-issuers .iv-macro li::before{content:"›";position:absolute;left:2px;color:#2457a6;font-weight:700}
+#tab-issuers .iv-macro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin-bottom:14px}
+#tab-issuers .iv-macro-card{border:1px solid var(--border);border-radius:10px;background:#fff;overflow:hidden;border-left:4px solid #98a2b3}
+#tab-issuers .iv-macro-card.mc-oil{border-left-color:#e8750d}
+#tab-issuers .iv-macro-card.mc-fed{border-left-color:#b42318}
+#tab-issuers .iv-macro-card.mc-rates{border-left-color:#2457a6}
+#tab-issuers .iv-macro-card.mc-gold{border-left-color:#d4a017}
+#tab-issuers .iv-macro-card.mc-japan{border-left-color:#087443}
+#tab-issuers .iv-macro-card.mc-fx{border-left-color:#6941c6}
+#tab-issuers .iv-macro-card.mc-default{border-left-color:#98a2b3}
+#tab-issuers .iv-macro-card .mc-head{padding:10px 13px 5px;display:flex;align-items:center;gap:8px}
+#tab-issuers .iv-macro-card .mc-icon{font-size:16px;line-height:1}
+#tab-issuers .iv-macro-card .mc-title{font-weight:720;font-size:13.5px;color:#1d2939}
+#tab-issuers .iv-macro-card .mc-body{padding:5px 13px 12px;font-size:12.5px;color:#475467;line-height:1.6}
 #tab-issuers .iv-sec{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:720;margin:18px 0 10px}
 #tab-issuers .iv-sec.muted{color:var(--muted);font-size:13px;font-weight:700}
 #tab-issuers .iv-cnt{font-size:12px;color:var(--muted);font-weight:500}
@@ -303,7 +312,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 #tab-issuers .ins-point{font-size:12.5px;color:#344054;line-height:1.55;margin-bottom:6px}
 #tab-issuers .ins-quote{font-size:11.5px;color:var(--muted);font-style:italic;border-left:2px solid var(--border);padding-left:10px;line-height:1.5}
 #tab-issuers .iv-empty{color:var(--muted);padding:26px;text-align:center;font-size:13px}
-@media(max-width:820px){#tab-issuers .iv-focus,#tab-issuers .iv-tonemacro{grid-template-columns:1fr}}
+@media(max-width:820px){#tab-issuers .iv-focus{grid-template-columns:1fr}#tab-issuers .iv-macro-grid{grid-template-columns:1fr}}
 .empty { color:var(--muted); padding:14px; }
 @media (max-width:860px) {
   .header-inner,.summary-grid,.detail-grid,.toolbar { grid-template-columns:1fr; display:grid; text-align:left; }
@@ -386,10 +395,9 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     <div class="panel-head"><div class="panel-title">我们的关注 · 交易流盯盘</div><div class="panel-sub">聚焦 DM / Asia IG(USD)· 自动过滤 HY / 本币 / 主权</div></div>
     <div class="panel-body">
       <div class="iv-focus" id="iv-focus"></div>
-      <div class="iv-tonemacro">
-        <div class="iv-tone" id="iv-tone"></div>
-        <ul class="iv-macro" id="iv-macro"></ul>
-      </div>
+      <div class="iv-tone" id="iv-tone"></div>
+      <div class="iv-sec">宏观要点 · 全局视角<span class="iv-cnt" id="iv-macro-cnt"></span></div>
+      <div class="iv-macro-grid" id="iv-macro"></div>
       <div class="iv-sec">重点盯盘 · 关注池<span class="iv-cnt" id="iv-focus-cnt"></span><span class="iv-spacer"></span><button class="iv-toggle" id="iv-toggle"></button></div>
       <div class="iv-grid" id="iv-focus-grid"></div>
       <div class="iv-filtered" id="iv-filtered">
@@ -432,7 +440,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   </div>
 </main>
 
-<script src="trading_data.js?v=202608062055"></script>
+<script src="trading_data.js?v=202608070846"></script>
 <script>
 (function () {
   const D = window.REPORT_DATA || {};
@@ -457,6 +465,18 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
   let ivShowFiltered = false;   // 我们的关注 tab:是否展开"已过滤"池
   // 我们的关注 枚举
   const IV_TONE={mixed:{g:"◆",cn:"两向"},firm:{g:"▲",cn:"偏强"},weak:{g:"▼",cn:"偏弱"}};
+  function parseMacroItem(m){
+    const match=m.match(/^【(.+?)】\s*(.*)/);
+    if(!match) return {title:m.slice(0,45)+(m.length>45?'…':''),body:m,cat:'default',icon:''};
+    let title=match[1], body=match[2]||m;
+    const tl=title.toLowerCase();
+    if(/oil|原油|能源|brent|wti|energy|opec|hormuz|iran/i.test(tl)) return {title,body,cat:'oil',icon:''};
+    if(/fed|央行|加息|hike|降息|cut|货币政策|hawkish|dovish|warsh|点阵/i.test(tl)) return {title,body,cat:'fed',icon:''};
+    if(/ust|收益率|yield|rate|利率|treasury|曲线|steepen|flatten|bond/i.test(tl)) return {title,body,cat:'rates',icon:''};
+    if(/gold|金|bei|通胀|inflation|cpi|pce|商品/i.test(tl)) return {title,body,cat:'gold',icon:''};
+    if(/jgb|japan|日本|boj|日元|岸田/i.test(tl)) return {title,body,cat:'japan',icon:''};
+    if(/usd|jpy|fx|外汇|dollar|yen|汇率|外汇/i.test(tl)) return {title,body,cat:'fx',icon:''};
+    return {title,body,cat:'default',icon:''};}
   const IV_FLOW={buy:"买盘",sell:"卖盘",firm:"偏强",weak:"偏弱",mixed:"两向",twoway:"两向",outperform:"跑赢",underperform:"跑输",unchanged:"持平",new_issue:"新发"};
   const IV_ACLS={IG:["mt-ig","IG"],HY:["mt-hy","HY"],Sovereign:["mt-sov","主权"],Cross:["mt-cross","Cross"]};
 
@@ -811,7 +831,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
         '<span class="sc-exc">过滤 '+exShort.join(' / ')+'</span>';
     } else $("iv-focus").innerHTML="";
     if(!iss.length){
-      $("iv-tone").innerHTML=""; $("iv-macro").innerHTML="";
+      $("iv-tone").innerHTML=""; $("iv-macro").innerHTML=""; $("iv-macro-cnt").textContent="";
       $("iv-focus-grid").innerHTML='<div class="iv-empty">该交易日暂无发行人交易流数据。</div>';
       $("iv-filtered").classList.remove("open"); $("iv-filtered-grid").innerHTML="";
       $("iv-toggle").style.display="none"; $("iv-focus-cnt").textContent="";
@@ -822,7 +842,9 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       $("iv-tone").className="iv-tone "+t.dir;
       $("iv-tone").innerHTML=`<div class="ta">${tc.g}</div><div><div class="tl">${esc(tc.cn||t.label)}</div><div class="tn">${esc(t.note)}</div></div>`;
     } else $("iv-tone").innerHTML="";
-    $("iv-macro").innerHTML=(d.macro||[]).map(m=>`<li>${esc(m)}</li>`).join("");
+    const macroItems=(d.macro||[]).map(parseMacroItem);
+    $("iv-macro-cnt").textContent=macroItems.length?`${macroItems.length} 条`:'';
+    $("iv-macro").innerHTML=macroItems.map(m=>`<div class="iv-macro-card mc-${m.cat}"><div class="mc-head"><span class="mc-title">${esc(m.title)}</span></div><div class="mc-body">${esc(m.body)}</div></div>`).join("");
     // issuers
     const foc=iss.filter(i=>i.inFocus).sort((a,b)=>(a.priority||9)-(b.priority||9));
     const fil=iss.filter(i=>!i.inFocus);
