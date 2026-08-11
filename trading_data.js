@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-11 11:39 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-11 17:03 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4906,7 +4906,7 @@ window.REPORT_DATA =
       ],
       "qualityLog": [],
       "tone": {
-        "dir": "bearish",
+        "dir": "weak",
         "label": "通胀重定价下的风险轮动",
         "note": ""
       },
@@ -4922,7 +4922,7 @@ window.REPORT_DATA =
       ],
       "flow": {
         "sentiment": {
-          "dir": "bearish",
+          "dir": "weak",
           "label": "通胀重定价下的风险轮动",
           "note": ""
         },
