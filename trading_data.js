@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-11 09:59 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-11 11:39 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4123,7 +4123,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "Oil/Hormuz Geopolitics",
       "assetClass": "Commodities/Macro",
       "name": "Hormuz僵局，Oil持续反弹",
@@ -4132,7 +4132,7 @@ window.REPORT_DATA =
           "broker": "Morgan Stanley",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "Oil+5.1% Hormuz僵局。伊朗重申全部要求，no deal near，通胀重定价，今日最强宏观驱动力"
@@ -4143,7 +4143,7 @@ window.REPORT_DATA =
           "broker": "Goldman Sachs",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "Hormuz tensions persist，higher oil，revived inflation concerns，global rates sell-off"
@@ -4154,7 +4154,7 @@ window.REPORT_DATA =
           "broker": "BMO Capital Markets",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "Energy>$80，BEI从2.20%反弹至2.43%，TIPS买盘持续，通胀底部被抬高"
@@ -4177,7 +4177,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "UST Sell-off & Fed Repricing",
       "assetClass": "Rates",
       "name": "UST belly-led sell-off，Hammack Hawkish，10y 4.705%",
@@ -4186,7 +4186,7 @@ window.REPORT_DATA =
           "broker": "Morgan Stanley",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "UST belly-led sell-off(2y+4.6~30y+5.0bp)。Hammack鹰派=Sept hike>50%。Refunding+CPI前列"
@@ -4197,7 +4197,7 @@ window.REPORT_DATA =
           "broker": "Goldman Sachs",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "+4-5bp全曲线。Hammack，bearish duration pressure。Refunding+CPI双重催化剂"
@@ -4220,7 +4220,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "IG Primary Onslaught",
       "assetClass": "Credit",
       "name": "$27bn/19 issuers，1月以来最忙，消化有序但二级承压",
@@ -4229,7 +4229,7 @@ window.REPORT_DATA =
           "broker": "Morgan Stanley",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neu",
               "mode": "VIEW",
               "note": "19 issuers busiest since Jan。LQD仅+1bp=市场仍能消化。VZ/LLOYDS宽定价，二级机会"
@@ -4240,7 +4240,7 @@ window.REPORT_DATA =
           "broker": "Citi",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neu",
               "mode": "VIEW",
               "note": "$27bn/20 issuers。TMT NVDA空头回补，-10bp tighter。$35bn+周估，继续吸收供给"
@@ -4263,7 +4263,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "China Property Policy",
       "assetClass": "China HY",
       "name": "北京放松限购，COGARD+9%，但质量分化",
@@ -4272,7 +4272,7 @@ window.REPORT_DATA =
           "broker": "JEFFERIES",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "pos",
               "mode": "VIEW",
               "note": "北京放松，膝跳反弹，COGARD+9%，HF买MCBs。但NWDEVL perps遭PB卖出=分化"
@@ -4283,7 +4283,7 @@ window.REPORT_DATA =
           "broker": "Barclays",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Corp perp outperformed，China IG perps表现领先。INDON CB-1.75bp，新领导=政策连续"
@@ -4306,7 +4306,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "USD/JPY Intervention Fade",
       "assetClass": "FX",
       "name": "USD/JPY 159.29，干预涨幅回吐60%，BoJ鹰派无效",
@@ -4315,7 +4315,7 @@ window.REPORT_DATA =
           "broker": "Morgan Stanley",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "JPY-1.0%最弱，wide rate diff+low vol支持carry。XCCY widened short-end lead。160触发"
@@ -4326,7 +4326,7 @@ window.REPORT_DATA =
           "broker": "Goldman Sachs",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neg",
               "mode": "VIEW",
               "note": "BoJ Summary hawkish但limited new info，market pricing unchanged，XCCY widened"
@@ -4349,7 +4349,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "TIPS/BEI Rebound",
       "assetClass": "Rates",
       "name": "TIPS两日买盘，BEI从2.20%底反弹，通胀对冲需求回归",
@@ -4358,7 +4358,7 @@ window.REPORT_DATA =
           "broker": "BMO Capital Markets",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "pos",
               "mode": "VIEW",
               "note": "TIPS连续两日净买盘，5y5y 2.43%。Energy>$80抬高BEI底部，CPI前通胀对冲强"
@@ -4369,7 +4369,7 @@ window.REPORT_DATA =
           "broker": "Morgan Stanley",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "pos",
               "mode": "VIEW",
               "note": "前端BEI领涨(2y+5.2bp)，inflation repricing driven by oil。Gold-0.2% vs TIPS bought"
@@ -4392,7 +4392,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "AUD Credit Better Buying",
       "assetClass": "AUD Credit",
       "name": "离岸固定+FRN买入，境内sub-1Y，WSTP solid，QUBAU CoC触发",
@@ -4401,7 +4401,7 @@ window.REPORT_DATA =
           "broker": "TD Securities",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "pos",
               "mode": "VIEW",
               "note": "Better buying全曲线。离岸固定+FRN、境内sub-1Y。WSTP Q3 solid(NIM 1.89%)。QUBAU CoC，赎回预期"
@@ -4424,7 +4424,7 @@ window.REPORT_DATA =
       "drivers": []
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "topic": "Gold Regime Change Test",
       "assetClass": "Commodities",
       "name": "Gold -0.2%，通胀预期回升考验Gold ATH可持续性",
@@ -4433,7 +4433,7 @@ window.REPORT_DATA =
           "broker": "BMO Capital Markets",
           "points": [
             {
-              "date": "2026-08-10",
+              "date": "2026-08-11",
               "tilt": "neu",
               "mode": "VIEW",
               "note": "TIPS买盘 vs Gold-0.2%=regime change thesis分歧。Energy>$80，通胀升温，Gold或失避险逻辑"
@@ -4458,7 +4458,7 @@ window.REPORT_DATA =
   ],
   "days": [
     {
-      "reportDate": "2026-08-10",
+      "reportDate": "2026-08-11",
       "coverage": {
         "emails": 14,
         "brokers": [
@@ -4471,7 +4471,7 @@ window.REPORT_DATA =
           "TD Securities"
         ],
         "lookbackDays": 22,
-        "sourceDateNote": "2026-08-10 Monday trading captured, report published 2026-08-11 Tuesday morning. Oil +5.1% Hormuz Impasse ， Inflation Repricing ， UST Sell-off + $27bn IG Primary Onslaught"
+        "sourceDateNote": "2026-08-11 Monday trading captured, report published 2026-08-11 Tuesday morning. Oil +5.1% Hormuz Impasse ， Inflation Repricing ， UST Sell-off + $27bn IG Primary Onslaught"
       },
       "signals": [
         {
@@ -4501,7 +4501,7 @@ window.REPORT_DATA =
             "BEI",
             "Fed"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4531,7 +4531,7 @@ window.REPORT_DATA =
             "refunding",
             "rates"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4560,7 +4560,7 @@ window.REPORT_DATA =
             "LQD",
             "supply"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4589,7 +4589,7 @@ window.REPORT_DATA =
             "AI",
             "short covering"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4618,7 +4618,7 @@ window.REPORT_DATA =
             "Policy",
             "HY"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4648,7 +4648,7 @@ window.REPORT_DATA =
             "carry",
             "XCCY"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4677,7 +4677,7 @@ window.REPORT_DATA =
             "inflation",
             "energy"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         },
@@ -4707,7 +4707,7 @@ window.REPORT_DATA =
             "Japan",
             "CNH"
           ],
-          "date": "2026-08-10",
+          "date": "2026-08-11",
           "priorState": "No prior state available.",
           "quote": ""
         }
@@ -5575,7 +5575,7 @@ window.REPORT_DATA =
         {
           "broker": "BMO Capital Markets",
           "date_from": "2026-08-06",
-          "date_to": "2026-08-10",
+          "date_to": "2026-08-11",
           "shift": "从关注BE下行风险（测试2.20%）到关注BE上行突破（2.43%上沿）——连续两日TIPS买入改变了轨迹。新增了BE可能在高UST环境下跑输的警告。",
           "shift_type": "view_shift",
           "product_theme": "TIPS/盈亏平衡通胀率定价",
@@ -5587,7 +5587,7 @@ window.REPORT_DATA =
         {
           "broker": "Morgan Stanley",
           "date_from": "2026-08-07",
-          "date_to": "2026-08-10",
+          "date_to": "2026-08-11",
           "shift": "从霍尔木兹崩盘，Warsh Hawk，NFP裁决切换到油价重燃通胀风险，Hammack接力，CPI验证。核心转变：9月加息从低于50%转为略高于50%。",
           "shift_type": "view_shift",
           "product_theme": "Fed加息路径/通胀风险定价",
