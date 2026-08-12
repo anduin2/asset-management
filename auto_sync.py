@@ -17,13 +17,16 @@ SOURCES = {
     "trading_data.js":        ROOT / "交易台报告" / "report-data.js",
     "ca-report.html":         ROOT / "Corporate Actions" / "ca-report.html",
     "macro-dashboard.html":   ROOT / "宏观" / "indicator_dashboard.html",
-    "macro-matrix.html":      None,  # 动态查找最新 macro_matrix_*.html
+    "macro-matrix.html":      None,  # 动态查找最新 FI_Daily_Digest_*.html 或 固定收益宏观日报.html
 }
 
 def find_latest_macro_matrix():
-    """在 宏观研报 目录下找到最新的 macro_matrix_*.html"""
+    """在 宏观研报 目录下找到最新的宏观矩阵报告"""
     macro_dir = ROOT / "宏观研报"
-    files = sorted(macro_dir.glob("macro_matrix_*.html"), reverse=True)
+    # 优先匹配 FI_Daily_Digest_*.html，其次 固定收益宏观日报.html
+    files = sorted(macro_dir.glob("FI_Daily_Digest_*.html"), reverse=True)
+    if not files:
+        files = sorted(macro_dir.glob("固定收益宏观日报.html"))
     return files[0] if files else None
 
 AUTH_TAG = '<script src="auth.js"></script>'

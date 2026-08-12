@@ -3,175 +3,376 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fixed Income Morning Digest — 2026-08-12</title>
+<title>Fixed Income Morning Digest</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;background:#fff;color:#1a1a1a;line-height:1.65;padding:28px 48px;max-width:1480px;margin:0 auto;font-size:14px}
-  .header{margin-bottom:24px}
-  .header h1{font-size:22px;color:#0a2647;margin-bottom:2px}
-  .header .sub{font-size:13px;color:#999;margin-left:10px;font-weight:400}
-  .header .meta{margin-top:6px;font-size:13px;color:#666}
-  .header .brokers{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
-  .header .brokers span{padding:2px 10px;border-radius:3px;font-size:11px;font-weight:700;color:#fff}
+  body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;background:#fff;color:#1a1a1a;line-height:1.7;padding:30px 52px;max-width:1560px;margin:0 auto;font-size:14px}
+
+  /* ===== 日期选择栏 ===== */
+  .date-bar{display:flex;align-items:center;gap:14px;margin-bottom:28px;padding:10px 16px;background:#f8f9fb;border:1px solid #dde3ea;border-radius:6px;font-size:13px}
+  .date-bar label{color:#445;font-weight:600;white-space:nowrap}
+  .date-bar select{padding:5px 10px;border:1px solid #c5cdd8;border-radius:4px;font-size:13px;font-family:inherit;background:#fff;min-width:180px;cursor:pointer}
+  .date-bar select:focus{outline:2px solid #0a2647;outline-offset:-2px}
+  .date-bar .no-data-msg{color:#c66;font-size:12.5px;margin-left:6px;display:none}
+  .date-bar .nav-btn{padding:4px 12px;border:1px solid #c5cdd8;border-radius:4px;background:#fff;font-size:13px;cursor:pointer;font-family:inherit}
+  .date-bar .nav-btn:hover{background:#eef0f4}
+
+  /* ===== Header ===== */
+  .header{margin-bottom:36px}
+  .header h1{font-size:22px;color:#0a2647;margin-bottom:4px}
+  .header .sub{font-size:13px;color:#888;margin-left:10px;font-weight:400}
+  .header .meta{margin-top:8px;font-size:13px;color:#666;line-height:1.6}
+  .header .brokers{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
+  .header .brokers span{padding:3px 12px;border-radius:4px;font-size:11px;font-weight:700;color:#fff}
   .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}
 
-  h2{font-size:17px;margin:32px 0 10px;padding:6px 10px;background:#0a2647;color:#fff;font-weight:600;letter-spacing:.5px}
-  h2 .note{font-weight:400;font-size:12px;color:#bcc9d9;margin-left:8px}
+  /* ===== 市场标题 ===== */
+  h2{
+    font-size:16px;padding:9px 14px;background:#0a2647;color:#fff;font-weight:600;
+    margin:48px 0 14px;letter-spacing:.3px;
+  }
+  h2 .note{font-weight:400;font-size:12px;color:#bcc9d9;margin-left:10px}
+  h2.priority{border-left:5px solid #f0b90b;padding-left:9px}
+  h2:first-of-type{margin-top:0}
 
-  table{width:100%;border-collapse:collapse;margin:8px 0 22px;font-size:13px;table-layout:fixed}
-  th{background:#e8ecf1;color:#0a2647;padding:7px 8px;text-align:left;font-weight:700;font-size:12px;white-space:nowrap;border:1px solid #d0d5dd}
-  td{padding:6px 8px;border:1px solid #e0e4ea;vertical-align:top;word-break:break-word}
-  tr:nth-child(even) td{background:#fafbfc}
-  td:first-child{font-weight:700;color:#0a2647;white-space:nowrap;text-align:center;width:52px}
+  /* ===== 市场摘要框 ===== */
+  .summary-bar{
+    padding:10px 16px;background:#f4f7fa;border:1px solid #dde3ea;
+    margin:0 0 12px;font-size:13px;color:#3a4450;line-height:1.7;
+  }
+  .summary-bar b{color:#0a2647}
+
+  /* ===== 表格 ===== */
+  table{width:100%;border-collapse:collapse;margin:0 0 0;font-size:13px;table-layout:fixed}
+  th{background:#e9edf3;color:#0a2647;padding:9px 10px;text-align:left;font-weight:700;font-size:12px;white-space:nowrap;border:1px solid #d0d5dd}
+  td{padding:9px 10px;border:1px solid #e2e6ed;vertical-align:top;word-break:break-word;line-height:1.6}
+  tr:nth-child(even) td{background:#fafbfd}
+  td:first-child{font-weight:700;color:#0a2647;white-space:nowrap;text-align:center;width:52px;vertical-align:middle;background:#f8f9fb}
   td:empty::after{content:"—";color:#bbb}
-  .highlight{background:#fffbe6!important}
 
-  .divergence{margin:8px 0 20px}
+  /* 左线三色 */
+  td.long{border-left:4px solid #2e7d32;padding-left:7px}
+  td.short{border-left:4px solid #c62828;padding-left:7px}
+  td.fact{border-left:2px solid #a8b2c0;padding-left:8px}
+
+  /* 文字高亮 */
+  .bull{color:#2e7d32;font-weight:600}
+  .bear{color:#c62828;font-weight:600}
+
+  /* ===== 无覆盖市场汇总 ===== */
+  .section-empty{
+    margin:3px 0;padding:6px 14px;background:#f8f9fb;border:1px solid #eef0f3;
+    font-size:12.5px;color:#99a;display:block;
+  }
+  .empty-summary-bar{
+    margin:48px 0 0;padding:8px 16px;background:#f2f3f6;border:1px solid #dde0e6;
+    font-size:13px;color:#778;cursor:pointer;user-select:none;display:inline-block;
+  }
+  .empty-summary-bar:hover{background:#e6e9ee}
+  .empty-summary-bar .toggle-icon{font-size:10px;margin-right:4px;color:#999}
+  .empty-summary-bar .empty-count{color:#aaa;font-weight:400}
+  .empty-summary-list{margin:0 0 0 8px;border-left:2px solid #e5e8ed;padding:6px 0 0 9px}
+
+  /* ===== 重点分歧 ===== */
+  .divergence{margin-top:48px}
+  .divergence h2{background:#d4a017;color:#fff}
   .divergence table{margin:0}
   .divergence th{background:#d4a017;color:#fff}
-  .divergence td{font-size:12px}
+  .divergence td{font-size:12.5px;line-height:1.6}
 
-  .no-data{padding:16px;text-align:center;color:#aaa;font-size:13px;background:#f9f9f9;border:1px solid #eee;border-radius:3px;margin:8px 0 22px}
-
-  .footer{margin-top:32px;padding-top:12px;border-top:1px solid #ddd;color:#999;font-size:11px;display:flex;gap:28px;flex-wrap:wrap}
+  /* ===== Footer ===== */
+  .footer{margin-top:48px;padding-top:16px;border-top:1px solid #dde;color:#99a;font-size:11px;display:flex;gap:32px;flex-wrap:wrap}
 </style>
 </head>
 <body>
 <script src="auth.js"></script>
 <script src="auto_refresh.js"></script>
 
-<div class="header">
-  <h1>固定收益 Morning Research Digest <span class="sub">2026年8月12日 星期三 · CPI Day (Jul CPI 8:30am ET)</span></h1>
-  <div class="meta">覆盖券商：GS 5封 + MS 4封 + JPM 1封 + BofA 3封 + CITI 2封（均为播客/Excel链接，无文字内容）+ Nomura 0封 · 共14封邮件 · 24h窗口</div>
-  <div class="brokers">
-    <span class="b-gs">GS</span><span class="b-ms">MS</span><span class="b-jpm">JPM</span><span class="b-bofa">BofA</span><span class="b-citi">CITI</span><span class="b-none">Nomura</span>
-  </div>
+<!-- ================================================================ -->
+<!-- 日期选择栏                                                        -->
+<!-- ================================================================ -->
+<div class="date-bar">
+  <label>选择日期：</label>
+  <button class="nav-btn" onclick="shiftDay(-1)" title="前一天">◀</button>
+  <select id="dateSelect" onchange="renderDay(this.value)"></select>
+  <button class="nav-btn" onclick="shiftDay(1)" title="后一天">▶</button>
+  <span class="no-data-msg" id="noDataMsg">该日期暂无数据</span>
 </div>
 
-<!-- ====== 一、美国利率 ====== -->
-<h2>一、美国利率 <span class="note">全市场焦点：7月CPI预览（核心预期分歧 0.19% vs 0.24%）</span></h2>
-<table>
-<colgroup><col style="width:48px"><col style="width:14%"><col style="width:14%"><col style="width:12%"><col style="width:16%"><col style="width:16%"><col style="width:15%"></colgroup>
-<tr><th>券商</th><th>久期观点</th><th>曲线观点</th><th>重点期限</th><th>美联储观点</th><th>通胀/增长判断</th><th>交易建议</th></tr>
-<tr>
-  <td>MS</td>
-  <td>CPI前市场观望，Real Money买belly outright和spreads，Fast Money做平曲线；30Y TIPS reopening构成supply tailwind；前周主题payer skew持续走强</td>
-  <td>FM flattening bias（2s10s, 5s30s）；RM午后做平10s30s；curve interests偏向继续steepening宏观曲线</td>
-  <td>Belly (5Y) RM买盘集中；1Y/20-30Y payer skew最rich；breakevens: FV 6.7, TY 5.7, US 4.3</td>
-  <td>—</td>
-  <td>核心CPI +0.24% MoM / +2.5% YoY（高于一致预期0.2%），0.3%概率>0.1%；chipflation从软件蔓延至电脑/平板月增~1bp；非住房核心服务反弹；隐含核心PCE约+0.23% MoM</td>
-  <td>偏好short forward inflation（CPI forwards面临双向下行：低读数利空breakevens，高读数引发hawkish rhetoric+b/e flattening）；front-end仍有~40bp war premium；pain trade是upside surprise</td>
-</tr>
-<tr>
-  <td>GS</td>
-  <td>Carry trades resilient但prefer equity to credit；对利率久期方向未明确表态</td>
-  <td>Bear-steepening持续，5s30s走陡至86bp</td>
-  <td>—</td>
-  <td>—</td>
-  <td>核心CPI +0.19% MoM / +2.47% YoY（低于一致预期0.2%）；Q3 GDP tracking +2.7%；CAI +3.7%(vs Jun +2.8%)；FCI收紧2.4bp至98.43</td>
-  <td>继续偏好股票优于信用债；carry opportunity indicator处于多年低点</td>
-</tr>
-<tr>
-  <td>JPM</td>
-  <td>—</td>
-  <td>—</td>
-  <td>5Y -2bp至4.39%；10Y -1bp至4.69%；30Y -1bp至5.25%；Brent +1.6%至$89.13</td>
-  <td>—</td>
-  <td>NFIB小企业乐观指数升至99.8(年内新高)；成屋销售-1.7%至4.06M年化；全球股市-0.3%，EM独跌1.0%</td>
-  <td>—</td>
-</tr>
-<tr>
-  <td>BofA</td>
-  <td>—</td>
-  <td>—</td>
-  <td>—</td>
-  <td>预计年内再加息75bp；关注租金和工资通胀回落（工资增速疫情以来最低）</td>
-  <td>信用卡支出7月+5.0% YoY（6月+6.3%），SA MoM -0.2%（受6月线上促销前置影响，潜在趋势平稳）；实际贸易加权美元2026年下行，"Great Rebalancing"持续</td>
-  <td>60/40组合自2022年实际回报为零；债券仍与股票正相关；建议大宗商品替代债券分散风险；top-tier HY + fallen angels为FI最优价值</td>
-</tr>
-</table>
+<!-- 渲染容器 -->
+<div id="app"></div>
 
-<!-- ====== 二、欧洲利率 ====== -->
-<h2>二、欧洲利率</h2>
-<table>
-<colgroup><col style="width:48px"><col style="width:18%"><col style="width:16%"><col style="width:16%"><col style="width:18%"><col style="width:16%"><col style="width:16%"></colgroup>
-<tr><th>券商</th><th>德债观点</th><th>曲线观点</th><th>ECB观点</th><th>国家/利差观点</th><th>供给与资金面</th><th>交易建议</th></tr>
-<tr>
-  <td>GS</td>
-  <td>—</td>
-  <td>—</td>
-  <td>—</td>
-  <td>发布《France—Modelling the 2027 Elections》：Le Pen 68%概率赢得总统大选，39%概率总统+议会多数；若对Philippe仅51%胜率；悬峙议会概率26%；建议关注Le Pen经济/欧洲政策主张及悬峙议会的财政影响</td>
-  <td>—</td>
-  <td>—</td>
-</tr>
-<tr><td>MS</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>BofA</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</table>
+<script>
+// ==================================================================
+// 数据层：所有日报数据存储在这里
+// 新增日期：复制下面一个日期块，修改 key 和内容即可
+// ==================================================================
 
-<!-- ====== 三、中国利率 ====== -->
-<h2>三、中国利率</h2>
-<div class="no-data">本日无券商覆盖中国利率市场</div>
+var REPORT_DATA = {};
 
-<!-- ====== 四、澳洲利率 ====== -->
-<h2>四、澳洲利率</h2>
-<div class="no-data">本日无券商覆盖澳洲利率市场</div>
+// ==================== 2026-08-12 ====================
+REPORT_DATA["2026-08-12"] = {
+  dateCN: "2026年8月12日 星期三",
+  theme: "CPI Day（7月CPI 8:30am ET）",
+  meta: "覆盖券商：GS 5封 + MS 4封 + JPM 1封 + BofA 3封 + CITI 2封（均为播客/Excel链接，无文字内容）+ Nomura 0封 · 共14封邮件 · 24h窗口",
+  brokers: [
+    {n:"GS",c:"b-gs"},{n:"MS",c:"b-ms"},{n:"JPM",c:"b-jpm"},{n:"BofA",c:"b-bofa"},{n:"CITI",c:"b-citi"},{n:"Nomura",c:"b-none"}
+  ],
+  markets: [
+    // 美国利率
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      note:"全市场焦点：7月CPI预览 — GS预期核心+0.19% vs MS预期+0.24%，方向相反",
+      summary:"隔夜市场：5Y <b>-2bp</b>至4.39% · 10Y <b>-1bp</b>至4.69% · 30Y <b>-1bp</b>至5.25% · 5s30s走陡至<b>86bp</b> · Brent <b>+1.6%</b>至$89.13 · NFIB小企业乐观指数升至<b>99.8</b>（年内新高）· 成屋销售-1.7%至4.06M年化",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["48px","20%","13%","13%","13%","21%","18%"],
+      rows:[
+        ["MS",
+          ["fact","CPI前RM买belly outright+spreads，FM做平曲线；30Y TIPS reopening为supply tailwind；breakevens: FV <b>6.7</b>, TY <b>5.7</b>, US <b>4.3</b>"],
+          [""],
+          ["short","FM <span class='bear'>flattening bias</span>（2s10s, 5s30s）；RM午后做平10s30s；但curve interests偏向继续steepening宏观曲线"],
+          [""],
+          ["fact","预计核心CPI <b>+0.24%</b> MoM / +2.5% YoY（高于一致预期0.2%）；chipflation从软件蔓延至电脑/平板月增~1bp；非住房核心服务反弹；隐含核心PCE约<b>+0.23%</b> MoM；0.3%概率大于0.1%"],
+          ["short","<span class='bear'>short forward inflation</span>：CPI forwards双向下行风险（低读数利空breakevens，高读数引发hawkish rhetoric）；front-end仍有<b>~40bp war premium</b>；pain trade是upside surprise"]],
+        ["GS",
+          ["fact","Bear-steepening持续，5s30s走陡至<b>86bp</b>；Q3 GDP tracking <b>+2.7%</b>；CAI <b>+3.7%</b>（vs Jun +2.8%）；FCI收紧2.4bp至98.43"],
+          ["fact","Carry trades resilient，未对利率久期方向给出明确判断"],
+          ["short","<span class='bear'>Bear-steepening</span>持续"],
+          [""],
+          ["fact","预计核心CPI <b>+0.19%</b> MoM / +2.47% YoY（低于一致预期0.2%）；6月温和下行后7月反弹力度有限"],
+          ["short","<span class='bear'>prefer equity to credit</span>；carry opportunity indicator处于<b>多年低点</b>"]],
+        ["JPM",
+          ["fact","5Y <b>-2bp</b>至4.39%；10Y <b>-1bp</b>至4.69%；30Y <b>-1bp</b>至5.25%；Brent <b>+1.6%</b>至$89.13；NFIB <b>99.8</b>（年内新高）；成屋销售-1.7%至4.06M年化；全球股市-0.3%，EM独跌1.0%"],
+          [""],[""],[""],[""],[""]],
+        ["BofA",
+          ["fact","信用卡支出7月<b>+5.0%</b> YoY（6月+6.3%），SA MoM <b>-0.2%</b>（受6月线上促销前置影响，潜在趋势平稳）；实际贸易加权美元2026年下行，\"Great Rebalancing\"持续"],
+          [""],
+          [""],
+          ["short","<span class='bear'>预计年内再加息75bp</span>；关注租金和工资通胀回落（工资增速疫情以来最低）"],
+          ["fact","60/40组合自2022年<b>实际回报为零</b>；债券与股票持续正相关，传统分散化失效；大宗商品替代债券为更优分散工具"],
+          ["short","<span class='bear'>减配债券</span>，大宗商品替代债券分散风险；<span class='bull'>top-tier HY + fallen angels</span>为FI最优价值"]]
+      ]
+    },
+    // 美国IG
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"本周供给：IG supply ~<b>$21bn</b>预计本周定价，为9月FOMC前最后发行窗口（MS）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","行业偏好","偏好/风险"],
+      cols:["48px","15%","14%","14%","14%","15%","14%","14%"],
+      rows:[
+        ["MS",["fact","IG supply ~<b>$21bn</b>预计本周定价，为9月FOMC前最后发行窗口"],[""],[""],[""],[""],[""],[""]],
+        ["BofA",[""],[""],["short","<span class='bear'>IG相对HY价值不足</span>；spreads仍处低位"],[""],["short","<span class='bear'>减配IG</span>：60/40组合债券部分应减配；债券与股票持续正相关，传统分散化失效"],[""],["short","<span class='bear'>减配IG</span>，建议大宗商品替代债券分散风险"]],
+        ["GS",["fact","AI capex驱动debt issuance上行压力"],[""],["fact","credit spreads和term premia仍低"],[""],["short","<span class='bear'>prefer equity to credit</span>；carry opportunity indicator处于<b>多年低点</b>"],[""],[""]]
+      ]
+    },
+    // 美国HY
+    {
+      id:"us-hy", pri:true, title:"美国HY信用债",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","再融资/违约","Technical/资金面","整体观点","评级偏好","偏好/风险"],
+      cols:["48px","14%","13%","13%","14%","13%","14%","7%","12%"],
+      rows:[
+        ["BofA",
+          ["fact","信用利差有足够缓冲吸收违约率上升"],
+          [""],
+          ["long","<span class='bull'>当前yield水平具有吸引力</span>"],
+          ["fact","违约率温和上升但可控；fallen angels信用质量优于原生HY"],
+          [""],
+          ["long","<span class='bull'>top-tier HY + fallen angels风险调整回报达40年最佳</span>"],
+          ["long","<span class='bull'>top-tier HY</span><br><span class='bull'>fallen angels</span>"],
+          ["long","<span class='bull'>超配HY</span>：大宗商品 &gt; HY &gt; IG &gt; 国债；偏好fallen angels（原IG降级至HY）"]],
+        ["GS",[""],[""],[""],[""],[""],["short","<span class='bear'>prefer equity to credit</span>；carry opportunity indicator处于<b>多年低点</b>"],[""],[""]]
+      ]
+    },
+    // 欧洲利率
+    {
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["48px","20%","13%","13%","13%","22%","17%"],
+      rows:[
+        ["GS",
+          ["fact","发布《<b>France—Modelling the 2027 Elections</b>》专题研究报告"],
+          [""],[""],[""],
+          ["fact","<b>Le Pen 68%</b>概率赢得总统大选，<b>39%</b>概率总统+议会多数；若对阵Philippe仅<b>51%</b>胜率；悬峙议会概率<b>26%</b>；建议关注Le Pen经济/欧洲政策主张及悬峙议会的财政影响"],
+          [""]],
+        ["MS",[""],[""],[""],[""],[""],[""]],
+        ["BofA",[""],[""],[""],[""],[""],[""]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","澳洲利率","亚洲IG信用债","亚洲HY信用债","澳门博彩信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","7月核心CPI方向",
+        ["long","<span class='bull'>GS</span><br>预期+0.19% MoM<br>低于一致预期(0.2%)"],
+        ["short","<span class='bear'>MS</span><br>预期+0.24% MoM<br>高于一致预期(0.2%)"],
+        ["fact","<b>5bp差距、方向相反</b>。GS认为6月温和下行后7月反弹力度有限；MS认为非住房核心服务反弹+chipflation从软件蔓延至硬件，0.3%概率大于0.1%，6月是噪音。隐含核心PCE差约5bp，对9月FOMC定价有实质影响"]],
+      ["美国信用","信用债整体配置方向",
+        ["long","<span class='bull'>BofA</span><br>超配top-tier HY + fallen angels<br>40年最优风险调整回报"],
+        ["short","<span class='bear'>GS</span><br>prefer equity to credit<br>carry indicator多年低点"],
+        ["fact","BofA认为HY利差足够宽、fallen angels信用质量优于原生HY、当前yield具吸引力；GS认为credit spreads和term premia仍低、AI capex驱动debt issuance上行压力、carry不足以补偿风险"]],
+      ["美国利率","中东风险溢价程度",
+        [""],
+        ["short","<span class='bear'>MS</span><br>前端通胀定价含<b>~40bp war premium</b><br>伊朗局势溢价偏高"],
+        ["fact","MS认为front-end通胀定价含40bp war premium，Pakistan信号\"美伊接近协议\"后油价一度下行；但JPM数据显示Brent收涨<b>+1.6%</b>至$89.13——中东尾部风险定价<b>极度不确定</b>，war premium可能双向剧烈波动"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-11 12:00 ~ 2026-08-12 12:00 CT",
+    emailCount:"GS 5 / MS 4 / JPM 1 / BofA 3 / CITI 2（无文字）/ Nomura 0",
+    omitted:"澳洲利率、亚洲IG、亚洲HY、澳门博彩已在「无覆盖市场」汇总"
+  }
+};
 
-<!-- ====== 五、亚洲IG信用债 ====== -->
-<h2>五、亚洲IG信用债</h2>
-<div class="no-data">本日无券商覆盖亚洲IG信用债市场</div>
+// ==================== 新增日期在这里复制上面的日期块 ====================
+// REPORT_DATA["YYYY-MM-DD"] = { ... };
 
-<!-- ====== 六、亚洲HY信用债 ====== -->
-<h2>六、亚洲HY信用债</h2>
-<div class="no-data">本日无券商覆盖亚洲HY信用债市场</div>
 
-<!-- ====== 七、中国IG信用债 ====== -->
-<h2>七、中国IG信用债</h2>
-<div class="no-data">本日无券商覆盖中国IG信用债市场</div>
+// ==================================================================
+// 渲染引擎
+// ==================================================================
 
-<!-- ====== 八、中国HY及地产信用债 ====== -->
-<h2>八、中国HY及地产信用债</h2>
-<div class="no-data">本日无券商覆盖中国HY及地产信用债市场</div>
+function tr(cls,html){return '<td class="'+cls+'">'+html+'</td>'}
+function emptyRow(n){return '<td></td>'.repeat(n)}
 
-<!-- ====== 九、澳门博彩信用债 ====== -->
-<h2>九、澳门博彩信用债</h2>
-<div class="no-data">本日无券商覆盖澳门博彩信用债</div>
+function renderDay(date){
+  var app=document.getElementById('app');
+  var d=REPORT_DATA[date];
+  document.getElementById('noDataMsg').style.display=d?'none':'inline-block';
 
-<!-- ====== 十、重点分歧 ====== -->
-<h2>十、重点分歧</h2>
-<div class="divergence">
-<table>
-<colgroup><col style="width:10%"><col style="width:16%"><col style="width:18%"><col style="width:18%"><col style="width:38%"></colgroup>
-<tr><th>市场</th><th>议题</th><th>偏多方向</th><th>偏空方向</th><th>分歧原因</th></tr>
-<tr>
-  <td>美国利率</td>
-  <td>7月核心CPI方向</td>
-  <td>GS (+0.19%)<br>低于一致预期</td>
-  <td>MS (+0.24%)<br>高于一致预期</td>
-  <td>5bp差距、方向相反。GS认为6月下行后7月温和反弹力度有限；MS认为非住房核心服务反弹+chipflation蔓延，0.3%概率大于0.1%，6月是噪音</td>
-</tr>
-<tr>
-  <td>美国信用</td>
-  <td>信用债整体偏好</td>
-  <td>BofA<br>看好top-tier HY</td>
-  <td>GS<br>prefer equity to credit</td>
-  <td>GS认为credit spreads和term premia仍低，AI capex驱动debt issuance上行压力；BofA认为top-tier HY+fallen angels 40年风险调整回报最优，60/40债券部分应减配</td>
-</tr>
-<tr>
-  <td>美国利率</td>
-  <td>中东风险溢价</td>
-  <td>MS<br>有~40bp war premium在前端</td>
-  <td>—</td>
-  <td>MS认为前端通胀定价包含40bp war premium，在Pakistan信号"美伊接近协议"后油价一度下行；JPM数据显示Brent收涨1.6%至$89.13——中东尾部风险定价极度不确定</td>
-</tr>
-</table>
-</div>
+  if(!d){
+    app.innerHTML='<div style="text-align:center;padding:80px 0;color:#aaa;font-size:15px">该日期暂无数据。请选择其他日期或新增数据。</div>';
+    return;
+  }
 
-<div class="footer">
-  <span>数据来源：Outlook Research文件夹 · 24h窗口 (2026-08-11 12:00 ~ 2026-08-12 12:00 CT)</span>
-  <span>邮件数：GS 5 / MS 4 / JPM 1 / BofA 3 / CITI 2(无文字) / Nomura 0</span>
-  <span>未覆盖市场已如实标注，无自行补充内容</span>
-</div>
+  var brokers=d.brokers.map(function(b){return '<span class="'+b.c+'">'+b.n+'</span>'}).join('');
+
+  var html='';
+  // Header
+  html+='<div class="header">';
+  html+='<h1>固定收益 Morning Research Digest <span class="sub">'+d.dateCN+' · '+d.theme+'</span></h1>';
+  html+='<div class="meta">'+d.meta+'</div>';
+  html+='<div class="brokers">'+brokers+'</div>';
+  html+='</div>';
+
+  // Markets
+  d.markets.forEach(function(m){
+    html+='<h2'+(m.pri?' class="priority"':'')+'>'+m.title+(m.note?' <span class="note">'+m.note+'</span>':'')+'</h2>';
+    if(m.summary){
+      html+='<div class="summary-bar">'+m.summary+'</div>';
+    }
+    html+='<table><colgroup>';
+    m.cols.forEach(function(w){html+='<col style="width:'+w+'">'});
+    html+='</colgroup><tr>';
+    m.headers.forEach(function(h){html+='<th>'+h+'</th>'});
+    html+='</tr>';
+    m.rows.forEach(function(row){
+      html+='<tr>';
+      html+='<td>'+row[0]+'</td>';
+      for(var i=1;i<row.length;i++){
+        var cell=row[i];
+        if(typeof cell==='string')cell=[cell];
+        html+=tr(cell[0]||'',cell[1]||'');
+      }
+      html+='</tr>';
+    });
+    html+='</table>';
+  });
+
+  // No coverage
+  if(d.noCoverage&&d.noCoverage.length){
+    html+='<div class="empty-summary-bar" id="empty-bar" onclick="toggleEmpty()">';
+    html+='<span class="toggle-icon" id="emptyIcon">▸</span> 今日无券商覆盖 <span class="empty-count">（'+d.noCoverage.length+'个市场）</span>';
+    html+='</div>';
+    html+='<div class="empty-summary-list" id="empty-list" style="display:none">';
+    d.noCoverage.forEach(function(mkt){
+      html+='<div class="section-empty">'+mkt+' · 本日无券商覆盖</div>';
+    });
+    html+='</div>';
+  }
+
+  // Divergences
+  if(d.divergences){
+    var dv=d.divergences;
+    html+='<div class="divergence">';
+    html+='<h2>重点分歧</h2><table><colgroup>';
+    dv.cols.forEach(function(w){html+='<col style="width:'+w+'">'});
+    html+='</colgroup><tr>';
+    dv.headers.forEach(function(h){html+='<th>'+h+'</th>'});
+    html+='</tr>';
+    dv.rows.forEach(function(row){
+      html+='<tr>';
+      row.forEach(function(cell){
+        if(typeof cell==='string')cell=[cell];
+        html+=tr(cell[0]||'',cell[1]||'');
+      });
+      html+='</tr>';
+    });
+    html+='</table></div>';
+  }
+
+  // Footer
+  html+='<div class="footer">';
+  html+='<span>数据来源：Outlook Research文件夹 · 24h窗口（'+d.footer.window+'）</span>';
+  html+='<span>邮件数：'+d.footer.emailCount+'</span>';
+  if(d.footer.omitted) html+='<span>'+d.footer.omitted+'</span>';
+  html+='<span>客观数据与券商观点已严格区分，无自行补充内容</span>';
+  html+='</div>';
+
+  app.innerHTML=html;
+}
+
+function toggleEmpty(){
+  var list=document.getElementById('empty-list');
+  var icon=document.getElementById('emptyIcon');
+  if(!list||!icon)return;
+  if(list.style.display==='none'){
+    list.style.display='block';
+    icon.textContent='▾';
+  }else{
+    list.style.display='none';
+    icon.textContent='▸';
+  }
+}
+
+// ==================================================================
+// 初始化：生成日期列表 + 默认显示最新日期
+// ==================================================================
+var allDates=Object.keys(REPORT_DATA).sort();
+
+function shiftDay(n){
+  var sel=document.getElementById('dateSelect');
+  var idx=sel.selectedIndex+n;
+  if(idx>=0&&idx<sel.options.length){
+    sel.selectedIndex=idx;
+    renderDay(sel.value);
+  }
+}
+
+(function init(){
+  var sel=document.getElementById('dateSelect');
+  var hasData=allDates.length>0;
+  if(!hasData){
+    var opt=document.createElement('option');
+    opt.text='暂无数据';
+    opt.value='';
+    sel.appendChild(opt);
+    renderDay('');
+    return;
+  }
+  allDates.forEach(function(dt){
+    var opt=document.createElement('option');
+    opt.value=dt;
+    var rd=REPORT_DATA[dt];
+    opt.text=dt+' ('+rd.dateCN.split('年')[1].split('月')[0]+'/'+rd.dateCN.split('月')[1].split('日')[0]+')';
+    sel.appendChild(opt);
+  });
+  var latest=allDates[allDates.length-1];
+  sel.value=latest;
+  renderDay(latest);
+})();
+</script>
 
 </body>
 </html>
