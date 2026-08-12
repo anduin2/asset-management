@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-11 17:03 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-12 08:37 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4454,9 +4454,1169 @@ window.REPORT_DATA =
         "Commodities"
       ],
       "drivers": []
+    },
+    {
+      "id": "cpi-pos",
+      "assetClass": "Rates",
+      "name": "CPI前利率仓位布局",
+      "topic": "CPI Positioning",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "周二UST bull-steepening无视$90油价，BE收窄确认市场不担心油价传导。但仓位不对称风险偏高。"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "Rates"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "hormuz",
+      "assetClass": "Commodities/Macro",
+      "name": "Hormuz僵局与油价",
+      "topic": "Hormuz Geopolitics",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "Brent盘中触$90后回落，冲突信号矛盾。部分报道指向水道重开进展。"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "Commodities/Macro"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "china-hy-policy",
+      "assetClass": "China HY",
+      "name": "中国HY政策反弹三周",
+      "topic": "China Property Policy",
+      "brokerViews": [
+        {
+          "broker": "JEFFERIES",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "WESCHI +1pt HF买盘，但NWDEVL perps持续PB卖出揭示内部质量分化——选股重于选板块"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "Asia HY收盘持平，Macau长端利差技术性跑赢但基础需求未显著改善"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "China HY"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "india-supply",
+      "assetClass": "India IG",
+      "name": "印度银行供给压力",
+      "topic": "India Credit Supply",
+      "brokerViews": [
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "SBI 5y T+120缺乏吸引力，HDFC/BOBIN预期跟进，5y银行走宽1-3bp"
+            }
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "Indian financials走宽2-3bp，供给预期为主要压力"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "India IG"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "ig-supply",
+      "assetClass": "US IG",
+      "name": "IG供给$125bn创纪录",
+      "topic": "IG Primary Supply",
+      "brokerViews": [
+        {
+          "broker": "Citi",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neu",
+              "mode": "VIEW",
+              "note": "$125bn/月超往年但Big 6 senior零走宽显示消化力，Citi判断供给高峰近尾声"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "US IG"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "aud-t2",
+      "assetClass": "AUD Financial",
+      "name": "AUD T2供给启动",
+      "topic": "AUD T2 Supply",
+      "brokerViews": [
+        {
+          "broker": "Deutsche Bank",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "WSTP T2公允+128，预期定价+130，剩余三大银行将跟进"
+            }
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "points": [
+            {
+              "date": "2026-08-11",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "T2 fixed和FRN卖出，投资者预先腾仓消化WSTP新发"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "AUD Financial"
+      ],
+      "drivers": []
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-08-12",
+      "coverage": {
+        "emails": 8,
+        "brokers": [
+          "Morgan Stanley",
+          "Barclays",
+          "Citi",
+          "HSBC",
+          "Jefferies",
+          "TD Securities",
+          "Deutsche Bank"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": "报告覆盖8/11周一交易日总结，叠加CPI前仓位布局。日本假日休市。"
+      },
+      "signals": [
+        {
+          "id": "cpi-pos-0811",
+          "headline": "CPI前UST提前反弹：bull-steepening无视$90油价，市场共识偏向温和CPI",
+          "topic": "CPI Positioning",
+          "assetClass": "Rates",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "FORECAST",
+            "POSITIONING"
+          ],
+          "impactScore": 100,
+          "urgency": "high",
+          "oneLine": "周二UST bull-steepening，2y -2.7bp，10y -1.8bp至4.69%，BE反而收窄(2y -2.3bp)，$58bn 3y拍卖stop-through，利率市场在CPI前主动做多且选择性忽略Hormuz/$90油价风险",
+          "evidence": "MS Global Macro：2y -2.7bp，30y -1.1bp，10y 4.69%(-1.8bp)。Brent盘中突破$90后收于$88.91。2y BE -2.3bp，10y BE -1.1bp。$58bn 3y拍卖stop 0.5bp through at 4.291%，bid-to-cover 2.71。",
+          "soWhat": "CPI前做多利率+做空BE的组合极度重要：暗示市场共识是CPI温和且油价传导有限。但这也创造了不对称风险——若核心CPI高于0.2%，利率多头集中平仓可导致UST一次性回调5-8bp。周三CPI是本年度最重要的单日事件。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "hormuz-0811",
+          "headline": "Hormuz僵局持续：Brent盘中触$90回落，冲突信号矛盾，利率市场选择性忽略能源风险",
+          "topic": "Oil/Hormuz Geopolitics",
+          "assetClass": "Commodities/Macro",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "GEOPOLITICAL",
+            "MONITOR"
+          ],
+          "impactScore": 100,
+          "urgency": "high",
+          "oneLine": "Brent盘中突破$90后回落至$88.91(+1.4%)，报道指向Hormuz重开冲突信号——部分来源称取得进展，US官员同日表示更多油轮正通过海峡，地缘溢价维持高位但利率市场选择性忽略",
+          "evidence": "MS：Brent +1.4%至$88.91，盘中交易至$90以上。报道指向Hormuz重新开放的矛盾信号。US官员称尽管地缘紧张持续，更多石油正通过海峡。",
+          "soWhat": "市场对Hormuz存在严重的信息真空：不同来源报道相互矛盾导致油价在$88-$90区间剧烈波动。外交突破可将油价快速拉回$82-84；僵局持续则$90+成为新常态。周三CPI是打破当前僵局的下一个关键催化剂——若CPI温和+油价居高不下，通胀预期分化将考验美联储叙事。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "rba-0811",
+          "headline": "RBA鹰派维持4.35%：保留加息选项，AUD 10y +4bp与UST背离确立澳洲利率独立行情",
+          "topic": "RBA Decision",
+          "assetClass": "Rates/Fx",
+          "brokers": [
+            "Morgan Stanley",
+            "HSBC",
+            "TD Securities"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "COLOR",
+            "DIVERGENCE"
+          ],
+          "impactScore": 80,
+          "urgency": "medium",
+          "oneLine": "RBA维持4.35%但定性政策为somewhat restrictive，保留通胀压力下进一步加息选项。AUD 10y +4bp至5.04%与UST rally背离，AUD/USD +0.1%",
+          "evidence": "MS：RBA将政策定性为somewhat restrictive同时保留再次收紧权利。AUD 10y +4bp至5.04%与UST背离。AUD/USD +0.1%。HSBC：RBA决定被市场视为hawkish。",
+          "soWhat": "RBA为全球央行叙事提供重要参照：即使增长放缓，央行仍愿保留加息以防通胀预期脱锚。AUD利率与UST背离确认本地通胀动态独立于全球利率周期，持有AUD信用敞口需额外对冲利率风险。剩余三大银行财报在即，更多T2公告可能压制次级债。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "ig-supply-0811",
+          "headline": "IG供给洪峰未止：$125bn/月创纪录超2024/2025全月，但Big 6 seniors零走宽证明需求深度",
+          "topic": "IG Primary Supply",
+          "assetClass": "Us Ig",
+          "brokers": [
+            "Citi",
+            "Barclays"
+          ],
+          "direction": "Neutral",
+          "signalType": [
+            "COLOR",
+            "FLOW"
+          ],
+          "impactScore": 80,
+          "urgency": "medium",
+          "oneLine": "Citi：本周$44bn，8月累计$125bn已超2024年8月($100bn)和2025年8月($100bn)。Big 6 seniors unchanged，HF早盘空头回补，RM尾盘买入34-36年。Citi判断供给高峰已近尾声",
+          "evidence": "Citi IG：$44bn week，$125bn month eclipses ~$100bn in Aug 2025 and Aug 2024。Financial +1-2bp但Big 6 seniors unchanged。HF early short covering，RM late owic'ing 34-36 seniors。Citi：closer to a period of lighter supply。",
+          "soWhat": "$125bn创纪录8月供给的消化韧性超预期。Big 6 senior零走宽、HF空头回补和RM尾盘买入均为正面技术信号。若Citi供给高峰判断正确，8月下旬可能迎来供给减少带来的利差压缩窗口。但CPI若不佳引发利率走宽，二级库存仍可能承压。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "china-hy-0811",
+          "headline": "中国HY韧性延续：WESCHI +1pt受HF驱动，北京政策效应第三周，但NWDEVL PB卖出分化",
+          "topic": "China Property Policy",
+          "assetClass": "China Hy",
+          "brokers": [
+            "JEFFERIES",
+            "Barclays",
+            "HSBC"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "VIEW",
+            "FLOW"
+          ],
+          "impactScore": 60,
+          "urgency": "medium",
+          "oneLine": "JEFFERIES：WESCHI +1pt on HF buying，NWDEVL perps PB卖出但价格未跌。Barclays：Asia HY收盘持平，Macau长端利差跑赢。政策效应延续第三周但板块内质量分化加剧",
+          "evidence": "JEFFERIES：WESCHI +1pt，NWDEVL perps supply from PBs but levels unch'd。Barclays：Asia HY flat to touch lower(-0.125-0.25pt)，Macau long end spread outperforming。HSBC：Ex-China HY -0-0.125pts，IRB/IIFOIN/GRNKEN better buying。",
+          "soWhat": "中国HY连续第三周展现韧性，北京放松限购利好仍在发酵。WESCHI +1pt是HF Beta追逐行为。但NWDEVL永续债持续遭遇PB卖出是不容忽视的警示——smart money正利用政策窗口获利了结而非加仓。Macau长端利差跑赢更可能反映技术性反弹而非基本面改善。板块内质量分化正在加剧。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "india-sup-0811",
+          "headline": "India IG供给压力初现：SBI 5y T+120定价，HDFC/BOBIN预期跟进，5y银行走宽2-3bp",
+          "topic": "India Credit Supply",
+          "assetClass": "India Ig",
+          "brokers": [
+            "Barclays",
+            "TD Securities",
+            "HSBC"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "COLOR",
+            "FLOW"
+          ],
+          "impactScore": 60,
+          "urgency": "medium",
+          "oneLine": "Barclays称SBI 5y T+120为joke of an IPG，HDFC/BOBIN预期跟进，近期5y印度银行走宽1-3bp。TD确认Indian financials走宽2-3bp，HSBC确认ICICI 5yr被hit",
+          "evidence": "Barclays：SBI launching 5y at a joke of an IPG，on back of that and HDFC/BOBIN talk we are 1-3bp wider in recently issued 5y Indian banks。TD：Indian financials widened 2-3bps on supply expectations。HSBC：been hit in new ICICI 5yr。",
+          "soWhat": "India IG经历典型供给冲击传导：SBI定价，现有5y走宽，预期更多供给，进一步走宽。T+120定价在Barclays看来缺乏吸引力，最终可能需要更多折让。如果HDFC和BOBIN也进场，阶段走宽反而可能创造好的入场点——前提是全球利率环境不恶化。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "wstp-t2-0811",
+          "headline": "WSTP 10NC5 T2启动：DB公允价值ASW+128，预期+130定价，现有T2预先走宽1-2bp",
+          "topic": "AUD T2 Supply",
+          "assetClass": "Aud Financial",
+          "brokers": [
+            "Deutsche Bank",
+            "TD Securities",
+            "HSBC"
+          ],
+          "direction": "Neutral",
+          "signalType": [
+            "COLOR",
+            "PRICING"
+          ],
+          "impactScore": 60,
+          "urgency": "medium",
+          "oneLine": "WSTP Q3后宣布10NC5 AUD T2(IPT ASW+140)。DB公允价值ASW+128，预期+130(适度折让)。TD：T2 selling both fixed and FRN。HSBC：major subs widening post WSTP announcement",
+          "evidence": "DB：fair value ASW+128，expect final near +130，modest concession vs secondary +127。Major bank 5y senior +64bp，sub/senior ~2x。Prior YTD T2 AUD12.6bn = 65% FY forecast。TD：selling in T2。HSBC：widening among major subs。",
+          "soWhat": "WSTP T2将成为AUD金融板块的重要定价锚。DB认为+130含适度折让，sub/senior比率~2x宽于历史暗示T2相对价值已有吸引力。投资者提前卖出T2为新发腾仓是标准操作，意味着一级吸收阻力可控。剩余三大银行财报后若有T2公告将进一步压制次级债利差。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "eq-rt-diverge-0811",
+          "headline": "股债有序分化：S&P -0.3%而UST rally，VIX降至15.28，板块轮动而非系统性风险off",
+          "topic": "Cross-Asset Divergence",
+          "assetClass": "Equity/Rates",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "direction": "Neutral",
+          "signalType": [
+            "VIEW",
+            "MONITOR"
+          ],
+          "impactScore": 40,
+          "urgency": "low",
+          "oneLine": "S&P -0.3%，Nasdaq -0.6%，但VIX -1.2%至15.28。通信服务-2.1%、消费可选-0.8%领跌，能源+1.1%、公用事业+1.1%领涨——典型的通胀周期轮动而非恐慌",
+          "evidence": "MS：S&P -0.3%，Nasdaq -0.6%。VIX -1.2% to 15.28。通信服务-2.1%、消费可选-0.8%、房地产-0.9%领跌。能源+1.1%、公用事业+1.1%领涨。",
+          "soWhat": "VIX降至15.28的信号非常关键——尽管股市下跌但波动率预期反而下降，这不是恐慌性抛售而是有序板块轮动。能源和公用事业上涨反映通胀/油价重新定价，通信服务和消费可选下跌反映利率敏感板块承压。CPI若超预期，科技和消费板块损失可能扩大。",
+          "action": "WATCH",
+          "date": "2026-08-12",
+          "priorState": "No prior state available.",
+          "quote": ""
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Morgan Stanley",
+          "summary": "周二全球市场围绕CPI仓位布局展开：UST bull-steepening无视Brent触$90，BE反而收窄。市场共识倾向于CPI温和但仓位高度不对称。RBA鹰派维持为全球央行叙事提供新参照。EM亚洲货币多数走弱但KRW+0.3%逆势，BoK暗示进一步加息。",
+          "stance": "neutral",
+          "asset_class": "Macro",
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-08-12"
+          ]
+        },
+        {
+          "broker": "Citi",
+          "summary": "IG信用温和走宽+1-2bp但Big 6 senior零走宽，HF早盘空头回补、RM尾盘买入34-36年均为正面信号。$125bn 8月IG供给已超往年全月但Citi判断高峰已近尾声。TMT NVDA初期波动后回归平稳。SFD指引下修不构成信用冲击，FLO资产出售利好。",
+          "stance": "neutral",
+          "asset_class": "US IG",
+          "emails": 1,
+          "sourceRefs": [
+            "Citi 2026-08-12"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "summary": "亚洲信用整体淡静，日本休市压制交易量。中国IG muted利差缩1-2bp但corp perps反而0.125pt降低。India IG因SBI 5y供给预期走宽1-3bp。Asia CDS Itraxx+1bp，INDON/PHILIP only touch wider显示韧性。中国HY收盘持平，Macau长端技术性跑赢。",
+          "stance": "neutral",
+          "asset_class": "Asia Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "Barclays 2026-08-12"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "summary": "亚洲信用混合：日本Beta跑赢(保险混合持续需求)，IG利差侧震荡。SEA IG走宽0-2bp但PTTGC有PB需求。Ex-China HY -0-0.125pts，IRB/IIFOIN/GRNKEN better buying。AUD受RBA支撑但T2因WSTP走宽。SGD因HSBC新发导致AM卖出存量。",
+          "stance": "neutral",
+          "asset_class": "Asia Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC 2026-08-12"
+          ]
+        },
+        {
+          "broker": "JEFFERIES",
+          "summary": "Asia HY在宏观波动中展现韧性。WESCHI +1pt HF买盘驱动，但NWDEVL perps持续PB卖出揭示smart money利用政策窗口获利了结。LIFUNG持续RM买盘。博彩板块分化：MGMCHI/MPEL/WYNMAC better selling，SJMINT PB需求。VNKRLE受PB卖出小幅回落。",
+          "stance": "neutral",
+          "asset_class": "Asia HY",
+          "emails": 1,
+          "sourceRefs": [
+            "JEFFERIES 2026-08-12"
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "summary": "亚洲早盘因日本休市清淡。利差开盘偏紧但伦敦入场后卖压渐增最终持平。India金融走宽2-3bp(SBI供给)。Korea SMEs新发mandate。AUD信用：轻量交易，front-end HQ FRNs买盘但长端大银行获利了结，T2因WSTP卖出。",
+          "stance": "neutral",
+          "asset_class": "Asia/AUD Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "TD Securities 2026-08-12"
+          ]
+        },
+        {
+          "broker": "Deutsche Bank",
+          "summary": "WSTP 10NC5 T2公允价值ASW+128，预期定价+130(适度折让)。当前二级曲线~+127。Major bank 5y senior +64bp，sub/senior~2x略宽于历史。YTD大银行T2已发AUD12.6bn(全年预测65%)。剩余三大银行财报在即，投资者提前卖出T2应辅助消化。",
+          "stance": "neutral",
+          "asset_class": "AUD Financial",
+          "emails": 1,
+          "sourceRefs": [
+            "Deutsche Bank 2026-08-12"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "topic": "CPI前UST多头仓位共识",
+          "status": "Confirmed",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "brokers_disagree": [],
+          "note": "单一来源但MS全球宏观覆盖面完整：UST bull-steepening，BE收窄，3y拍卖stop-through——CPI前多头仓位的一致信号"
+        },
+        {
+          "topic": "India IG 5y供给走宽",
+          "status": "Confirmed",
+          "brokers": [
+            "Barclays",
+            "TD Securities",
+            "HSBC"
+          ],
+          "brokers_disagree": [],
+          "note": "三家一致：India金融5y走宽2-3bp，驱动因素均为SBI 5y定价和HDFC/BOBIN预期跟进"
+        },
+        {
+          "topic": "AUD T2因WSTP公告走宽",
+          "status": "Confirmed",
+          "brokers": [
+            "TD Securities",
+            "HSBC",
+            "Deutsche Bank"
+          ],
+          "brokers_disagree": [],
+          "note": "三家一致：WSTP T2公告导致现有T2卖出和走宽1-2bp。DB提供公允分析(+128)"
+        },
+        {
+          "topic": "Hormuz冲突信号矛盾",
+          "status": "Monitor",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "brokers_disagree": [],
+          "note": "单一来源：部分报道指向水道重开进展，US官员称更多油轮通行。需其他来源交叉验证"
+        },
+        {
+          "topic": "中国HY政策韧性但内部分化",
+          "status": "Monitor",
+          "brokers": [
+            "JEFFERIES",
+            "Barclays",
+            "HSBC"
+          ],
+          "brokers_disagree": [],
+          "note": "三家确认韧性但JEFFERIES独家点出NWDEVL perps PB卖出——质量筛选关键指标"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "neutral",
+        "label": "CPI前蓄势——利率提前做多，信用分化，风险情绪温和",
+        "note": ""
+      },
+      "macro": [
+        "UST bull-steepening提前布局CPI：2y -2.7bp，10y -1.8bp至4.69%，30y -1.1bp",
+        "Brent盘中突破$90后收于$88.91(+1.4%)，Hormuz冲突信号矛盾，US官员称更多油轮正通过",
+        "BE收窄：2y -2.3bp，10y -1.1bp——利率市场选择性忽略油价，聚焦CPI温和预期",
+        "$58bn 3y UST拍卖stop 0.5bp through at 4.291%，bid-to-cover 2.71，前端需求稳健",
+        "S&P 500 -0.3%，Nasdaq -0.6%，但VIX -1.2%至15.28——有序板块轮动而非恐慌",
+        "通信服务-2.1%、消费可选-0.8%、房地产-0.9%领跌；能源+1.1%、公用事业+1.1%领涨",
+        "DXY持平99.83，AUD/USD +0.1%，USD/JPY ~159.28持平(日本休市)",
+        "RBA维持4.35%(somewhat restrictive保留加息选项)，AUD 10y +4bp至5.04%背离UST",
+        "KRW +0.3%逆势走强至~1413/USD，BoK高级副行长暗示可能进一步加息",
+        "BRL -1.0%，EM亚洲货币多数走弱，油价上行压制EM FX",
+        "市场定价累计加息至年底约39bp(US)，英国约1bp降低",
+        "OAT/Bund spreads走宽约2bp(5y)，欧洲利率跟随UST温和走低"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "neutral",
+          "label": "CPI前蓄势——利率提前做多，信用分化，风险情绪温和",
+          "note": ""
+        },
+        "activeNames": [
+          {
+            "name": "West China Cement (WESCHI)",
+            "ticker": "WESCHI",
+            "tone": "buy",
+            "activity": "中国HY建材领涨，HF买入驱动+1pt，北京政策放松效应延续第三周，水泥需求改善预期支撑",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "新世界发展永续 (NWDEVL Perps)",
+            "ticker": "NWDEVL",
+            "tone": "mixed",
+            "activity": "持续遭遇PB卖出但价格持平，smart money利用政策反弹窗口获利了结，板块内分化加剧",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "万科 (VNKRLE)",
+            "ticker": "VNKRLE",
+            "tone": "sell",
+            "activity": "PB卖出导致价格小幅回落，从前期政策驱动涨幅回调幅度有限，整体仍属健康消化",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "利丰 (LIFUNG)",
+            "ticker": "LIFUNG",
+            "tone": "buy",
+            "activity": "持续有RM买家支撑，中国HY中少数受益于全球供应链重构的工业名字",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          },
+          {
+            "name": "印度国家银行 (SBI) 5y新发",
+            "ticker": "SBIIN",
+            "tone": "mixed",
+            "activity": "新5y以T+120bp启动被市场认为缺乏吸引力，推高现有印度银行5y利差走宽1-3bp",
+            "brokers": [
+              "Barclays",
+              "TD Securities",
+              "HSBC"
+            ]
+          },
+          {
+            "name": "ICICI银行 (ICICI) 5y",
+            "ticker": "ICICI",
+            "tone": "sell",
+            "activity": "新发5y被hit卖出，India金融板块因SBI/HDFC/BOBIN三重供给预期承压走宽",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "Westpac (WSTP) 10NC5 T2",
+            "ticker": "WSTP",
+            "tone": "buy",
+            "activity": "Q3更新后宣布AUD T2新发(IPT ASW+140)，DB公允价值+128预期定价+130，现有T2提前卖出定位",
+            "brokers": [
+              "Deutsche Bank",
+              "TD Securities",
+              "HSBC"
+            ]
+          },
+          {
+            "name": "菲律宾主权 (PHILIP) 3-5y",
+            "ticker": "PHILIP",
+            "tone": "buy",
+            "activity": "本地买盘持续支撑3-5y，尽管隔夜有供给且belly表现偏弱，主权信用需求韧性突出",
+            "brokers": [
+              "Barclays",
+              "TD Securities"
+            ]
+          },
+          {
+            "name": "日本保险混合/软银/日产",
+            "ticker": "NSANY/SOFTBK",
+            "tone": "mixed",
+            "activity": "保险混合债和Beta名字持续海外需求，日本休市但离岸投资者继续配置，NTT belly卖出vs 10yr买入分化",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "HSBC SGD 6NC5新发",
+            "ticker": "HSBC",
+            "tone": "sell",
+            "activity": "新SGD 6NC5宣布后AM卖出存量金融和企业债腾仓，SORA利率走高压制现金价格",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "PTTGC/IRB/IIFOIN/GRNKEN",
+            "ticker": "PTTGC/IRB/IIFOIN/GRNKEN",
+            "tone": "buy",
+            "activity": "SEA HY和IG混合：PTTGC 5yr有PB需求，IRB 32/IIFOIN 29/GRNKEN 28有better buying",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "博彩 (MGMCHI/MPEL/WYNMAC)",
+            "ticker": "MGMCHI/MPEL/WYNMAC",
+            "tone": "sell",
+            "activity": "博彩better selling与SJMINT PB需求形成板块内轮动对比，前两周弱势的长端出现技术性反弹",
+            "brokers": [
+              "JEFFERIES"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "Morgan Stanley",
+            "type": "CPI仓位布局",
+            "summary": "周二全市场核心驱动力是CPI前主动仓位布局：利率做多无视油价，风险资产温和分化，共识倾向于周三CPI温和。"
+          },
+          {
+            "broker": "Citi",
+            "type": "IG供给洪峰与需求深度",
+            "summary": "$125bn 8月IG供给创纪录，但Big 6 senior零走宽和HF回补显示需求深度超预期。Citi判断供给高峰已近尾声，8月下旬或迎利差压缩窗口。"
+          },
+          {
+            "broker": "Barclays",
+            "type": "亚洲信用分化与供给压力",
+            "summary": "日本休市导致交易清淡，India IG供给压力推高利差2-3bp，但中国HY政策和东南亚主权bid支撑结构性韧性。Asia CDS Itraxx+1bp显示轻度risk-off。"
+          },
+          {
+            "broker": "JEFFERIES",
+            "type": "中国HY政策效应与质量筛选",
+            "summary": "北京放松限购效应延续三周，WESCHI +1pt HF买盘驱动。但NWDEVL持续PB卖出揭示smart money利用政策窗口减仓，板块内质量分化是关键主题。"
+          },
+          {
+            "broker": "HSBC",
+            "type": "新发供给压制存量",
+            "summary": "HSBC SGD和WSTP T2新发公告导致存量债券卖出：SGD金融和AUD T2均承受新发折价压力。但保险混合和Indonesia HY仍有结构性买盘支持。"
+          },
+          {
+            "broker": "TD Securities",
+            "type": "亚洲早盘虚假开盘与卖压回归",
+            "summary": "日本休市早盘利差开盘偏紧但伦敦入场后卖压渐增，India金融最弱。亚洲信用整体缺乏方向感，CPI前观望情绪浓厚。"
+          },
+          {
+            "broker": "Deutsche Bank",
+            "type": "AUD T2定价锚与供给消化",
+            "summary": "WSTP T2公允价值+128含适度折让，sub/senior~2x暗示T2相对价值有吸引力。YTD T2已发65%全年预测，剩余供给可通过提前仓位调整消化。"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "WESCHI",
+          "name": "West China Cement (WESCHI)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "China HY",
+          "sector": "Building Materials",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "WESCHI债券单日上涨1pt，对冲基金买入驱动。在北京放松购房限制政策效应延续第三周的背景下，作为中国HY建材板块代表同时受益于水泥需求改善预期和政策Beta双重利好。",
+          "analysis": "WESCHI是本轮中国HY政策反弹的最大受益者。+1pt涨幅反映三重驱动：北京政策Beta、水泥价格企稳的行业基本面改善、以及HF对高质量HY的追逐。WESCHI相对较好的区域水泥龙头地位和现金流传导率使其成为政策行情首选工具。但风险在于上海/深圳/广州尚未跟进协同放松，单边HF买盘在获利了结时可能形成抛压，而NWDEVL的分化提醒板块内质量差异正在扩大而非收敛。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "NWDEVL",
+          "name": "新世界发展永续 (NWDEVL Perps)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "China HY",
+          "sector": "Real Estate",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "NWDEVL永续债在全板块受益于政策利好的背景下持续遭遇私人银行卖出，价格持平但卖压不减。这已经是连续多个交易日出现的PB卖出信号，与WESCHI +1pt形成最鲜明的对比。",
+          "analysis": "NWDEVL PB卖出的持续性是今天中国HY最重要的警示信号。在COGARD +9%和WESCHI +1pt的大背景下同一个板块的NWDEVL却持续遭遇smart money卖出，揭示的是基本面信心的巨大鸿沟。PB客户作为经验丰富的投资者，其卖出可能反映对NWDEVL信用质量的根本性担忧——高杠杆、现金流压力、永续债结构性风险——这些问题不会因北京松限购而改变。如果更多城市不跟进政策放松，NWDEVL的弱势可能进一步加剧成为板块分化的领跌者。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "VNKRLE",
+          "name": "万科 (VNKRLE)",
+          "inFocus": true,
+          "priority": 2,
+          "region": "China",
+          "ccy": "USD",
+          "assetClass": "China HY",
+          "sector": "Real Estate",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "sell",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "VNKRLE债券受PB卖出影响价格小幅回落，但从前几日政策驱动的涨幅来看回调幅度有限，整体仍属于正常的获利了结范畴。万科作为中国地产HY中信用质量最高的名字之一，其回调更多是技术性而非基本面驱动。",
+          "analysis": "VNKRLE的小幅回落无需过度解读。在前几日政策驱动上涨后部分获利了结是正常行为。关键在于后续上海/深圳是否跟进北京的政策放松——如果协同放松兑现，VNKRLE作为高质量标的将首先受益。但如果政策扩散停滞，NWDEVL式的分化可能在板块内进一步蔓延。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "SBIIN/HDFCB",
+          "name": "印度银行供给潮 (SBI/HDFC/BOBIN)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "India",
+          "ccy": "USD",
+          "assetClass": "India IG",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "mixed",
+          "brokers": [
+            "Barclays",
+            "TD Securities",
+            "HSBC"
+          ],
+          "quote": "SBI 5y以T+120bp启动被Barclays称为joke of an IPG。同日HDFC和BOBIN的供给预期随之而来，导致近期发行的5y印度银行走宽1-3bp，ICICI新发5yr被hit卖出。这是典型的供给冲击传导：定价，存量走宽，更多供给，进一步走宽。",
+          "analysis": "India IG正在经历供给冲击周期。T+120的初始定价指引缺乏吸引力，Barclays的joke评论直接到位——这意味着最终可能需要T+125-130才能完成簿记。短期来看印度银行5y可能再走宽3-5bp。但中期T+130以上的India IG银行在亚洲信用板块内具有相对价值吸引力——前提是全球利率环境不显著恶化。周三CPI是决定India IG利差是否进一步走陡的关键变量。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "WSTP",
+          "name": "Westpac 10NC5 T2 (WSTP)",
+          "inFocus": true,
+          "priority": 1,
+          "region": "Australia",
+          "ccy": "AUD",
+          "assetClass": "AUD Financial",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "launch",
+          "brokers": [
+            "Deutsche Bank",
+            "TD Securities",
+            "HSBC"
+          ],
+          "quote": "WSTP Q3更新后宣布10年NC5 AUD T2新发，IPT定价指引ASW+140。DB详细分析公允价值为ASW+128，预期最终定价+130含适度折让。现有T2在公告后卖出走宽1-2bp为消化新发预先腾仓，剩余三大银行(T1/NAB/CBA)财报在即可能有更多T2跟进。",
+          "analysis": "WSTP T2是AUD金融板块本周最重要的定价事件。DB的公允价值+128基于当前二级曲线(+127)和sub/senior比率(~2x)，预期+130意味着约2bp折让。YTD大银行T2已发AUD12.6bn占全年预测65%，剩余约AUD7bn供给空间。如果剩余三大银行跟进T2发行，AUD次级债利差可能整体走宽3-5bp。但+130水平在历史估值上已具吸引力，长期配置资金应在定价后积极关注。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "PHILIP/INDON",
+          "name": "菲律宾/印尼主权 (Asia Sovs)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "SEA",
+          "ccy": "USD",
+          "assetClass": "Credit",
+          "sector": "Sovereign",
+          "sovereign": true,
+          "newIssue": false,
+          "flow": "buy",
+          "brokers": [
+            "Barclays",
+            "TD Securities"
+          ],
+          "quote": "Philippines CDS 65/66，Indonesia 88.5/89.5，尽管Asia CDS Itraxx整体+1bp但PHILIP 3-5y持续有本地买盘支撑。INDON和PHILIP在更宽泛弱市中仅touch wider，显示东南亚主权韧性突出。印尼Damayanti央行行长提名带来的政策连续性溢价仍在发酵。",
+          "analysis": "东南亚主权CDS展现出令人印象深刻的韧性。PHILIP的本地买盘支撑是最强技术因素——境内账户在收益率抬升后加大了配置力度。东南亚主权的基本面（外储充足、经常账户改善、财政纪律）支持其在亚洲信用中保持防御性角色。虽然全球利率上行可能引发阶段性走宽，但长期配置价值明确。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "MGMCHI/MPEL",
+          "name": "澳门博彩轮动 (MGMCHI/MPEL/WYNMAC)",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Macau",
+          "ccy": "USD",
+          "assetClass": "Macau HY",
+          "sector": "Gaming",
+          "sovereign": false,
+          "newIssue": false,
+          "flow": "mixed",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "quote": "MGMCHI/MPEL/WYNMAC出现better selling而SJMINT有PB需求形成板块内轮动。Macau长端利差整体跑赢，可能反映前两周弱势后的空头回补和技术性反弹而非基本面改善。",
+          "analysis": "澳门博彩板块呈现典型轮动特征：前期弱势长端利差出现空头回补驱动反弹，front-end和主流名字反而遭遇获利了结。SJMINT的PB需求反映其相对较低的杠杆率和稳定的市场份额。但MGMCHI/MPEL/WYNMAC的better selling提醒板块整体仍在宏观不确定性中。板块更适合战术性交易而非战略配置。",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "HSBC/ANZ",
+          "name": "HSBC SGD 6NC5与银行T2联动",
+          "inFocus": false,
+          "priority": 3,
+          "region": "Singapore/Australia",
+          "ccy": "SGD/AUD",
+          "assetClass": "Financial",
+          "sector": "Financial",
+          "sovereign": false,
+          "newIssue": true,
+          "flow": "mixed",
+          "brokers": [
+            "HSBC",
+            "TD Securities"
+          ],
+          "quote": "HSBC新SGD 6NC5宣布后AM卖出存量金融和企业债以腾仓参与新发。同时AUD T2因WSTP 10NC5公告走宽。两个供给事件在区域内形成联动效应——资本配置在SGD vs AUD之间产生竞争。",
+          "analysis": "HSBC SGD和WSTP T2同天宣布创造了亚洲金融板块的供给共振。AM卖出存量是标准新发前行为，但这联动效应意味着投资者面临区域内资本配置选择。供给集中可能推高两者的定价折让——先定价的发行可能获得更好执行。",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "Morgan Stanley",
+          "topic": "CPI前集中度风险",
+          "point": "利率市场的CPI前多头仓位已达到极端共识——bull-steepening+BE收窄+拍卖stop-through三重信号。集中的单向仓位创造了高不对称性：温和CPI验证做多逻辑但上行动能有限，超预期CPI将触发集中平仓可逆转全部进展。周三应提前思考风险对冲方案。",
+          "quote": "MS：The market is well-positioned for a soft CPI. That is the consensus. But the asymmetry here is real—if CPI surprises to the upside, the unwinding will be very violent given how much optimism is already baked in."
+        },
+        {
+          "broker": "Citi",
+          "topic": "8月下旬利差压缩窗口",
+          "point": "Citi判断IG供给高峰期将过——$125bn已完成，剩余mandate有限。如果CPI不恶劣，8月下旬将迎来供给减少带来的利差压缩窗口。重点关注Financial和Industrial板块中被供给压低的个券。",
+          "quote": "Citi：We are closer to a period of lighter supply after completion of near-term deals. Strong oversubscription and price progression providing real technical support."
+        },
+        {
+          "broker": "JEFFERIES",
+          "topic": "中国HY质量筛选——关键分化",
+          "point": "当前中国HY行情已从第一阶段的全面Beta反弹（所有名字一起涨）过渡到第二阶段的精选Alpha（只有高质量涨）。WESCHI vs NWDEVL的分化是最清晰的信号。投资者应从买入板块ETF转向精选个券：重仓LNGFOR/VNKRLE/COGARD，谨慎对待NWDEVL/WESCHI/VDNWDL。",
+          "quote": "JEFFERIES：WESCHI +1pt on HF buying while NWDEVL perps saw continuous PB selling. The policy bounce is creating winners and losers within the sector—credit selection matters more than sector allocation now."
+        }
+      ],
+      "top_conclusions": [
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Rates",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "CPI前利率仓位布局",
+          "subject_label": "CPI Positioning",
+          "key_takeaway_cn": "周二UST bull-steepening(2y -2.7bp, 10y -1.8bp)且BE收窄，市场在CPI前做多利率且无视Hormuz和$90油价风险。仓位共识偏向CPI温和但创造不对称风险——超预期CPI将触发集中平仓。",
+          "why_it_matters_cn": "周三CPI是本年度最重要单日事件：核心CPI高于0.2%利率定位反转可能推UST回调5-8bp；若温和牛市陡峭化继续。当前市场已定价几乎所有好消息，上行不对称大于下行。"
+        },
+        {
+          "broker": "Citi",
+          "asset_class": "US IG",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "IG供给$125bn创纪录",
+          "subject_label": "IG Supply Absorption",
+          "key_takeaway_cn": "$125bn 8月IG供给创纪录超过2024和2025全月，但Big 6 senior零走宽、HF空头回补和RM尾盘买入证明需求深度超预期。Citi判断供给高峰已近尾声，8月下旬有概率迎来利差压缩窗口。",
+          "why_it_matters_cn": "IG供给消化力是检验信用市场健康度的核心指标。$125bn被有序吸收说明市场已从利率驱动转为利差驱动的主动配置。但CPI是最大威胁：利率大幅走高时二级库存可能集中承压。"
+        },
+        {
+          "broker": "JEFFERIES",
+          "asset_class": "China HY",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "中国HY政策反弹与质量筛选",
+          "subject_label": "China HY Quality Divergence",
+          "key_takeaway_cn": "中国HY连续三周展现政策韧性，WESCHI +1pt受HF买盘驱动。但NWDEVL永续债持续遭遇smart money卖出——揭示板块内质量分化正在加剧，精选高质量名字是唯一正确策略。",
+          "why_it_matters_cn": "北京放松限购效应已持续三周但上海/深圳/广州未跟进——政策协同扩散是决定反弹可持续性的关键。NWDEVL的PB卖出是板块内最强警示信号。"
+        },
+        {
+          "broker": "Barclays",
+          "asset_class": "India IG",
+          "stance": "bearish",
+          "direction_cn": "看空",
+          "product_theme": "India银行供给浪潮",
+          "subject_label": "India Bank Supply Wave",
+          "key_takeaway_cn": "SBI 5y T+120定价被Barclays称为joke of an IPG，HDFC/BOBIN跟进供给预期令5y印度银行走宽1-3bp。India IG正经历典型供给冲击周期。",
+          "why_it_matters_cn": "India银行5y可能在T+125-130找到需求——中期该水平在亚洲信用框架内具相对价值。但若三家同时定价，折让可能需T+135才能完成簿记。"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "asset_class": "AUD Financial",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "AUD T2定价锚构建",
+          "subject_label": "AUD T2 Pricing Anchor",
+          "key_takeaway_cn": "WSTP 10NC5 T2公允价值ASW+128，预期定价+130含适度折让。sub/senior比率~2x暗示T2相对价值有吸引力。投资者提前卖出T2为吸收新发创造条件。",
+          "why_it_matters_cn": "WSTP T2将成为AUD金融下半年T2供给的定价锚。若+130定价成功，剩余三大银行T2发行阻力降低；若需+135，次级债利差整体走宽5bp。"
+        }
+      ],
+      "broker_takeaways": [
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Rates/Macro",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "CPI前全球利率仓位",
+          "subject_label": "Pre-CPI Positioning",
+          "key_takeaway_cn": "全球利率在CPI前主动做多：UST bull-steepening，BE收窄，美金拍卖强劲。但仓位集中度是核心风险——共识偏向温和CPI，不对称偏向上行突破。周五还在甩卖利率而周二已做多——48小时内仓位翻转说明依赖数据的方向性确认。",
+          "why_it_matters_cn": "MS的核心观点：超预期的CPI将比温和CPI造成的市场反应更剧烈，因为温和CPI已是共识。在做多利率的方向上已经没有多少超预期回报空间。"
+        },
+        {
+          "broker": "Citi",
+          "asset_class": "US IG",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "IG信用供给激增与消化",
+          "subject_label": "Record IG Supply",
+          "key_takeaway_cn": "8月IG供给创纪录$125bn但Big 6 senior零走宽和HF空头回补证明需求深度。Citi判断供给高峰已近尾声。如果CPI温和，8月下旬可迎来利差压缩。",
+          "why_it_matters_cn": "Citi的供给高峰判断是当前IG市场最重要的战术信号——如果8月下旬供给减少且CPI温和，信用利差应自然收窄。"
+        },
+        {
+          "broker": "JEFFERIES",
+          "asset_class": "Asia HY",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "中国HY分化中的机会",
+          "subject_label": "China HY Credit Picking",
+          "key_takeaway_cn": "中国HY连续三周受益于政策利好，WESCHI +1pt HF买盘。但NWDEVL持续PB卖出是板块内质量分化最清晰信号。精选名字优于押注Beta。",
+          "why_it_matters_cn": "JEFFERIES对NWDEVL PB卖出的持续关注提供其他券商缺失的维度：同一板块内资金方向差异揭示基本面深层区别。"
+        },
+        {
+          "broker": "Barclays",
+          "asset_class": "Asia Credit",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "亚洲信用淡静中分化",
+          "subject_label": "Asia Divergence",
+          "key_takeaway_cn": "日本休市导致交易量萎缩但板块分化清晰：India IG走宽、PHILIP主权bid支撑、China HY持平。Asia CDS Itraxx+1bp轻度risk-off。",
+          "why_it_matters_cn": "Barclays覆盖范围最广的亚洲信用评论提供板块间相对价值全图景。India IG弱于SEA HY的分化在CPI后可能进一步扩大。"
+        },
+        {
+          "broker": "TD Securities",
+          "asset_class": "Asia Credit",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "亚洲早盘假开盘与卖压回归",
+          "subject_label": "Asia False Open",
+          "key_takeaway_cn": "日本休市早盘利差偏紧（虚假信号），伦敦入场后卖压回归，最终持平。India金融最弱。CPI前观望情绪浓厚。",
+          "why_it_matters_cn": "TD捕捉到亚洲信用'等待模式'：流动性稀薄放大早盘虚假信号，真实方向由CPI决定。"
+        }
+      ],
+      "cross_broker": [
+        {
+          "theme": "CPI前利率仓位共识",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "core_view": "利率在CPI前做多且无视油价——bull-steepening和BE收窄指向共识预期CPI温和。但仓位集中度隐含不对称风险。",
+          "divergence": "单一券商来源但MS覆盖全面。Barclays/Citi从信用角度间接佐证——IG和Asia CDS仅轻度risk-off——整体定价数据前蓄势而非恐慌。"
+        },
+        {
+          "theme": "中国HY政策行情持续性",
+          "brokers": [
+            "JEFFERIES",
+            "Barclays",
+            "HSBC"
+          ],
+          "core_view": "三家一致确认中国HY韧性延续（WESCHI +1pt，板块价格持平）。",
+          "divergence": "JEFFERIES独家强调NWDEVL PB卖出分化，其他券商未提及。可能反映覆盖深度差异而非实际判断分歧。但JEFFERIES的方向信号应被重视。"
+        },
+        {
+          "theme": "India银行供给压力",
+          "brokers": [
+            "Barclays",
+            "TD Securities",
+            "HSBC"
+          ],
+          "core_view": "三家完全一致：SBI 5y定价指引差，HDFC/BOBIN预期跟进，5y银行走宽2-3bp。",
+          "divergence": "无分歧。高度共识意味着India IG走宽趋势可能持续至供给洪峰过去或定价足够有吸引力(T+130+)。"
+        },
+        {
+          "theme": "IG供给消化力",
+          "brokers": [
+            "Citi",
+            "Barclays"
+          ],
+          "core_view": "两家一致确认IG供给创纪录但有序消化。Citi补充供给高峰近尾声判断。",
+          "divergence": "Barclays侧重亚洲(COLI等)，Citi侧重美国(Big 6 senior/HF/RM)。视角互补无矛盾。"
+        }
+      ],
+      "edges": [
+        {
+          "edge_type": "NON_CONSENSUS",
+          "subject_label": "利率无视油价——最危险的非共识",
+          "finding": "UST rally且BE收窄完全无视Brent盘中突破$90。利率市场定价的是油价不会持续$90+或不会传导至核心通胀——两个假设都非常脆弱。若CPI高于预期且油价维持$90，双重打击触发利率恐慌。",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS: 2y -2.7bp, 10y -1.8bp while Brent touched $90. 2y BE -2.3bp, 10y BE -1.1bp.",
+          "edge_score": 4,
+          "why_it_matters": "市场隐含的油价软假设是最危险非共识。历史上油价上涨终会渗透核心通胀，仅滞后6-8周。若CPI开始反映此传导，利率多头将被困。",
+          "basis": "基于历史数据模式（油价，核心CPI滞后6-8周）和仓位不对称分析"
+        },
+        {
+          "edge_type": "SHIFT",
+          "subject_label": "NWDEVL PB卖出——SMART MONEY减仓信号",
+          "finding": "全板块受益政策利好背景下NWDEVL连续多日PB卖出。与WESCHI +1pt HF买入形成最鲜明对比——揭示smart money利用政策窗口减仓而非加仓。",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "evidence": "JEFFERIES: NWDEVL perps supply from PBs multiple sessions, levels unch'd but selling persistent. WESCHI +1pt on HF buying.",
+          "edge_score": 4,
+          "why_it_matters": "PB卖出代表经验丰富长期投资者。他们利用流动性窗口减仓暗示对低质量中国HY基本面缺乏信心。若更多城市不跟进放松，分化将加速蔓延。",
+          "basis": "基于PB vs HF资金流方向背离和JEFFERIES持续追踪"
+        },
+        {
+          "edge_type": "CONVICTION_GAP",
+          "subject_label": "Citi供给高峰判断——高信心但依赖CPI",
+          "finding": "Citi判断IG供给高峰近尾声——若8月下旬供给减少将创造利差压缩机会。但前提是全球利率不恶化(CPI温和)。高信心但赖于外部条件。",
+          "brokers": [
+            "Citi"
+          ],
+          "evidence": "Citi: closer to a period of lighter supply. Strong oversubscription and price progression providing technical support.",
+          "edge_score": 3,
+          "why_it_matters": "若Citi判断准确且CPI温和，将提供可操作窗口——供给减少时买入Financial和Industrial信用。但CPI是此判断最大威胁。",
+          "basis": "基于Citi IG供给管线数据分析（已定价$125bn，剩余mandate有限）"
+        },
+        {
+          "edge_type": "FIRST_CALL",
+          "subject_label": "AUD T2定价锚首次构建——+130水平意义",
+          "finding": "WSTP T2是2026下半年AUD金融首个大银行T2定价。DB首次公允价值ASW+128，预期+130。sub/senior~2x宽于历史暗示T2相对价值已有吸引力。",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "evidence": "DB: fair value ASW+128, expect final near +130. Major bank 5y senior +64bp, sub/senior ~2x.",
+          "edge_score": 3,
+          "why_it_matters": "WSTP定价将设置AUD T2估值基准。+130水平在历史估值上具吸引力，但需监测后续供给量和三大银行跟进节奏。",
+          "basis": "基于DB公允价值模型和YTD供给数据分析"
+        }
+      ],
+      "broker_shifts": [
+        {
+          "broker": "Morgan Stanley",
+          "date_from": "2026-08-07",
+          "date_to": "2026-08-11",
+          "shift_type": "view_shift",
+          "product_theme": "通胀vs衰退叙事切换",
+          "previous_view": "08-07：Hammack鹰派推9月加息>50%，NVDA恐慌抛售+10bp——市场处于'通胀恐惧'模式",
+          "current_view": "08-11：CPI前做多利率无视$90油价，BE收窄，VIX降至15.28——市场转入'数据前蓄势'，通胀恐惧暂歇",
+          "evidence": "08-07: UST 10y +6.1bp to 4.705%. 08-11: UST 10y -1.8bp to 4.69%. BE收窄而非走宽。情绪从恐慌定价转为观望蓄势。",
+          "importance": "High"
+        }
+      ],
+      "alert_flags": [
+        {
+          "alert_type": "高危",
+          "level": "HIGH",
+          "flag": "CPI前利率多头极度集中——不对称平仓风险",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "UST bull-steepening + BE收窄 + 拍卖stop-through三重信号汇聚。全部指向CPI温和共识。若核心CPI >0.2%将触发集中平仓可推UST回调5-8bp。",
+          "severity": "HIGH"
+        },
+        {
+          "alert_type": "中危",
+          "level": "MEDIUM",
+          "flag": "中国HY内部PB卖出信号——质量分化加速",
+          "brokers": [
+            "JEFFERIES"
+          ],
+          "evidence": "NWDEVL perps连续多日PB卖出，与WESCHI +1pt背离持续扩大。smart money正利用政策窗口减仓低质量名字。",
+          "severity": "MEDIUM"
+        },
+        {
+          "alert_type": "中危",
+          "level": "MEDIUM",
+          "flag": "Hormuz外交信号矛盾——信息真空中的不对称风险",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "部分报道指向水道重开进展，US官员同日称更多油轮通行。任何外交突破或升级都可能引发$5+油价波动。",
+          "severity": "MEDIUM"
+        },
+        {
+          "alert_type": "低危",
+          "level": "LOW",
+          "flag": "India银行三重供给洪峰——短期内持续走宽压力",
+          "brokers": [
+            "Barclays",
+            "TD Securities",
+            "HSBC"
+          ],
+          "evidence": "SBI/HDFC/BOBIN可能的同一个窗口定价，存量5y已走宽2-3bp。若三家同时簿记定价折让可能需T+135+。",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "reportDate": "2026-08-11",
       "coverage": {
@@ -17754,733 +18914,6 @@ window.REPORT_DATA =
           "topic": "周末风险",
           "point": "Trump close to deciding larger Iran operation→Red Sea+Strait of Hormuz→周末gap risk极高→建议周五前减仓risk→关注WTI/Brent期货open interest",
           "quote": "severity: High"
-        }
-      ],
-      "top_conclusions": [],
-      "broker_takeaways": [],
-      "cross_broker": [],
-      "edges": [],
-      "broker_shifts": [],
-      "alert_flags": []
-    },
-    {
-      "reportDate": "2026-07-23",
-      "coverage": {
-        "emails": 8,
-        "brokers": [
-          "Goldman Sachs",
-          "Morgan Stanley",
-          "HSBC",
-          "Barclays",
-          "BMO",
-          "Jefferies"
-        ],
-        "lookbackDays": 15,
-        "sourceDateNote": "8封：GS宏观+MS宏观+BMO TIPS+HSBC信用+Barclays信用+JEF日本IG+mkt技术分析+Barclays PEGA(equity)|均为07-22交易日"
-      },
-      "signals": [
-        {
-          "id": "sig-20260723-01",
-          "topic": "UST Bear Flatten Intensifies into FOMC",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "ALERT",
-            "CONTINUATION"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 88,
-          "conviction": "High",
-          "brokers": [
-            "Goldman Sachs",
-            "Morgan Stanley",
-            "JEFFERIES"
-          ],
-          "headline": "UST bear flatten加剧→July hike 33%→2y/5y 2026新高→10y 4.65→CTAs bearish→wave(iii)III underway",
-          "oneLine": "July hike odds 33%.2y+3.6bp 4.298%.5s30s-2.1bp.10y 4.65% May peak.20y reopening tailed.CTAs bearish.",
-          "evidence": [
-            "GS:US2y+3.6bp 4.298%.5s30s-2.1bp.July 8.25bps hikes,Dec 43bps.CTAs bearish adding selling.Put vol bid",
-            "MS:2y-5y reached 2026 highs.10y 4.65% approaching May peak.Market-implied July hike odds 33%",
-            "mkt:Wave(iii)of III underway.Break above 4.61/4.63% confirms.Long-term 10y target 5%+",
-            "MS:$13bn 20y reopening tailed 0.5bp,bid-to-cover 2.64vs2.75.Soft demand despite concession"
-          ],
-          "soWhat": "三券商共振看空UST→July hike概率从不足10%跃升至33%→若FOMC意外加息→10y突破4.63%关键位→5%目标位进入视野→全球credit spread面临压力测试",
-          "quote": "Wave (iii) of III is now underway — decisive break above 4.61%/4.63% would confirm the move",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-02",
-          "topic": "AI Capex Returns Under Scrutiny Post-GOOGL",
-          "assetClass": "Equity/Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "EARNINGS",
-            "ALERT"
-          ],
-          "action": "WATCH",
-          "impactScore": 82,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley",
-            "Barclays"
-          ],
-          "headline": "GOOGL earnings→cloud growth强但2026 capex上修+FCF转负→AI capex回报率疑问→large-cap tech-0.6%→通信-1.3%领跌",
-          "oneLine": "GOOGL:strong cloud growth but raised capex,FCF negative.Large-cap tech sold off(-0.6%).TMT credit chain pressure",
-          "evidence": [
-            "MS:Major hyperscaler showed strong cloud growth but raised planned 2026 capex while FCF turned negative for the quarter",
-            "MS:Reinforced focus on financing burden and prospective returns from rapidly expanding AI infrastructure spending",
-            "MS:S&P500-0.1% NASDAQ-0.6%.Comm-1.3% ConsDisc-0.8% leading declines.Utilities+2.3% safe haven",
-            "Barclays(PEGA):AI disruption→companies spending large amounts of IT budget on AI consumption→crowding-out effect on traditional IT"
-          ],
-          "soWhat": "GOOGL earnings未能缓解AI capex回报率担忧→capex上升+FCF负值=信用压力信号→TMT/Data Centers信用利差面临扩大风险→关注其他AI hyperscaler earnings为下一催化剂",
-          "quote": "Strong cloud growth but raised planned 2026 capex while free cash flow turned negative for the quarter",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-03",
-          "topic": "Oil Rally Reaches Technical Targets + Profit-Taking Risk",
-          "assetClass": "Macro/Commodity",
-          "direction": "Neutral",
-          "signalType": [
-            "VALUATION",
-            "RISK_FLAG"
-          ],
-          "action": "WATCH",
-          "impactScore": 78,
-          "conviction": "Medium",
-          "brokers": [
-            "Goldman Sachs",
-            "Morgan Stanley",
-            "JEFFERIES"
-          ],
-          "headline": "Oil持续上涨→Brent+3.1%→$87-90目标位达成→mkt提示profit-taking→UST/Gilts/Bunds全线bear flatten",
-          "oneLine": "Brent+3.1% WTI+2.5%.Oil $87-90 target reached.profit-taking+long oil/short bonds unwinding could emerge",
-          "evidence": [
-            "MS:Brent+3.1% WTI+2.5%.US-Iran played down negotiations,attacks broadened",
-            "mkt:Oil prices now at $87-90 target zone.Profit-taking and partial unwinding of popular long oil vs short global bonds could emerge",
-            "GS:UK Gilts near session lows despite CPI 2.6%vs2.7%forecast→oil rallied another 3%",
-            "GS:Bunds bear flattened ahead of ECB.Money markets pricing 48bps of ECB hikes by year-end"
-          ],
-          "soWhat": "Oil达到JEFFERIES目标位后可能出现获利了结→若油价回调→UST bear flatten压力减轻→但地缘政治不确定性仍高→关注ECB今日+July FOMC的油价通胀传导评估",
-          "quote": "Oil prices have now rallied into projected technical target zone of $87 to 90 — profit-taking could emerge",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-04",
-          "topic": "Asia IG Rally Has Shallow Foundations",
-          "assetClass": "Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "FLOW",
-            "VERIFY"
-          ],
-          "action": "WATCH",
-          "impactScore": 72,
-          "conviction": "Medium",
-          "brokers": [
-            "Barclays",
-            "HSBC",
-            "JEFFERIES"
-          ],
-          "headline": "Asia IG dealer short covering非真实买盘→Barclays:clients better sellers→FUBON新发+1→Japan afternoon转弱→insurers under pressure",
-          "oneLine": "China IG rally=dealer short covering,clients net sellers.FUBON+1 reoffer.Japan afternoon weaker.Insurance 15-25c lower",
-          "evidence": [
-            "Barclays:China IG tried to rally but most buying was dealer trying to cover short while client still tilted to be better seller,esp duration",
-            "Barclays:New issue FUBON didn't perform,closed around 1 wider from reoffer",
-            "HSBC:Japan weaker afternoon vs first half.Spreads wider across the board.Insurance hybrids dip buying retail+RM including Europe",
-            "JEFFERIES:Insurance hybrids under pressure 15-25c lower.Buy-in-dip from PB limited.Corp side heavy street seller low beta long end"
-          ],
-          "soWhat": "Asia IG上涨基础薄弱→dealer short covering为主→clients净卖出→若UST继续走弱→Asia IG估值承压→关注FOMC前仓位调整→JGB superlong flattening暗示日本投资者对长端谨慎",
-          "quote": "China IG tried to rally but most buying was just dealer trying to cover short while client still tilted to be better seller",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-05",
-          "topic": "Softbank Credit: Cash vs CDS Divergence",
-          "assetClass": "Credit",
-          "direction": "Neutral",
-          "signalType": [
-            "DIVERGENCE",
-            "WATCH"
-          ],
-          "action": "VERIFY",
-          "impactScore": 68,
-          "conviction": "Medium",
-          "brokers": [
-            "Barclays",
-            "HSBC"
-          ],
-          "headline": "Softbank双轨定价→现金hybrids+1pt(short covering)→5Y CDS+5 to 325→SNRs滞后→Japan CDS全线偏软",
-          "oneLine": "SOFTBK 65-35 hybrids+1pt short covering.5Y CDS+5 to 325.SNR 31s unch.Japan CDS cyclicals-1/-2.",
-          "evidence": [
-            "Barclays:SOFTBK 65-35s hybrids traded up 98+7/8 on short covering+some retail.SNR bonds lagged(esp 31s)unch",
-            "Barclays:5Y CDS traded t320 many times before finally lift at 325(+5).Front end active with 1Y demand",
-            "Barclays:Japan CDS cyclicals-1/-2,lacked buyers.Kawasaki Heavy offered with activity lacking",
-            "HSBC:SOFTBK hybrids+0.25-1pt.In HY two-way flow NSANY curve"
-          ],
-          "soWhat": "SOFTBK cash-CDS价差扩大→short covering驱动hybrids反弹但CDS市场定价信用恶化→SNRs未跟随=真买盘缺席→关注若UST进一步走弱→SOFTBK利差是否扩大至更极端水平",
-          "quote": "Softbank hybrids traded up on short covering and retail buying — SNR bonds lagged closing unch",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-06",
-          "topic": "BoJ Rate Hike Speculation + JGB Twist Flattening",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "SHIFT",
-            "WATCH"
-          ],
-          "action": "WATCH",
-          "impactScore": 70,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley",
-            "Goldman Sachs"
-          ],
-          "headline": "BoJ加息预期升温→2y JGB 1995年来新高→JGB curve twist flatten→USD/JPY先涨后跌→30y JGB反向rally→PM Takaichi财政扩张",
-          "oneLine": "BoJ open to faster hikes.JPY briefly strengthened.2y JGB highest since 1995.Twist flat:5y+2bp 30y-0.5bp",
-          "evidence": [
-            "MS:BoJ officials open to raising rates faster than prevailing 6-month cadence.Retraced as no preset path",
-            "MS:Japanese rates sold off 2y+3.6bp 5y+4.5bp 10y+2.8bp.2y yield highest since 1995",
-            "MS:JGB curve twist flattened:5y+2.0bp 10y+1.5bp 30y RALLIED 0.5bp.40y auction digested smoothly",
-            "GS:OIS curve twist flattened outperformed JGBs in 10y+ sectors"
-          ],
-          "soWhat": "BoJ加息预期+PM Takaichi财政扩张=JGB曲线扭曲→front-end bleed+superlong bid→日本投资者可能在减少长端UST敞口→若BoJ实际加速→JPY carry trade unwind风险",
-          "quote": "Japanese 2y yield reached its highest level since 1995 — BoJ officials reportedly open to raising rates faster",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-07",
-          "topic": "China HY CRE Steady Demand Despite Macro Headwinds",
-          "assetClass": "Credit",
-          "direction": "Neutral",
-          "signalType": [
-            "FLOW",
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 62,
-          "conviction": "Medium",
-          "brokers": [
-            "HSBC",
-            "Barclays"
-          ],
-          "headline": "Asia HY mixed但CRE需求持续→CHJMAO/GRNCH/LNGFOR bid→CWENIN+0.5pts→LASUDE 29N secondary demand强→Continuum firm non-Asian buying",
-          "oneLine": "China HY benchmarks bid(CHJMAO/GRNCH/LNGFOR/SHUION).LASUDE 29N strong RM+FM.CWENIN+0.5pts.Continuum firm",
-          "evidence": [
-            "HSBC:Demand continued benchmark CRE names CHJMAO/GRNCH/LNGFOR/SHUION.Largely unchanged",
-            "HSBC:LASUDE 29N secondary trading→strong RM+FM interest→closed around 92",
-            "HSBC:CWENIN+0.5pts on strong RM/PB top-up demand",
-            "Barclays:Asia HY mixed(-0.25/+0.125pt).Continuum outperforming,bonds going to non-Asian investors"
-          ],
-          "soWhat": "China HY CRE需求韧性vs宏观逆风→benchmark names仍是安全港→上涨空间有限→LASUDE新债表现正面→关注若UST进一步走弱→HY demand可持续性",
-          "quote": "Demand continued across benchmark CRE names — LASUDE 29N attracted strong real money and fast money interest",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260723-08",
-          "topic": "EM Sovereigns: Oil Winners vs Losers",
-          "assetClass": "Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "DIVERGENCE",
-            "RISK_FLAG"
-          ],
-          "action": "VERIFY",
-          "impactScore": 65,
-          "conviction": "Medium",
-          "brokers": [
-            "Barclays"
-          ],
-          "headline": "EM Sov/Quasi分化→Indon长端offered RM+ETF→SRILAN oil成本压力→Mongol front-end selling→Phil-0.125-0.25pt",
-          "oneLine": "Indon long-end RM+ETF sellers.Local 5-10yr constructive.SRILAN lower.Mongol front-end selling.Phil-0.125-0.25pt",
-          "evidence": [
-            "Barclays:Quasis weak Indo long end sellers from RMs+ETFs.Local flows constructive 5-10yr",
-            "Barclays:SRILAN slightly lower as oil continues to rally during Asia morning",
-            "Barclays:Mongol better selling front end,better buying 31/32s from locals",
-            "Barclays:Phil-0.125-0.25pt Indon-0.125-0.375pt Srilan-0.125pt Mongol+/-0.125pt"
-          ],
-          "soWhat": "Oil上升对进口国构成信用压力→长端EM sovereigns面临dual headwind(UST yield+oil成本)→本地需求(Indon5-10yr)提供缓冲→关注import bill上升对EM HY传导",
-          "quote": "SRILAN trading slightly lower as oil continues to rally. Quasis continuing to trade weak in Indo",
-          "date": "2026-07-23",
-          "priorState": "No prior state available."
-        }
-      ],
-      "brokerNotes": [
-        {
-          "broker": "Goldman Sachs",
-          "assetClass": "Macro",
-          "tone": "Bearish",
-          "coreTheme": "Global Rates Bear Flatten Led by Oil & Hike Fears",
-          "keyTakeaway": "US:2y+3.6bp 5s30s-2.1bp.July 8.25bps,Dec 43bps.CTAs bearish.20y tailed.Europe:Bunds-1bp,BTPs underperform.UK:Gilts 2m high despite CPI<forecast.BoE~50bps.TIPS BEI+1.5-2bps.IPO flagged as red flag",
-          "emails": 1,
-          "sourceRefs": [
-            "GS Asia Macro Daily 22 Jul"
-          ]
-        },
-        {
-          "broker": "Morgan Stanley",
-          "assetClass": "Macro",
-          "tone": "Bearish",
-          "coreTheme": "Oil Drives Rate Repricing — GOOGL AI Capex Boom/Bust Risk",
-          "keyTakeaway": "US2y-5y 2026 highs.10y 4.65% May peak.July hike 33%.GOOGL:cloud strong+capex up+FCF negative.BoJ rate hike speculation.2y JGB 1995 high.Tech-0.6% Energy+1.2% Utilities+2.3%",
-          "emails": 1,
-          "sourceRefs": [
-            "Global Macro Commentary July 22"
-          ]
-        },
-        {
-          "broker": "HSBC",
-          "assetClass": "Asia Credit",
-          "tone": "Mixed",
-          "coreTheme": "Asia Credit Mixed — CRE Bid Persists, Japan Weaker PM",
-          "keyTakeaway": "China HY:CRE demand(CHJMAO/GRNCH/LNGFOR).LASUDE 29N strong RM+FM.Japan afternoon weaker,spreads wider.Insurance hybrids dip buying.Korea+/-1bp.SEA IG SOE buying.CWENIN+0.5pts.SGD softer.S$ 20y infra deal",
-          "emails": 1,
-          "sourceRefs": [
-            "HSBC Asia Credit EOD 22 Jul"
-          ]
-        },
-        {
-          "broker": "Barclays",
-          "assetClass": "Asia Credit",
-          "tone": "Cautious",
-          "coreTheme": "Asia IG Rally False — Dealer Short Covering",
-          "keyTakeaway": "China IG:dealer short covering,clients sellers.FUBON+1.TMT resilient.HY mixed(-0.25/+0.125pt).SOFTBK hybrids+1pt CDS+5.EM Sov:Indon long-end RM+ETF sellers.S$2.1-2.6bn Green 2046 mandate",
-          "emails": 1,
-          "sourceRefs": [
-            "Barclays Asia Credit EOD 22 Jul"
-          ]
-        },
-        {
-          "broker": "BMO",
-          "assetClass": "TIPS",
-          "tone": "Neutral-Constructive",
-          "coreTheme": "TIPS BEI Higher — 10yr Auction Wed",
-          "keyTakeaway": "BEI 5-30s+1.5-2bps.Better buying in actives.5y5y 2.415% high end range.10yr TIPS auction setup small,low conviction,headline risk",
-          "emails": 1,
-          "sourceRefs": [
-            "BMO TIPS EOD 22 Jul"
-          ]
-        },
-        {
-          "broker": "JEFFERIES",
-          "assetClass": "Japan IG",
-          "tone": "Neutral",
-          "coreTheme": "Japan IG Subdued — RM Onshore Selectively Buying",
-          "keyTakeaway": "Spreads unch/1bp tighter.RM Japan onshore buying 3yr high spread/10yr banks.Corp heavy street seller low beta long end.Insurance hybrids 15-25c lower.PB limited",
-          "emails": 1,
-          "sourceRefs": [
-            "JEF ASIA Japan/Aus IG EOD 22 Jul"
-          ]
-        },
-        {
-          "broker": "mkt",
-          "assetClass": "Rates Technical",
-          "tone": "Bearish",
-          "coreTheme": "Wave(iii)III Underway — Strategic Shorts",
-          "keyTakeaway": "10y 4.63% crucial.Break confirms wave(iii).Long-term bearish target 5%+.Oil $87-90 reached→profit-taking.Any exhaustive rally=sell.10y range 3.87-4.73%",
-          "emails": 1,
-          "sourceRefs": [
-            "mkt recap Tue & Outlook Wed 22 Jul"
-          ]
-        }
-      ],
-      "dataChecks": [
-        {
-          "id": "dc-20260723-01",
-          "type": "数据核对",
-          "subject": "UST bear flatten 3-broker consensus",
-          "status": "Confirmed",
-          "detail": "GS/MS/mkt一致:July hike odds上升、2y-5y 2026 highs、CTAs bearish、wave(iii)confirming。10y 4.63%关键阻力。20y tailed(MS+GS double-confirmed)",
-          "brokers": [
-            "Goldman Sachs",
-            "Morgan Stanley",
-            "JEFFERIES"
-          ],
-          "flagged": true
-        },
-        {
-          "id": "dc-20260723-02",
-          "type": "数据核对",
-          "subject": "Asia IG dealer short covering vs client flow",
-          "status": "Confirmed",
-          "detail": "Barclays:China IG=dealer short covering,clients seller.HSBC:Japan weaker.JEFFERIES:corp heavy seller.三家一致→Asia IG上涨基础薄弱→非真实需求",
-          "brokers": [
-            "Barclays",
-            "HSBC",
-            "JEFFERIES"
-          ],
-          "flagged": true
-        },
-        {
-          "id": "dc-20260723-03",
-          "type": "数据核对",
-          "subject": "SOFTBK cash-CDS divergence",
-          "status": "Monitor",
-          "detail": "Barclays:hybrids+1pt(short cover)vs CDS+5 to 325.SNR unch.Absent real buying→CDS pricing credit deterioration,cash supported by technical factors",
-          "brokers": [
-            "Barclays"
-          ],
-          "flagged": true
-        },
-        {
-          "id": "dc-20260723-04",
-          "type": "数据核对",
-          "subject": "Oil $87-90 target + profit-taking risk",
-          "status": "Monitor",
-          "detail": "mkt:target reached→profit-taking possible→oil down→UST bear flatten relief.BUT MS/GS confirm geopolitical escalation→direction uncertain",
-          "brokers": [
-            "JEFFERIES",
-            "Goldman Sachs",
-            "Morgan Stanley"
-          ],
-          "flagged": false
-        },
-        {
-          "id": "dc-20260723-05",
-          "type": "数据核对",
-          "subject": "GOOGL AI capex + PEGA AI crowding-out",
-          "status": "Confirmed",
-          "detail": "MS:GOOGL capex up+FCF negative→tech AI spending ROI questions.Barclays:PEGA AI spending crowding out traditional IT budgets.AI investment→credit risk transmission",
-          "brokers": [
-            "Morgan Stanley",
-            "Barclays"
-          ],
-          "flagged": true
-        },
-        {
-          "id": "dc-20260723-06",
-          "type": "数据核对",
-          "subject": "Asia HY CRE demand sustainability",
-          "status": "Monitor",
-          "detail": "HSBC:CHJMAO/GRNCH/LNGFOR demand consistent.Barclays:HY mixed but technicals firm,Continuum non-Asian buying.CRE bid vs UST+oil headwinds→monitor sustainability",
-          "brokers": [
-            "HSBC",
-            "Barclays"
-          ],
-          "flagged": false
-        }
-      ],
-      "qualityLog": [],
-      "tone": {
-        "dir": "mixed",
-        "label": "",
-        "note": "GS+MS+mkt一致看空UST。Barclays+HSBC+JEF共认Asia IG买盘为dealer short covering。TIPS BEI better buying(BMO)提供正向对冲。ECB今天+FOMC下周关键事件"
-      },
-      "macro": [
-        "[mkt/JEFFERIES] Wave(iii)III underway.10y 4.63% key resistance.Break confirms 5%+ target.Any rally viewed as selling opportunity.Oil $87-90 target reached→profit-taking possible",
-        "[Goldman Sachs] UST bear flatten:2y+3.6bp 4.298%.5s30s-2.1bp.July 8.25bps hikes,Dec 43bps.CTAs bearish.20y tailed 0.5bp.Put vol bid",
-        "[Morgan Stanley] 2y-5y 2026 highs.July hike 33%.GOOGL:strong cloud+raised capex+FCF negative.AI capex financing burden in focus.Tech-0.6%",
-        "[Morgan Stanley] BoJ rate hike speculation.JPY briefly stronger.2y JGB highest 1995.JGB twist flat:5y+2bp 30y-0.5bp.40y auction digested",
-        "[Goldman Sachs] Europe:Bunds-1bp ahead of ECB(expected hold,data-dependent).BTPs underperform.UK:Gilts 2m high despite CPI 2.6%<2.7%.BoE~50bps priced",
-        "[BMO] TIPS BEI 5-30s+1.5-2bps.Better buying in actives.5y5y 2.415% high end.10yr TIPS auction Wed,small setup,low conviction",
-        "[Oil] Brent+3.1% WTI+2.5%.$87-90 target zone reached.US-Iran attacks broadening.Profit-taking risk emerging",
-        "[GS Top of Mind] IPO surge flagged as potential red flag for markets.Crowding risk signal"
-      ],
-      "flow": {
-        "sentiment": {
-          "dir": "mixed",
-          "label": "",
-          "note": "GS+MS+mkt一致看空UST。Barclays+HSBC+JEF共认Asia IG买盘为dealer short covering。TIPS BEI better buying(BMO)提供正向对冲。ECB今天+FOMC下周关键事件"
-        },
-        "activeNames": [
-          {
-            "name": "US2y/US5y Front-end",
-            "ticker": "US2Y/US5Y",
-            "tone": "sell",
-            "activity": "CTAs bearish.Front-end July hike hedge.2y-5y 2026 highs.Open interest rising Aug FF+Dec SOFR futures",
-            "brokers": [
-              "Goldman Sachs",
-              "Morgan Stanley"
-            ]
-          },
-          {
-            "name": "US20y/US30y Long End",
-            "ticker": "US20Y/US30Y",
-            "tone": "sell",
-            "activity": "20y reopening tailed 0.5bp bid-to-cover 2.64.30y above 5% 12th session.Volumes below avg=sentiment not liquidation",
-            "brokers": [
-              "Morgan Stanley",
-              "Goldman Sachs"
-            ]
-          },
-          {
-            "name": "SOFTBK (Softbank)",
-            "ticker": "SOFTBK",
-            "tone": "mixed",
-            "activity": "65-35 hybrids+1pt short covering.SNR 31s unch.5Y CDS+5 to 325.Cash-CDS divergence widening.True buying absent",
-            "brokers": [
-              "Barclays",
-              "HSBC"
-            ]
-          },
-          {
-            "name": "CWENIN",
-            "ticker": "CWENIN",
-            "tone": "buy",
-            "activity": "+0.5pts RM/PB demand.Non-Asian investors buying.Continuum outperforming",
-            "brokers": [
-              "HSBC",
-              "Barclays"
-            ]
-          },
-          {
-            "name": "LASUDE 29N",
-            "ticker": "LASUDE",
-            "tone": "buy",
-            "activity": "Secondary trading→strong RM+FM buying.Closed around 92.New issue performing well",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "CHJMAO/GRNCH/LNGFOR",
-            "ticker": "CHJMAO",
-            "tone": "buy",
-            "activity": "CRE benchmark demand consistent.Largely unchanged.Bid steady despite macro headwinds",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Indon Sov Long End",
-            "ticker": "INDON",
-            "tone": "sell",
-            "activity": "RM+ETF long-end sellers.Local 5-10yr constructive.Price-0.125-0.375pt.Oil import bill pressure",
-            "brokers": [
-              "Barclays"
-            ]
-          },
-          {
-            "name": "Singapore S$ Green 2046",
-            "ticker": "SG2046",
-            "tone": "neutral",
-            "activity": "IPT S$2.1-2.6bn Aug2046 Green 2.55% area.SGS infra deal soaks up SGD liquidity",
-            "brokers": [
-              "Barclays",
-              "HSBC"
-            ]
-          }
-        ],
-        "drivers": [
-          {
-            "broker": "Goldman Sachs",
-            "type": "宏观资金流",
-            "summary": "CTAs bearish adding UST selling.Put vol bid OTC+board.Hedge funds receiving belly.Front-end July hike hedge.Dec SOFR 43bps hikes priced"
-          },
-          {
-            "broker": "Morgan Stanley",
-            "type": "宏观资金流",
-            "summary": "Trading volumes below recent averages→sell-off=sentiment+positioning not liquidation.Open interest rising Aug FF+Dec SOFR"
-          },
-          {
-            "broker": "Barclays+HSBC",
-            "type": "信用资金流",
-            "summary": "China IG dealer short covering,clients sellers.FUBON+1.Japan RM onshore buying 3yr/10yr banks.Korea two-way front-end.Dealers paying up to win"
-          }
-        ]
-      },
-      "issuers": [
-        {
-          "ticker": "SOFTBK",
-          "name": "Softbank",
-          "assetClass": "Credit",
-          "region": "Japan HY",
-          "sector": "Telecom",
-          "flow": "mixed",
-          "inFocus": true,
-          "priority": 1,
-          "analysis": "65-35 hybrids+1pt short covering vs 5Y CDS+5 to 325.Cash-CDS divergence.True buying absent.SNR lagging.CDS pricing credit deterioration",
-          "brokers": [
-            "Barclays",
-            "HSBC"
-          ],
-          "quote": "Softbank hybrids traded up 98+7/8 on short covering and retail — SNR bonds lagged closing unch",
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "excludeReason": ""
-        },
-        {
-          "ticker": "GOOGL",
-          "name": "Alphabet/Google",
-          "assetClass": "Equity/Credit",
-          "region": "US TMT",
-          "sector": "Technology",
-          "flow": "neutral",
-          "inFocus": true,
-          "priority": 1,
-          "analysis": "Strong cloud growth but raised 2026 capex+FCF negative.AI capex reinvestment returns in question.Pre-earnings tech sold off",
-          "brokers": [
-            "Morgan Stanley"
-          ],
-          "quote": "Strong cloud growth but raised planned 2026 capex while free cash flow turned negative",
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "excludeReason": ""
-        },
-        {
-          "ticker": "LASUDE",
-          "name": "Lasude (China CRE)",
-          "assetClass": "Credit",
-          "region": "China HY",
-          "sector": "Real Estate",
-          "flow": "buy",
-          "inFocus": true,
-          "priority": 2,
-          "analysis": "29N secondary trading→strong RM+FM interest.Closed around 92.New issue performing well.Investor confidence in China CRE",
-          "brokers": [
-            "HSBC"
-          ],
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "CWENIN",
-          "name": "Continuum Energy",
-          "assetClass": "Credit",
-          "region": "Ex-China HY",
-          "sector": "Energy",
-          "flow": "buy",
-          "inFocus": false,
-          "priority": 2,
-          "analysis": "+0.5pts.RM/PB demand.Bonds going to non-Asian investors.Continuum outperforming",
-          "brokers": [
-            "HSBC",
-            "Barclays"
-          ],
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "FUBON",
-          "name": "Fubon Financial",
-          "assetClass": "Credit",
-          "region": "Taiwan IG",
-          "sector": "Financials",
-          "flow": "sell",
-          "inFocus": false,
-          "priority": 3,
-          "analysis": "New issue+1 from reoffer.Didn't perform.Challenging new issue environment for Asia IG",
-          "brokers": [
-            "Barclays"
-          ],
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "CHJMAO",
-          "name": "China Jinmao",
-          "assetClass": "Credit",
-          "region": "China HY",
-          "sector": "Real Estate",
-          "flow": "buy",
-          "inFocus": false,
-          "priority": 3,
-          "analysis": "CRE benchmark demand consistent.Decoupled from macro headwinds.Bid steady",
-          "brokers": [
-            "HSBC"
-          ],
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "INDON",
-          "name": "Indonesia Sovereign",
-          "assetClass": "Credit",
-          "region": "EM Sov",
-          "sector": "Sovereign",
-          "flow": "sell",
-          "inFocus": false,
-          "priority": 3,
-          "analysis": "RM+ETF long-end sellers.Local 5-10yr constructive.Oil import bill pressure.Price-0.125-0.375pt",
-          "brokers": [
-            "Barclays"
-          ],
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "quote": "",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "JGB",
-          "name": "Japan Gov Bonds",
-          "assetClass": "Rates",
-          "region": "Japan",
-          "sector": "Sovereign",
-          "flow": "sell",
-          "inFocus": true,
-          "priority": 2,
-          "analysis": "Twist flatten:2y highest 1995,30y rallied.BoJ faster hike speculation.Takaichi fiscal expansion.Potential UST long-end hedge unwind",
-          "brokers": [
-            "Morgan Stanley",
-            "Goldman Sachs"
-          ],
-          "ccy": "CNY",
-          "sovereign": false,
-          "newIssue": false,
-          "quote": "",
-          "excludeReason": ""
-        }
-      ],
-      "insights": [
-        {
-          "broker": "Goldman Sachs+Morgan Stanley+JEFFERIES",
-          "topic": "FOMC July Hike Tail Risk",
-          "point": "三券商共振：July hike概率33%→若意外加息25bp→UST 10y突破4.63%→5%目标位→全球credit spread面临压力测试→Asia IG估值(接近life-time tights)尤为脆弱→dealer short covering头寸将被迫平仓",
-          "quote": "July meeting is now pricing 8.25bps of hikes — market-implied odds increased to roughly one-third"
-        },
-        {
-          "broker": "Morgan Stanley+Barclays",
-          "topic": "AI Capex Returns Crisis",
-          "point": "GOOGL:capex up+FCF negative→AI投资回报率疑问→credit risk transmission.ORCL+Data Centers承压→GOOGL earnigns后model→其他hyperscaler earnings可能同示capex spiral→AI信用链系统性风险.PEGA例证AI消费crowding out传统IT spend",
-          "quote": "Raised planned 2026 capex while FCF turned negative — financing burden and returns from AI spending"
-        },
-        {
-          "broker": "Barclays+HSBC",
-          "topic": "Asia Credit Decoupling Risk",
-          "point": "Asia IG dealer short covering表面稳定→但clients净卖出+FUBON new issue weak→若UST突破4.63%或July意外加息→Asia IG 55bp OAS→50bp lifetime tights→一旦破位可能加速correction→US-Asia spread差(~35bp)可能通过Asian weakness收窄",
-          "quote": "Optically spread back to almost the tights but most buying was just dealer trying to cover short"
-        },
-        {
-          "broker": "Barclays",
-          "topic": "SOFTBK cash-CDS Pair Trade",
-          "point": "5Y CDS+5(信用恶化定价)vs hybrids+1pt(short covering)→价差扩大→若UST继续走弱或Japan credit risk恶化→CDS进一步走宽→现金bond滞后调整→pair trade:short CDS保护+long cash捕捉catch-up",
-          "quote": "Softbank CDS 5Y traded t320 many times before lift at 325(+5) — cash hybrids technical on short covering"
-        },
-        {
-          "broker": "Morgan Stanley+Goldman Sachs",
-          "topic": "BoJ-JGB Regime Shift",
-          "point": "BoJ加息预期→2y JGB 1995年最高→curve twist flatten→日本投资者以减少UST long-end敞口对冲→若BoJ实际加速→JPY carry trade unwind→全球rates波动率上升→UST 30y面临额外卖压+JGB superlong bid→双向压力",
-          "quote": "Japanese 2y yield highest since 1995 — JGB curve twist flattened with superlong rallying"
-        },
-        {
-          "broker": "JEFFERIES+mkt",
-          "topic": "Oil Profit-Taking as Tactical Catalyst",
-          "point": "Oil $87-90目标位→long oil/short bonds头寸profit-taking→油价回调$2-3→UST bear flatten压力减轻→July hike odds下降→risk assets(credit/equity)短期relief→但US-Iran地缘冲突升级限制回调深度→利用relief window调整仓位",
-          "quote": "Oil prices rallied into projected technical target zone of $87-90 — unwinding of long oil vs short bonds could emerge"
         }
       ],
       "top_conclusions": [],
