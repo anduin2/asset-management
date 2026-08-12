@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-12 08:37 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-12 09:29 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -5151,37 +5151,37 @@ window.REPORT_DATA =
         "drivers": [
           {
             "broker": "Morgan Stanley",
-            "type": "CPI仓位布局",
+            "type": "Pre-CPI Positioning",
             "summary": "周二全市场核心驱动力是CPI前主动仓位布局：利率做多无视油价，风险资产温和分化，共识倾向于周三CPI温和。"
           },
           {
             "broker": "Citi",
-            "type": "IG供给洪峰与需求深度",
+            "type": "Record IG Supply",
             "summary": "$125bn 8月IG供给创纪录，但Big 6 senior零走宽和HF回补显示需求深度超预期。Citi判断供给高峰已近尾声，8月下旬或迎利差压缩窗口。"
           },
           {
             "broker": "Barclays",
-            "type": "亚洲信用分化与供给压力",
+            "type": "Asia Credit Divergence",
             "summary": "日本休市导致交易清淡，India IG供给压力推高利差2-3bp，但中国HY政策和东南亚主权bid支撑结构性韧性。Asia CDS Itraxx+1bp显示轻度risk-off。"
           },
           {
             "broker": "JEFFERIES",
-            "type": "中国HY政策效应与质量筛选",
+            "type": "China HY Policy Effect",
             "summary": "北京放松限购效应延续三周，WESCHI +1pt HF买盘驱动。但NWDEVL持续PB卖出揭示smart money利用政策窗口减仓，板块内质量分化是关键主题。"
           },
           {
             "broker": "HSBC",
-            "type": "新发供给压制存量",
+            "type": "New Issue Supply Pressure",
             "summary": "HSBC SGD和WSTP T2新发公告导致存量债券卖出：SGD金融和AUD T2均承受新发折价压力。但保险混合和Indonesia HY仍有结构性买盘支持。"
           },
           {
             "broker": "TD Securities",
-            "type": "亚洲早盘虚假开盘与卖压回归",
+            "type": "Asia False Open & Supply",
             "summary": "日本休市早盘利差开盘偏紧但伦敦入场后卖压渐增，India金融最弱。亚洲信用整体缺乏方向感，CPI前观望情绪浓厚。"
           },
           {
             "broker": "Deutsche Bank",
-            "type": "AUD T2定价锚与供给消化",
+            "type": "AUD T2 Pricing & Supply",
             "summary": "WSTP T2公允价值+128含适度折让，sub/senior~2x暗示T2相对价值有吸引力。YTD T2已发65%全年预测，剩余供给可通过提前仓位调整消化。"
           }
         ]
