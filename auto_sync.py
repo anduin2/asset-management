@@ -17,7 +17,14 @@ SOURCES = {
     "trading_data.js":        ROOT / "交易台报告" / "report-data.js",
     "ca-report.html":         ROOT / "Corporate Actions" / "ca-report.html",
     "macro-dashboard.html":   ROOT / "宏观" / "indicator_dashboard.html",
+    "macro-matrix.html":      None,  # 动态查找最新 macro_matrix_*.html
 }
+
+def find_latest_macro_matrix():
+    """在 宏观研报 目录下找到最新的 macro_matrix_*.html"""
+    macro_dir = ROOT / "宏观研报"
+    files = sorted(macro_dir.glob("macro_matrix_*.html"), reverse=True)
+    return files[0] if files else None
 
 AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
@@ -66,8 +73,12 @@ def main():
     changed = False
     
     for name, src in SOURCES.items():
-        if not src.exists():
-            print(f"  [miss] {src} not found, skipping")
+        # 动态查找 macro_matrix 源文件
+        if src is None and name == "macro-matrix.html":
+            src = find_latest_macro_matrix()
+        
+        if src is None or not src.exists():
+            print(f"  [miss] {name} source not found, skipping")
             continue
         
         dst = DEPLOY / name
