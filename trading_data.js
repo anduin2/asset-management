@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-12 09:29 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-12 17:04 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4700,7 +4700,7 @@ window.REPORT_DATA =
             "FORECAST",
             "POSITIONING"
           ],
-          "impactScore": 100,
+          "impactScore": 92,
           "urgency": "high",
           "oneLine": "周二UST bull-steepening，2y -2.7bp，10y -1.8bp至4.69%，BE反而收窄(2y -2.3bp)，$58bn 3y拍卖stop-through，利率市场在CPI前主动做多且选择性忽略Hormuz/$90油价风险",
           "evidence": "MS Global Macro：2y -2.7bp，30y -1.1bp，10y 4.69%(-1.8bp)。Brent盘中突破$90后收于$88.91。2y BE -2.3bp，10y BE -1.1bp。$58bn 3y拍卖stop 0.5bp through at 4.291%，bid-to-cover 2.71。",
@@ -4723,7 +4723,7 @@ window.REPORT_DATA =
             "GEOPOLITICAL",
             "MONITOR"
           ],
-          "impactScore": 100,
+          "impactScore": 92,
           "urgency": "high",
           "oneLine": "Brent盘中突破$90后回落至$88.91(+1.4%)，报道指向Hormuz重开冲突信号——部分来源称取得进展，US官员同日表示更多油轮正通过海峡，地缘溢价维持高位但利率市场选择性忽略",
           "evidence": "MS：Brent +1.4%至$88.91，盘中交易至$90以上。报道指向Hormuz重新开放的矛盾信号。US官员称尽管地缘紧张持续，更多石油正通过海峡。",
@@ -4797,7 +4797,7 @@ window.REPORT_DATA =
             "VIEW",
             "FLOW"
           ],
-          "impactScore": 60,
+          "impactScore": 65,
           "urgency": "medium",
           "oneLine": "JEFFERIES：WESCHI +1pt on HF buying，NWDEVL perps PB卖出但价格未跌。Barclays：Asia HY收盘持平，Macau长端利差跑赢。政策效应延续第三周但板块内质量分化加剧",
           "evidence": "JEFFERIES：WESCHI +1pt，NWDEVL perps supply from PBs but levels unch'd。Barclays：Asia HY flat to touch lower(-0.125-0.25pt)，Macau long end spread outperforming。HSBC：Ex-China HY -0-0.125pts，IRB/IIFOIN/GRNKEN better buying。",
@@ -4822,7 +4822,7 @@ window.REPORT_DATA =
             "COLOR",
             "FLOW"
           ],
-          "impactScore": 60,
+          "impactScore": 65,
           "urgency": "medium",
           "oneLine": "Barclays称SBI 5y T+120为joke of an IPG，HDFC/BOBIN预期跟进，近期5y印度银行走宽1-3bp。TD确认Indian financials走宽2-3bp，HSBC确认ICICI 5yr被hit",
           "evidence": "Barclays：SBI launching 5y at a joke of an IPG，on back of that and HDFC/BOBIN talk we are 1-3bp wider in recently issued 5y Indian banks。TD：Indian financials widened 2-3bps on supply expectations。HSBC：been hit in new ICICI 5yr。",
@@ -4847,7 +4847,7 @@ window.REPORT_DATA =
             "COLOR",
             "PRICING"
           ],
-          "impactScore": 60,
+          "impactScore": 65,
           "urgency": "medium",
           "oneLine": "WSTP Q3后宣布10NC5 AUD T2(IPT ASW+140)。DB公允价值ASW+128，预期+130(适度折让)。TD：T2 selling both fixed and FRN。HSBC：major subs widening post WSTP announcement",
           "evidence": "DB：fair value ASW+128，expect final near +130，modest concession vs secondary +127。Major bank 5y senior +64bp，sub/senior ~2x。Prior YTD T2 AUD12.6bn = 65% FY forecast。TD：selling in T2。HSBC：widening among major subs。",
@@ -4870,7 +4870,7 @@ window.REPORT_DATA =
             "VIEW",
             "MONITOR"
           ],
-          "impactScore": 40,
+          "impactScore": 50,
           "urgency": "low",
           "oneLine": "S&P -0.3%，Nasdaq -0.6%，但VIX -1.2%至15.28。通信服务-2.1%、消费可选-0.8%领跌，能源+1.1%、公用事业+1.1%领涨——典型的通胀周期轮动而非恐慌",
           "evidence": "MS：S&P -0.3%，Nasdaq -0.6%。VIX -1.2% to 15.28。通信服务-2.1%、消费可选-0.8%、房地产-0.9%领跌。能源+1.1%、公用事业+1.1%领涨。",
@@ -5008,9 +5008,9 @@ window.REPORT_DATA =
       ],
       "qualityLog": [],
       "tone": {
-        "dir": "neutral",
-        "label": "CPI前蓄势——利率提前做多，信用分化，风险情绪温和",
-        "note": ""
+        "dir": "mixed",
+        "label": "CPI前蓄势——利率做多、信用分化、风险情绪温和",
+        "note": "8月12日市场进入CPI前的蓄势模式，日本假期叠加等待周三CPI，整体交投清淡但结构分化明显。UST bull-steepened（2y -2.7bp, 10y -1.8bp至4.69%），$58bn 3y拍卖through 0.5bp需求健康，市场定价9月加息概率约45%。Brent +1.4%至$88.91，Hormuz局势不确定但巴基斯坦方面称美伊接近达成安排。MS Rates明确偏空久期/做陡曲线，认为若CPI +0.3%将触发熊陡突破4.74%前高。信用方面Asia IG 1-2bp收窄但客户观望为主，India IG受SBI新发冲击+2-3bp走扩，HY +0.125-0.25pt。美国IG一级供给已达$44bn（全月$125bn超去年同期），VZ第二笔hybrid压制pref/hybrid情绪。CPI是本周方向决定者——Saravelos称利率买家的动能vs能源通胀担忧为'Same Macro, Different Marks'。"
       },
       "macro": [
         "UST bull-steepening提前布局CPI：2y -2.7bp，10y -1.8bp至4.69%，30y -1.1bp",
@@ -5028,9 +5028,9 @@ window.REPORT_DATA =
       ],
       "flow": {
         "sentiment": {
-          "dir": "neutral",
-          "label": "CPI前蓄势——利率提前做多，信用分化，风险情绪温和",
-          "note": ""
+          "dir": "mixed",
+          "label": "CPI前蓄势——利率做多、信用分化、风险情绪温和",
+          "note": "8月12日市场进入CPI前的蓄势模式，日本假期叠加等待周三CPI，整体交投清淡但结构分化明显。UST bull-steepened（2y -2.7bp, 10y -1.8bp至4.69%），$58bn 3y拍卖through 0.5bp需求健康，市场定价9月加息概率约45%。Brent +1.4%至$88.91，Hormuz局势不确定但巴基斯坦方面称美伊接近达成安排。MS Rates明确偏空久期/做陡曲线，认为若CPI +0.3%将触发熊陡突破4.74%前高。信用方面Asia IG 1-2bp收窄但客户观望为主，India IG受SBI新发冲击+2-3bp走扩，HY +0.125-0.25pt。美国IG一级供给已达$44bn（全月$125bn超去年同期），VZ第二笔hybrid压制pref/hybrid情绪。CPI是本周方向决定者——Saravelos称利率买家的动能vs能源通胀担忧为'Same Macro, Different Marks'。"
         },
         "activeNames": [
           {
