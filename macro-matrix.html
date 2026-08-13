@@ -24,7 +24,7 @@
   .header .meta{margin-top:8px;font-size:13px;color:#666;line-height:1.6}
   .header .brokers{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
   .header .brokers span{padding:3px 12px;border-radius:4px;font-size:11px;font-weight:700;color:#fff}
-  .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}.b-barclays{background:#00AEEF}.b-jefferies{background:#007A33}.b-hsbc{background:#DB0011}.b-td{background:#20B24A}
+  .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}.b-barclays{background:#00AEEF}.b-jefferies{background:#007A33}.b-hsbc{background:#DB0011}.b-td{background:#20B24A}.b-db{background:#0018A8}.b-bmo{background:#0079C1}
 
   /* ===== 市场标题 ===== */
   h2{
@@ -228,80 +228,116 @@ REPORT_DATA["2026-08-12"] = {
 // ==================== 2026-08-13 ====================
 REPORT_DATA["2026-08-13"] = {
   dateCN: "2026年8月13日 星期四",
-  theme: "US CPI 前夜（7月CPI 明日公布）+ Iran optimism",
-  meta: "覆盖券商：Jefferies 1封（US Rates Strategy）+ HSBC 1封（Asia Credit EOD）+ Barclays 2封（Asia Credit EOD + Asia CDS/Sov）+ TD Securities 1封（Asia EOD）· 共5封邮件 · 24h窗口（Barclays 另有1封美股软件CoreWeave研报，属off-topic不计入）",
+  theme: "US CPI 发布后 — Benign CPI 曲线 twist-steepen（长端 Supply 主导）+ Iran 三日三反转",
+  meta: "覆盖券商：MS 2封（Global Macro + Rates Trading）+ GS 1封 + Jefferies 1封 + BMO 1封 + HSBC 1封 + Barclays 2封 + TD 2封（Asia EOD + AUD）+ DB 1封 + Citi 1封 · 共12封邮件 · 24h窗口（Barclays 另有1封美股软件Similarweb研报，属off-topic不计入）",
   brokers: [
-    {n:"Barclays",c:"b-barclays"},{n:"Jefferies",c:"b-jefferies"},{n:"HSBC",c:"b-hsbc"},{n:"TD",c:"b-td"}
+    {n:"MS",c:"b-ms"},{n:"GS",c:"b-gs"},{n:"Jefferies",c:"b-jefferies"},{n:"BMO",c:"b-bmo"},{n:"HSBC",c:"b-hsbc"},{n:"Barclays",c:"b-barclays"},{n:"TD",c:"b-td"},{n:"DB",c:"b-db"},{n:"Citi",c:"b-citi"}
   ],
   markets: [
     // 美国利率
     {
       id:"us-rates", pri:true, title:"美国利率",
-      note:"Jefferies 本日最大变化：转向 buy-on-dips",
-      summary:"Jefferies：UST 进入目标区间 5yr <b>4.42-4.50%</b> / 10yr <b>4.75-4.85%</b> / 30yr <b>5.40%</b>；曲线 steepening 接近衰竭 → range-bound 至 modest flattening；油价 <b>$70-95</b> 区间、支撑低 $70s",
-      headers:["券商","市场数据/目标区间","久期观点","曲线观点","油价/地缘","核心逻辑","交易建议"],
-      cols:["88px","20%","13%","13%","13%","21%","18%"],
+      note:"核心分歧：Jefferies 独家转多长端 vs MS/GS/BMO supply 空头",
+      summary:"CPI benign 兑现（headline 0.1% m/m / 3.4% y/y，core 0.2% m/m / 2.5% y/y 为 2021年3月以来最慢）→ twist-steepen（2y <b>-1.3bp</b> / 30y <b>+1.7bp</b>）；$42bn 10y auction <b>4.683%</b> 为 2007 年以来最高；9月加息概率 <b>50%→40%</b>；MS Rates Trading 上调 Fed on hold 9月至 <b>~80%</b>",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储/供给","核心逻辑","交易建议"],
+      cols:["88px","19%","13%","13%","13%","21%","18%"],
       rows:[
+        ["MS",
+          ["fact","core 0.2% m/m / 2.5% y/y 符合预期；10y auction <b>4.683%</b> 2007以来最高；JPY 逼近 <b>160</b>（159.42），DXY 99.99"],
+          ["short","<span class='bear'>short delta 长端</span>；30yr auction 尾部风险（5.25% coupon = 25年最高）"],
+          ["short","<span class='bear'>bearish steepener 建仓</span>（short SFRU6 96.25c call flies/condors）"],
+          ["fact","Fed on hold 9月概率 <b>~80%</b>；8月 refunding 季节性弱势（30yr 连续4年 tail >1bp）"],
+          ["fact","CPI 温和解除近端担忧，但长端由 supply 主导走弱——twist-steepen 而非 flat bull"],
+          ["short","前端 carry 确认；Jackson Hole 前偏向上方加回长端空头"]],
+        ["GS",
+          ["fact","US10y +0.4 至 <b>4.693%</b>，2s10s +1.7 至 <b>49.1bp</b>；9月加息概率 50-50→40%；年内定价 30bp"],
+          ["fact","carry trades resilient，未对利率久期给出明确方向"],
+          ["short","<span class='bear'>Bear-steepening 持续</span>"],
+          ["fact","核心 PCE 预测 <b>+0.23%</b>（略高于 core CPI 0.22%）；FCI 收紧"],
+          ["fact","benign baseline 回归，但<b>长端收益率进一步上行是最大近期风险</b>"],
+          ["short","<span class='bear'>prefer equity to credit</span>；长端 supply 是最大风险"]],
         ["Jefferies",
-          ["fact","目标区间：5yr <b>4.42-4.50%</b> · 10yr <b>4.75-4.85%</b> · 20yr <b>5.25%</b> · 30yr <b>5.40%</b>"],
-          ["long","<span class='bull'>Shift to buy on dips</span> on extension lower（从 neutral/bearish 转向 gradually buy）"],
+          ["fact","$58bn 3y auction 强劲（Indirect+Direct <b>88.3%</b> vs 均值 86.0%）；目标区 5y 4.42-4.50% / 10y 4.75-4.85% / 20y 5.25% / 30y 5.40%"],
+          ["long","<span class='bull'>转向 buy on dips</span>（从 neutral/bearish gradually buying on weakness）"],
           ["short","<span class='bear'>steepening nearing exhaustion</span> → range-bound 至 modest flattening"],
-          ["fact","油价 <b>$70-95</b> 区间、支撑低 $70s；war premium 未退"],
-          ["fact","R61 neutral/bearish → 本次转向 buy-on-dips，CPI 前防守"],
-          ["long","CPI 若下行承接久期；<span class='bear'>steepener 拥挤谨慎追陡</span>"]]
+          ["fact","Elliott Wave：10y 需站稳 4.61%/4.63% 确认上行；油价低 $70s 支撑（$70-95）"],
+          ["fact","估值对战略配置越来越有吸引力，5y+ 已进入目标收益率区"],
+          ["long","10y 进 4.75-4.85% 承接；<span class='bear'>steepener 拥挤谨慎追陡</span>"]],
+        ["BMO",
+          ["fact","CPI 大体符合预期（NSA 略低、core low .2）；TIPS muted：前端 <b>-5bp</b>，bond breaks 收窄 1bp，<b>2/56 TIP >3.0%</b>"],
+          ["long","<span class='bull'>10s/30s better buying</span>；2/56 在 3.0% 以上 own the bond"],
+          ["fact","curve 外 breaks 表现更好；前端 better selling"],
+          ["fact","下一焦点 bond re-opening；WI 10yr 成 10yr BEI 比较基准"],
+          ["fact","长端 real yield 3% 以上具配置价值，与 nominal supply 压力形成对冲"],
+          ["long","2/56 TIP >3.0% 配置；关注 bond re-opening"]]
+      ]
+    },
+    // 美国IG
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"供给极重：WTD <b>44bn</b> · MTD <b>124bn</b> 达整月预期（Citi）；autos 明显 outperform；前端 2031-2033 高质量被大量抛售",
+      headers:["券商","市场数据/表现","基本面/行业","供给/资金面","整体观点","交易建议"],
+      cols:["88px","24%","20%","22%","18%","16%"],
+      rows:[
+        ["Citi",
+          ["fact","TMT quieter squeeze 2-10+ tighter；SPXC/ORCL 10+；金融债 steady +78bp vs 71bp ytd tights；WFC PNC5 <b>6.55%</b>"],
+          ["fact","Industrials lazy sideways，<span class='bull'>autos 明显 outperform</span>；REITs 被 offered"],
+          ["fact","primary 供给极重：WTD 44bn、MTD 124bn 达整月预期；TFLO 前端持续被 hit"],
+          ["fact","供给端是主压力，与 Asia IG firm 鲜明对比，decoupling 强化"],
+          ["short","前端 2031-2033 大卖家压制；曲线温和 steepen（5-7yr 跑输 3yr）"]]
       ]
     },
     // 亚洲IG
     {
       id:"asia-ig", pri:true, title:"亚洲IG信用债",
-      summary:"供给冲击分化：SBI 5Y T+88 成交但存量 India IG 走阔 2-3bp；China IG 1-2bp tighter；SGD financials 5-25c lower",
-      headers:["券商","市场数据/表现","India IG","China/其他IG","新发","核心逻辑","交易建议"],
+      summary:"China IG 1-2bp tighter（decoupling）；India IG 新老券分化：SBI 5Y <b>T+88</b> 落地但存量 bank 5y 走阔 2-3bp；China TMT 独立 outperform",
+      headers:["券商","市场数据/表现","China IG","India IG","新发","核心逻辑","交易建议"],
       cols:["88px","18%","14%","14%","18%","20%","14%"],
       rows:[
         ["HSBC",
-          ["fact","India IG 2-3bp wider post SBI；SGD financials 5-25c lower on supply"],
-          ["short","<span class='bear'>India IG 2-3bp wider</span> post SBI 5Y +88"],
-          ["fact","Japan cash/HY better buying；insurance hybrids SUMILF 需求 NIPLIF 两向"],
-          ["fact","SBI 5Y <b>T+88</b>；HSBC SGD 6NC5 <b>2.95%</b>；OCBC SGD Perp NC5 <b>3.5%</b>"],
-          ["fact","供给冲击：HSBC senior + OCBC AT1 拖累 SGD 金融债"],
-          ["short","SGD financials 供给消化期，待企稳再介入"]],
+          ["fact","India IG 2-3bp wider post SBI；SBI 开盘 HF 抛售 89.5 → PB/bank 承接 88.5；SGD 消化供给潮"],
+          ["fact","Japan cash/HY better buying；insurance hybrids SUMILF 单边 / NIPLIF 两向"],
+          ["short","<span class='bear'>存量 India bank 5y 2-3bp wider</span>（FCNR 前发行潮预期）"],
+          ["fact","SBI $500m 5Y <b>T+88</b>"],
+          ["fact","India IG 新老券分化确认；Japan insurance hybrid 结构性买盘稳定"],
+          ["short","存量 India IG 警惕 FCNR 前发行潮；SGD 待企稳"]],
         ["Barclays",
-          ["fact","China IG 1-2bp tighter ahead of CPI；Japan Corp 开盘 1-2bp wider 浮息需求"],
-          ["fact","SEA IG India in focus post SBI"],
-          ["long","<span class='bull'>China IG 1-2bp tighter</span> ahead of CPI（buying 不多）"],
-          ["fact","Shanghai Electric CNH 3Y <b>2.4%</b>；CBA AUD 3Y FRN <b>+62</b>"],
-          ["fact","CPI 前 China IG 端买盘有限，整体观望"],
-          [""]],
+          ["fact","China IG firm morning 1-2bp tighter ahead of CPI（客户端买盘不多）"],
+          ["long","<span class='bull'>China IG 1-2bp tighter</span>（decoupling）"],
+          ["fact","India bank 5y 走阔，ICICI & HDFC better selling"],
+          ["fact","Bank of Baroda 3Y/5Y；State Grid CNY；ANZ A$ T2；NextEra A$ sub"],
+          ["fact","China IG + TMT 同步 firm，US IG 承压于供给，decoupling 强化"],
+          ["long","China IG/TMT 首选 beta"]],
         ["TD",
-          ["fact","SBIIN 5Y +88 两向 ±1bp；duration shortening ahead of CPI"],
-          ["fact","SBIIN 5Y <b>+88</b> 两向 ±1bp"],
-          ["long","<span class='bull'>China TMT outperform</span> 1-2bp tighter（唯一独立走强板块）"],
+          ["fact","flows 偏轻，CPI 前多数客户观望；SBIIN 5Y +88 全天 ±1bp 两向"],
+          ["long","<span class='bull'>China TMT 领涨 1-2bp tighter</span> 至近期区间下沿"],
+          ["fact","SBIIN 5Y 定价 +88"],
           ["fact","SBIIN 5Y 全额认购"],
-          ["fact","CPI 前 light flows + duration shortening"],
+          ["fact","CPI 前 duration shortening + light flows；China TMT 唯一独立走强板块"],
           ["short","CPI 前减久期防守；China TMT 相对价值仍在"]]
       ]
     },
     // 亚洲HY
     {
       id:"asia-hy", pri:true, title:"亚洲HY信用债",
-      summary:"Iran optimism 推 Asia HY 收于高位 +0.125-0.5pt，gaming 领涨；Renew complex +15c post privatization",
+      summary:"Iran optimism 推 Asia HY 收于高位 <b>+0.125-0.5pt</b>，gaming 领涨；Renew complex <b>+15c</b> post privatization；但 Iran 三日三反转使高位风险上升",
       headers:["券商","市场数据/表现","高收益表现","Japan/保险","主题/事件","核心逻辑","交易建议"],
       cols:["88px","18%","16%","16%","16%","20%","14%"],
       rows:[
         ["Barclays",
-          ["fact","Asia HY 收于高位 <b>+0.125-0.5pt</b>，gaming 领涨"],
-          ["long","<span class='bull'>closing at highs</span> on Iran optimism；gaming outperforming"],
-          ["fact","Japan Corp 1-2bp wider open，浮息需求"],
-          ["fact","Iran optimism + ceasefire 头条驱动"],
-          ["fact","CPI 前 Asia HY 仍收高位，内生买盘强"],
-          ["short","war premium 未退，避免追高单向仓位"]],
+          ["fact","Asia HY 收于高位 <b>+0.125-0.5pt</b>，gaming 领涨 clearing through US+Asia"],
+          ["long","<span class='bull'>gaming 持续 outperform</span> 是最强 alpha"],
+          ["fact","Japan Corp 开盘 1-2bp wider，floaters 买盘偏好，收盘 unch 至 1bp wider"],
+          ["fact","Iran optimism + ceasefire 头条驱动；长端兴趣从 RM 前置"],
+          ["fact","CPI 前 Asia HY 仍收高位，内生买盘强；但 Iran 反转使高位风险上升"],
+          ["short","war premium 未退，避免追高单向仓位；Iran 方向 hedge"]],
         ["HSBC",
-          ["fact","Japan cash/HY better buying"],
-          ["long","<span class='bull'>更多买家</span> ceasefire 头条后进场"],
-          ["fact","insurance hybrids SUMILF 需求、NIPLIF 两向"],
+          ["fact","Japan 全天 better buying in cash + HY，ceasefire headlines 后 late-day 更多买家"],
+          ["long","<span class='bull'>insurance hybrids 持续 demand</span>（SUMILF 单边 / NIPLIF 两向 / MSINS 需求）"],
+          ["fact","HY NSANY belly + 3-5yr SOFTBK 欧洲买盘 + '27s 回 low $99"],
           ["fact","Renew complex <b>+15c</b> post privatization"],
-          ["fact","Japan insurance hybrid 是唯一结构性需求方向"],
-          ["short","SGD 金融债供给冲击下偏谨慎"]]
+          ["fact","Japan insurance hybrid 是唯一对 CPI/伊朗不敏感的结构性方向"],
+          ["long","Japan insurance hybrids 逢低买入（最稳定 carry）"]]
       ]
     },
     // 亚洲主权/CDS
@@ -311,37 +347,58 @@ REPORT_DATA["2026-08-13"] = {
       cols:["88px","20%","20%","20%","22%","18%"],
       rows:[
         ["Barclays",
-          ["fact","Asia Sovs cash 0.125-0.375pt higher，利差 1-3bp tighter，net demand"],
-          ["long","<span class='bull'>Asia Sovs 利差 1-3bp tighter</span>，net demand"],
-          ["fact","Asia CDS unchanged 至 -0.25；Itraxx Asia S45 <b>68/69</b> +0.125"],
-          ["fact","CPI 前 CDS 市场稳定，未见恐慌 hedge，与 Asia HY cash 偏强一致"],
+          ["fact","Asia Sovs firm 1-2bp tighter，PETMK 领涨 3-4bp tighter（lifers duration 需求）"],
+          ["long","<span class='bull'>Asia Sovs 1-2bp tighter</span>，net demand"],
+          ["fact","Asia CDS <b>-0.25bp</b>；India banks bid（SBI、EXIMBK）"],
+          ["fact","CPI 前 CDS 稳定，未见恐慌 hedge，与 Asia HY cash 偏强一致"],
           [""]]
+      ]
+    },
+    // 澳洲信用债
+    {
+      id:"au-credit", pri:false, title:"澳洲信用债",
+      summary:"DB 独家公允值：CBAAU 3Y <b>+54-55</b>（vs IPT +62 无 concession）；SSELN 首支 AUD 5Y <b>+105-110</b>/10Y <b>+140-145</b>；WSTP T2 以 2-3bp concession 成交 <b>DM+125.5</b>",
+      headers:["券商","市场数据/表现","新发公允值","基本面/资金面","核心逻辑","交易建议"],
+      cols:["88px","20%","20%","20%","22%","18%"],
+      rows:[
+        ["DB",
+          ["fact","CBA H2FY26：cash earnings <b>+2%</b> AUD5.5bn、NIM +2bp、CET1 12%，但 mortgage arrears +10bp + impairment +47%"],
+          ["fact","CBAAU 3Y FRN FV <b>+54-55</b>（IPT +62 无 concession）；SSELN 首支 AUD 5Y +105-110 / 10Y +140-145"],
+          ["fact","Major banks 已发行 <b>A$62.7bn</b> YTD = 63% FY 预测"],
+          ["fact","DB 连续命中公允值（WSTP +128 已兑现 +125.5）；CBAAU 若接近 +62 是配置机会"],
+          ["long","CBAAU 3Y 接近 +62 配置；SSELN 稀缺性溢价"]],
+        ["TD",
+          ["fact","WSTP T2 以 2-3bp concession vs FV 成交 <b>DM+125.5/124.5</b>；fast money 抛售被 Asian accounts topping up 承接"],
+          ["fact","shorter-dated major banks 持续 screen cheap vs USD"],
+          ["fact","本土需求支撑 AUD T2（fast money 抛售 vs Asian 承接）"],
+          ["fact","TD 确认 R60 DB 的 WSTP +128 FV 兑现（实际 +125.5）"],
+          ["long","short-dated major banks 相对价值仍在"]]
       ]
     }
   ],
-  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","澳洲利率","欧洲利率","美国IG信用债","美国HY信用债","澳门博彩信用债"],
+  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","澳洲利率","欧洲利率","美国HY信用债","澳门博彩信用债"],
   divergences: {
     headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
     cols:["10%","16%","18%","18%","38%"],
     rows:[
-      ["美国利率","UST 曲线方向",
-        ["long","<span class='bull'>Jefferies</span><br>steepening nearing exhaustion<br>→ flattening bias"],
-        ["short","<span class='bear'>市场共识</span><br>bear-steepening 持续"],
-        ["fact","<b>方向相反</b>。Jefferies 认为 steepening 接近衰竭、转向 range-bound 至 modest flattening；而市场 bear-steepening 共识仍在。若 CPI 下行则 flattening 跑赢，steepener 拥挤盘面临 unwind 风险"]],
-      ["亚洲信用","Iran optimism 定价",
-        ["long","<span class='bull'>Barclays/HSBC</span><br>Asia HY 收于高位<br>ceasefire 头条后买家进场"],
-        ["short","<span class='bear'>Jefferies</span><br>油价 $70-95 支撑低 $70s<br>war premium 未退"],
-        ["fact","<b>跨市场温差</b>。Asia 端已定价缓和（HY 收高位），US 端保留 war premium（油价高企）。伊朗方向若证伪，Asia HY 回撤风险大于 UST"]],
+      ["美国利率","US 长端方向",
+        ["long","<span class='bull'>Jefferies</span><br>buy on dips<br>10y 4.75-4.85% 估值买点"],
+        ["short","<span class='bear'>MS/GS/BMO</span><br>supply 空头<br>10y auction 2007以来最高"],
+        ["fact","<b>空头看 supply，多头看估值</b>。MS/GS/BMO 一致指长端 supply（10y auction 2007以来最高 + 8月 refunding）为最大近期风险；Jefferies 独家转多，认为 5y+ 已进入目标收益率区、估值对战略配置有吸引力。10y 4.75-4.85% 是分歧决胜区，今日 30yr auction 是即时验证点"]],
+      ["地缘","Iran 定价",
+        ["long","<span class='bull'>Barclays/HSBC</span><br>ceasefire optimism<br>Asia HY 收于高位"],
+        ["short","<span class='bear'>GS</span><br>Trump 恢复经济施压<br>war premium 未退"],
+        ["fact","<b>三日三反转，方向完全失控</b>。GS 昨日「接近协议」→ Bloomberg 今日「经济施压」；但 HSBC/Barclays 同报 ceasefire headlines 推 Asia HY 高位。三个信号源互相矛盾，禁止单向押注，Asia HY 高位是 head-fake 风险"]],
       ["印度IG","新发 vs 存量",
-        ["long","<span class='bull'>新发 SBI</span><br>T+88 全额认购<br>从 T+120 joke IPG 收紧 32bp"],
-        ["short","<span class='bear'>HSBC/TD</span><br>存量 India IG 走阔 2-3bp<br>SBIIN 两向 ±1bp"],
-        ["fact","<b>新老券分化</b>。SBI T+88 定价修复供需焦虑，但存量 ICICI/HDFC 抛压未消仍走阔。关注 HDFC/BOBIN 后续定价能否落 T+90-100"]]
+        ["long","<span class='bull'>新发 SBI</span><br>T+88 全额认购<br>PB/bank 承接"],
+        ["short","<span class='bear'>HSBC/Barclays/TD</span><br>存量 bank 5y 走阔 2-3bp<br>ICICI/HDFC better selling"],
+        ["fact","<b>新老券分化</b>。SBI T+88 定价合理（TD ±1bp 两向），但存量因 FCNR window 关闭前更多银行发行预期持续走阔。新老券配对交易是确定性 alpha，避免单向持有存量"]]
     ]
   },
   footer: {
-    window:"2026-08-12 08:30 ~ 2026-08-13 08:30 (Asia EOD Aug 12 + US Rates)",
-    emailCount:"Barclays 2 / Jefferies 1 / HSBC 1 / TD 1（Barclays 1封美股软件CoreWeave研报off-topic未计入）",
-    omitted:"中国利率、欧洲利率、美国IG/HY、澳门博彩已在「无覆盖市场」汇总"
+    window:"2026-08-12 16:00 ~ 2026-08-13 12:00 (US CPI 发布后 + Asia EOD Aug 12)",
+    emailCount:"MS 2 / GS 1 / Jefferies 1 / BMO 1 / HSBC 1 / Barclays 2 / TD 2 / DB 1 / Citi 1（Barclays 1封美股Similarweb研报off-topic未计入）",
+    omitted:"中国利率、欧洲利率、美国HY、澳门博彩已在「无覆盖市场」汇总"
   }
 };
 
