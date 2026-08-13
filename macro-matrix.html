@@ -402,6 +402,103 @@ REPORT_DATA["2026-08-13"] = {
   }
 };
 
+// ==================== 2026-08-14 ====================
+REPORT_DATA["2026-08-14"] = {
+  dateCN: "2026年8月14日 星期五",
+  theme: "benign CPI 后 Asia 信用 slow grind — China IG firm vs Japan Corp 转弱（Asia 内部背离）",
+  meta: "覆盖券商：Barclays 2封（Asia Credit Trading Commentary + 美股WhiteFiber研报off-topic）+ Jefferies 1封（Asia HY EOD）· 共3封邮件 · 24h窗口",
+  brokers: [
+    {n:"Barclays",c:"b-barclays"},{n:"Jefferies",c:"b-jefferies"}
+  ],
+  markets: [
+    // 亚洲IG
+    {
+      id:"asia-ig", pri:true, title:"亚洲IG信用债",
+      summary:"China IG <b>1-2bp tighter</b>（ETF 结构性买盘 + TW lifer 2-3bp tighter short covering）；India IG 供给继续（Bank of Baroda IPT 3Y <b>+120</b>/5Y <b>+130</b> 逆势发行）spreads 仅 ~1bp wider，street 转 bid up SBI/EXIMBK",
+      headers:["券商","市场数据/表现","China IG","India IG","新发","核心逻辑","交易建议"],
+      cols:["88px","18%","14%","14%","18%","20%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","China HG 1-2bp tighter（not much flow）；TW lifer 2-3bp tighter（dealer short covering）；India IG 供给继续 spreads ~1bp wider"],
+          ["long","<span class='bull'>China IG 1-2bp tighter</span>（ETF better buying 全曲线）"],
+          ["fact","street 转 bid up India banks（<span class='bull'>SBI/EXIMBK</span>）；早盘存量走阔被买盘吸收"],
+          ["fact","Bank of Baroda IPT 3Y <b>+120</b>/5Y <b>+130</b>；State Grid CNY 5/10/20Y 基准"],
+          ["fact","China IG 结构性 ETF 买盘 + India 供给潮被消化（仅 ~1bp wider）"],
+          ["long","China IG/TW lifer 首选 beta，逢低配置"]]
+      ]
+    },
+    // 亚洲HY
+    {
+      id:"asia-hy", pri:true, title:"亚洲HY信用债",
+      summary:"Asia HY 普涨 <b>+0.25pt</b>（benign CPI）但 flow muted；长端 perps/gaming 买盘延续（TSTSME post-tap <b>+1pt</b>）；MDLNIJ <b>+0.5pt</b> 事件驱动（EGM 资产处置）",
+      headers:["券商","市场数据/表现","高收益表现","China HY","主题/事件","核心逻辑","交易建议"],
+      cols:["88px","18%","16%","16%","16%","20%","14%"],
+      rows:[
+        ["Jefferies",
+          ["fact","Asia HY +0.25pt 普涨（post benign CPI）；IRBIN/ADTIN 36 +0.25pt RM buying；ADANEM/ADSEZ PB buying"],
+          ["long","<span class='bull'>NBFCs IHFLIN/MUTHIN/PIFLIN</span> outperform；日本 SOFTBK long end +0.25pt"],
+          ["fact","WESCHI <b>+0.5pt</b> 继续 grind；NWDEVL 前端 RM buying；VDNWDL 微跌"],
+          ["fact","MDLNIJ <b>+0.5pt</b>（EGM 资产处置审批日期公布）；印尼 GARUDA RM buying"],
+          ["fact","benign CPI 后 risk-on 确认但 flow muted，是慢牛而非追涨"],
+          ["short","久期偏短 + 前端 carry，避免追涨高位"]],
+        ["Barclays",
+          ["fact","Asia HY +0.125-0.25pt；长端 perps/gaming 买盘；TSTSME post-tap <b>+1pt</b> 领涨；HSI -0.17% / NIFTY -0.3%"],
+          ["long","<span class='bull'>perps/gaming 长端买盘延续</span>（收盘 off day highs）"],
+          ["fact","收盘 off day highs，quiet end to active session"],
+          ["fact","TSTSME post-tap +1pt"],
+          ["fact","Asia HY 长端兴趣延续，gaming 领涨；但与 Japan Corp 转弱形成对比"],
+          ["long","perps/gaming 长端逢低配置"]]
+      ]
+    },
+    // 亚洲主权/CDS
+    {
+      id:"asia-sov", pri:false, title:"亚洲主权及CDS",
+      summary:"Asia Sovs firm <b>1-2bp tighter</b>，PETMK <b>3-4bp tighter</b> 领涨；Asia CDS firm，INDON/PHILIP <b>-3bps WTD</b> 持续压缩",
+      headers:["券商","市场数据/表现","亚洲主权","CDS","核心逻辑","交易建议"],
+      cols:["88px","20%","20%","20%","22%","18%"],
+      rows:[
+        ["Barclays",
+          ["fact","Asia Sovs firm morning 1-2bp tighter；IG cash +0.125-0.375pt；PETMK 3-4bp tighter 领涨（lifer duration 需求）"],
+          ["long","<span class='bull'>Asia Sovs 1-2bp tighter</span>，net demand"],
+          ["fact","Asia CDS firm，Itraxx <b>-0.5bps</b>；INDON/PHILIP <b>-3bps WTD</b> 持续压缩"],
+          ["fact","主权强势 + CDS 压缩是 Asia risk-on 领先指标"],
+          [""]]
+      ]
+    },
+    // 日本/亚洲DM信用债
+    {
+      id:"japan-credit", pri:false, title:"日本/亚洲DM信用债",
+      summary:"Japan Corp 首次 on-the-run 抛售，NTT 下午被 offer，收盘 <b>1-2bp wider</b>——与 China IG firm 形成 Asia 内部背离",
+      headers:["券商","市场数据/表现","久期/曲线","资金面","核心逻辑","交易建议"],
+      cols:["88px","22%","18%","18%","24%","18%"],
+      rows:[
+        ["Barclays",
+          ["fact","Japan Corp 开盘 broadly unchanged 后 leak wider，收盘 <b>1-2bp wider</b>；NTT 下午特别 well offered"],
+          ["short","<span class='bear'>on-the-run 首次出现 selling interest</span>（supply 信号）"],
+          ["fact","欧洲开盘后买盘回升但弱于近日"],
+          ["fact","尽管宏观 constructive，Japan Corp 仍转弱——与 China IG firm 形成 Asia 内部背离"],
+          ["short","Japan Corp 转弱需警惕，NTT 被 offer 若持续则 Japan credit 承压"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","澳洲利率","欧洲利率","美国利率","美国IG信用债","美国HY信用债","澳门博彩信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["亚洲信用","Asia 内部方向 — China IG firm vs Japan Corp 转弱",
+        ["long","<span class='bull'>Barclays (China IG)</span><br>1-2bp tighter<br>ETF 结构性买盘"],
+        ["short","<span class='bear'>Barclays (Japan Corp)</span><br>1-2bp wider<br>首次 on-the-run 抛售"],
+        ["fact","<b>同报内 Asia 内部 firm vs weak 分化</b>。China HG 获 ETF better buying 全曲线 + TW lifer 2-3bp tighter（short covering）支撑；Japan Corp 却出现首次 on-the-run 抛售、NTT 被 offer，尽管宏观 constructive。可做多 China IG、回避/做空 Japan Corp 的配对交易"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-13 16:00 ~ 2026-08-14 12:00 (benign CPI 后 Asia EOD Aug 13)",
+    emailCount:"Barclays 2 / Jefferies 1（其中 Barclays 1 封美股 WhiteFiber 研报 off-topic 未计入）",
+    omitted:"中国利率、欧洲利率、美国利率、美国IG/HY、澳门博彩已在「无覆盖市场」汇总"
+  }
+};
+
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
 
