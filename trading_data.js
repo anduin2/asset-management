@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-12 17:04 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-13 09:34 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4469,16 +4469,33 @@ window.REPORT_DATA =
               "tilt": "pos",
               "mode": "VIEW",
               "note": "周二UST bull-steepening无视$90油价，BE收窄确认市场不担心油价传导。但仓位不对称风险偏高。"
+            },
+            {
+              "date": "2026-08-12",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "7月核心CPI符合共识，9月加息概率降至40%，但曲线twist-steepening——前端受益、长端因供给承压"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-12",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "TIPS反应克制，front-end cash off 5bp，2/56 bond break略破3.0%，喜欢3%以上的bond"
             }
           ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Rates"
@@ -4501,14 +4518,36 @@ window.REPORT_DATA =
               "note": "Brent盘中触$90后回落，冲突信号矛盾。部分报道指向水道重开进展。"
             }
           ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-12",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "late day ceasefire headlines催生买盘，Renew私有化+15c，gaming跑赢"
+            }
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-12",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Asia HY收高，Iran optimism驱动firming into close，gaming outperforming"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "Commodities/Macro"
@@ -4570,6 +4609,12 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "SBI 5y T+120缺乏吸引力，HDFC/BOBIN预期跟进，5y银行走宽1-3bp"
+            },
+            {
+              "date": "2026-08-12",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "ICICI/HDFC better selling，FCNR窗口关闭前更多发行预期压制存量"
             }
           ]
         },
@@ -4583,14 +4628,25 @@ window.REPORT_DATA =
               "note": "Indian financials走宽2-3bp，供给预期为主要压力"
             }
           ]
+        },
+        {
+          "broker": "HSBC",
+          "points": [
+            {
+              "date": "2026-08-12",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "SBI 5y定价T+88，HF flurry后settle 88.5，PB/bank top-up支撑"
+            }
+          ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "India IG"
@@ -4611,16 +4667,22 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "VIEW",
               "note": "$125bn/月超往年但Big 6 senior零走宽显示消化力，Citi判断供给高峰近尾声"
+            },
+            {
+              "date": "2026-08-12",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "primary winding down，TMT 2-10bp+收紧，real$和faster$同步加仓，路径通往更清淡Labor Day"
             }
           ]
         }
       ],
+      "days": [],
       "status": "active",
       "latestChange": "",
       "lastSeen": "",
       "firstSeen": "",
       "evolution": "",
-      "days": [],
       "description": "",
       "tags": [
         "US IG"
@@ -4641,6 +4703,12 @@ window.REPORT_DATA =
               "tilt": "neu",
               "mode": "FORECAST",
               "note": "WSTP T2公允+128，预期定价+130，剩余三大银行将跟进"
+            },
+            {
+              "date": "2026-08-12",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "CBA 3Y公允+54-55，SSELN inaugural AUD 5Y+105-110/10Y+140-145"
             }
           ]
         },
@@ -4652,6 +4720,42 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "COLOR",
               "note": "T2 fixed和FRN卖出，投资者预先腾仓消化WSTP新发"
+            },
+            {
+              "date": "2026-08-12",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "WSTP T2定价+125.5，fast money flipping，front-end T2卖出为新发腾仓"
+            }
+          ]
+        }
+      ],
+      "days": [],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "description": "",
+      "tags": [
+        "AUD Financial"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "japan-rates",
+      "assetClass": "Rates/FX",
+      "name": "日本加息重定价与日元",
+      "topic": "BoJ Hawkish Repricing",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-12",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "BoJ 10月前加息概率超100%，JGB全线sold off，USD/JPY逼近160干预阴影重燃"
             }
           ]
         }
@@ -4664,12 +4768,925 @@ window.REPORT_DATA =
       "days": [],
       "description": "",
       "tags": [
-        "AUD Financial"
+        "Rates/FX"
       ],
       "drivers": []
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-08-13",
+      "coverage": {
+        "emails": 11,
+        "brokers": [
+          "Goldman Sachs",
+          "Morgan Stanley",
+          "Citi",
+          "Barclays",
+          "HSBC",
+          "Deutsche Bank",
+          "BMO",
+          "TD Securities"
+        ],
+        "lookbackDays": 22,
+        "sourceDateNote": "8/12周三CPI日总结，11封。核心：7月CPI温和(核心2.5%y/y 2021年3月来最慢)→9月加息概率降至40%→曲线twist-steepening。$42bn 10y拍卖4.683%(2007年最高)。USD/JPY逼近160+BoJ连续加息预期。"
+      },
+      "signals": [
+        {
+          "id": "cpi-benign-0812",
+          "headline": "7月CPI温和：核心2.5%y/y(2021年3月来最慢)→9月加息概率降至40%→曲线twist-steepening",
+          "topic": "July CPI Print",
+          "assetClass": "Rates",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "CONFIRMED",
+            "SHIFT"
+          ],
+          "impactScore": 95,
+          "urgency": "high",
+          "oneLine": "7月核心CPI 0.2%m/m/2.5%y/y(2021年3月来最慢)，headline 0.1%m/m/3.4%y/y。9月加息概率50%→40%，年内定价30bp。2y -1.3bp/30y +1.7bp/10y +0.4bp至4.69%",
+          "evidence": "MS: core 0.2%/2.5%y/y slowest since March 2021。GS: US10y 0.4 cheaper to 4.693%，2s10s +1.7bp to 49.1bp。BMO: CPI mostly as expected，front-end cash off 5bps",
+          "soWhat": "CPI温和兑现周二一致性押注但反应克制——前端受益于加息降温，长端因供给+地缘走软。9月加息概率降至40%标志加息叙事边际退潮，但年内30bp显示紧缩未结束。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "usdjpy-160-0812",
+          "headline": "USD/JPY逼近160：BoJ连续加息概率超100%，日本利率全线走高，干预阴影重燃",
+          "topic": "BoJ Hawkish Repricing",
+          "assetClass": "Rates/Fx",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "CONTINUATION",
+            "MONITOR"
+          ],
+          "impactScore": 90,
+          "urgency": "high",
+          "oneLine": "USD/JPY 159.42逼近160心理关口。BoJ 10月前加息累计概率超100%(9月+10月连续)。JGB全线sold off：2y +2.4bp/10y +3.6bp/30y +3.7bp，10y至2.85%",
+          "evidence": "MS: JPY -0.1% to 159.42 close to 160。Kyodo称BoJ 7月鹰派是美日协同干预关键，Jiji称或加速加息。2y JGB +3.0bp to 1.64%，10y +4.5bp to 2.85%",
+          "soWhat": "BoJ鹰派+美日协同干预关联是最危险叙事——若BoJ连续加息+美方施压，USD/JPY从160回落将触发carry unwind。日本利率独立走高与UST前端走低罕见背离。160突破则干预风险几何级上升。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "ig-squeeze-0812",
+          "headline": "IG信用squeeze：TMT 2-10bp+收紧，SPCX/ORCL 10+ tighter，datacenter供给前空头回补",
+          "topic": "IG Credit Squeeze",
+          "assetClass": "Us Ig",
+          "brokers": [
+            "Citi"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "FLOW",
+            "VIEW"
+          ],
+          "impactScore": 85,
+          "urgency": "medium",
+          "oneLine": "Citi IG：TMT全天2-10bp+收紧，SPCX/ORCL 10+ tighter，CHTR新债-5/6，hypers -2/5。400mm+成交。primary winding down+宏观rally+cash部署滞后板块",
+          "evidence": "Citi: closing 2-10+ tighter。huge reach SPCX/ORCL 10+ tighter，CHTR -5/6。400mm+ trading。larger real$ buying + bigger faster$ effort",
+          "soWhat": "IG进入供给退潮期技术性squeeze。datacenter发行本周尾/下周初后路径清晰通往更清淡Labor Day。TMT作为数月滞后板块成资金追逐目标，风险偏好未因CPI温和消退而是加速轮动到估值洼地。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "ust-10y-auction-0812",
+          "headline": "$42bn 10y拍卖4.683%创2007年来最高，non-dealers连续三次>90%，长端供给压制",
+          "topic": "UST Supply",
+          "assetClass": "Rates",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "FLOW",
+            "COLOR"
+          ],
+          "impactScore": 80,
+          "urgency": "medium",
+          "oneLine": "$42bn 10y拍卖4.683%为2007年来最高stop，tail small。non-dealers>90%连续第三次。whites outperformed。长端随后跑输前端至收盘",
+          "evidence": "GS: $42b 10y went fine tailing small at 4.683% highest since 2007，non-dealers>90% third consecutive。MS: duration supply limited post-CPI rally，long end underperformed into close",
+          "soWhat": "4.683%历史高位+non-dealers>90%显示真实需求仍在，但供给规模压制长端。CPI温和rally被供给稀释=twist-steepening成因。Refunding周剩余$25bn 30y是关键。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "hormuz-ceasefire-0812",
+          "headline": "Hormuz ceasefire headlines驱动风险回暖：Renew私有化+15c，gaming outperforming，Asia HY收高",
+          "topic": "Iran Ceasefire",
+          "assetClass": "Geopolitics/Asia Hy",
+          "brokers": [
+            "Barclays",
+            "HSBC"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "GEOPOLITICAL",
+            "SHIFT"
+          ],
+          "impactScore": 82,
+          "urgency": "medium",
+          "oneLine": "HSBC: late day ceasefire headlines催生买盘，Renew complex +15c post privatization。Barclays: Asia HY收高(+0.125-0.5pt)，gaming outperforming，Iran optimism驱动firming",
+          "evidence": "HSBC: Renew complex up 15c post privatization，more buyers after ceasefire headlines。Barclays: Asia HY closing at highs，gaming risk outperforming，clearing through US and Asia",
+          "soWhat": "Hormuz外交现缓和信号——ceasefire headlines与Russia Novorossiysk遇袭矛盾。Renew私有化+15c显示事件驱动Asia HY机会仍在，gaming连续跑赢反映风险偏好转向个券。停火确认将强化CPI温和叙事。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "sig-20260813-bi-price-0812",
+          "headline": "SBI 5y最终定价T+88(IPG T+120)：HF flurry后settle 88.5，India IG仍走宽2-3bp",
+          "topic": "India Bank Supply",
+          "assetClass": "India Ig",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "TD Securities"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "PRICING",
+            "FLOW"
+          ],
+          "impactScore": 78,
+          "urgency": "medium",
+          "oneLine": "SBI 5Y定价T+88(IPG T+120)收窄32bp。HF flurry卖出wide 89.5后settle 88.5(PB/bank top-up)。India IG 2-3bp wider，ICICI/HDFC better selling",
+          "evidence": "HSBC: SBI 500m at +88，flurry HF selling wide 89.5 then settle 88.5 on PB/bank top up。Barclays: better selling ICICI&HDFC，more issuance before FCNR window closes。TD: SBIIN two-way ±1bp of reoffer",
+          "soWhat": "SBI定价T+88远优于IPG T+120显示需求深度超预期，但存量India银行走宽2-3bp反映FCNR窗口关闭前更多供给抢跑担忧。+88已确立India IG新估值锚。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "aud-supply-0812",
+          "headline": "AUD新发潮：WSTP 10NC5定价+125.5，CBA 3Y IPT+62，SSELN inaugural AUD 5Y+105-110/10Y+140-145",
+          "topic": "AUD Primary Pipeline",
+          "assetClass": "Aud Financial",
+          "brokers": [
+            "Deutsche Bank",
+            "TD Securities",
+            "HSBC"
+          ],
+          "direction": "Neutral",
+          "signalType": [
+            "PRICING",
+            "COLOR"
+          ],
+          "impactScore": 75,
+          "urgency": "medium",
+          "oneLine": "WSTP 10NC5定价DM+125.5/124.5，fast money flipping。CBA 3Y FRN IPT ASW+62，DB公允DM+54-55。SSELN inaugural AUD 5Y+105-110/10Y+140-145",
+          "evidence": "DB: CBAAU 3Y IPT ASW+62，fair value DM+54-55。SSELN AUD 5Y fair +105-110/10Y +140-145。TD: WSTP T2 2-3bps concession，deal closing DM+125.5/124.5",
+          "soWhat": "AUD新发三线并进——WSTP T2、CBA senior、SSELN绿色债。SSELN作为UK utility AUD首秀(每12-18个月发行)引入高质量非金融供给。CBA财报强但FY27增长放缓预警。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "russia-wheat-0812",
+          "headline": "Russia Novorossiysk港口三码头遇袭：wheat大涨，Black Sea原油运费创新高，粮食+能源双冲击",
+          "topic": "Black Sea Supply Shock",
+          "assetClass": "Commodities/Macro",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "GEOPOLITICAL",
+            "ALERT"
+          ],
+          "impactScore": 70,
+          "urgency": "medium",
+          "oneLine": "Russia Novorossiysk关键港口三码头遭夜间无人机袭击，谷物出口暂停，wheat大涨。Black Sea至Med原油油轮运费升至纪录新高",
+          "evidence": "GS: grain exports from Novorossiysk halted after three terminals damaged in massive drone attack。Wheat futures jumped。tanker freight Black Sea to Med risen to record",
+          "soWhat": "黑海港口遇袭是Hormuz外又一地缘供给冲击，打击粮食+能源运输。若与Hormuz叠加，全球供应链双重压力抵消CPI温和乐观，wheat+运费传导至食品能源通胀。",
+          "action": "WATCH",
+          "date": "2026-08-13",
+          "priorState": "No prior state available.",
+          "quote": ""
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "summary": "US rates mixed with curve steepening after July CPI in line。US10y 0.4 cheaper to 4.693%，2s10s +1.7bp to 49.1bp。$42bn 10y拍卖4.683%(2007最高)，non-dealers>90%连续第三次。9月加息概率降至40%。Russia Novorossiysk遇袭推wheat大涨、Black Sea原油运费创新高。",
+          "stance": "neutral",
+          "asset_class": "Macro",
+          "emails": 1,
+          "sourceRefs": [
+            "Goldman Sachs 2026-08-13"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "summary": "7月核心CPI符合共识，9月加息概率50%→40%。UST twist-steepening(2y -1.3bp/30y +1.7bp)。USD/JPY 159.42逼近160，BoJ 10月前加息概率超100%，JGB全线sold off。VIX -4.8%。日本利率独立走高与UST前端走低罕见背离。",
+          "stance": "neutral",
+          "asset_class": "Macro",
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-08-13"
+          ]
+        },
+        {
+          "broker": "Citi",
+          "summary": "IG信用安静squeeze，TMT 2-10bp+收紧，SPCX/ORCL 10+ tighter。400mm+成交。primary winding down+宏观rally+cash部署滞后板块。BNCN有吸引力(30y A-仍20bp off YTD tights)。WFC 6.55% PNC5有表现空间。供给或数周暂停，yieldly grindy环境利差压缩可期。",
+          "stance": "bullish",
+          "asset_class": "US IG",
+          "emails": 1,
+          "sourceRefs": [
+            "Citi 2026-08-13"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "summary": "中国IG morning firm，CPI前1-2bp tighter但客户观望。India IG走宽，SBI T+88后ICICI/HDFC better selling。Asia HY收高(+0.125-0.5pt)，gaming outperforming。Asia Sovs spreads 1-3bp tighter net demand。",
+          "stance": "neutral",
+          "asset_class": "Asia Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "Barclays 2026-08-13"
+          ]
+        },
+        {
+          "broker": "HSBC",
+          "summary": "信用收盘mixed。Japan全天cash和HY better buying，late day ceasefire headlines催生买盘。Japan insurance hybrids活跃，SUMILF持续需求。Renew complex +15c post privatization。India IG走宽2-3bp但SBI 88.5稳定。SGD因HSBC senior+OCBC AT1供给，financials 5-25c lower。",
+          "stance": "neutral",
+          "asset_class": "Asia Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "HSBC 2026-08-13"
+          ]
+        },
+        {
+          "broker": "Deutsche Bank",
+          "summary": "CBA 3Y FRN IPT ASW+62，公允DM+54-55。SSELN inaugural AUD 5Y公允+105-110/10Y+140-145。CBA H2FY26现金盈利+2% HoH至AUD5.5bn但FY27增长放缓预警，抵押贷款申请-15%，总信贷增速8.5%→5-7%。",
+          "stance": "neutral",
+          "asset_class": "AUD Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "Deutsche Bank 2026-08-13"
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "summary": "WSTP T2 launch 2-3bps concession，deal closing DM+125.5/124.5，fast money selling into Asian account demand。shorter-dated major banks screen cheap vs USD。Asia light，SBIIN 5Y two-way ±1bp。China TMT 1-2bps tighter。",
+          "stance": "neutral",
+          "asset_class": "AUD/Asia Credit",
+          "emails": 1,
+          "sourceRefs": [
+            "TD Securities 2026-08-13"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "summary": "CPI mostly as expected，TIPS反应克制。front-end cash off 5bp，breaks持稳。2/56 bond break略高于3.0%，喜欢owning bond。WI 10yr UST成新BEI comparator，front-end selling/10s30s buying。",
+          "stance": "neutral",
+          "asset_class": "TIPS/Inflation",
+          "emails": 1,
+          "sourceRefs": [
+            "BMO 2026-08-13"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "topic": "July CPI Print",
+          "status": "Confirmed",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "brokers_disagree": "无",
+          "note": "三家一致：7月CPI温和符合预期，核心2.5%y/y为2021年3月来最慢，9月加息概率降至40%"
+        },
+        {
+          "topic": "Curve Twist-Steepening",
+          "status": "Confirmed",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "brokers_disagree": "无",
+          "note": "两家一致：2y前端受益于加息降温，30y长端因供给+地缘承压，10y +0.4bp"
+        },
+        {
+          "topic": "USD/JPY逼近160",
+          "status": "Confirmed",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "brokers_disagree": "无",
+          "note": "两家一致：USD/JPY 159.42，BoJ连续加息概率超100%，干预阴影重燃"
+        },
+        {
+          "topic": "SBI 5y定价T+88",
+          "status": "Confirmed",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "TD Securities"
+          ],
+          "brokers_disagree": "无",
+          "note": "三家一致：SBI定价T+88，HF flurry后settle 88.5，India IG走宽2-3bp"
+        },
+        {
+          "topic": "Hormuz停火",
+          "status": "Monitor",
+          "brokers": [
+            "HSBC",
+            "Barclays"
+          ],
+          "brokers_disagree": "无",
+          "note": "ceasefire headlines但Russia Novorossiysk遇袭形成矛盾信息流，需停火确认"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "bullish",
+        "label": "CPI落地 · 曲线twist-steepening",
+        "note": "供给退潮+CPI温和=信用利差压缩窗口，但USD/JPY 160干预和黑海+霍尔木兹双供给冲击需警惕"
+      },
+      "macro": [
+        "7月CPI：headline 0.1%m/m/3.4%y/y，core 0.2%m/m/2.5%y/y(2021年3月来最慢)",
+        "9月美联储加息概率从50%降至40%，年内定价30bp",
+        "$42bn 10y拍卖4.683%创2007年来最高，non-dealers>90%连续第三次",
+        "USD/JPY 159.42逼近160，BoJ 10月前加息概率超100%，JGB 2y +2.4bp/10y +3.6bp/30y +3.7bp",
+        "Russia Novorossiysk港口三码头遇袭，wheat大涨，Black Sea原油运费创新高",
+        "US equities：SPX +0.3%/NDX +0.5%/RTY +0.6%，VIX -4.8%"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "bullish",
+          "label": "CPI落地 · 曲线twist-steepening",
+          "note": "供给退潮+CPI温和=信用利差压缩窗口，但USD/JPY 160干预和黑海+霍尔木兹双供给冲击需警惕"
+        },
+        "activeNames": [
+          {
+            "name": "SPCX/ORCL (US TMT)",
+            "ticker": "SPCX/ORCL",
+            "tone": "buy",
+            "activity": "10+bp tighter，datacenter供给前空头回补+real$加仓",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "CHTR (Charter)",
+            "ticker": "CHTR",
+            "tone": "buy",
+            "activity": "新债-5/6bp，hypers -2/5bp，TMT整体走强",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "Renew Complex",
+            "ticker": "RENEW",
+            "tone": "buy",
+            "activity": "私有化消息+15c，ceasefire headlines驱动",
+            "brokers": [
+              "HSBC",
+              "Barclays"
+            ]
+          },
+          {
+            "name": "Gaming (MGM/Asia)",
+            "ticker": "GAMING",
+            "tone": "buy",
+            "activity": "gaming risk outperforming，clear through US and Asia",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "SUMILF (Japan Ins Hybrid)",
+            "ticker": "SUMILF",
+            "tone": "buy",
+            "activity": "insurance hybrid持续需求，Japan cash/HY全天better buying",
+            "brokers": [
+              "HSBC"
+            ]
+          },
+          {
+            "name": "SBIIN 5Y New Issue",
+            "ticker": "SBIIN",
+            "tone": "mixed",
+            "activity": "定价T+88，HF flurry后settle 88.5，two-way ±1bp",
+            "brokers": [
+              "HSBC",
+              "Barclays",
+              "TD Securities"
+            ]
+          },
+          {
+            "name": "ICICI/HDFC (India Bank)",
+            "ticker": "ICICI/HDFC",
+            "tone": "sell",
+            "activity": "better selling，FCNR窗口前更多发行预期压制存量",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "WSTP 10NC5 (Westpac)",
+            "ticker": "WSTP",
+            "tone": "mixed",
+            "activity": "定价DM+125.5/124.5，fast money flipping，Asian account topping",
+            "brokers": [
+              "TD Securities"
+            ]
+          },
+          {
+            "name": "CBA 3Y FRN",
+            "ticker": "CBAAU",
+            "tone": "new_issue",
+            "activity": "IPT ASW+62，DB公允DM+54-55，AUD major bank",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "name": "SSELN Inaugural AUD",
+            "ticker": "SSELN",
+            "tone": "new_issue",
+            "activity": "UK utility AUD首秀，5Y公允+105-110/10Y+140-145 green bond",
+            "brokers": [
+              "Deutsche Bank"
+            ]
+          },
+          {
+            "name": "BNCN (US Financials)",
+            "ticker": "BNCN",
+            "tone": "buy",
+            "activity": "30y A-仍20bp off YTD tights，yieldly grindy环境受青睐",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "WFC 6.55% PNC5",
+            "ticker": "WFC",
+            "tone": "buy",
+            "activity": "定价6.55%有表现空间，应15-20bp thru GS",
+            "brokers": [
+              "Citi"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "Goldman Sachs",
+            "type": "Benign CPI & Curve Steepen",
+            "summary": "7月CPI温和→9月加息概率降至40%→曲线twist-steepening，2s10s +1.7bp。$42bn 10y拍卖4.683%创2007最高"
+          },
+          {
+            "broker": "Morgan Stanley",
+            "type": "BoJ Hawkish & JPY 160",
+            "summary": "BoJ 10月前加息概率超100%，JGB全线sold off。USD/JPY逼近160干预阴影，日本利率与UST前端罕见背离"
+          },
+          {
+            "broker": "Citi",
+            "type": "IG Supply Squeeze",
+            "summary": "primary winding down，TMT 2-10bp+收紧，SPCX/ORCL 10+ tighter，real$和faster$同步加仓，路径通往清淡Labor Day"
+          },
+          {
+            "broker": "Barclays",
+            "type": "Asia HY Iran Optimism",
+            "summary": "Asia HY收高+0.125-0.5pt，gaming outperforming，Iran optimism驱动firming。India IG走宽，ICICI/HDFC selling"
+          },
+          {
+            "broker": "HSBC",
+            "type": "Ceasefire & Renew +15c",
+            "summary": "late day ceasefire headlines催生买盘，Renew私有化+15c，Japan insurance hybrids持续需求，SGD供给消化"
+          },
+          {
+            "broker": "Deutsche Bank",
+            "type": "AUD Primary Pipeline",
+            "summary": "CBA 3Y公允+54-55，SSELN inaugural AUD 5Y+105-110/10Y+140-145，UK utility AUD首秀构建新曲线"
+          },
+          {
+            "broker": "TD Securities",
+            "type": "AUD T2 & Front-End Flows",
+            "summary": "WSTP T2定价+125.5，fast money flipping。front-end T2 selling为新发腾仓。Asia light，China TMT 1-2bp tighter"
+          },
+          {
+            "broker": "BMO",
+            "type": "TIPS Breaks Above 3%",
+            "summary": "2/56 bond break略高于3.0%，喜欢owning bond。WI 10yr UST成新BEI comparator，front-end selling/10s30s buying"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "ticker": "SBIIN",
+          "name": "State Bank of India",
+          "inFocus": true,
+          "priority": "high",
+          "region": "India",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Financial",
+          "sovereign": "IN",
+          "newIssue": true,
+          "flow": "5Y定价T+88(IPG T+120)，HF flurry后settle 88.5",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "TD Securities"
+          ],
+          "quote": "500m new issue at +88，PB/bank top-up支撑",
+          "analysis": "定价远优于IPG，India IG新估值锚",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "CBAAU",
+          "name": "Commonwealth Bank of Australia",
+          "inFocus": true,
+          "priority": "high",
+          "region": "Australia",
+          "ccy": "AUD",
+          "assetClass": "IG",
+          "sector": "Financial",
+          "sovereign": "AU",
+          "newIssue": true,
+          "flow": "3Y FRN IPT ASW+62，DB公允DM+54-55",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "quote": "AUD62.7bn YTD，63% of FY forecast",
+          "analysis": "财报强但FY27增长放缓，定价收敛空间",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "SSELN",
+          "name": "SSE Plc",
+          "inFocus": true,
+          "priority": "medium",
+          "region": "UK",
+          "ccy": "AUD",
+          "assetClass": "IG",
+          "sector": "Utility",
+          "sovereign": "GB",
+          "newIssue": true,
+          "flow": "inaugural AUD 5Y+105-110/10Y+140-145 green bond",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "quote": "每12-18个月发行，GBP33bn capex 2026-2030",
+          "analysis": "UK utility AUD首秀，高质量非金融供给",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "WSTP",
+          "name": "Westpac Banking Corporation",
+          "inFocus": true,
+          "priority": "medium",
+          "region": "Australia",
+          "ccy": "AUD",
+          "assetClass": "T2",
+          "sector": "Financial",
+          "sovereign": "AU",
+          "newIssue": true,
+          "flow": "10NC5定价DM+125.5/124.5",
+          "brokers": [
+            "TD Securities"
+          ],
+          "quote": "2-3bps concession vs FV",
+          "analysis": "fast money flipping，Asian account topping",
+          "excludeReason": ""
+        },
+        {
+          "ticker": "WFC",
+          "name": "Wells Fargo",
+          "inFocus": false,
+          "priority": "medium",
+          "region": "US",
+          "ccy": "USD",
+          "assetClass": "IG",
+          "sector": "Financial",
+          "sovereign": "US",
+          "newIssue": true,
+          "flow": "6.55% PNC5定价",
+          "brokers": [
+            "Citi"
+          ],
+          "quote": "应15-20bp thru GS",
+          "analysis": "$4bn WFC PNC5 in 4mo，有表现空间",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "Citi",
+          "topic": "IG信用squeeze",
+          "point": "供给退潮+宏观rally+cash部署滞后板块=TMT 2-10bp+收紧，real$和faster$同步加仓，路径通往更清淡Labor Day",
+          "quote": "path seems pretty clear for an otherwise later labor day which causes even more of a technical"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "topic": "BoJ鹰派重定价",
+          "point": "BoJ连续加息预期+美日协同干预=USD/JPY从160回落触发carry unwind的尾部风险",
+          "quote": "USD/JPY close to the psychologically important 160 level amid continued focus on potential intervention"
+        },
+        {
+          "broker": "Barclays",
+          "topic": "Asia HY轮动",
+          "point": "gaming连续跑赢反映风险偏好从宏观转向个券，Iran optimism驱动marketing firming into close",
+          "quote": "gaming risk again outperforming today bonds clearing through both the US and Asia"
+        },
+        {
+          "broker": "BMO",
+          "topic": "TIPS实际收益率",
+          "point": "2/56 bond break略高于3.0%是多年高位，喜欢owning bond，预期吸引更多买盘",
+          "quote": "Above 3.0% in 2/56, we like owning the bond and it's likely to think that will bring in buyers"
+        }
+      ],
+      "top_conclusions": [
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Rates",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "UST曲线",
+          "subject_label": "CPI后曲线twist-steepening",
+          "key_takeaway_cn": "7月核心CPI符合共识，9月加息概率降至40%，但前端受益于加息降温、长端因$42bn供给+地缘承压，曲线twist-steepening",
+          "why_it_matters_cn": "CPI温和未转化为全面rally，长端供给和地缘溢价是熊陡的隐性推手"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "asset_class": "Rates",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "UST 10y拍卖",
+          "subject_label": "$42bn 10y拍卖4.683%",
+          "key_takeaway_cn": "10y拍卖4.683%为2007年来最高stop，non-dealers>90%连续第三次，真实需求仍在但供给压制长端",
+          "why_it_matters_cn": "历史高位拍卖价验证了长端承压的供给逻辑"
+        },
+        {
+          "broker": "Citi",
+          "asset_class": "US IG",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "IG信用",
+          "subject_label": "供给退潮squeeze",
+          "key_takeaway_cn": "primary winding down，TMT 2-10bp+收紧，real$和faster$同步加仓，路径通往更清淡Labor Day形成technical",
+          "why_it_matters_cn": "供给退潮期利差压缩窗口，TMT作为滞后板块成为资金追逐目标"
+        },
+        {
+          "broker": "HSBC",
+          "asset_class": "Asia Credit",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "Asia HY",
+          "subject_label": "停火+私有化驱动",
+          "key_takeaway_cn": "late day ceasefire headlines催生买盘，Renew私有化+15c，gaming跑赢，Japan insurance hybrids持续需求",
+          "why_it_matters_cn": "事件驱动的Asia HY机会仍在，停火确认将强化CPI温和叙事"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Rates/FX",
+          "stance": "bearish",
+          "direction_cn": "看空",
+          "product_theme": "USD/JPY",
+          "subject_label": "逼近160干预阴影",
+          "key_takeaway_cn": "BoJ 10月前加息概率超100%，JGB全线sold off，USD/JPY逼近160，日本利率与UST前端罕见背离",
+          "why_it_matters_cn": "BoJ鹰派+美日协同干预是carry unwind的最大尾部风险"
+        }
+      ],
+      "broker_takeaways": [
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Rates",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "UST曲线",
+          "subject_label": "CPI后twist-steepening",
+          "key_takeaway_cn": "7月核心CPI符合共识，9月加息概率降至40%，前端受益、长端因供给+地缘承压",
+          "why_it_matters_cn": "CPI温和未全面传导，长端供给是熊陡推手"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "asset_class": "Rates",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "UST 10y拍卖",
+          "subject_label": "拍卖4.683%历史高位",
+          "key_takeaway_cn": "$42bn 10y拍卖4.683%创2007最高，non-dealers>90%连续第三次，真实需求仍在",
+          "why_it_matters_cn": "历史高位验证长端供给压制逻辑"
+        },
+        {
+          "broker": "Citi",
+          "asset_class": "US IG",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "IG信用",
+          "subject_label": "供给退潮squeeze",
+          "key_takeaway_cn": "primary winding down，TMT 2-10bp+收紧，real$和faster$同步加仓",
+          "why_it_matters_cn": "供给退潮期利差压缩窗口开启"
+        },
+        {
+          "broker": "Barclays",
+          "asset_class": "Asia Credit",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "Asia HY",
+          "subject_label": "gaming outperforming",
+          "key_takeaway_cn": "Asia HY收高+0.125-0.5pt，gaming跑赢，Iran optimism驱动firming，India IG走宽",
+          "why_it_matters_cn": "风险偏好转向个券，gaming连续跑赢"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "asset_class": "AUD Credit",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "AUD新发",
+          "subject_label": "CBA/SSELN管线",
+          "key_takeaway_cn": "CBA 3Y公允+54-55，SSELN inaugural AUD构建UK utility新曲线，CBA FY27增长放缓预警",
+          "why_it_matters_cn": "AUD高质量非金融供给扩容"
+        }
+      ],
+      "cross_broker": [
+        {
+          "theme": "CPI后曲线走向",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "core_view": "两家一致：CPI温和符合预期，9月加息概率降至40%，曲线twist-steepening(前端涨/长端跌)",
+          "divergence": "GS强调$42bn 10y拍卖历史高位是长端核心压力，MS强调USD/JPY 160干预是更大尾部风险"
+        },
+        {
+          "theme": "信用风险偏好",
+          "brokers": [
+            "Citi",
+            "Barclays",
+            "HSBC"
+          ],
+          "core_view": "三家一致：风险偏好未消退——US IG squeeze、Asia HY收高、gaming跑赢",
+          "divergence": "Citi看IG供给退潮利差压缩，Barclays/HSBC聚焦Asia HY事件驱动和India供给分化"
+        },
+        {
+          "theme": "India银行供给",
+          "brokers": [
+            "HSBC",
+            "Barclays",
+            "TD Securities"
+          ],
+          "core_view": "三家一致：SBI定价T+88远优于IPG，但存量India银行走宽2-3bp",
+          "divergence": "HSBC认为88.5稳定，Barclays强调FCNR窗口前更多供给压制，TD认为two-way balanced"
+        },
+        {
+          "theme": "地缘供给冲击",
+          "brokers": [
+            "Goldman Sachs",
+            "HSBC",
+            "Barclays"
+          ],
+          "core_view": "Hormuz ceasefire headlines缓和 vs Russia Novorossiysk遇袭推wheat大涨，矛盾信息流",
+          "divergence": "HSBC/Barclays聚焦停火利好Asia HY，GS聚焦黑海供给冲击推粮食能源通胀"
+        }
+      ],
+      "edges": [
+        {
+          "edge_type": "SHIFT",
+          "subject_label": "CPI温和但曲线twist-steepening",
+          "finding": "市场一致性押注CPI温和，但落地后反应克制——前端受益、长端反而因供给+地缘走软，2s10s +1.7bp至49.1bp",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "evidence": "GS: US10y 0.4 cheaper to 4.693%，2s10s steepened 1.7bp。MS: duration supply limited post-CPI rally",
+          "edge_score": 4,
+          "why_it_matters": "CPI温和未转化为全面rally，长端供给是熊陡隐性推手，周四$25bn 30y是关键验证",
+          "basis": "推断：长端承压主因$42bn供给+地缘溢价而非通胀预期"
+        },
+        {
+          "edge_type": "FIRST_CALL",
+          "subject_label": "SSELN UK utility AUD首秀",
+          "finding": "SSE作为UK utility首次进入AUD市场，计划每12-18个月发行，5Y公允+105-110/10Y+140-145，为AUD市场引入高质量非金融绿色债供给",
+          "brokers": [
+            "Deutsche Bank"
+          ],
+          "evidence": "DB: SSELN inaugural AUD，GBP33bn capex 2026-2030",
+          "edge_score": 4,
+          "why_it_matters": "AUD市场信用供给从金融转向utility多元化，构建新定价曲线",
+          "basis": "事实：SSE计划周期化AUD发行，capex支撑供给需求"
+        },
+        {
+          "edge_type": "CONVICTION_GAP",
+          "subject_label": "BoJ鹰派与美日协同干预",
+          "finding": "Kyodo报告BoJ 7月鹰派转向是美日协同干预的关键因素，市场定价BoJ 9月+10月连续加息，USD/JPY逼近160形成carry unwind尾部风险",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "MS: JPY close to 160，Kyodo称BoJ鹰派是美日协同干预关键，Jiji称或加速加息",
+          "edge_score": 5,
+          "why_it_matters": "若BoJ连续加息+美方施压，USD/JPY从160回落触发carry unwind，是全球风险资产最大尾部风险",
+          "basis": "推断：日本利率独立走高与UST前端走低的罕见背离"
+        },
+        {
+          "edge_type": "UNIQUE_DATA",
+          "subject_label": "TIPS 2/56突破3.0%",
+          "finding": "BMO观察到2/56 bond break略高于3.0%是多年高位，喜欢owning bond，预期吸引更多买盘，WI 10yr UST成为新BEI comparator",
+          "brokers": [
+            "BMO"
+          ],
+          "evidence": "BMO: Above 3.0% in 2/56, we like owning the bond",
+          "edge_score": 3,
+          "why_it_matters": "实际收益率突破3%的心理关口是TIPS买盘的独立信号，区别于名义利率叙事",
+          "basis": "事实：2/56 TIP实际收益率高于3.0%"
+        }
+      ],
+      "broker_shifts": [
+        {
+          "broker": "Morgan Stanley",
+          "date_from": "2026-08-12",
+          "date_to": "2026-08-12",
+          "shift_type": "view_shift",
+          "product_theme": "CPI后曲线",
+          "previous_view": "CPI温和将全面rally",
+          "current_view": "CPI温和但twist-steepening，长端因供给承压",
+          "evidence": "duration supply limited the post-CPI rally",
+          "importance": "Medium"
+        },
+        {
+          "broker": "HSBC",
+          "date_from": "2026-08-11",
+          "date_to": "2026-08-12",
+          "shift_type": "view_shift",
+          "product_theme": "Hormuz僵局",
+          "previous_view": "Hormuz僵局压制风险偏好",
+          "current_view": "ceasefire headlines催生买盘，Renew+15c",
+          "evidence": "more buyers emerged following ceasefire headlines late in day",
+          "importance": "Medium"
+        }
+      ],
+      "alert_flags": [
+        {
+          "alert_type": "汇率干预风险",
+          "level": "HIGH",
+          "flag": "USD/JPY逼近160，BoJ连续加息概率超100%，干预阴影重燃",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "JPY close to psychologically important 160 level",
+          "severity": "high"
+        },
+        {
+          "alert_type": "地缘供给冲击",
+          "level": "HIGH",
+          "flag": "Russia Novorossiysk港口遇袭，黑海+霍尔木兹双供给冲击推粮食能源通胀",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "evidence": "grain exports halted，tanker freight to record",
+          "severity": "high"
+        },
+        {
+          "alert_type": "供给压制",
+          "level": "MEDIUM",
+          "flag": "$42bn 10y拍卖4.683%历史高位，长端供给压制，周四$25bn 30y待验证",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "evidence": "highest 10y stop since 2007",
+          "severity": "medium"
+        },
+        {
+          "alert_type": "India供给抢跑",
+          "level": "MEDIUM",
+          "flag": "FCNR窗口关闭前更多India银行发行，ICICI/HDFC better selling压制存量",
+          "brokers": [
+            "Barclays"
+          ],
+          "evidence": "more issuance before FCNR window closes next month",
+          "severity": "medium"
+        }
+      ]
+    },
     {
       "reportDate": "2026-08-12",
       "coverage": {
@@ -18196,726 +19213,6 @@ window.REPORT_DATA =
       "flow": null,
       "issuers": [],
       "insights": [],
-      "top_conclusions": [],
-      "broker_takeaways": [],
-      "cross_broker": [],
-      "edges": [],
-      "broker_shifts": [],
-      "alert_flags": []
-    },
-    {
-      "reportDate": "2026-07-24",
-      "coverage": {
-        "emails": 7,
-        "brokers": [
-          "Morgan Stanley",
-          "HSBC",
-          "BMO",
-          "Deutsche Bank",
-          "TD Securities",
-          "Jefferies"
-        ],
-        "lookbackDays": 15,
-        "sourceDateNote": "7封：MS宏观/BMO TIPS/HSBC信用/JEF日本IG/DB Aussie信用/TD ECB/mkt技术分析|均为07-23交易日"
-      },
-      "signals": [
-        {
-          "id": "sig-20260724-01",
-          "topic": "Brent Breaks $100: Oil Shock Intensifies",
-          "assetClass": "Macro/Commodity",
-          "direction": "Bearish",
-          "signalType": [
-            "ALERT",
-            "CONTINUATION"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 95,
-          "conviction": "High",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "mkt"
-          ],
-          "headline": "Brent+6.9%突破$100→Saudi tanker遇袭→Red Sea出口路线受胁→jobless claims 187k→UST 10y 4.69%→S&P-1.2% Nasdaq-2.2%",
-          "oneLine": "Brent+6.9%>$100/bbl.Saudi tankers attacked,Red Sea+Strait of Hormuz threatened.10y 4.69% highest since early 2025.VIX+12.4% to 18.70",
-          "evidence": [
-            "MS:Brent+6.9% above $100/bbl after attacks on Saudi tankers threatened Red Sea export route+Strait of Hormuz disruption",
-            "MS:Jobless claims 187k vs 210k consensus,well below expectations→tighter Fed policy expectations",
-            "MS:S&P500-1.2%,Nasdaq-2.2%,Comm Svcs-5.2%,Cons Disc-5.1%.Energy+0.6%,VIX+12.4% to 18.70",
-            "MS:10y 4.69% highest since early 2025.2y+4.7bp 30y+1.5bp bear flatten",
-            "BMO:Long end real yields broke 3% on off-the-run 30s,hesitant to catch falling knife",
-            "mkt:Oil $87-90 target zone→profit-taking+long oil/short bonds unwinding could emerge"
-          ],
-          "soWhat": "Brent突破$100是质变→从'油价上涨'到'能源供给危机'→Red Sea+Saudi tanker遇袭=供给面冲击→若冲突扩大→Brent可能进一步冲向$110-120→通胀预期+利率双重上行→credit spread全面承压→关注周末风险升级",
-          "quote": "Oil topped $100 on renewed Middle East tensions after reported attacks on Saudi tankers threatened the Red Sea export route",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-02",
-          "topic": "UST Bear Flatten Confirms Wave(iii)III + TIPS Auction Disaster",
-          "assetClass": "Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "ALERT",
-            "CONTINUATION"
-          ],
-          "action": "RISK_FLAG",
-          "impactScore": 90,
-          "conviction": "High",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "mkt"
-          ],
-          "headline": "10y 4.69%→wave(iii)III confirmed→$21bn TIPS auction tails 2.5bp→highest real yield since 2008→no dip buying→5yr +7bp real yields",
-          "oneLine": "10y 4.69% highest since early 2025.2y+4.7bp 30y+1.5bp bear flatten.Wave(iii)III confirmed.TIPS auction disaster.5y real+7bp",
-          "evidence": [
-            "MS:10y 4.69% highest since early 2025.2y+4.7bp,bear flatten",
-            "MS:$21bn 10y TIPS auction cleared 2.438% real yield→highest since 2008→2-3bp tail→2.30 bid-to-cover vs 2.52",
-            "BMO:5s real yields+7bp,long end off-the-run 30s broke 3%→no demand→street hesitant to catch falling knife",
-            "mkt:Wave(iii)III underway→break above 4.61/4.63% confirms→10y target 5%+",
-            "mkt:20yr bearish flag breakdown→vulnerable to 5.20-5.25% zone",
-            "mkt:But 5yr at 4.42%+ appears relatively cheap→tactical long opportunity"
-          ],
-          "soWhat": "TIPS拍卖灾难=真实资金不愿接飞刀→real yield 2.44%是2008年来最高→若Brent>100持续→通胀预期+real yield双升→10y名义收益率可能快速突破4.75%→5%目标进入可触及范围→信用利差面临重新定价→但mkt提示5yr战术性做多机会→市场分歧加大",
-          "quote": "The 10y TIPS auction cleared at 2.438% real yield, the highest since 2008, tailed 2-3bp",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-03",
-          "topic": "Asia IG Buyer Strike: UST Breakout Kills Demand",
-          "assetClass": "Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "FLOW",
-            "CONTINUATION"
-          ],
-          "action": "WATCH",
-          "impactScore": 78,
-          "conviction": "Medium",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES"
-          ],
-          "headline": "Asia IG全面买方罢工→China IG+1-3bps wider→technical bonds仍持稳但新发/street longs被砸→oil+rates破位=买家离场",
-          "oneLine": "China IG+1-3bps wider.Macro weaker led by oil,rates breaking out→buyer strike.Technical bonds held but new issues/street longs hit",
-          "evidence": [
-            "HSBC:China IG+1-3bps wider→macro weaker led by oil,rates breaking out of range→buyer strike→chgrid 30yr finally hit down at OLB+0",
-            "HSBC:Technical bank book bonds remain well held,but new issues/street longs got hit down",
-            "JEF:Rate sell off further,spreads wider→flow subdued→clients don't have convincing view on credit or rate",
-            "JEF:Japan IG 0-1bps wider→selective buying high quality Japan banks 5-10yr driven by inflow",
-            "JEF:Insurance hybrids another soft day 15-25c lower→some RM dip buying at cash level→fast money/street better seller"
-          ],
-          "soWhat": "UST突破年内区间→Asia IG全面买方罢工→这是关键转变：之前dealer short covering还能撑住→现在连technical bond也开始被砸→若10y继续上行→China IG利差面临更大幅度reprice→关注周末前仓位调整和Brent>$100的溢出效应",
-          "quote": "Macro weaker led by oil, rates breaking out of range resulting in a buyer strike here in my space",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-04",
-          "topic": "SOFTBK HY Sell-off: Rate Sell-off Triggers HY Underperformance",
-          "assetClass": "Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "SHIFT",
-            "ALERT"
-          ],
-          "action": "WATCH",
-          "impactScore": 75,
-          "conviction": "Medium",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES"
-          ],
-          "headline": "SOFTBK-0.5 to -0.875pt across 5-10yr fixed+hybrids→HY underperforms IG→RM selling Aussie HY→support buyers absent",
-          "oneLine": "SOFTBK-0.5 to -0.875pt 5-10yr.HY underperforming IG for first time.RM+Aussie HY sellers.Support buyers largely absent",
-          "evidence": [
-            "HSBC:Japan weaker second half→SOFTBK wave of down prints→bonds -0.5-0.875pt in 5-10yr fixed and hybrids",
-            "HSBC:HY traded worse than IG today for a change→support buyers largely absent→flow skewed more sellers than buyers",
-            "HSBC:RM selling Aussie HY+retail sellers NSANY and RAKUTN→trend of spreads widening 1-3bps daily shows no sign of slowing",
-            "JEF:Flow skewed with client slightly better selling→some RM dip buying at cash level→but fast money/street remains better seller"
-          ],
-          "soWhat": "SOFTBK HY领跌→这是利率冲击向信用传导的信号→HY underperforming IG表明风险偏好急剧恶化→support buyers缺席→若UST继续走弱→HY可能成为下一轮risk-off的震中→关注SOFTBK CDS是否扩大",
-          "quote": "HY traded worse than IG today for a change as we saw a wave of down prints in the SOFTBK curve",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-05",
-          "topic": "US Equities: Tech Sell-off Deepens on AI Capex + Oil",
-          "assetClass": "Equity/Credit",
-          "direction": "Bearish",
-          "signalType": [
-            "CONTINUATION",
-            "EARNINGS"
-          ],
-          "action": "WATCH",
-          "impactScore": 80,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley"
-          ],
-          "headline": "Nasdaq-2.2%→Comm Svcs-5.2%/Cons Disc-5.1%→rising financing costs+FCF压力→sector dispersion加剧→但Industrials+1.8%",
-          "oneLine": "Nasdaq-2.2%.Comm Svcs-5.2% Cons Disc-5.1%.Rising financing costs+FCF pressure.Industrials+1.8% Energy+0.6%.Sector rotation",
-          "evidence": [
-            "MS:Nasdaq-2.2%→communication services-5.2%,consumer discretionary-5.1%",
-            "MS:Info Tech-1.1%→rising financing costs+reduced FCF support across tech complex",
-            "MS:Industrials+1.8%,Energy+0.6%,Healthcare+1.3%→substantial sector dispersion",
-            "MS:S&P500-1.2% as oil-driven rates sell-off compounded AI capex concerns"
-          ],
-          "soWhat": "科技股抛售从AI capex担忧→扩大到全部利率敏感板块→Comm Svcs-5.2%表明GOOGL/META等面临双重压力→但sector rotation到industrials+energy表明并非全面崩盘→关注科技信用利差是否滞后反应",
-          "quote": "Investors focused on rising financing costs and reduced free-cash-flow support across the broader technology complex",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-06",
-          "topic": "ECB Holds but September Hike Door Open",
-          "assetClass": "Macro",
-          "direction": "Neutral",
-          "signalType": [
-            "SHIFT",
-            "WATCH"
-          ],
-          "action": "WATCH",
-          "impactScore": 60,
-          "conviction": "Medium",
-          "brokers": [
-            "TD Securities",
-            "Morgan Stanley"
-          ],
-          "headline": "ECB depo rate held 2.25%→inflationary pressures highlighted→Sept hike door open→EUR muted→favor long EUR front-end",
-          "oneLine": "ECB held 2.25%.Meeting-by-meeting approach.Sept hike door open.Market reaction muted.Favor long EUR front-end",
-          "evidence": [
-            "TD:ECB left deposit rate at 2.25%→statement highlighted inflationary pressures→meeting-by-meeting→Sept hike door open",
-            "TD:Market reaction fairly muted→favor long bias EUR front-end→EURUSD muted on unchanged guidance",
-            "MS:SARB also held rates→global central banks still on guard against inflation"
-          ],
-          "soWhat": "ECB按兵不动但保持Sept加息选项→与Fed的July hike概率上升形成对比→EUR front-end相对价值显现→但Oil冲击对EUR区域通胀影响更大→关注ECB对油价上涨的反应",
-          "quote": "Captain Lagarde steers toward September rate hike — the statement continued to mention inflationary pressures",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-07",
-          "topic": "Aussie Energy Credit: STOAU + KARAU Quarterly Updates",
-          "assetClass": "Credit",
-          "direction": "Neutral",
-          "signalType": [
-            "EARNINGS",
-            "FLOW"
-          ],
-          "action": "WATCH",
-          "impactScore": 55,
-          "conviction": "Medium",
-          "brokers": [
-            "Deutsche Bank"
-          ],
-          "headline": "STOAU 2Q revenue+6% QoQ→higher LNG prices支持→Moody's positive outlook→KARAU weak but expected→Who Dat overhang until 4Q27",
-          "oneLine": "STOAU:revenue+6% QoQ,production+3%,Moody's positive outlook.KARAU:weak 2Q but expected,Bauna restored 22kbopd",
-          "evidence": [
-            "DB:STOAU 2Q26 revenue+6% QoQ to $1.35bn,production+3% QoQ→Barossa 97% planned rates→Pikka progressing toward plateau",
-            "DB:STOAU FCF muted 1H26 ~$378mn but one-off commissioning costs→$300mn cargo proceeds received after quarter-end",
-            "DB:STOAU bonds held in well→supported by higher oil prices+Moody's rating positive outlook",
-            "DB:KARAU production-44% QoQ to 1.08mmboe→Bauna FPSO maintenance→Who Dat E manifold shut-in→current Bauna 22kbopd",
-            "DB:KARAU 2029s 8.6% ytw→likely rangebound until production recovery evidence"
-          ],
-          "soWhat": "Oil突破$100利好STOAU→Moody's positive outlook+deleveraging story→但Barossa/Pikka ramp-up仍需时间→KARAU Who Dat overhang持续到4Q27→高收益O&G分化：oil producer winners vs service-exposed losers",
-          "quote": "STOAU bonds have held in well... the curve will be supported by higher oil prices and Moody's rating on positive outlook",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        },
-        {
-          "id": "sig-20260724-08",
-          "topic": "Dollar Strengthens + EM/FX Pressure: Oil Importers Hit",
-          "assetClass": "Fx/Macro",
-          "direction": "Bearish",
-          "signalType": [
-            "CONTINUATION",
-            "DIVERGENCE"
-          ],
-          "action": "WATCH",
-          "impactScore": 72,
-          "conviction": "Medium",
-          "brokers": [
-            "Morgan Stanley",
-            "TD Securities"
-          ],
-          "headline": "DXY+0.3% to 101.44→NZD-0.8% underperforms→USD/JPY+0.4% to 163.87→Japan NEER new lows→ZAR underperforms EMFX→oil importers hit",
-          "oneLine": "DXY 101.44(+0.3%).NZD-0.8% underperforms.USD/JPY 163.87(+0.4%).Japan NEER new lows.ZAR underperforms EMFX",
-          "evidence": [
-            "MS:DXY+0.3% to 101.44→higher US yields+safe-haven demand outweighed risk sentiment deterioration",
-            "MS:EUR/USD-0.3%,GBP/USD-0.5%,NZD-0.8% underperform,AUD/USD-0.4% despite stronger employment data",
-            "MS:USD/JPY+0.4% to 163.87→widening US-Japan yield differential→Japan NEER new lows",
-            "MS:ZAR underperforms EMFX→oil importing EM currencies under pressure",
-            "TD:EURUSD muted on unchanged ECB guidance→near-term EUR downside pressure stays"
-          ],
-          "soWhat": "Brent>$100+UST yield上升=Dollar双重支撑→oil importing EM/FX面临最大压力→JPY/INR/ZAR underperform→若Japan NEER持续走低→BoJ可能被迫更激进加息→关注carry trade unwind风险",
-          "quote": "The dollar strengthened against most G10 currencies as higher US yields and safe-haven demand outweighed the deterioration in risk sentiment",
-          "date": "2026-07-24",
-          "priorState": "No prior state available."
-        }
-      ],
-      "brokerNotes": [
-        {
-          "broker": "Morgan Stanley",
-          "date": "2026-07-23",
-          "assetClass": "Macro",
-          "summary": "Brent+6.9%突破$100→Saudi tanker遇袭→10y 4.69%年内最高→S&P-1.2% Nasdaq-2.2%→jobless claims 187k远低于预期→TIPS auction disaster→DXY+0.3%→科技板块领跌而能源/工业上涨",
-          "stance": "bearish",
-          "keyQuote": "Oil topped $100 on renewed Middle East tensions; US jobless claims fell to 187k; global bonds sold off; tech led US equity losses",
-          "emails": 1,
-          "sourceRefs": [
-            "Morgan Stanley 2026-07-24"
-          ]
-        },
-        {
-          "broker": "HSBC",
-          "date": "2026-07-23",
-          "assetClass": "Credit",
-          "summary": "Asia信用mixed→China IG+1-3bps wider buyer strike→technical bonds仍持稳但新发被砸→HY constructive GLP/FAEACO+1pt→Japan/SEA weaker→SOFTBK-0.5-0.875pt HY underperform IG→buyers absent",
-          "stance": "bearish",
-          "keyQuote": "Macro weaker led by oil, rates breaking out of range resulting in a buyer strike",
-          "emails": 1,
-          "sourceRefs": [
-            "HSBC 2026-07-24"
-          ]
-        },
-        {
-          "broker": "BMO",
-          "date": "2026-07-23",
-          "assetClass": "Rates",
-          "summary": "TIPS real yields+7bp 5s→10y auction tailed 2.5bp→long end off-the-run 30s broke 3%→no demand→street hesitant to catch falling knife→US/Iran escalating→front-end swaps supported by energy but lagged on beta→1y CPI vs crude questions surfacing",
-          "stance": "bearish",
-          "keyQuote": "Long end real yields broke 3% on some of the off-the-run 30s, yet we still don't see a ton of demand at these levels",
-          "emails": 1,
-          "sourceRefs": [
-            "BMO 2026-07-24"
-          ]
-        },
-        {
-          "broker": "mkt (JEFFERIES)",
-          "date": "2026-07-23",
-          "assetClass": "Rates",
-          "summary": "UST bear flatten持续→wave(iii)III underway→break 4.61/4.63% confirms→20yr bearish flag breakdown→5yr at 4.42%+ appears relatively cheap→tactical long front-end→oil $87-90 target→caution with data dependent",
-          "stance": "neutral",
-          "keyQuote": "Wave (iii) of III is now underway. A decisive break above 4.61%/4.63% would confirm. But market has overpriced Fed tightening.",
-          "emails": 1,
-          "sourceRefs": [
-            "mkt (JEFFERIES) 2026-07-24"
-          ]
-        },
-        {
-          "broker": "JEFFERIES",
-          "date": "2026-07-23",
-          "assetClass": "Credit",
-          "summary": "Japan/Aus IG 0-1bps wider→flow subdued→clients no conviction→selective buying high quality Japan banks 5-10yr→insurance hybrids-15-25c→some RM dip buying at cash level→fast money/street better seller",
-          "stance": "bearish",
-          "keyQuote": "Flow is still subdued as clients don't have convincing view on both credit and rate at the moment",
-          "emails": 1,
-          "sourceRefs": [
-            "JEFFERIES 2026-07-24"
-          ]
-        },
-        {
-          "broker": "TD Securities",
-          "date": "2026-07-23",
-          "assetClass": "Macro",
-          "summary": "ECB depo rate held 2.25%→inflationary pressures highlighted→meeting-by-meeting→Sept hike door open→favor long EUR front-end→EURUSD muted→near-term EUR downside pressure stays",
-          "stance": "neutral",
-          "keyQuote": "Captain Lagarde steers toward September rate hike — the door remains open",
-          "emails": 1,
-          "sourceRefs": [
-            "TD Securities 2026-07-24"
-          ]
-        },
-        {
-          "broker": "Deutsche Bank",
-          "date": "2026-07-23",
-          "assetClass": "Credit",
-          "summary": "STOAU 2Q revenue+6% QoQ→higher LNG prices→Moody's positive outlook→bonds supported by oil→KARAU weak 2Q but expected→Bauna restored 22kbopd→KARAU 2029s 8.6% ytw rangebound",
-          "stance": "neutral",
-          "keyQuote": "STOAU bonds will be supported by higher oil prices and Moody's rating on positive outlook",
-          "emails": 1,
-          "sourceRefs": [
-            "Deutsche Bank 2026-07-24"
-          ]
-        }
-      ],
-      "dataChecks": [
-        {
-          "id": "dc-20260724-01",
-          "topic": "Brent>$100 + oil supply disruption",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "mkt"
-          ],
-          "consensus": "Confirmed",
-          "note": "MS Brent+6.9%>$100，BMO real yields break 3%，mkt oil $87-90 target→三家一致确认供给冲击"
-        },
-        {
-          "id": "dc-20260724-02",
-          "topic": "UST bear flatten + wave(iii)III",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO",
-            "mkt"
-          ],
-          "consensus": "Confirmed",
-          "note": "MS 10y 4.69% highest since early 2025，BMO 5s+7bp real，mkt wave(iii)III confirmed→三家共振"
-        },
-        {
-          "id": "dc-20260724-03",
-          "topic": "TIPS auction tail + no demand",
-          "brokers": [
-            "Morgan Stanley",
-            "BMO"
-          ],
-          "consensus": "Confirmed",
-          "note": "MS tail 2-3bp highest since 2008，BMO tail 2.5bp no demand→完全一致"
-        },
-        {
-          "id": "dc-20260724-04",
-          "topic": "Asia IG buyer strike + spreads wider",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES"
-          ],
-          "consensus": "Confirmed",
-          "note": "HSBC China IG+1-3bps wider buyer strike，JEF Japan IG 0-1bps wider→两家一致"
-        },
-        {
-          "id": "dc-20260724-05",
-          "topic": "SOFTBK HY sell-off",
-          "brokers": [
-            "HSBC",
-            "JEFFERIES"
-          ],
-          "consensus": "Confirmed",
-          "note": "HSBC SOFTBK-0.5-0.875pt HY underperform IG，JEF insurance hybrids-15-25c→两家一致"
-        },
-        {
-          "id": "dc-20260724-06",
-          "topic": "5yr front-end relatively cheap",
-          "brokers": [
-            "mkt",
-            "BMO"
-          ],
-          "consensus": "Monitor",
-          "note": "mkt 5yr at 4.42%+ appears cheap+tactical long，BMO front-end swaps supported but lagged beta→分歧：bear flatten中前端是否确实便宜"
-        },
-        {
-          "id": "dc-20260724-07",
-          "topic": "ECB Sept hike door open",
-          "brokers": [
-            "TD Securities",
-            "Morgan Stanley"
-          ],
-          "consensus": "Confirmed",
-          "note": "TD ECB held 2.25% Sept hike open，MS global central banks still on guard→两家一致"
-        }
-      ],
-      "qualityLog": [],
-      "tone": {
-        "dir": "weak",
-        "label": "Brent>$100 + UST破4.69% + Nasdaq-2.2%：三重Risk-Off",
-        "note": "Saudi tanker遇袭→Red Sea路线受胁→Oil供给冲击→UST break YTD range→10y 4.69%年内最高→TIPS auction tail 2.5bp无人接→Asia IG全面买方罢工→HY underperform IG→Tech sell-off sector rotation→周末gap risk极高"
-      },
-      "macro": [
-        "Brent+6.9%>$100/bbl — Saudi tanker遇袭，Red Sea+Strait of Hormuz受胁，Trump接近决定扩大Iran行动",
-        "Jobless claims 187k vs 210k预期 — 劳动力市场不弱，支持Fed继续紧缩→FOMC hike概率上升",
-        "10y TIPS auction tail 2.5bp — 2008年来最高real yield 2.438%→bid-to-cover 2.30→real money no bid→长端real yields破3%",
-        "ECB depo rate held 2.25% — Sept加息门未关上，通胀压力持续→EUR muted→long EUR front-end favored",
-        "DXY+0.3%至101.44 — USD/JPY 163.87→Japan NEER新低→NZD-0.8% underperform→oil importer EM FX承压"
-      ],
-      "flow": {
-        "sentiment": {
-          "dir": "weak",
-          "label": "Brent>$100 + UST破4.69% + Nasdaq-2.2%：三重Risk-Off",
-          "note": "Saudi tanker遇袭→Red Sea路线受胁→Oil供给冲击→UST break YTD range→10y 4.69%年内最高→TIPS auction tail 2.5bp无人接→Asia IG全面买方罢工→HY underperform IG→Tech sell-off sector rotation→周末gap risk极高"
-        },
-        "activeNames": [
-          {
-            "name": "软银集团 (SOFTBK)",
-            "ticker": "SOFTBK",
-            "tone": "sell",
-            "activity": "-0.5 to -0.875pt 5-10yr fixed+hybrids → HY underperform IG → support buyers absent",
-            "brokers": [
-              "HSBC",
-              "JEF"
-            ]
-          },
-          {
-            "name": "Santos能源 (STOAU)",
-            "ticker": "STOAU",
-            "tone": "buy",
-            "activity": "2Q revenue+6% → higher oil supports → Moody's positive outlook → deleveraging story",
-            "brokers": [
-              "DB"
-            ]
-          },
-          {
-            "name": "普洛斯/中国CRE (GLP/FAEACO)",
-            "ticker": "GLP/FAEA",
-            "tone": "buy",
-            "activity": "China HY CRE +1pt → RM+FM buying across benchmarks → resilient demand",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Karoon能源 (KARAU)",
-            "ticker": "KARAU",
-            "tone": "sell",
-            "activity": "2Q weak production-44% → Who Dat overhang 4Q27 → 2029s 8.6% ytw rangebound",
-            "brokers": [
-              "DB"
-            ]
-          },
-          {
-            "name": "印度工业信贷投资银行 (ICICI)",
-            "ticker": "ICICI",
-            "tone": "sell",
-            "activity": "Recent 5yr senior+2bps post new deal → India supply pressure → front-end widening",
-            "brokers": [
-              "HSBC"
-            ]
-          },
-          {
-            "name": "Biolin制药 (BIOLIN)",
-            "ticker": "BIOLIN",
-            "tone": "sell",
-            "activity": "-1.5pts off recent highs → Trump pharma tariff impact → continued better selling",
-            "brokers": [
-              "HSBC"
-            ]
-          }
-        ],
-        "drivers": [
-          {
-            "broker": "MS/BMO",
-            "type": "基本面",
-            "summary": "Brent+6.9%>$100→Saudi tanker遇袭→Red Sea/Strait of Hormuz受胁→Trump接近扩大Iran行动→供给冲击驱动全面risk-off"
-          },
-          {
-            "broker": "BMO/JEF",
-            "type": "技术性",
-            "summary": "UST bear flatten→10y 4.69%年内最高+wave(iii)III confirmed→real yields破3%→利率敏感资产全线承压→duration buyer全线溃败"
-          },
-          {
-            "broker": "MS/BMO",
-            "type": "流动性",
-            "summary": "TIPS auction tail 2.5bp→2008年来最高real yield→bid-to-cover 2.30→real money无需求→长端流动性警报→无人接飞刀"
-          },
-          {
-            "broker": "MS",
-            "type": "仓位",
-            "summary": "S&P-1.2% Nasdaq-2.2%→科技领跌→rotation to energy/industrials→Oil>$100利好能源但整体risk-off→周末gap risk极高"
-          },
-          {
-            "broker": "TD/MS",
-            "type": "基本面",
-            "summary": "ECB depo held 2.25%但Sept hike门未关→SARB hold→全球央行维持hawkish→USD走强→EM FX+credit双重压力"
-          }
-        ]
-      },
-      "issuers": [
-        {
-          "ticker": "SOFTBK",
-          "name": "软银集团 (SOFTBK)",
-          "inFocus": true,
-          "priority": 1,
-          "region": "Japan",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Technology/Telecom",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "sell",
-          "brokers": [
-            "HSBC",
-            "JEF"
-          ],
-          "quote": "-0.5 to -0.875pt 5-10yr fixed+hybrids → HY underperform IG → support buyers absent → CDS likely wider",
-          "analysis": "利率冲击向信用传导→SOFTBK HY领跌→RM sellers+fast money better sellers→CDS可能进一步扩大→关注Cash-CDS basis",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "STOAU",
-          "name": "Santos能源 (STOAU)",
-          "inFocus": true,
-          "priority": 1,
-          "region": "Australia",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Energy",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "DB"
-          ],
-          "quote": "2Q revenue+6% QoQ→higher LNG prices→Moody's positive outlook→bonds well held→Barossa 97%→Pikka progressing",
-          "analysis": "Oil>$100最大受益者→deleveraging story→Moody's positive outlook→但Barossa/Pikka ramp-up仍需时间→FCF muted但一次性成本",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "GLP/FAEA",
-          "name": "普洛斯/中国CRE (GLP/FAEACO)",
-          "inFocus": false,
-          "priority": 2,
-          "region": "China",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Real Estate",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "buy",
-          "brokers": [
-            "HSBC"
-          ],
-          "quote": "China HY CRE benchmarks +1pt → RM+FM buying → resilient demand despite macro headwinds",
-          "analysis": "China HY CRE逆势走强→与整体risk-off背离→RM+FM结构性需求→但oil+rates macro headwind不可忽视",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "KARAU",
-          "name": "Karoon能源 (KARAU)",
-          "inFocus": false,
-          "priority": 2,
-          "region": "Australia",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Energy",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "sell",
-          "brokers": [
-            "DB"
-          ],
-          "quote": "2Q production-44% QoQ→Bauna FPSO maintenance→Who Dat E manifold shut-in→2029s 8.6% ytw→rangebound",
-          "analysis": "Oil>$100利好但生产问题抵消→Who Dat overhang直到4Q27→2029s 8.6% ytw→需production recovery evidence→当前rangebound",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "ICICI",
-          "name": "印度工业信贷投资银行 (ICICI)",
-          "inFocus": false,
-          "priority": 2,
-          "region": "India",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Financial",
-          "sovereign": false,
-          "newIssue": true,
-          "flow": "sell",
-          "brokers": [
-            "HSBC"
-          ],
-          "quote": "New deal→recent 5yr+2bps→India front-end supply pressure→market absorbing supply",
-          "analysis": "India supply pressure→新发定价后利差走阔→oil importer EM faces double headwind→关注新发后续performance",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "BIOLIN",
-          "name": "Biolin制药 (BIOLIN)",
-          "inFocus": false,
-          "priority": 3,
-          "region": "China",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Pharma",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "sell",
-          "brokers": [
-            "HSBC"
-          ],
-          "quote": "-1.5pts off recent highs → Trump pharma tariff impact → continued better selling",
-          "analysis": "Trump pharma tariff直接冲击→从高位跌1.5pt→better selling持续→关税不确定性为overhang",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "NSANY/RAK",
-          "name": "日产/乐天 (NSANY/RAKUTN)",
-          "inFocus": false,
-          "priority": 3,
-          "region": "Japan",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "Auto/Internet",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "sell",
-          "brokers": [
-            "HSBC"
-          ],
-          "quote": "Retail sellers → part of broader HY sell-off → risk appetite deteriorating",
-          "analysis": "HY风险偏好恶化→零售投资者主动卖出→与SOFTBK同步→整体HY承压→关注低评级name扩散",
-          "excludeReason": ""
-        },
-        {
-          "ticker": "CHIG",
-          "name": "中资投资级基准 (China IG)",
-          "inFocus": false,
-          "priority": 1,
-          "region": "China",
-          "ccy": "USD",
-          "assetClass": "Credit",
-          "sector": "IG",
-          "sovereign": false,
-          "newIssue": false,
-          "flow": "sell",
-          "brokers": [
-            "HSBC",
-            "JEF"
-          ],
-          "quote": "Buyer strike → +1-3bps wider → technical bonds held but new issues hit → chgrid 30yr OLB+0",
-          "analysis": "UST breakout YTD range→Asia IG全面买方罢工→此为关键转变→之前dealer short covering还能撑住→现在连technical bond也被砸→FOMC前利差面临更大reprice",
-          "excludeReason": ""
-        }
-      ],
-      "insights": [
-        {
-          "broker": "多券商综合",
-          "topic": "持仓集中度",
-          "point": "Brent>$100+UST bear flatten+Nasdaq-2.2%→triple risk-off→所有risk asset承压→仅有energy/industrials/healthcare避险→极度集中→关注流动性枯竭",
-          "quote": "severity: High"
-        },
-        {
-          "broker": "多券商综合",
-          "topic": "拥挤度风险",
-          "point": "Short UST→long tech/credit→此前的拥挤交易正在逆转→wave(iii)III确认+oil supply shock→crowded shorts getting more crowded→squeeze risk非对称",
-          "quote": "severity: Medium-High"
-        },
-        {
-          "broker": "多券商综合",
-          "topic": "溢出风险",
-          "point": "Oil>$100的直接传导：EM oil importers(FX+bonds)→HY energy(winner/loser divergence)→inflation breakevens→central bank response divergence→关注周末gap risk",
-          "quote": "severity: High"
-        },
-        {
-          "broker": "多券商综合",
-          "topic": "流动性警告",
-          "point": "TIPS auction tails 2.5bp→highest since 2008→real money no bid→Hong Kong/Singapore liquidity thinning→FOMC前仓位调整可能加剧波动",
-          "quote": "severity: Medium-High"
-        },
-        {
-          "broker": "多券商综合",
-          "topic": "投资建议",
-          "point": "Defensive positioning→削减duration+credit beta→增加energy exposure→STOAU等oil winners→front-end UST tactical long(5yr cheap)→保持cash buffer→FOMC前不追空",
-          "quote": "severity: Medium"
-        },
-        {
-          "broker": "多券商综合",
-          "topic": "周末风险",
-          "point": "Trump close to deciding larger Iran operation→Red Sea+Strait of Hormuz→周末gap risk极高→建议周五前减仓risk→关注WTI/Brent期货open interest",
-          "quote": "severity: High"
-        }
-      ],
       "top_conclusions": [],
       "broker_takeaways": [],
       "cross_broker": [],

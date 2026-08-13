@@ -47,7 +47,7 @@
   th{background:#e9edf3;color:#0a2647;padding:9px 10px;text-align:left;font-weight:700;font-size:12px;white-space:nowrap;border:1px solid #d0d5dd}
   td{padding:9px 10px;border:1px solid #e2e6ed;vertical-align:top;word-break:break-word;line-height:1.6}
   tr:nth-child(even) td{background:#fafbfd}
-  td:first-child{font-weight:700;color:#0a2647;white-space:nowrap;text-align:center;width:52px;vertical-align:middle;background:#f8f9fb}
+  td:first-child{font-weight:700;color:#0a2647;white-space:nowrap;text-align:center;vertical-align:middle;background:#f8f9fb;padding:6px 8px;font-size:12px}
   td:empty::after{content:"—";color:#bbb}
 
   /* 左线三色 */
@@ -125,7 +125,7 @@ REPORT_DATA["2026-08-12"] = {
       note:"全市场焦点：7月CPI预览 — GS预期核心+0.19% vs MS预期+0.24%，方向相反",
       summary:"隔夜市场：5Y <b>-2bp</b>至4.39% · 10Y <b>-1bp</b>至4.69% · 30Y <b>-1bp</b>至5.25% · 5s30s走陡至<b>86bp</b> · Brent <b>+1.6%</b>至$89.13 · NFIB小企业乐观指数升至<b>99.8</b>（年内新高）· 成屋销售-1.7%至4.06M年化",
       headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
-      cols:["48px","20%","13%","13%","13%","21%","18%"],
+      cols:["88px","20%","13%","13%","13%","21%","18%"],
       rows:[
         ["MS",
           ["fact","CPI前RM买belly outright+spreads，FM做平曲线；30Y TIPS reopening为supply tailwind；breakevens: FV <b>6.7</b>, TY <b>5.7</b>, US <b>4.3</b>"],
@@ -158,7 +158,7 @@ REPORT_DATA["2026-08-12"] = {
       id:"us-ig", pri:true, title:"美国IG信用债",
       summary:"本周供给：IG supply ~<b>$21bn</b>预计本周定价，为9月FOMC前最后发行窗口（MS）",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","行业偏好","偏好/风险"],
-      cols:["48px","15%","14%","14%","14%","15%","14%","14%"],
+      cols:["88px","15%","14%","14%","14%","15%","14%","14%"],
       rows:[
         ["MS",["fact","IG supply ~<b>$21bn</b>预计本周定价，为9月FOMC前最后发行窗口"],[""],[""],[""],[""],[""],[""]],
         ["BofA",[""],[""],["short","<span class='bear'>IG相对HY价值不足</span>；spreads仍处低位"],[""],["short","<span class='bear'>减配IG</span>：60/40组合债券部分应减配；债券与股票持续正相关，传统分散化失效"],[""],["short","<span class='bear'>减配IG</span>，建议大宗商品替代债券分散风险"]],
@@ -169,7 +169,7 @@ REPORT_DATA["2026-08-12"] = {
     {
       id:"us-hy", pri:true, title:"美国HY信用债",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","再融资/违约","Technical/资金面","整体观点","评级偏好","偏好/风险"],
-      cols:["48px","14%","13%","13%","14%","13%","14%","7%","12%"],
+      cols:["88px","14%","13%","13%","14%","13%","14%","7%","12%"],
       rows:[
         ["BofA",
           ["fact","信用利差有足够缓冲吸收违约率上升"],
@@ -187,7 +187,7 @@ REPORT_DATA["2026-08-12"] = {
     {
       id:"eu-rates", pri:false, title:"欧洲利率",
       headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
-      cols:["48px","20%","13%","13%","13%","22%","17%"],
+      cols:["88px","20%","13%","13%","13%","22%","17%"],
       rows:[
         ["GS",
           ["fact","发布《<b>France—Modelling the 2027 Elections</b>》专题研究报告"],
@@ -240,7 +240,7 @@ REPORT_DATA["2026-08-13"] = {
       note:"Jefferies 本日最大变化：转向 buy-on-dips",
       summary:"Jefferies：UST 进入目标区间 5yr <b>4.42-4.50%</b> / 10yr <b>4.75-4.85%</b> / 30yr <b>5.40%</b>；曲线 steepening 接近衰竭 → range-bound 至 modest flattening；油价 <b>$70-95</b> 区间、支撑低 $70s",
       headers:["券商","市场数据/目标区间","久期观点","曲线观点","油价/地缘","核心逻辑","交易建议"],
-      cols:["48px","20%","13%","13%","13%","21%","18%"],
+      cols:["88px","20%","13%","13%","13%","21%","18%"],
       rows:[
         ["Jefferies",
           ["fact","目标区间：5yr <b>4.42-4.50%</b> · 10yr <b>4.75-4.85%</b> · 20yr <b>5.25%</b> · 30yr <b>5.40%</b>"],
@@ -256,7 +256,7 @@ REPORT_DATA["2026-08-13"] = {
       id:"asia-ig", pri:true, title:"亚洲IG信用债",
       summary:"供给冲击分化：SBI 5Y T+88 成交但存量 India IG 走阔 2-3bp；China IG 1-2bp tighter；SGD financials 5-25c lower",
       headers:["券商","市场数据/表现","India IG","China/其他IG","新发","核心逻辑","交易建议"],
-      cols:["48px","18%","14%","14%","18%","20%","14%"],
+      cols:["88px","18%","14%","14%","18%","20%","14%"],
       rows:[
         ["HSBC",
           ["fact","India IG 2-3bp wider post SBI；SGD financials 5-25c lower on supply"],
@@ -286,7 +286,7 @@ REPORT_DATA["2026-08-13"] = {
       id:"asia-hy", pri:true, title:"亚洲HY信用债",
       summary:"Iran optimism 推 Asia HY 收于高位 +0.125-0.5pt，gaming 领涨；Renew complex +15c post privatization",
       headers:["券商","市场数据/表现","高收益表现","Japan/保险","主题/事件","核心逻辑","交易建议"],
-      cols:["48px","18%","16%","16%","16%","20%","14%"],
+      cols:["88px","18%","16%","16%","16%","20%","14%"],
       rows:[
         ["Barclays",
           ["fact","Asia HY 收于高位 <b>+0.125-0.5pt</b>，gaming 领涨"],
@@ -308,7 +308,7 @@ REPORT_DATA["2026-08-13"] = {
     {
       id:"asia-sov", pri:false, title:"亚洲主权及CDS",
       headers:["券商","市场数据/表现","亚洲主权","CDS","核心逻辑","交易建议"],
-      cols:["48px","20%","20%","20%","22%","18%"],
+      cols:["88px","20%","20%","20%","22%","18%"],
       rows:[
         ["Barclays",
           ["fact","Asia Sovs cash 0.125-0.375pt higher，利差 1-3bp tighter，net demand"],
