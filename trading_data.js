@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-13 09:34 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-13 17:05 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -5124,7 +5124,7 @@ window.REPORT_DATA =
       ],
       "qualityLog": [],
       "tone": {
-        "dir": "bullish",
+        "dir": "firm",
         "label": "CPI落地 · 曲线twist-steepening",
         "note": "供给退潮+CPI温和=信用利差压缩窗口，但USD/JPY 160干预和黑海+霍尔木兹双供给冲击需警惕"
       },
@@ -5138,7 +5138,7 @@ window.REPORT_DATA =
       ],
       "flow": {
         "sentiment": {
-          "dir": "bullish",
+          "dir": "firm",
           "label": "CPI落地 · 曲线twist-steepening",
           "note": "供给退潮+CPI温和=信用利差压缩窗口，但USD/JPY 160干预和黑海+霍尔木兹双供给冲击需警惕"
         },
