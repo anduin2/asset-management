@@ -405,10 +405,10 @@ REPORT_DATA["2026-08-13"] = {
 // ==================== 2026-08-14 ====================
 REPORT_DATA["2026-08-14"] = {
   dateCN: "2026年8月14日 星期五",
-  theme: "benign CPI 后 Asia 信用 slow grind — China IG firm vs Japan Corp 转弱（Asia 内部背离）",
-  meta: "覆盖券商：Barclays 2封（Asia Credit Trading Commentary + 美股WhiteFiber研报off-topic）+ Jefferies 1封（Asia HY EOD）· 共3封邮件 · 24h窗口",
+  theme: "benign CPI→PPI 双软 — 全球久期 bull-steepen vs 日本 BoJ 加息预期升温 + AUD 新发密集（长端T2倒挂修复）",
+  meta: "覆盖券商：Barclays 2封（Asia Credit EOD + 美股WhiteFiber off-topic）+ Jefferies 1封（Asia HY EOD）+ Morgan Stanley 1封（Global Macro：美/欧/日/EM 利率）+ TD 1封（AUD Credit）+ DB 1封（Aussie Credit）+ BMO 1封（TIPS）· 共7封邮件 · 24h窗口",
   brokers: [
-    {n:"Barclays",c:"b-barclays"},{n:"Jefferies",c:"b-jefferies"}
+    {n:"Barclays",c:"b-barclays"},{n:"Jefferies",c:"b-jefferies"},{n:"MS",c:"b-ms"},{n:"TD",c:"b-td"},{n:"DB",c:"b-db"},{n:"BMO",c:"b-bmo"}
   ],
   markets: [
     // 亚洲IG
@@ -479,9 +479,98 @@ REPORT_DATA["2026-08-14"] = {
           ["fact","尽管宏观 constructive，Japan Corp 仍转弱——与 China IG firm 形成 Asia 内部背离"],
           ["short","Japan Corp 转弱需警惕，NTT 被 offer 若持续则 Japan credit 承压"]]
       ]
+    },
+    // 美国利率
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"US 软 PPI（headline <b>0.0% m/m</b> vs +0.2% exp）触发美债 <b>bull-steepen</b>（10y -5bp 至 <b>4.64%</b>）；TIPS breakevens 收紧 <b>1.5-2.5bp</b>（油价β）；但 Fed 鹰派言论（Hammack 'need to act now'）压制长端",
+      headers:["券商","市场数据/表现","曲线/久期","通胀预期/TIPS","政策/Fed","核心逻辑","交易建议"],
+      cols:["88px","20%","16%","16%","16%","16%","14%"],
+      rows:[
+        ["MS",
+          ["fact","headline PPI 0.0% m/m（vs +0.2% exp）、core +0.2%（vs +0.3%）；初请 209k（vs 202k cons）；Brent -2.1% / WTI -2.4%"],
+          ["long","<span class='bull'>美债 bull-steepen</span>：10y -5.0bp 至 4.64% / 2y -5.9bp / 30y -4.5bp"],
+          ["fact","breakevens 收紧 2y -3.3bp / 10y -0.6bp"],
+          ["fact","9月加息概率 <40%；Hammack（Cleveland）鹰派 'need to act now'；Barkin 平衡；BoE Pill 鹰派；Norges Bank 维持 4.25%"],
+          ["fact","软 PPI + 初请高 → 加息预期降；但 Fed 鹰派言论 + 30yr supply 压制长端 → bull-steepen 而非 flat bull"],
+          ["long","bull-steepener 延续；Jackson Hole 前鹰派言论是长端主要风险"]],
+        ["BMO",
+          ["fact","TIPS breakevens 收紧 1.5-2.5bp（lower oil + nominal yields）"],
+          ["fact","30y real yield 在 <b>3.00%</b> 附近 chops；swaps 买 5s/10s、forwards 获利了结（5y5y/10y20y）"],
+          ["long","<span class='bull'>breakeven 油价β主导</span>：5y BEI 与油价几乎完全重合"],
+          ["fact","RM/FM morning better selling；10s 225 lvl dip buyers；午后更多 FM selling"],
+          ["fact","油价是 BEI 主导变量，油价企稳前 BEI 难独立上行"],
+          [""]]
+      ]
+    },
+    // 欧洲利率
+    {
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      summary:"EGBs rally（德 5y/10y <b>-3bp</b>）；意大利长端 outperformance（BTP/Bund 10y/30y <b>-2bp</b>）；UK gilt 全曲线 lower（5y -2bp，月度 GDP +0.3% 超预期）但 underperform 德国",
+      headers:["券商","市场数据/表现","核心利率/曲线","意大利/外围","英国","核心逻辑","交易建议"],
+      cols:["88px","18%","16%","16%","16%","16%","10%"],
+      rows:[
+        ["MS",
+          ["fact","EGBs rally：德 5y/10y ~-3bp；spot ~-2bp；inflation swaps 2y -2bp；期货 reds/greens -3bp"],
+          ["long","<span class='bull'>德债全曲线 rally</span>：前端 2s5s/5s10s ~1bp flatter，10s30s ~1bp steeper"],
+          ["long","<span class='bull'>意大利 outperformance</span>：10y/30y BTP-Bund ~2bp tighter"],
+          ["fact","UK gilt 全曲线 lower（5y -2bp），月度 GDP +0.3%（cons -0.1%）但 underperform 德国；RPI 前端 +2bp"],
+          ["fact","EGB 跟随油价下行 + US spillover，方向与美债一致但幅度更小"],
+          [""]]
+      ]
+    },
+    // 日本利率
+    {
+      id:"jp-rates", pri:false, title:"日本利率",
+      summary:"JGB cheapened（5y <b>+1.5bp</b> 至 2.12% / 10y <b>+2.0bp</b> 至 2.87% / 30y <b>+2.0bp</b> 至 4.01%）；Bloomberg 头条暗示政治支持加快 BoJ 加息，长端 underperform",
+      headers:["券商","市场数据/表现","曲线/长端","BoJ 政策","核心逻辑","交易建议"],
+      cols:["88px","22%","20%","20%","20%","18%"],
+      rows:[
+        ["MS",
+          ["fact","JGB cheapened：5y +1.5bp 至 2.12% / 10y +2.0bp 至 2.87% / 30y +2.0bp 至 4.01%"],
+          ["short","<span class='bear'>长端 underperform</span>（购债操作卖压 + 加息头条）；前端加息已 largely priced"],
+          ["fact","BoJ 购债 5-10y/25y+ 卖压上升（5-10y +0.6bp 无 tail）；Bloomberg 头条：政治支持加快加息；TONA-OIS paid"],
+          ["fact","美债 bull-steepen 但 JGB 因 BoJ 加息预期独立走弱——美日利率背离；XCCY basis tighten；USD/JPY 窄幅"],
+          ["short","日债长端承压，关注 JGB 熊陡 vs 美债 bull-steepen 的背离"]]
+      ]
+    },
+    // 新兴市场/亚洲利率
+    {
+      id:"em-rates", pri:false, title:"新兴市场及亚洲利率",
+      summary:"AxJ 货币大多走弱而利率 rally（油价 -2%）；TWD +0.3%（TAIEX +1.1%、MSCI 调升权重）；10y IndoGB <b>-3bp</b>；KRW -0.3%（KOSPI +3.6%）；CNH 稳定 6.7445",
+      headers:["券商","市场数据/表现","亚洲利率/FX","核心逻辑","交易建议"],
+      cols:["88px","30%","30%","24%","16%"],
+      rows:[
+        ["MS",
+          ["fact","AxJ 货币大多走弱、利率 rally（油价 -2%）；TWD +0.3%（$2bn 外资流入、TAIEX +1.1%、MSCI 调升权重）；USD/IDR 17877，10y IndoGB -3bp；KRW -0.3% 至 ~1422（KOSPI +3.6%）；INR -0.1%（7月贸易逆差超预期），INR NDOIS -3bp；USD/CNH 6.7445（CNY fixing 6.7888 略高）"],
+          ["fact","油价下跌主导 AxJ 利率 rally；TWD 受益 MSCI 权重调升；INR 受逆差拖累；LatAm COP +0.8% 领涨，BRL -0.27% 领跌"],
+          ["fact","亚洲利率跟随油价与美债下行，中国 CNH/FX 稳定"],
+          [""]]
+      ]
+    },
+    // 澳洲信用债
+    {
+      id:"aud-credit", pri:true, title:"澳洲信用债",
+      summary:"AUD 新发密集：ANZ 多期限（5Y <b>+72</b> / 15NC10 +165-170 / 20Y +180）+ CBA 3y + SSE；长端 T2 <b>20y 板块 12-15bp wider</b>（倒挂修复）；ORGAU H2 EBITDA <b>+9.8%</b>（Energy Markets +26.3% vs APLNG -19%）",
+      headers:["券商","市场数据/表现","银行/新发","T2/次级","核心逻辑","交易建议"],
+      cols:["88px","20%","22%","22%","20%","16%"],
+      rows:[
+        ["TD",
+          ["fact","3-5y major bank FRNs <b>~1bp wider</b>（better selling in HQ financials）"],
+          ["fact","CBA 新 3y 剩 ~1.5bp on table（trading ~1bp through issue）；ANZ 新 5y <b>+66/+67</b>（NIC vs 2031）"],
+          ["short","<span class='bear'>长端 T2 underperform</span>：20y 板块 <b>12-15bp wider</b>（此前 artificially rich/inverted）；WSTP T2 回到 reoffer（此前 +2bp tighter）；FV 15NC10 ~155 / 20y ~160"],
+          ["fact","新发密集推动 flow；长端 T2 倒挂修复/均值回归"],
+          ["fact","SSE 按 FV 定价 105/145，二级 +2bp tighter"]],
+        ["DB",
+          ["fact","ANZ 多期限 IPT：5Y senior <b>+72</b> / 15NC10 T2 +165-170 / 20Y T2 +180"],
+          ["fact","ANZ Q3FY26 cash profit AUD1.9bn（+1%）、NIM +1bp 至 1.54%、CET1 12.51%、LCR 131%"],
+          ["fact","DB FV：5Y +65-66 / 15NC10 +160（6.42% YTC）/ 20Y +165-170（6.69-6.74% YTC）"],
+          ["fact","ANZ 5Y IPT +72 vs FV +65-66 有 ~6bp 新发溢价；ORGAU Energy Markets +26.3% vs APLNG -19%"],
+          ["long","ORGAU 曲线便宜 vs BBB utilities，相对价值明确"]]
+      ]
     }
   ],
-  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","澳洲利率","欧洲利率","美国利率","美国IG信用债","美国HY信用债","澳门博彩信用债"],
+  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","澳洲利率","美国IG信用债","美国HY信用债","澳门博彩信用债"],
   divergences: {
     headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
     cols:["10%","16%","18%","18%","38%"],
@@ -489,13 +578,21 @@ REPORT_DATA["2026-08-14"] = {
       ["亚洲信用","Asia 内部方向 — China IG firm vs Japan Corp 转弱",
         ["long","<span class='bull'>Barclays (China IG)</span><br>1-2bp tighter<br>ETF 结构性买盘"],
         ["short","<span class='bear'>Barclays (Japan Corp)</span><br>1-2bp wider<br>首次 on-the-run 抛售"],
-        ["fact","<b>同报内 Asia 内部 firm vs weak 分化</b>。China HG 获 ETF better buying 全曲线 + TW lifer 2-3bp tighter（short covering）支撑；Japan Corp 却出现首次 on-the-run 抛售、NTT 被 offer，尽管宏观 constructive。可做多 China IG、回避/做空 Japan Corp 的配对交易"]]
+        ["fact","<b>同报内 Asia 内部 firm vs weak 分化</b>。China HG 获 ETF better buying 全曲线 + TW lifer 2-3bp tighter（short covering）支撑；Japan Corp 却出现首次 on-the-run 抛售、NTT 被 offer，尽管宏观 constructive。可做多 China IG、回避/做空 Japan Corp 的配对交易"]],
+      ["美国利率","数据 vs 政策 — 软PPI降息预期 vs Fed鹰派言论",
+        ["long","<span class='bull'>软PPI降息预期</span><br>headline 0.0% m/m<br>9月加息概率 <40%"],
+        ["short","<span class='bear'>Fed 鹰派言论</span><br>Hammack 'need to act now'<br>30yr supply 压制"],
+        ["fact","<b>数据（通胀下行）与政策（鹰派）方向相反</b>。MS 报软 PPI + 高初请 → 前端 risk-on，但 Hammack 鹰派 + 30yr supply 压制长端 → bull-steepen 而非 flat bull。长端多头需等待 Fed 言论转鸽或 supply 消化"]],
+      ["全球利率","美日背离 — 美债 bull-steepen vs JGB 熊陡",
+        ["long","<span class='bull'>美债 (MS)</span><br>10y -5bp 至 4.64%<br>软 PPI 降息预期"],
+        ["short","<span class='bear'>日债 (MS)</span><br>5y/10y/30y +1.5~2bp<br>BoJ 加息预期升温"],
+        ["fact","<b>同一宏观线索下美日利率反向</b>。软 PPI + 低油价推美债 bull-steepen，但 Bloomberg 头条暗示政治支持加快 BoJ 加息，叠加购债操作卖压，JGB 长端独立走弱（30y 至 4.01%）。美日利差方向性交易（long UST / short JGB）与 XCCY basis tighten 是核心线索"]]
     ]
   },
   footer: {
-    window:"2026-08-13 16:00 ~ 2026-08-14 12:00 (benign CPI 后 Asia EOD Aug 13)",
-    emailCount:"Barclays 2 / Jefferies 1（其中 Barclays 1 封美股 WhiteFiber 研报 off-topic 未计入）",
-    omitted:"中国利率、欧洲利率、美国利率、美国IG/HY、澳门博彩已在「无覆盖市场」汇总"
+    window:"2026-08-13 16:00 ~ 2026-08-14 12:00 (Asia EOD Aug 13 + US PPI Aug 13)",
+    emailCount:"Barclays 2 / Jefferies 1 / Morgan Stanley 1 / TD 1 / DB 1 / BMO 1（其中 Barclays 1 封美股 WhiteFiber 研报 off-topic 未计入）",
+    omitted:"中国利率、澳洲利率、美国IG/HY、澳门博彩已在「无覆盖市场」汇总"
   }
 };
 

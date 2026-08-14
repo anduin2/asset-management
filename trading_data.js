@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-13 17:05 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-14 15:20 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -4756,6 +4756,53 @@ window.REPORT_DATA =
               "tilt": "neg",
               "mode": "VIEW",
               "note": "BoJ 10月前加息概率超100%，JGB全线sold off，USD/JPY逼近160干预阴影重燃"
+            },
+            {
+              "date": "2026-08-13",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "政治支持加快BoJ加息，JGB全线sell off，long end underperform"
+            }
+          ]
+        }
+      ],
+      "days": [],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "description": "",
+      "tags": [
+        "Rates/FX"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "ppi-rates",
+      "assetClass": "Rates",
+      "name": "PPI与加息定价",
+      "topic": "PPI Positioning",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "7月PPI温和+油价下跌→9月加息概率<40%，bull-steepening但fiscal supply压制长端"
+            }
+          ]
+        },
+        {
+          "broker": "BMO",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "breakevens tightened 1.5-2.5bp，30y real yields chop around 3.00%"
             }
           ]
         }
@@ -4768,12 +4815,943 @@ window.REPORT_DATA =
       "days": [],
       "description": "",
       "tags": [
-        "Rates/FX"
+        "Rates"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "asia-hy",
+      "assetClass": "Asia Credit",
+      "name": "Asia HY compression",
+      "topic": "Asia HY Compression",
+      "brokerViews": [
+        {
+          "broker": "Barclays",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "Asia HY +0.125-0.5pt，spreads回YTD tights，GENTMK perps outperforming"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "Asia Credit"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "ig-squeeze",
+      "assetClass": "US IG",
+      "name": "IG TMT squeeze",
+      "topic": "TMT Squeeze",
+      "brokerViews": [
+        {
+          "broker": "Citi",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "pos",
+              "mode": "VIEW",
+              "note": "TMT squeeze持续，CHTR exchange 15+ tighter，hyperscalers at tights"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "US IG"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "aud-supply",
+      "assetClass": "AUD Financial",
+      "name": "AUD新发潮",
+      "topic": "AUD Primary Pipeline",
+      "brokerViews": [
+        {
+          "broker": "Deutsche Bank",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "neu",
+              "mode": "FORECAST",
+              "note": "ANZ 5Y公允+65-66，15NC10 +160，20Y +165-170，20Y需正斜率"
+            }
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "neu",
+              "mode": "COLOR",
+              "note": "CBA 3y left 1.5bps，WSTP T2回reoffer，20y T2 12-15bps wider"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "AUD Financial"
+      ],
+      "drivers": []
+    },
+    {
+      "id": "fed-bs",
+      "assetClass": "Rates",
+      "name": "Fed缩表RMP",
+      "topic": "NY Fed RMP Halt",
+      "brokerViews": [
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-13",
+              "tilt": "neg",
+              "mode": "COLOR",
+              "note": "RMP降至0，可能Warsh偏好更小资产负债表，9月15日tax deadline前宣布时机意外"
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "latestChange": "",
+      "lastSeen": "",
+      "firstSeen": "",
+      "evolution": "",
+      "days": [],
+      "description": "",
+      "tags": [
+        "Rates"
       ],
       "drivers": []
     }
   ],
   "days": [
+    {
+      "reportDate": "2026-08-14",
+      "coverage": {
+        "emails": 9,
+        "brokers": [
+          "Goldman Sachs",
+          "Morgan Stanley",
+          "Citi",
+          "Barclays",
+          "Deutsche Bank",
+          "TD Securities",
+          "BMO"
+        ],
+        "lookbackDays": 15,
+        "sourceDateNote": "8/13周四PPI日总结，9封。核心：7月PPI温和(headline 0.0%m/m/4.7%y/y)→9月加息概率降至<40%→全曲线bull-steepening。$25bn 30y拍卖tail 0.4bps at 5.216%(2001年来最高30y stop)。油价Brent -2.1%。JGB sell off on BoJ加息预期。NY Fed halt RMP。"
+      },
+      "signals": [
+        {
+          "id": "ppi-benign-0813",
+          "headline": "7月PPI温和：headline 0.0%m/m/4.7%y/y→9月加息概率降至<40%→全曲线bull-steepening",
+          "topic": "July PPI Print",
+          "assetClass": "Rates",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "CONFIRMED",
+            "SHIFT"
+          ],
+          "impactScore": 95,
+          "oneLine": "headline PPI 0.0%m/m(预期+0.2%)/4.7%y/y，core 0.2%m/m。9月加息概率降至<40%。US10y -5bp至4.643%，2y -5.9bp/30y -4.5bp bull-steepened，5s30s +2bp至89.6bp",
+          "evidence": "GS: tame July PPI + oil decline drove rates higher，US10y closed 5bp richer at 4.643%。MS: Soft US PPI lowers Fed hike odds，September hike below 40%",
+          "soWhat": "PPI温和+油价下跌双重缓解通胀，9月加息概率降至<40%标志紧缩叙事退潮。前端定价8.5bp加息、年内23bp，市场已大幅下修但未完全排除。CTA short covering放大rally。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "jgb-boj-0813",
+          "headline": "JGB sell off on BoJ加息预期：政治支持加快加息，5y+1.5bp/10y+2.0bp/30y+2.0bp",
+          "topic": "BoJ Hike Bets",
+          "assetClass": "Rates/Fx",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "SHIFT",
+            "MONITOR"
+          ],
+          "impactScore": 88,
+          "oneLine": "JGB 5y +1.5bp至2.12%，10y +2.0bp至2.87%，30y +2.0bp至4.01%。BoJ购买操作5-10y+25y+桶卖出压力增加。Bloomberg报道政治支持加快BoJ加息",
+          "evidence": "MS: Bloomberg headlines suggesting political support for faster pace of BoJ rate hikes，long end underperformed。GS: profit-taking在super-long/5y sector",
+          "soWhat": "BoJ加息预期升温是独立于美国的日本利率叙事，政治支持加快加息是新催化。长期端underperform反映重定价。若BoJ提前加息，USD/JPY承压，carry trade进一步解除。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "chgrid-cnh-0813",
+          "headline": "China IG CHGRID CNH新发强：20yr +2.5pts/10yr +1.5pts，Asia HY compression回YTD tights",
+          "topic": "China IG New Issue",
+          "assetClass": "Asia Credit",
+          "brokers": [
+            "Barclays"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "PRICING",
+            "FLOW"
+          ],
+          "impactScore": 82,
+          "oneLine": "CHGRID CNH新发20yr +2.5pts higher than reoffer，10yr +1.5pts higher，local accounts需求/HF卖出。Asia HY +0.125-0.5pt，spreads回YTD tights，GENTMK perps outperforming",
+          "evidence": "Barclays: CHGRID CNH 20yr 2.5pts higher，10yr 1.5pts higher。demand from local accounts，sellers HF。high beta laggards finding a bid",
+          "soWhat": "CHGRID CNH强表现显示中国IG一级需求深度，Asia HY compression回YTD tights反映风险偏好持续修复。Genting earnings non-event但GENTMK仍outperform=结构性买盘。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "ust-30y-auction-0813",
+          "headline": "$25bn 30y拍卖tail 0.4bps at 5.216%(2001年来最高30y stop)，non-dealer in-line",
+          "topic": "UST Supply",
+          "assetClass": "Rates",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "FLOW",
+            "COLOR"
+          ],
+          "impactScore": 80,
+          "oneLine": "$25bn 30y拍卖tail 0.4bps at 5.216%为2001年来最高30y stop，non-dealer in-line。30y -4.5bp跑输2y -5.9bp，长端受fiscal supply压制",
+          "evidence": "GS: $25b 30y auction tailed 0.4bps at 5.216% (highest since 2001)。MS: fiscal supply kept Treasury long end from fully participating",
+          "soWhat": "5.216%历史高位30y stop + tail显示长端供给仍承压，即使PPI温和+油价下跌。fiscal supply是bull-steepening而非全面rally的结构性成因。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "nyfed-rmp-0813",
+          "headline": "NY Fed halt RMP：降至0，reinvestments继续~$17bn，MS解读为Warsh偏好更小资产负债表",
+          "topic": "Fed Balance Sheet",
+          "assetClass": "Rates",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "direction": "Bearish",
+          "signalType": [
+            "POLICY",
+            "MONITOR"
+          ],
+          "impactScore": 78,
+          "oneLine": "NY Fed将RMP未来一个月降至0，reinvestments继续~$17bn。RMP去年12月$40bn/mo起，4月$25bn、5月$10bn递减。9月15日tax deadline前宣布时机意外",
+          "evidence": "MS: NY Fed announced reduction in RMP all the way to zero，reinvestments continue at ~$17bln。timing right before Sep 15 tax deadline felt surprising",
+          "soWhat": "RMP降至0表面反映Fed对repo韧性信心，但可能是Warsh偏好更小资产负债表。若funding strain出现，重启购买或不如前任顺利=流动性尾部风险。front-end spreads出现kneejerk selling。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "aud-supply-0813",
+          "headline": "AUD新发潮：CBA 3y +1bp concession，ANZ 5y IPT ASW+72，15NC10 T2 +160/20Y T2 +165-170，SSE 105/145",
+          "topic": "AUD Primary Pipeline",
+          "assetClass": "Aud Financial",
+          "brokers": [
+            "Deutsche Bank",
+            "TD Securities"
+          ],
+          "direction": "Neutral",
+          "signalType": [
+            "PRICING",
+            "COLOR"
+          ],
+          "impactScore": 76,
+          "oneLine": "CBA 3y left 1.5bps on table。ANZ 5Y snr IPT ASW+72(公允+65-66)、15NC10 T2(公允+160)、20Y T2(公允+165-170)。SSE定价105/145，traded 2bp tighter",
+          "evidence": "TD: CBA new 3y left 1.5bps。ANZ 5y likely +66/+67。DB: ANZ 5Y fair +65-66，15NC10 +160，20Y +165-170。SSE priced at 105/145",
+          "soWhat": "AUD新发三线并进(CBA senior/ANZ multi-tranche/SSE utility)。20Y T2二级曲线inverted但一级需正斜率吸引AM需求=供给结构矛盾。WSTP T2回落至reoffer显示新发抢跑卖压。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "citi-tmt-tpr-0813",
+          "headline": "Citi IG TMT squeeze延续：CHTR exchange 15+tighter，TPR 4Q26 decent但FY27指引不如预期",
+          "topic": "US IG Credit",
+          "assetClass": "Us Ig",
+          "brokers": [
+            "Citi"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "FLOW",
+            "VIEW"
+          ],
+          "impactScore": 74,
+          "oneLine": "500mm+ TMT trading，spreads mixed但squeeze持续。CHTR exchange 15+ tighter vs new deal，hyperscalers closing at tights。TPR Adj EPS $1.32 beat $1.27，Coach +15% offset Kate Spade -7%",
+          "evidence": "Citi: chrt exchange bonds issued last Fri now 15+ tighter。cash deployed across longer duration hyperscalers at tights。TPR: Adj EPS $1.32 vs $1.27",
+          "soWhat": "TMT squeeze延续，供给overhang(除datacenter)消退，cash仍部署长端hyperscalers。TPR信用面稳健(leverage 1.1x)但FY27指引不如预期触发equity负向反应，spread影响有限。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        },
+        {
+          "id": "oil-relief-0813",
+          "headline": "油价下跌+无重大地缘负面：Brent -2.1%/WTI -2.4%，S&P 500创新高，Energy -0.1%垫底",
+          "topic": "Oil Decline",
+          "assetClass": "Macro/Equity",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "direction": "Bullish",
+          "signalType": [
+            "GEOPOLITICAL",
+            "SHIFT"
+          ],
+          "impactScore": 72,
+          "oneLine": "Brent -2.1%/WTI -2.4%。S&P 500 +0.7%创新高，Nasdaq +0.8%。Comm Services +1.6%/RE +1.3%/Tech +1.0%领涨，Materials -0.7%/Energy -0.1%垫底。DXY 99.96，VIX +0.5%至14.63",
+          "evidence": "MS: Brent fell 2.1%，S&P 500 hit record +0.7%。GS: diesel not crude remains cleaner geopolitical hedge",
+          "soWhat": "油价下跌+地缘缓和是第二个通胀缓解引擎，支撑美股创新高。GS提示diesel比crude是更干净的地缘对冲=市场未完全定价地缘风险消退。VIX低水平+美股历史高位=潜在脆弱点。",
+          "date": "2026-08-14",
+          "priorState": "No prior state available.",
+          "quote": ""
+        }
+      ],
+      "brokerNotes": [
+        {
+          "broker": "Goldman Sachs",
+          "stance": "neutral",
+          "asset_class": "Macro",
+          "summary": "US rates全曲线rally，7月PPI温和+油价下跌驱动，CTA short covering放大。US10y -5bp至4.643%，5s30s +2bp至89.6bp。$25bn 30y拍卖tail 0.4bps at 5.216%(2001最高)。前端9月定价8.5bp、年内23bp。Bunds 2.5bp richer，Norges Bank维持4.25%但未重申6月路径。JGB先firmer后soften。Yen carry: diminished not finished。Diesel not crude是更干净地缘对冲。",
+          "emails": 1,
+          "sourceRefs": [
+            "Goldman Sachs 2026-08-14"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "stance": "neutral",
+          "asset_class": "Macro",
+          "summary": "7月PPI温和→9月加息概率<40%，UST bull-steepened。S&P 500创新高。JGB sell off on BoJ加息预期。NY Fed halt RMP降至0，可能Warsh偏好更小资产负债表。已覆盖大部分delta shorts，偏September pause/steeper curve。",
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-08-14"
+          ]
+        },
+        {
+          "broker": "Citi",
+          "stance": "bullish",
+          "asset_class": "US IG",
+          "summary": "IG TMT squeeze延续，CHTR exchange 15+ tighter。hyperscalers closing at tights。TPR 4Q26 decent：Adj EPS $1.32 beat，Coach +15% offset Kate Spade -7%，leverage 1.1x，FY27指引不如预期但信用面稳健。",
+          "emails": 1,
+          "sourceRefs": [
+            "Citi 2026-08-14"
+          ]
+        },
+        {
+          "broker": "Barclays",
+          "stance": "neutral",
+          "asset_class": "Asia Credit",
+          "summary": "China IG慢session，CHGRID CNH新发20yr +2.5pts/10yr +1.5pts。Asia HY +0.125-0.5pt compression回YTD tights，GENTMK perps outperforming。Asia CDS active，itraxx -0.25bp。Wuhan Jiangxia CNY 3Y IPT 4.1%。HSI -1.0%/NIFTY -0.3%。",
+          "emails": 1,
+          "sourceRefs": [
+            "Barclays 2026-08-14"
+          ]
+        },
+        {
+          "broker": "Deutsche Bank",
+          "stance": "neutral",
+          "asset_class": "AUD Credit",
+          "summary": "ANZ multi-tranche：5Y snr IPT ASW+72(公允+65-66)、15NC10 T2(公允+160)、20Y T2(公允+165-170)。ANZ Q3FY26 cash profit AUD1.9bn +1%，NIM +1bp至1.54%，CET1 12.51%。ORGAU H2FY26 EBITDA +9.8%，Energy Markets +26.3%驱动，leverage 2.0x，curve cheap vs generic BBB utilities。",
+          "emails": 1,
+          "sourceRefs": [
+            "Deutsche Bank 2026-08-14"
+          ]
+        },
+        {
+          "broker": "TD Securities",
+          "stance": "neutral",
+          "asset_class": "AUD Credit",
+          "summary": "AUD新发潮驱动flows。HQ financials better selling，3-5y major bank FRNs 1bp wider。CBA 3y left 1.5bps。ANZ 5y likely +66/+67。WSTP T2回reoffer，20y T2 12-15bps wider，15NC10公允~155/20y~160。SSE定价105/145，traded 2bp tighter。",
+          "emails": 1,
+          "sourceRefs": [
+            "TD Securities 2026-08-14"
+          ]
+        },
+        {
+          "broker": "BMO",
+          "stance": "neutral",
+          "asset_class": "TIPS/Inflation",
+          "summary": "breakevens tightened 1.5-2.5bp，lower oil和nominal yields驱动，breaks closely tracked energy。30y real yields chop around 3.00%，long end outright lackluster。swaps mixed，5s/10s buying offset forwards profit taking。",
+          "emails": 1,
+          "sourceRefs": [
+            "BMO 2026-08-14"
+          ]
+        }
+      ],
+      "dataChecks": [
+        {
+          "topic": "July PPI Print",
+          "status": "Confirmed",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "brokers_disagree": "无",
+          "note": "两家一致：7月PPI温和，headline 0.0%m/m(预期+0.2%)，9月加息概率降至<40%"
+        },
+        {
+          "topic": "UST Bull-Steepening",
+          "status": "Confirmed",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "brokers_disagree": "无",
+          "note": "两家一致：bull-steepened，2y -5.9bp/30y -4.5bp，5s30s +2bp，长端因fiscal supply未充分参与"
+        },
+        {
+          "topic": "$25bn 30y拍卖tail",
+          "status": "Confirmed",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "brokers_disagree": "无",
+          "note": "两家一致：tail 0.4bps at 5.216%为2001年来最高30y stop"
+        },
+        {
+          "topic": "JGB Sell Off on BoJ",
+          "status": "Confirmed",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "brokers_disagree": "无",
+          "note": "两家一致：JGB全线sell off，BoJ加息预期升温，long end underperform"
+        },
+        {
+          "topic": "ANZ新发公允值",
+          "status": "Monitor",
+          "brokers": [
+            "Deutsche Bank",
+            "TD Securities"
+          ],
+          "brokers_disagree": "5Y公允DB +65-66 vs TD +66/+67，差异1bp",
+          "note": "两家接近：ANZ 5Y公允+65-67，15NC10 ~+160，20Y +165-170"
+        }
+      ],
+      "qualityLog": [],
+      "tone": {
+        "dir": "firm",
+        "label": "PPI温和 · 油价下跌 · bull-steepening",
+        "note": "通胀缓解叙事强化，但fiscal supply压制长端、BoJ政治化加息、NY Fed halt RMP三风险并存"
+      },
+      "macro": [
+        "7月PPI：headline 0.0%m/m(预期+0.2%)/4.7%y/y，core 0.2%m/m(预期+0.3%)",
+        "9月美联储加息概率降至<40%，前端定价8.5bp，年内23bp",
+        "$25bn 30y拍卖tail 0.4bps at 5.216%为2001年来最高30y stop",
+        "Brent -2.1%/WTI -2.4%，S&P 500 +0.7%创新高，Nasdaq +0.8%，DXY 99.96持平",
+        "JGB 5y +1.5bp/10y +2.0bp/30y +2.0bp，Bloomberg报道政治支持加快BoJ加息",
+        "Norges Bank维持4.25%，未重申6月路径，GS仍预期9月+25bp但高度数据依赖",
+        "NY Fed halt RMP降至0，reinvestments继续~$17bn，9月15日tax deadline前宣布",
+        "UK Q2 GDP +0.4%，June +0.3%超预期，BoE Pill称经济韧性支持加息"
+      ],
+      "flow": {
+        "sentiment": {
+          "dir": "firm",
+          "label": "PPI温和 · 油价下跌 · bull-steepening",
+          "note": "通胀缓解叙事强化，但fiscal supply压制长端、BoJ政治化加息、NY Fed halt RMP三风险并存"
+        },
+        "activeNames": [
+          {
+            "name": "CHGRID CNH New Issue",
+            "ticker": "CHGRID",
+            "tone": "buy",
+            "activity": "20yr +2.5pts/10yr +1.5pts higher than reoffer，local accounts需求强劲",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "GENTMK Perps",
+            "ticker": "GENTMK",
+            "tone": "buy",
+            "activity": "perps outperforming，Genting earnings non-event，two-way flows",
+            "brokers": [
+              "Barclays"
+            ]
+          },
+          {
+            "name": "CHTR Exchange Bonds",
+            "ticker": "CHTR",
+            "tone": "buy",
+            "activity": "exchange bonds 15+ tighter vs new deal，TMT squeeze",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "Hyperscalers (ORCL/SPCX)",
+            "ticker": "ORCL/SPCX",
+            "tone": "buy",
+            "activity": "cash deployed长端hyperscalers at tights，off tights因40+bp move后fill in",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "TPR (Tapestry)",
+            "ticker": "TPR",
+            "tone": "buy",
+            "activity": "4Q26 decent，Adj EPS $1.32 beat，Coach +15% offset Kate Spade -7%",
+            "brokers": [
+              "Citi"
+            ]
+          },
+          {
+            "name": "CBA 3Y New Issue",
+            "ticker": "CBAAU",
+            "tone": "mixed",
+            "activity": "left 1.5bps on table，trading 1bp through issue levels",
+            "brokers": [
+              "TD Securities"
+            ]
+          },
+          {
+            "name": "ANZ Multi-Tranche",
+            "ticker": "ANZAU",
+            "tone": "mixed",
+            "activity": "5Y snr IPT ASW+72，15NC10 T2 +165-170，20Y T2 +180",
+            "brokers": [
+              "Deutsche Bank",
+              "TD Securities"
+            ]
+          },
+          {
+            "name": "SSE New Issue",
+            "ticker": "SSE",
+            "tone": "buy",
+            "activity": "priced 105/145 in line with FV，traded 2bp tighter in secondary",
+            "brokers": [
+              "TD Securities"
+            ]
+          }
+        ],
+        "drivers": [
+          {
+            "broker": "Morgan Stanley",
+            "type": "PPI & Oil Relief",
+            "summary": "7月PPI温和+油价Brent -2.1%双重缓解通胀，9月加息概率降至<40%，驱动全曲线bull-steepening"
+          },
+          {
+            "broker": "Goldman Sachs",
+            "type": "CTA Short Covering",
+            "summary": "CTA short covering放大UST rally，US10y -5bp至4.643%，5s30s +2bp"
+          },
+          {
+            "broker": "Morgan Stanley",
+            "type": "BoJ Hike Bets",
+            "summary": "Bloomberg报道政治支持加快BoJ加息，JGB全线sell off，long end underperform"
+          },
+          {
+            "broker": "Barclays",
+            "type": "Asia Credit Compression",
+            "summary": "Asia HY spreads grinding back to YTD tights，high beta laggards finding a bid"
+          },
+          {
+            "broker": "Deutsche Bank",
+            "type": "AUD Supply Wave",
+            "summary": "CBA/ANZ/SSE新发三线并进，20Y T2二级inverted但一级需正斜率定价"
+          },
+          {
+            "broker": "Morgan Stanley",
+            "type": "Fed RMP Halt",
+            "summary": "NY Fed将RMP降至0，可能反映Warsh偏好更小资产负债表，9月15日tax deadline前宣布"
+          },
+          {
+            "broker": "BMO",
+            "type": "Breakeven Compression",
+            "summary": "breakevens tightened 1.5-2.5bp，lower oil和nominal yields，30y real yields chop 3.00%"
+          }
+        ]
+      },
+      "issuers": [
+        {
+          "name": "ANZ",
+          "ticker": "ANZAU",
+          "sector": "Australian Bank",
+          "note": "multi-tranche：5Y snr IPT ASW+72，15NC10 T2 +165-170，20Y T2 +180。Q3FY26 cash profit AUD1.9bn +1%，NIM 1.54%，CET1 12.51%",
+          "inFocus": true,
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "CBA",
+          "ticker": "CBAAU",
+          "sector": "Australian Bank",
+          "note": "3Y senior left 1.5bps on table，trading 1bp through issue",
+          "inFocus": true,
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Tapestry (TPR)",
+          "ticker": "TPR",
+          "sector": "Consumer",
+          "note": "4Q26 Adj EPS $1.32 beat，Coach +15% offset Kate Spade -7%，leverage 1.1x",
+          "inFocus": true,
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        },
+        {
+          "name": "Origin Energy (ORGAU)",
+          "ticker": "ORGAU",
+          "sector": "Utility",
+          "note": "H2FY26 EBITDA +9.8%至AUD1.6bn，Energy Markets +26.3%，leverage 2.0x，curve cheap vs BBB utilities",
+          "inFocus": true,
+          "region": "APAC",
+          "ccy": "CNY",
+          "assetClass": "",
+          "sovereign": false,
+          "newIssue": false,
+          "priority": "Medium",
+          "flow": "",
+          "quote": "",
+          "analysis": "",
+          "excludeReason": ""
+        }
+      ],
+      "insights": [
+        {
+          "broker": "Morgan Stanley",
+          "topic": "Fed暂停与曲线",
+          "point": "已覆盖大部分delta shorts，偏September pause/steeper curve，若Fed 9月不动，10月加息因中期选举临近更不可能",
+          "quote": "raising the bar for a September rate hike"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "Yen Carry",
+          "point": "日元carry仓位diminished not finished，政治推动BoJ加息是最大尾部风险",
+          "quote": "Yen Carry Positioning: Diminished, Not Finished"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "topic": "地缘对冲",
+          "point": "diesel比crude是更干净的地缘对冲，市场未完全定价地缘风险消退",
+          "quote": "Diesel, Not Crude, Remains the Cleaner Geopolitical Hedge"
+        },
+        {
+          "broker": "Morgan Stanley",
+          "topic": "流动性尾部风险",
+          "point": "RMP降至0可能反映Warsh更小资产负债表偏好，未来repo strain重启购买或不如前任顺利",
+          "quote": "a subtle reflection of Warsh's preference for a smaller balance sheet"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "topic": "AUD T2供给结构",
+          "point": "20Y T2二级inverted但一级需正斜率定价，供给压力下curve难维持",
+          "quote": "we expect ANZ to maintain a positive curve to attract asset manager demand"
+        }
+      ],
+      "top_conclusions": [
+        {
+          "conclusion": "7月PPI温和+油价下跌双重缓解通胀，9月美联储加息概率降至<40%，紧缩叙事进一步退潮",
+          "confidence": "high",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ]
+        },
+        {
+          "conclusion": "全曲线bull-steepening而非全面rally，$25bn 30y拍卖5.216%历史高位tail显示长端fiscal supply压制",
+          "confidence": "high",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ]
+        },
+        {
+          "conclusion": "BoJ加息预期政治化升温是独立尾部风险，JGB长期端sell off，USD/JPY与carry trade承压",
+          "confidence": "medium",
+          "brokers": [
+            "Morgan Stanley"
+          ]
+        },
+        {
+          "conclusion": "Asia HY compression回YTD tights + CHGRID CNH新发强，风险偏好持续修复",
+          "confidence": "medium",
+          "brokers": [
+            "Barclays"
+          ]
+        },
+        {
+          "conclusion": "NY Fed halt RMP可能反映Warsh更小资产负债表偏好，构成流动性尾部风险",
+          "confidence": "medium",
+          "brokers": [
+            "Morgan Stanley"
+          ]
+        }
+      ],
+      "broker_takeaways": [
+        {
+          "broker": "Morgan Stanley",
+          "asset_class": "Rates",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "UST/PPI",
+          "key_takeaway_cn": "7月PPI温和→9月加息概率<40%，bull-steepening但fiscal supply压制长端，已覆盖delta shorts偏pause/steeper",
+          "why_it_matters_cn": "若Fed 9月暂停，10月加息因中期选举临近更不可能，前端利率下修空间打开"
+        },
+        {
+          "broker": "Goldman Sachs",
+          "asset_class": "Macro",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "Global Rates",
+          "key_takeaway_cn": "PPI温和+油价下跌驱动全曲线rally，CTA short covering放大，但30y拍卖5.216%历史高位tail",
+          "why_it_matters_cn": "fiscal supply是bull-steepening的结构性成因，长端未充分参与rally"
+        },
+        {
+          "broker": "Barclays",
+          "asset_class": "Asia Credit",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "Asia HY",
+          "key_takeaway_cn": "Asia HY compression回YTD tights，CHGRID CNH新发20yr +2.5pts，GENTMK perps outperforming",
+          "why_it_matters_cn": "中国IG一级需求深度+风险偏好持续修复，high beta laggards被bid"
+        },
+        {
+          "broker": "Citi",
+          "asset_class": "US IG",
+          "stance": "bullish",
+          "direction_cn": "看多",
+          "product_theme": "TMT Squeeze",
+          "key_takeaway_cn": "TMT squeeze延续，CHTR exchange 15+ tighter，hyperscalers closing at tights",
+          "why_it_matters_cn": "供给overhang消退，cash部署长端hyperscalers，squeeze动能未竭"
+        },
+        {
+          "broker": "Deutsche Bank",
+          "asset_class": "AUD Credit",
+          "stance": "neutral",
+          "direction_cn": "中性",
+          "product_theme": "AUD Primary",
+          "key_takeaway_cn": "ANZ 5Y公允+65-66，15NC10 +160，20Y +165-170，20Y需正斜率定价吸引AM",
+          "why_it_matters_cn": "AUD新发供给潮考验需求深度，20Y T2二级inverted与一级定价矛盾"
+        }
+      ],
+      "cross_broker": [
+        {
+          "theme": "PPI与加息路径",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley",
+            "BMO"
+          ],
+          "consensus": "7月PPI温和→9月加息概率<40%，紧缩叙事退潮",
+          "divergence": "无实质分歧，MS偏September pause，GS仍预期Norges 9月+25bp"
+        },
+        {
+          "theme": "长端供给压制",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "consensus": "$25bn 30y拍卖5.216%历史高位tail，fiscal supply压制长端",
+          "divergence": "无"
+        },
+        {
+          "theme": "BoJ加息",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "consensus": "JGB全线sell off，BoJ加息预期升温",
+          "divergence": "无，均视为独立尾部风险"
+        },
+        {
+          "theme": "AUD新发公允值",
+          "brokers": [
+            "Deutsche Bank",
+            "TD Securities"
+          ],
+          "consensus": "ANZ 5Y公允+65-67",
+          "divergence": "DB +65-66 vs TD +66/+67，1bp差异"
+        }
+      ],
+      "edges": [
+        {
+          "edge_type": "SHIFT",
+          "subject_label": "PPI温和推翻紧缩叙事",
+          "finding": "7月PPI headline 0.0%m/m(预期+0.2%)+油价Brent -2.1%，9月加息概率从高位降至<40%，UST bull-steepened",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "evidence": "GS: tame July PPI + oil decline drove rates higher。MS: Soft US PPI lowers Fed hike odds below 40%",
+          "edge_score": 5,
+          "why_it_matters": "紧缩叙事退潮是利率方向的核心拐点，前端下修空间打开",
+          "basis": "事实"
+        },
+        {
+          "edge_type": "NON_CONSENSUS",
+          "subject_label": "NY Fed halt RMP=Warsh更小资产负债表",
+          "finding": "RMP降至0表面反映repo韧性信心，但MS解读可能是Warsh偏好更小资产负债表的微妙信号",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "a subtle reflection of Warsh's preference for a smaller balance sheet",
+          "edge_score": 4,
+          "why_it_matters": "未来repo strain重启购买或不如前任顺利=流动性尾部风险",
+          "basis": "推断"
+        },
+        {
+          "edge_type": "FIRST_CALL",
+          "subject_label": "政治推动BoJ加息",
+          "finding": "Bloomberg报道政治支持加快BoJ加息，JGB长期端sell off，这是独立于美国的日本利率新催化",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "Bloomberg headlines suggesting political support for faster pace of BoJ rate hikes",
+          "edge_score": 4,
+          "why_it_matters": "若BoJ提前加息，USD/JPY承压，carry trade进一步解除",
+          "basis": "事实"
+        },
+        {
+          "edge_type": "CONVICTION_GAP",
+          "subject_label": "30y拍卖历史高位tail",
+          "finding": "$25bn 30y拍卖tail 0.4bps at 5.216%为2001年来最高stop，即使PPI温和长端仍受fiscal supply压制",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "evidence": "highest 30y stop since 2001",
+          "edge_score": 3,
+          "why_it_matters": "bull-steepening而非全面rally，长端相对价值存疑",
+          "basis": "事实"
+        },
+        {
+          "edge_type": "IMPLICIT",
+          "subject_label": "diesel是更干净地缘对冲",
+          "finding": "GS提示diesel而非crude是更干净的地缘对冲，暗示市场未完全定价地缘风险消退",
+          "brokers": [
+            "Goldman Sachs"
+          ],
+          "evidence": "Diesel, Not Crude, Remains the Cleaner Geopolitical Hedge",
+          "edge_score": 3,
+          "why_it_matters": "VIX低水平+美股历史高位=地缘重新升级的脆弱点",
+          "basis": "推断"
+        }
+      ],
+      "broker_shifts": [
+        {
+          "broker": "Morgan Stanley",
+          "date_from": "2026-08-12",
+          "date_to": "2026-08-13",
+          "shift_type": "view_shift",
+          "product_theme": "Fed利率路径",
+          "previous_view": "duration shorts持有",
+          "current_view": "已覆盖大部分delta shorts，偏September pause/steeper curve",
+          "evidence": "I have covered most of my delta shorts for now，while remaining biased towards a September pause/steeper curve",
+          "importance": "High"
+        }
+      ],
+      "alert_flags": [
+        {
+          "level": "HIGH",
+          "alert_type": "地缘/供给",
+          "flag": "USD/JPY逼近160 + BoJ政治化加息，carry trade尾部风险",
+          "brokers": [
+            "Morgan Stanley",
+            "Goldman Sachs"
+          ],
+          "evidence": "Bloomberg报道政治支持加快BoJ加息，Yen carry diminished not finished",
+          "severity": "high"
+        },
+        {
+          "level": "MEDIUM",
+          "alert_type": "流动性",
+          "flag": "NY Fed halt RMP降至0，9月15日tax deadline前时机意外",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "reinitiating these purchases when funding strains arise may not be as smooth",
+          "severity": "medium"
+        },
+        {
+          "level": "MEDIUM",
+          "alert_type": "供给",
+          "flag": "30y拍卖5.216%历史高位tail，长端fiscal supply压制持续",
+          "brokers": [
+            "Goldman Sachs",
+            "Morgan Stanley"
+          ],
+          "evidence": "highest 30y stop since 2001",
+          "severity": "medium"
+        },
+        {
+          "level": "LOW",
+          "alert_type": "估值",
+          "flag": "VIX 14.63低水平 + S&P 500历史高位，地缘重新升级脆弱点",
+          "brokers": [
+            "Morgan Stanley"
+          ],
+          "evidence": "VIX edged 0.5% higher to 14.63",
+          "severity": "low"
+        }
+      ]
+    },
     {
       "reportDate": "2026-08-13",
       "coverage": {
@@ -19185,34 +20163,6 @@ window.REPORT_DATA =
           "quote": "FOMC周三前降低risk→不追涨→sell on strength→等待decision后方向→周二关注5yr auction→周五hold→周三FOMC decision→关注PKSTAN selective long"
         }
       ],
-      "top_conclusions": [],
-      "broker_takeaways": [],
-      "cross_broker": [],
-      "edges": [],
-      "broker_shifts": [],
-      "alert_flags": []
-    },
-    {
-      "reportDate": "2026-07-25",
-      "coverage": {
-        "emails": 0,
-        "brokers": [],
-        "lookbackDays": 15,
-        "sourceDateNote": ""
-      },
-      "signals": [],
-      "brokerNotes": [],
-      "dataChecks": [],
-      "qualityLog": [],
-      "tone": {
-        "dir": "mixed",
-        "label": "两向偏弱",
-        "note": ""
-      },
-      "macro": [],
-      "flow": null,
-      "issuers": [],
-      "insights": [],
       "top_conclusions": [],
       "broker_takeaways": [],
       "cross_broker": [],
