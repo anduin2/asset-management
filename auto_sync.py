@@ -31,6 +31,18 @@ def find_latest_macro_matrix():
         files = sorted(macro_dir.glob("固定收益宏观日报.html"))
     return files[0] if files else None
 
+# 板块友好名称（通知/日志用）
+BOARD_NAMES = {
+    "intel.html": "卖方每日情报",
+    "deposit.html": "每日存款报价汇总",
+    "repo.html": "每日 REPO 报价汇总",
+    "交易台报告.html": "交易台报告",
+    "trading_data.js": "交易台数据",
+    "ca-report.html": "Corporate Actions",
+    "macro-dashboard.html": "宏观指标仪表盘",
+    "macro-matrix.html": "宏观矩阵日报",
+}
+
 AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
 INJECT_BLOCK = f'{AUTH_TAG}\n{REFRESH_TAG}'
@@ -62,16 +74,34 @@ def load_notify_config():
             print(f"  [notify] notify_config.json 解析失败: {e}")
     return cfg
 
-def build_summary(changed_files, commit_hash):
-    """把本次变更摘要拼成一段文本（企业微信/邮件共用）"""
+def build_summary(board_results, commit_hash):
+    """把本次板块变更摘要拼成一段文本（企业微信/邮件共用）。
+    board_results: [(name, status, size_kb)]，status ∈ updated/same/miss"""
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    lines = "\n".join(f"· {name}（{size:.0f} KB）" for name, size in changed_files)
-    return (
-        f"同步时间：{now}\n"
-        f"Commit：{commit_hash}\n"
-        f"更新文件：\n{lines}\n"
-        f"在线查看：{PAGES_URL}"
-    )
+    updated, unchanged, missing = [], [], []
+    for name, status, size_kb in board_results:
+        friendly = BOARD_NAMES.get(name, name)
+        if status == "updated":
+            updated.append(f"· {friendly}（{size_kb:.0f} KB）")
+        elif status == "same":
+            unchanged.append(f"· {friendly}")
+        else:
+            missing.append(f"· {friendly}")
+
+    parts = [f"状态：✅ 部署成功", f"同步时间：{now}", f"Commit：{commit_hash}", ""]
+    parts.append(f"✅ 已更新（{len(updated)}）：")
+    parts.extend(updated)
+    if unchanged:
+        parts.append("")
+        parts.append(f"⏸ 未更新（{len(unchanged)}）：")
+        parts.extend(unchanged)
+    if missing:
+        parts.append("")
+        parts.append(f"⚠️ 源文件缺失（{len(missing)}）：")
+        parts.extend(missing)
+    parts.append("")
+    parts.append(f"在线查看：{PAGES_URL}")
+    return "\n".join(parts)
 
 def send_wecom_notification(summary):
     """推送成功后发到企业微信群机器人。未配置时仅告警不阻断。"""
@@ -97,8 +127,8 @@ def send_wecom_notification(summary):
         print(f"  [notify] 企业微信通知失败: {e}")
         return False
 
-def send_serverchan_notification(summary):
-    """推送成功后发到个人微信（Server酱）。未配置时仅告警不阻断。"""
+def send_serverchan_notification(summary, title="【资管项目】部署成功"):
+    """发到个人微信（Server酱）。未配置时仅告警不阻断。title 可自定义（成功/失败）。"""
     cfg = load_notify_config()
     sendkey = cfg.get("serverchan_sendkey", "")
     if not sendkey:
@@ -106,7 +136,7 @@ def send_serverchan_notification(summary):
         return False
     url = f"https://sctapi.ftqq.com/{sendkey}.send"
     data = urllib.parse.urlencode({
-        "title": "【资管项目】报告已更新",
+        "title": title,
         "desp": summary,
     }).encode("utf-8")
     req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
@@ -127,6 +157,35 @@ def notify(summary):
     send_wecom_notification(summary)
     send_serverchan_notification(summary)
     send_notification(summary)
+
+def send_failure_notification(error_msg):
+    """git 提交/推送失败时发告警到微信，确保用户知道上传失败。"""
+    summary = (
+        f"状态：❌ 部署失败\n"
+        f"时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        f"错误信息：\n{error_msg}\n"
+    )
+    send_serverchan_notification(summary, title="【资管项目】上传失败告警")
+
+def send_nochange_notification(board_results):
+    """无变更时也发一条通知，告知用户本轮已检查且所有板块无变化。"""
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    unchanged, missing = [], []
+    for name, status, size_kb in board_results:
+        friendly = BOARD_NAMES.get(name, name)
+        if status == "miss":
+            missing.append(f"· {friendly}")
+        else:
+            unchanged.append(f"· {friendly}")
+    summary = (
+        f"状态：⏸ 本轮无更新\n"
+        f"同步时间：{now}\n"
+        f"已检查板块（均无变化）：\n" + "\n".join(unchanged)
+    )
+    if missing:
+        summary += f"\n\n⚠️ 源文件缺失：\n" + "\n".join(missing)
+    summary += f"\n\n在线查看：{PAGES_URL}"
+    send_serverchan_notification(summary, title="【资管项目】本轮无更新")
 
 def load_smtp_config():
     """SMTP 配置：环境变量优先，其次 smtp_config.json（本地文件，勿提交）"""
@@ -218,7 +277,7 @@ def inject_tags(html_path: Path):
 def main():
     print(f"=== Auto Sync @ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
     changed = False
-    changed_files = []
+    board_results = []
     
     for name, src in SOURCES.items():
         # 动态查找 macro_matrix 源文件
@@ -227,6 +286,7 @@ def main():
         
         if src is None or not src.exists():
             print(f"  [miss] {name} source not found, skipping")
+            board_results.append((name, "miss", None))
             continue
         
         dst = DEPLOY / name
@@ -245,7 +305,9 @@ def main():
             size_kb = src.stat().st_size / 1024
             print(f"  [copy] {name} — updated ({size_kb:.0f} KB)")
             changed = True
-            changed_files.append((name, size_kb))
+            board_results.append((name, "updated", size_kb))
+        else:
+            board_results.append((name, "same", None))
         
         # 注入 auth + refresh tags
         inject_tags(dst)
@@ -275,12 +337,14 @@ def main():
                 cwd=str(DEPLOY), check=True, capture_output=True, text=True
             )
             commit_hash = r.stdout.strip()[:7]
-            summary = build_summary(changed_files, commit_hash)
+            summary = build_summary(board_results, commit_hash)
             notify(summary)
         except subprocess.CalledProcessError as e:
             print(f"  [git] FAILED: {e}")
+            send_failure_notification(str(e))
     else:
         print(f"\nCHANGED=false — No changes detected.")
+        send_nochange_notification(board_results)
     
     return changed
 
