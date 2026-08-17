@@ -1,0 +1,459 @@
+{"id": "ai", "name": "银行存款利率日报", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1786956608067.0022, "last_run_at": 1786927808067, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/Deposit-main\"]", "rrule": "FREQ=HOURLY;INTERVAL=8;BYDAY=MO,TU,WE,TH,FR,SA,SU", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "repo", "name": "REPO-每日工作流", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1786956615019, "last_run_at": 1786927815019, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/repo-tool-main\"]", "rrule": "FREQ=HOURLY;INTERVAL=8;BYDAY=MO,TU,WE,TH,FR,SA,SU", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "auto-sync-reports", "name": "auto-sync-reports", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787014050000.0007, "last_run_at": 1786942209815, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目\"]", "rrule": "FREQ=DAILY;BYHOUR=8;BYMINUTE=50", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "automation", "name": "卖方每日情报-完整流水线", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787016450000.0007, "last_run_at": 1786930781940, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/交易台报告\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=9;BYMINUTE=30", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "daily-sellside-intel", "name": "daily-sellside-intel", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1786970642907.0457, "last_run_at": 1786941842907, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/Daily Commentary\"]", "rrule": "FREQ=HOURLY;INTERVAL=8;BYDAY=MO,TU,WE,TH,FR,SA,SU", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "automation-2", "name": "交易台报告滚动", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787012850000.0007, "last_run_at": 1786667480500, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/交易台报告\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=8;BYMINUTE=30", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "2", "name": "交易台报告滚动2", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1786957312500, "last_run_at": 1786698235191, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/交易台报告\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=17;BYMINUTE=0", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "ca", "name": "CA报告每日自动生成", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787026310156.25, "last_run_at": 1786939984348, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/Corporate Actions\"]", "rrule": "FREQ=DAILY;BYHOUR=12;BYMINUTE=0", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "automation-3", "name": "每日宏观指标仪表盘生成", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787014650000.0007, "last_run_at": 1786929280814, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/宏观\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=9;BYMINUTE=0", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "automation-4", "name": "每日宏观研报生成", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787011050000.0007, "last_run_at": 1786666498038, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/Daily Commentary\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=8;BYMINUTE=0", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "automation-5", "name": "每日固定收益宏观日报生成", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1786982400000.0022, "last_run_at": 1786637211065, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/宏观研报\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=0;BYMINUTE=0", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+{"id": "automation-6", "name": "每日宏观研报生成", "status": "ACTIVE", "schedule_type": "recurring", "next_run_at": 1787011050000.0007, "last_run_at": 1786667514670, "cwds": "[\"c:/Users/fixedincome.intern/Desktop/资管项目/宏观研报\",\"c:/Users/fixedincome.intern/Desktop/资管项目/交易台报告\"]", "rrule": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=8;BYMINUTE=0", "scheduled_at": null, "valid_from": null, "valid_until": null, "push_to_wechat": 0}
+
+---PROMPT---
+
+### ai
+执行每日存款利率报价汇总全流程：拉取邮件、智能解析利率报价、生成 JSON、构建 HTML 日报。运行命令：cd 到工作目录后执行 `$env:PYTHONIOENCODING='utf-8'; python run_daily.py`。注意：必须在 PowerShell 中设置 PYTHONIOENCODING=utf-8 以避免编码错误。日报输出文件为"每日存款报价汇总.html"，保存到工作目录根目录。执行完成后更新 memory.md 记录执行状态。
+
+### repo
+请执行以下每日任务：
+1. 运行 python daily_workflow.py 拉取 REPO 邮件附件
+2. 检查获取内容是否有重复（同日重复/跨日重复/不同银行相同内容）
+3. 检测新格式（新债券品种、新货币、新指标标签），如有发现请记录并尝试规范化
+4. 运行报价解析程序
+5. 验证输出结果：检查完整性（是否有遗漏的银行/币种/品种）、异常定价（与历史中位数对比）、跨行价差异常、字段缺失
+6. 生成仪表盘 HTML
+7. 生成日报摘要，输出在 output/daily_report_YYYYMMDD.txt
+
+执行完成后，请报告执行状态、数据概况、重复检查结果、格式检测结果、验证结果（评分/100），以及有无需要人工处理的问题。
+
+### auto-sync-reports
+执行以下步骤自动同步并部署最新报告到 GitHub Pages：
+
+1. 运行 `$env:PYTHONIOENCODING="utf-8"; python deploy/auto_sync.py`（在项目根目录 c:\Users\fixedincome.intern\Desktop\资管项目 下执行）
+
+2. 如果输出显示 "CHANGED=true"，脚本已自动完成 git add/commit/push 到 GitHub Pages，无需额外操作。
+   如果输出显示 "CHANGED=false"，则什么都不做，直接结束。
+
+### automation
+执行"卖方每日情报"完整工作流水线，按顺序执行以下步骤：
+
+**Step 1: 抓取邮件**
+```bash
+cd "c:\Users\fixedincome.intern\Desktop\资管项目\交易台报告"
+python run_pipeline.py --mode fetch --save
+```
+
+**Step 2: 准备提取上下文**
+```bash
+python run_pipeline.py --mode prepare
+```
+
+**Step 3: 从邮件提取情报并填充 intel JSON**
+检查 data/intel/extraction_context_当天日期.txt，阅读所有邮件内容。
+检查当天日期的 intel JSON 文件是否存在：
+- 不存在时：`python run_pipeline.py --mode init --date 当天日期` 生成空白模板
+- 存在 _build_intel_MMDD.py 构建脚本时：运行它更新 intel 数据
+- 否则：基于 extraction_context 中的邮件内容，提取以下结构化情报填充 intel JSON：
+  - signals（核心信号，约7-8个，包含 topic/direction/signalType/evidence/soWhat）
+  - threads（跨日线程跟踪，连接历史信号）
+  - broker_notes（每家券商的核心观点摘要）
+  - data_checks（多券商交叉验证，标注 Confirmed/Monitor）
+  - tone（整体市场态势）
+  - macro（宏观要点）
+  - flow（ETF/信用/CDS资金流，含 activeNames 和 drivers）
+  - insights（集中度/拥挤度/溢出风险/投资建议）
+
+intel JSON 格式参考 data/intel/intel_2026-07-20.json。字段必须严格匹配，信号按影响度排序。
+
+**Step 4: 生成 report-data.js**
+```bash
+python run_pipeline.py --mode generate
+```
+
+**Step 5: 验证**
+确认 report-data.js 生成成功（>100KB），覆盖多天数据。双击 卖方每日情报.html 可查看报告。
+
+任何步骤出错时记录原因但尽量不阻塞后续步骤。邮件抓取失败可跳过（使用缓存）。generate 步骤必须成功。
+
+### daily-sellside-intel
+# 卖方每日情报 — 全自动流水线
+
+你必须在每天早上自动执行以下完整流程，生成当天的卖方情报报告。
+
+---
+
+## Step 1: 拉取 + 预处理
+
+首先用 Python 获取今天的 HKT 日期，然后运行自动化脚本：
+
+```python
+from datetime import datetime, timezone, timedelta
+HKT = timezone(timedelta(hours=8))
+today = datetime.now(HKT).strftime("%Y-%m-%d")
+print(f"Today (HKT): {today}")
+```
+
+然后执行：
+```
+python auto_daily.py
+```
+
+这会运行 Step 1(拉取邮件) + Step 2(预处理) + 如果有已存在的 intel JSON 则自动生成月度 HTML 并验证。
+
+**如果 fetch 返回 0 封邮件**（周末/假日），脚本会正常停止，不需要进一步操作。
+
+**如果预处理成功**，脚本会输出预处理后的邮件路径 `output/_emails_{today}.json`，继续下一步。
+
+---
+
+## Step 2: LLM 分析邮件并生成 intel JSON
+
+读取 `output/_emails_{today}.json`，逐封分析所有邮件内容。你需要生成完整的 intel JSON 保存到 `output/{today}/intel_{today}.json`。
+
+### intel JSON 必须包含以下 section：
+
+**S1 — top_conclusions（3-5条核心结论）**
+每条包含：
+- `text`: 核心结论文字
+- `supporting_brokers`: 支持该观点的券商列表
+- `diverging_brokers`: 持不同观点的券商列表
+- `shift_note`: 观点变化说明
+- `trading_implication`: 对PM/trader的影响
+
+**S2 — broker_takeaways（每家券商至少一条，每条必须包含以下字段）**
+- `broker` (str): 券商名称
+- `desk` (str): 部门/desk名称（如 Credit, Macro, ETF Flow）
+- `asset_class` (str): EQUITY / CREDIT_FI / MACRO / FX_COMMODITY
+- `stance` (str): bullish / bearish / neutral
+- `direction_cn` (str): 看多 / 看空 / 中性
+- `product_theme` (str): 品种+主题（必填，如"TEMASE Yield Curve + PHILIP Local Buying"）
+- `key_takeaway_cn` (str): 核心观点文字（必填）
+- `why_it_matters_cn` (str): 为何重要（必填）
+- `evidence` (str): 引用证据
+
+**S7 — edges（至少2条信息差信号，每条必须包含以下字段）**
+- `edge_type` (str): FIRST_CALL / CONVICTION_GAP / SHIFT / IMPLICIT / SILENCE / NON_CONSENSUS / UNIQUE_DATA
+- `subject_label` (str): 卡片标题
+- `finding` (str): 主要发现文字（⚠️ 不可用 text 字段替代！必须是 finding）
+- `brokers` (list): 来源券商列表
+- `evidence` (str): 引用证据
+- `edge_score` (int): 1-5 评分
+- `why_it_matters` (str): 信号含义（⚠️ 不可用 implication 字段替代！必须是 why_it_matters）
+- `basis` (str): fact / inference
+
+**其他推荐 section：**
+- `cross_broker`: 跨券商对比（按主题分组，包含 agreement/disagreement）
+- `broker_shifts`: 券商观点环比变动
+- `alert_flags`: 预警标记
+- `preprocessing`: 预处理信息
+
+### ⚠️ S2/S7 字段陷阱（必须避免）
+- S2: 每条必须有 `product_theme` + `key_takeaway_cn` + `why_it_matters_cn`
+- S7: `finding` 不能用 `text` 替代；`why_it_matters` 不能用 `implication` 替代；`edge_type` 不能用 `type`/`direction` 替代
+
+### 分析质量要求：
+- 关注跨券商矛盾信号（bull vs bear on same product）
+- 关注独家数据/独家视角
+- 关注环比变化（vs 前一天）
+- 关注信用-股市分化
+- 关注RM资金流向变化
+- 用中文撰写所有分析内容
+
+---
+
+## Step 3: 生成 brief MD
+
+基于 intel JSON 生成 PM 可读的简报 Markdown，保存到 `output/{today}/brief_{today}.md`。
+
+格式参考：
+```
+# 📊 卖方情报简报 — {today}
+## 今日宏观背景
+## ★ 各家核心 Takeaway
+## 跨品种横向对比
+## 🔥 Top 信息差信号
+## ⚠️ 预警标记
+```
+
+---
+
+## Step 4: 生成月度 HTML + 验证
+
+```bash
+python auto_daily.py --monthly-only
+```
+
+然后验证：
+```bash
+python auto_daily.py --validate {today}
+```
+
+如果验证返回 FAIL，检查并修复 intel JSON 的字段问题后重新验证。
+
+---
+
+## 输出检查清单
+- [ ] `output/{today}/intel_{today}.json` 存在
+- [ ] S2 每条都有 broker + asset_class + stance + product_theme + key_takeaway_cn + why_it_matters_cn
+- [ ] S7 每条都有 edge_type + subject_label + finding + brokers + evidence + edge_score + why_it_matters + basis
+- [ ] `output/{today}/brief_{today}.md` 存在
+- [ ] `output/卖方每日情报.html` 更新
+- [ ] `auto_daily.py --validate {today}` 返回 PASS
+
+---
+
+## 异常处理
+- **0封邮件**: 正常退出，不生成报告（周末/假日）
+- **API拉取失败**: 重试1次，仍失败则记录并退出
+- **intel JSON 不存在**: 必须完成 Step 2 生成后再继续
+- **验证 FAIL**: 修复字段后重新验证，最多修复2次
+
+### automation-2
+执行"卖方每日情报"完整工作流水线，按顺序执行以下步骤：
+
+**Step 1: 抓取邮件**
+```bash
+cd "c:\Users\fixedincome.intern\Desktop\资管项目\交易台报告"
+python run_pipeline.py --mode fetch --save
+```
+
+**Step 2: 准备提取上下文**
+```bash
+python run_pipeline.py --mode prepare
+```
+
+**Step 3: 从邮件提取情报并填充 intel JSON**
+检查 data/intel/extraction_context_当天日期.txt，阅读所有邮件内容。
+检查当天日期的 intel JSON 文件是否存在：
+- 不存在时：`python run_pipeline.py --mode init --date 当天日期` 生成空白模板
+- 存在 _build_intel_MMDD.py 构建脚本时：运行它更新 intel 数据
+- 否则：基于 extraction_context 中的邮件内容，提取以下结构化情报填充 intel JSON：
+  - signals（核心信号，约7-8个，包含 topic/direction/signalType/evidence/soWhat）
+  - threads（跨日线程跟踪，连接历史信号）
+  - broker_notes（每家券商的核心观点摘要）
+  - data_checks（多券商交叉验证，标注 Confirmed/Monitor）
+  - tone（整体市场态势）
+  - macro（宏观要点）
+  - flow（ETF/信用/CDS资金流，含 activeNames 和 drivers）
+  - insights（集中度/拥挤度/溢出风险/投资建议）
+
+intel JSON 格式参考 data/intel/intel_2026-07-20.json。字段必须严格匹配，信号按影响度排序。
+
+**Step 4: 生成 report-data.js**
+```bash
+python run_pipeline.py --mode generate
+```
+
+**Step 5: 验证**
+确认 report-data.js 生成成功（>100KB），覆盖多天数据。双击 卖方每日情报.html 可查看报告。
+
+任何步骤出错时记录原因但尽量不阻塞后续步骤。邮件抓取失败可跳过（使用缓存）。generate 步骤必须成功。
+
+### 2
+执行"卖方每日情报"完整工作流水线，按顺序执行以下步骤：
+
+**Step 1: 抓取邮件**
+```bash
+cd "c:\Users\fixedincome.intern\Desktop\资管项目\交易台报告"
+python run_pipeline.py --mode fetch --save
+```
+
+**Step 2: 准备提取上下文**
+```bash
+python run_pipeline.py --mode prepare
+```
+
+**Step 3: 从邮件提取情报并填充 intel JSON**
+检查 data/intel/extraction_context_当天日期.txt，阅读所有邮件内容。
+检查当天日期的 intel JSON 文件是否存在：
+- 不存在时：`python run_pipeline.py --mode init --date 当天日期` 生成空白模板
+- 存在 _build_intel_MMDD.py 构建脚本时：运行它更新 intel 数据
+- 否则：基于 extraction_context 中的邮件内容，提取以下结构化情报填充 intel JSON：
+  - signals（核心信号，约7-8个，包含 topic/direction/signalType/evidence/soWhat）
+  - threads（跨日线程跟踪，连接历史信号）
+  - broker_notes（每家券商的核心观点摘要）
+  - data_checks（多券商交叉验证，标注 Confirmed/Monitor）
+  - tone（整体市场态势）
+  - macro（宏观要点）
+  - flow（ETF/信用/CDS资金流，含 activeNames 和 drivers）
+  - insights（集中度/拥挤度/溢出风险/投资建议）
+
+intel JSON 格式参考 data/intel/intel_2026-07-20.json。字段必须严格匹配，信号按影响度排序。
+
+**Step 4: 生成 report-data.js**
+```bash
+python run_pipeline.py --mode generate
+```
+
+**Step 5: 验证**
+确认 report-data.js 生成成功（>100KB），覆盖多天数据。双击 卖方每日情报.html 可查看报告。
+
+任何步骤出错时记录原因但尽量不阻塞后续步骤。邮件抓取失败可跳过（使用缓存）。generate 步骤必须成功。
+
+### ca
+请执行以下步骤生成今日公司行动事件报告：
+
+1. 使用 curl POST 请求拉取邮件数据（必须 POST + 空数组 body，GET 会超时）：
+   curl -s --noproxy "*" -X POST --connect-timeout 30 -H "Content-Type: application/json" -d "[]" "http://192.168.16.131:6001/data/api/emails/executeByName?name=CorporateActions" --max-time 120 -o "api_response.json"
+
+2. 运行生成脚本生成报告：
+   python generate_report.py
+
+3. 确认 ca-report.html 已更新且 batches 数据正确（不含 INTR/DVCA 事件，至少包含 1 个有效批次）。
+
+### automation-3
+你是一个宏观研究数据处理助手。请按以下步骤执行每日管线：
+
+## 第1步：抓取最新邮件
+运行 fetch_research.ps1 抓取今日研报邮件：
+```
+powershell -ExecutionPolicy Bypass -Command "& { $ProgressPreference='SilentlyContinue'; .\fetch_research.ps1 }"
+```
+如果 Outlook COM 连接失败（常见于无GUI环境），跳过此步骤继续。
+
+## 第2步：自动提取指标数字
+运行自动提取模块：
+```
+python auto_extract.py
+```
+这会扫描所有新邮件，用正则匹配指标名+数字，追加到 ai_extractions.py。
+
+## 第3步：AI 辅助提取（关键步骤）
+此时检查是否有 auto_extract 未能提取的重要邮件（特别是 Barclays Macro Research、BofA Daily Insights 等标注了关键宏观数据的邮件）：
+- 读取 research_emails 下今天目录中的邮件 JSON
+- 对于 GS/JPM/MS/Barclays/BofA 的关键宏观邮件，逐封检查是否有缺失的经济指标预测数字
+- 将遗漏的指标补充到 ai_extractions.py 的 EXTRACTIONS 列表中
+- 格式遵循已有条目：{broker, subject, received, metrics: [{label, value, unit, direction, importance, tags}], outlooks: [{thesis, direction, conviction, category}]}
+- label 必须精确匹配 PRESET_INDICATORS 中的指标名
+
+## 第4步：种子入库
+```
+python indicator_tracker.py seed
+```
+
+## 第5步：生成仪表盘
+```
+python build_dashboard.py
+```
+
+## 第6步：检查结果
+```
+python run_daily_pipeline.py --mode status
+```
+确认数据库有今天的新增记录。然后启动HTTP预览：
+```
+python -m http.server 8080
+```
+在浏览器打开 http://localhost:8080/indicator_dashboard.html 验证所有数据正确显示。
+
+## 重要提醒
+- 优先处理 Barclays Barclays Macro Research Daily Summary 和 BofA Daily Insights
+- 新券商（Barclays/BofA/Citi/Nomura）的邮件正文可能只含摘要和链接，实际预测数字在完整PDF报告中，需仔细阅读正文看是否有数字
+- 每个指标 label 必须精确匹配 PRESET_INDICATORS 中的 38 个指标名，不能自创新名称
+- EXTRACTIONS 中 metric 的 direction 用英文：up/down/expansion/contraction/rising/moderating/elevated 等
+- 完成后确认 indicator_dashboard.html 中中国/香港区域筛选和新券商数据能正常显示
+
+### automation-4
+执行标准每日宏观研报流水线，分三步：
+
+## Step 1: 提取邮件 + 预处理
+在工作目录 `c:/Users/fixedincome.intern/Desktop/资管项目/Daily Commentary/` 下运行：
+```
+python auto_daily.py
+```
+这会自动抓取今日邮件（fetch_emails.py），预处理为结构化JSON（daily_intel.py --from-saved），输出到 output/ 目录。
+
+如果拉取到0封邮件（周末/假日），正常退出即可，无需报错。
+
+## Step 2: 生成 intel JSON
+读取上一步生成的预处理文件（output/_emails_{date}.json），使用 sellside-intel skill 分析所有邮件内容，生成标准格式的 intel_{date}.json，保存到 output/{date}/ 目录。
+
+intel JSON 必须包含：top_conclusions, broker_takeaways, edges, cross_broker, broker_shifts, alert_flags, signals, threads, insights 等字段。严格遵循已记录的字段映射规范。
+
+## Step 3: 生成月度HTML报告
+```
+python auto_daily.py --monthly-only
+```
+这会读取所有 intel JSON 生成滚动30天的 HTML 报告（output/卖方每日情报.html）。
+
+## Step 4: 更新宏观研报日视图
+读取新生成的 intel JSON，提取当日所有市场的表格数据，追加到 `c:/Users/fixedincome.intern/Desktop/资管项目/宏观研报/FI_Daily_Digest_2026-08-12.html` 的 REPORT_DATA 中（新增一个日期key），使日期选择器可以选择新日期。
+
+注意事项：
+- 周末/假日无邮件时静默跳过
+- 所有中文字符保持 UTF-8 编码
+- 严格遵循 intel JSON 的前端字段映射规范（broker_takeaways 的 broker/asset_class/stance/direction_cn/product_theme/key_takeaway_cn/why_it_matters_cn；edges 的 edge_type/subject_label/finding/brokers/evidence/edge_score/why_it_matters/basis）
+- 生成完成后启动 HTTP 服务器预览确认（python -m http.server 8080 在 宏观研报 目录）
+
+### automation-5
+执行固定收益宏观日报的全自动生成流程：
+
+**Step 1: 拉取邮件**
+进入目录 `c:/Users/fixedincome.intern/Desktop/资管项目/Daily Commentary`，运行：
+```
+python auto_daily.py --fetch-only
+```
+等待拉取完成，确认 `raw_emails/{今天日期}/_all_emails.jsonl` 文件存在且有内容。
+
+**Step 2: 预处理邮件**
+在同一目录运行：
+```
+python auto_daily.py --preprocess-only
+```
+确认 `output/_emails_{今天日期}.json` 生成成功，记录券商覆盖情况和邮件数量。
+
+**Step 3: LLM 情报提取**
+读取预处理后的 JSON 文件（`output/_emails_{今天日期}.json`），分析所有券商邮件内容，生成以下两个文件：
+- `output/{今天日期}/intel_{今天日期}.json` — 完整的结构化情报 JSON，包含：top_conclusions, broker_takeaways, edges, cross_broker, broker_shifts, alert_flags, signals, threads, broker_notes, data_checks, tone, macro, flow, insights, issuers 等所有标准字段
+- `output/{今天日期}/brief_{今天日期}.md` — 面向PM的人类可读摘要
+
+**Step 4: 生成月度HTML汇总**
+运行：
+```
+python auto_daily.py --monthly-only
+```
+确认 `output/卖方每日情报.html` 已更新。
+
+**Step 5: 验证数据完整性**
+运行：
+```
+python auto_daily.py --validate {今天日期}
+```
+确保 S2 broker_takeaways 和 S7 edges 字段完整性通过验证。
+
+**Step 6: 更新单文件日报**
+基于 `output/{今天日期}/intel_{今天日期}.json` 的内容，更新 `c:/Users/fixedincome.intern/Desktop/资管项目/宏观研报/固定收益宏观日报.html` 文件中的 REPORT_DATA 数据层，添加今天日期的数据块。保持与现有数据块格式一致：包含 dateCN, theme, meta, brokers, markets, noCoverage, divergences, footer 字段。
+
+最后在终端输出总结：今天拉取了多少封邮件、覆盖了几家券商、生成了多少条 takeaways 和 edges、验证结果。
+
+### automation-6
+执行固定收益宏观日报的每日生成流程，目标是把当天券商研究邮件整理成报告并更新单文件报告 `c:/Users/fixedincome.intern/Desktop/资管项目/宏观研报/固定收益宏观日报.html`。
+
+## 第1步：提取邮件
+运行命令抓取最新券商研究邮件（内部 API）：
+`python "c:/Users/fixedincome.intern/Desktop/资管项目/交易台报告/fetch_emails.py" --save`
+（抓取结果保存到 `交易台报告/data/raw_emails/`）。若当天或周末前推后的交易日无新邮件，直接结束并说明。
+
+## 第2步：分析邮件
+阅读当日邮件正文，按固定市场板块分类提取券商观点，严格区分「客观市场数据」与「券商主观观点」。
+
+## 第3步：生成报告数据
+在 `固定收益宏观日报.html` 内嵌的 `REPORT_DATA` 对象中新增一个当日（YYYY-MM-DD）数据块，格式与既有日期块完全一致：
+- `dateCN` / `theme` / `meta` / `brokers`
+- `markets`: 数组，每个市场含 `pri`(优先级) / `title`(板块名) / `note` / `summary`(隔夜市场摘要) / `headers` / `cols` / `rows`（rows 每行 `[券商名, [样式类, 内容], ...]`）
+- `noCoverage`: 无覆盖市场列表
+- `divergences`: 重点分歧表 {headers, cols, rows}
+- `footer`: {window, emailCount, omitted}
+
+遵循既有市场分类：美国利率、美国IG、美国HY、欧洲利率、亚洲利率、亚洲IG、亚洲HY、中国利率、中国IG、中国HY、澳洲利率、澳门博彩等。无覆盖市场归入 noCoverage，不要生成空表格。
+
+## 第4步：验证
+确认日期选择器能回溯到新日期、表格正常渲染、无格式/字段缺失错误。
+
+## 渲染规范（必须遵守）
+- 三色左线：灰=客观数据、绿=看多(bull)、红=看空(bear)
+- 券商名列宽 88px，券商名完整显示（如 Jefferies/Barclays）
+- 无覆盖市场统一收进可折叠的「今日无券商覆盖」汇总条，不占空间
+- 重点分歧用金色卡片独立展示

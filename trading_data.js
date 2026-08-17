@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-17 11:37 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-17 16:47 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -5160,12 +5160,12 @@ window.REPORT_DATA =
           "Jane Street"
         ],
         "lookbackDays": 15,
-        "sourceDateNote": "8/14周五总结(周一推送)，6封。核心：7月零售销售control group -0.4%+UMich信心51.0暴跌→GS标题'They're Not Hiking'但曲线bear-steepening(US10y +5bp至4.692%/2s10s 52.2bp)。8月IG供给$136bn逼近2020纪录，单周$56bn(37笔/68tranches)。Gilts bear steepen 10y破5%。Houthis二次袭击Aramco。Lebanon +30-40c。QBE 1H26稳健。"
+        "sourceDateNote": "8/14周五总结(周一推送)，6封。核心：7月零售销售control group -0.4%+UMich信心51.0暴跌，GS标题'They're Not Hiking'但曲线bear-steepening(US10y +5bp至4.692%/2s10s 52.2bp)。8月IG供给$136bn逼近2020纪录，单周$56bn(37笔/68tranches)。Gilts bear steepen 10y破5%。Houthis二次袭击Aramco。Lebanon +30-40c。QBE 1H26稳健。"
       },
       "signals": [
         {
           "id": "retail-weak-0814",
-          "headline": "7月零售销售control group -0.4%+UMich信心51.0暴跌→GS'They're Not Hiking'：加息叙事退潮但曲线bear-steepening",
+          "headline": "7月零售销售control group -0.4%+UMich信心51.0暴跌，GS'They're Not Hiking'：加息叙事退潮但曲线bear-steepening",
           "topic": "US Consumer Weakness",
           "assetClass": "Rates",
           "brokers": [
@@ -5362,7 +5362,7 @@ window.REPORT_DATA =
           "broker": "Citi",
           "stance": "bearish",
           "asset_class": "US IG",
-          "summary": "IG cash oddly weak tone，more sellers than buyers，supply threat(潜在surprise jumbo $20bn)。new issue $56.13bn(est $35bn)。Hyb/pref supply $7.7bn，VZ two-way，NEE laggard。MPHC S&P outlook stable→negative，潜在BB+ cut。",
+          "summary": "IG cash oddly weak tone，more sellers than buyers，supply threat(潜在surprise jumbo $20bn)。new issue $56.13bn(est $35bn)。Hyb/pref supply $7.7bn，VZ two-way，NEE laggard。MPHC S&P outlook 由stable下调至negative，潜在BB+ cut。",
           "stance_cn": "看空",
           "emails": 1,
           "sourceRefs": [

@@ -24,7 +24,7 @@
   .header .meta{margin-top:8px;font-size:13px;color:#666;line-height:1.6}
   .header .brokers{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
   .header .brokers span{padding:3px 12px;border-radius:4px;font-size:11px;font-weight:700;color:#fff}
-  .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}.b-barclays{background:#00AEEF}.b-jefferies{background:#007A33}.b-hsbc{background:#DB0011}.b-td{background:#20B24A}.b-db{background:#0018A8}.b-bmo{background:#0079C1}.b-js{background:#8E44AD}
+  .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}.b-barclays{background:#00AEEF}.b-jefferies{background:#007A33}.b-hsbc{background:#DB0011}.b-td{background:#20B24A}.b-db{background:#0018A8}.b-bmo{background:#0079C1}.b-js{background:#8E44AD}.b-ubs{background:#EC0000}
 
   /* ===== 市场标题 ===== */
   h2{
@@ -598,10 +598,10 @@ REPORT_DATA["2026-08-14"] = {
 
 REPORT_DATA["2026-08-17"] = {
   dateCN: "2026年8月17日 星期一",
-  theme: "零售销售暴跌 + 信心暴跌 → 美债 bear-steepen，但 GS 独家 'They're Not Hiking'（市场过度定价加息）；US IG 供给潮创纪录 $136bn + cash 疲软；CEEMEA 地缘升温 + LATAM 评级分化；QBEAU 强劲 1H26",
-  meta: "覆盖券商：Goldman Sachs 2封（Global Credit Recap + Asia Macro: They're Not Hiking）+ TD Securities 1封（US IG NY Recap）+ Jane Street 1封（US ETF Market Commentary）+ Citi 1封（IG Credit Sector Commentary）+ Deutsche Bank 1封（Aussie Credit）· 共6封邮件 · 5家券商",
+  theme: "零售销售暴跌 + 信心暴跌 → 美债 bear-steepen，但 GS 'They're Not Hiking' + MS '9月加息 highly unlikely'（市场过度定价加息）；MS 独家解读 NY Fed 暂停 RMP 暗指 Warsh 缩表加速；US IG 供给潮创纪录 $136bn + cash 疲软；Asia 信用 India IG 供给窗口前置 + Alphabet 首发 AUD Kangaroo；欧洲金融债 AT1/T2 新发回归",
+  meta: "覆盖券商：Goldman Sachs 2封（Global Credit Recap + Asia Macro: They're Not Hiking）+ TD Securities 1封（US IG NY Recap）+ Morgan Stanley 1封（UST Overnight）+ Barclays 1封（Asian Credit MidDay）+ UBS 1封（European Financials Morning）+ Jane Street 1封（US ETF Market Commentary）+ Citi 1封（IG Credit Sector Commentary）+ Deutsche Bank 1封（Aussie Credit）· 共9封邮件 · 8家券商",
   brokers: [
-    {n:"GS",c:"b-gs"},{n:"TD",c:"b-td"},{n:"Citi",c:"b-citi"},{n:"DB",c:"b-db"},{n:"JS",c:"b-js"}
+    {n:"GS",c:"b-gs"},{n:"MS",c:"b-ms"},{n:"TD",c:"b-td"},{n:"Citi",c:"b-citi"},{n:"DB",c:"b-db"},{n:"JS",c:"b-js"},{n:"Barclays",c:"b-barclays"},{n:"UBS",c:"b-ubs"}
   ],
   markets: [
     // 美国利率
@@ -616,7 +616,13 @@ REPORT_DATA["2026-08-17"] = {
           ["short","<span class='bear'>bear-steepen</span>：10y +5bp 至 4.692% / 2s10s +2.3bp 至 52.2bp"],
           ["fact","市场定价 9月 ~8bp / 全年 ~23bp 加息；GS 认为 9月几乎不可能、过于鹰派；供给 $16bn 20s (Wed) + $8bn 30yr TIPS (Thu)"],
           ["fact","零售/信心双双暴跌 vs 市场鹰派定价背离——GS 'They're Not Hiking' 是核心框架"],
-          ["long","favor US steepening vs Europe flatteners（Rates Trader 'A Steeper Price of Relief'）；数据续软则前端加息押注回吐"]]
+          ["long","favor US steepening vs Europe flatteners（Rates Trader 'A Steeper Price of Relief'）；数据续软则前端加息押注回吐"]],
+        ["MS",
+          ["fact","UST overnight 安静、bear-steepen 延续（10y +5bp 至 4.692% / 2s10s 52.2bp）；以色列-黎巴嫩升级但原油/股市 unfazed"],
+          ["short","<span class='bear'>2s30s steepener</span> 首选 + short 30yr spreads；长端 term premium 上行"],
+          ["fact","<span class='bull'>'September move highly unlikely'</span>；10月（Midterms 前）加息门槛同样高；NY Fed 暂停 RMP（$10bn/月 T-bill 购买差）"],
+          ["fact","独家解读：NY Fed RMP 停摆时点恰在9月 tax 前，反映 Warsh 对更小资产负债表的偏好 → 缩表加速 → bear-steepen 压力短期难逆转"],
+          ["long","favor 2s30s steepeners + short 30yr spreads（与 GS 共振 'not hiking'）"]]
       ]
     },
     // 美国IG信用债
@@ -684,6 +690,21 @@ REPORT_DATA["2026-08-17"] = {
           ["long","LATAM 多空对：Ecuador（评级上调）vs 阿根廷（政治风险 CDS）；黎巴嫩追涨需评估政治风险"]]
       ]
     },
+    // 亚洲信用债
+    {
+      id:"asia-credit", pri:true, title:"亚洲信用债",
+      summary:"Asia 信用韧性：India IG 供给窗口前置（RBI 新规、<b>两周内关闭</b>）、Asia Sovs firm <b>1-2bp tighter</b>、长端 outperform；Alphabet 首发 AUD Kangaroo（3/5/10/20Yr）成标志性新发；HSI +1.7% / NIFTY -0.5%",
+      headers:["券商","市场数据/表现","供给/新发","India IG","核心逻辑","交易建议"],
+      cols:["88px","20%","22%","20%","20%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","Asia Sovs firm <span class='bull'>1-2bp tighter</span>（前端本地买盘 + 长端空头回补）；长端 spreads outperform（cash sticky、无卖家）；China IG 安静但 firm（corp perps 受 rates selloff 支撑）；Asia HY unchanged；Japan financials unchanged 至 1bp wider（SUMIBK 被 hit、MUFG 买盘）；HSI +1.7% / NIFTY -0.5%"],
+          ["fact","Alphabet 首发 AUD Kangaroo（3/5/10/20Yr）成标志性新发；另 Challenger AUD、ICICI $5Y +130bps、Yes Bank $3Y、Kotak $5Y、EDC 3Y HKD；Japan/AUD 供给回升、CNH 或跟进"],
+          ["fact","India IG 最活跃板块（周五 RBI 新规提前发行窗口），供给窗口<span class='bear'>两周内关闭</span>但净需求犹存，cash unchanged 至 2bp wider"],
+          ["fact","India IG 供给窗口前置是本周核心主题，前端发行放量后供给压力缓解；Asia 长端 outperform 显示韧性 vs US 供给压制"],
+          ["long","India IG 相对价值可关注；Asia Sovs firm + 长端 outperform，跨区相对价值优于 US IG"]]
+      ]
+    },
     // 澳洲信用债
     {
       id:"aud-credit", pri:true, title:"澳洲信用债",
@@ -697,6 +718,21 @@ REPORT_DATA["2026-08-17"] = {
           ["fact","QBE（QBEAU）1H26：GWP +6% CC、Adj NPAT <b>+4% 至 $1.03bn</b>、ROE 17.7%、COR 92.8%、投资收入 $828m、PCA 1.82x、<span class='bull'>$450m buyback</span> + $1.6bn loss portfolio transfer、FY26 guidance 维持"],
           ["fact","QBEAU 盈利质量 + buyback 支撑，corporate firm 但 financials 供给承压（CBA/ANZ）"],
           ["long","QBEAU 相对价值明确（盈利质量 + buyback）；financials 供给压力下关注 QBE 次级"]]
+      ]
+    },
+    // 欧洲金融债
+    {
+      id:"eu-fin", pri:true, title:"欧洲金融债",
+      summary:"欧洲金融债夏季整固 + 新发回归：BNP <b>USD 7.125%</b> 为自 6 月以来首单 AT1 新发（约 12.5bp 便宜、收 +25c）；T2 新发回归但被动买盘消退（SEB/KBC T2 卡 r/o）；指数 Xover 246.3 / Main 51.0 / Sub Fin 85.7",
+      headers:["券商","市场数据/表现","新发/定价","AT1/T2","核心逻辑","交易建议"],
+      cols:["88px","20%","22%","22%","20%","16%"],
+      rows:[
+        ["UBS",
+          ["fact","指数 Xover 246.3 (-0.5) / Main 51.0 (-0.1) / Snr Fin 53.2 (-0.1) / Sub Fin 85.7 (-0.2)；Seniors 整固（sub-5yr 优化盘活跃、SWEDA 3.375 08/31 SP green B+62.1/MS+47 收窄 2bp）"],
+          ["fact","BNP USD <span class='bull'>7.125%</span> 自 6 月以来首单 AT1 新发（约 12.5bp 便宜、收 +25c）；T2 新发回归：SEB 11nc6 MS+100、KBC 11nc6 MS+112 均卡在 r/o 附近"],
+          ["fact","AT1 新发回归但被动买盘消退；T2 新发 r/o 承压；RM 继续卖低 beta 加高收益、dealer 持仓轻"],
+          ["fact","新发回归 vs 被动买盘消退 + dealer 轻仓，是夏季尾段供给消化能力试金石；与 US IG 'more sellers than buyers' 形成跨区共振"],
+          ["long","AT1 BNP 定价偏便宜后续或追涨；T2 新发 r/o 承压，关注 SEB/KBC 是否扩宽"]]
       ]
     },
     // 美国股票/跨资产ETF
@@ -715,7 +751,7 @@ REPORT_DATA["2026-08-17"] = {
       ]
     }
   ],
-  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","亚洲IG信用债","亚洲HY信用债","亚洲主权及CDS","澳门博彩信用债","澳洲利率","美国HY信用债","日本及亚洲DM信用债"],
+  noCoverage:["中国利率","澳门博彩信用债","澳洲利率","美国HY信用债"],
   divergences: {
     headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
     cols:["10%","16%","18%","18%","38%"],
@@ -731,13 +767,21 @@ REPORT_DATA["2026-08-17"] = {
       ["澳洲信用","corporate firm vs financials 供给承压 — AUD 内部分化",
         ["long","<span class='bull'>AUD corporates (DB)</span><br>+1bp tighter<br>SSE 新债 traded through re-offer"],
         ["short","<span class='bear'>AUD financials (DB)</span><br>senior +1-2bp / T2 +1-5bp<br>CBA/ANZ 供给"],
-        ["fact","<b>AUD 内部 corporates firm vs financials 承压</b>。QBEAU 强劲 1H26（Adj NPAT +4%、$450m buyback）支撑 corporates，但 CBA/ANZ 供给使 financials senior/T2 走阔。可做多 QBEAU 次级、回避银行长端 T2 的配对思路"]]
+        ["fact","<b>AUD 内部 corporates firm vs financials 承压</b>。QBEAU 强劲 1H26（Adj NPAT +4%、$450m buyback）支撑 corporates，但 CBA/ANZ 供给使 financials senior/T2 走阔。可做多 QBEAU 次级、回避银行长端 T2 的配对思路"]],
+      ["亚洲信用 vs 美国信用","跨区背离 — Asia 韧性 vs US 供给压制",
+        ["long","<span class='bull'>Asia 信用 (Barclays)</span><br>Asia Sovs firm 1-2bp tighter<br>长端 outperform、cash 无卖家"],
+        ["short","<span class='bear'>US IG (TD/Citi)</span><br>$136bn 逼近 2020 纪录<br>Citi 'more sellers than buyers'"],
+        ["fact","<b>跨区信用相对价值背离</b>。Barclays 报 Asia Sovs firm + 长端 outperform（cash sticky 无卖家、India IG 供给被 street 买盘消化），而 TD/Citi 报 US IG 创纪录供给 + cash 疲软。同一全球供给潮下 Asia 消化能力明显强于 US，跨区相对价值上 Asia IG/长端更优"]],
+      ["欧洲金融债","新发回归 vs 被动买盘消退 — 供给消化试金石",
+        ["long","<span class='bull'>新发回归 (UBS)</span><br>BNP 7.125% 首单 AT1 自 6 月<br>约 12.5bp 便宜、收 +25c"],
+        ["short","<span class='bear'>被动买盘消退 (UBS)</span><br>SEB/KBC T2 卡 r/o<br>dealer 持仓轻"],
+        ["fact","<b>欧洲金融债供给消化能力受压</b>。AT1/T2 新发回归但被动买盘消退 + dealer 轻仓，SEB 11nc6 MS+100、KBC 11nc6 MS+112 均卡在 r/o 附近。BNP AT1 定价偏便宜或追涨，T2 新发 r/o 承压需跟踪是否扩宽"]]
     ]
   },
   footer: {
-    window:"2026-08-14 16:00 ~ 2026-08-17 12:00 (US overnight Aug 14 + Asia morning Aug 17)",
-    emailCount:"Goldman Sachs 2 / TD Securities 1 / Jane Street 1 / Citi 1 / Deutsche Bank 1（共6封邮件 · 5家券商）",
-    omitted:"中国利率、中国IG/HY、亚洲IG/HY/主权、澳洲利率、美国HY、日本及亚洲DM、澳门博彩已在「无覆盖市场」汇总"
+    window:"2026-08-14 16:00 ~ 2026-08-17 12:00 (US overnight Aug 14 + Asia morning/midday Aug 17)",
+    emailCount:"Goldman Sachs 2 / TD Securities 1 / Morgan Stanley 1 / Barclays 1 / UBS 1 / Jane Street 1 / Citi 1 / Deutsche Bank 1（共9封邮件 · 8家券商）",
+    omitted:"中国利率、澳门博彩、澳洲利率、美国HY已在「无覆盖市场」汇总"
   }
 };
 
