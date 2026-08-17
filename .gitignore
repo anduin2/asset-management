@@ -1,2 +1,6 @@
 *.pyc
 __pycache__/
+
+# 本地通知/邮件凭证，勿提交到 GitHub
+smtp_config.json
+notify_config.json

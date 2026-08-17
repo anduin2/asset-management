@@ -1,0 +1,8 @@
+{
+  "host": "smtp.office365.com",
+  "port": 587,
+  "user": "你的发件邮箱@clamc.com.hk",
+  "password": "授权码或应用密码",
+  "sender": "你的发件邮箱@clamc.com.hk",
+  "recipient": "fixedincome.intern@clamc.com.hk"
+}

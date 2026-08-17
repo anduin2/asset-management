@@ -1,0 +1,4 @@
+{
+  "wecom_webhook": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=你的机器人KEY",
+  "serverchan_sendkey": "SCT开头的SendKey"
+}

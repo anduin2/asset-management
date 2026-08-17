@@ -232,6 +232,8 @@ th.dcol.here { color:var(--violet); }
 .source-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
 .source-card { background:#fff; border:1px solid var(--border); border-radius:8px; padding:13px; }
 .source-card h3 { margin:0 0 6px; font-size:14px; }
+.source-stance { display:inline-block; font-size:12px; font-weight:600; padding:2px 9px; border-radius:10px; background:#eef2ff; color:#3730a3; margin:0 0 8px; }
+.source-summary { margin:0 0 8px; font-size:12.5px; line-height:1.6; color:#333; }
 .quality { margin-top:16px; color:var(--muted); }
 details { background:#fff; border:1px solid var(--border); border-radius:8px; padding:10px 12px; }
 summary { cursor:pointer; font-weight:700; color:#344054; }
@@ -369,7 +371,6 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
       <button class="tab active" data-tab="board">Signal Board</button>
       <button class="tab" data-tab="issuers">我们的关注</button>
       <button class="tab" data-tab="sources">By Broker</button>
-      <button class="tab" data-tab="data">数据核对</button>
     </div>
     <button class="tab tab-thread" data-tab="threads">Thread View · 主题追踪</button>
     <span class="cb-spacer"></span>
@@ -422,25 +423,9 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     <div class="panel-body source-grid" id="source-grid"></div>
   </section>
 
-  <section class="tab-view panel" id="tab-data">
-    <div class="panel-head"><div class="panel-title">数据核对</div><div class="panel-sub">硬数据、口径差异、待验证事项(当日)</div></div>
-    <div class="board">
-      <table>
-        <thead><tr><th>Type</th><th>Subject</th><th>Status</th><th>Detail</th></tr></thead>
-        <tbody id="data-body"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <div class="quality">
-    <details>
-      <summary>Data Quality Log(当日运营审计)</summary>
-      <ul id="quality-log"></ul>
-    </details>
-  </div>
 </main>
 
-<script src="trading_data.js?v=202608120845"></script>
+<script src="trading_data.js?v=202608171249"></script>
 <script>
 (function () {
   const D = window.REPORT_DATA || {};
@@ -527,7 +512,7 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     const items=[
       [signals.length,"当日信号"],[tradeable,"Trade / Watch"],[risk,"Risk Flags"],
       [threads,"关联主题线"],[verify,"待验证"],[d.coverage.brokers.length,"券商"],
-      [d.coverage.emails,"来源邮件"],[d.dataChecks.length,"Data Checks"]
+      [d.coverage.emails,"来源邮件"]
     ];
     $("kpis").innerHTML=items.map(([v,l])=>`<div class="kpi"><div class="v">${esc(v)}</div><div class="l">${esc(l)}</div></div>`).join("");
   }
@@ -768,20 +753,16 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
 
   function renderSources(){
     const notes=curDay().brokerNotes||[];
-    $("source-grid").innerHTML=notes.length?notes.map(b=>`<div class="source-card">
+    $("source-grid").innerHTML=notes.length?notes.map(b=>{
+      const stance=b.stance_cn||b.stance||"";
+      const summary=b.summary||b.note||"";
+      return `<div class="source-card">
       <h3>${esc(b.broker)}</h3>
       <div class="panel-sub">${esc(b.emails)} email(s)</div>
-      <p>${esc(b.stance)}</p>
+      ${stance?`<div class="source-stance">${esc(stance)}</div>`:""}
+      ${summary?`<p class="source-summary">${esc(summary)}</p>`:""}
       <div class="meta">${(b.sourceRefs||[]).map(r=>`<span class="badge">${esc(r)}</span>`).join("")}</div>
-    </div>`).join(""):'<div class="empty">当日无券商记录</div>';
-  }
-
-  function renderData(){
-    const checks=curDay().dataChecks||[];
-    $("data-body").innerHTML=checks.length?checks.map(d=>`<tr>
-      <td>${esc(d.type)}</td><td><strong>${esc(d.subject)}</strong></td>
-      <td>${badge(d.status)}</td><td>${esc(d.detail)}</td></tr>`).join(""):'<tr><td colspan="4" class="empty">当日无 data check / flow 记录</td></tr>';
-    $("quality-log").innerHTML=(curDay().qualityLog||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+    </div>`;}).join(""):'<div class="empty">当日无券商记录</div>';
   }
 
   function gotoThread(tid){
@@ -867,7 +848,6 @@ summary { cursor:pointer; font-weight:700; color:#344054; }
     try{ renderFlow(); }catch(e){ console.error("renderFlow",e); }
     try{ renderBoard(signals); }catch(e){ console.error("renderBoard",e); }
     try{ renderSources(); }catch(e){ console.error("renderSources",e); }
-    try{ renderData(); }catch(e){ console.error("renderData",e); }
     try{ renderIssuers(); }catch(e){ console.error("renderIssuers",e); }
   }
 
