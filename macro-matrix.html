@@ -24,7 +24,7 @@
   .header .meta{margin-top:8px;font-size:13px;color:#666;line-height:1.6}
   .header .brokers{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
   .header .brokers span{padding:3px 12px;border-radius:4px;font-size:11px;font-weight:700;color:#fff}
-  .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}.b-barclays{background:#00AEEF}.b-jefferies{background:#007A33}.b-hsbc{background:#DB0011}.b-td{background:#20B24A}.b-db{background:#0018A8}.b-bmo{background:#0079C1}
+  .b-gs{background:#7395c9}.b-ms{background:#005594}.b-jpm{background:#0072bc}.b-bofa{background:#c41e3a}.b-citi{background:#003B70}.b-none{background:#bbb;color:#555}.b-barclays{background:#00AEEF}.b-jefferies{background:#007A33}.b-hsbc{background:#DB0011}.b-td{background:#20B24A}.b-db{background:#0018A8}.b-bmo{background:#0079C1}.b-js{background:#8E44AD}
 
   /* ===== 市场标题 ===== */
   h2{
@@ -593,6 +593,151 @@ REPORT_DATA["2026-08-14"] = {
     window:"2026-08-13 16:00 ~ 2026-08-14 12:00 (Asia EOD Aug 13 + US PPI Aug 13)",
     emailCount:"Barclays 2 / Jefferies 1 / Morgan Stanley 1 / TD 1 / DB 1 / BMO 1（其中 Barclays 1 封美股 WhiteFiber 研报 off-topic 未计入）",
     omitted:"中国利率、澳洲利率、美国IG/HY、澳门博彩已在「无覆盖市场」汇总"
+  }
+};
+
+REPORT_DATA["2026-08-17"] = {
+  dateCN: "2026年8月17日 星期一",
+  theme: "零售销售暴跌 + 信心暴跌 → 美债 bear-steepen，但 GS 独家 'They're Not Hiking'（市场过度定价加息）；US IG 供给潮创纪录 $136bn + cash 疲软；CEEMEA 地缘升温 + LATAM 评级分化；QBEAU 强劲 1H26",
+  meta: "覆盖券商：Goldman Sachs 2封（Global Credit Recap + Asia Macro: They're Not Hiking）+ TD Securities 1封（US IG NY Recap）+ Jane Street 1封（US ETF Market Commentary）+ Citi 1封（IG Credit Sector Commentary）+ Deutsche Bank 1封（Aussie Credit）· 共6封邮件 · 5家券商",
+  brokers: [
+    {n:"GS",c:"b-gs"},{n:"TD",c:"b-td"},{n:"Citi",c:"b-citi"},{n:"DB",c:"b-db"},{n:"JS",c:"b-js"}
+  ],
+  markets: [
+    // 美国利率
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"US 零售销售暴跌（control group <b>-0.4%</b> vs +0.3% est）+ UMich 信心暴跌（<b>51.0</b> vs 55.0、1y 通胀 4.3%）→ 美债 <b>bear-steepen</b>（10y +5bp 至 <b>4.692%</b>、2s10s +2.3bp 至 52.2bp）；GS 独家 'They're Not Hiking'：市场定价 9月 ~8bp / 全年 ~23bp 加息过于鹰派",
+      headers:["券商","市场数据/表现","曲线/久期","政策/定价","核心逻辑","交易建议"],
+      cols:["88px","22%","16%","20%","20%","14%"],
+      rows:[
+        ["GS",
+          ["fact","零售销售 control group -0.4%（vs +0.3% est）；8月 UMich 信心 51.0（vs 55.0）、1y 通胀预期 4.3%"],
+          ["short","<span class='bear'>bear-steepen</span>：10y +5bp 至 4.692% / 2s10s +2.3bp 至 52.2bp"],
+          ["fact","市场定价 9月 ~8bp / 全年 ~23bp 加息；GS 认为 9月几乎不可能、过于鹰派；供给 $16bn 20s (Wed) + $8bn 30yr TIPS (Thu)"],
+          ["fact","零售/信心双双暴跌 vs 市场鹰派定价背离——GS 'They're Not Hiking' 是核心框架"],
+          ["long","favor US steepening vs Europe flatteners（Rates Trader 'A Steeper Price of Relief'）；数据续软则前端加息押注回吐"]]
+      ]
+    },
+    // 美国IG信用债
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"US IG 供给潮创纪录：单日 <b>$56bn+</b> / 37 deals / 68 tranches（vs $40bn est），8月至今 <b>$136bn</b> 距 2020 纪录仅 $5bn；但 IG cash 异常疲软（Citi 'more sellers than buyers'），MPHC/KDP S&P outlook stable→negative",
+      headers:["券商","市场数据/表现","供给/发行","评级/事件","核心逻辑","交易建议"],
+      cols:["88px","20%","22%","20%","20%","14%"],
+      rows:[
+        ["TD",
+          ["fact","股市从高点回落、信心弱于预期、零售销售一年最大跌幅；收益率走高、曲线 bear-steepening；Credit 平静、spreads broadly unchanged to slightly wider"],
+          ["fact","发行 <span class='bear'>$56bn+ / 37 deals / 68 tranches</span>（vs $40bn est）；8月至今 $136bn 距 2020 纪录 $5bn；本周预期 $25bn"],
+          ["fact","Financials: specialty finance 优于 banks/insurers"],
+          ["fact","供给潮创纪录 + 宏观（higher yields + dovish data）拉锯，关注周三 FOMC minutes"],
+          ["short","供给 + cash 双弱，US IG 防御为主；specialty finance 相对优于 banks/insurers"]],
+        ["Citi",
+          ["fact","IG cash 异常疲软 <span class='bear'>'more sellers than buyers'</span> + supply threat，尽管宏观指向买入环境；Front End spreads +3/+4 WTD、manufacturing/healthcare 落后"],
+          ["fact","$56.13bn new issue（est $35bn）；hybrid supply 8月累计 $7.7bn（VZ/ARE/CNP/ETR/NEE/DRD/WFC/AXP）"],
+          ["fact","MPHC/KDP S&P 维持 BBB-/A-3 但 <span class='bear'>outlook stable→negative</span>（美国咖啡盈利疲软、K-Cup 长期下滑）；KDP 分拆 1Q27"],
+          ["fact","IG cash 疲软 + hybrid supply 累积压力，与供给潮形成双杀"],
+          ["short","MPHC/KDP outlook negative 是评级下调预警，KDP 分拆前资本结构博弈需跟踪"]]
+      ]
+    },
+    // 欧洲利率
+    {
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      summary:"欧元区 Q2 GDP +0.4%、德 2s10s 39bp 月内最陡；Gilts 10yr <b>~8.5bp 走弱突破 5%</b>（油价），Farage 赢 Clacton 补选，Fitch 确认 UK AA-/stable",
+      headers:["券商","市场数据/表现","德国/曲线","英国","核心逻辑","交易建议"],
+      cols:["88px","22%","20%","22%","20%","16%"],
+      rows:[
+        ["GS",
+          ["fact","euro area Q2 GDP +0.4%；德 2s10s 39bp 月内最陡；油价主导长端"],
+          ["short","<span class='bear'>德 2s10s 陡峭化</span>（39bp 月内最陡），长端因油价承压"],
+          ["fact","Gilts 10yr ~8.5bp 走弱突破 5%（油价）；Farage 赢 Clacton 补选；Fitch 确认 UK AA-/stable"],
+          ["fact","欧洲跟随油价 + 全球长端 bear-steepen，UK 政治噪音 (Farage) 未撼动 AA-/stable 评级"],
+          [""]]
+      ]
+    },
+    // 日本利率
+    {
+      id:"jp-rates", pri:false, title:"日本利率",
+      summary:"JGBs：BoJ 最早 9月加息（Reuters 头条），超长端相对韧性；与美债 bear-steepen 形成美日利率联动",
+      headers:["券商","市场数据/表现","BoJ 政策","核心逻辑","交易建议"],
+      cols:["88px","26%","26%","24%","16%"],
+      rows:[
+        ["GS",
+          ["fact","Reuters：BoJ 最早 9月加息；JGB 超长端相对韧性"],
+          ["fact","BoJ 加息预期升温，JPY hike 门槛更高（GS Rates Trader）"],
+          ["fact","BoJ 加息预期 vs 美债 bear-steepen，美日利率方向性交易需评估"],
+          [""]]
+      ]
+    },
+    // 新兴市场及全球信用
+    {
+      id:"em-credit", pri:true, title:"新兴市场及全球信用",
+      summary:"CEEMEA 地缘升温：黎巴嫩 <b>+30-40c</b>（银行重组法）、俄乌升级（-1pt）、Houthi 袭击 Aramco 炼厂（KSA/PIF quasi 仍 outperform sovereign）；LATAM 分化：Ecuador S&P 上调 B-→B <b>+40c</b>、阿根廷 Milei 支持率下滑 -1.5pts",
+      headers:["券商","CEEMEA","LATAM","评级/事件","核心逻辑","交易建议"],
+      cols:["88px","20%","20%","20%","20%","14%"],
+      rows:[
+        ["GS",
+          ["fact","黎巴嫩 <span class='bull'>+30-40c</span>（银行重组法通过）；俄乌战争升级（-1pt）；MENA KSA/PIF quasi outperform sovereign -7-10bp；非洲 Senegal -2pts（World Bank XOF 340bn）；Romania 确认 Baa3/Negative"],
+          ["fact","Ecuador S&P 上调 B-→B <span class='bull'>+40c</span>；阿根廷 -1.5pts（Milei 支持率下滑 + 大选担忧、CDS 买兴）；巴西 +3-5bp；墨西哥/乌拉圭 -2-5bp；Colombia Ecopet -10-20bp（7.4 地震 + $1bn 美国支持）"],
+          ["fact","Ecuador 上调 B-→B；Houthi 无人机袭击 Aramco 炼厂；黎巴嫩银行重组法"],
+          ["fact","CEEMEA 地缘升温 vs quasi outperform 背离，风险溢价局部定价而非全面扩散；LATAM 评级事件提供 alpha"],
+          ["long","LATAM 多空对：Ecuador（评级上调）vs 阿根廷（政治风险 CDS）；黎巴嫩追涨需评估政治风险"]]
+      ]
+    },
+    // 澳洲信用债
+    {
+      id:"aud-credit", pri:true, title:"澳洲信用债",
+      summary:"QBEAU（QBE）强劲 1H26：Adj NPAT +4% 至 <b>$1.03bn</b>、ROE 17.7%、COR 92.8%、<b>$450m buyback</b>；AUD corporates +1bp tighter（SSE 新债 traded through re-offer），但 financials softened（CBA/ANZ 供给、senior +1-2bp/T2 +1-5bp）",
+      headers:["券商","市场数据/表现","银行/新发","QBE/业绩","核心逻辑","交易建议"],
+      cols:["88px","20%","22%","22%","20%","16%"],
+      rows:[
+        ["DB",
+          ["fact","AUD corporates <span class='bull'>+1bp tighter</span>（SSE 新债 traded through re-offer）；financials softened（CBA/ANZ supply、senior +1-2bp / T2 +1-5bp）"],
+          ["fact","CBA FY26 净利健康但资产质量走弱、抵押贷款申请双位数下降；Westpac/ANZ Q3 更新；Contact Energy FY26 + CDC data centre foray"],
+          ["fact","QBE（QBEAU）1H26：GWP +6% CC、Adj NPAT <b>+4% 至 $1.03bn</b>、ROE 17.7%、COR 92.8%、投资收入 $828m、PCA 1.82x、<span class='bull'>$450m buyback</span> + $1.6bn loss portfolio transfer、FY26 guidance 维持"],
+          ["fact","QBEAU 盈利质量 + buyback 支撑，corporate firm 但 financials 供给承压（CBA/ANZ）"],
+          ["long","QBEAU 相对价值明确（盈利质量 + buyback）；financials 供给压力下关注 QBE 次级"]]
+      ]
+    },
+    // 美国股票/跨资产ETF
+    {
+      id:"us-equity", pri:false, title:"美国股票及跨资产ETF",
+      summary:"美股全面走低（Dow -0.2% / S&P -0.2% / Nasdaq -0.3%）但 Energy <b>+1.4%</b> 领涨（WTI +1.3% 至 $82.30）；FI 收益率走高（2y +2bp / 10y +5bp 长端集中），credit spreads 全线走阔（Tech +1.8bp 领涨）",
+      headers:["券商","股指/板块","利率/信用","资金流","核心逻辑","交易建议"],
+      cols:["88px","20%","20%","20%","20%","16%"],
+      rows:[
+        ["JS",
+          ["fact","Dow -0.2% / S&P -0.2% / Nasdaq -0.3%；<span class='bull'>Energy +1.4%</span> 领涨（WTI +1.3% 至 $82.30、gold +0.5%）；US sectors Energy/Utilities/Industrials/Materials outperform、Health Care underperform"],
+          ["fact","FI: 2y +2bp / 10y +5bp 长端集中；credit spreads 全线走阔（<span class='bear'>Tech +1.8bp</span> 领涨，Staples/Energy/Industrials +1.1bp）"],
+          ["fact","HY 流入（BHYB）、Agg ETF 流出（SPAB）；DM 权益流入（VT）、Value/Europe/European Financials 流入；EM UAE/Brazil 流出"],
+          ["fact","利差走阔 + 收益率走高组合对久期/信用皆逆风，Energy 唯一领涨；印证 GS 长端 bear-steepen 的跨资产共振"],
+          ["short","久期 + 信用皆逆风，防御型配置；Energy 相对领涨，HY 流入 vs Agg 流出分化需跟踪"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","中国IG信用债","中国HY及地产信用债","亚洲IG信用债","亚洲HY信用债","亚洲主权及CDS","澳门博彩信用债","澳洲利率","美国HY信用债","日本及亚洲DM信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","市场鹰派 vs GS 鸽派 — 加息路径定价背离",
+        ["long","<span class='bull'>GS 'They're Not Hiking'</span><br>9月几乎不可能加息<br>全年 ~23bp 定价过于鹰派"],
+        ["short","<span class='bear'>市场定价</span><br>9月 ~8bp<br>全年 ~23bp 加息"],
+        ["fact","<b>当日最大 single-house vs market 背离</b>。零售销售暴跌（control -0.4%）+ UMich 信心暴跌（51.0）本应降息预期，但市场仍定价 9月 ~8bp 加息。GS 认为数据软将迫使前端加息押注回吐，favor US steepening。若 8月 CPI/就业续软，receive 短端 / US steepener 是对冲方向"]],
+      ["美国IG信用","供给创纪录 vs 宏观买入环境 — IG cash 异常疲软",
+        ["long","<span class='bull'>宏观买入环境</span><br>higher yields + dovish data<br>decent 5-day equity move"],
+        ["short","<span class='bear'>供给 + cash 双弱</span><br>$136bn 逼近 2020 纪录<br>Citi 'more sellers than buyers'"],
+        ["fact","<b>宏观指向买入 vs 技术面供给压制</b>。TD 报 8月至今 $136bn 距 2020 纪录 $5bn，Citi 报 IG cash 'more sellers than buyers' + hybrid supply $7.7bn。创纪录供给 + cash 疲软短线压制 spreads，需等供给消化或周三 FOMC minutes 催化方向"]],
+      ["澳洲信用","corporate firm vs financials 供给承压 — AUD 内部分化",
+        ["long","<span class='bull'>AUD corporates (DB)</span><br>+1bp tighter<br>SSE 新债 traded through re-offer"],
+        ["short","<span class='bear'>AUD financials (DB)</span><br>senior +1-2bp / T2 +1-5bp<br>CBA/ANZ 供给"],
+        ["fact","<b>AUD 内部 corporates firm vs financials 承压</b>。QBEAU 强劲 1H26（Adj NPAT +4%、$450m buyback）支撑 corporates，但 CBA/ANZ 供给使 financials senior/T2 走阔。可做多 QBEAU 次级、回避银行长端 T2 的配对思路"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-14 16:00 ~ 2026-08-17 12:00 (US overnight Aug 14 + Asia morning Aug 17)",
+    emailCount:"Goldman Sachs 2 / TD Securities 1 / Jane Street 1 / Citi 1 / Deutsche Bank 1（共6封邮件 · 5家券商）",
+    omitted:"中国利率、中国IG/HY、亚洲IG/HY/主权、澳洲利率、美国HY、日本及亚洲DM、澳门博彩已在「无覆盖市场」汇总"
   }
 };
 
