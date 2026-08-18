@@ -1,5 +1,5 @@
 /* =====================================================================
- * report-data.js · 卖方每日情报 · 自动生成于 2026-08-18 08:32 HKT
+ * report-data.js · 卖方每日情报 · 自动生成于 2026-08-18 13:52 HKT
  * ===================================================================== */
 window.REPORT_DATA = 
 {
@@ -5201,6 +5201,17 @@ window.REPORT_DATA =
               "note": "30y拍卖锁定2001年来最高长期借贷成本，$40tn债务付息超国防"
             }
           ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "points": [
+            {
+              "date": "2026-08-17",
+              "tilt": "neg",
+              "mode": "VIEW",
+              "note": "bear steepening无减弱迹象，长端受inflation fears+term premium+AI issuance压制，USZ6 ctd转移到8/45"
+            }
+          ]
         }
       ],
       "status": "active",
@@ -5329,17 +5340,20 @@ window.REPORT_DATA =
     {
       "reportDate": "2026-08-18",
       "coverage": {
-        "emails": 7,
+        "emails": 10,
         "brokers": [
           "Goldman Sachs",
           "Jefferies",
           "Citi",
           "TD Securities",
           "Deutsche Bank",
-          "Barclays"
+          "Barclays",
+          "Jane Street",
+          "Bank of Montreal",
+          "Morgan Stanley"
         ],
         "lookbackDays": 15,
-        "sourceDateNote": "8/17周一交易复盘(周二推送)，7封。核心：周一美股回落SPX -52bps至7745，长端steepening延续(30y卖5bps至5.31%)，油价因美国宣布伊朗经济隔离策略回升点燃通胀担忧，Energy +87bps唯一上涨板块。IG供给破8月历史记录$145bn(2020年$136bn)。Jefferies从neutral/bearish转向buy on dips(5yr 4.42-4.50%)。Stripe+Advent $53bn收购PayPal(约$50bn融资)。AUD本月最弱session。India IG rush to issue(RBI提前关闭FCNR(B)窗口)。"
+        "sourceDateNote": "8/17周一交易复盘(周二推送)，10封。核心：周一美股回落SPX -52bps至7745，长端steepening延续(30y卖5bps至5.31%)，油价因美国宣布伊朗经济隔离策略回升点燃通胀担忧，Energy +87bps唯一上涨板块。IG供给破8月历史记录$145bn(2020年$136bn)。Jefferies从neutral/bearish转向buy on dips(5yr 4.42-4.50%)。Stripe+Advent $53bn收购PayPal(约$50bn融资)。AUD本月最弱session。India IG rush to issue(RBI提前关闭FCNR(B)窗口)。SSA供给回归(EIB/World Bank/DBJJP)。US ETF flows(US Equity净流出、VGIT国债流入)。"
       },
       "signals": [
         {
@@ -5582,6 +5596,39 @@ window.REPORT_DATA =
           "emails": 1,
           "sourceRefs": [
             "Barclays 2026-08-18"
+          ]
+        },
+        {
+          "broker": "Jane Street",
+          "stance": "neutral",
+          "asset_class": "US ETF Flow",
+          "summary": "周一主要股指普跌(SPX -0.5%/Nasdaq -0.3%)，Energy唯一outperform +0.9%。WTI原油+2.6%至$84.5。固收ETF见VGIT国债流入，IG/HY ETF以卖盘为主，US Equity ETF强净流出(VOO/SCHX/VO)。资金流入Canada(EWC)/黄金(IAUM)/Utilities(XLU)/Cybersecurity(CIBR)/Smart Grid(GRID)。",
+          "stance_cn": "中性",
+          "emails": 1,
+          "sourceRefs": [
+            "Jane Street 2026-08-18"
+          ]
+        },
+        {
+          "broker": "Bank of Montreal",
+          "stance": "neutral",
+          "asset_class": "SSA Supply",
+          "summary": "SSA供给本周全面回归：USD EIB 5yr(SOFR MS+32bps)、World Bank 7yr(SOFR MS+40bps)、DBJJP 3yr(SOFR+43bps)；EUR Rentenbank 7yr、KFW 3yr；GBP NEDWBK 250mm 5yr定价SONIA MS+39bps。宏观backdrop firm但中东头条推高油价，风险tone偏软。",
+          "stance_cn": "中性",
+          "emails": 1,
+          "sourceRefs": [
+            "Bank of Montreal 2026-08-18"
+          ]
+        },
+        {
+          "broker": "Morgan Stanley",
+          "stance": "bearish",
+          "asset_class": "Rates",
+          "summary": "UST 2-way activity偏flattening：lifers买长端/fast money pay前端/banks收belly。bear steepening无减弱迹象。前端因soft CPI/NFP定价<1 hike over 2026，但长端受elevated inflation fears+higher term premium+heavy AI-related issuance压制。USZ6 ctd已从11/43 vs 2044转移到8/45，再20bp selloff或触发extension into 20+yr lower coupon，dv01或增10%+。calendar roll或促real money再平衡，明日20y auction需求或疲软。",
+          "stance_cn": "看空",
+          "emails": 1,
+          "sourceRefs": [
+            "Morgan Stanley 2026-08-18"
           ]
         }
       ],
