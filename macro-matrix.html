@@ -789,10 +789,10 @@ REPORT_DATA["2026-08-17"] = {
 
 REPORT_DATA["2026-08-18"] = {
   dateCN: "2026年8月18日 星期二",
-  theme: "全球 bear-steepening 跨券商共振（GS + MS + Jefferies 三方确认）+ Citi 报 PYPL $53bn 收购头条 + SSA tier 1 供给回归（BMO）+ US Equity ETF 强劲净流出（Jane Street risk-off）+ AUD 信用 weakest session（TD/DB 一致）",
-  meta: "覆盖券商：GS 2封（Asia Macro + Global Credit Recap）+ MS 1封（UST overnight）+ Jefferies 1封（Rates mkt recap）+ Citi 1封（IG Credit — PYPL）+ TD 1封（AUD Credit）+ DB 1封（Aussie Credit — NCIAU/NAB/LLCAU）+ Barclays 2封（Asia EOD，其中 1 封撤回）+ BMO 1封（SSA New Issue）+ Jane Street 1封（US ETF）· 共11封邮件 · 9家券商",
+  theme: "全球 bear-steepening 跨券商共振（GS + MS + Jefferies 三方确认）+ GS 报中国地产 HY 跑赢（LNGFOR +2-3pt）+ CDX HY -14cts 去压缩 + UBS 欧洲金融债 marginally negative（AT1 -12.5c、BPM CET1 下修）+ Citi 报 PYPL $53bn 收购头条 + Barclays Asia MidDay tone 转弱 + SSA tier 1 供给回归（BMO）+ US Equity ETF 强劲净流出（Jane Street risk-off）+ AUD 信用 weakest session（TD/DB 一致）",
+  meta: "覆盖券商：GS 2封（Asia Macro + Global Credit Recap — 含中国 IG/HY、US IG、US HY、欧洲 AT1）+ MS 1封（UST overnight）+ Jefferies 1封（Rates mkt recap）+ Citi 1封（IG Credit — PYPL）+ TD 1封（AUD Credit）+ DB 1封（Aussie Credit — NCIAU/NAB/LLCAU）+ Barclays 1封（Asia MidDay）+ UBS 1封（Financials Credit）+ BMO 1封（SSA New Issue）+ Jane Street 1封（US ETF）· 共11封邮件 · 10家券商",
   brokers: [
-    {n:"Jefferies",c:"b-jefferies"},{n:"GS",c:"b-gs"},{n:"MS",c:"b-ms"},{n:"Citi",c:"b-citi"},{n:"TD",c:"b-td"},{n:"DB",c:"b-db"},{n:"Barclays",c:"b-barclays"},{n:"BMO",c:"b-bmo"},{n:"JS",c:"b-js"}
+    {n:"Jefferies",c:"b-jefferies"},{n:"GS",c:"b-gs"},{n:"MS",c:"b-ms"},{n:"Citi",c:"b-citi"},{n:"TD",c:"b-td"},{n:"DB",c:"b-db"},{n:"Barclays",c:"b-barclays"},{n:"BMO",c:"b-bmo"},{n:"JS",c:"b-js"},{n:"UBS",c:"b-ubs"}
   ],
   markets: [
     // 美国利率
@@ -803,42 +803,58 @@ REPORT_DATA["2026-08-18"] = {
       cols:["88px","20%","14%","13%","13%","21%","18%"],
       rows:[
         ["Jefferies",
-          ["fact","周五零售销售暴跌：advance <b>-0.6%</b>（vs +0.1%）、ex-auto -0.3%（vs +0.25%）、control -0.4%（vs +0.3%）；UMich 51.0（vs 55.0、1y 通胀 4.3%、5-10y 3.3%）；油价上行（伊朗经济孤立战略 + 波斯湾紧张）"],
-          ["short","<span class='bear'>长端结构性看空</span>：30y 拍卖借款成本 2001 年以来最高；JPY 走弱 + JGB 上行降低 FX-hedged Treasuries 吸引力"],
+          ["fact","<b>零售销售意外走弱</b><br>advance <b>-0.6%</b>（预期 +0.1%）· ex-auto -0.3% · control -0.4%<br>UMich 信心 <b>51.0</b>（预期 55.0）· 1y 通胀预期 4.3%<br>油价上行：伊朗经济孤立 + 波斯湾紧张"],
+          ["short","<span class='bear'>长端结构性看空</span><br>30y 拍卖借款成本 2001 年以来最高<br>JPY 走弱 + JGB 上行，削弱 FX-hedged 吸引力"],
           [""],
           [""],
-          ["fact","周五数据暴跌但反弹短暂，归因 'seasonal distortions' 而非实质恶化；风险回报对 counter-trend rally + 2026 投资者有吸引力"],
-          ["long","<span class='bull'>逢跌逐步建仓</span>：5y 4.42-4.50% 已进场、10y 逼近 4.75-4.85%、20y/30y 迈向 5.25-5.40%；10y 跌破 4.57% 则跌向 4.75%/4.81%/4.79% 即逢跌买点；但长端结构性熊市限制久期，5y/10y 战术做多"]],
+          ["fact","数据暴跌被归为 <b>'seasonal distortions'</b>，非实质恶化<br>对 counter-trend rally 的风险回报有吸引力"],
+          ["long","<span class='bull'>逢跌逐步建仓</span><br>已进场：5y 4.42-4.50%<br>观察区：10y 4.75-4.85% · 20y/30y 5.25-5.40%<br>长端熊市限制久期，仅 5y/10y 战术做多"]],
         ["GS",
-          ["fact","US10y <b>+3bp</b> 至 4.722%、5s30s <b>+3.6bp</b> 至 93.2bp、30y 5.31%；Bunds/Gilts/JGBs 全线 bear steepen（JGB 10y 回 2.9%）；驱动=油价/财政赤字/AI hyperscaler 供给/Empire manufacturing 2021 底以来最强/$9bn 12 家 corp 供给"],
-          ["short","<span class='bear'>长端结构性承压</span>：bear-steepening 无缓解，5s30s 至 93bp、10y 4.722%、30y 5.31%"],
+          ["fact","US10y <b>+3bp</b> 至 4.722% · 30y 5.31%<br>5s30s <b>+3.6bp</b> 至 93.2bp（bear steepen）<br>Bunds / Gilts / JGBs 全线走陡，JGB 10y 回 2.9%"],
+          ["short","<span class='bear'>长端结构性承压</span><br>bear-steepening 无缓解迹象"],
           ["fact","5s30s <b>+3.6bp</b> bear steepen"],
-          ["fact","前端定价 <b>~8.5bp</b> 9 月加息、<b>~25bp</b> 年底"],
-          ["fact","油价上行 + 财政赤字 + AI hyperscaler 供给 + Empire manufacturing 2021 底以来最强 + $9bn 12 家 corp 供给"],
-          ["long","交易更新：<span class='bull'>关 short THB/INR 小赚</span>；India IG：RBI 提前关 FCNR(B) → Kotak/ICICI/Yes/HDFC/Axis rush to issue、BOBIN 3yr ~1bp tighter"]],
+          ["fact","前端定价 <b>~8.5bp</b> 9月加息 · <b>~25bp</b> 年底"],
+          ["fact","油价上行 + 财政赤字 + AI hyperscaler 供给<br>Empire manufacturing 2021 底以来最强<br>$9bn / 12 家 corp 供给"],
+          ["long","<span class='bull'>关 short THB/INR 小赚</span><br>India IG：RBI 提前关 FCNR(B)，Kotak / ICICI / HDFC / Axis 抢发"]],
         ["MS",
-          ["fact","bear-steepening <b>无 abating 迹象</b>（Israel Lebanon + Trump Oman threats）；长端受通胀担忧/期限溢价/AI 供给压制"],
-          ["short","<span class='bear'>USZ6 期货 ctd 延长至 8/45</span>，再 20bp selloff → 延长至 20+yr、<b>dv01 +10%</b>"],
-          ["fact","bear-steepening 延续，长端 outperformance 难现"],
-          ["fact","Warsh 9 月加息日益不可能"],
-          ["fact","通胀担忧 + 期限溢价 + AI 供给；明日 20y 拍卖端用户需求难预期"],
-          ["short","长端做空/减久期；USZ6 ctd 延长是杠杆风险，20y 拍卖是供给消化试金石"]]
+          ["fact","bear-steepening <b>无缓解迹象</b>（Israel Lebanon + Trump Oman）<br>长端受通胀担忧 / 期限溢价 / AI 供给压制"],
+          ["short","<span class='bear'>USZ6 期货 ctd 延长至 8/45</span><br>再 20bp selloff → 延长至 20+yr，<b>dv01 +10%</b>"],
+          ["fact","bear-steepening 延续，长端难 outperform"],
+          ["fact","Warsh 9月加息日益不可能"],
+          ["fact","通胀担忧 + 期限溢价 + AI 供给<br>明日 20y 拍卖端用户需求难预期"],
+          ["short","长端做空 / 减久期<br>USZ6 ctd 延长是杠杆风险，20y 拍卖是试金石"]]
+      ]
+    },
+    // 中国信用债
+    {
+      id:"china-credit", pri:true, title:"中国信用债（IG + HY）",
+      summary:"GS 独家中国信用：地产 HY 单向走强（LNGFOR <b>+2-3pt</b> 至 7%、VNKRLE 逼近下一档大数）；CNH 新发成亮点（CHGRID 10Y <b>+1pt</b> vs 20Y <b>+3pt</b>、与在岸平价）；IG 被 rates 拖累、TENCNT 20Y 持续跑输 10Y；HOGNQI 对 7.05 28s 发起 make-whole call",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","<b>地产 HY 单向走强</b><br>LNGFOR <span class='bull'>+2-3pt</span>（27s 至 7%）· VNKRLE 逼近下一档<br>CNH 新发成亮点：CHGRID 10Y <b>+1pt</b> · 20Y <b>+3pt</b><br>中国 IG 大多 unchanged（rates 拖累）"],
+          [""],
+          ["fact","CHGRID 与在岸几乎平价（「2% 仍是 magic yield hurdle」）<br>TENCNT 20Y 持续跑输 10Y，账户主动减久期"],
+          ["fact","HOGNQI 对 7.05 28s 发起 make-whole call<br>FOSUNI 整周 unchanged（上月新发未消化）<br>NWDEVL 有 carry 买盘（顺带 CHJMAO / CPDEV）"],
+          ["long","<span class='bull'>地产 HY 明显跑赢</span>、CNH 久期需求强劲<br>但 IG 被 rates 拖累，5s30s +10bp 下曲线未见平坦化（反常）"],
+          ["long","偏好：地产 HY carry（LNGFOR / VNKRLE）· CNH 新发久期<br>风险：FOSUNI 供给消化慢 · TENCNT 长端去化压力"]]
       ]
     },
     // 亚洲信用债
     {
       id:"asia-credit", pri:true, title:"亚洲信用债",
-      summary:"Asia 韧性延续（EOD）：Asia Sovs firm <b>1-2bp tighter</b>、India IG 供给窗口两周内关闭、Asia HY firm（无视伊朗头条、长端 outperform）；Japan CDS firm（现金滞后）：Nissan short 被抢筹、NSANY <b>7bp tighter</b>、skew 修正 -4→-2.9bp；HSI +1.3% / NIFTY -0.15%",
+      summary:"Barclays MidDay tone 转弱：Asia HY flat to lower（<b>-0.125-0.25pt</b>、spreads +1/3bps wider、street 偏 weaker）；Asia Sovs 长端 better offered（<b>-0.25/-0.75pt</b>）、Itraxx +0.75bp wider；India IG 新 ICICI <b>tightened 5bp</b>（NIP 全消）；HSI -0.1% / NIFTY -0.4%",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
       cols:["88px","20%","15%","18%","17%","18%","14%"],
       rows:[
         ["Barclays",
-          ["fact","Asia Sovs firm <span class='bull'>1-2bp tighter</span>（前端本地买盘 + 长端空头回补、cash sticky 至 0.25pt lower）；Asia HY firm（无视伊朗头条、长端 outperform、cash 无卖家）；SEA IG corps busy（PERHUL/MINCAP）；HSI +1.3% / NIFTY -0.15%"],
+          ["fact","<b>Asia HY flat to lower</b>（<b>-0.125-0.25pt</b> · spreads <b>+1/3bps wider</b>）<br>Asia Sovs 长端 better offered（<b>-0.25/-0.75pt</b>）<br>Philly 跑输 INDO · HSI -0.1% / NIFTY -0.4%"],
           [""],
-          ["fact","India IG 最活跃（RBI 新规、供给窗口两周内关闭、cash unchanged 至 2bp wider、净需求）；Japan CDS firm（现金滞后）：Nissan short 被抢筹、NSANY <b>7bp tighter</b>、skew 修正 -4→-2.9bp（仍 rich）"],
-          ["fact","新发：Challenger IM Capital A$ Callable、Alphabet 首发 AUD Kangaroo（3/5/10/20Yr）、Yes Bank $3Y Reg S、Kotak $5Y、ICICI $5Y 144A/Reg S +130bps、EDC 3Y HKD（HIBOR +3bps）"],
-          ["fact","Asia 信用韧性延续（EOD 确认），Japan CDS Nissan short + skew 修正是当日增量 alpha；India IG 窗口两周内关闭是供给主题核心"],
-          ["long","Asia 信用（尤其长端）相对 US 长端久期更优；Japan CDS Nissan short 已被抢筹但 skew 仍偏 rich，追涨需谨慎"]]
+          ["fact","Itraxx +0.75bp wider：China 36/36.75 · Indon 84/85 · Korea 22/22.75<br>India IG 新 ICICI <b>tightened 5bp</b>（NIP 全消）"],
+          ["fact","新发：Alphabet 首发 AUD Kangaroo 3/5/10/20Y（BBSW +80/105/150/200）<br>Luso Intl PerpNC5 7.20% · Kotak 5Y T+135 · HSBC CNH 4NC3/8NC7"],
+          ["short","<span class='bear'>HY tone 明显转弱</span><br>dealers 倾向 fade sticky cash vs 更宽 rates move"],
+          ["long","偏好：India IG 新发窗口（ICICI 5bp 收紧）<br>风险：HY cash 相对 rates 偏 sticky，追空需谨慎"]]
       ]
     },
     // 美国IG信用债
@@ -849,12 +865,58 @@ REPORT_DATA["2026-08-18"] = {
       cols:["88px","20%","19%","19%","17%","15%","14%"],
       rows:[
         ["Citi",
-          ["fact","spreads slow leak（12 deals $9.1bn）；Index 回到 <b>80bps</b>；Domestic/Yankee financials CoD +1-2bp wider；SAMMON <b>+50-75bp</b>（HF selling/RM buying、arms-length 争议）"],
-          ["fact","<b>PYPL 收购头条</b>：Stripe+Advent 拟 $53bn 收购 PayPal（$60.50/shr、$50bn 银行 committed financing 多数债务化、$66bn EV=9.4x EBITDA/~10% FCF、7/15 已报道）"],
-          ["long","<span class='bull'>pref/hybrid 走强</span>：Citi 6.625 up 101、6.875 lifted 101.25、6.5 lifted 100.20/6.50% YTC；GS 6.5 hit 6.70% YTC；CNP/ETR hybrids in the money"],
-          ["fact","8月 IG 供给创纪录 <b>$145bn</b>（vs 2020 COVID 8月 $136bn）；本周供给 $20bn（taper）"],
-          ["fact","PYPL LBO 的 $101 CoC 契约定价到 defeasance (T=0) 或 $101，长端 50/52/54/62 upside 最大；8月供给创纪录下 spread 慢漏需警惕追空被套"],
-          ["long","PYPL 长端 (50/52/54/62) 是 LBO CoC 最大 upside；$50bn 债务融资考验银行承销消化，供给创纪录下 IG spread 慢漏趋势延续"]]
+          ["fact","spreads slow leak（12 deals $9.1bn）· Index 回到 <b>80bps</b><br>Domestic / Yankee financials CoD +1-2bp wider<br>SAMMON <b>+50-75bp</b>（HF selling / RM buying）"],
+          ["fact","<b>PYPL 收购头条</b><br>Stripe + Advent 拟 $53bn 收购 PayPal（$60.50/shr）<br>$50bn 银行 committed financing，多数债务化<br>$66bn EV = 9.4x EBITDA / ~10% FCF"],
+          ["long","<span class='bull'>pref / hybrid 走强</span><br>Citi 6.625 up 101 · GS 6.5 hit 6.70% YTC<br>CNP / ETR hybrids in the money"],
+          ["fact","8月 IG 供给创纪录 <b>$145bn</b>（vs 2020 COVID 8月 $136bn）<br>本周供给 $20bn（taper）"],
+          ["fact","PYPL LBO 的 $101 CoC 契约定价到 defeasance (T=0) 或 $101<br>长端 50/52/54/62 upside 最大"],
+          ["long","PYPL 长端（50/52/54/62）是 LBO CoC 最大 upside<br>$50bn 债务融资考验银行承销，供给创纪录下 spread 慢漏延续"]],
+        ["GS",
+          ["fact","IG100 收 <b>+1.4bp</b>（上周 +2.4bp）· 午后 spreads 1-2bp wider<br>保险是当日 laggard <b>+10-15bp</b>（SAMMON <b>+90bp</b> 联动）<br>Data centers 偏弱 <b>+4-5bp</b>"],
+          ["fact","保险 beta names 走弱是风险偏好回落信号<br>（SAMMON +90bp 单主体拖累）"],
+          ["fact","CDX IG <b>+0.54bp</b> wider · 去压缩 flow<br>TFLO 显示 dealer 净买 <b>$2.4bn</b>（偏前端）"],
+          ["fact","IG 新发 <b>$9.1bn / 12 deals</b>（vs HY $0.75bn / 1 deal）<br>vol 双向活跃，IG 中间 OTM 下行有卖盘"],
+          ["fact","macro credit 回吐部分昨日涨幅<br>datacenters 跑输 hyperscalers（去压缩延续）"],
+          ["short","保险（尤其 SAMMON 链）是当日风险点<br>datacenters +4-5bp 显示 AI 主题久期去化压力"]]
+      ]
+    },
+    // 美国HY信用债
+    {
+      id:"us-hy", pri:true, title:"美国HY信用债",
+      summary:"GS 独家：CDX HY <b>-14cts</b>（去压缩 flow）；Guggenheim 头条令 Term Loan 一度 <b>-22pts</b> 后反弹 <b>+5-7pts</b>；HY 新发清淡 <b>$0.75bn/1 deal</b>（vs IG $9.1bn/12 deals）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","CDX HY <span class='bull'>-14cts</span>（去压缩 flow）<br>Guggenheim 头条令 Term Loan 一度 <b>-22pts</b>，后反弹 <b>+5-7pts</b>"],
+          [""],
+          ["fact","CDX HY 收窄 vs CDX IG +0.54bp 走宽（decompression）<br>HY 估值相对偏紧"],
+          ["fact","HY 新发清淡 <b>$0.75bn / 1 deal</b><br>CDX HY payer 有买盘，vol 双向活跃"],
+          ["fact","去压缩行情（IG 走宽 + HY 走强）<br>Lev Fin 单主体事件扰动但修复快"],
+          ["short","风险：Guggenheim 等单主体事件波动<br>HY 估值偏紧，防去压缩逆转"]]
+      ]
+    },
+    // 欧洲金融债
+    {
+      id:"europe-fin", pri:false, title:"欧洲金融债",
+      summary:"UBS 开盘 <span class='bear'>marginally negative</span>：RT1/AT1 领跌（<b>-12.5c</b>、个别 -25c）；Banco BPM CET1 下修至 <b>14.02%</b>；GS 欧洲 AT1 EoD <b>-0.125pt</b>（muted）；新发 ABN 3y B+51.5 / 7y B+65.9（UBS lead）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["UBS",
+          ["short","<span class='bear'>Opening sentiment marginally negative</span><br>Seniors 收盘 unch 至 1bp wider（US-Iran 谈判升级）<br>RT1 收盘 <b>-12.5c</b>（个别 -25c）· AT1 -12.5c"],
+          ["fact","Banco BPM CET1 下修至 <b>14.02%</b>（vs 14.4%，ECB 未批准 H1 利润计入）<br>Nationwide 拟再售 <b>£100mn CCDS</b>（UBS joint-lead）"],
+          ["fact","新发定价：ABN 3y <b>B+51.5</b> · 7y <b>B+65.9</b>（UBS lead）<br>ACAFP 7y SNP <b>B+97.9</b> · NDAFH 7y <b>B+64.1</b><br>Nor / NatWest / Crédit Agricole 全线 NIP 负（-14 至 -28bp）"],
+          ["fact","Tier 2 / RT1 净买入，但焦点在 senior primary<br>短端 domestic banks 双向 JPM / MS / WFC"],
+          ["short","利率 / 宏观走弱压制金融债，AT1 / RT1 对利率敏感领跌<br>夏季流动性淡放大波动"],
+          ["short","风险：US-Iran 升级是主要宏观逆风<br>BPM CET1 下修显示资本质量个案风险"]],
+        ["GS",
+          ["fact","欧洲 AT1 EoD <b>-0.125pt</b>（+1/-1bp spread）<br>muted day，多数围绕新发与 rates move"],
+          [""],
+          ["fact","RV：7y 及更长 flat（持续 yield 买盘）<br>short call 对 belly 仍 steep（Asia 买盘）"],
+          ["fact","FM selling vs Asia / ME / PBs topping up（跨区资金轮动）"],
+          ["fact","欧洲 AT1 相对 muted，结构上长端 yield 买盘主导"],
+          ["long","偏好：7y+ flat 的 yield 买盘 + 新发 5-7y 定价锚<br>风险：FM 卖压 vs Asia 承接的资金面依赖"]]
       ]
     },
     // 澳洲信用债
@@ -865,19 +927,19 @@ REPORT_DATA["2026-08-18"] = {
       cols:["88px","20%","19%","19%","17%","15%","14%"],
       rows:[
         ["TD",
-          ["short","<span class='bear'>Weakest session of month</span>：HQ spreads <b>+1-2bp wider</b>、beta <b>3-7bp wider</b>；Corporates 1-5bp wider；长端高质量 AIRSERV/NBN/MTRC underperform"],
+          ["short","<span class='bear'>Weakest session of month</span><br>HQ spreads <b>+1-2bp wider</b> · beta <b>3-7bp wider</b><br>长端高质量 AIRSERV / NBN / MTRC underperform"],
           [""],
-          ["fact","新 ANZ FRN + 20y 都回到 reoffer（放弃定价前收紧）；WSTP T2 wider than reoffer；AIRSERV/NBN/MTRC 长端 underperform"],
-          ["fact","Flows 偏向 client selling（但 mid-curve corporates 有需求、retail 买 T2）；新发溢价消化 + 风险偏好回落，长端高质量 names 久期卖压是主线"],
-          ["fact","新发密集后 flow 转弱，ANZ FRN/20y 回到 reoffer 显示新发溢价被市场消化"],
-          ["short","短期回避 AUD 长端（AIRSERV/NBN/MTRC underperform 是久期卖压信号）；retail 买 T2 仍支撑次级债"]],
+          ["fact","新 ANZ FRN + 20y 都回到 reoffer（放弃定价前收紧）<br>WSTP T2 wider than reoffer"],
+          ["fact","Flows 偏向 client selling（但 retail 买 T2）<br>新发溢价消化 + 风险偏好回落，长端久期卖压是主线"],
+          ["fact","新发密集后 flow 转弱<br>ANZ FRN / 20y 回到 reoffer 显示新发溢价被消化"],
+          ["short","短期回避 AUD 长端（AIRSERV / NBN / MTRC underperform）<br>retail 买 T2 仍支撑次级债"]],
         ["DB",
-          ["fact","NCIAU（Newcastle Coal, BBB+/BBB）5Y AUD 新发：pricing <b>+140-145</b>（+5-10bp NIC）、deal AUD200mn；USD senior 2027 G+110 / 2031 G+129"],
-          ["fact","<b>LLCAU</b>（Lendlease, Baa3/stable）H2FY26 弱：gearing <b>30.3%</b>（含 hybrid 37.7%）、CRU EBITDA -AUD500mn（剩 AUD2.5bn 待售）；NAB NIM <b>-2bp</b> 至 1.79%、mortgage applications -15% QoQ"],
-          ["fact","NCIAU DB FV <b>+135bp</b>（对标 DRMPBF 2031 ASW+130，thermal coal vs DBCT met coal 需 concession）、5Y IPT +140-145 有 ~5-10bp thermal coal 新发溢价"],
+          ["fact","NCIAU（Newcastle Coal, BBB+/BBB）5Y AUD 新发<br>pricing <b>+140-145</b>（+5-10bp NIC）· deal AUD200mn"],
+          ["fact","<b>LLCAU</b>（Lendlease）H2FY26 弱：gearing <b>30.3%</b>（含 hybrid 37.7%）<br>NAB NIM <b>-2bp</b> 至 1.79% · mortgage applications -15% QoQ"],
+          ["fact","NCIAU DB FV <b>+135bp</b>（对标 DRMPBF 2031 ASW+130）<br>5Y IPT +140-145 有 ~5-10bp thermal coal 新发溢价"],
           ["fact","新发溢价消化 + 供给消化期，长端高质量 names 卖压为主"],
-          ["fact","NAB NIM -2bp + mortgage 需求下滑是银行信用质量弱化信号；LLCAU gearing 30.3% + CRU 出售缓慢是评级/债券主要风险"],
-          ["short","LLCAU 谨慎规避（DB 明确建议直到 gearing 可见下降）；NCIAU +140-145 可作新发锚但缺配置价值"]]
+          ["fact","NAB NIM -2bp + mortgage 需求下滑，银行信用质量弱化信号<br>LLCAU gearing 30.3% + CRU 出售缓慢是主要风险"],
+          ["short","LLCAU 谨慎规避（DB 建议直到 gearing 可见下降）<br>NCIAU +140-145 可作新发锚但缺配置价值"]]
       ]
     },
     // SSA新发
@@ -888,12 +950,12 @@ REPORT_DATA["2026-08-18"] = {
       cols:["88px","20%","15%","18%","17%","18%","14%"],
       rows:[
         ["BMO",
-          ["fact","SSA 供给回归：EIB 5yr <b>MS+32</b>、World Bank 7yr <b>MS+40</b>、DBJJP 3yr <b>SOFR+43</b>（USD benchmark）"],
+          ["fact","SSA 供给回归<br>EIB 5yr <b>MS+32</b> · World Bank 7yr <b>MS+40</b><br>DBJJP 3yr <b>SOFR+43</b>（USD benchmark）"],
           [""],
           ["fact","EUR Rentenbank 7yr / KFW 3yr Green（欧债供给）"],
-          ["fact","GBP NEDWBK 250mn 5yr <b>SONIA +39</b> 重新打开英镑市场"],
+          ["fact","GBP NEDWBK 250mn 5yr <b>SONIA +39</b><br>重新打开英镑市场"],
           ["fact","SSA tier 1 供给回归，为高质量基准提供锚点"],
-          ["long","EIB/WB benchmark 是高质量基准锚点；GBP SONIA +39 暗示英镑市场重开"]]
+          ["long","EIB / WB benchmark 是高质量基准锚点<br>GBP SONIA +39 暗示英镑市场重开"]]
       ]
     },
     // 美国股票及跨资产ETF
@@ -904,16 +966,16 @@ REPORT_DATA["2026-08-18"] = {
       cols:["88px","20%","15%","18%","17%","18%","14%"],
       rows:[
         ["JS",
-          ["fact","US Equity ETF 强劲净流出；Energy <b>+0.9%</b> 唯一上涨（WTI <b>+2.6%</b> $84.5）"],
+          ["fact","US Equity ETF 强劲净流出<br>Energy <b>+0.9%</b> 唯一上涨（WTI <b>+2.6%</b> $84.5）"],
           [""],
           [""],
-          ["fact","防御/黄金(IAUM)/公用事业(XLU) 流入；Canada/HK/Japan/South Korea 流入 vs Europe/Australia 流出"],
-          ["fact","risk-off 资金流：黄金/公用事业/防御有 ETF 支撑，亚洲&gt;欧洲相对轮动延续"],
-          ["long","黄金/公用事业/防御有 ETF 资金流支撑；亚洲&gt;欧洲相对轮动（与 Asia 信用优于 US 呼应）"]]
+          ["fact","防御 / 黄金(IAUM) / 公用事业(XLU) 流入<br>Canada / HK / Japan / South Korea 流入<br>Europe / Australia 流出"],
+          ["fact","risk-off 资金流：黄金 / 公用事业 / 防御有 ETF 支撑<br>亚洲&gt;欧洲相对轮动延续"],
+          ["long","黄金 / 公用事业 / 防御有 ETF 资金流支撑<br>亚洲&gt;欧洲相对轮动（与 Asia 信用优于 US 呼应）"]]
       ]
     }
   ],
-  noCoverage:["欧洲利率","日本利率","新兴市场及全球信用","欧洲金融债","中国利率","澳门博彩信用债","澳洲利率","美国HY信用债"],
+  noCoverage:["欧洲利率","日本利率","新兴市场及全球信用","中国利率","澳门博彩信用债","澳洲利率"],
   divergences: {
     headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
     cols:["10%","16%","18%","18%","38%"],
@@ -921,25 +983,199 @@ REPORT_DATA["2026-08-18"] = {
       ["美国利率","战术做多 vs 结构看空 — 逢跌建仓但长端熊市",
         ["long","<span class='bull'>Jefferies 战术做多</span><br>5y 4.42-4.50% 已进场<br>10y 逼近 4.75-4.85%"],
         ["short","<span class='bear'>Jefferies 结构看空</span><br>$40tn 债务、偿债超国防<br>30y 拍卖 2001 以来最高"],
-        ["fact","<b>Jefferies 内部分化：前端战术做多 vs 长端结构看空</b>。数据暴跌被归因 'seasonal distortions' 而非实质恶化，故 5y/10y 逢跌建仓；但 $40tn 债务 + 偿债超国防 + 30y 拍卖 2001 以来最高使长端结构性看空。做多宜短端逢跌、长端逢反弹减久期"]],
+        ["fact","<b>内部分化：前端战术做多 vs 长端结构看空</b><br>数据暴跌被归为 'seasonal distortions'，非实质恶化 → 5y/10y 逢跌建仓<br>但 $40tn 债务 + 偿债超国防 + 30y 拍卖成本最高 → 长端结构看空<br><b>结论：</b>短端逢跌做多、长端逢反弹减久期"]],
       ["跨资产","US 长端结构看空 vs Asia 信用韧性 — 跨区相对价值",
-        ["long","<span class='bull'>Asia 信用 (Barclays)</span><br>Asia Sovs firm 1-2bp tighter<br>长端 outperform、cash 无卖家"],
+        ["long","<span class='bull'>Asia 信用 (Barclays)</span><br>相对 US 长端仍优<br>HY 仅 -0.125-0.25pt"],
         ["short","<span class='bear'>US 长端 (Jefferies)</span><br>债务 $40tn、偿债超国防<br>JPY/JGB 上行逆风"],
-        ["fact","<b>跨资产/跨区相对价值背离</b>。Jefferies 看空 US 长端（结构性债务 + JPY/JGB 逆风），Barclays 报 Asia 信用 firm + 长端 outperform（cash sticky 无卖家）。Asia 长端 credit 优于 US 长端久期"]],
+        ["fact","<b>跨区相对价值背离</b><br>Jefferies 看空 US 长端（结构性债务 + JPY/JGB 逆风）<br>Barclays 报 Asia HY 仅 -0.125-0.25pt，相对 US 30y 卖压显著占优<br><b>结论：</b>Asia 长端 credit 优于 US 长端久期"]],
       ["跨区风险偏好","US 战术做多 vs AUD 信用走弱 — 风险偏好分化",
         ["long","<span class='bull'>US 战术做多</span><br>Jefferies 逢跌逐步建仓<br>5y 4.42-4.50% 已进场"],
         ["short","<span class='bear'>AUD 信用 weakest session</span><br>HQ +1-2bp、beta 3-7bp wider<br>ANZ FRN/20y 回到 reoffer"],
-        ["fact","<b>同日跨区风险偏好分化</b>。Jefferies 对 US 利率逢跌建仓（战术做多、risk-on），TD/DB 却报 AUD 信用 weakest session（新发溢价消化、久期卖压、risk-off）。AUD 信用相对 US 利率更弱，做多 US 利率/回避 AUD 信用是当日配对方向"]],
+        ["fact","<b>同日跨区风险偏好分化</b><br>Jefferies 对 US 利率逢跌建仓（战术做多、risk-on）<br>TD/DB 却报 AUD 信用 weakest session（新发溢价消化、久期卖压）<br><b>结论：</b>做多 US 利率 / 回避 AUD 信用是当日配对方向"]],
       ["全球利率","Jefferies 战术逢跌做多 vs GS/MS bear-steepening 长端做空",
         ["long","<span class='bull'>Jefferies 战术做多</span><br>5y 4.42-4.50% 已进场<br>10y 逼近 4.75-4.85%"],
         ["short","<span class='bear'>GS + MS 长端做空</span><br>5s30s 至 93bp、30y 5.31%<br>USZ6 ctd 延长 dv01 +10%"],
-        ["fact","<b>全球利率跨券商方向分化</b>。Jefferies 独家逢跌建仓（战术做多、risk-on），GS/MS 却一致 bear-steepening 长端做空（油/财政/AI 供给/期限溢价）。分歧在久期：Jefferies 做多 5y/10y 战术、GS/MS 做空长端/减久期。做多仅限 5y/10y 逢跌、长端逢反弹减久期是共识底线"]]
+        ["fact","<b>全球利率跨券商方向分化</b><br>Jefferies 独家逢跌建仓（战术做多）<br>GS/MS 一致 bear-steepening 长端做空（油/财政/AI 供给）<br><b>结论：</b>仅 5y/10y 逢跌做多，长端逢反弹减久期是共识底线"]]
     ]
   },
   footer: {
-    window:"2026-08-14 16:00 ~ 2026-08-18 12:00 (US Friday recap Aug 14 + US IG Aug 17 + Asia EOD Aug 17 + AUD Credit Aug 18 + Global bear-steepening Aug 18)",
-    emailCount:"GS 2 / MS 1 / Jefferies 1 / Citi 1 / TD 1 / DB 1 / Barclays 2（其中 1 封撤回）/ BMO 1 / Jane Street 1（共11封邮件 · 9家券商）",
-    omitted:"欧洲利率、日本利率、新兴市场、欧洲金融债、中国利率、澳门博彩、澳洲利率、美国HY已在「无覆盖市场」汇总"
+    window:"2026-08-14 16:00 ~ 2026-08-18 15:00 (US Friday recap Aug 14 + US IG Aug 17 + AUD Credit Aug 18 + Global bear-steepening Aug 18 + Asia MidDay Aug 18 + 欧洲金融债 Aug 18)",
+    emailCount:"GS 2 / MS 1 / Jefferies 1 / Citi 1 / TD 1 / DB 1 / Barclays 1（MidDay）/ UBS 1 / BMO 1 / Jane Street 1（共11封邮件 · 10家券商）",
+    omitted:"欧洲利率、日本利率、新兴市场、中国利率、澳门博彩、澳洲利率已在「无覆盖市场」汇总"
+  }
+};
+
+REPORT_DATA["2026-08-19"] = {
+  dateCN: "2026年8月19日 星期三",
+  theme: "Jefferies 逢跌建仓转向强化 + 曲线观点修订（陡峭化接近极限）+ GS 报 US rates 周二 relief rally（与周一 bear-steepening 跨日对比）+ Barclays Asia HY 收低结束 compression streak + TD/DB 一致报 AUD 信用转弱 + BMO TIPS 前端买盘/长端缺位",
+  meta: "覆盖券商：Jefferies 1封（Rates mkt recap）+ Goldman Sachs 1封（Global Market Recap）+ TD 1封（AUD Credit）+ Deutsche Bank 1封（Aussie Credit — CSLAU/AZJAU/GPTAU）+ BMO 1封（TIPS EOD）+ Barclays 1封（Asian Credit EOD）· 共6封邮件 · 6家券商",
+  brokers: [
+    {n:"Jefferies",c:"b-jefferies"},{n:"GS",c:"b-gs"},{n:"TD",c:"b-td"},{n:"DB",c:"b-db"},{n:"BMO",c:"b-bmo"},{n:"Barclays",c:"b-barclays"}
+  ],
+  markets: [
+    // 美国利率
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"Jefferies 周一复盘 bear-steepening：数据强于预期（empire manufacturing <b>20.6 vs 10</b>、NAHB <b>35 vs 33</b>）+ 波斯湾升级；<b>逢跌建仓转向强化</b>（5y 4.42-4.50% 已进场、10y 逼近 4.75-4.85%）；<b>曲线观点修订</b>（陡峭化接近极限、2yr/10yr 55-25bps、逢过度陡峭做平）；长端长期目标 5.5%/5.8-6.0%",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["Jefferies",
+          ["fact","<b>bear-steepening 延续</b><br>empire manufacturing <b>20.6</b>（预期 10）· NAHB <b>35</b>（预期 33）<br>波斯湾紧张升级推升卖压<br>US20yr 触及 96-07/08@5.31% · US10yr 触及 99-00/01@4.75%"],
+          ["short","<span class='bear'>长端结构性看空</span><br>长期目标突破 5.5% · 测试 5.8-6.0%<br>Bunds 长期目标 3.5% / 3.8% / 4.1%"],
+          ["fact","<b>陡峭化接近极限</b><br>2yr/10yr 转入 55-25bps 区间<br>+55bps 附近逢过度陡峭做平"],
+          [""],
+          ["fact","数据强于预期 + 波斯湾升级推升卖压<br>但 risk-reward 对 counter-trend rally + 2026 投资期限有利"],
+          ["long","<span class='bull'>逢跌逐步建仓</span><br>已进场：5y 4.42-4.50%<br>观察区：10y 4.75-4.85% · 20y/30y 5.25-5.40%<br>长端逢反弹减久期，仅 5y/10y 战术做多"]],
+        ["GS",
+          ["fact","<b>US rates 周二 relief rally</b><br>US10y 收 <b>1.8bp richer</b> 至 4.704% · 5s30s flatten 1.5bp 至 <b>91.7bp</b><br>股弱（SPX -69bp/NDX -168bp）+ 数据弱（import/export prices weaker、housing starts sharply lower）"],
+          ["fact","ultra-long futures 大单 <b>block buyer</b> 支撑长端（周二领涨）"],
+          ["fact","5s30s <b>flatten 1.5bp</b> 至 91.7bp"],
+          ["fact","政策定价 <b>~8.25bp 9月 / ~24bp 年底</b>（基本不变）"],
+          ["fact","周一 bear-steepening 后周二 data weak + 股弱触发 relief rally；今日 <b>July FOMC minutes + 20s Bunds 供给</b> 是方向催化剂"],
+          ["long","US rates 周一卖压后周二部分回吐，数据疲弱是短端企稳催化剂；FOMC minutes 检验方向"]],
+        ["BMO",
+          ["fact","<b>TIPS real yields 收 richer 4bp</b><br>30s 曾破 <b>3.10%</b> 后回落<br>买盘集中 5-10y（RM/FM buying RY + ETF inflows）"],
+          ["fact","长端 TIPS 需求 <b>lackluster</b>（无人接 falling knife），等周四拍卖"],
+          ["fact","BEI curve flatten（买盘集中在 5-10y）"],
+          [""],
+          ["fact","前端 TIPS 买盘与 Jefferies 逢跌建仓 5y/10y 跨名义/实际共振；长端 TIPS 缺买盘与长端名义结构看空共振"],
+          ["long","做多前端（5-10y TIPS）跟随 RM/FM + ETF 买盘；长端等周四(8/20)拍卖检验承接力"]]
+      ]
+    },
+    // 欧洲利率
+    {
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      summary:"GS 宏观 recap：Bunds 10y/30y 各 <b>+4bp cheaper</b>、Stoxx 600 -0.7%；Gilts +2bp cheaper、英国 £4bn 10y 发行收益率 <b>5.155%</b>（2007以来最高）；Jefferies 技术面：德债长期目标 <b>3.5%/3.8%/4.1%</b>、OAT 10yr 逢跌买 <b>96/95.85@4.185%/4.20%</b>；今日关注欧元区 HICP Core 7月终值（GS 2.5%）+ 英国 RPI/CPI（GS 2.9%）",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","20%","13%","13%","13%","22%","17%"],
+      rows:[
+        ["GS",
+          ["fact","Bunds 10y/30y 各 <b>+4bp cheaper</b> · Stoxx 600 <b>-0.7%</b>（DAX/CAC -0.8%、科技跑输）<br>Gilts 收 <b>+2bp cheaper</b> · FTSE +0.1%<br>昨日 £4bn 10y 发行收益率 <b>5.155%</b>（2007以来最高）"],
+          ["short","<span class='bear'>债市全线走弱</span>（Bunds 10y/30y cheapen 4bp）"],
+          [""],
+          ["fact","今日：欧元区 7月 HICP Core YoY 终值（GS 预期 <b>2.5%</b>）+ Labour Costs<br>英国今日 RPI / CPI（GS 预期 CPI <b>2.9%</b>）"],
+          ["fact","股市回落但债市同跌——欧债跟随利率新高压力、缺乏避险支撑；英国 10y 发行收益率 2007 最高凸显供给压力"],
+          [""]],
+        ["Jefferies",
+          ["fact","德债 Bunds 反弹遇阻 <b>98.75/80</b> 和 99.20/25@3.09% 后走低、逼近下行目标 97.75/80@3.27%<br>OAT 10yr 反弹遇阻 97.85/90@3.955% 和 98.30/35@3.90% 后走低、逼近 <b>96.65/70@4.10%</b>（bear flag breakout measured objective）"],
+          ["short","<span class='bear'>德债长期目标 3.5%/3.8%/4.1%</span>（Elliott Wave 视角不变）"],
+          [""],
+          [""],
+          ["fact","日内反弹受限于 98.25/30，未能站上则看向 <b>97.45/50@3.30%</b> 和 <b>97.00/05@3.35%</b>；OAT 反弹遇阻 97.20/25@4.03%，看向 <b>96/95.85@4.185%/4.20%</b> 或 95.50/60@4.25%"],
+          ["long","<span class='bull'>从 neutral/bearish 转向逢跌逐步建仓</span>：德债 97.45/50@3.30% 和 97.00/05@3.35% 逢跌买；OAT 96/95.85@4.185%/4.20% 逢跌买"]]
+      ]
+    },
+    // 日本利率
+    {
+      id:"jp-rates", pri:false, title:"日本利率",
+      summary:"GS 宏观 recap：JGB 开盘走弱后中间段买盘回补，<b>5yr 拍卖非常强劲</b>；超长期 hedge 相关卖压主导 curve <b>bear-steepened</b> / twist-steepening（部分投资者解除激进加息定价）",
+      headers:["券商","市场数据/表现","曲线/长端","BoJ 政策","核心逻辑","交易建议"],
+      cols:["88px","22%","20%","20%","20%","18%"],
+      rows:[
+        ["GS",
+          ["fact","JGB 开盘走弱（跟随海外收益率上行），中间段买盘进入 5yr 拍卖、回补早盘跌幅<br><b>5yr 拍卖非常强劲</b>，午后中间段反弹"],
+          ["short","<span class='bear'>超长期承压</span>（hedge 相关卖压）→ curve bear-steepened<br>日内显著 twist-steepening，收盘部分曲线账户反向、最终仅 modestly twist-steepened"],
+          ["fact","部分投资者解除激进加息定价（steepening flows）"],
+          ["fact","海外收益率上行带动开盘走弱，强劲 5yr 拍卖支撑中间段；超长期 hedge 卖压主导 twist-steepening"],
+          [""]]
+      ]
+    },
+    // 澳洲利率
+    {
+      id:"aud-rates", pri:false, title:"澳洲利率",
+      summary:"GS 宏观 recap：澳债曲线隔夜区间震荡、收 <b>0.5-2bp richer</b>（美债 bull flattening 带动）；YMXM flat 1.5bp；昨日 AOFM 卖 <b>A$13bn May38s</b> 压制久期；今日关注 2Q26 WPI（GIR 0.8% qoq）+ RBA 副行长 Hauser 炉边谈话",
+      headers:["券商","市场数据/表现","澳洲国债观点","曲线观点","RBA观点","核心逻辑","交易建议"],
+      cols:["88px","20%","13%","13%","13%","22%","17%"],
+      rows:[
+        ["GS",
+          ["fact","澳债曲线隔夜区间震荡，收 <b>0.5-2bp richer</b>（美债 bull flattening 带动）<br>SPI futures -0.27%"],
+          ["long","<span class='bull'>曲线全线 richer</span>（0.5-2bp）"],
+          ["fact","YMXM flat <b>1.5bp</b><br>昨日 AOFM 卖 <b>A$13bn May38s</b> 压制久期、曲线变陡"],
+          ["fact","今日关注：2Q26 WPI（GIR 预期 <b>0.8% qoq</b>）+ RBA 副行长 Hauser 炉边谈话"],
+          ["fact","美债 bull flattening 带动澳债 richer；AOFM 长端供给压制久期"],
+          [""]]
+      ]
+    },
+    // 澳洲信用债
+    {
+      id:"aud-credit", pri:true, title:"澳洲信用债",
+      summary:"TD + DB 一致报 AUD 信用转弱：TD 报 weaker tone 开场（全曲线 <b>0.5-1.5bp wider</b>、newer lines 2bp back of reoffer）；DB 独家业绩三连（CSLAU 弱/Vifor -44% EBITDA、AZJAU coal -18.8%、GPTAU solid gearing 31.5%）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","18%","18%","16%","16%","14%"],
+      rows:[
+        ["TD",
+          ["short","<span class='bear'>weaker tone 开场</span><br>全曲线 <b>0.5-1.5bp wider</b><br>newer lines ~2bp back of reoffer<br>午后 bids 回补、wider levels 找支撑"],
+          [""],
+          ["fact","newer lines 2bp back of reoffer 显示新发溢价尚未完全消化"],
+          ["short","主要银行延续卖出；retail 仍活跃买 T2 大行（recent + older issues 兼有）"],
+          ["short","环比 8/18 weakest session 后卖压边际缓和，但方向仍偏弱"],
+          ["long","retail 买 T2 支撑次级债；等 newer lines 新发溢价收敛"]],
+        ["DB",
+          ["fact","<b>CSLAU</b> 弱但符合预期（EBITDA <b>-13.1%</b> 至 USD1.7bn）<br><b>AZJAU</b> stable（coal <b>-18.8%</b> HoH）<br><b>GPTAU</b> solid（FFO +3.3%、gearing 31.5%）"],
+          ["fact","CSLAU：Vifor 弱（H2 EBITDA -44%）/ Behring 强（+4.0%）/ USD5.5bn impairments；AZJAU：FY AUD1.72bn 符合指引；GPTAU：occupancy 97.6%"],
+          ["fact","<span class='bull'>CSLAU 平 BBB+ TACHEM、宽于 AMGN</span>（或偏便宜）<br>AZJAU 略便宜于 BBB<br>GPTAU 相对 single A REITs 公允"],
+          [""],
+          ["fact","CSLAU A3/A- 评级支撑、leverage 1.8x；AZJAU leverage 3.1x 可控；GPTAU gearing 31.5%"],
+          ["long","CSLAU（评级支撑平 TACHEM）可关注；AZJAU 略便宜；GPTAU 公允不追"]]
+      ]
+    },
+    // 亚洲信用债
+    {
+      id:"asia-credit", pri:true, title:"亚洲信用债",
+      summary:"Barclays Asia EOD：Asia HY 收低结束 compression streak（cash <b>-0.125/-0.375pt</b>、spreads <b>+2/+4bps</b>）；India IG ICICI <b>5bp tighter</b>；GOOGL AUD deal <b>20-25bp cheap</b> vs USD；JUDOCA tighten 10bp；iTraxx Asia +0.75bp wider",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","<b>Asia HY 收低结束 compression streak</b><br>cash <b>-0.125/-0.375pt</b> · spreads <b>+2/+4bps</b>（下午更弱）<br>India IG ICICI 新发 <b>5bp tighter</b>（吃 NIP）<br>HSI +0.07% · NIFTY -0.4%"],
+          [""],
+          ["fact","Asia Sovs IG long end better offered <b>-0.25/-0.75pt</b><br>iTraxx Asia <b>+0.75bp</b> wider（Indon +1 · Philip +0.75）"],
+          ["fact","AUD 全线被卖（GOOGL deal）spreads <b>2-4bp wider</b><br>GOOGL <b>20-25bp cheap</b> vs USD · 5y 最受欢迎<br>JUDOCA earnings <b>tighten 10bp</b> · NCIAU 5x book"],
+          ["short","<span class='bear'>street tone 明显偏弱</span><br>dealers fade sticky cash vs 更宽 rates move<br>进口区域 / 板块因油价上行跑输"],
+          ["long","偏好：India IG 一级（ICICI 5bp 收紧）· GOOGL 新发跨币种套利<br>风险：Asia HY 从 compression 转向 decompression，sticky cash 有 fade 空间"]]
+      ]
+    },
+    // 日本信用债
+    {
+      id:"japan-credit", pri:false, title:"日本信用债",
+      summary:"Barclays 头条：SoftBank <b>¥1tn</b>（~US$6bn）retail bond 史上最大 → CDS tighten 至 <b>340</b>（-8bp）但 cash 2036s 走弱（75c lower、+7bp wider）；Japan CDS outperform；Nissan CDS 2bp tighter",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","<b>SoftBank ¥1tn retail bond</b>（史上最大，此前最大 ¥600bn）<br>CDS tighten 至 <b>340</b>（<b>-8bp</b>）<br>2036s cash <b>75c lower</b> · +7bp wider"],
+          [""],
+          ["fact","Japan CDS outperform 明显（cyclicals 1-2bp tighter）<br>Nissan CDS <b>2bp tighter</b>（今日较不活跃）"],
+          ["fact","Japan corporates open <b>1bp wider</b>（NTTs 卖压）<br>Europe 买盘略增但 aggressive dealer offering 持续"],
+          ["fact","零售债落地缓解非 JPY 发行担忧 → CDS tighten<br>cash 面 axed dealers 清风险 → 2036s 走弱"],
+          ["short","风险：cash 面 axed dealer 卖压是短期逆风<br>关注 cash-CDS 基差收敛"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","美国IG信用债","美国HY信用债","欧洲金融债","中国信用债","SSA新发","美国股票及跨资产ETF","澳门博彩信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","战术做多 vs 长端结构看空 — 逢跌建仓但熊市未变",
+        ["long","<span class='bull'>Jefferies 战术做多</span><br>5y 4.42-4.50% 已进场<br>10y 逼近 4.75-4.85%"],
+        ["short","<span class='bear'>Jefferies 结构看空</span><br>长端长期目标 5.5%/5.8-6.0%<br>Bunds 3.5%/3.8%/4.1%"],
+        ["fact","<b>内部分化：前端战术做多 vs 长端结构看空</b><br>数据强 + 波斯湾升级推升卖压，但 risk-reward 对 counter-trend rally 有利 → 5y/10y 逢跌建仓<br>长端结构熊市未变（长期目标 5.8-6.0%）<br><b>结论：</b>短端逢跌做多、长端逢反弹减久期"]],
+      ["跨资产","US 利率逢跌做多 vs Asia HY 收低转弱 — 跨区 risk-off 分化",
+        ["long","<span class='bull'>US 利率 (Jefferies)</span><br>5y 4.42-4.50% 已进场<br>10y 逼近 4.75-4.85%"],
+        ["short","<span class='bear'>Asia HY (Barclays)</span><br>cash -0.125/-0.375pt<br>结束 compression streak"],
+        ["fact","<b>跨区 risk-off 分化</b><br>Jefferies 对 US 利率逢跌建仓（战术做多、risk-on）<br>Barclays 报 Asia HY 收低结束 compression streak（油价上行压制亚洲进口国）<br><b>结论：</b>做多 US 利率短端 / 回避 Asia HY"]],
+      ["美国利率","周一 bear-steepening vs 周二 relief rally — 24h 内多空快速切换",
+        ["long","<span class='bull'>GS 周二 relief</span><br>US10y 收 1.8bp richer<br>5s30s flatten 1.5bp"],
+        ["short","<span class='bear'>Jefferies 周一 bear-steepening</span><br>empire 20.6 / NAHB 35<br>波斯湾升级卖压"],
+        ["fact","<b>数据敏感度极高</b><br>Jefferies 报 8/17 周一 bear-steepening（强数据+波斯湾）<br>GS 报 8/18 周二 US10y 收 richer（股弱+import/export、housing 数据弱）<br><b>结论：</b>数据是主导变量，今日 FOMC minutes 是下一个方向催化剂"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-18 18:00 ~ 2026-08-19 12:00 (Jefferies Monday recap + GS Global Recap Aug 18 + TD/DB AUD Credit + BMO TIPS + Barclays Asia EOD)",
+    emailCount:"Jefferies 1 / GS 1 / TD 1 / DB 1 / BMO 1 / Barclays 1（共6封邮件 · 6家券商）",
+    omitted:"中国利率、美国IG、美国HY、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
   }
 };
 
