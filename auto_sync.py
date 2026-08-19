@@ -20,6 +20,7 @@ SOURCES = {
     "ca-report.html":         ROOT / "Corporate Actions" / "ca-report.html",
     "macro-dashboard.html":   ROOT / "宏观" / "indicator_dashboard.html",
     "macro-matrix.html":      None,  # 动态查找最新 FI_Daily_Digest_*.html 或 固定收益宏观日报.html
+    "热门交易标的矩阵.html":   ROOT / "热门交易名字" / "热门交易标的矩阵.html",
 }
 
 def find_latest_macro_matrix():
@@ -41,6 +42,7 @@ BOARD_NAMES = {
     "ca-report.html": "Corporate Actions",
     "macro-dashboard.html": "宏观指标仪表盘",
     "macro-matrix.html": "宏观矩阵日报",
+    "热门交易标的矩阵.html": "热门交易标的矩阵",
 }
 
 AUTH_TAG = '<script src="auth.js"></script>'
