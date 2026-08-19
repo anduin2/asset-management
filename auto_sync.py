@@ -15,8 +15,6 @@ SOURCES = {
     "intel.html":             ROOT / "Daily Commentary" / "output" / "卖方每日情报.html",
     "deposit.html":           ROOT / "Deposit-main" / "每日存款报价汇总.html",
     "repo.html":              ROOT / "repo-tool-main" / "output" / "每日REPO报价汇总.html",
-    "交易台报告.html":         ROOT / "交易台报告" / "卖方每日情报.html",
-    "trading_data.js":        ROOT / "交易台报告" / "report-data.js",
     "ca-report.html":         ROOT / "Corporate Actions" / "ca-report.html",
     "macro-dashboard.html":   ROOT / "宏观" / "indicator_dashboard.html",
     "macro-matrix.html":      None,  # 动态查找最新 FI_Daily_Digest_*.html 或 固定收益宏观日报.html
@@ -37,8 +35,6 @@ BOARD_NAMES = {
     "intel.html": "卖方每日情报",
     "deposit.html": "每日存款报价汇总",
     "repo.html": "每日 REPO 报价汇总",
-    "交易台报告.html": "交易台报告",
-    "trading_data.js": "交易台数据",
     "ca-report.html": "Corporate Actions",
     "macro-dashboard.html": "宏观指标仪表盘",
     "macro-matrix.html": "宏观矩阵日报",
@@ -48,9 +44,6 @@ BOARD_NAMES = {
 AUTH_TAG = '<script src="auth.js"></script>'
 REFRESH_TAG = '<script src="auto_refresh.js"></script>'
 INJECT_BLOCK = f'{AUTH_TAG}\n{REFRESH_TAG}'
-
-REPORT_DATA_RE = re.compile(r'<script src="report-data\.js[^"]*"></script>')
-TRADING_DATA_RE = re.compile(r'<script src="trading_data\.js"(\?v=[^"]*)?"></script>')
 
 # ============================================================
 # 邮件通知配置（推送成功后发送）
@@ -307,20 +300,6 @@ def send_notification(summary):
         print(f"  [notify] 邮件发送失败: {e}")
         return False
 
-def fixup_trading_desk_html(html_path: Path):
-    """修复 交易台报告.html：将 report-data.js 引用替换为 trading_data.js + 缓存破坏"""
-    content = html_path.read_text(encoding="utf-8")
-    # Step 1: 把 report-data.js 引用替换为 trading_data.js（兼容带/不带版本号）
-    ts = datetime.now().strftime("%Y%m%d%H%M")
-    new_tag = f'<script src="trading_data.js?v={ts}"></script>'
-    if REPORT_DATA_RE.search(content):
-        content = REPORT_DATA_RE.sub(new_tag, content)
-    else:
-        # fallback: 如果已有 trading_data.js 引用，更新版本号
-        content = TRADING_DATA_RE.sub(new_tag, content)
-    html_path.write_text(content, encoding="utf-8")
-    print(f"  [ok] {html_path.name}: script ref fixed → trading_data.js (v={ts})")
-
 def inject_tags(html_path: Path):
     """在 <body> 后注入 auth.js + auto_refresh.js（如果尚未注入）"""
     content = html_path.read_text(encoding="utf-8")
@@ -379,10 +358,6 @@ def main():
         
         # 注入 auth + refresh tags
         inject_tags(dst)
-        
-        # 交易台报告.html: 修复 script src 引用 + 缓存破坏
-        if name == "交易台报告.html":
-            fixup_trading_desk_html(dst)
     
     if changed:
         # 只有真正有变更时才更新 version.txt
