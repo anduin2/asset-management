@@ -1179,6 +1179,116 @@ REPORT_DATA["2026-08-19"] = {
   }
 };
 
+REPORT_DATA["2026-08-20"] = {
+  dateCN: "2026年8月20日 星期四",
+  theme: "BMO 报 30yr TIPS 实际利率 3.10%→2.93% 大幅转强（长端承接力初现）+ Barclays SoftBank equity -10% 但 CDS unchanged（AI 风险未传导至信用）+ Asia HY 收低但 China/Japan CDS 走强 + Citi IG 财报三重奏（LOW/TGT/EL）+ 钢材关税 50%→25% + DB Singtel 升级 A+ 但 Optus 仅 affirm",
+  meta: "覆盖券商：BMO 1封（TIPS EOD）+ Barclays 2封（Asian Credit EOD 19th + Jack Henry F4Q26 权益单票）+ Citi 1封（IG Credit Daily）+ Deutsche Bank 1封（Aussie Credit）· 共5封邮件 · 4家券商",
+  brokers: [
+    {n:"BMO",c:"b-bmo"},{n:"Barclays",c:"b-barclays"},{n:"Citi",c:"b-citi"},{n:"DB",c:"b-db"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"BMO TIPS EOD：<b>30yr RY 从 3.10% 大幅 richer 至日内低 2.93%</b>（打破 8/19 长端 lackluster）；10s BE 高点近 232、3pm 收 ~230.5；5y5y 上沿 2.44%；Treasury 只加 nominal buy backs（翻倍）不加 TIPS",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["BMO",
+          ["fact","<b>30yr RY 大幅转强</b><br>3.10% → 日内低 <b>2.93%</b><br>10s BE 高点近 <b>232</b> · 3pm 收 ~230.5<br>5y5y 上沿 <b>2.44%</b>（高点近 2.45%）"],
+          ["long","<span class='bull'>长端实际利率转强</span><br>30yr RY 17bp richer<br>但最后一小时 late day selling 打下来 .5-1bp"],
+          ["fact","BEI curve flatten（长端卖出、前端守住）"],
+          [""],
+          ["fact","Treasury 只增加 nominal buy backs（至少翻倍）<b>不适用 TIPS</b>；公告后 RY stop ins + BE buying 不敌 FM profit taking + auction setup"],
+          ["long","做多前端（5-10y TIPS）；长端等周四拍卖检验承接力（1pm 前 noon 决定）"]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"Citi IG Credit Daily：rates reversal 太 immediate，午后 duration selling 压过 insurance demand 达 <b>tipping point</b>；Financials 15NC10 T2 block lift（GS +136/MS +128/JPM +121，20bps off tights）；LOW/TGT/EL 财报中性；US-Canada 钢材关税 <b>50%→25%</b>",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Citi",
+          ["fact","<b>LOW</b> 2Q mixed（sales $25.96bn miss · GM 33.0% · Adj EPS $4.40 beat）<br><b>TGT</b> decent（sales +5.3% $26.54bn · GM 33.7% · $994mm IEEPA refunds）<br><b>EL</b> strong（4Q +6% $3.63bn · China +12% · equity +16%）"],
+          ["fact","LOW 下调 FY 指引（sales $92.0bn）<br>TGT 上调 FY sales 至 <b>+5%</b><br>EL China 复苏延续"],
+          ["fact","LOW/TGT/EL 均 neutral spread<br>Vylor new 10yr consensus <b>105-115bp</b> · NTRCN 2036 g+95<br>Air Products outlook 上调至 stable"],
+          ["short","<span class='bear'>午后 duration selling</span> 压过 insurance demand<br>Financials 15NC10 T2 <b>block lift</b>（GS +136/MS +128/JPM +121）<br>Industrials net hit >800mm"],
+          ["fact","rates reversal 太 immediate 触发 lukewarm sentiment；但 T2 block lift 显示金融 capstack 需求回暖、<b>grind to come</b>"],
+          ["long","偏好：大行 15NC10 T2（block lift 承接）· AgChems（关税减半利好）<br>风险：Steel 信用（关税减半利空钢价，但 STLD/NUE 资本结构紧俏冲击有限）"]]
+      ]
+    },
+    {
+      id:"asia-credit", pri:true, title:"亚洲信用债",
+      summary:"Barclays Asia EOD 19th：India IG grind tighter（Kotak/IDFC <b>10-13bp</b>）；Asia HY 收近当日低点 cash <b>-0.125/-0.25pt</b>、spreads +2/+5bp，duration 长端/永续领跌；China CDS -0.50（CLN interest）+ Japan CDS 连续第二日 outperform",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","<b>India IG grind tighter</b>（Kotak/IDFC <b>10-13bp</b>、其余 1-3bp）<br><b>Asia HY 收近当日低点</b> cash -0.125/-0.25pt · spreads +2/+5bp<br>HSI +0.1% · NIFTY -0.4%"],
+          [""],
+          ["fact","iTraxx Asia S45 <b>68.00/68.75</b>（+0.25）<br>China CDS <b>-0.50</b> · Japan CDS outperform · Indo/Phil unchanged"],
+          ["fact","新发：Chiba $300m 5yr IPT T+85 · Mitsui USD Reg S 5/10yr · HSBC CNH 4NC3 2.35%/8NC7 2.75% · Torrens A$500m RMBS · China CNH Reg S unrated"],
+          ["short","<span class='bear'>Asia HY 收低、duration 长端 + perpetuals 领跌</span>（better sellers de-risk）"],
+          ["long","偏好：India IG 一级（FCNR 窗口临近关闭）· China/Japan CDS<br>风险：Asia HY 长端/永续承压"]]
+      ]
+    },
+    {
+      id:"japan-credit", pri:false, title:"日本信用债",
+      summary:"Barclays：SoftBank equity <b>-10%</b>（OpenAI 2Q sales 慢于 Anthropic）但 CDS unchanged、cash 走弱 1/8-1/4pt；Japan CDS 继续 outperform",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","<b>SoftBank equity -10%</b>（OpenAI 2Q sales 慢于 Anthropic 触发 AI 抛售）<br>CDS unchanged · cash 走弱 1/8-1/4pt<br>Japan CDS 继续 outperform"],
+          [""],
+          ["fact","CDS unchanged vs equity -10% <b>严重背离</b>"],
+          ["fact","China CDS -0.50（CLN interest 持续）"],
+          ["short","<span class='bear'>AI 风险未传导至信用</span>但 cash 已先行去风险<br>CDS-cash 背离走阔"],
+          ["short","风险：若 CDS 补跌 Japan 信用承压；关注 cash-CDS 基差收敛"]]
+      ]
+    },
+    {
+      id:"aud-credit", pri:true, title:"澳洲信用债",
+      summary:"DB Aussie Credit：SGPAU/MGRAU/WHCAU 财报强劲、杠杆受控（gearing 22.7%/24.1%/1.2x）；STOAU 1H26 略低、net leverage 2.1x；<b>S&P 上调 Singtel A+ 但 Optus 仅 affirm A-</b>（group status core→highly strategic）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["DB",
+          ["fact","<b>SGPAU</b> FY26 FFO +10.4% · gearing 22.7%<br><b>MGRAU</b> operating profit +7% · gearing 24.1%<br><b>WHCAU</b> H2FY26 robust · net leverage 1.2x<br><b>STOAU</b> 1H26 略低 · net leverage 2.1x"],
+          ["fact","SGPAU data centre 450MW · FY27 FFO 38-39 cents<br>MGRAU FY27 +2-4%<br>SGTOPT：Singtel 升级 A+ · Optus affirm A-"],
+          ["fact","STOAU bond wide to OVV"],
+          ["fact","STOAU curve 受 higher oil prices + Moody's positive outlook 支撑"],
+          ["fact","Aussie IG 基本面稳健、杠杆受控"],
+          ["long","偏好：SGPAU/MGRAU/WHCAU（gearing 低位）<br>风险：Optus 仅 affirm（divest minority stake 削弱母公司支持假设）"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","日本利率","澳洲利率","美国HY信用债","欧洲利率","欧洲金融债","中国信用债","SSA新发","美国股票及跨资产ETF","澳门博彩信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["亚洲信用","IG 走强 vs HY 收低 — 同区信用内部分化",
+        ["long","<span class='bull'>India IG (Barclays)</span><br>Kotak/IDFC 10-13bp tighter<br>China/Japan CDS 走强"],
+        ["short","<span class='bear'>Asia HY (Barclays)</span><br>cash -0.125/-0.25pt<br>duration/永续领跌"],
+        ["fact","<b>IG 一级 grind + 外资 CLN 配置 vs HY better sellers de-risk</b><br>India IG 受 FCNR 窗口临近关闭支撑一级需求<br>Asia HY 从 compression 转向 decompression<br><b>结论：</b>做多 India IG 一级 / 回避 Asia HY 长端"]],
+      ["美国IG","T2 block lift 回暖 vs rates reversal 去风险 — 金融与非金融分化",
+        ["long","<span class='bull'>Citi 金融 T2</span><br>GS +136/MS +128/JPM +121<br>block lift 显示 grind to come"],
+        ["short","<span class='bear'>Citi 非金融</span><br>午后 duration selling<br>压过 insurance demand"],
+        ["fact","<b>金融 capstack 需求回暖 vs 长端 rates 太 immediate 触发去风险</b><br>15NC10（通常被厌恶结构）出现 block 承接<br>但整体 rates reversal 太猛触发 lukewarm sentiment<br><b>结论：</b>金融 T2 确定性做多 / 非金融等待去风险消化"]],
+      ["澳洲信用","Singtel 升级 vs Optus 仅 affirm — 母公司支持假设分歧",
+        ["long","<span class='bull'>Singtel (S&P)</span><br>上调至 A+/stb"],
+        ["short","<span class='bear'>Optus (S&P)</span><br>仅 affirm A-/stb<br>group status core→highly strategic"],
+        ["fact","<b>S&P 对母子公司评级动作分裂</b><br>Singtel 计划 divest minority stake 使 Optus group status 从 core 降至 highly strategic<br>母公司评级上调 vs 子公司支持逻辑下调<br><b>结论：</b>关注 Optus 少数股权出售形式对母公司支持假设的影响"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-19 18:00 ~ 2026-08-20 12:00 (BMO TIPS EOD + Barclays Asia Credit EOD 19th + Barclays Jack Henry F4Q26 + Citi IG Credit Daily + DB Aussie Credit)",
+    emailCount:"BMO 1 / Barclays 2 / Citi 1 / DB 1（共5封邮件 · 4家券商）",
+    omitted:"中国利率、日本利率、澳洲利率、美国HY、欧洲利率、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
+  }
+};
+
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
 
