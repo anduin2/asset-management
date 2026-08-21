@@ -1181,74 +1181,153 @@ REPORT_DATA["2026-08-19"] = {
 
 REPORT_DATA["2026-08-20"] = {
   dateCN: "2026年8月20日 星期四",
-  theme: "BMO 报 30yr TIPS 实际利率 3.10%→2.93% 大幅转强（长端承接力初现）+ Barclays SoftBank equity -10% 但 CDS unchanged（AI 风险未传导至信用）+ Asia HY 收低但 China/Japan CDS 走强 + Citi IG 财报三重奏（LOW/TGT/EL）+ 钢材关税 50%→25% + DB Singtel 升级 A+ 但 Optus 仅 affirm",
-  meta: "覆盖券商：BMO 1封（TIPS EOD）+ Barclays 2封（Asian Credit EOD 19th + Jack Henry F4Q26 权益单票）+ Citi 1封（IG Credit Daily）+ Deutsche Bank 1封（Aussie Credit）· 共5封邮件 · 4家券商",
+  theme: "Treasury 长端 nominal buyback 意外翻倍（$2bn→$4bn/op）触发长端 ~10bp rally + massive bull flattening（JPM: Bessent '主线'）+ JPM Q2 盈利 +50.4%（2Q21来最高）债务桶全面增长 + SoftBank equity -10% 但 CDS unchanged（AI 风险未传导至信用）+ GS 亚洲 SOV IG 2-3bp wider + Nomura HDFCB 新发 FV（~35bp upside）+ Braskem Idesa Ch11 + UK CPI 2.9% gilts outperform",
+  meta: "覆盖券商：GS 4封（Global Credit Recap/Asia Macro/Top of Mind/Global Markets Daily）+ Barclays 4封（Macro Research/Credit & Securitized/Daily Digest/Jack Henry）+ JPM 3封（Treasury Market Daily/DFFM/Credit Strategy）+ MS 2封（Rates EoD/US IG New Issue）+ BMO 2封（SSA/TIPS EOD）+ Citi 2封（WYWS/IG Credit Daily）+ Nomura 1封（Daily Wrap）+ BofA 1封 + LATAM 1封 + DB 1封（Aussie Credit）· 共22封邮件 · 10家券商",
   brokers: [
-    {n:"BMO",c:"b-bmo"},{n:"Barclays",c:"b-barclays"},{n:"Citi",c:"b-citi"},{n:"DB",c:"b-db"}
+    {n:"GS",c:"b-gs"},{n:"MS",c:"b-ms"},{n:"JPM",c:"b-jpm"},{n:"Nomura",c:"b-nomura"},{n:"BMO",c:"b-bmo"},{n:"Barclays",c:"b-barclays"},{n:"Citi",c:"b-citi"},{n:"BofA",c:"b-bofa"},{n:"LATAM",c:"b-latam"},{n:"DB",c:"b-db"}
   ],
   markets: [
     {
       id:"us-rates", pri:true, title:"美国利率",
-      summary:"BMO TIPS EOD：<b>30yr RY 从 3.10% 大幅 richer 至日内低 2.93%</b>（打破 8/19 长端 lackluster）；10s BE 高点近 232、3pm 收 ~230.5；5y5y 上沿 2.44%；Treasury 只加 nominal buy backs（翻倍）不加 TIPS",
+      summary:"<b>Treasury 长端 nominal buyback 至少翻倍（$2bn→$4bn/op）</b>：长端 ~10bp rally、massive bull flattening（MS）；JPM 称时点极不寻常、是 Bessent '主线'（收益率管理）；July FOMC minutes 非事件；BMO 报 30yr TIPS RY 3.10%→日内低 2.93%",
       headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
       cols:["88px","20%","14%","13%","13%","21%","18%"],
       rows:[
+        ["MS",
+          ["fact","<b>Buyback 至少翻倍</b><br>10-20y / 20-30y 各 $2bn → <b>$4bn/op</b><br>（9/9 生效，7/30 日历外新增）<br>长端 ~<b>10bp rally</b> · 20y 拍卖 tail 0.6bp 但继续 outperform<br>swap spreads 走宽（20y/30y +4/+3bp）"],
+          ["long","<span class='bull'>长端获政策支撑</span><br>massive bull flattening<br>30y 较发行日 ~10bp richer"],
+          ["fact","<b>bull flattening</b><br>前端 ~2bp richer、长端 ~10bp"],
+          ["fact","July FOMC minutes 非事件<br>9月 hold 预期基本不变"],
+          ["fact","buyback 翻倍是 Bessent 对长端不安的主线延伸；但 20y 拍卖 tail +0.6bp 显示供给仍需要吸纳"],
+          ["long","做多长端（跟随政策支撑）<br>明日：jobless claims + Philly Fed + <b>30yr TIPS reopening</b>"]],
+        ["JPM",
+          ["fact","长端 -9bp 至 5.19%（30y）<br>10y -6bp 至 4.65%<br>2s10s 平坦 5.25bp"],
+          ["short","<span class='bear'>buyback 只能 buy time</span><br>未来财年 >$3.5tn 净供给下难扭转 term premium"],
+          ["fact","2s10s 5.25bp（平坦）<br>曲线大幅 bull flatten"],
+          ["fact","FOMC minutes 确认 hold<br>数据依赖（Jackson Hole 前瞻）"],
+          ["fact","'timing is highly unusual'：<b>refunding 两周前刚公布日历</b>、TBAC score 无市场功能压力 → 纯粹政策信号"],
+          ["short","<span class='bear'>不做多 30y 追涨</span><br>推荐 2s/10s steepener（curve flatten 过度后反转）"]],
         ["BMO",
-          ["fact","<b>30yr RY 大幅转强</b><br>3.10% → 日内低 <b>2.93%</b><br>10s BE 高点近 <b>232</b> · 3pm 收 ~230.5<br>5y5y 上沿 <b>2.44%</b>（高点近 2.45%）"],
-          ["long","<span class='bull'>长端实际利率转强</span><br>30yr RY 17bp richer<br>但最后一小时 late day selling 打下来 .5-1bp"],
-          ["fact","BEI curve flatten（长端卖出、前端守住）"],
+          ["fact","<b>30yr TIPS RY 3.10% → 日内低 2.93%</b><br>10s BE 高点近 <b>232</b> · 5y5y 上沿 <b>2.44%</b>"],
+          ["long","<span class='bull'>长端实际利率转强</span><br>30yr RY 17bp richer"],
+          ["fact","BEI curve flatten<br>长端 BE selling"],
           [""],
-          ["fact","Treasury 只增加 nominal buy backs（至少翻倍）<b>不适用 TIPS</b>；公告后 RY stop ins + BE buying 不敌 FM profit taking + auction setup"],
-          ["long","做多前端（5-10y TIPS）；长端等周四拍卖检验承接力（1pm 前 noon 决定）"]]
+          ["fact","Treasury 只加 nominal buybacks（翻倍）<b>不适用 TIPS</b>；公告后 RY stop ins + BE buying 不敌 FM profit taking"],
+          ["long","做多前端（5-10y TIPS）；<b>周四 $8bn 30yr TIPS reopening</b> 检验长端承接力"]]
       ]
     },
     {
       id:"us-ig", pri:true, title:"美国IG信用债",
-      summary:"Citi IG Credit Daily：rates reversal 太 immediate，午后 duration selling 压过 insurance demand 达 <b>tipping point</b>；Financials 15NC10 T2 block lift（GS +136/MS +128/JPM +121，20bps off tights）；LOW/TGT/EL 财报中性；US-Canada 钢材关税 <b>50%→25%</b>",
+      summary:"JPM：<b>S&P500 盈利 +50.4%（2Q21 来最高）</b>、债务桶全面增长缓解集中度担忧 → 利差压缩中期逻辑；Curveball：HG 10s30s 平坦至 <b>17.7bp</b>（7月初来最平）；Citi：午后 duration selling 压过 insurance demand 达 tipping point，但金融 15NC10 T2 block lift（GS +136/MS +128/JPM +121）",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
       cols:["88px","20%","15%","18%","17%","18%","14%"],
       rows:[
+        ["JPM",
+          ["fact","<b>Q2 盈利 +50.4%</b>（2Q21 来最高）<br>排除 Alphabet/Amazon +32.0%<br>债务桶全面增长（$50bn+ 桶 43%）"],
+          ["long","<span class='bull'>盈利广度缓解集中度担忧</span><br>IG 利差压缩逻辑成立"],
+          ["fact","<b>Curveball</b>：HG 10s30s <b>17.7bp</b>（7月初来最平）<br>5s10s 28.5bp（93% 6m range）<br>HG bonds 38bp wide to CDS（5月来最宽）"],
+          ["long","HG 基金流入 <b>+$1,256mn</b>（ETF 96%）<br>CDX.IG 51.8bp（+0.4bp）"],
+          ["long","<span class='bull'>盈利广度 + 资金流入 → IG 中期做多</span><br>10s30s flattening 是进入点"],
+          ["long","做多 IG（盈利广度支撑）<br>曲线端：10s30s flattening 策略"]],
         ["Citi",
-          ["fact","<b>LOW</b> 2Q mixed（sales $25.96bn miss · GM 33.0% · Adj EPS $4.40 beat）<br><b>TGT</b> decent（sales +5.3% $26.54bn · GM 33.7% · $994mm IEEPA refunds）<br><b>EL</b> strong（4Q +6% $3.63bn · China +12% · equity +16%）"],
-          ["fact","LOW 下调 FY 指引（sales $92.0bn）<br>TGT 上调 FY sales 至 <b>+5%</b><br>EL China 复苏延续"],
-          ["fact","LOW/TGT/EL 均 neutral spread<br>Vylor new 10yr consensus <b>105-115bp</b> · NTRCN 2036 g+95<br>Air Products outlook 上调至 stable"],
-          ["short","<span class='bear'>午后 duration selling</span> 压过 insurance demand<br>Financials 15NC10 T2 <b>block lift</b>（GS +136/MS +128/JPM +121）<br>Industrials net hit >800mm"],
-          ["fact","rates reversal 太 immediate 触发 lukewarm sentiment；但 T2 block lift 显示金融 capstack 需求回暖、<b>grind to come</b>"],
-          ["long","偏好：大行 15NC10 T2（block lift 承接）· AgChems（关税减半利好）<br>风险：Steel 信用（关税减半利空钢价，但 STLD/NUE 资本结构紧俏冲击有限）"]]
+          ["fact","<b>LOW</b> 2Q mixed（sales miss · Adj EPS $4.40 beat · 下修 FY）<br><b>TGT</b> decent（sales +5.3% · 上调 FY +5%）<br><b>EL</b> strong（4Q +6% · China +12%）"],
+          ["fact","LOW/TGT/EL 均 neutral spread<br>Vylor new 10yr consensus <b>105-115bp</b> · NTRCN 2036 g+95"],
+          ["short","<span class='bear'>午后 duration selling</span> 压过 LDI/insurance demand<br>3-7yr 唯一 net-hit 区间<br>Industrials net hit >800mm"],
+          ["fact","rates reversal 太 immediate 触发 lukewarm sentiment；<b>9月 supply 是主导变量</b>"],
+          ["short","<span class='bear'>金融 T2 block lift 显示 grind to come</span>（GS +136/MS +128/JPM +121）<br>非金融等去风险消化"],
+          ["long","偏好：大行 15NC10 T2（block 承接）<br>风险：Steel 信用（关税 50%→25% 利空钢价）"]],
+        ["MS",
+          ["fact","8/19 新发 $2.35bn<br>本周 $17.85bn<br>MTD $143.925bn · YTD $1,509.209bn"],
+          ["fact","8月发行符合季节性节奏<br>Yankee deals 已过 lag"],
+          ["fact","<b>金融 15NC10 T2 block lift</b>（+136/+128/+121）<br>20bp off tights"],
+          ["fact","fin 供给空窗 + <b>buyback 支撑长端</b> → IG 供需偏紧"],
+          ["long","<span class='bull'>IG 供需格局偏紧</span>（供给回落 + 政策支撑）"],
+          ["long","跟踪新发：金融 T2 定价是 capstack 再定价触发器"]]
       ]
     },
     {
       id:"asia-credit", pri:true, title:"亚洲信用债",
-      summary:"Barclays Asia EOD 19th：India IG grind tighter（Kotak/IDFC <b>10-13bp</b>）；Asia HY 收近当日低点 cash <b>-0.125/-0.25pt</b>、spreads +2/+5bp，duration 长端/永续领跌；China CDS -0.50（CLN interest）+ Japan CDS 连续第二日 outperform",
+      summary:"GS：亚洲 SOV cash IG <b>2-3bp wider</b>、HY <b>0.25-0.5pt lower</b>，CDS 表现优于 cash；Barclays：India IG grind tighter（Kotak/IDFC <b>10-13bp</b>）+ China/Japan CDS 连续 outperform；Nomura：<b>HDFCB 新发 FV</b>（IPG T3+120/T5+130 vs FV T3+85/T5+95，~35bp upside）",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
       cols:["88px","20%","15%","18%","17%","18%","14%"],
       rows:[
+        ["GS",
+          ["fact","亚洲 SOV IG <b>2-3bp wider</b><br>HY <b>0.25-0.5pt lower</b><br>CDS 表现优于 cash"],
+          ["fact","EX-CHINA：SMIND 2030 新发<br>KMBIN 2031 收于 re-offer +9bp"],
+          ["fact","HDFCB 明天 2-part 新发预期 <b>T+100</b><br>（GS 预期）"],
+          ["fact","BIDU -12% / Hynix -10% 但 CDS 无影响<br>→ AI 风险未传导亚洲信用"],
+          ["short","<span class='bear'>亚洲信用整体走宽</span><br>cash 弱于 CDS"],
+          ["long","偏好：CDS 而非 cash（cash 承压、CDS 稳定）"]],
         ["Barclays",
-          ["fact","<b>India IG grind tighter</b>（Kotak/IDFC <b>10-13bp</b>、其余 1-3bp）<br><b>Asia HY 收近当日低点</b> cash -0.125/-0.25pt · spreads +2/+5bp<br>HSI +0.1% · NIFTY -0.4%"],
-          [""],
-          ["fact","iTraxx Asia S45 <b>68.00/68.75</b>（+0.25）<br>China CDS <b>-0.50</b> · Japan CDS outperform · Indo/Phil unchanged"],
-          ["fact","新发：Chiba $300m 5yr IPT T+85 · Mitsui USD Reg S 5/10yr · HSBC CNH 4NC3 2.35%/8NC7 2.75% · Torrens A$500m RMBS · China CNH Reg S unrated"],
-          ["short","<span class='bear'>Asia HY 收低、duration 长端 + perpetuals 领跌</span>（better sellers de-risk）"],
-          ["long","偏好：India IG 一级（FCNR 窗口临近关闭）· China/Japan CDS<br>风险：Asia HY 长端/永续承压"]]
+          ["fact","<b>India IG grind tighter</b>（Kotak/IDFC <b>10-13bp</b>、其余 1-3bp）<br><b>Asia HY 收近当日低点</b> cash -0.125/-0.25pt · spreads +2/+5bp"],
+          ["fact","India IG 受 FCNR 窗口临近关闭支撑一级需求"],
+          ["fact","iTraxx Asia S45 <b>68.00/68.75</b>（+0.25）<br>China CDS <b>-0.50</b> · Japan CDS outperform"],
+          ["fact","新发：Chiba $300m 5yr IPT T+85 · Mitsui USD Reg S · HSBC CNH 4NC3 2.35%"],
+          ["short","<span class='bear'>Asia HY 收低、duration 长端 + perpetuals 领跌</span>"],
+          ["long","偏好：India IG 一级（FCNR 窗口）· China/Japan CDS<br>风险：Asia HY 长端/永续承压"]],
+        ["Nomura",
+          ["fact","<b>HDFCB GIFT-City 新发</b><br>3yr/5yr USD senior<br>IPG：T3+120 / T5+130"],
+          ["long","<span class='bull'>HDFCB 基本面稳健</span><br>India 私行 seniors 估值 fair"],
+          ["fact","<b>FV：T3+85（YTM 5.08%）/ T5+95（YTM 5.28%）</b><br>vs IPG 约 <b>35bp upside</b>"],
+          ["fact","GS 预期 2-part T+100 作 cross-ref"],
+          ["long","<span class='bull'>一级 FV 折扣是确定性做多区</span>"],
+          ["long","参与 HDFCB 一级（35bp 折扣）<br>风险：India IG 供给集中"]]
       ]
     },
     {
       id:"japan-credit", pri:false, title:"日本信用债",
-      summary:"Barclays：SoftBank equity <b>-10%</b>（OpenAI 2Q sales 慢于 Anthropic）但 CDS unchanged、cash 走弱 1/8-1/4pt；Japan CDS 继续 outperform",
+      summary:"Barclays：SoftBank equity <b>-10%</b>（OpenAI 2Q sales 慢于 Anthropic 触发 AI 抛售、BIDU -12%、Hynix -10%）但 CDS 基本 unchanged、cash 走弱 1/8-1/4pt；SoftBank 零售债（JPY）缓解 USD 供给风险；Japan CDS 继续 outperform",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
       cols:["88px","20%","15%","18%","17%","18%","14%"],
       rows:[
         ["Barclays",
-          ["fact","<b>SoftBank equity -10%</b>（OpenAI 2Q sales 慢于 Anthropic 触发 AI 抛售）<br>CDS unchanged · cash 走弱 1/8-1/4pt<br>Japan CDS 继续 outperform"],
-          [""],
-          ["fact","CDS unchanged vs equity -10% <b>严重背离</b>"],
-          ["fact","China CDS -0.50（CLN interest 持续）"],
+          ["fact","<b>SoftBank equity -10%</b>（AI 抛售）<br>BIDU -12% · Hynix -10%<br>但 <b>CDS 基本 unchanged</b> · cash 走弱 1/8-1/4pt"],
+          ["fact","OpenAI 2Q sales 慢于 Anthropic 触发 AI 获利了结<br>但未扩散至信用"],
+          ["fact","CDS unchanged vs equity -10% <b>严重背离</b><br>Japan CDS 继续 outperform"],
+          ["fact","<b>SoftBank 零售债（JPY）发行</b>缓解近端 USD 供给风险"],
           ["short","<span class='bear'>AI 风险未传导至信用</span>但 cash 已先行去风险<br>CDS-cash 背离走阔"],
-          ["short","风险：若 CDS 补跌 Japan 信用承压；关注 cash-CDS 基差收敛"]]
+          ["short","风险：若 AI 叙事恶化 CDS 补跌；关注 cash-CDS 基差收敛"]]
       ]
     },
     {
-      id:"aud-credit", pri:true, title:"澳洲信用债",
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      summary:"Citi WYWS：UK 7月 CPI <b>2.9% 符合预期</b> → 10y gilt <b>-6bp 至 5.04%</b> outperform；德国 10y 拍卖均收益率 <b>3.26%</b>（2011 年来最高）但 bid-to-cover 仅 1.15x；BTP 10y 4.06%",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["Citi",
+          ["fact","UK 7月 CPI <b>2.9% 符合预期</b><br>10y gilt <b>-6bp 至 5.04%</b><br>德国 10y 拍卖 3.26%（2011 来最高）<br>bid-to-cover 1.15x · BTP 10y 4.06%"],
+          ["short","<span class='bear'>德债拍卖需求弱</span><br>3.26% 均收益 2011 来最高<br>1.15x 覆盖一般"],
+          ["fact","UK CPI 符合预期 → gilts outperform<br>欧债曲线整体小幅陡峭"],
+          ["fact","ECB 7月 HICP 终值 headline 2.9% / core 2.5%"],
+          ["fact","gilts 因 CPI 无意外获买盘；德债供给仍是压力点"],
+          ["long","做多 gilts 相对 outperform<br>关注 8月 EU/DE 供给节奏"]]
+      ]
+    },
+    {
+      id:"latam", pri:false, title:"拉美信用债",
+      summary:"GS + LATAM：<b>Braskem Idesa Ch11</b>（BAKIDE +7.5pts、BRASKM 曲线最活跃）；JBS 提出 <b>2.086 股/股非现金要约收购 PPC</b>（~$1.2bn）；Banco do Brasil 5.625% '31s 唯一 OW；CEMBI Latam 202.2bp（+4.4bp）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","<b>Braskem Idesa Ch11</b><br>BAKIDE +<b>7.5pts</b><br>BRASKM 曲线最活跃单名"],
+          ["fact","Oceanica 财报后大跌（OHIFLY -7pts）"],
+          ["fact","乌拉圭（BORHUY 新发）· 墨西哥 / 秘鲁 / 智利（FONPLATA 定价）"],
+          ["short","<span class='bear'>阿根廷 10月中期选举担忧</span>"],
+          ["short","<span class='bear'>LATAM 单名事件驱动主导</span>（Ch11/要约/选举）"],
+          ["long","Braskem 重组机会交易<br>回避阿根廷主权尾部"]],
+        ["LATAM",
+          ["fact","JBS 要约收购 PPC<br><b>2.086 股 JBS A/股</b>（~$1.2bn）<br>Marfrig/BRF 2Q mixed"],
+          ["long","<span class='bull'>JBS 要约提升整合逻辑</span><br>Samarco FCF 韧性 9.2% carry"],
+          ["fact","<b>CEMBI Latam 202.2bp</b>（+4.4bp）<br>BANBRA 5.625% '31s 唯一 OW"],
+          ["fact","Bovespa -0.4% · 大宗回落"],
+          ["fact","LATAM IG 与 HY 分化延续<br>巴西基本面稳健 vs 阿根廷政治风险"],
+          ["long","偏好：JBS / Samarco / Banco do Brasil<br>风险：阿根廷选举 · 哥伦比亚分化"]]
+      ]
+    },
+    {
+      id:"aud-credit", pri:false, title:"澳洲信用债",
       summary:"DB Aussie Credit：SGPAU/MGRAU/WHCAU 财报强劲、杠杆受控（gearing 22.7%/24.1%/1.2x）；STOAU 1H26 略低、net leverage 2.1x；<b>S&P 上调 Singtel A+ 但 Optus 仅 affirm A-</b>（group status core→highly strategic）",
       headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
       cols:["88px","20%","15%","18%","17%","18%","14%"],
@@ -1263,29 +1342,168 @@ REPORT_DATA["2026-08-20"] = {
       ]
     }
   ],
-  noCoverage:["中国利率","日本利率","澳洲利率","美国HY信用债","欧洲利率","欧洲金融债","中国信用债","SSA新发","美国股票及跨资产ETF","澳门博彩信用债"],
+  noCoverage:["中国利率","日本利率","澳洲利率","美国HY信用债","欧洲金融债","中国信用债","SSA新发","美国股票及跨资产ETF","澳门博彩信用债"],
   divergences: {
     headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
     cols:["10%","16%","18%","18%","38%"],
     rows:[
-      ["亚洲信用","IG 走强 vs HY 收低 — 同区信用内部分化",
-        ["long","<span class='bull'>India IG (Barclays)</span><br>Kotak/IDFC 10-13bp tighter<br>China/Japan CDS 走强"],
-        ["short","<span class='bear'>Asia HY (Barclays)</span><br>cash -0.125/-0.25pt<br>duration/永续领跌"],
-        ["fact","<b>IG 一级 grind + 外资 CLN 配置 vs HY better sellers de-risk</b><br>India IG 受 FCNR 窗口临近关闭支撑一级需求<br>Asia HY 从 compression 转向 decompression<br><b>结论：</b>做多 India IG 一级 / 回避 Asia HY 长端"]],
-      ["美国IG","T2 block lift 回暖 vs rates reversal 去风险 — 金融与非金融分化",
-        ["long","<span class='bull'>Citi 金融 T2</span><br>GS +136/MS +128/JPM +121<br>block lift 显示 grind to come"],
-        ["short","<span class='bear'>Citi 非金融</span><br>午后 duration selling<br>压过 insurance demand"],
-        ["fact","<b>金融 capstack 需求回暖 vs 长端 rates 太 immediate 触发去风险</b><br>15NC10（通常被厌恶结构）出现 block 承接<br>但整体 rates reversal 太猛触发 lukewarm sentiment<br><b>结论：</b>金融 T2 确定性做多 / 非金融等待去风险消化"]],
-      ["澳洲信用","Singtel 升级 vs Optus 仅 affirm — 母公司支持假设分歧",
-        ["long","<span class='bull'>Singtel (S&P)</span><br>上调至 A+/stb"],
-        ["short","<span class='bear'>Optus (S&P)</span><br>仅 affirm A-/stb<br>group status core→highly strategic"],
-        ["fact","<b>S&P 对母子公司评级动作分裂</b><br>Singtel 计划 divest minority stake 使 Optus group status 从 core 降至 highly strategic<br>母公司评级上调 vs 子公司支持逻辑下调<br><b>结论：</b>关注 Optus 少数股权出售形式对母公司支持假设的影响"]]
+      ["美国利率","Treasury 长端 buyback 翻倍 — 政策支撑 vs 供给约束",
+        ["long","<span class='bull'>MS</span><br>buyback 翻倍直接支撑长端<br>bull flattening 持续<br>20y 拍卖 tail 0.6bp 但仍 outperform"],
+        ["short","<span class='bear'>JPM / Barclays</span><br>时点极不寻常但未来财年 >$3.5tn 供给缺口下难持续<br>Japan 经验：buyback 只能 buy time"],
+        ["fact","<b>政策信号 vs 中期供给缺口</b><br>Bessent 对长端收益率上行不安（与 EURJPY 干预同源）<br>但 TIPS 不加、20y 拍卖 tail 显示供给仍需吸纳<br><b>结论：</b>长端短期获支撑做多 20-30y；2s/10s steepener 是两派共识表达"]],
+      ["AI 风险","AI 抛售 equity vs 信用定价背离 — SoftBank/BIDU/Hynix",
+        ["long","<span class='bull'>Barclays</span><br>SoftBank equity -10% 但 CDS unchanged<br>一级 jumbo issue + 零售债转移支撑 CDS"],
+        ["short","<span class='bear'>GS / JPM</span><br>BIDU -12%/Hynix -10% 但 CDS 无影响<br>日本股市 -3.2% · 韩国 -5.8%"],
+        ["fact","<b>信用尚未计入 AI 增长放缓风险</b><br>CDS-cash 背离走阔<br>补跌方向判断分歧（Japan vs 全球科技债）<br><b>结论：</b>若 AI 叙事恶化，Japan/科技信用 CDS 是高敏补跌区；CDS 对冲 equity 敞口成本仍低"]],
+      ["美国IG","盈利广度 vs 交易盘去风险 — 时间维度分歧",
+        ["long","<span class='bull'>JPM</span><br>盈利 +50.4%（2Q21 来最高）<br>债务桶全面增长<br>基金流入 +$1,256mn"],
+        ["short","<span class='bear'>Citi</span><br>午后 duration selling 压过 insurance demand<br>9月 supply 将成主导变量"],
+        ["fact","<b>中期基本面 vs 短期动能</b><br>分歧在时间维度而非方向<br>金融 15NC10 T2 block lift（+136/+128/+121）显示结构性买盘仍在<br><b>结论：</b>IG 中期做多 + Curveball 10s30s flattening 进入点"]],
+      ["亚洲信用","India IG 一级 vs 二级入口 — 参与方式分歧",
+        ["long","<span class='bull'>Nomura</span><br>HDFCB 新发 FV T3+85/T5+95<br>vs IPG 约 35bp upside"],
+        ["short","<span class='bear'>Barclays</span><br>二级追涨 India IG grind tighter<br>（Kotak/IDFC 10-13bp）"],
+        ["fact","<b>三级共识 India IG 一级是确定性做多区</b><br>GS 预期 2-part T+100 作 cross-ref<br>FCNR 窗口临近关闭<br><b>结论：</b>35bp 一级折扣是更优风险回报入口（Nomura FV 框架）"]]
     ]
   },
   footer: {
-    window:"2026-08-19 18:00 ~ 2026-08-20 12:00 (BMO TIPS EOD + Barclays Asia Credit EOD 19th + Barclays Jack Henry F4Q26 + Citi IG Credit Daily + DB Aussie Credit)",
-    emailCount:"BMO 1 / Barclays 2 / Citi 1 / DB 1（共5封邮件 · 4家券商）",
-    omitted:"中国利率、日本利率、澳洲利率、美国HY、欧洲利率、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
+    window:"2026-08-19 17:00 ~ 2026-08-20 12:00 (GS Global Credit Recap/Asia Macro/Top of Mind/Global Markets Daily + MS Rates EoD/US IG New Issue + JPM Treasury Market Daily/DFFM/Credit Strategy + Citi WYWS/IG Credit Daily + Barclays Macro/Credit & Securitized/Daily Digest/Jack Henry + Nomura Daily Wrap + BMO SSA/TIPS EOD + BofA Daily Insights + LATAM Corporates + DB Aussie Credit)",
+    emailCount:"GS 4 / Barclays 4 / JPM 3 / MS 2 / BMO 2 / Citi 2 / Nomura 1 / BofA 1 / LATAM 1 / DB 1（共22封邮件 · 10家券商）",
+    omitted:"中国利率、日本利率、澳洲利率、美国HY、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
+  }
+};
+
+// ==================== 2026-08-21 ====================
+REPORT_DATA["2026-08-21"] = {
+  dateCN: "2026年8月21日 星期五",
+  theme: "Treasury 长端 buyback 翻倍后市场反思：长端 +5bp bearish steepening 回吐（JPM: buyback 是收益率水平政策信号但缺财政整顿难持久）+ FOMC minutes 偏鹰（several 倾向加息）→ GS 称 Fed 沟通方式转变推升 term premium + Jefferies 转 buy-on-dips 并判定 steepening 见顶（与 JPM 2s/10s steepener 分歧）+ BMO 30yr TIPS reopening 2bp through、dealer takedown 近纪录低 2.1% + JPM 信用 $312bn YTD 记录级流入 vs $500bn 创纪录净供给 + Barclays AI Infra Financing ~$340bn YTD",
+  meta: "覆盖券商：JPM 3封（Treasury Market Daily/DFFM/Credit Strategy）+ Barclays 3封（Macro Research/Credit & Securitized/Daily Digest）+ MS 1封（UST Overnight）+ BMO 1封（TIPS EOD）+ TD 1封（AUD Credit）+ Jefferies 1封（mkt recap）+ BofA 1封（Daily Insights）+ GS 1封（Global Markets Daily）+ LATAM 1封（Corporates Daily）· 共15封邮件 · 9家券商（含2封转发去重）",
+  brokers: [
+    {n:"JPM",c:"b-jpm"},{n:"Barclays",c:"b-barclays"},{n:"MS",c:"b-ms"},{n:"BMO",c:"b-bmo"},{n:"TD",c:"b-td"},{n:"Jefferies",c:"b-jefferies"},{n:"BofA",c:"b-bofa"},{n:"GS",c:"b-gs"},{n:"LATAM",c:"b-latam"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"<b>Treasury 长端 buyback 翻倍后市场反思</b>：长端 +5bp bearish steepening 回吐昨日涨幅（JPM）；MS 量化 buyback 扩大至 $16bln+/季度、US 公共债务将达 $40tril 里程碑；GS 从 term premium 视角看 Fed 沟通方式转变推升政策路径不确定性；Jefferies 转 buy-on-dips 且判定 steepening 见顶；BMO 报 30yr TIPS reopening 2bp through、dealer takedown 2.1% 近纪录低",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["MS",
+          ["fact","<b>Buyback 扩大至 $16bln+/季度</b><br>US 公共债务即将达 <b>$40tril</b> 里程碑<br>buyback 是收益率管理工具"],
+          ["long","<span class='bull'>长端获政策支撑</span><br>buyback 提供稳定需求源"],
+          ["fact","buyback 集中于 10-30y<br>长端曲线获支撑"],
+          ["fact","政策路径不确定性上升<br>（Fed 沟通方式转变）"],
+          ["fact","buyback 扩大是 Bessent 对长端收益率水平不安的信号延伸"],
+          ["long","跟随 buyback 做多长端"]],
+        ["JPM",
+          ["fact","长端 <b>+5bp bearish steepening</b><br>（回吐昨日涨幅）<br>30y 5.19% 附近 · 10y 4.65%"],
+          ["short","<span class='bear'>buyback 缺财政整顿下难持久</span><br>未来财年 >$3.5tn 净供给"],
+          ["fact","<b>2s/10s steepener 继续</b><br>曲线 bearish steepening"],
+          ["fact","FOMC minutes 偏鹰<br>several 倾向加息（Jefferies cross-ref）"],
+          ["fact","buyback 公告<b>不由 TBAC 框架/流动性驱动</b><br>→ 纯粹收益率水平政策信号"],
+          ["short","<span class='bear'>做多 2s/10s steepener</span><br>不做多长端追涨"]],
+        ["Jefferies",
+          ["fact","从 neutral/bearish <b>转 buy-on-dips</b><br>5y 4.42-4.50% 已进入<br>10y 4.75-4.85% 接近"],
+          ["long","<span class='bull'>弱势累积多头</span><br>20/30y 5.25-5.40% 靠近"],
+          ["fact","<b>steepening 接近极限</b><br>2s/10s <b>55-25bp range-bound</b><br>偏好 <b>flattening</b>"],
+          ["fact","FOMC minutes：several 倾向加息<br>讨论减少会议次数（8→6）未一致"],
+          ["fact","曲线方向判断改变（steep→flat）<br>与 JPM steepener 形成直接分歧"],
+          ["long","<span class='bull'>buy-on-dips 累积多头</span><br>偏好 flattening"]],
+        ["GS",
+          ["fact","Fed 沟通方式转变推升<br><b>term premium 至周期高点</b>"],
+          ["short","<span class='bear'>长端收益率相对基本面<br>并非明显错误定价</span>"],
+          ["fact","term premium 上升驱动<br>长端曲线走陡"],
+          ["fact","政策路径不确定性上升<br>→ 9月会议 live"],
+          ["fact","underweight positioning 是未来 tailwind<br>buyback relief 仅短期"],
+          ["long","等待 positioning 修复<br>短期做多 buyback relief"]],
+        ["BMO",
+          ["fact","<b>30yr TIPS reopening 2bp through</b><br>dealer takedown <b>2.1%</b>（近纪录低）<br>5s 当日明星 · BEI curve 明显 flatten"],
+          ["long","<span class='bull'>长端实际利率承接强</span><br>直接买家大量吸收"],
+          ["fact","BEI curve 明显 flatten<br>长端 breakeven 走低"],
+          [""],
+          ["fact","TIPS 承接力强 → 实际货币需求真实存在<br>与 nominal buyback 形成互补"],
+          ["long","做多 TIPS 前端<br>BEI flatten 交易延续"]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"JPM：<b>$312bn YTD 记录级基金流入</b>（6.0% AUM、去年同期近两倍，尽管 YTD 回报率恰好 0%）vs 市场需吸纳 ~<b>$500bn 增量净新资金</b>（+3.4x YoY）；IG 流入仅覆盖净供给缺口 25%；Barclays：<b>AI/digital infra financing ~$340bn YTD</b> 横跨 IG/HY/ABS/CMBS，是新供给最大来源但资金承接强",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["JPM",
+          ["fact","<b>$312bn YTD 记录级基金流入</b><br>（6.0% AUM）<br>去年同期近两倍<br>但 YTD 回报率恰好 0%"],
+          ["fact","流入记录 vs 供给创纪录<br>IG 流入仅覆盖净供给缺口 <b>25%</b>"],
+          ["fact","IG breakeven <b>88bp</b><br>JULI <b>95bp</b>（-1bp）"],
+          ["short","<span class='bear'>需吸纳 ~$500bn 增量净新资金</span><br>（+3.4x YoY）"],
+          ["short","<span class='bear'>利差压缩需更强动能</span><br>曲线表达优于方向性久期"],
+          ["long","偏好 3s5s / 10s30s 曲线表达<br>回避方向性久期"]],
+        ["Barclays",
+          ["fact","<b>AI/digital infra financing ~$340bn YTD</b><br>横跨 IG/HY/ABS/CMBS"],
+          ["long","<span class='bull'>AI 基建是新供给最大来源但资金承接强</span>"],
+          ["fact","VGP downgrade → Market Weight<br>GCC banks 维持 MW · Q2 资产质量良好"],
+          ["long","AI infra 是新 beta<br>ABS/CMBS 直接受益"],
+          ["long","<span class='bull'>AI infra 是信用市场最大结构性主题</span>"],
+          ["long","偏好 AI infra 链<br>跟踪 VGP 评级变化"]]
+      ]
+    },
+    {
+      id:"latam", pri:false, title:"拉美信用债",
+      summary:"LATAM：<b>CMPC S&P 展望转负</b>（BBB-, 1/3 概率 12-24 个月内降级）、FSBIOE 负 FCF 维持 Neutral；<b>CEMBI Latam 206.5bp</b>（+4.4bp）风险偏好回落——单名评级下行事件驱动，巴西/墨西哥优质 IG 仍是相对避风港",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["LATAM",
+          ["fact","<b>CEMBI Latam 206.5bp</b>（+4.4bp）<br>风险偏好回落<br>（8/20 为 202.2bp）"],
+          ["short","<span class='bear'>CMPC S&P 展望转负</span><br>（BBB- · 1/3 概率 12-24 个月内降级）"],
+          ["fact","FSBIOE 负 FCF · 维持 Neutral"],
+          ["short","<span class='bear'>LATAM 单名事件驱动<br>评级下行信用走阔</span>"],
+          ["fact","CMPC/FSBIOE 领跌单名<br>巴西/墨西哥 IG 相对稳定"],
+          ["short","<span class='bear'>回避 CMPC/FSBIOE 等评级下行单名</span><br>关注巴西/墨西哥优质 IG"]]
+      ]
+    },
+    {
+      id:"aud-credit", pri:false, title:"澳洲信用债",
+      summary:"TD AUD Credit：<b>Google bonds 2-4bps through print</b> 主导 flows、长久期 outperform；主要银行曲线 bid 回归；新供给回到 reoffer 水平——Aussie IG 需求端边际改善",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["TD",
+          ["fact","<b>Google bonds 2-4bps through print</b><br>主导当日 flows<br>长久期 outperform"],
+          ["fact","Aussie IG 基本面稳健<br>银行板块表现稳定"],
+          ["fact","新供给回到 reoffer 水平<br>一级定价趋于公允"],
+          ["fact","<b>主要银行曲线 bid 回归</b><br>需求端边际改善"],
+          ["fact","Google 高评级超长债需求强<br>体现保险/养老金长钱配置"],
+          ["long","偏好 Google bonds 参与<br>银行曲线逢低买入"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","日本利率","欧洲利率","美国HY信用债","欧洲金融债","中国信用债","SSA新发","美国股票及跨资产ETF","澳门博彩信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","Treasury buyback 政策信号 vs 基本面约束",
+        ["long","<span class='bull'>MS</span><br>buyback 扩大至 $16bln+/季度<br>长端获稳定政策需求源"],
+        ["short","<span class='bear'>JPM / GS</span><br>缺财政整顿下难持久（未来财年 >$3.5tn 净供给）<br>长端相对基本面并非明显错误定价"],
+        ["fact","<b>政策短期支撑 vs 中期供给约束</b><br>JPM：公告不由 TBAC 框架/流动性驱动 → 纯粹收益率水平信号<br>GS：term premium 至周期高点但 positioning 是未来 tailwind<br><b>结论：</b>短期跟随 buyback 做多长端；中期需财政配合"]],
+      ["美国利率","曲线方向：steepener vs flattening",
+        ["long","<span class='bull'>JPM</span><br>继续 2s/10s steepener<br>curve bearish steepening"],
+        ["short","<span class='bear'>Jefferies</span><br>steepening 接近极限<br>2s/10s 55-25bp range-bound<br>偏好 flattening"],
+        ["fact","<b>同一波次内的直接方向分歧</b><br>JPM 视 buyback 后长端回吐为陡峭化延续<br>Jefferies 判定陡峭化见顶、转弱积累多头<br><b>结论：</b>2s/10s 区间震荡概率大；关注 5y/10y 领路"]],
+      ["美国IG","记录级流入 vs 创纪录供给",
+        ["long","<span class='bull'>Barclays</span><br>AI infra $340bn YTD 供给被承接<br>ABS/CMBS 新 beta 获资金"],
+        ["short","<span class='bear'>JPM</span><br>IG 流入仅覆盖净供给缺口 25%<br>利差压缩需更强动能"],
+        ["fact","<b>资金与供给双创纪录</b><br>JPM：$312bn YTD 流入 vs $500bn 增量净供给（+3.4x YoY）<br>Barclays：AI 基建融资是最大新供给来源但需求同样强劲<br><b>结论：</b>曲线表达（3s5s/10s30s）优于方向性久期"]],
+      ["美国TIPS","长端实际利率承接 vs BEI flatten 交易",
+        ["long","<span class='bull'>BMO</span><br>30yr TIPS reopening 2bp through<br>dealer takedown 2.1% 近纪录低<br>真实货币需求强"],
+        ["short","<span class='bear'>FM/交易盘</span><br>BEI curve 明显 flatten<br>长端 breakeven 走低 profit-taking"],
+        ["fact","<b>拍卖质量 vs 二级 breakeven 背离</b><br>直接买家吸收 vs 交易盘 fade breakeven<br>5s 是当日明星<br><b>结论：</b>做多 TIPS 前端 + BEI flatten 交易延续"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-20 17:00 ~ 2026-08-21 12:00 (TD AUD Credit + BMO TIPS EOD + Jefferies mkt recap + MS UST Overnight + Barclays Macro Research/Credit & Securitized/Daily Digest + JPM Treasury Market Daily/DFFM/Credit Strategy + BofA Daily Insights + GS Global Markets Daily + LATAM Corporates Daily)",
+    emailCount:"JPM 3 / Barclays 3 / MS 1 / BMO 1 / TD 1 / Jefferies 1 / BofA 1 / GS 1 / LATAM 1（共15封邮件 · 9家券商，含2封转发去重）",
+    omitted:"中国利率、日本利率、欧洲利率、美国HY、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
   }
 };
 
