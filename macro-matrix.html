@@ -1507,6 +1507,130 @@ REPORT_DATA["2026-08-21"] = {
   }
 };
 
+REPORT_DATA["2026-08-24"] = {
+  dateCN: "2026年8月24日 星期一",
+  theme: "Treasury 长端 buyback 翻倍后长端稳定（30yr 5.33%→5.17%→5.25% 整周+1.1bp、WIRP 9月10bp/12月26bp）+ India FCNR(B) 8/31 终止引发银行美元债发债潮 ~$4.5bn（新发强势：IDFCB 29s/KMBIN 31s ~15bp tighter）+ Asia HY 跑赢 IG（GS Liquid HY -5bps WTD vs IG +/-2bp）+ Jackson Hole preview（Warsh 强调长期驱动、无近期利率指引）+ 欧元区8月通胀反弹 3.4%（能源+0.5pp）+ 日本 core-core CPI 9个月来首次走强 + AI infra financing ~$340bn YTD（Alphabet AUD $5.5bn、Alibaba 拟$10bn 股权）",
+  meta: "覆盖券商：GS 2封（Global Credit Market Recap/AIS A Wrap on Last Week）+ Citi 1封（IG Credit Daily）+ JPM 1封（EU SMID Tech Hardware）+ Barclays 3封（Macro Research/Credit & Securitized/Daily Digest）· 共7封邮件 · 4家券商",
+  brokers: [
+    {n:"GS",c:"b-gs"},{n:"Citi",c:"b-citi"},{n:"JPM",c:"b-jpm"},{n:"Barclays",c:"b-barclays"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"<b>30yr 周内 5.33%→5.17%→5.25%</b>（Bessent 宣布长端 buyback 翻倍后稳定），整周仅 +1.1bp；曲线 flatten（2yr/5yr +6bp、10yr +4bp）；WIRP 加息定价大幅回落：9月 <b>10bp</b>、12月 <b>26bp</b>（较上周 18/37）；GS 报 H2 美国可能更软（消费支出放缓）、house call 今年不加息；Jackson Hole：Warsh 强调长期驱动因素、不太可能提供近期利率指引",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["GS",
+          ["fact","<b>30yr 5.33%→5.17%→5.25%</b><br>（Bessent 宣布 buyback 翻倍）<br>整周 +1.1bp · 曲线 flatten<br>2yr/5yr +6bp · 10yr +4bp<br>SPX -1.43% · 油价 +6.63%"],
+          ["long","<span class='bull'>长端获 buyback 政策支撑</span><br>锚定长端波动率<br>防止曲线陡峭化"],
+          ["fact","buyback 集中于长端<br>→ 曲线 flatten 表达有利"],
+          ["fact","WIRP：9月 <b>10bp</b> / 12月 <b>26bp</b><br>（较上周 18/37 回落）<br>house call 今年不加息<br>H2 美国可能更软（消费放缓）"],
+          ["fact","buyback 缓解长端供给担忧<br>但赤字+AI 供给仍压制久期<br><b>收益率无需大幅重定价</b>"],
+          ["long","长端波动率下行利好 carry/flatten<br>关注 9月供给日历<br>回避方向性追涨"]],
+        ["Barclays",
+          ["fact","Jackson Hole preview：<br>Warsh 强调<b>长期驱动因素</b><br>与 Fed 沟通方式"],
+          ["fact","长端利率难深度下行<br>全球通胀粘性未消"],
+          ["fact","欧元区8月通胀反弹至 <b>3.4%</b><br>（能源 +0.5pp · core 2.5% 稳）"],
+          ["fact","<b>不太可能提供近期利率指引</b><br>市场寻求 FOMC 将通胀<br>回归 2% 的保证"],
+          ["fact","全球通胀分化：欧能源推升<br>vs 美 H2 更软（GS cross-ref）"],
+          ["long","美债区间交易<br>JGB 收益率上行是外部约束"]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"Citi：Chemicals <b>3/5bp tighter</b>（WTD ~6/10bp）最强、Energy 受支撑（debt reduction key）；TMT mixed（AVGO +5/8、NVDA +3/4、SPCX +2/5、ORCL +5）；NVDA 5yr 低 60s · SPCX 5yr 高 140s；Barclays：AI infra financing ~$340bn YTD 横跨 IG/HY/ABS/CMBS、Taiwan lifers 对 hyperscaler 发行选择性",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Citi",
+          ["fact","Chemicals <b>3/5bp tighter</b><br>（WTD ~6/10bp tighter）<br>Energy 受支撑<br>TMT mixed（max -1/2 better）"],
+          ["long","<span class='bull'>Industrials 中 Chemicals 最强</span><br>Energy debt reduction 支撑利差"],
+          ["fact","Chemicals Z-score <b>1.1</b><br>低于一年均值<br>MLM 海外需求↑或压缩至 VMC"],
+          ["fact","VYLR 交易良好 · MOS nibblers<br>Front end：NVDA 5yr 低60s<br>SPCX 5yr 高140s"],
+          ["long","<span class='bull'>Chemicals 是压缩交易候选</span><br>sector 相对价值机会"],
+          ["long","偏好 Chemicals/Energy<br>回避 TMT 高 beta 追涨"]],
+        ["Barclays",
+          ["fact","<b>AI/digital infra financing ~$340bn YTD</b><br>横跨 IG/HY/ABS/CMBS<br>Alphabet AUD $5.5bn · Alibaba 拟$10bn"],
+          ["fact","KANGRP 下修 FY 指引<br>（revenue/EBITDA）<br>green shoots · RCF 已替换"],
+          ["fact","HY second-lien<br>cap structure RV"],
+          ["long","<span class='bull'>Taiwan lifers 对 hyperscaler<br>发行选择性态度</span><br>AI infra 资金承接强"],
+          ["long","<span class='bull'>AI infra 是最大结构性主题</span><br>ABS/CMBS 是新增量"],
+          ["long","偏好 AI infra 链<br>跟踪台湾寿险配置需求"]]
+      ]
+    },
+{
+      id:"asia-ig", pri:true, title:"亚洲IG信用债",
+      summary:"GS：<b>India FCNR(B) 8/31 终止引发银行美元债抢发潮 ~$4.5bn</b>（ICICI 31s T+105、KMBIN 31s T+108、HDFCB 31s T+100、IDFCBK 29s T+160）——新发强势：IDFCB 29s/KMBIN 31s <b>~15bp tighter</b>、ICICI 31s 9bp tighter；Asia IG cash 周度 +/-2bp；韩国 HYUELE S&P 上调 A-/Positive（回购注销24mm股）、HYUSEC $300m 3yr T+93bps",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","India 银行周发 ~<b>$4.5bn</b><br>（FCNR(B) 8/31 终止）<br>Asia IG cash +/-2bp<br>China 长端收紧：CNOOC/SINOPE 1.5bp<br>BABA/TENCNT 1-2bp"],
+          ["long","<span class='bull'>India 金融发债潮=便宜 beta</span><br>FCNR(B) 终止吸引 >$50bn<br>外币存款机制关闭窗口"],
+          ["fact","新发强势：IDFCB 29s/KMBIN 31s<br><b>~15bp tighter</b>· ICICI 31s 9bp<br>AXSBIN perps +20c/8bp tighter<br>HYUELE 2.5-3.5bp wider（回购注销）"],
+          ["fact","global fund flows 支持<br>Asia RM 是更好卖家<br>locals 观望"],
+          ["long","<span class='bull'>供给集中但吸收良好</span><br>India 金融是相对价值机会"],
+          ["long","参与 India 新发前段<br>跟踪 Union Bank/Yes Bank 定价<br>回避 MEITUA/KUAISH（wider）"]]
+      ]
+    },
+    {
+      id:"asia-hy", pri:true, title:"亚洲HY信用债",
+      summary:"GS：<b>GS Asia Liquid HY basket 周度 -5bps</b>（跑赢 IG）——India HY 金融强势（IIFL Fitch 上调 BB-、UPLLIN S&P 展望 positive、VLLPM 27s/29s 2-3pts higher）；China property 分化（LNGFOR +0.25-0.5pts vs VNKRLE -1.5-1.75pts）；GENTMK perps 0.5-0.75pts lower（EBITDA 下降）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","<b>Liquid HY -5bps WTD</b><br>vs IG +/-2bp<br>India HY 金融强势：IIFOIN 29s<br>+0.5pts（Fitch 上调 BB-）"],
+          ["long","<span class='bull'>India 金融升级潮</span><br>UPLLIN S&P 展望 positive（BB）<br>VLLPM 27s/29s 2-3pts higher"],
+          ["fact","China property 分化：<br>LNGFOR +0.25-0.5pts<br>vs <b>VNKRLE -1.5-1.75pts</b>（bear）"],
+          ["fact","industrials：WESCHI 28s/29s<br>1.5-2.5pts higher · GLPSP lower<br>SRILAN/PKSTAN 0.25-0.375pts lower"],
+          ["long","<span class='bull'>HY 相对价值优于 IG</span><br>利率稳定+供给消化后<br>信用下沉重回"],
+          ["long","偏好 India HY 金融<br>（IIFOIN/UPLLIN/VLLPM）<br>回避 VNKRLE/GENTMK"]]
+      ]
+    },
+    {
+      id:"macau-gaming", pri:false, title:"澳门博彩信用债",
+      summary:"GS：<b>GENTMK perps 0.5-0.75pts lower</b>（EBITDA 下降）——博彩板块基本面走弱，需求承压",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","GENTMK perps<br><b>0.5-0.75pts lower</b>"],
+          ["short","<span class='bear'>EBITDA 下降<br>基本面走弱</span>"],
+          [""],
+          [""],
+          ["short","<span class='bear'>板块需求承压<br>回避博彩暴露</span>"],
+          ["short","<span class='bear'>回避 GENTMK</span>"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","日本利率","欧洲利率","澳洲利率","美国HY信用债","欧洲金融债","中国信用债","SSA新发","美国股票及跨资产ETF"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","buyback 政策支撑 vs 基本面供给约束",
+        ["long","<span class='bull'>GS</span><br>buyback 锚定长端波动率<br>WIRP 加息定价大幅回落<br>H2 美国可能更软"],
+        ["short","<span class='bear'>GS UST desk / 市场</span><br>收益率无需大幅重定价但<br>赤字+AI 供给仍压制久期"],
+        ["fact","<b>政策短期支撑 vs 中期供给约束</b><br>GS：buyback 防陡峭化但不动摇基本面<br>WIRP 9月10bp/12月26bp 显示加息风险退潮<br>9月供给日历是下一测试<br><b>结论：</b>长端波动率下行利好 carry/flatten"]],
+      ["全球通胀","欧元区/日本通胀走强 vs 美国 H2 更软",
+        ["long","<span class='bull'>Barclays</span><br>欧元区8月 3.4%（能源+0.5pp）<br>日本 core-core 9个月首次走强<br>JGB 预测上调"],
+        ["short","<span class='bear'>GS</span><br>美国消费支出放缓<br>WIRP 加息定价回落<br>house call 今年不加息"],
+        ["fact","<b>跨区域通胀方向分歧</b><br>欧能源推升 headline 但 core 2.5% 稳定<br>日 CPI 走强支撑 BoJ 加息<br>美加息风险退潮<br><b>结论：</b>美债区间交易、欧债 bearish steepening 风险、JGB 上行是外部约束"]],
+      ["亚洲信用","HY 跑赢 IG 的可持续性",
+        ["long","<span class='bull'>GS</span><br>Liquid HY -5bps WTD vs IG +/-2bp<br>India HY 金融升级潮<br>利率稳定利好 HY carry"],
+        ["short","<span class='bear'>供给窗口</span><br>India IG 发债潮 ~$4.5bn 集中<br>（8/31 FCNR(B) 终止前）<br>China property 分化风险"],
+        ["fact","<b>风险偏好向 HY 倾斜 vs 一级供给集中</b><br>India HY 金融（IIFL/UPLLIN/VLLPM）强势<br>IG 新发（ICICI/KMBIN/HDFCB）吸收良好<br>VNKRLE/GENTMK 领跌<br><b>结论：</b>偏好 India HY 金融 + 新发前段参与"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-21 12:00 ~ 2026-08-24 08:00（周末路由 · GS Global Credit Market Recap + Citi IG Credit Daily + GS AIS + JPM EU SMID + Barclays Macro Research/Credit & Securitized/Daily Digest）",
+    emailCount:"GS 2 / Citi 1 / JPM 1 / Barclays 3（共7封邮件 · 4家券商）",
+    omitted:"中国利率、日本利率、欧洲利率、澳洲利率、美国HY、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
+  }
+};
+
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
 
