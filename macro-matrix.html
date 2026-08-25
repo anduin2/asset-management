@@ -1509,25 +1509,32 @@ REPORT_DATA["2026-08-21"] = {
 
 REPORT_DATA["2026-08-24"] = {
   dateCN: "2026年8月24日 星期一",
-  theme: "Treasury 长端 buyback 翻倍后长端稳定（30yr 5.33%→5.17%→5.25% 整周+1.1bp、WIRP 9月10bp/12月26bp）+ India FCNR(B) 8/31 终止引发银行美元债发债潮 ~$4.5bn（新发强势：IDFCB 29s/KMBIN 31s ~15bp tighter）+ Asia HY 跑赢 IG（GS Liquid HY -5bps WTD vs IG +/-2bp）+ Jackson Hole preview（Warsh 强调长期驱动、无近期利率指引）+ 欧元区8月通胀反弹 3.4%（能源+0.5pp）+ 日本 core-core CPI 9个月来首次走强 + AI infra financing ~$340bn YTD（Alphabet AUD $5.5bn、Alibaba 拟$10bn 股权）",
-  meta: "覆盖券商：GS 2封（Global Credit Market Recap/AIS A Wrap on Last Week）+ Citi 1封（IG Credit Daily）+ JPM 1封（EU SMID Tech Hardware）+ Barclays 3封（Macro Research/Credit & Securitized/Daily Digest）· 共7封邮件 · 4家券商",
+  theme: "周五 UST 熊陡收官：伊朗停战传闻短暂反弹后 bear flatten ~1.5bp、30yr 收 5.28%（周内新高、US2s10s -1.8bp）+ US Composite PMI 56.0 四年最快（Dec FOMC +3bp）+ 周一 Bessent 发布会 14:00 ET 详述伊朗制裁、关注长端购买表态 + Treasury 长端 buyback 翻倍（30yr 5.33%→5.17%→5.25%→5.28%、WIRP 9月10bp/12月26bp）+ India FCNR(B) 8/31 终止引发银行美元债发债潮 ~$4.5bn + Asia HY 跑赢 IG（GS Liquid HY -5bps WTD）+ Debasement：黄金/比特币同涨（相关性疫情以来最高）+ Jackson Hole preview（Warsh 周五 10am）+ 欧元区8月通胀反弹 3.4% + 日本 core-core CPI 首次走强 + AI infra financing ~$340bn YTD",
+  meta: "覆盖券商：GS 3封（Global Credit Market Recap/Asia Macro Global Market Recap/AIS A Wrap on Last Week）+ Citi 1封（IG Credit Daily）+ JPM 1封（EU SMID Tech Hardware）+ Barclays 3封（Macro Research/Credit & Securitized/Daily Digest）+ MS 1封（$ Rates EoD）· 共9封邮件 · 5家券商",
   brokers: [
-    {n:"GS",c:"b-gs"},{n:"Citi",c:"b-citi"},{n:"JPM",c:"b-jpm"},{n:"Barclays",c:"b-barclays"}
+    {n:"GS",c:"b-gs"},{n:"Citi",c:"b-citi"},{n:"JPM",c:"b-jpm"},{n:"Barclays",c:"b-barclays"},{n:"MS",c:"b-ms"}
   ],
   markets: [
     {
       id:"us-rates", pri:true, title:"美国利率",
-      summary:"<b>30yr 周内 5.33%→5.17%→5.25%</b>（Bessent 宣布长端 buyback 翻倍后稳定），整周仅 +1.1bp；曲线 flatten（2yr/5yr +6bp、10yr +4bp）；WIRP 加息定价大幅回落：9月 <b>10bp</b>、12月 <b>26bp</b>（较上周 18/37）；GS 报 H2 美国可能更软（消费支出放缓）、house call 今年不加息；Jackson Hole：Warsh 强调长期驱动因素、不太可能提供近期利率指引",
+      summary:"<b>周五 UST 熊陡收官：30yr 收 5.28%（周内新高）</b>、US2s10s -1.8bp（伊朗停战传闻短暂反弹后 bear flatten ~1.5bp）；美国 S&P Global Composite PMI <b>56.0</b> 四年最快（服务业主导）、Dec FOMC 定价 +3bp；整周 30yr 5.33%→5.17%→5.25%→5.28%（Bessent buyback 翻倍后区间震荡、周五破位）；WIRP 加息定价大幅回落：9月 <b>10bp</b>、12月 <b>26bp</b>；周一 <b>Bessent 发布会 14:00 ET</b> 详述伊朗制裁、关注长端购买表态；Warsh Jackson Hole 周五 10am；MS Debasement：美元弱、黄金/比特币同涨",
       headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
       cols:["88px","20%","14%","13%","13%","21%","18%"],
       rows:[
         ["GS",
-          ["fact","<b>30yr 5.33%→5.17%→5.25%</b><br>（Bessent 宣布 buyback 翻倍）<br>整周 +1.1bp · 曲线 flatten<br>2yr/5yr +6bp · 10yr +4bp<br>SPX -1.43% · 油价 +6.63%"],
-          ["long","<span class='bull'>长端获 buyback 政策支撑</span><br>锚定长端波动率<br>防止曲线陡峭化"],
+          ["fact","<b>30yr 5.33%→5.17%→5.25%→5.28%</b><br>（Bessent buyback 翻倍）<br>周五熊陡收官：US2s10s -1.8bp<br>2yr/5yr +6bp · 10yr +4bp<br>SPX -1.43% · 油价 +6.63%"],
+          ["long","<span class='bull'>长端获 buyback 政策支撑</span><br>锚定长端波动率<br>防止曲线陡峭化<br>但周五 futures-led 卖压回归"],
           ["fact","buyback 集中于长端<br>→ 曲线 flatten 表达有利"],
-          ["fact","WIRP：9月 <b>10bp</b> / 12月 <b>26bp</b><br>（较上周 18/37 回落）<br>house call 今年不加息<br>H2 美国可能更软（消费放缓）"],
-          ["fact","buyback 缓解长端供给担忧<br>但赤字+AI 供给仍压制久期<br><b>收益率无需大幅重定价</b>"],
+          ["fact","WIRP：9月 <b>10bp</b> / 12月 <b>26bp</b><br>（较上周 18/37 回落）<br>周五 PMI 后 Dec +3bp<br>Bessent 周一发布会详述伊朗制裁<br>关注长端购买表态"],
+          ["fact","buyback 缓解长端供给担忧<br>但赤字+AI 供给仍压制久期<br>GS 'Macro Problems, Micro Solutions'<br><b>收益率无需大幅重定价</b>"],
           ["long","长端波动率下行利好 carry/flatten<br>关注 9月供给日历<br>回避方向性追涨"]],
+        ["MS",
+          ["fact","周五熊陡收官：<br>30yr 收 <b>5.28%</b>（周内新高）<br>bear flatten ~1.5bp<br>US Composite PMI <b>56.0</b>（四年最快）<br>Dec FOMC +3bp · 1y CPI +3-4bp"],
+          ["short","<span class='bear'>长端结构性上行压力</span><br>有限资本竞争+财政担忧<br>Debasement：黄金/比特币同涨<br>（相关性疫情以来最高）"],
+          ["fact","futures-led 熊陡<br>front-to-belly >90% 卖压<br>FM 逢低买前段 · macro 买长端"],
+          ["fact","PMI 56.0 后 Dec FOMC +3bp<br>breakevens 回吐 · 5y breaks 卖出"],
+          ["fact","buyback 消化+发行影响<br>+ 伊朗'crushing'头条<br>+ rate-locking 传闻驱动"],
+          ["short","长端区间交易、逢高轻仓<br>事件窗口（Bessent/PCE/Warsh JH）<br>关注 30yr 5.28% 阻力"]],
         ["Barclays",
           ["fact","Jackson Hole preview：<br>Warsh 强调<b>长期驱动因素</b><br>与 Fed 沟通方式"],
           ["fact","长端利率难深度下行<br>全球通胀粘性未消"],
@@ -1625,11 +1632,195 @@ REPORT_DATA["2026-08-24"] = {
     ]
   },
   footer: {
-    window:"2026-08-21 12:00 ~ 2026-08-24 08:00（周末路由 · GS Global Credit Market Recap + Citi IG Credit Daily + GS AIS + JPM EU SMID + Barclays Macro Research/Credit & Securitized/Daily Digest）",
-    emailCount:"GS 2 / Citi 1 / JPM 1 / Barclays 3（共7封邮件 · 4家券商）",
+    window:"2026-08-21 12:00 ~ 2026-08-24 16:00（周末路由 · GS Global Credit Market Recap + GS Asia Macro Global Market Recap + GS AIS + Citi IG Credit Daily + JPM EU SMID + Barclays Macro Research/Credit & Securitized/Daily Digest + MS $ Rates EoD）",
+    emailCount:"GS 3 / Citi 1 / JPM 1 / Barclays 3 / MS 1（共9封邮件 · 5家券商）",
     omitted:"中国利率、日本利率、欧洲利率、澳洲利率、美国HY、欧洲金融债、中国信用、SSA新发、美股ETF、澳门博彩已在「无覆盖市场」汇总"
   }
 };
+
+REPORT_DATA["2026-08-25"] = {
+  dateCN: "2026年8月25日 星期二",
+  theme: "周一 UST 牛平收官：US10y -3.8bp 至 4.696%、5s30s -2.3bp 至 82.3bp（CNBC 报道 Treasury 拟动用 TGA 加码长端 buyback + Bessent 发布会伊朗经济孤立政策）+ Jackson Hole Roadmap（Warsh 周五 8/28 10am）+ 9月 FOMC 定价 10bp 加息（全年 ~28bp）+ US IG TMT 持续 decompression（ORCL/SpaceX、LYB 收购 Shell 美国化工 ~$8bn 头条）+ India IG 供给潮（8/31 FCNR(B) 截止前）+ Asia HY 持平观望 + SoftBank 史上最大 ¥6bn 零售债 + AUD hybrid NEE 新发 4-7bp wider + MS 欧洲 XO/MAIN 解压（iTraxx Main 51.6）+ TIPS 5y5y 2.445% 区间震荡",
+  meta: "覆盖券商：GS 1封（Global Market Recap + US Economics Analyst）+ Citi 1封（IG Credit Daily 8.24）+ BMO 2封（TIPS EOD + SSA New Issue）+ Barclays 1封（Asian Credit Trading EOD 24 Aug）+ BofA 1封（Japan EOD）+ Jefferies 1封（Japan/Aus IG EOD）+ MS 1封（Macro Credit Weekly 2026-08-22）· 共8封邮件 · 7家券商",
+  brokers: [
+    {n:"GS",c:"b-gs"},{n:"Citi",c:"b-citi"},{n:"BMO",c:"b-bmo"},{n:"Barclays",c:"b-barclays"},{n:"BofA",c:"b-bofa"},{n:"Jefferies",c:"b-jefferies"},{n:"MS",c:"b-ms"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"周一 UST <b>牛平</b>：US10y <b>-3.8bp 至 4.696%</b>、5s30s <b>-2.3bp 至 82.3bp</b>、2s10s 跌破上周低点 ~45.5bp；CNBC 报道 Treasury 拟动用 TGA 加码长端 buyback 触发反弹；Bessent 发布会详述伊朗经济孤立政策；swap spreads 长端 +2bp 走阔；9月 FOMC 定价 <b>10bp</b> 加息（全年 ~28bp）；BMO：TIPS breakevens 区间震荡（10s ~233.00、5y5y <b>2.445%</b> 自上周 2.48% 回落）；Jackson Hole：Warsh 周五 8/28 10am 主旨演讲",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["GS",
+          ["fact","US10y <b>-3.8bp 至 4.696%</b><br>5s30s <b>-2.3bp 至 82.3bp</b>（牛平）<br>2s10s 跌破上周低点 ~45.5bp<br>swap spreads 长端 <b>+2bp</b> 走阔"],
+          ["long","<span class='bull'>长端获 TGA buyback 政策支撑</span><br>CNBC：Treasury 拟动用 TGA<br>加码长端 buyback"],
+          ["fact","bull flattening 由长端主导<br>5s30s 收窄至 82.3bp"],
+          ["fact","9月 FOMC 定价 <b>10bp</b> 加息<br>全年 ~28bp<br>Jackson Hole：Warsh 周五 8/28 10am"],
+          ["fact","Bessent 发布会伊朗经济孤立政策<br>通胀预期未脱锚（US Economics Analyst）<br>回归 2% 目标预计 2027 年底"],
+          ["long","关注 $69bn 2y 拍卖<br>长端波动率下行利好 carry/flatten"]],
+        ["BMO",
+          ["fact","TIPS breakevens 区间震荡<br>10s ~<b>233.00</b> · 5y5y <b>2.445%</b><br>（自上周高点 ~2.48% 回落）"],
+          ["fact","RM 买 30s · FM 双向<br>前段获利了结（能源 -2%）"],
+          ["fact","breakevens 窄幅区间<br>0.08 TIPS 下周一（月尾）extension"],
+          [""],
+          ["fact","能源回吐压制前段 breakevens<br>长端通胀补偿仍受支撑"],
+          [""]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"Citi：TMT <b>350mm+</b> 交易、spreads wider（延续上周压力），ORCL/SpaceX <b>decompression</b>；LYB 头条（Exxon 竞购 Shell 美国化工 ~$8bn、LYB 利差 +1-3bp 走阔）；financials <b>leaky</b>（8月持续走阔、9月 $200bn 供给前）；Industrials/Chemicals 相对强势、A&Up paper 跑赢",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Citi",
+          ["fact","TMT 350mm+ 交易<br>spreads wider（延续上周压力）<br>ORCL/SpaceX <b>decompression</b><br>META 早盘承压 · NVDA/GOOGL 略走阔"],
+          ["fact","LYB 头条：Exxon 竞购 Shell 美国化工 ~$8bn<br>LYB 利差 <b>+1-3bp 走阔</b>（杠杆化负面）<br>LTM leverage ~2.58x"],
+          ["fact","Commodity Chems +1/2bp<br>Specialty unch · Metals unch/+1<br>financials leaky（8月持续走阔）"],
+          ["fact","前端 AVGO/NVDA/AMD/SPCX 活跃<br>Citi 预计本周 <b>$10bn</b> 供给前倾<br>DB 10y NPS · RABOBK PS"],
+          ["long","<span class='bull'>spreads settling unch/+1bp</span><br>A&Up paper 跑赢（3yr/In 优于 5yr）"],
+          ["long","偏好 Industrials/Chemicals<br>回避 TMT 高 beta · 等待 9月 $200bn 供给"]]
+      ]
+    },
+    {
+      id:"ssa", pri:false, title:"SSA新发",
+      summary:"<b>$14bn+</b> USD SSA benchmark 上周供给后今日 3 单：IADB 3yr <b>SOFR+26</b>、NEDWBK 3yr <b>SOFR+29</b>、ESM 5yr <b>MS+32</b>（一年来首单 benchmark）；swap spreads 明显走阔（长端 7-30yr <b>1-2bp wider</b>）；EUR IBRD 10yr RegS Sustainable",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["BMO",
+          ["fact","上周 $14bn+ USD SSA benchmark<br>今日 3 单：IADB 3yr <b>SOFR+26</b><br>NEDWBK 3yr <b>SOFR+29</b> · ESM 5yr <b>MS+32</b>"],
+          ["fact","ESM 5yr 为一年来首单 benchmark<br>（IPT MS+32 = CT5+6.6bp）"],
+          ["fact","swap spreads 明显走阔<br>长端 7-30yr <b>1-2bp wider</b>"],
+          ["fact","Bessent TGA buyback 对冲<br>加拿大关税通胀压力<br>EUR：IBRD 10yr RegS Sustainable"],
+          ["long","<span class='bull'>高质量基准供给回归提供锚点</span>"],
+          ["long","IADB/ESM benchmark 是高质量锚点<br>关注 swap spread 走阔传导"]]
+      ]
+    },
+    {
+      id:"asia-ig", pri:true, title:"亚洲IG信用债",
+      summary:"Barclays：India IG 供给潮持续（8/31 FCNR(B) 截止前），secondary <b>1-2bp wider</b> 但吸收良好；Sovs <b>1-2bp tighter</b>（offshore 需求久期、locals 买 3-5y）；PTTGC <b>5-8bp tighter</b>（评级确认）；新发 UNION BANK 3Y/5Y Reg S、KOREA OCEAN 5Y FRN SOFR+95、HUTCHISON PORT 5Y +105",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","India IG 供给潮持续<br>（8/31 FCNR(B) 截止前）<br>secondary <b>1-2bp wider</b><br>Sovs <b>1-2bp tighter</b>"],
+          ["long","<span class='bull'>PTTGC 5-8bp tighter（评级确认）</span><br>PERTIJ 长端需求 · PETMK ~1bp tighter"],
+          ["fact","quasi/corp 0.125-0.25pt lower<br>offshore 需求久期 · locals 买 3-5y"],
+          ["fact","新发：UNION BANK 3Y/5Y Reg S<br>KOREA OCEAN 5Y FRN SOFR+95<br>HUTCHISON PORT 5Y +105"],
+          ["long","<span class='bull'>供给集中但吸收良好</span><br>India 金融为相对价值机会"],
+          ["long","参与 India 新发前段<br>跟踪 FCNR(B) 截止前发债窗口"]]
+      ]
+    },
+    {
+      id:"asia-hy", pri:false, title:"亚洲HY信用债",
+      summary:"Barclays：Asia HY 持平至午盘（cash <b>-0.125 至 -0.25pt</b>、spreads 不变至 +1/2bp），等待新发 + Jackson Hole；China distressed 周一清淡走低、offshore tech 承压（BABA 配股）；super low-dollar 被 HF 扫货、无客户抛售",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","Asia HY 持平至午盘<br>cash <b>-0.125 至 -0.25pt</b><br>spreads 不变至 +1/2bp"],
+          ["short","<span class='bear'>China distressed 周一清淡走低</span><br>offshore tech 承压（BABA 配股）"],
+          ["fact","carry 交易占优<br>super low-dollar 被 HF 扫货"],
+          ["fact","无客户抛售<br>等待新发 + Jackson Hole"],
+          ["fact","观望情绪主导<br>carry 仍受偏好"],
+          ["long","偏好 carry 短久期<br>回避 China distressed/offshore tech"]]
+      ]
+    },
+    {
+      id:"macau-gaming", pri:false, title:"澳门博彩信用债",
+      summary:"Barclays：Macau 长端跑输、技术面走弱，street 抛售 33/34 bucket",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Barclays",
+          ["fact","Macau 长端跑输<br>33/34 bucket 街盘抛售"],
+          ["short","<span class='bear'>技术面走弱<br>需求承压</span>"],
+          [""],
+          ["fact","street selling 33/34"],
+          ["short","<span class='bear'>板块偏弱</span>"],
+          ["short","<span class='bear'>回避长端</span>"]]
+      ]
+    },
+    {
+      id:"japan-credit", pri:true, title:"日本信用债",
+      summary:"BofA：Japan IG <b>firm</b>、spreads +-/2 观望 Jackson Hole，CDSI <b>56.75</b>（-0.125）、USDJPY 159.25；SoftBank 史上最大 <b>¥6bn</b> 零售债、CDS 325（-10）；JERA/SUMITR 新 benchmark（US Labor Day 前）；Jefferies：SUMITR FV 3yr FXD <b>+50</b>/5yr FRN <b>80</b>、JERA FV <b>90</b>",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["BofA",
+          ["fact","Japan IG firm<br>spreads +-/2 观望 Jackson Hole<br>CDSI <b>56.75</b>（-0.125）· USDJPY 159.25"],
+          ["long","<span class='bull'>SoftBank 史上最大 ¥6bn 零售债</span><br>MSINS/Panasonic/SUMIFR/DAIICH 或定价"],
+          ["fact","新 MITSCO -0.5<br>SoftBank CDS <b>325</b>（-10）· Nissan 255<br>Rakuten 185 · NUNPC 170（+5）"],
+          ["fact","JERA/SUMITR 新 benchmark<br>（US Labor Day 前）"],
+          ["long","<span class='bull'>日本信用 firm、CDS 走强</span><br>零售债落地缓解非 JPY 发行担忧"],
+          ["long","偏好 intermediates 前向买盘"]],
+        ["Jefferies",
+          ["fact","日本/Aus IG 交易清淡<br>等待 Jackson Hole"],
+          [""],
+          ["fact","SUMITR FV：3yr FXD <b>+50</b><br>5yr FRN <b>80</b> · JERA FV <b>90</b>（high 80s 可期）"],
+          [""],
+          ["fact","新发公允值定价<br>观望情绪主导"],
+          [""]]
+      ]
+    },
+    {
+      id:"aud-credit", pri:false, title:"澳洲信用债",
+      summary:"Barclays：Aus IG 基本不变（WHCAU/GMGAU/APAAU 买盘）；AUD hybrid <b>4-7bp wider</b>（NEE IOI 冲击、现存 NEE ~15bp wider）；BENAU/NEE/BFCM 明日定价、NEE A$1.5-2bn 较大规模",
+      headers:["券商","市场数据/表现","银行/新发","T2/次级","核心逻辑","交易建议"],
+      cols:["88px","20%","22%","22%","20%","16%"],
+      rows:[
+        ["Barclays",
+          ["fact","Aus IG 基本不变<br>WHCAU/GMGAU/APAAU 买盘<br>AUD hybrid <b>4-7bp wider</b>（NEE IOI）"],
+          ["fact","NEE A$1.5-2bn hybrid（较大）<br>BENAU / NEE / BFCM 明日定价<br>Challenger 7NC6 · BENDIGO 10NC5 FRN"],
+          ["fact","现存 NEE hybrids <b>~15bp wider</b>"],
+          ["short","<span class='bear'>NEE 新发 IOI 冲击次级板块</span>"],
+          ["short","<span class='bear'>回避次级/hybrid 追涨<br>等待 NEE 定价</span>"]]
+      ]
+    },
+    {
+      id:"eu-credit", pri:false, title:"欧洲信用债",
+      summary:"MS Macro Credit Weekly：iTraxx Main <b>+0.9bp 至 51.6</b>、XO <b>251</b>（+4.4）、<b>XO/MAIN decompression</b> 主导 RV；周三 Bessent buyback 头条反转情绪后再度走阔；France 主题（OAT-Bund 走阔、买盘进场法国银行 CDS）；MAIN basis 94th percentile（5Y lookback）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["MS",
+          ["fact","iTraxx Main <b>+0.9bp 至 51.6</b><br>XO <b>251</b>（+4.4）<br>XO/MAIN decompression 主导 RV"],
+          ["fact","France 主题：OAT-Bund 10y 走阔<br>买盘进场法国银行 CDS"],
+          ["fact","MAIN basis <b>94th percentile</b><br>（5Y lookback）"],
+          ["fact","single names：airlines/miners/autos 反转<br>（STLA/AALLN/GLENLN）<br>financials 主导 flow"],
+          ["short","<span class='bear'>周三 Bessent buyback 反转后再度走阔</span><br>XO/MAIN 解压是主线"],
+          ["short","谨慎追高 financials<br>跟踪 XO/MAIN decompression"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","日本利率","欧洲利率","澳洲利率","美国HY信用债","欧洲金融债","中国信用债","美国股票及跨资产ETF"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","TGA buyback 政策支撑 vs 关税/能源通胀再定价",
+        ["long","<span class='bull'>GS</span><br>CNBC：TGA 加码长端 buyback<br>9月 FOMC 仅 10bp · 通胀预期未脱锚<br>US10y -3.8bp 牛平"],
+        ["short","<span class='bear'>BMO TIPS</span><br>5y5y 2.445% 自 2.48% 高点回落<br>能源回吐压制前段 breakevens"],
+        ["fact","<b>政策短期支撑长端 vs 通胀补偿回落</b><br>GS：buyback + 通胀预期未脱锚支撑牛平<br>BMO：breakevens 高位回落反映能源回吐<br>Jackson Hole（Warsh 周五）+ 关税落地是下一变量<br><b>结论：</b>长端波动率下行利好 carry/flatten"]],
+      ["美国IG","TMT 高 beta decompression vs Industrials/Chemicals 韧性",
+        ["long","<span class='bull'>Citi（Industrials）</span><br>Chemicals/Metals 相对强势<br>A&Up paper 跑赢（3yr/In 优于 5yr）"],
+        ["short","<span class='bear'>Citi（TMT）</span><br>ORCL/SpaceX decompression<br>financials leaky · 9月 $200bn 供给"],
+        ["fact","<b>板块内部分化加剧</b><br>TMT 高 beta 延续上周压力 vs 传统工业基本面韧性<br>LYB 收购头条推升 Chem 关注度<br><b>结论：</b>偏好 Industrials/Chemicals、回避 TMT 高 beta"]],
+      ["亚洲信用","India IG 供给潮吸收 vs Asia HY/China 观望承压",
+        ["long","<span class='bull'>Barclays（IG）</span><br>India IG 吸收良好 · Sovs 1-2bp tighter<br>PTTGC 5-8bp tighter（评级确认）"],
+        ["short","<span class='bear'>Barclays（HY）</span><br>Asia HY cash 走弱 · China distressed 走低<br>Macau 长端街盘抛售"],
+        ["fact","<b>IG 供给窗口 vs HY 风险偏好观望</b><br>8/31 FCNR(B) 截止推动 India IG 发债潮<br>HY 等待新发 + Jackson Hole、carry 仍受偏好<br><b>结论：</b>参与 India IG 新发前段、HY 偏好 carry 短久期"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-24 12:00 ~ 2026-08-25 16:00（GS Global Market Recap + Citi IG Credit Daily + BMO TIPS EOD + BMO SSA New Issue + Barclays Asian Credit EOD + BofA Japan EOD + Jefferies Japan/Aus IG EOD + MS Macro Credit Weekly）",
+    emailCount:"GS 1 / Citi 1 / BMO 2 / Barclays 1 / BofA 1 / Jefferies 1 / MS 1（共8封邮件 · 7家券商）",
+    omitted:"中国利率、日本利率、欧洲利率、澳洲利率、美国HY、欧洲金融债、中国信用、美股ETF已在「无覆盖市场」汇总"
+  }
+};
+
 
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
