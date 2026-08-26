@@ -1819,6 +1819,86 @@ REPORT_DATA["2026-08-25"] = {
 
 
 
+REPORT_DATA["2026-08-26"] = {
+  dateCN: "2026年8月26日 星期三",
+  theme: "中东 de-escalation 头条 + 油价回落 → 美债收益率普跌 <b>4-6bp</b>（中间期限领涨）、美债跑输英欧，5s/30s flattening 至 <b>78-81bp</b> 关键支撑；JPM 前瞻明日 <b>$70bn 5y 拍卖</b>（外资占比 9.5% 创 2025/3 新低 vs 投资经理 75.4% 创 2025/5 新高，预计顺利消化）+ 核心 PCE 预测 <b>+0.25%</b>/同比 3.3%；BMO TIPS 全曲线 <b>5bp</b> 实际收益率反弹、30y real ~<b>2.93%</b> 回拍卖 stop 下方；Jefferies Japan IG 新发活跃（SUMITR 收窄 3bp、JERA FV 90、KYUSEL 105、NECORP 美元首秀 70）；TD AUD 信用 tone heavy、HQ 金融债 1-2bp wider",
+  meta: "覆盖券商：JPM 1封（US Treasury Market Daily）+ BMO 1封（TIPS EOD）+ Jefferies 1封（Japan/Aus IG EOD）+ TD 1封（AUD Credit Commentary）· 共4封邮件 · 4家券商（原始6封含1封 SharePoint 通知无效 + JPM 双转发去重）",
+  brokers: [
+    {n:"JPM",c:"b-jpm"},{n:"BMO",c:"b-bmo"},{n:"Jefferies",c:"b-jefferies"},{n:"TD",c:"b-td"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"中东缓和推动美债收益率普跌 <b>4-6bp</b>（intermediate 领涨）、美债跑输英欧；5s/30s 回落至 <b>78-81bp</b> 三线支撑（Fib+50日均线+base 上沿）；明日 <b>$70bn 5y 拍卖</b> 前瞻（5y 调整后 too cheap、WI +0.325bp）；BMO TIPS：全曲线 <b>5bp</b> RY rally、30y real ~<b>2.93%</b> 回拍卖 stop 下方、breakeven 曲线韧性（5s10s 走平）",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["JPM",
+          ["fact","美债收益率普跌 <b>4-6bp</b>（中间期限领涨）<br>美债跑输英欧<br>5s/30s flattening 至 <b>78-81bp</b>"],
+          ["long","<span class='bull'>5y auction 估值偏便宜<br>预计顺利消化</span>"],
+          ["fact","78-81bp 三线支撑<br>失守看 73.6bp/69.7bp<br>上方阻力 mid-90s"],
+          ["fact","核心 PCE 7月 <b>+0.25%</b><br>同比 3.3% 偏高<br>Fed 'uncomfortably high'"],
+          ["fact","$70bn 5y 明日 1pm<br>外资 9.5% 新低<br>投资经理 75.4% 新高"],
+          ["long","<span class='bull'>守住 78-81bp 持有 steepener</span><br>破位看 69.7bp 止损"]],
+        ["BMO",
+          ["fact","TIPS 全曲线 <b>5bp</b> 实际收益率反弹<br>30y real ~<b>2.93%</b><br>（较上周二高点低 17bp）"],
+          ["long","<span class='bull'>30y real 回到拍卖 stop 下方<br>RM/ETF 流入</span>"],
+          ["fact","breakeven 5s10s 走平<br>（油价跌仍韧性）"],
+          [""],
+          ["fact","5s 供不应求难 sourcing<br>flows 偏 better buying<br>（RM/ETF vs FM 双向）"],
+          ["long","<span class='bull'>30s 实钱加仓主战场</span>"]]
+      ]
+    },
+    {
+      id:"japan-credit", pri:false, title:"日本/澳洲IG",
+      summary:"Jefferies：SUMITR 全档 close FV、3yr FXD 较 reoffer 收窄 <b>3bp</b> 跑赢；JERA 波动大（早盘被 flippers/dealers 砸盘、伦敦时段恢复），90 是 FV、利差走 80s 是好卖点；KYUSEL FV 105、3-5yr 是 RM 甜点区；NECORP 美元首秀 FV 70/FPG +75；TD：AUD tone heavy、HQ 金融债（大行/欧资行）<b>1-2bp wider</b>、多笔发行竞争资金",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Jefferies",
+          ["fact","SUMITR 3yr FXD 收窄 <b>3bp</b> 跑赢<br>JERA 波动大（早盘砸/伦敦回升）<br>NECORP 美元首秀"],
+          ["fact","高质量日本发行人密集<br>试水美元债"],
+          ["fact","JERA FV <b>90</b> · KYUSEL FV <b>105</b><br>NECORP FV <b>70</b> · FPG <b>+75</b>"],
+          ["fact","JERA 早盘被 flippers/dealers<br>砸盘 · 伦敦时段恢复<br>fast money 仍急于卖出"],
+          ["fact","定价分化反映期限偏好<br>与新单容量约束"],
+          ["long","<span class='bull'>3-5yr 甜蜜点精选参与</span><br>JERA 利差走 80s 减仓"]],
+        ["TD",
+          ["fact","AUD tone heavy<br>HQ 金融债 <b>1-2bp</b> 走阔<br>（大行/欧资行）"],
+          [""],
+          ["fact","dealer 偏 sell into demand<br>压制利差收窄"],
+          ["fact","多笔发行竞争资金<br>corporate 流相对平衡"],
+          ["short","<span class='bear'>hybrids 继续 trim<br>大头调整已完成</span>"],
+          ["long","<span class='bull'>NextEra hybrids 表现佳<br>56NC36 跑赢（更便宜）</span>"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","日本利率","欧洲利率","澳洲利率","亚洲IG信用债","亚洲HY信用债","澳门博彩信用债","欧洲信用债","美国HY信用债","中国信用债"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["亚太信用","新发活跃 vs 二级承压",
+        ["long","<span class='bull'>Jefferies</span><br>Japan IG 新发定价清晰<br>RM 承接（SUMITR 收窄 3bp<br>3-5yr 甜蜜点）"],
+        ["short","<span class='bear'>TD</span><br>AUD 二级 tone heavy<br>HQ 金融债 1-2bp 走阔<br>dealer 偏 sell into demand"],
+        ["fact","<b>同一区域一二级分化</b><br>一级新发（JERA 90/KYUSEL 105/NECORP 70）<br>获实钱承接、二级存量重仓区继续去杠杆<br><b>结论：</b>新发参与选 3-5yr，存量金融债反弹减仓"]],
+      ["美国利率","久期反弹的驱动与持续性",
+        ["long","<span class='bull'>BMO</span><br>TIPS 全曲线 5bp 反弹<br>30y real 2.93% 回 stop 下方<br>RM/ETF 买盘真实"],
+        ["long","<span class='bull'>JPM</span><br>5s/30s 78-81bp 三线支撑<br>守住则中期陡峭化动能完好"],
+        ["fact","<b>方向一致、归因不同</b><br>BMO 强调 TIPS 资金面韧性<br>JPM 强调曲线技术位与 8/27 拍卖消化<br><b>结论：</b>两者互为印证，跌破 78-81bp 则 JPM 观点失效"]],
+      ["利率前瞻","8/27 事件窗口前的仓位",
+        ["long","<span class='bull'>BMO</span><br>长端 TIPS 实钱买盘可持续<br>30y 在拍卖 stop 下方被承接"],
+        ["short","<span class='bear'>Jefferies</span><br>客户等 Jackson Hole<br>事件前难加 duration"],
+        ["fact","<b>美债多头 vs 亚洲盘观望</b><br>BMO 长端可持有<br>Jefferies 事件后补仓<br><b>结论：</b>8/27 拍卖+PCE 落地前保持中性久期"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-25 16:00 ~ 2026-08-26 09:00（JPM US Treasury Market Daily + BMO TIPS EOD + Jefferies Japan/Aus IG EOD + TD AUD Credit Commentary）",
+    emailCount:"JPM 1 / BMO 1 / Jefferies 1 / TD 1（共4封邮件 · 4家券商）",
+    omitted:"中国利率、日本利率、欧洲利率、澳洲利率、亚洲IG、亚洲HY、澳门博彩、欧洲信用、美国HY、中国信用、美国IG、SSA 已在「无覆盖市场」汇总"
+  }
+};
+
+
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
 
