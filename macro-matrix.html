@@ -1961,7 +1961,7 @@ REPORT_DATA["2026-08-26"] = {
 };
 
 REPORT_DATA["2026-08-27"] = {
-  dateCN: "2026年8月27日 星期三",
+  dateCN: "2026年8月27日 星期四",
   theme: "7月核心 PCE 上修 <b>+0.25%</b>/同比 3.3% 强于共识 → 市场从「期限溢价重定价」转向「政策路径重定价」（Barclays 战术 pay 2y SOFR、收益率二度走高 <b>+1-3bp</b>、belly 领涨）；JPM 前瞻 <b>$44bn 7y 拍卖</b>（估值不支持、7月外资占比 11.9% 创 2025/4 新低→需更大 concession）+ 中间期限较基本面 rich <b>~10bp</b>；BMO breakevens 低开高走（5s +2.6bp）、油价反转后买家进场、周五 Jackson Hole 鹰派风险；信用月末：Bloomberg 指数净扩张 <b>$75bn</b>（6 个月最大）、8 月发行 <b>$155bn</b> 创纪录、JULI 利差持平 <b>95bp</b>/收益率 -7bp 至 5.74%；Jefferies 亚洲 HY：SOFTBK <b>10-20bn</b> 新发头条冲击（长端 -1.25pt）vs KYUSEL/NECORP 新发强势 +3-4bp；GS FX 因子：Carry YTD 2010 来最强、混合正信号 COP/BRL/IDR/AUD/NOK/CHF",
   meta: "覆盖券商：JPM 3封（US Treasury Market Daily + Daily Financial Markets Monitor + Daily Credit Strategy Update）+ Barclays 3封（Macro Research + Credit & Securitized + Daily Digest）+ Jefferies 2封（ASIA HY EOD + Japan/Aus IG EOD）+ BMO 1封（TIPS EOD）+ GS 1封（Global Markets Daily FX Factors）+ TD 1封（AUD Credit Commentary）+ BofA 1封（Daily Insights）· 共14封邮件 · 7家券商（原始14封含 JPM 7y 拍卖预览转发2封去重）",
   brokers: [
@@ -2019,7 +2019,58 @@ REPORT_DATA["2026-08-27"] = {
           ["long","<span class='bull'>Sri Lanka MLB OW<br>买 SRILAN 28s/35s GLBs</span>"]]
       ]
     },
-    "__MARKETS_MORE__"
+    {
+      id:"japan-credit", pri:false, title:"日本/澳洲IG",
+      summary:"Jefferies：KYUSEL/NECORP 新发均从 reoffer 超配 <b>3-4bp</b>（vs 曲线与日元债均 cheap）；NECORP 收 FV；KYUSEL 仍有上行空间（预期至少 high 100a）；日本优质发行人美元新发需求强劲、一级对二级传导正面；TD：AUD 信用整体走阔（大行/欧资行 1-2bp），客户减仓 corporates/HQ financials",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Jefferies",
+          ["fact","KYUSEL/NECORP 新发<br>均从 reoffer 超配 <b>3-4bp</b><br>（vs 曲线/日元债均 cheap）"],
+          ["fact","日本优质发行人<br>美元新发需求强劲<br>（KYUSEL 九州电力<br>NECORP 日本电气）"],
+          ["fact","NECORP 收 FV<br>KYUSEL 看 high 100a<br>仍具上行空间"],
+          ["fact","一级对二级传导正面<br>二级持续超配"],
+          ["long","<span class='bull'>新发强势+二级超配<br>参与价值仍在</span>"],
+          ["long","<span class='bull'>KYUSEL 可继续参与</span><br>3-5yr 甜点区"]],
+        ["TD",
+          ["fact","AUD 信用整体走阔<br>大行/欧资行 <b>1-2bp</b><br>客户减仓 corporates<br>/HQ financials"],
+          [""],
+          ["fact","高收益率吸引<br>久期买家回归"],
+          ["fact","dealer 偏 sell<br>into demand<br>压制利差收窄"],
+          ["short","<span class='bear'>金融债相对偏防御</span>"],
+          ["long","<span class='bull'>10y 企业债可考虑卖出<br>（高收益率久期机会）</span>"]]
+      ]
+    },
+    {
+      id:"asia-hy", pri:false, title:"亚洲HY",
+      summary:"Jefferies：SOFTBK <b>10-20bn</b> 新发头条冲击亚洲 HY：长端 <b>-1.25pt</b>、前端 -0.5pt、hybrids 0.875-1.5pt 走低；非中国 HY 平稳（RAKUTN firm、NBFC 弱）；优质名与低流动性名分化",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Jefferies",
+          ["fact","SOFTBK 10-20bn 新发<br>长端 <b>-1.25pt</b><br>前端 -0.5pt<br>hybrids 0.875-1.5pt"],
+          ["fact","巨量供给压制<br>长端与 hybrids<br>消息面主导交投"],
+          ["fact","非中国 HY 平稳<br>RAKUTN firm<br>NBFC 弱"],
+          ["fact","长端/前端/hybrids<br>全面承压<br>优质名韧性"],
+          ["short","<span class='bear'>SOFTBK 供给消化前<br>亚洲 HY 长端偏防御</span>"],
+          ["short","<span class='bear'>回避供给冲击品种<br>关注 RAKUTN 等稳定名</span>"]]
+      ]
+    },
+    {
+      id:"global-rates", pri:false, title:"全球债券/FX",
+      summary:"GS：Carry 因子 YTD <b>2010 年来最强</b>、环境支持继续跑赢；Carry+National Debt 混合改善 vol 调整回报；Energy 因子正敞口值得（Hormuz 供应约束）；混合因子正信号 COP/BRL/IDR/AUD/NOK/CHF、负信号 JPY/THB",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","Carry 因子 YTD<br><b>2010 年来最强</b><br>AUD/COP/BRL/IDR 领涨"],
+          ["fact","Carry+National Debt<br>混合改善 vol 调整回报"],
+          ["fact","Energy 因子正敞口<br>值得（Hormuz 约束）"],
+          ["fact","正信号 COP/BRL/IDR<br>AUD/NOK/CHF<br>负信号 JPY/THB"],
+          ["long","<span class='bull'>新兴高息货币<br>（COP/BRL/IDR）</span><br>+ 能源出口（NOK）"],
+          ["long","<span class='bull'>跨货币因子增强<br>回避 JPY/THB</span>"]]
+      ]
+    }
   ],
   noCoverage:["中国利率","欧洲信用债","美国HY信用债","中国信用债","澳门博彩信用债","SSA新发"],
   divergences: {
