@@ -2102,6 +2102,149 @@ REPORT_DATA["2026-08-27"] = {
   }
 };
 
+REPORT_DATA["2026-08-31"] = {
+  dateCN: "2026年8月31日 星期一",
+  theme: "Warsh 首次 Jackson Hole 讲话偏鹰（通胀 <b>concerning</b>）→ 政策路径重定价：UST 2y <b>+11.1bp</b> 至 4.34%、2s10s -6.9bp 至 <b>37bp</b>、12月 FOMC 加息定价 <b>+36bps</b>（周初仅 +11bps）、9月 +15bps、周五 NFP 关键（Citi）；美国 9月 IG 供给 <b>$230bn</b>（5年均值 $165bn、接近纪录 $235bn）、9/8 起六天供给狂潮、8月走阔已在定价供给（GS+Citi）；亚洲信用分化：印尼/菲律宾主权收窄 <b>3-6bp</b>、MINCAP <b>-10bp</b>、PTTGC 展望上调至正面后 31s/32s 收窄 <b>8-12bp</b>、印度金融一级繁忙（ICICI/IDFCBK/UNBKIN 共 <b>$1.95bn</b>）vs 阿里 HK$80bn 增发冲击中国 TMT（BABA 37s/41s <b>+14bp</b>）；欧洲金融 AT1 承压（法国政治不稳定、一级需 5-10bp concession）；PKSTAN 获 Moody's 上调至 B3 曲线 <b>+0.5-1pt</b>；Bessent 周一记者会经济惩罚伊朗贸易国 → 黄金 -3.43%、Brent -0.98%",
+  meta: "覆盖券商：GS 1封（Global Credit Market Recap）+ Citi 2封（IG Credit Daily Sector Commentary + While You Were Sleeping）· 共3封邮件 · 2家券商",
+  brokers: [
+    {n:"Citi",c:"b-citi"},{n:"GS",c:"b-gs"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"Warsh 鹰派讲话 → 政策路径重定价：2y <b>+11.1bp</b> 至 4.34%、2s10s <b>-6.9bp</b> 至 37bp、12月加息定价 <b>+36bps</b>（周初 +11bps）、9月 +15bps；US 10y 4.72（+4.2bp）；周五 NFP 关键；GS WIRP 9月 14.6bps（一周前 10bps）、9月供给 $230bn 双压制，但 base case 核心 CPI/PCE ~0.2% 下 FOMC 维持不动",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["Citi",
+          ["fact","Warsh 讲话后 2y <b>+11.1bp</b><br>至 4.34% · 2s10s -6.9bp<br>US 10y 4.72（+4.2bp）"],
+          ["short","<span class='bear'>前端 paying<br>曲线变陡方向</span>"],
+          ["fact","2s10s <b>-6.9bp</b> 变陡<br>30y 先 -4bp 后 +1bp"],
+          ["fact","12月加息定价 <b>+36bps</b><br>（周初仅 +11bps）<br>9月 +15bps"],
+          ["fact","低 fire/low hire 下<br>CPI/PCE 比 NFP 更关键"],
+          ["short","<span class='bear'>pay 前端 SOFR</span><br>NFP 前控制追空节奏"]],
+        ["GS",
+          ["fact","WIRP 9月 14.6bps<br>（一周前 10bps）<br>9月 IG 供给 $230bn"],
+          ["fact","若 8月 CPI/PPI 偏强<br>9月加息成为可能"],
+          ["fact","周内 2s30s flatten<br>7.5-10bps（周五最大）"],
+          ["fact","GS base case：核心<br>CPI/PCE ~0.2%<br>FOMC 维持不动"],
+          ["fact","供给 + 政策路径<br>双压制前端<br>长端相对受益"],
+          ["fact","穿越 9月供给后<br>市场有望 grind tighter"]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"GS：IG 指数 <b>+78bps</b>、本周安静收窄 2-3bp；BBB 一月收窄 7bp；15y+ bucket 净买入 1.8:1、30y basket +3.2bp WTD（曲线走平）；META -10bp（$17bn 和解）为最大单名收窄、HUTBPA +15bp 最差（接管担忧）；下周仅 $10bn 8 笔、9月 $230bn 供给高峰（5年均值 $165bn）；Citi：8月利差走阔已在定价供给，利率波动上行对 pref/hyb 不利、yield buying IG 账户尚可，质量优先（GS 6.5/WFC 6.55/AXP 6.45 可回收、BNY 6.15/CFG 6.75 sub par）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Citi",
+          ["fact","下周仅 <b>$10bn</b> 8 笔<br>（Yankee 主导）<br>LDW 后 3 周约 $200bn<br>8月走阔多在定价供给"],
+          ["fact","pref 质量分层：<br>GS 6.5 / WFC 6.55<br>AXP 6.45 可回收<br>BNY 6.15 / CFG 6.75 sub par"],
+          ["fact","hybrid 新 vintage<br>表现挣扎<br>pref 基金无大公开流入"],
+          ["fact","利率波动上行<br>对 pref/hyb 不利<br>yield buying 账户尚可"],
+          ["short","<span class='bear'>pref/hyb 中低质量<br>偏防御</span>"],
+          ["long","<span class='bull'>yield buying IG 账户<br>可持有高质量<br>big-6 DRD pref</span>"]],
+        ["GS",
+          ["fact","IG 指数 <b>+78bps</b><br>本周收窄 2-3bp<br>META -10bp（$17bn 和解）"],
+          ["fact","AI 动能转强（NVDA）<br>Hyperscaler 发行空窗<br>（9月无交易 base case）"],
+          ["fact","BBB 一月收窄 <b>7bp</b><br>META 30y vs NVDA 10y<br>宽 55bp"],
+          ["fact","15y+ 净买入 <b>1.8:1</b><br>30y basket +3.2bp WTD<br>Money Centers +0.8bp<br>vs Hyperscalers +3.8bp"],
+          ["long","<span class='bull'>9月 $230bn 供给消化后<br>重回 grind tighter</span>"],
+          ["long","<span class='bull'>15y+ 久期 + BBB 超配</span><br>规避 HUTBPA（+15bp）"]]
+      ]
+    },
+    {
+      id:"asia-ig", pri:true, title:"亚洲IG信用债",
+      summary:"GS：亚洲主权/准主权需求回归——印尼/菲律宾收窄 <b>3-6bp</b>（INDON 前端 3-4yr & belly 6-12yr）、MINCAP <b>-10bp</b>（30s/37s）、PTTGC 获 S&P 展望上调至正面（BBB-）后 31s/32s 收窄 <b>8-12bp</b>、perps 15-20bp；印度金融一级繁忙（ICICI $1bn 5yr T+100、IDFCBK $350mm T+155、UNBKIN 3yr/5yr 共 $600mm、订单簿 $3.7bn+），新发均收窄；但阿里巴巴 HK$80bn 增发（AI 支出）冲击中国 TMT：BABA 37s/41s <b>+14bp</b>、TENCNT 38s/41s +10bp、MEITUA +12bp、LENOVO 32s +10bp，全球投资者借信号做空",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","INDON/PHILIP 收窄 <b>3-6bp</b><br>MINCAP -10bp（30s/37s）<br>PTTGC 31s/32s -8/12bp<br>perps -15/20bp"],
+          ["fact","印度金融 YTD 8 家银行<br>已发约 <b>$12bn</b><br>新发订单簿充足<br>（ICICI/IDFCBK/UNBKIN）"],
+          ["fact","BBB 印度金融 90-100bp<br>估值合理<br>IDFCBK 31s 自发行 -10bp"],
+          ["fact","主权前端/belly 有真买盘<br>TMT 全线走宽<br>（BABA +14bp 长端）<br>HK 收窄 1-2bp"],
+          ["long","<span class='bull'>做多亚洲主权<br>/印度金融新发</span><br>规避 TMT 长端"],
+          ["long","<span class='bull'>INDON/PHILIP/PTTGC<br>+ 印度金融新发</span><br>回避 BABA/TENCNT 长端"]]
+      ]
+    },
+    {
+      id:"asia-hy", pri:false, title:"亚洲HY信用债",
+      summary:"GS：PKSTAN 获 Moody's 上调至 B3（自 Caa1）后曲线 <b>+0.5-1pt</b>（31s 表现最好、前端 +0.5pt、36s/51s +0.75pt）；SRILAN 混合 ±0.125pt、LAOSIN 获利了结 -0.375pt；中国地产偏弱（LNGFOR 财报后 27s -0.25/0.625pt、CHJMAO/GRNCH 29s -12.5/25c、VNKRLE -0.25/0.5pt）；BTSDF 获 S&P 上调至 BB+ 但债券持平；澳门前端持稳/+12.5c；印度 NBFC 需求好（MUTHIN +12.5/37.5c）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","PKSTAN 升级 B3 后<br>曲线 <b>+0.5-1pt</b><br>（31s 最好）<br>LAOSIN 获利了结 -0.375pt"],
+          ["fact","中国地产财报后偏弱<br>（LNGFOR/CHJMAO<br>/VNKRLE 走低）<br>澳门持稳/+12.5c"],
+          ["fact","BTSDF 获 S&P 上调<br>至 BB+（自 BB）<br>但债券基本持平"],
+          ["fact","印度 NBFC 需求好<br>（MUTHIN +12.5/37.5c）<br>主权升级催化 HY 偏好"],
+          ["long","<span class='bull'>主权升级 + 印度 NBFC<br>精选做多</span><br>地产仍偏弱"],
+          ["long","<span class='bull'>PKSTAN / 印度 NBFC</span><br>回避 LNGFOR 等地产"]]
+      ]
+    },
+    {
+      id:"eu-fin", pri:false, title:"欧洲金融/AT1",
+      summary:"GS：欧洲金融利差全面走宽——US banks +2bp、Core SNP +3bp（法国 +5/+8）、Periph SNP +3bp、T2 +3bp、Sub incoh +4bp、AT1 <b>-3bp</b>（法国 +10/+20）；法国银行表现最差（政治不稳定、州选举 AfD 强势），AT1 现金价格大幅跑输（RM/HF 卖出），BPCEGP/SOCGEN 拖累；一级需 <b>5-10bp concession</b>；新 BNP 7.25% 支撑位失守；亚洲购买持续（本周 $400mm、+0.125pt WoW generic）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","AT1 <b>-3bp</b>（FR +10/+20）<br>US banks +2bp<br>Core SNP +3bp<br>Sub incoh +4bp"],
+          ["fact","法国政治不稳定<br>（州选举 AfD 强势）<br>OAT 跑输抬高<br>信用投资门槛"],
+          ["fact","新 BNP 7.25%<br>支撑位失守<br>一级需 5-10bp concession"],
+          ["fact","RM/HF 卖出法国 AT1<br>BPCEGP/SOCGEN 跑输<br>亚洲购买持续<br>（+0.125pt WoW）"],
+          ["short","<span class='bear'>法国 AT1/次级<br>偏防御</span>"],
+          ["long","<span class='bull'>AARB/TPEIR 最佳 deals</span><br>回避法国 beta"]]
+      ]
+    },
+    {
+      id:"global-rates", pri:false, title:"全球债券/FX",
+      summary:"Citi：Warsh 鹰派 → 美元走强 DXY <b>+0.50%</b> 至 99.70、EURUSD -0.54% 至 1.1580、AUDUSD -0.50% 至 0.7158；黄金 <b>-3.43%</b> 至 $4,455（加息预期）、Brent -0.98% 至 $88.10（伊朗 MOU 希望）、WTI +0.68% 至 $83.40；德国州选举 AfD 强势、ECB 年底加息定价 <b>+44bps</b>、BoE +29bps；澳洲债 bear flatten（3y -3bp）；MNI Chicago PMI 47.1 vs 预期 57.9 大幅走弱",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["Citi",
+          ["fact","DXY <b>+0.50%</b> 至 99.70<br>EURUSD -0.54%<br>AUDUSD -0.50% 至 0.7158"],
+          ["fact","德国州选举 AfD 强势<br>ECB 年底 +44bps<br>BoE +29bps<br>法国 GDP 上半年停滞"],
+          ["fact","黄金 -3.43% 至 $4,455<br>（Warsh 鹰派）<br>Brent -0.98% 至 $88.10<br>WTI +0.68% 至 $83.40"],
+          ["fact","澳洲债 bear flatten<br>（3y -3bp / 10y -2bp）<br>MNI Chicago PMI 47.1<br>vs 预期 57.9"],
+          ["fact","美元偏强 + 利率重定价<br>贵金属承压<br>油价受地缘支撑"],
+          ["fact","关注 Bessent 伊朗<br>制裁声明细节<br>+ 德国/欧元区 CPI"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","澳洲利率","美国HY信用债","中国信用债","澳门博彩信用债","SSA新发"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","政策路径重定价：Warsh 鹰派后短端方向",
+        ["long","<span class='bull'>GS</span><br>base case 核心 CPI/PCE<br>~0.2%、FOMC 维持不动<br>9月加息非基准情形"],
+        ["short","<span class='bear'>Citi</span><br>12月加息定价 +36bps<br>9月 +15bps<br>CPI/PCE 比 NFP 更关键"],
+        ["fact","<b>数据决定 9月路径</b><br>GS 承认若 8月 CPI/PPI 偏强则 9月加息可能<br>Citi 强调低 fire/low hire 下通胀数据主导<br><b>结论：</b>pay 前端方向一致，幅度与节奏依赖周五 NFP + 下月 CPI"]],
+      ["美国IG","9月供给高峰：$230bn 的定价逻辑",
+        ["long","<span class='bull'>GS</span><br>穿越 9月后 grind tighter<br>配置盘（15y+ 1.8:1）回归<br>BBB 一月收窄 7bp"],
+        ["short","<span class='bear'>Citi</span><br>利率波动上行挤压<br>pref/hyb 空间<br>中低质量分层承压"],
+        ["fact","<b>供给已充分 telegraph</b><br>GS 聚焦 IG 现金（Hyperscaler 空窗、15y+ 买盘）<br>Citi 聚焦 pref/hyb 质量（BNY/CFG sub par）<br><b>结论：</b>高质量 IG 穿越供给、中低质量 pref 防御"]],
+      ["亚洲IG","中国 TMT vs 亚洲主权分化",
+        ["long","<span class='bull'>GS</span><br>主权/准主权收窄<br>（INDON/PHILIP/MINCAP<br>PTTGC 展望上调）"],
+        ["short","<span class='bear'>GS</span><br>阿里 HK$80bn 增发<br>→ TMT 全线走宽<br>（BABA +14bp 长端）"],
+        ["fact","<b>同一券商内部两方向</b><br>主权/印度金融有真实配置盘<br>TMT 增发稀释 + AI 资金需求被做空<br><b>结论：</b>做多主权与印度金融、回避 TMT 长端"]],
+      ["欧洲金融","法国 AT1 承压：政治 vs 供给",
+        ["long","<span class='bull'>GS</span><br>亚洲购买持续<br>（$400mm/周、+0.125pt<br>WoW generic）<br>AARB/TPEIR 表现佳"],
+        ["short","<span class='bear'>GS</span><br>法国政治不稳定<br>AT1 现金大幅跑输<br>一级需 5-10bp concession"],
+        ["fact","<b>同一券商：法国 beta 最差</b><br>US/外围银行相对温和（+2/+3bp）<br>新 BNP 7.25% 支撑位失守<br><b>结论：</b>规避法国 AT1，精选 AARB/TPEIR 等 deals"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-28 收盘 ~ 2026-08-31（Citi IG Credit Daily Sector Commentary 8.28 转发 + GS Global Credit Market Recap 8.31 + Citi While You Were Sleeping 8.31）",
+    emailCount:"Citi 2 / GS 1（共3封邮件 · 2家券商）",
+    omitted:"中国利率、澳洲利率、美国HY、中国信用债、澳门博彩、SSA 已在「无覆盖市场」汇总"
+  }
+};
+
 
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
