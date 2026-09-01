@@ -2286,6 +2286,179 @@ REPORT_DATA["2026-08-31"] = {
 };
 
 
+REPORT_DATA["2026-09-01"] = {
+  dateCN: "2026年9月1日 星期二",
+  theme: "特朗普威胁对伊朗追加打击（美军约旦遇袭）→ 油价 <b>+1.6% 至 $90.75</b>、UST 长端创年内新高：10y <b>+3bp 至 4.75%</b>（2025年1月来最高）、30y <b>+4bp 至 5.24%</b>、5y +2bp 至 4.50%，Warsh G20 反驳全球储蓄过剩（暗示 r* 上升）与地缘风险共振 → 曲线熊陡、9月 FOMC 加息概率约 <b>60%</b>；<b>JPM IG 技术面：JULI 92bp（5月15日来最紧）</b>、yield 5.80%，上周发行 <b>$6bn</b> vs 再投资 <b>$11bn</b>，9月供给 <b>$214bn</b>（2025年同期纪录）被 <b>$102bn</b> 再投资+季节性（8/10年收窄）缓冲，dealer 库存 4月来最低、BBB/A 差 30bp（2014年1月来最紧）；Barclays：IG Complacency Signal <b>90%</b>、Capitulation <b>46%</b>，PCG 因加州立法失望下调至 MW、Longfor 32s 升级 OW；亚洲信用：中国 TMT 买盘回暖、前端逢低买盘（Warsh 后 ~10bp 抛售），新发重启（Lotte Rental 3y、Bangkok Bank 5y/10y），保险混合 NC10 遭卖出 15-25c；中国 8月制造业 PMI <b>49.8</b>（连续第三月改善仍 <50）、非制造业 49.0 收缩、PBoC 净回笼 RMB221bn；德国 8月 HICP <b>2.9%</b>（低于共识 3.1%）欧债仍熊陡；今日 9/1 ISM 制造业（共识 55.2）+ 欧元区 HICP（共识 3.3%）为关键催化",
+  meta: "覆盖券商：JPMorgan 3封（US Treasury Market Daily + Daily Financial Markets Monitor + Daily Credit Strategy）+ Morgan Stanley 1封（Global Macro Commentary）+ Barclays 3封（Macro Research Daily Summary + Credit & Securitized Daily Summary + Daily Digest）+ Goldman Sachs 1封（US Daily）+ BMO 1封（TIPS EOD）+ TD Securities 1封（Asia EOD）+ Jefferies 1封（Japan/Aus IG EOD）+ BofA 1封（Daily Insights）· 共12封邮件 · 8家券商",
+  brokers: [
+    {n:"MS",c:"b-ms"},{n:"JPM",c:"b-jpm"},{n:"Barclays",c:"b-barclays"},{n:"GS",c:"b-gs"},{n:"BMO",c:"b-bmo"},{n:"TD",c:"b-td"},{n:"JEF",c:"b-jef"},{n:"BofA",c:"b-bofa"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"特朗普威胁对伊朗追加打击（美军约旦遇袭）→ 10y <b>+3bp 至 4.75%</b>（2025年1月来最高）、30y <b>+4bp 至 5.24%</b>、5y +2bp 至 4.50%，Warsh G20 反驳储蓄过剩（r* 上行信号）+ 地缘风险共振 → 曲线熊陡；9月 FOMC 加息概率约 <b>60%</b>；今日 ISM（预期 55.0 vs 共识 55.2）、周四 JOLTS（预期 7.2mn）",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["JPM",
+          ["fact","10y <b>+3bp 至 4.75%</b><br>（2025年1月来最高）<br>30y +4bp 至 5.24%<br>5y +2bp 至 4.50%"],
+          ["short","<span class='bear'>长端受地缘+供给<br>溢价支撑，久期承压</span>"],
+          ["fact","5s30s 熊陡<br>Warsh 讲话后 2s30s<br>先平坦后长端补涨"],
+          ["fact","9月加息概率约 <b>60%</b><br>（Warsh 后近翻倍）<br>8月 CPI/NFP 前高位"],
+          ["fact","地缘（油价）+ 央行<br>（Warsh r* 信号）<br>双引擎推高长端"],
+          ["short","<span class='bear'>逢高减 2y paying</span><br>（前端已充分定价）<br>持有 5s30s 熊陡"]],
+        ["MS",
+          ["fact","10y UST +3.2bp 至 4.75%<br>30y +3.7bp<br>2y -0.2bp（twist 变陡）<br>Brent +3.0% 至 $90.74"],
+          ["short","<span class='bear'>全球收益率重定价<br>中久期偏防御</span>"],
+          ["fact","UST twist-steepen<br>前端小幅回落<br>长端继续上行"],
+          ["fact","9月加息概率 <b>&gt;60%</b><br>Warsh 反驳储蓄过剩<br>暗示中性利率上升"],
+          ["fact","油价 + 央行信号<br>双驱动；德国 HICP<br>2.9% 低于共识未阻欧债"],
+          ["short","<span class='bear'>pay 长端/做陡<br>控制久期敞口</span><br>数据前轻仓"]],
+        ["BMO",
+          ["fact","月末抛售主导<br>TIPS 10s breakeven<br>231.6-232.5 窄幅<br>1y1y ~2.54%"],
+          ["fact","负 carry 月<br>breakevens 不明朗<br>flow 主导价格"],
+          ["fact","1yr ZC 中高位 2.30s<br>Warsh 讲话消化中<br>空头回补前端"],
+          ["fact","加息预期下<br>TIPS breakeven<br>定价偏鹰"],
+          ["fact","月末再平衡+dealer<br>去库压制动量<br>10s breakeven 区间窄"],
+          ["neu","10s breakeven<br>区间交易<br>避免单边追势"]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"JPM：JULI <b>92bp</b>（5月15日来最紧、yield 5.80%），高收益+轻供给+低库存公式延续：上周发行 <b>$6bn</b> vs 再投资 <b>$11bn</b>、新发过去10天跑赢指数 <b>10bp</b>、dealer 库存 4月来最低（前端多年低点）、HG 基金周五净流入 <b>$824mn</b>；9月供给 <b>$214bn</b>（2025年同期纪录）被 <b>$102bn</b> 再投资+季节性（8/10年收窄）缓冲；Barclays：Complacency <b>90%</b>（+3）/Capitulation <b>46%</b>（-3），PCG 下调 MW（加州立法失望）、SLB $4.1bn 数据中心收购、AON/USI $17bn（杠杆 3.8x）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["JPM",
+          ["fact","JULI <b>92bp</b>（-3bp WTD）<br>yield 5.80%<br>上周发行 $6bn<br>vs 再投资 $11bn"],
+          ["fact","收益曲线前端高 carry<br>吸引配置需求<br>供给清淡支撑利差"],
+          ["fact","BBB/A 差 <b>30bp</b><br>（2014年1月来最紧）<br>BB/BBB 104bp<br>（2025年1月来最紧）"],
+          ["fact","dealer 库存 4月来最低<br>（前端多年低点）<br>HG 基金净流入 $824mn<br>新发10天跑赢指数 10bp"],
+          ["long","<span class='bull'>9月 $214bn 供给被<br>$102bn 再投资+季节性<br>（8/10年收窄）缓冲</span>"],
+          ["long","<span class='bull'>持有 IG 久期<br>新发 dip 买入</span><br>规避 BB/BBB 极端压缩"]],
+        ["Barclays",
+          ["fact","Complacency Signal<br><b>90%</b>（+3）<br>Capitulation 46%（-3）<br>需求韧性与低波动并存"],
+          ["fact","PCG 因加州立法<br>修复失望<br>下调至 Market Weight"],
+          ["fact","AON/USI <b>$17bn</b><br>杠杆升至 3.8x<br>SLB $4.1bn 数据中心"],
+          ["fact","Woodside 盈利强<br>但评级风险/回购未落地<br>维持 MW"],
+          ["neu","<span class='bull'>技术面强但拥挤度上升</span><br>数据意外或触发<br>快速回调"],
+          ["neu","精选单券优于<br>追高指数<br>回避 PCG/高风险 M&A"]]
+      ]
+    },
+    {
+      id:"asia-ig", pri:true, title:"亚洲IG信用债",
+      summary:"TD：周一亚洲平静但月末再平衡支撑，中国 TMT 买盘回暖（上周落后板块 stabilise）、前端买盘活跃（Warsh 讲话后 ~10bp 抛售的逢低买入）；新发重启——Lotte Rental 3y USD 启动、Bangkok Bank 授权 5y/10y；JEF：月末清淡、利差基本不变（局部 1-2bp 走宽），2-5yr 高质量获 buy-in-dip（KYUSEL/JERA 等新发被买回），保险混合 NC10 遭卖出 15-25c",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["TD",
+          ["fact","Lotte Rental 3y USD<br>启动；Bangkok Bank<br>授权 5y/10y 新发<br>中国 TMT 买盘回暖"],
+          ["fact","TMT（上周落后）<br>获 stabilise<br>主权/准主权<br>买盘持续"],
+          ["fact","MEITUA 28/32/35<br>TENCNT 28 活跃<br>ICICI 31/NHSECS 31<br>有买盘"],
+          ["fact","月末再平衡支撑<br>前端逢低买盘活跃<br>（Warsh 后 ~10bp 抛售）"],
+          ["long","<span class='bull'>亚洲一级情绪回暖<br>新发收窄概率上升</span>"],
+          ["long","<span class='bull'>前端高质量 IG<br>逢低买入</span><br>关注新发定价"]],
+        ["JEF",
+          ["fact","月末清淡、供给缺位<br>利差基本不变<br>（局部 1-2bp 走宽）"],
+          ["fact","2-5yr 高质量<br>bear-flattening 后<br>获 buy-in-dip"],
+          ["fact","KYUSEL/JERA 等<br>新发被买回<br>5yr 以下有支撑"],
+          ["fact","保险混合（NC10）<br>遭卖出 15-25c<br>亚洲 PB/real money 卖出"],
+          ["neu","<span class='bull'>前端优质 IG 防御<br>长端混合回避</span>"],
+          ["long","<span class='bull'>2-5yr 高质量<br>（KYUSEL/JERA）</span><br>卖出保险混合 NC10"]]
+      ]
+    },
+    {
+      id:"cn-rates", pri:false, title:"中国利率",
+      summary:"MS：8月官方制造业 PMI <b>49.8</b>（7月 49.6，连续第三月改善仍 <50）、非制造业 49.0 收缩；PBoC 当日净回笼 <b>RMB221bn</b>；宽松周期与财政温和扩张延续，市场期待更多稳增长措施；10y 国债维持低收益率（宽松定价充分）",
+      headers:["券商","市场数据/表现","国债方向","曲线观点","央行观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","15%","18%","18%"],
+      rows:[
+        ["MS",
+          ["fact","8月制造业 PMI <b>49.8</b><br>（前值 49.6）<br>非制造业 49.0 收缩<br>PBoC 净回笼 RMB221bn"],
+          ["neu","10y 国债低收益率<br>宽松定价充分<br>方向中性"],
+          ["fact","外需/出口仍薄弱<br>内需恢复不平衡<br>曲线平稳"],
+          ["fact","PBoC 中期宽松方向<br>不变（当日净回笼<br>仅为流动性管理）"],
+          ["fact","PMI 边际改善<br>但连续第三月 <50<br>政策托底延续"],
+          ["neu","10y 国债区间交易<br>等待 9月<br>更多政策落地"]]
+      ]
+    },
+    {
+      id:"asia-hy", pri:false, title:"亚洲HY/中资地产",
+      summary:"Barclays：8/28 中国推出 1999 年以来最大住房改革；Longfor 2027E 盈利恢复，29s OW 维持、<b>32s 升级至 OW</b>（收益率约 9%）；板块整体仍缺增量买盘，建议聚焦头部流动性好的名称；Woodside 盈利强劲但评级风险/路易斯安那 LNG 回购未落地，维持 MW",
+      headers:["券商","市场数据/表现","基本面观点","估值观点","流动性/再融资","政策影响","整体观点","偏好/风险"],
+      cols:["88px","18%","15%","15%","14%","14%","15%","15%"],
+      rows:[
+        ["Barclays",
+          ["fact","Longfor 29s OW 维持<br><b>32s 升级 OW</b><br>（收益率 ~9%）<br>Woodside 维持 MW"],
+          ["fact","Longfor 2027E<br>盈利恢复路径清晰<br>基本面改善"],
+          ["fact","收益率 ~9% 提供<br>吸引的利差缓冲<br>估值合理"],
+          ["fact","板块缺增量买盘<br>聚焦头部流动性<br>好的名称"],
+          ["fact","8/28 1999年来<br>最大住房改革<br>为化解风险提供路径"],
+          ["long","<span class='bull'>Longfor 32s/29s<br>精选做多</span>"],
+          ["long","<span class='bull'>Longfor（OW）</span><br>回避低流动性民企"]]
+      ]
+    },
+    {
+      id:"global-rates", pri:false, title:"全球债券/FX",
+      summary:"MS：Brent <b>$90.74（+3.0%，伊朗冲突）</b>、DXY 99.42（-0.3%）、EURUSD +0.3%；德国 8月 HICP <b>2.9%</b>（低于共识 3.1%）未阻欧债熊陡（德 2y +3.2bp/10y +4.6bp、意 +5.2bp、法 +5.0bp）；JGB 10y 2.94%（-1.5bp）、5y 2.205%、30y 4.13%，BoJ 9月加息概率 &gt;90%、12月已定价，USD/JPY 自 160+ 回落；中国 PMI 49.8；EMFX 分化（KRW +0.5%、THB -0.7%、COP -0.6%）",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["MS",
+          ["fact","Brent <b>$90.74</b>（+3.0%）<br>DXY 99.42（-0.3%）<br>EURUSD +0.3%<br>USD/JPY 自 160+ 回落"],
+          ["fact","德国 HICP 2.9%<br>（共识 3.1%）<br>低于预期；波兰 8月<br>通胀 3.4% 超预期"],
+          ["fact","欧债熊陡：德 2y +3.2bp<br>10y +4.6bp<br>意 +5.2bp / 法 +5.0bp"],
+          ["fact","JGB 10y 2.94%（-1.5bp）<br>BoJ 9月加息 &gt;90%<br>12月已定价"],
+          ["fact","油价+Warsh 鹰派<br>推动全球收益率上移<br>欧美分化限制美债抛售"],
+          ["fact","EMFX 分化：KRW +0.5%<br>THB -0.7% / COP -0.6%<br>（哥伦比亚额外借贷）"]]
+      ]
+    },
+    {
+      id:"japan-rates", pri:false, title:"日本利率",
+      summary:"MS：JGB 10y <b>2.94%</b>（-1.5bp）、5y 2.205%（-2.0bp）、30y 4.13%（-1.0bp），BoJ 9月加息概率 <b>&gt;90%</b>、12月加息也已定价；美元走弱 + 加息预期推动 USD/JPY 自 160+ 回落",
+      headers:["券商","市场数据/表现","日本国债观点","曲线观点","央行观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","15%","18%","18%"],
+      rows:[
+        ["MS",
+          ["fact","10y JGB <b>2.94%</b>（-1.5bp）<br>5y 2.205%（-2.0bp）<br>30y 4.13%（-1.0bp）"],
+          ["fact","长端在加息预期下<br>仍相对韧性<br>（30y 仅 -1.0bp）"],
+          ["fact","曲线小幅平坦<br>短端受加息预期<br>压制"],
+          ["fact","BoJ 9月加息<br>概率 <b>&gt;90%</b><br>12月加息亦已定价"],
+          ["fact","美元走弱<br>+ 加息预期<br>推动 JPY 走强"],
+          ["fact","USD/JPY 自 160+ 回落<br>关注 BoJ 官员<br>表态"]]
+      ]
+    }
+  ],
+  noCoverage:["美国HY信用债","中国信用债","澳门博彩信用债","欧洲利率","澳洲利率","SSA新发"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","9月 FOMC 加息路径：60% 定价的可持续性",
+        ["long","<span class='bull'>JPM/MS</span><br>Warsh r* 信号+地缘<br>→ 加息概率 ~60%<br>利润指标指向<br>中期劳动力走强"],
+        ["short","<span class='bear'>GS</span><br>GSAI 64.7 但新订单<br>-10.7pt、服务业<br>tracker 走弱<br>对加息路径更谨慎"],
+        ["fact","<b>数据验证期</b><br>JPM 预期 ISM 55.0（仍近 2022年5月来最强）确认制造业韧性；GS 提示动能边际分化（新订单+服务业走弱）<br><b>结论：</b>今日 ISM + 周四 JOLTS + 周五 NFP 是判定点，数据前控制久期"]],
+      ["美国IG","利差 92bp 极窄的持续性：9月供给 vs 技术面",
+        ["long","<span class='bull'>JPM</span><br>9月 $214bn 供给被<br>$102bn 再投资+季节性<br>（8/10年收窄）缓冲<br>dealer 库存 4月来最低"],
+        ["short","<span class='bear'>Barclays</span><br>Complacency Signal<br>90%（+3）<br>拥挤度上升<br>数据意外或快速回调"],
+        ["fact","<b>方向一致、节奏分歧</b><br>JPM 强调技术面（供给清淡+资金流入+低库存）可穿越 9月；Barclays 强调自满信号高位、精选优于追高指数<br><b>结论：</b>持有 IG 但收紧止损，利用新发收窄惯性加仓、向 A 级轮动"]],
+      ["亚洲IG","中国 TMT 买盘回暖 vs 保险混合长端卖压",
+        ["long","<span class='bull'>TD</span><br>TMT（上周落后）<br>stabilise + 前端<br>逢低买盘<br>新发重启（Lotte/BKKB）"],
+        ["short","<span class='bear'>JEF</span><br>保险混合 NC10<br>遭卖出 15-25c<br>宏观 sentiment 偏弱<br>（鹰派 Jackson Hole+伊朗）"],
+        ["fact","<b>前端买、长端混合卖</b><br>月末再平衡+新发情绪回暖支撑前端；保险混合（NC10）持续承压<br><b>结论：</b>做多 2-5yr 高质量 IG、回避长期限保险混合，跟踪新发定价"]],
+      ["中国","PMI 改善与地产政策：增长是否企稳",
+        ["long","<span class='bull'>Barclays</span><br>8/28 住房改革<br>（1999年来最大）<br>Longfor 32s 升级 OW<br>2027E 盈利恢复"],
+        ["short","<span class='bear'>MS</span><br>PMI 49.8 连续第三月<br><50、非制造业 49.0<br>收缩、外需薄弱<br>内需恢复不平衡"],
+        ["fact","<b>政策积极 vs 数据偏弱</b><br>住房改革为地产风险化解提供制度路径（Longfor 率先受益）；但增长数据未确认企稳、板块缺增量买盘<br><b>结论：</b>聚焦 Longfor 等头部流动性品种，整体仓位轻、等待 9月政策落地"]]
+    ]
+  },
+  footer: {
+    window:"2026-08-31 收盘 ~ 2026-09-01（MS Global Macro Commentary 8.31 + JPM US Treasury Market Daily 9.1 + JPM DFMM 9.1 + JPM Daily Credit Strategy 8.31 + Barclays Macro/Credit/Digest 9.1 + GS US Daily 9.1 + BMO TIPS EOD 8.31 + TD Asia EOD 8.31 + JEF Japan/Aus IG EOD 8.31）",
+    emailCount:"JPM 3 / Barclays 3 / MS 1 / GS 1 / BMO 1 / TD 1 / JEF 1 / BofA 1（共12封邮件 · 8家券商）",
+    omitted:"美国HY、中国信用债、澳门博彩、欧洲利率、澳洲利率、SSA 已在「无覆盖市场」汇总"
+  }
+};
+
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
 
