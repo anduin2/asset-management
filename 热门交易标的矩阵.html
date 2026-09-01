@@ -92,7 +92,8 @@ td.ak{width:12%;color:#333}
     <option value="2026-08-26">2026-08-26 周三</option>
     <option value="2026-08-27">2026-08-27 周四</option>
     <option value="2026-08-28">2026-08-28 周五</option>
-    <option value="2026-08-31" selected>2026-08-31 周一</option>
+    <option value="2026-08-31">2026-08-31 周一</option>
+    <option value="2026-09-01" selected>2026-09-01 周二</option>
   </select>
 </div>
 
@@ -6269,7 +6270,7 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
-<div class="day active" id="day-2026-08-31">
+<div class="day" id="day-2026-08-31">
 <!-- ============ 利率/宏观 Rates & Macro ============ -->
 <section>
   <div class="sec-head"><h2>利率/宏观</h2><span class="n">2 行</span><span class="src">GS · Citi</span></div>
@@ -6657,12 +6658,520 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
+<div class="day active" id="day-2026-09-01">
+<!-- ============ 利率/宏观 Rates & Macro ============ -->
+<section>
+  <div class="sec-head"><h2>利率/宏观</h2><span class="n">7 行</span><span class="src">GS · MS · BMO</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">UST 曲线<span class="bond">twist-steepened</span><span class="istag">2025年1月来最高</span></td>
+        <td class="lv">10y +3.2bp 至 4.75%<span class="tl">2y -0.2bp、5y +2.1bp、30y +3.7bp</span></td>
+        <td class="fl">Treasury options flow 偏向保护性买权</td>
+        <td class="rv">2s10s +3.5bp、5s30s +1.5bp；9月 hike 定价 16bp（>60%）、年底 ~37bp、明年 ~60bp</td>
+        <td class="cr"><span class="neu">Catalyst:</span> Warsh 鹰派（Jackson Hole）+ US-Iran 油价冲击；<span class="neu">Risk:</span> 长端供给 + 加息定价进一步上移</td>
+        <td class="bk"><span class="ch mix">MIX</span> 陡峭化｜GS·MS<span class="tl">提示：5y/10y 创 2025年1月以来新高</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>US rates steepened、back-end underperformed；5y/10y 创 2025 年 1 月新高；2s10s 陡峭 ~3.5bp、5s30s ~1.5bp；9 月 hike 定价 16bp、年底 ~37bp、明年 ~60bp。MS：2y -0.2bp、30y +3.7bp、10y +3.2bp 到 4.75%、5y +2.1bp；Treasury options flow 偏向保护。</div>
+        <div class="ev"><i>原文证据</i> "US rates steepened, back-end underperformed, 5y/10y highs since Jan-2025; 2s10s +~3.5bps, 5s30s +~1.5bps; Sept hike pricing 16bps, year-end ~37bps; MS: 2y -0.2bp, 30y +3.7bp, 10y +3.2bp to 4.75%, 5y +2.1bp; Treasury options flow skewed to protection"<span class="srcf">来源：GS Global Credit Market Recap 1 Sep · MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">原油 / 地缘<span class="bond">Brent · US-Iran</span><span class="istag">地缘升级</span></td>
+        <td class="lv">Brent +3.0% 至 $90.74<span class="tl">US 与伊朗互袭、Strait of Hormuz 担忧</span></td>
+        <td class="fl">Energy +2.1% 跑赢 SPX（-0.3%）；9/11 板块 -33bps</td>
+        <td class="rv">2y BE +2.8bp vs 30y BE 基本不变</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 地缘冲突升级；<span class="neu">Risk:</span> 油价持续走高传导至通胀预期</td>
+        <td class="bk"><span class="ch mix">MIX</span> 地缘驱动｜MS·GS<span class="tl">提示：VIX +3.4%</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>US-Iran 冲突推升油价：Brent +3.0% 到 $90.74/bbl、Strait of Hormuz 担忧；SPX -0.3%、VIX +3.4%；Energy +2.1% 跑赢、communications/industrials/utilities lag（9/11 板块下跌）；黄金 -0.4%；2y BE +2.8bp、30y BE 基本不变。</div>
+        <div class="ev"><i>原文证据</i> "US-Iran conflict lifted oil: Brent +3.0% to $90.74, Strait of Hormuz; SPX -0.3%, VIX +3.4%; Energy +2.1% outperformed; 9/11 sector -33bps; 2y BE +2.8bps, 30y BE unchanged"<span class="srcf">来源：MS Global Macro Commentary Aug 31 · GS Global Credit Market Recap 1 Sep</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">JGB / BoJ<span class="bond">日本国债</span><span class="istag">加息定价 >90%</span></td>
+        <td class="lv">10y 东京早盘 2.95%<span class="tl">5y +2.0bp 至 2.205%、10y +1.5bp 至 2.94%、30y +1.0bp 至 4.13%</span></td>
+        <td class="fl">BoJ 9月加息定价 >90%、12月再加息预期上升</td>
+        <td class="rv">TONA-OIS bear flattened；XCCY 7y+ 走宽</td>
+        <td class="cr"><span class="neu">Catalyst:</span> Katayama/Ueda 联合发布会前 USDJPY 从 160+ 回落；<span class="neu">Risk:</span> 日债长端抛压</td>
+        <td class="bk"><span class="ch bear">BEAR</span> 上行压力｜MS<span class="tl">提示：USDJPY 回落至 159.75</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>JGB：10y 东京早盘触及 2.95%；BoJ 9 月加息定价 >90%、12 月再加息预期上升；5y +2.0bp 到 2.205%、10y +1.5bp 到 2.94%、30y +1.0bp 到 4.13%；TONA-OIS bear flattened、XCCY 7y+ 走宽；USDJPY 从 160 以上回落（G20 美日会议 + Katayama/Ueda 联合发布会前）。</div>
+        <div class="ev"><i>原文证据</i> "JGB 10y touched 2.95% early Tokyo; BoJ Sept hike pricing >90%, Dec expectations rising; 5y +2.0bp to 2.205%, 10y +1.5bp to 2.94%, 30y +1.0bp to 4.13%; TONA-OIS bear flattened; USDJPY off 160+ (pre-G20 US-Japan meeting + Katayama/Ueda joint presser)"<span class="srcf">来源：MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">EUR Rates<span class="bond">德国 · 意大利 · 法国</span><span class="istag">bear-steepened</span></td>
+        <td class="lv">德国 2y +3.2bp、10y +4.6bp<span class="tl">Italy 10y +5.2bp、France 10y +5.0bp</span></td>
+        <td class="fl">UK 银行假闭市</td>
+        <td class="rv">德国 8月 HICP 2.9% y/y（低于 cons 3.1%、高于 7月 2.8%）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 通胀回升 + 全球 rates 联动；<span class="neu">Risk:</span> 德债供给</td>
+        <td class="bk"><span class="ch bear">BEAR</span> 陡峭化｜MS<span class="tl">提示：HICP 低于预期但高于前值</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>欧元区 bear-steepened：德国 2y +3.2bp、10y +4.6bp；德国 8 月 HICP 2.9% y/y（低于 consensus 3.1%、高于 7 月 2.8%）；Italy 10y +5.2bp、France +5.0bp；UK 银行假闭市。</div>
+        <div class="ev"><i>原文证据</i> "Euro area bear-steepened: Germany 2y +3.2bps, 10y +4.6bps; German Aug HICP 2.9% y/y (below 3.1% cons, above Jul 2.8%); Italy 10y +5.2bps, France +5.0bps; UK bank holiday"<span class="srcf">来源：MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">TIPS / Breakevens<span class="bond">美国通胀保值债</span><span class="istag">月终活跃</span></td>
+        <td class="lv">10s breaks 231.6-232.5 窄幅<span class="tl">1yr ZC mid/high 2.30s</span></td>
+        <td class="fl">1y1y ~2.54%（RM/FM short covering）</td>
+        <td class="rv">下月进入 negative carry</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 月终 flows；<span class="neu">Risk:</span> negative carry 下 breaks 与收益率相关性脱钩</td>
+        <td class="bk"><span class="ch mix">MIX</span> flows 驱动｜BMO<span class="tl">提示：breaks 表现由 flows 主导</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>TIPS 月终活跃：10s breaks 231.6-232.5 窄幅交投；1yr ZC mid/high 2.30s；1y1y ~2.54%（RM/FM short covering）；下月进入 negative carry，breaks 与 higher yields 相关性不一致，flows 是驱动。</div>
+        <div class="ev"><i>原文证据</i> "Active month-end; 10s breaks traded 231.6-232.5 tight range; 1yr ZC mid/high 2.30s; 1y1y ~2.54% on short covering from RM/FM; heading into negative carry next month, breaks uncorrelated with higher yields, flows are the driver"<span class="srcf">来源：BMO TIPS End of Day Commentary · 2026-08-31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国宏观<span class="bond">PMI · PBoC</span><span class="istag">PMI 改善但收缩</span></td>
+        <td class="lv">8月制造业 PMI 49.8<span class="tl">非制造业 PMI 49.0 收缩</span></td>
+        <td class="fl">PBoC 净回笼 RMB221bn</td>
+        <td class="rv">CSI 300 +0.3%</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 制造业 PMI 连续改善；<span class="neu">Risk:</span> 非制造业仍收缩</td>
+        <td class="bk"><span class="ch mix">MIX</span> 弱复苏｜MS<span class="tl">提示：USD/CNH -0.2%</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>中国 8 月制造业 PMI 49.8（改善、仍低于荣枯线）；非制造业 PMI 49.0 收缩；PBoC 净回笼 RMB221bn；CSI 300 +0.3%；USD/CNH -0.2%。</div>
+        <div class="ev"><i>原文证据</i> "China Aug mfg PMI 49.8 (improved but below 50), non-mfg PMI 49.0 contracting; PBoC net drain RMB221bn; CSI 300 +0.3%; USD/CNH -0.2%"<span class="srcf">来源：MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">EM FX<span class="bond">KRW · INR · THB · COP</span><span class="istag">分化</span></td>
+        <td class="lv">KRW +0.5%（KOSPI +0.5%）<span class="tl">USD/CNH -0.2%、INR +0.2%、THB -0.7%、IDR -0.2%、TWD -0.2%</span></td>
+        <td class="fl">RBI 疑似抛售美元支撑 INR</td>
+        <td class="rv">COP -0.6%（哥伦比亚新政府 $11bn 额外借款、2027 赤字 9.4% GDP 初值）；PEN -0.4%</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 美联储加息押注 + 油价；<span class="neu">Risk:</span> 哥伦比亚财政担忧扩散</td>
+        <td class="bk"><span class="ch mix">MIX</span> 分化｜MS<span class="tl">提示：MXN +0.2%、BRL +0.2%（巴西初级盈余目标）</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>AxJ：KRW +0.5%（KOSPI +0.5%）；USD/CNH -0.2%；INR +0.2%（RBI 疑似抛售美元）；THB -0.7%、IDR -0.2%、TWD -0.2%。LatAm：COP -0.6%（哥伦比亚新政府 $11bn 额外借款计划、2027 财政赤字 9.4% GDP 初值）；PEN -0.4%；MXN +0.2%；BRL +0.2%（巴西 2027 预算 0.5% GDP 初级盈余目标）。CEEMEA：PLN +0.6%（波兰 8月 CPI 3.4% 加速）、ZAR +0.3%（贸易顺差 ZAR20.1bn）。</div>
+        <div class="ev"><i>原文证据</i> "KRW +0.5% (KOSPI +0.5%); USD/CNH -0.2%; INR +0.2% (RBI suspected USD selling); THB -0.7%; COP -0.6% (Colombia new govt $11bn extra borrowing, 2027 deficit 9.4% GDP); PEN -0.4%; MXN +0.2%; BRL +0.2% (Brazil primary surplus target); PLN +0.6% (Poland CPI 3.4%)"<span class="srcf">来源：MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 美国IG / TMT ============ -->
+<section>
+  <div class="sec-head"><h2>美国IG / TMT</h2><span class="n">4 行</span><span class="src">Citi · GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">US IG 大盘<span class="bond">指数 · 科技单名</span><span class="istag">月终安静</span></td>
+        <td class="lv">IG100 -0.2bp、LQD -0.46bp<span class="tl">spcx/orcl/meta 4-6+ tighter；hyperscalers 略收紧；googl 扛住 month-end</span></td>
+        <td class="fl">index bid + street chasing risk；月终 flow 忙；TFLO 显示 dealers net hit 1.6bn risk（0-1yr paper）</td>
+        <td class="rv">telcos 跑赢（ATT/VZ/TMUS/VOD 一周 -5bp）；front-end +1 偏多；没怎么定价 200bn+ 9月 primary</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 9月供给 $230bn 预期消化；<span class="neu">Risk:</span> duration lift 后长端回吐</td>
+        <td class="bk"><span class="ch bull">BULL</span> 缓慢收紧｜Citi·GS<span class="tl">提示：path of least resistance tighter</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>Citi：uneventful month end；index bid + street chasing risk；close -1/5；spcx/orcl/meta 4-6+ tighter；hyperscalers 略收紧；googl 扛住 month-end bwics；path of least resistance tighter、duration lift。GS：IG 开盘基本不变（上周收 2-3bp）；IG100 -0.2bp、LQD -0.46bp；MCs +1、utilities lagged、telcos 跑赢（ATT/VZ/TMUS/VOD 一周 -5bp）；TFLO dealers net hit 1.6bn risk；primary $1.25bn 1 笔。</div>
+        <div class="ev"><i>原文证据</i> "Uneventful month end; index bid, street chasing risk; closed -1/5; spcx/orcl/meta 4-6+ tighter; hyperscalers modestly tighter; googl held in month-end bwics; path of least resistance tighter, duration lift; IG100 -0.2bp, LQD -0.46bp; telcos outperformed (ATT/VZ/TMUS/VOD -5bps WTD)"<span class="srcf">来源：Citi IG Credit Daily Sector Commentary 8.31 · GS Global Credit Market Recap 1 Sep</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">保险板块 M&A<span class="bond">US insurance M&A</span><span class="istag">GFC来最高关注</span></td>
+        <td class="lv">ATH 10yr bid through new issue（+154 hit）<span class="tl">CRBG 10yr 从 new issue 收紧 10bp 跑赢板块</span></td>
+        <td class="fl">TRACE volumes ~50% 高于平均</td>
+        <td class="rv">Insurance brokers unch'd 至 +10bp；Life unch'd 至 +1bp；P&C unch'd 至 +2bp</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 规模可观的保险 M&A 公告（现金融资、短期执行）；<span class="neu">Risk:</span> M&A 执行风险 + 供给</td>
+        <td class="bk"><span class="ch bull">BULL</span> 事件驱动｜Citi<span class="tl">提示：ATH 此前 SAMMON 消息时曾 +175</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>保险行业 M&A 公告（规模可观、现金融资、短期执行）驱动板块交易；TRACE volumes ~50% 高于平均；ATH 10yrs bid through new issue price（+154 hit，此前 SAMMON 消息时曾到 +175）；CRBG 10yr 从 new issue 收紧 10bp 跑赢；保险板块波动为 GFC 以来最高关注；Spread changes：Insurance brokers unch'd 至 +10bp、Life unch'd 至 +1bp、P&C unch'd 至 +2bp。</div>
+        <div class="ev"><i>原文证据</i> "Sizable insurance M&A announced (cash funded, near-term execution); TRACE volumes ~50% above average; ATH 10yrs bid through new issue price (+154 hit vs +175 on SAMMON headlines); CRBG 10yr 10bps tighter from new issue outperformed; insurance spread volatility highest attention since GFC"<span class="srcf">来源：Citi IG Credit Daily Sector Commentary 8.31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">OKE tender<span class="bond">ONEOK 收购要约</span><span class="istag">跑赢</span></td>
+        <td class="lv">OKE 6.25 55s 最大跑赢者<span class="tl">traded 7-15bp better（33s/34s/35s underperform）</span></td>
+        <td class="fl">OKE 消息（tender）带动两向 flow</td>
+        <td class="rv">30y risk extremely well bid（WMB 5.95 56、RM 买至 110 以上）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> OKE tender 公告（6.25 55s 不在 tender list）；<span class="neu">Risk:</span> tender 结束后卖压回补</td>
+        <td class="bk"><span class="ch bull">BULL</span> 事件驱动｜Citi<span class="tl">提示：OKE 5.45 47/6.4 37/6.25 55</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>OKE 消息（tender）带动两向 flow；OKE 6.25 55s 为最大跑赢者（不在 tender list 上）；33s/34s/35s underperform；OKE 5.45 47、6.4 37、6.25 55 交易 7-15bp better；30y risk extremely well bid（WMB 5.95 56、RM 买至 110 以上）。</div>
+        <div class="ev"><i>原文证据</i> "OKE headlines (tender) drove two-way flow; OKE 6.25 55s biggest outperformers (not on tender list); 33s/34s/35s underperformed; OKE 5.45 47, 6.4 37, 6.25 55 traded 7-15bps better; 30y risk extremely well bid (WMB 5.95 56, RM bought to 110+)"<span class="srcf">来源：Citi IG Credit Daily Sector Commentary 8.31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">能源 / 化工<span class="bond">MLM · MOS · MTNA</span><span class="istag">分化</span></td>
+        <td class="lv">MLM 30yr mid-90s 至 high-90s<span class="tl">MOS 10yr mid-130s 稳</span></td>
+        <td class="fl">20yr long only 需求；Commodity Chems 10yr leaky</td>
+        <td class="rv">MTNA 可能是钢铁受益者（EU auto tariffs 进展）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> EU 汽车关税进展利好钢铁；<span class="neu">Risk:</span> 化工长端卖压</td>
+        <td class="bk"><span class="ch mix">MIX</span> 分化｜Citi<span class="tl">提示：Energy 长端略好（GS）</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>MLM 30yr 从 mid-90s 到 high-90s；MOS 10yr mid-130s 稳；Commodity Chems 10yr leaky；20yr long only 需求；MTNA 可能是钢铁受益者（EU auto tariffs 进展）。GS：Energy 长端略好、Utilities +1。</div>
+        <div class="ev"><i>原文证据</i> "MLM 30yr mid-90s to high-90s; MOS 10yr mid-130s steady; commodity chems 10yr leaky; 20yr long-only demand; MTNA potential steel beneficiary (EU auto tariffs progress)"<span class="srcf">来源：Citi IG Credit Daily Sector Commentary 8.31</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲信用 / 中国 ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲信用 / 中国</h2><span class="n">4 行</span><span class="src">GS · Barclays · TD · JEF</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产新政包<span class="bond">1999年来最大住房改革</span><span class="istag">mixed 解读</span></td>
+        <td class="lv">股票影响大于信用<span class="tl">现房销售模式影响 CHJMAO/GRNCH 更多</span></td>
+        <td class="fl">—</td>
+        <td class="rv">LOGFOR 受一些影响但被 landlord 模式缓解；FUTLAN/SHUION/DALWAN 影响较小</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 政策包四项：40年房贷期限、现房销售取代预售、预售要求收紧+托管账户监管、支持融资+鼓励并购；<span class="neu">Risk:</span> 对小/困境名字基本中性、并购鼓励使旧土储更具吸引力</td>
+        <td class="bk"><span class="ch mix">MIX</span> mixed｜GS<span class="tl">提示：对股票影响大于信用</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>中国地产新政包（上周五发布）：(1) 最长房贷期限从 30 年延至 40 年；(2) 现房销售模式取代预售模式；(3) 收紧预售要求和托管账户监管；(4) 支持开发商融资、鼓励行业内并购。GS 解读：mixed——对活跃拿地的大开发商影响更大，对小/困境名字基本中性；股票影响大于信用；现房销售模式影响 CHJMAO、GRNCH 更多；LOGFOR 受一些影响但被 landlord 模式缓解；FUTLAN、SHUION、DALWAN 影响较小；困境名字——并购鼓励 + 预售抑制使旧土地储备更具吸引力，可能导致二级项目交易小幅回升。</div>
+        <div class="ev"><i>原文证据</i> "China property new policy package: (1) mortgage tenor 30y to 40y; (2) presale replaced by cash-sale model; (3) tighter presale requirements + escrow oversight; (4) developer financing support + M&A encouragement. GS: mixed, more equity than credit impact; affects CHJMAO/GRNCH more; LOGFOR mitigated by landlord model; FUTLAN/SHUION/DALWAN less impact"<span class="srcf">来源：GS Global Credit Market Recap 1 Sep (Quick View, Iris Chen)</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产二级<span class="bond">SUNAC · GRNCH · LNGFOR</span><span class="istag">高波动</span></td>
+        <td class="lv">SUNAC 开盘 +16% 收 -10%<span class="tl">performing names（GRNCH/CHJMAO/LNGFOR/DALWAN/FTLNHD）先卖后 pause</span></td>
+        <td class="fl">distressed 债价几乎没动（PB/HF clean-ups）；VNKRLE 找到 HF/RM 买家收高</td>
+        <td class="rv">"会有政策但不知道是什么"交易</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 新政发布后 stock 先行；<span class="neu">Risk:</span> 政策细节未明前波动延续</td>
+        <td class="bk"><span class="ch bear">BEAR</span> 波动加剧｜Barclays<span class="tl">提示：SUNAC 整日 -10%</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>Barclays：监管推出新地产规则；bond investors 最初读作负面、抛售 performing names（GRNCH、CHJMAO、LNGFOR、DALWAN、FTLNHD），股市高开（SUNAC +16%）后 pause，随后 SUNAC 收 -10%；distressed 债价在噪音中几乎不动（PB/HF clean-ups）；VNKRLE 尝试走低但找到 HF/RM 买家，收高。</div>
+        <div class="ev"><i>原文证据</i> "Bond investors read the news negatively, selling performing names (GRNCH, CHJMAO, LNGFOR, DALWAN, FTLNHD) before pausing when stocks opened higher (SUNAC +16%); SUNAC finished -10%; distressed prices barely moved; VNKRLE found HF/RM buyers and closed slightly higher"<span class="srcf">来源：Barclays Asian Credit Trading Commentary EOD 31 Aug</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">REDPRO 重组<span class="bond">阳光城重组计划</span><span class="istag">新重组</span></td>
+        <td class="lv">债价长期 0.05 附近交易<span class="tl">计划公布后未大幅波动</span></td>
+        <td class="fl">PB/HF clean-ups 仍在</td>
+        <td class="rv">consent fee 0.175pt + cash option（2pt at RED + 1pt in 12 months，或 2.5pts）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 上周五晚公布重组计划（含 consent fee + cash option）；<span class="neu">Risk:</span> 0.05 级债参与度存疑</td>
+        <td class="bk"><span class="ch mix">MIX</span> 重组推进｜Barclays<span class="tl">提示：对长期持有者构成激励</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>REDPRO 上周五晚宣布重组计划：consent fee 0.175pt + cash option（2pt at RED + 1pt in 12 months，或 2.5pts on RED）；该债在 0.05 附近交易已久，此计划相当有吸引力。</div>
+        <div class="ev"><i>原文证据</i> "REDPRO announced its restructuring plan late Friday, incl. consent fee (0.175pt) and cash option (2pt at RED + 1pt in 12 months, or 2.5pts on RED), quite exciting for something that has traded at 0.05 for quite some time"<span class="srcf">来源：Barclays Asian Credit Trading Commentary EOD 31 Aug</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">China TMT<span class="bond">MEITUA · TENCNT · ZHOSHK</span><span class="istag">买盘回稳</span></td>
+        <td class="lv">上周明显跑输后稳定<span class="tl">MEITUA 28/32/35、TENCNT 28 活跃</span></td>
+        <td class="fl">better buying interest 帮助稳定板块</td>
+        <td class="rv">JEF 本周更新 ZHOSHK 1H26 结果</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 资金面改善 + 新发支撑；<span class="neu">Risk:</span> 上周走宽后反弹乏力</td>
+        <td class="bk"><span class="ch bull">BULL</span> 回稳｜TD<span class="tl">提示：ZHOSHK 1H26 更新（JEF）</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>TD：better buying interest in China TMT 帮助稳定了上周明显跑输的板块；active names 包括 MEITUA 28/32/35、TENCNT 28。JEF Weekly：本周更新 ZHOSHK 1H26 结果。</div>
+        <div class="ev"><i>原文证据</i> "Better buying interest in China TMT helped stabilize a sector that notably underperformed last week; active MEITUA 28/32/35, TENCNT 28; We update ZHOSHK 1H26 results this week"<span class="srcf">来源：TD Asia EOD Commentary · JEF Asia Weekly Credit Convictions 31 Aug</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲信用 / 除中国 ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲信用 / 除中国</h2><span class="n">5 行</span><span class="src">GS · HSBC · Barclays · TD</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">India IG<span class="bond">ICICI · IDFCBK · HDFCB</span><span class="istag">两向</span></td>
+        <td class="lv">UNBKIN 曲线周五下午 ~3bp tighter<span class="tl">31s offer 侧 +97 vs HDFCB ~+95 mid</span></td>
+        <td class="fl">HF 两向；RM 对 choice 名字保持较好买家</td>
+        <td class="rv">UNBKIN 31s +97 定价偏贵</td>
+        <td class="cr"><span class="neu">Catalyst:</span> HF/Retail buying（UNBKIN）；<span class="neu">Risk:</span> 新发供给压制</td>
+        <td class="bk"><span class="ch mix">MIX</span> 两向｜GS<span class="tl">提示：desk net lifted in risk</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>GS：India IG HF 两向，RM 对 ICICI/IDFCBK/HDFCB 等 choice 名字保持较好买家；UNBKIN 曲线周五下午 ~3bp tighter（HF/Retail buying），31s offer 侧 +97 太贵 vs HDFCB ~+95 mid。</div>
+        <div class="ev"><i>原文证据</i> "India IG: two-way with HFs, RM better buyer in choice names (ICICI/IDFCBK/HDFCB); UNBKIN curve ~3bps tighter Friday PM on HF/Retail buying, 31s +97 offered too rich vs HDFCB ~+95 mid"<span class="srcf">来源：GS Global Credit Market Recap 1 Sep</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">India 新发/资金流<span class="bond">UNBKIN · ICICI · BOBIN · SBI</span><span class="istag">买盘</span></td>
+        <td class="lv">India IG ~30m、~1bp wider on the day<span class="tl">PETMK 长端需求、unchanged</span></td>
+        <td class="fl">PB demand UNBKIN/ICICI/BOBIN/SBI；ETF buying EXIMBK</td>
+        <td class="rv">higher yields 带来 RM/PB buyers（front-end IG、India new issues）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 利率走高吸引收益率买家；<span class="neu">Risk:</span> 供给消化</td>
+        <td class="bk"><span class="ch bull">BULL</span> 逢低买入｜HSBC·Barclays<span class="tl">提示：India 本周持续最忙市场</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>HSBC：higher yields 带来 RM/PB buyers（front-end IG、India new issues）；PB demand UNBKIN/ICICI/BOBIN/SBI、ETF buying EXIMBK。Barclays：India IG busy ~30m traded、~1bp wider on the day；PETMK 长端持续需求、unchanged。</div>
+        <div class="ev"><i>原文证据</i> "Higher yields brought RM/PB buyers (front-end IG, India new issues); PB demand UNBKIN/ICICI/BOBIN/SBI, ETF buying EXIMBK; India IG busy, ~30m traded, ~1bp wider on the day; PETMK long-end demand, unchanged"<span class="srcf">来源：HSBC Asia Credit EOD 31 Aug · Barclays Asian Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">SEA IG<span class="bond">SGD · Korea · 区域</span><span class="istag">+0-1bp</span></td>
+        <td class="lv">spreads +0-1bp、SGD -5-12.5c<span class="tl">front-end AM 买（month-end rebalancing）</span></td>
+        <td class="fl">SGD tone heavy、bear-flattening；month-end buying 消化 loose bonds</td>
+        <td class="rv">SG IG front-end AM 买、PB 对 duration 有兴趣</td>
+        <td class="cr"><span class="neu">Catalyst:</span> month-end 再平衡；<span class="neu">Risk:</span> SGD 曲线 bear-flattening</td>
+        <td class="bk"><span class="ch bull">BULL</span> 温和｜HSBC·TD<span class="tl">提示：活跃 KORAIL 28/NHSECS 31/PNBPM 29/POWFIN 28/HYUELE 29</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>HSBC：SEA IG spreads +0-1bp；SGD mixed、month-end buying 帮助消化 loose bonds、tone heavy + bear-flattening、levels -5-12.5 cents；SG IG front-end AM 买（month-end rebalancing）、PB 对 duration 有兴趣。TD active names：KORAIL 28、NHSECS 31、PNBPM 29、POWFIN 28、HYUELE 29、WDSAU 34、ABCIHL 27。</div>
+        <div class="ev"><i>原文证据</i> "SEA IG spreads +0-1bps; SGD mixed, month-end buying helped digest loose bonds, tone heavy + bear-flattening, -5-12.5c; SG IG front-end AM buying, PB interested in duration; active KORAIL 28, NHSECS 31, PNBPM 29, POWFIN 28, HYUELE 29, WDSAU 34, ABCIHL 27"<span class="srcf">来源：HSBC Asia Credit EOD 31 Aug · TD Asia EOD Commentary</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">Ex-China HY<span class="bond">IIFOIN · MUTHIN · RPVIN</span><span class="istag">carry 交易回归</span></td>
+        <td class="lv">cash -0.125-0.25pt、spreads +1/2bp<span class="tl">HY -0-0.125pt</span></td>
+        <td class="fl">carry trades 有利：短端 benchmark + high coupon 买入；sell flows 几乎未见</td>
+        <td class="rv">perps 和长端 underperform（technicals weaker、street offered）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 午后 slightly firmer + month-end 更 constructive；<span class="neu">Risk:</span> 长端/永续卖压</td>
+        <td class="bk"><span class="ch bull">BULL</span> 偏买｜HSBC·Barclays<span class="tl">提示：IIFOIN/MUTHIN/RPVIN 有买家</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>HSBC：Ex-China HY -0-0.125pt（IIFOIN、MUTHIN、RPVIN 有买家）。Barclays：Asia HY 从早盘低点收回来（cash -0.125-0.25pt、spreads +1/2bp）；carry trades 回归（短端 benchmark + high coupon 买）；perps 和长端 underperform（technicals weaker、street better offered）；午后 slightly firmer、sell flows 几乎未见。</div>
+        <div class="ev"><i>原文证据</i> "Ex-China HY -0-0.125pt (IIFOIN/MUTHIN/RPVIN buyers); Asia HY closed well off morning lows, cash -0.125-0.25pt, spreads +1/2bps; carry trades favoured (short-dated benchmarks, high-coupon); perps and long-end underperformed"<span class="srcf">来源：HSBC Asia Credit EOD 31 Aug · Barclays Asian Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">新发/供给<span class="bond">Bangkok Bank · Lotte Rental</span><span class="istag">发行重启</span></td>
+        <td class="lv">Bangkok Bank USD 5Y/10Y 144a/Reg S mandate<span class="tl">Lotte Rental USD 3Y Reg S mandate</span></td>
+        <td class="fl">Hon Hai Multi-Tranche Euroyen IPT；Metro Finance 2026-2 A$750m launch（可增发）</td>
+        <td class="rv">HSBC 追踪近期 mandates：ElectraNet (AUD)、Korea Southern Power、Aurizon Network (AUD)、Shinhan Bank (EUR)、ARTC (AUD)、Lottery Corporation (AUD)</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 新发窗口开启；<span class="neu">Risk:</span> 供给消化压力</td>
+        <td class="bk"><span class="ch mix">MIX</span> 供给观察｜TD·Barclays·HSBC<span class="tl">提示：上周无供给、本周重启</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>Barclays/TD 新发公告：Bangkok Bank USD 5Y/10Y 144a/Reg S Senior Notes mandate；Lotte Rental USD 3Y Reg S mandate；Hon Hai Multi-Tranche Euroyen Bonds IPT；Metro Finance 2026-2 Trust A$750m（可增发）。HSBC mandates 追踪：ElectraNet (AUD) 28 Aug、Korea Southern Power 28 Aug、Aurizon Network (AUD) 27 Aug、Shinhan Bank (EUR) 25 Aug、ARTC (AUD) 24 Aug、The Lottery Corporation (AUD) 24 Aug。</div>
+        <div class="ev"><i>原文证据</i> "Mandates: Bangkok Bank USD 5Y/10Y 144a/Reg S Senior; Lotte Rental USD 3Y Reg S; Hon Hai multi-tranche Euroyen IPT; Metro Finance 2026-2 A$750m launch; HSBC new issue mandates: ElectraNet (AUD), Korea Southern Power, Aurizon Network (AUD), Shinhan Bank (EUR), ARTC (AUD), Lottery Corp (AUD)"<span class="srcf">来源：Barclays Asian Credit EOD 31 Aug · TD Asia EOD · HSBC Asia Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 日本信用 ============ -->
+<section>
+  <div class="sec-head"><h2>日本信用</h2><span class="n">4 行</span><span class="src">BofA · Barclays · HSBC · JEF</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">Japan IG / 新发<span class="bond">JERA · KYUSEL · NECORP</span><span class="istag">firm</span></td>
+        <td class="lv">IG spreads +/−1bp<span class="tl">JERA 仍 wide of re-offer</span></td>
+        <td class="fl">client flows 偏 forward buying 近期新发；APAC RM buying risk</td>
+        <td class="rv">MEX、SUMIFR、DAIICH 可能定价新 JPY benchmarks</td>
+        <td class="cr"><span class="neu">Catalyst:</span> JERA/KYUSEL/NECORP 上周新发买盘（5yr 段 better bid）；<span class="neu">Risk:</span> 供给再开</td>
+        <td class="bk"><span class="ch bull">BULL</span> firm｜BofA·JEF·Barclays<span class="tl">提示：month-end 活动较平常轻</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>BofA：Japan IG DM firm（spreads +/−1）；JERA/KYUSEL/NECORP firm（APAC RM buying risk）；MEX、SUMIFR、DAIICH 可能定价新 JPY benchmarks；SNEFH：日本 FSA 对 Sony Life 现场检查（spreads uc）。JEF/Barclays：5yr 段 better bid；KYUSEL、JERA 等便宜 recent issue 有买盘（JERA 仍 wide of re-offer）；month-end 活动较平常轻。</div>
+        <div class="ev"><i>原文证据</i> "Japan IG DM firm, spreads +/−1; JERA/KYUSEL/NECORP firm on APAC RM buying; MEX/SUMIFR/DAIICH may price new JPY benchmarks; SNEFH: FSA on-site inspection of Sony Life (spreads uc); cheap recent issues (KYUSEL, JERA) well bid, JERA still wide of re-offer"<span class="srcf">来源：BofA Japan EOD Market Commentary · JEF Asia Japan/Aus IG EOD · Barclays Asian Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">保险 hybrids<span class="bond">日本保险混合资本</span><span class="istag">唯一持续卖压</span></td>
+        <td class="lv">NC5/NC10 桶 -0.25-0.375pt<span class="tl">NC10 -15-25c</span></td>
+        <td class="fl">Asia PB + real money 卖出（hybrids 卖压 > AT1s）</td>
+        <td class="rv">AT1s similar、hybrids 卖更多；retail + RMs 混卖</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 技术面偏弱；<span class="neu">Risk:</span> 卖压延续</td>
+        <td class="bk"><span class="ch bear">BEAR</span> 卖压｜HSBC·JEF·Barclays<span class="tl">提示：长端 RM 卖</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>HSBC：Japan insurance hybrids 是唯一持续卖压 corner。Barclays：Japan insurance hybrids NC5/NC10 桶 -0.25-0.375pt；AT1s similar、但 hybrids 卖更多（retail + RMs 混卖）；长端 RM 卖。JEF：hybrid insurance NC10 -15-25c（Asia PB + real money 卖）。</div>
+        <div class="ev"><i>原文证据</i> "Japan insurance hybrids the only persistent selling corner; NC5/NC10 bucket -0.25-0.375pt, AT1s similar but more hybrid selling (retail + RMs); hybrid insurance NC10 -15-25c on Asia PB + real money selling"<span class="srcf">来源：HSBC Asia Credit EOD 31 Aug · Barclays Asian Credit EOD 31 Aug · JEF Asia Japan/Aus IG EOD</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">SoftBank<span class="bond">SBG · SB Energy</span><span class="istag">供给消化中</span></td>
+        <td class="lv">CDS 340（uc）、5/1YR 190（uc）<span class="tl">spreads +5（SB Energy IPO 消息）</span></td>
+        <td class="fl">cash buying 继续、hybrids 被 lifted 几次；client flows 卖 protection</td>
+        <td class="rv">月度高 beta -9/-32bps 中 SoftBank -9bp（供给消息下跑赢）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> SB Energy 本周公布 IPO filing；<span class="neu">Risk:</span> jumbo offshore 供给 + 评级 headroom 压缩</td>
+        <td class="bk"><span class="ch mix">MIX</span> 消化中｜BofA·Barclays<span class="tl">提示：near-term 融资计划消化</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>BofA：SB Energy 预计本周公布 IPO filing（spreads +5）；SoftBank CDS 340(uc)、5/1YR 190(uc)；client flows 卖 protection（durations）。Barclays：SoftBank cash buying 继续、hybrids 被 lifted 几次（市场消化 near-term 融资计划）；月度高 beta -9/-32bp（Rakuten/Nissan/Nippon Paper 跑赢）中 SoftBank 收 -9bp。GS 研究：jumbo offshore issuance 收窄 bridge funding gap 但压缩评级 headroom。</div>
+        <div class="ev"><i>原文证据</i> "SB Energy expected to file for IPO as soon as this week (spreads +5); SoftBank CDS 340(uc), 5/1YR 190(uc); SoftBank cash buying continued, hybrids lifted a few times; SB closed -9bps on the month; jumbo offshore issuance could narrow bridge funding gap but pressure rating headroom"<span class="srcf">来源：BofA Japan EOD · Barclays Asian Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">Japan CDS / 单名<span class="bond">CDSI · Nissan · Rakuten</span><span class="istag">CDS 稳定</span></td>
+        <td class="lv">CDSI 56(+0.25)、roll 7.15<span class="tl">Nissan 250、Rakuten 185、NUNPC 170（均 uc）</span></td>
+        <td class="fl">index short covering + CLN-type selling；spreads closed unchanged</td>
+        <td class="rv">Chemical/Telcom/Auto 板块 CDS firm</td>
+        <td class="cr"><span class="neu">Catalyst:</span> Honda-Nissan 宣布合作开发 FY'29 汽车软件；<span class="neu">Risk:</span> 权益反弹后 CDS 不跟随</td>
+        <td class="bk"><span class="ch mix">MIX</span> 稳定｜BofA·Barclays<span class="tl">提示：JGB10YR +1.5、USDJPY 159.75</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>BofA：Japan CDS 开盘 firm；CDSI 56(+0.25)、roll 7.15(uc)；JGB10YR +1.5、TPX +7、USDJPY 159.75(+0.25)；client flows 卖 protection；IG SCDS firm、Chemical/Telcom/Auto 板块 firm。Barclays：Japan CDS 早盘偏弱但未走宽；实际见 index short covering + CLN 卖，equities 收窄跌幅后 CDS closed unchanged；Honda-Nissan 宣布合作开发 FY'29 车辆软件。</div>
+        <div class="ev"><i>原文证据</i> "CDSI 56(+0.25), roll 7.15(uc); Nissan 250, Rakuten 185, NUNPC 170 (uc); Japan CDS opened weaker tone but not widening, index short covering + CLN-type selling, closed unchanged; Honda-Nissan partnership for vehicle software from FY'29"<span class="srcf">来源：BofA Japan EOD · Barclays Asian Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 澳元AUD ============ -->
+<section>
+  <div class="sec-head"><h2>澳元AUD</h2><span class="n">3 行</span><span class="src">DB · HSBC · Barclays</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">ELECTR 新发<span class="bond">ElectraNet 7Y</span><span class="istag">新 mandate</span></td>
+        <td class="lv">AUD 7Y mandate 宣布、IPTs 未发布<span class="tl">DB fair value ASW+125-127bp（ANVAU 2033s +121、2034s +131 插值）</span></td>
+        <td class="fl">公司债供给偏多</td>
+        <td class="rv">比 AGLAU 2032 (+129)、MERINZ 2033 (+129) 收紧（他们有 generation/retail 价格敞口）；应与其他 BBB/BBB+ regulated utilities 一致</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 南澳输电垄断（70% regulated + 21% take-or-pay 通胀挂钩）；<span class="neu">Risk:</span> 需 small new issue concession，定价约 ASW+130bp</td>
+        <td class="bk"><span class="ch bull">BULL</span> 优质供给｜DB<span class="tl">提示：Baa2/NR/NR</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>ElectraNet（Baa2/NR/NR）宣布 AUD 7Y 债券 mandate、IPTs 未发布；南澳输电垄断（70% regulated + 21% take-or-pay 通胀挂钩）；DB 认为应与 AUSGF/ANVAU 等其他 BBB/BBB+ regulated utilities 一致，7Y fair value ASW+125-127bp（ANVAU 2033s +121、2034s +131 插值）；比 AGLAU 5.345 2032 (+129)、MERINZ 6.214 2033 (+129) 收紧（他们有 generation/retail 电力价格波动敞口）；因公司债供给多、或需 small new issue concession，定价约 ASW+130bp。FY26：regulated asset base AUD5.5bn、revenue AUD631m、EBITDA AUD446m；FFO/debt 从 6.6%（FY24）→ 9.9%（FY26）。</div>
+        <div class="ev"><i>原文证据</i> "ElectraNet (Baa2/NR/NR) AUD 7Y mandate announced, IPTs not released; SA transmission monopoly (70% regulated + 21% take-or-pay inflation-linked); DB fair value ASW+125-127bps vs ANVAU 2033s +121/2034s +131; tighter than AGLAU 2032 (+129), MERINZ 2033 (+129); likely price ~ASW+130bps with small new issue concession"<span class="srcf">来源：DB Aussie Credit Desk Commentary · 2026-08-31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">PNHAU FY26<span class="bond">Pacific National</span><span class="istag">信用改善</span></td>
+        <td class="lv">净杠杆 5.9x（Dec-25）→ 5.5x（Jun-26）<span class="tl">净债务 -AUD126m 至 AUD3.2bn</span></td>
+        <td class="fl">FCF 强 AUD127m（working capital release、capex 减少、资产出售）</td>
+        <td class="rv">调整后 FFO/debt ~15%（符合 S&P BBB- 评级区间）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> H2 revenue 持平 AUD1.1bn、EBITDA -7.1% 至 AUD276m；<span class="neu">Risk:</span> 盈利略弱</td>
+        <td class="bk"><span class="ch bull">BULL</span> 改善｜DB<span class="tl">提示：流动性 AUD985m vs FY27 到期 AUD350m</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>Pacific National H2FY26 信用改善（盈利略弱）：H2 revenue 持平 AUD1.1bn、EBITDA -7.1% 到 AUD276m；FCF 强 AUD127m（working capital release、capex 减少、资产出售）；净债务 -AUD126m 到 AUD3.2bn；净杠杆 5.9x（Dec-25）→ 5.5x（Jun-26）；流动性 AUD985m vs FY27 到期 AUD350m；调整后 FFO/debt ~15%（符合 S&P BBB- 评级区间），有助于稳定评级。</div>
+        <div class="ev"><i>原文证据</i> "Pacific National H2FY26 credit improving: H2 revenue flat AUD1.1bn, EBITDA -7.1% to AUD276m; FCF strong AUD127m; net debt -AUD126m to AUD3.2bn; net leverage 5.9x (Dec-25) to 5.5x (Jun-26); adj FFO/debt ~15% consistent with S&P BBB-, supports rating stabilisation"<span class="srcf">来源：DB Aussie Credit Desk Commentary · 2026-08-31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">AUD 二级/供给<span class="bond">AMZN · TELEFO · ENGIFP</span><span class="istag">firmer</span></td>
+        <td class="lv">spreads 持平到略收紧<span class="tl">AUD firmer session</span></td>
+        <td class="fl">higher AUD yields 带买家：onshore ETF 买、offshore AMs/PBs；month-end 延展至新长端债</td>
+        <td class="rv">AMZN A$ deal 即将到来（AFR 文章：when and where 的问题）；TELEFO/CDCAUS/SSELNs/CGJAU/ENGIFP 买入</td>
+        <td class="cr"><span class="neu">Catalyst:</span> AMZN A$ 供给预期；<span class="neu">Risk:</span> bank seniors 短端 better offered</td>
+        <td class="bk"><span class="ch bull">BULL</span> 买盘｜HSBC·Barclays<span class="tl">提示：ABS Liberty/Metro 发、Illawarra/Mortgage House IOIs</span></td>
+        <td class="ak"><span class="act">LONG</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>HSBC：AUD firmer session，higher AUD yields 带买家（onshore ETF 买、offshore AMs/PBs）；bank seniors 短端 better offered；spreads 持平到略收紧；ABS：Liberty、Metro 发；Illawarra、Mortgage House IOIs。Barclays：month-end 见 decent extensions into new longer-dated bonds；TELEFO、CDCAUS、SSELNs、CGJAU、ENGIFP 买入；AFR 文章提到即将到来的 AMZN A$ deal（when and where 的问题）。</div>
+        <div class="ev"><i>原文证据</i> "AUD firmer session, higher AUD yields brought buyers (onshore ETFs, offshore AMs/PBs); month-end saw decent extensions into new longer-dated bonds; buying in TELEFO/CDCAUS/SSELNs/CGJAU/ENGIFP; AFR article on soon-to-come AMZN A$ deal; ABS: Liberty, Metro pricing; Illawarra, Mortgage House IOIs"<span class="srcf">来源：HSBC Asia Credit EOD 31 Aug · Barclays Asian Credit EOD 31 Aug</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 事件驱动/特殊情形 ============ -->
+<section>
+  <div class="sec-head"><h2>事件驱动/特殊情形</h2><span class="n">2 行</span><span class="src">MS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">ECB 警示 hyperscalers<span class="bond">欧元区企业债市场</span><span class="istag">监管关注</span></td>
+        <td class="lv">hyperscalers 占非金融新发行近 10%<span class="tl">ECB 监控</span></td>
+        <td class="fl">US 科技巨头重塑欧元区企业债市场</td>
+        <td class="rv">Alphabet/Amazon 等科技巨头成为核心发行人</td>
+        <td class="cr"><span class="neu">Catalyst:</span> ECB Rahmouni-Rousseau 警告市场结构改变；<span class="neu">Risk:</span> 单一发行人集中度上升</td>
+        <td class="bk"><span class="ch mix">MIX</span> 结构性变化｜MS<span class="tl">提示：近 10% 非金融新发行</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>ECB Rahmouni-Rousseau 警告 US 科技巨头重塑欧元区企业债市场：hyperscalers 占非金融新发行近 10%，ECB 正在监控该结构性变化。</div>
+        <div class="ev"><i>原文证据</i> "ECB's Rahmouni-Rousseau warned US tech giants are reshaping the euro area corporate bond market, hyperscalers now nearly 10% of non-financial issuance, ECB monitoring"<span class="srcf">来源：MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">BoE Bailey AI 警告<span class="bond">金融系统风险</span><span class="istag">央行发声</span></td>
+        <td class="lv">—<span class="tl">frontier AI 泡沫破裂风险</span></td>
+        <td class="fl">—</td>
+        <td class="rv">AI 作为资产价格的系统性风险</td>
+        <td class="cr"><span class="neu">Catalyst:</span> Bailey 警告 frontier AI 是金融系统最紧迫担忧；<span class="neu">Risk:</span> AI 泡沫破裂传导至信贷</td>
+        <td class="bk"><span class="ch mix">MIX</span> 尾部风险｜MS<span class="tl">提示：央行连续发声</span></td>
+        <td class="ak"><span class="act">WATCH</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">提示</span>BoE 行长 Bailey 警告 frontier AI 是金融系统最紧迫的担忧（AI 泡沫破裂风险）；与 ECB 的 hyperscaler 警示同周出现，监管对科技集中度的关注上升。</div>
+        <div class="ev"><i>原文证据</i> "BoE's Bailey warned frontier AI is the most pressing concern for the financial system (AI bubble burst risk)"<span class="srcf">来源：MS Global Macro Commentary Aug 31</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+</div>
+
 <script>
 function tg(r){
   var d=r.nextElementSibling;
   if(d&&d.classList.contains('det')){d.classList.toggle('open');r.classList.toggle('open');}
 }
-var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
+var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
 function showDay(d){
   var days=document.querySelectorAll('.day');
   for(var i=0;i<days.length;i++){days[i].classList.toggle('active', days[i].id==='day-'+d);}

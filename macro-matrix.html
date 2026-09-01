@@ -2104,10 +2104,10 @@ REPORT_DATA["2026-08-27"] = {
 
 REPORT_DATA["2026-08-31"] = {
   dateCN: "2026年8月31日 星期一",
-  theme: "Warsh 首次 Jackson Hole 讲话偏鹰（通胀 <b>concerning</b>）→ 政策路径重定价：UST 2y <b>+11.1bp</b> 至 4.34%、2s10s -6.9bp 至 <b>37bp</b>、12月 FOMC 加息定价 <b>+36bps</b>（周初仅 +11bps）、9月 +15bps、周五 NFP 关键（Citi）；美国 9月 IG 供给 <b>$230bn</b>（5年均值 $165bn、接近纪录 $235bn）、9/8 起六天供给狂潮、8月走阔已在定价供给（GS+Citi）；亚洲信用分化：印尼/菲律宾主权收窄 <b>3-6bp</b>、MINCAP <b>-10bp</b>、PTTGC 展望上调至正面后 31s/32s 收窄 <b>8-12bp</b>、印度金融一级繁忙（ICICI/IDFCBK/UNBKIN 共 <b>$1.95bn</b>）vs 阿里 HK$80bn 增发冲击中国 TMT（BABA 37s/41s <b>+14bp</b>）；欧洲金融 AT1 承压（法国政治不稳定、一级需 5-10bp concession）；PKSTAN 获 Moody's 上调至 B3 曲线 <b>+0.5-1pt</b>；Bessent 周一记者会经济惩罚伊朗贸易国 → 黄金 -3.43%、Brent -0.98%",
-  meta: "覆盖券商：GS 1封（Global Credit Market Recap）+ Citi 2封（IG Credit Daily Sector Commentary + While You Were Sleeping）· 共3封邮件 · 2家券商",
+  theme: "Warsh 首次 Jackson Hole 讲话偏鹰（通胀 <b>concerning</b>）→ 政策路径重定价：UST 2y <b>+11.1bp</b> 至 4.34%、2s10s -6.9bp 至 <b>37bp</b>、12月 FOMC 加息定价 <b>+36bps</b>（周初仅 +11bps）、9月 +15bps、周五 NFP 关键；<b>Barclays 改变 FOMC 预测：9月+12月各加息 25bp</b>（唯一明确双加息机构，GS 仍按兵不动）；美国 9月 IG 供给 <b>$230bn</b>（5年均值 $165bn、接近纪录 $235bn）、9/8 起六天供给狂潮、8月走阔已在定价供给（GS+Citi）；欧洲 9月 EGB gross 供给 <b>EUR134bn</b>（m/m +43bn）；亚洲信用分化：印尼/菲律宾主权收窄 <b>3-6bp</b>、MINCAP <b>-10bp</b>、PTTGC 展望上调至正面后 31s/32s 收窄 <b>8-12bp</b>、印度金融一级繁忙（ICICI/IDFCBK/UNBKIN 共 <b>$1.95bn</b>）vs 阿里 HK$80bn 增发冲击中国 TMT（BABA 37s/41s <b>+14bp</b>）；中国地产（Barclays）：万科 UW（12月关键测试）、Seazen MW、Shui On OW；欧洲金融 AT1 承压（法国政治不稳定、一级需 5-10bp concession）；PKSTAN 获 Moody's 上调至 B3 曲线 <b>+0.5-1pt</b>；Bessent 周一记者会经济惩罚伊朗贸易国 → 黄金 -3.43%、Brent -0.98%；美元溢价仍高企、情绪转负（Barclays）",
+  meta: "覆盖券商：GS 2封（Asia Macro + Global Credit Market Recap）+ Citi 2封（IG Credit Daily Sector Commentary + While You Were Sleeping）+ Barclays 3封（Macro Research Daily Summary + Credit & Securitized Research Daily Summary + Daily Digest）· 共7封邮件 · 3家券商",
   brokers: [
-    {n:"Citi",c:"b-citi"},{n:"GS",c:"b-gs"}
+    {n:"Citi",c:"b-citi"},{n:"GS",c:"b-gs"},{n:"Barclays",c:"b-barclays"}
   ],
   markets: [
     {
@@ -2129,7 +2129,29 @@ REPORT_DATA["2026-08-31"] = {
           ["fact","周内 2s30s flatten<br>7.5-10bps（周五最大）"],
           ["fact","GS base case：核心<br>CPI/PCE ~0.2%<br>FOMC 维持不动"],
           ["fact","供给 + 政策路径<br>双压制前端<br>长端相对受益"],
-          ["fact","穿越 9月供给后<br>市场有望 grind tighter"]]
+          ["fact","穿越 9月供给后<br>市场有望 grind tighter"]],
+        ["Barclays",
+          ["fact","12月加息定价 <b>+36bps</b><br>9月加息概率 WIRP<br>14.6bps（仍显著）"],
+          ["short","<span class='bear'>政策利率重定价后<br>前端 pay 方向明确</span>"],
+          ["fact","Jackson Hole rerouting<br>前端主导的变陡延续"],
+          ["fact","<span class='bear'>改变 FOMC 预测：<br>9月+12月各加息 25bp</span><br>（此前按兵不动）"],
+          ["fact","Warsh：若通胀未以<br>'清晰且足够快的速度'<br>向 2% 靠拢则愿加息"],
+          ["short","<span class='bear'>pay 前端 / SOFR</span><br>9/4 NFP 为判定点"]]
+      ]
+    },
+    {
+      id:"japan-rates", pri:true, title:"日本利率",
+      summary:"Barclays：Himino 讲话未主动承诺 9月加息但整体偏鹰、无犹豫；曲线 twist-flattened 反映加息预期上升；东京 CPI core-core 回升至 <b>2.0%</b>（估算租金+智能手机推动）；BoJ call 维持不变；10y JGB auction 收益率偏高（TP 风险 + 供需脆弱），结果可能偏弱至中性；BoJ 加息路径"更快更早"仍是尾部情景",
+      headers:["券商","市场数据/表现","日本国债观点","曲线观点","央行观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","15%","18%","18%"],
+      rows:[
+        ["Barclays",
+          ["fact","东京 CPI core-core<br><b>2.0%</b>（估算租金+手机）<br>10y JGB auction<br>收益率偏高"],
+          ["neu","<span class='bull'>10y JGB 长端韧性<br>40y 承压</span><br>bear steepening"],
+          ["fact","曲线 twist-flattened<br>加息预期上升<br>20s30s 变陡"],
+          ["fact","Himino 偏鹰但未<br>主动承诺 9月加息<br>BoJ call 维持不变"],
+          ["fact","供给月度放量<br>+ 财政头条风险<br>（TP）压制 JGB"],
+          ["neu","10y auction 后<br>关注长端吸纳<br>避免追多 40y"]]
       ]
     },
     {
@@ -2181,7 +2203,14 @@ REPORT_DATA["2026-08-31"] = {
           ["fact","BTSDF 获 S&P 上调<br>至 BB+（自 BB）<br>但债券基本持平"],
           ["fact","印度 NBFC 需求好<br>（MUTHIN +12.5/37.5c）<br>主权升级催化 HY 偏好"],
           ["long","<span class='bull'>主权升级 + 印度 NBFC<br>精选做多</span><br>地产仍偏弱"],
-          ["long","<span class='bull'>PKSTAN / 印度 NBFC</span><br>回避 LNGFOR 等地产"]]
+          ["long","<span class='bull'>PKSTAN / 印度 NBFC</span><br>回避 LNGFOR 等地产"]],
+        ["Barclays",
+          ["fact","中国地产财报后<br>走低 0.25-0.625pt<br>（LNGFOR 27s 最差）"],
+          ["fact","万科 UW：现金消耗仅靠<br>利息递延+高回款率缓解<br>而非基本面反转"],
+          ["fact","Seazen MW：REITs 成<br>关键融资渠道<br>但短期债务或被低估"],
+          ["fact","Shui On OW：契约修订<br>采用 adjusted consolidated<br>EBITDA 缓解杠杆担忧"],
+          ["short","<span class='bear'>板块缺增量买盘<br>规避或仅 OW 品种</span>"],
+          ["fact","万科 12月关键测试<br>（2只展期境内债<br>+2只离岸贷款到期）"]]
       ]
     },
     {
@@ -2211,7 +2240,14 @@ REPORT_DATA["2026-08-31"] = {
           ["fact","黄金 -3.43% 至 $4,455<br>（Warsh 鹰派）<br>Brent -0.98% 至 $88.10<br>WTI +0.68% 至 $83.40"],
           ["fact","澳洲债 bear flatten<br>（3y -3bp / 10y -2bp）<br>MNI Chicago PMI 47.1<br>vs 预期 57.9"],
           ["fact","美元偏强 + 利率重定价<br>贵金属承压<br>油价受地缘支撑"],
-          ["fact","关注 Bessent 伊朗<br>制裁声明细节<br>+ 德国/欧元区 CPI"]]
+          ["fact","关注 Bessent 伊朗<br>制裁声明细节<br>+ 德国/欧元区 CPI"]],
+        ["Barclays",
+          ["fact","9月 EGB gross <b>EUR134bn</b><br>（m/m +43bn）<br>Gilts gross £16.4bn<br>net -£8.0bn"],
+          ["fact","EGB net 环比 +25bn 至<br><b>EUR54bn</b><br>供给放量 + 法国政治<br>不确定性 → 欧债承压"],
+          ["fact","Gilts net 为负<br>相对有利<br>（9月供给温和）"],
+          ["fact","美元溢价仍高企<br>情绪转负<br>提高美元走弱门槛"],
+          ["neu","<span class='bull'>欧元区久期逢低布局</span><br>英债相对价值现机会"],
+          ["fact","BNM 9/3 加息过于谨慎<br>base case 推迟至<br>11月加息 25bp"]]
       ]
     }
   ],
@@ -2222,8 +2258,8 @@ REPORT_DATA["2026-08-31"] = {
     rows:[
       ["美国利率","政策路径重定价：Warsh 鹰派后短端方向",
         ["long","<span class='bull'>GS</span><br>base case 核心 CPI/PCE<br>~0.2%、FOMC 维持不动<br>9月加息非基准情形"],
-        ["short","<span class='bear'>Citi</span><br>12月加息定价 +36bps<br>9月 +15bps<br>CPI/PCE 比 NFP 更关键"],
-        ["fact","<b>数据决定 9月路径</b><br>GS 承认若 8月 CPI/PPI 偏强则 9月加息可能<br>Citi 强调低 fire/low hire 下通胀数据主导<br><b>结论：</b>pay 前端方向一致，幅度与节奏依赖周五 NFP + 下月 CPI"]],
+        ["short","<span class='bear'>Barclays</span><br>改变预测：<b>9月+12月<br>各加息 25bp</b><br>（Jackson Hole rerouting）<br>Citi：12月 +36bps、9月 +15bps"],
+        ["fact","<b>三券商明显分歧</b><br>Barclays 是唯一明确双加息机构（Warsh'若通胀未以清晰且足够快的速度向 2% 靠拢则愿加息'超预期）；GS 坚持 8月 core CPI/PCE ~0.2% 下按兵不动；Citi 居中<br><b>结论：</b>pay 前端方向一致，9/4 NFP + 8月 CPI 是判定点，若 NFP 偏强则验证 Barclays 双加息路径"]],
       ["美国IG","9月供给高峰：$230bn 的定价逻辑",
         ["long","<span class='bull'>GS</span><br>穿越 9月后 grind tighter<br>配置盘（15y+ 1.8:1）回归<br>BBB 一月收窄 7bp"],
         ["short","<span class='bear'>Citi</span><br>利率波动上行挤压<br>pref/hyb 空间<br>中低质量分层承压"],
@@ -2235,12 +2271,16 @@ REPORT_DATA["2026-08-31"] = {
       ["欧洲金融","法国 AT1 承压：政治 vs 供给",
         ["long","<span class='bull'>GS</span><br>亚洲购买持续<br>（$400mm/周、+0.125pt<br>WoW generic）<br>AARB/TPEIR 表现佳"],
         ["short","<span class='bear'>GS</span><br>法国政治不稳定<br>AT1 现金大幅跑输<br>一级需 5-10bp concession"],
-        ["fact","<b>同一券商：法国 beta 最差</b><br>US/外围银行相对温和（+2/+3bp）<br>新 BNP 7.25% 支撑位失守<br><b>结论：</b>规避法国 AT1，精选 AARB/TPEIR 等 deals"]]
+        ["fact","<b>同一券商：法国 beta 最差</b><br>US/外围银行相对温和（+2/+3bp）<br>新 BNP 7.25% 支撑位失守<br><b>结论：</b>规避法国 AT1，精选 AARB/TPEIR 等 deals"]],
+      ["中国地产","万科 vs Seazen vs Shui On 分化",
+        ["long","<span class='bull'>Barclays</span><br>Shui On OW<br>契约修订采用 adjusted<br>consolidated EBITDA<br>缓解杠杆担忧"],
+        ["short","<span class='bear'>Barclays</span><br>万科 UW：现金消耗仅靠<br>利息递延+高回款率缓解<br>12月关键测试临近<br>Seazen MW：短期债务<br>或被低估"],
+        ["fact","<b>同一券商内部分层</b><br>万科流动性支持只买时间、基本面未反转（12月两只展期境内债+两只离岸贷款到期）；Seazen 依赖 REITs 融资；Shui On 因契约修订受益<br><b>结论：</b>板块缺增量买盘，仅持有 OW 品种"]]
     ]
   },
   footer: {
-    window:"2026-08-28 收盘 ~ 2026-08-31（Citi IG Credit Daily Sector Commentary 8.28 转发 + GS Global Credit Market Recap 8.31 + Citi While You Were Sleeping 8.31）",
-    emailCount:"Citi 2 / GS 1（共3封邮件 · 2家券商）",
+    window:"2026-08-28 收盘 ~ 2026-08-31（Citi IG Credit Daily 8.28 转发 + GS Global Credit Market Recap 8.31 + Citi While You Were Sleeping 8.31 + GS Asia Macro 8.31 + Barclays Macro/Credit/Digest 8.31）",
+    emailCount:"GS 2 / Citi 2 / Barclays 3（共7封邮件 · 3家券商）",
     omitted:"中国利率、澳洲利率、美国HY、中国信用债、澳门博彩、SSA 已在「无覆盖市场」汇总"
   }
 };
