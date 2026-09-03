@@ -2462,6 +2462,204 @@ REPORT_DATA["2026-09-01"] = {
 // ==================== 新增日期在这里复制上面的日期块 ====================
 // REPORT_DATA["YYYY-MM-DD"] = { ... };
 
+REPORT_DATA["2026-09-02"] = {
+  dateCN: "2026年9月2日 星期三",
+  theme: "美伊冲突升级+红海油轮遇袭 → Brent <b>+5.1% 至 $95.14</b>、WTI +5.2%；美债 bear-flattened：2y <b>+5.8bp</b>、10y <b>+4bp 至 4.79%</b>、30y +2bp 至 5.26%，9月加息概率 <b>64.3%</b>、10月 89.3%；JOLTS <b>7.271mn 低于共识</b>、ISM 54.6 强劲；TIPS breakevens 走阔（5s +5bp/10s +4bp）定价通胀上行；JGB 10y 盘中触 <b>3.0%</b>（30年高）收 2.99%、40y +7bp，BoJ 9月加息概率 &gt;90%；欧元区 8月 HICP <b>3.3%</b>（核心 2.4%、服务 3.0%）德债 bear-flatten；<b>JPM：JULI 91bp</b>（8月 -2bp）、8月 IG 发行 <b>$163bn 创纪录</b>、净发行 $91bn、CDX.IG 50bp，无银行系统性担忧；亚洲信用：开盘 TMT 领涨（BABA/TENCENT -2bp）伦敦开后回吐，ICICI 新发 <b>$500mm 3Y CT2+100</b>，KDB/NORBK/SMBC 今晚定价；GS：KRW 由 H1 最差转 YTD 最佳、看多 CNY/TWD/SGD/MYR、谨慎 IDR/PHP/INR",
+  meta: "覆盖券商：Jefferies 3封（US Treasury/Mkt Recap + Asia HY EOD + Japan/Aus IG EOD）+ Morgan Stanley 1封（Global Macro Commentary）+ BMO 1封（TIPS EOD）+ JPMorgan 4封（Daily Credit Strategy + DFMM + Asia Monthly Wrap + India Equity）+ Barclays 3封（Credit + Macro + Daily Digest）+ TD Securities 2封（AUD Credit + Asia EOD）+ Goldman Sachs 2封（Top of Mind + Global Markets Daily）+ BofA 1封（Daily Insights）· 共17封邮件 · 8家券商",
+  brokers: [
+    {n:"TD",c:"b-td"},{n:"MS",c:"b-ms"},{n:"BMO",c:"b-bmo"},{n:"JPM",c:"b-jpm"},{n:"JEF",c:"b-jef"},{n:"Barclays",c:"b-barclays"},{n:"GS",c:"b-gs"},{n:"BofA",c:"b-bofa"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"美伊冲突+红海油轮遇袭 → Brent <b>+5.1% 至 $95.14</b>、WTI +5.2%；美债 bear-flattened：2y <b>+5.8bp</b>、5y +5bp 至 4.55%、10y <b>+4bp 至 4.79%</b>、30y +2bp 至 5.26%；9月加息概率 <b>64.3%</b>（10月 89.3%、12月 88.0%）；JOLTS 7.271mn 低于共识、ISM 54.6；TIPS breakevens 走阔（5s +5bp/10s +4bp）",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["JEF",
+          ["fact","bear-flattened<br>2y <b>+5.8bp</b><br>5y +5bp 至 4.55%<br>10y <b>+4bp 至 4.79%</b>"],
+          ["short","<span class='bear'>加息概率高位<br>+ 地缘供给溢价<br>久期承压</span>"],
+          ["fact","2s30s 走平<br>（bear-flattening）<br>前端加息重定价"],
+          ["fact","9月加息概率 <b>64.3%</b><br>10月 89.3%<br>12月 88.0%"],
+          ["fact","JOLTS 7.271mn<br>低于共识 7.4mn<br>ISM 54.6 强劲"],
+          ["short","<span class='bear'>控制久期</span><br>数据+地缘共振<br>关注周五 NFP"]],
+        ["MS",
+          ["fact","10y UST <b>+4bp 至 4.79%</b><br>30y +2bp 至 5.26%<br>Brent <b>+5.1% 至 $95.14</b>"],
+          ["short","<span class='bear'>油价+地缘<br>推高长端<br>久期偏防御</span>"],
+          ["fact","bear-flattened<br>前端上行更多<br>长端相对有支撑"],
+          ["fact","9月 64.3% / 10月 89.3%<br>12月 88.0%<br>加息路径陡峭"],
+          ["fact","美伊冲突<br>红海油轮遇袭<br>→ 油价大涨"],
+          ["short","<span class='bear'>持有短久期</span><br>等待 NFP<br>再定位"]],
+        ["BMO",
+          ["fact","TIPS breakevens 走阔<br>5s <b>+5bp</b> / 10s +4bp<br>实际收益率稳定"],
+          ["neu","breakeven 定价<br>通胀上行风险<br>（地缘+油价）"],
+          ["fact","breakeven 曲线走陡<br>中期通胀预期<br>上行"],
+          ["fact","加息概率 64.3%<br>TIPS 隐含<br>路径偏鹰"],
+          ["fact","油价冲击<br>传导至通胀预期<br>breakevens 走阔"],
+          ["neu","10s breakeven<br>区间操作<br>避免单边追势"]]
+      ]
+    },
+    {
+      id:"us-ig", pri:true, title:"美国IG信用债",
+      summary:"JPM：JULI <b>91bp</b>（8月 -2bp）、CDX.IG 50bp；FAB 指数 -4bp 至 57bp、Forward FAB -20bp；8月发行 <b>$163bn 创纪录</b>、净发行 $91bn；无银行系统性担忧、长期信用需求健康；9月展望：劳动节后发行窗口重启、评级机构行动与 10月选举前供给",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["JPM",
+          ["fact","JULI <b>91bp</b>（8月 -2bp）<br>CDX.IG 50bp<br>FAB 指数 57bp（-4bp）<br>Forward FAB -20bp"],
+          ["fact","无银行系统性担忧<br>长期信用需求<br>健康"],
+          ["fact","8月发行 $163bn<br>创纪录<br>净发行 $91bn"],
+          ["fact","劳动节后<br>发行窗口重启<br>9月供给预期温和"],
+          ["long","<span class='bull'>利差有支撑<br>FAB 压缩显示<br>技术面健康</span>"],
+          ["long","<span class='bull'>持有 IG<br>新发参与</span><br>关注评级行动"]]
+      ]
+    },
+    {
+      id:"asia-ig", pri:true, title:"亚洲IG信用债",
+      summary:"TD：开盘 TMT 领涨（BABA/TENCENT -2bp、MEITUAN -1~5bp）伦敦开市后回吐；台湾寿险 +3bp；ICICI 新发 <b>$500mm 3Y CT2+100</b>；KDB/NORBK/SMBC 今晚定价；Barclays：亚洲 IG 利差基本稳定、局部走宽 1-2bp，新发吸收正常",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["TD",
+          ["fact","TMT 开盘领涨<br>BABA/TENCENT -2bp<br>MEITUAN -1~5bp<br>伦敦开后回吐"],
+          ["fact","台湾寿险 +3bp<br>长端卖压<br>短端买盘稳定"],
+          ["fact","ICICI 新发 <b>$500mm</b><br>3Y CT2+100<br>KDB/NORBK/SMBC<br>今晚定价"],
+          ["fact","新发重启<br>带动情绪<br>获利了结盘出现"],
+          ["long","<span class='bull'>新发供给消化<br>利差短期有支撑</span>"],
+          ["long","<span class='bull'>参与 ICICI 新发<br>短端 IG 持有</span><br>规避台湾寿险长端"]],
+        ["Barclays",
+          ["fact","亚洲 IG 利差<br>基本稳定<br>局部走宽 1-2bp"],
+          ["fact","中国 TMT 需求回暖<br>（8月落后板块<br>修复）"],
+          ["fact","新发供给温和<br>月末后<br>吸收正常"],
+          ["fact","伦敦时段<br>获利了结<br>回吐早盘收窄"],
+          ["neu","市场等待<br>美债方向<br>利差区间交易"],
+          ["neu","短端 IG 防御<br>新发逢低参与"]]
+      ]
+    },
+    {
+      id:"asia-hy", pri:false, title:"亚洲HY信用债",
+      summary:"JEF：HY 板块分化——NBFCs 获买盘（-0.125~0.375pt 收窄）、VEDLN 遭卖出（-0.25~0.375pt）、SOFTBK 长端 -0.25pt；整体流动性清淡、方向跟随美债利率",
+      headers:["券商","市场数据/表现","基本面观点","估值观点","流动性/再融资","政策影响","整体观点","偏好/风险"],
+      cols:["88px","18%","15%","15%","14%","14%","15%","15%"],
+      rows:[
+        ["JEF",
+          ["fact","NBFCs -0.125~0.375pt<br>VEDLN -0.25~0.375pt<br>SOFTBK 长端 -0.25pt"],
+          ["fact","印度 NBFC<br>基本面稳定<br>需求健康"],
+          ["fact","VEDLN 估值偏高<br>回调合理<br>NBFC 估值有支撑"],
+          ["fact","板块流动性清淡<br>新发主导注意力"],
+          ["neu","政策面无新增<br>影响中性"],
+          ["neu","板块分化<br>精选个券"],
+          ["long","<span class='bull'>NBFCs</span><br>回避 SOFTBK 长端<br>VEDLN 观望"]]
+      ]
+    },
+    {
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      summary:"欧元区 8月 HICP <b>3.3%</b>（核心 2.4%、服务 3.0%）；德债 bear-flatten（2s30s -2bp）；OAT/Bund +1.1bp；欧洲利率跟随美债上行、ECB 政策路径为焦点",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["Barclays",
+          ["fact","8月 HICP <b>3.3%</b><br>核心 2.4%<br>服务 3.0%"],
+          ["fact","德债 bear-flatten<br>跟随美债<br>长端承压"],
+          ["fact","2s30s -2bp<br>短端上行更多<br>曲线走平"],
+          ["fact","ECB 维持观望<br>通胀仍高于目标<br>政策按兵不动"],
+          ["fact","HICP 3.3%<br>服务通胀粘性<br>压制降息预期"],
+          ["neu","区间交易<br>等待 ECB 指引<br>规避长端"]],
+        ["MS",
+          ["fact","OAT/Bund +1.1bp<br>德债跟随美债<br>温和上行"],
+          ["fact","欧元区通胀<br>仍高于目标<br>德债承压"],
+          ["fact","短端上行<br>bear-flatten<br>跟随全球"],
+          ["neu","ECB 观望<br>无新增信号"],
+          ["fact","全球收益率<br>重定价传导<br>欧债温和跟跌"],
+          ["neu","短端防御<br>长端等待"]]
+      ]
+    },
+    {
+      id:"japan-rates", pri:false, title:"日本利率",
+      summary:"JGB 10y 盘中触及 <b>3.0%</b>（30年新高）收 2.99%；40y <b>+7bp</b>；BoJ 9月加息概率 <b>&gt;90%</b>；JGB 走熊背景下 Japan IG 受挤压、Aus IG 相对价值优于海外国债",
+      headers:["券商","市场数据/表现","日本国债观点","曲线观点","央行观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","15%","18%","18%"],
+      rows:[
+        ["JEF",
+          ["fact","10y JGB 盘中 <b>3.0%</b><br>（30年高）收 2.99%<br>40y +7bp"],
+          ["short","<span class='bear'>加息预期<br>长端走熊<br>久期承压</span>"],
+          ["fact","超长端上行<br>曲线熊陡<br>40y 领涨"],
+          ["fact","BoJ 9月加息<br>概率 <b>&gt;90%</b><br>12月亦定价"],
+          ["fact","JGB 走熊<br>Japan IG 受挤压<br>Aus IG 相对更优"],
+          ["short","<span class='bear'>减配 Japan IG</span><br>长端 JGB 回避<br>偏好 Aus IG"]],
+        ["MS",
+          ["fact","10y JGB 收 2.99%<br>（盘中触 3.0%）<br>40y +7bp"],
+          ["short","<span class='bear'>加息预期<br>日债走熊<br>久期防御</span>"],
+          ["fact","超长端<br>上行加速<br>曲线熊陡"],
+          ["fact","BoJ 9月加息 &gt;90%<br>10月/12月<br>亦已定价"],
+          ["fact","全球利率上行<br>+ 国内加息<br>共振推高 JGB"],
+          ["neu","超长端逢高<br>降低久期<br>关注 BoJ 表态"]]
+      ]
+    },
+    {
+      id:"global-fx", pri:false, title:"全球债券/FX",
+      summary:"DXY +0.1% 至 99.68；INR 跑赢（RBI 干预传闻）；KRW 由 H1 最差转 YTD 最佳；GS：看多 CNY/TWD/SGD/MYR、谨慎 IDR/PHP/INR；8月回顾：MSCI AP +3.3%、Materials +9.9% 最佳、金 +9.7%、铜创纪录；印度 Nifty 50 24,080",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["GS",
+          ["fact","DXY +0.1% 至 99.68<br>KRW 由 H1 最差<br>转 YTD 最佳<br>INR 跑赢（RBI 干预）"],
+          ["fact","MSCI AP 8月 +3.3%<br>Materials +9.9%<br>金 +9.7% 铜创纪录"],
+          ["fact","KRW 表现反转<br>资金回流<br>亚洲货币分化"],
+          ["fact","看多 CNY/TWD/SGD/MYR<br>谨慎 IDR/PHP/INR"],
+          ["long","<span class='bull'>亚洲货币相对美元<br>北亚优于南亚</span>"],
+          ["long","<span class='bull'>看多 CNY/TWD<br>SGD/MYR</span><br>回避 IDR/PHP/INR"]],
+        ["MS",
+          ["fact","DXY 99.68（+0.1%）<br>油价 +5%<br>地缘避险分化"],
+          ["fact","印度 1QFY27 GDP +7.8%<br>BoI 第三次降息至 3.25%<br>Nifty 50 24,080"],
+          ["fact","巴西 2Q GDP +0.5% q/q<br>韩国出口 +68.7%<br>印尼 CPI 3.2% BI 维持"],
+          ["fact","韩国 30y KTB +12bp<br>（2027 预算案<br>净 KTB 降至 KRW96.3tr）"],
+          ["neu","亚洲货币<br>北亚偏强<br>南亚估值分化"],
+          ["neu","看多北亚 FX<br>关注 RBI 干预节奏"]]
+      ]
+    },
+    {
+      id:"aus-credit", pri:false, title:"澳洲信用债（AUD Credit）",
+      summary:"TD：AUD Credit 稳定——HQ financials 双向 flow 活跃（主要银行曲线+Kangaroos）；市场平衡：dealer 缩减表、active money 获利了结、XCCY RV 买盘支撑；corporates 国内基金轮动至新发、零售需求 intact；利差全天基本不变",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","15%","18%","17%","18%","14%"],
+      rows:[
+        ["TD",
+          ["fact","AUD Credit 利差<br>基本不变<br>HQ financials<br>双向 flow 活跃"],
+          ["fact","主要银行曲线<br>+ Kangaroos<br>买卖均衡"],
+          ["fact","XCCY RV 买盘<br>提供支撑<br>估值合理"],
+          ["fact","dealer 缩减表<br>active money 获利<br>国内基金轮动新发"],
+          ["neu","整体 tone 稳定<br>市场平衡<br>无明显方向"],
+          ["neu","零售需求 intact<br>关注新发"]]
+      ]
+    }
+  ],
+  noCoverage:["中国利率","中国信用债","美国HY信用债","澳门博彩信用债","SSA新发"],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["10%","16%","18%","18%","38%"],
+    rows:[
+      ["美国利率","9月加息概率 64.3% 与就业走弱的矛盾",
+        ["long","<span class='bull'>JEF/MS</span><br>9月 64.3%、10月 89.3%<br>ISM 54.6 强劲<br>制造业韧性确认"],
+        ["short","<span class='bear'>BMO</span><br>JOLTS 7.271mn<br>低于共识 7.4mn<br>就业边际走弱<br>breakeven 更偏通胀"],
+        ["fact","<b>数据验证期</b><br>ISM 54.6 支持加息、JOLTS 走弱提示就业降温；市场定价 10月 89.3% 基本打满<br><b>结论：</b>周五 NFP 是判定点，数据前控制久期、等待方向"]],
+      ["亚洲IG","TMT 开盘领涨 vs 伦敦时段回吐",
+        ["long","<span class='bull'>TD</span><br>新发重启（ICICI<br>CT2+100）<br>TMT 需求回暖<br>短端买盘稳定"],
+        ["short","<span class='bear'>Barclays</span><br>伦敦时段<br>获利了结<br>回吐早盘收窄<br>台湾寿险长端卖压"],
+        ["fact","<b>情绪回暖 vs 获利了结</b><br>开盘乐观情绪来自新发与 TMT 修复；伦敦开市后流动性与获利了结主导<br><b>结论：</b>短端 IG 占优、新发逢低参与，规避台湾寿险长端"]],
+      ["日本","JGB 10y 触 3.0% 后的利率与信用分化",
+        ["long","<span class='bull'>JEF/MS</span><br>BoJ 9月加息 &gt;90%<br>40y +7bp<br>超长端熊陡延续"],
+        ["short","<span class='bear'>JEF</span><br>JGB 走熊<br>挤压 Japan IG<br>信用端承压"],
+        ["fact","<b>利率熊、信用分化</b><br>超长端 JGB 在加息预期下领涨（收益率上行）；Japan IG 受利率挤压、Aus IG 相对价值更优<br><b>结论：</b>回避日本超长端与 Japan IG，偏好 Aus IG 信用"]]
+    ]
+  },
+  footer: {
+    window:"2026-09-01 收盘 ~ 2026-09-02（TD AUD Credit 9.2 + MS Global Macro Commentary 9.1 + BMO TIPS EOD 9.1 + JPM Daily Credit Strategy 9.2 + JEF US Treasury/Mkt Recap 9.2 + JEF Asia HY EOD 9.2 + JEF Japan/Aus IG EOD 9.2 + TD Asia EOD 9.2 + Barclays Credit 9.2 + Barclays Macro 9.2 + Barclays Daily Digest 9.2 + JPM DFMM 9.2 + GS Top of Mind 9.2 + BofA Daily Insights 9.2 + JPM Asia Monthly Wrap 9.2 + JPM India Equity 9.2 + GS Global Markets Daily 9.2）",
+    emailCount:"JPM 4 / JEF 3 / Barclays 3 / TD 2 / GS 2 / MS 1 / BMO 1 / BofA 1（共17封邮件 · 8家券商）",
+    omitted:"中国利率、中国信用债、美国HY、澳门博彩、SSA 已在「无覆盖市场」汇总"
+  }
+};
+
 
 // ==================================================================
 // 渲染引擎
