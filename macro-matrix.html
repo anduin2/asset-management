@@ -2861,6 +2861,199 @@ REPORT_DATA["2026-09-03"] = {
   }
 };
 
+REPORT_DATA["2026-09-08"] = {
+  dateCN: "2026年9月8日 星期二",
+  theme: "美伊在霍尔木兹海峡<b>互相攻击船只</b>、油价涨 ~1% → Labor Day 现金关闭下 UST futures/Gilts/Bunds 弱 4-4.5bp（TYZ6 <b>-4.5bp</b>、Gilts -4.5bp、Bunds <b>-4bp</b>），BTP/OAT 跑输 1bp；GS <b>上调 Brent/WTI 至 $85/80</b>（Dec26）、$80/75（2027），中东航运中断<b>延续至 2027</b>、上行 Brent 可超 $120；GS ECB Preview：9月或为本轮最后一次加息但<b>12月加息门槛已降低</b>；德国 AfD 州选<b>大胜施压 Merz</b>；UK 8月 CPI 前瞻 headline 3.1%、泰国 CPI 加速 2.53%，强 NFP 后通胀接力（9/11 美国 CPI）；JGB 开盘弱后<b>bear-steepening</b> 收尾、明日 5yr auction；8月 MBS prepay <b>-13%</b> 符合预期、6.0-6.5s 急剧减速 S-curve 变陡、net issuance $27bn；印度机场 GMRLIN 获 Fitch 上调（OW '27s / MW DIALIN '29s）；AUD credit 无供给支撑偏强、T2 FRNs better buying",
+  meta: "覆盖券商：Goldman Sachs 1封（Global Market Recap - Oil/ECB）+ Barclays 3封（Daily Macro/CPI Preview + Credit & Securitized Daily + Daily Digest）+ BMO 1封（MBS Strategy Aug'26 Prepayment）+ TD Securities 1封（AUD Credit Commentary）· 共6封邮件 · 4家券商",
+  brokers: [
+    {n:"GS",c:"b-gs"},{n:"Barclays",c:"b-barclays"},{n:"BMO",c:"b-bmo"},{n:"TD",c:"b-td"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率",
+      summary:"GS：美伊在霍尔木兹海峡<b>互相攻击船只</b>推升油价 ~1%，Labor Day 现金关闭下 UST futures（TYZ6）收盘<b>弱 ~4.5bp</b>，今日 3y supply、数据清淡；伊朗称与 Oman 海峡协议<b>几天内达成</b>，但 GS 认为停火不可持续、<b>上调 Brent/WTI 至 $85/80</b>（Dec26，+$5）；Barclays：强 NFP 后本周通胀接力，9/11 美国 CPI 为焦点",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","13%","21%","18%"],
+      rows:[
+        ["GS",
+          ["fact","TYZ6 弱 ~4.5bp<br>（Labor Day 现金关闭）<br>油价 +1% 为主因"],
+          ["short","<span class='bear'>油价上行风险<br>是长端主要压力</span>"],
+          ["neu","今日 3y supply<br>数据清淡<br>期货主导定价"],
+          ["fact","强 NFP 后<br>美联储维持观望<br>9/11 CPI 前"],
+          ["fact","美伊船只互攻<br>伊朗-Oman 协议<br>数日内落地传闻"],
+          ["short","<span class='bear'>关注 9/11 美国 CPI</span><br>能源风险下<br>长端保持防御"]],
+        ["Barclays",
+          ["fact","通胀数据接力<br>（强 NFP 后）<br>9/11 美国 CPI 前瞻"],
+          ["neu","CPI 前<br>久期中性<br>等待能源路径"],
+          ["neu","曲线方向<br>由能源/通胀<br>数据主导"],
+          ["fact","美联储<br>依赖数据<br>维持观望"],
+          ["fact","能源价格<br>为最大上行风险<br>核心继续回落"],
+          ["neu","<span class='neu'>CPI 公布前<br>控制久期</span><br>区间交易"]]
+      ]
+    },
+    {
+      id:"eu-rates", pri:false, title:"欧洲利率",
+      summary:"GS ECB Preview：<b>9月更可能是本轮加息终点</b>（H2 增长低于趋势 + 核心压力温和 + 能源价格预测低于远期 + 无 Fed 加息），但<b>12月继续加息的门槛已降低</b>——若能源不回落、通胀更坚定、尤其 Fed 也加息；概率加权仍低于市场定价、skew 向上；德国 AfD 周日州选<b>大胜施压 CDU/Merz</b>，Bunds 弱 <b>4bp</b>、BTP/OAT 跑输 1bp；EU 拟 €200mm 投资格陵兰（北极战略 10/20）",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","16%","19%","18%"],
+      rows:[
+        ["GS",
+          ["fact","Bunds 弱 4bp<br>（油价+政治双重）<br>BTP/OAT 跑输 1bp"],
+          ["neu","9月若落地<br>或为本轮终点<br>不追多前端"],
+          ["fact","购债停止后<br>外围利差<br>走阔风险上升"],
+          ["neu","<span class='neu'>9月最后一次加息？<br>12月门槛已降低<br>概率加权低于市场</span>"],
+          ["fact","AfD 州选大胜<br>组阁难度上升<br>能源预测仍偏高"],
+          ["short","<span class='bear'>外围利差走阔风险</span><br>欧英前端<br>不宜激进做多"]]
+      ]
+    },
+    {
+      id:"uk-rates", pri:false, title:"英国利率",
+      summary:"GS：Gilts <b>回吐周五涨幅弱 ~4.5bp</b>（油价+gas 上涨）；Chancellor Healey 首场演讲强调<b>财政纪律</b>；UK 房价 8月 <b>-0.2% mom / -0.4% yoy</b>（2023-11 以来首次年度下跌）；<b>周二 UK 30yr syndication £4bn</b>（5.375% 2056）+ BoE Bailey/Ramsden/Greene/Taylor 议会证词，周四 DMO <b>£5bn 4.625% 2030</b>；Barclays：UK 8月 CPI 前瞻 headline <b>3.1% y/y</b>（+0.2pp）、core 2.6%、RPI nowcast 421.7（3.4%）——油价为主驱动",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","央行/财政","核心逻辑","交易建议"],
+      cols:["88px","20%","14%","13%","16%","19%","18%"],
+      rows:[
+        ["GS",
+          ["fact","Gilts 弱 ~4.5bp<br>回吐周五涨幅<br>gas/油价上行"],
+          ["short","<span class='bear'>油价推升通胀<br>长端承压</span>"],
+          ["fact","30yr syndication £4bn<br>（5.375% 2056）<br>周四 DMO £5bn"],
+          ["fact","Healey 强调财政纪律<br>8月房价 -0.2% mom<br>（Nov23 来首度年度下跌）"],
+          ["fact","BoE Bailey 等<br>周二议会证词<br>供给+通胀双焦点"],
+          ["neu","<span class='neu'>30yr 新发需观察需求</span><br>供给压力<br>限制长端下行"]],
+        ["Barclays",
+          ["fact","UK 8月 CPI 前瞻<br>headline 3.1% y/y<br>（+0.2pp）"],
+          ["short","<span class='bear'>油价为主驱动<br>RPI nowcast 3.4%</span>"],
+          ["fact","core 持稳 2.6%<br>能源推升 headline<br>基数走低"],
+          ["fact","BoE 数据依赖<br>CPI 或延后降息<br>证词前观望"],
+          ["fact","强 NFP 后<br>通胀接力<br>全球重定价"],
+          ["neu","<span class='neu'>CPI 公布前保持防御</span><br>关注 9/16 英国 CPI"]]
+      ]
+    },
+    {
+      id:"japan-rates", pri:false, title:"日本利率",
+      summary:"GS：JGBs 开盘走弱（海外利率抛售 + 上周期货 rally <b>获利了结</b>），<b>明日 5yr auction</b> 前承压；长端遭短线账户抛售（上周 curve 快速 flatten 后），最终 <b>bear-steepening</b> 收尾",
+      headers:["券商","市场数据/表现","久期观点","核心逻辑","交易建议"],
+      cols:["88px","24%","20%","28%","24%"],
+      rows:[
+        ["GS",
+          ["fact","JGB 开盘走弱<br>明日 5yr auction<br>前承压"],
+          ["short","<span class='bear'>长端遭短线账户抛售<br>curve 快速 flatten 后</span>"],
+          ["fact","海外利率抛售<br>+ 上周期货获利了结<br>双重压制"],
+          ["neu","<span class='neu'>关注 5yr auction 需求</span><br>定调短期方向"]]
+      ]
+    },
+    {
+      id:"global-energy", pri:false, title:"油价/地缘（霍尔木兹）",
+      summary:"GS 上调 Brent/WTI 预测 <b>+$5 至 $85/80</b>（Dec26）与 <b>$80/75</b>（2027），反映中东航运中断<b>延续至 2027</b>——风险偏上行：上行情景 Brent 可超 <b>$120</b>（海湾产出低于战前 4mb/d），下行跌入 $60s；美伊在霍尔木兹海峡<b>互相攻击船只</b>，伊朗称与 Oman 协议<b>几天内宣布</b>，但 GS 预计停火不可持续（霍尔木兹/红海袭击为最可能触发）",
+      headers:["券商","市场数据/表现","价格预测/方向","核心逻辑","风险提示","交易建议"],
+      cols:["88px","20%","20%","22%","20%","18%"],
+      rows:[
+        ["GS",
+          ["fact","Brent 涨 ~1%<br>美伊在霍尔木兹<br>互相攻击船只"],
+          ["short","<span class='bear'>Dec26 Brent $85<br>WTI $80（+$5）<br>2027 Brent $80</span>"],
+          ["fact","中断延续至 2027<br>停火不可持续<br>为基准假设"],
+          ["short","<span class='bear'>上行可超 $120<br>（海湾产出<br>低于战前 4mb/d）</span>"],
+          ["long","<span class='bull'>下行跌入 $60s<br>伊朗-Oman 协议<br>传闻曾令油价回落</span>"],
+          ["short","<span class='bear'>能源通胀对冲<br>支撑长端空头</span>"]]
+      ]
+    },
+    {
+      id:"asia-credit", pri:false, title:"亚洲信用/新兴（印度、泰国）",
+      summary:"Barclays：印度机场——GMRLIN CP4 tariff order 好于标题、<b>Fitch 今日上调评级</b>，OW GMRLIN '27s；DIALIN CP4 tariff 不如 GMRLIN 标题正面但仍处<b>正面评级轨道</b>，MW DIALIN '29s；FIBCOP H1 EBITDAaL 持平、维持 FY +10% 指引（BC 更保守 6.6%）；TRIEGY Q2 混合生产、MW；Thailand 8月 CPI 加速至 <b>2.53% y/y</b>（能源推动），BoT 料维持利率至 2026 底；India monsoon 缺口维持 14%",
+      headers:["券商","标的/市场","评级/观点","核心逻辑","技术/资金面","交易建议"],
+      cols:["88px","18%","18%","22%","20%","20%"],
+      rows:[
+        ["Barclays",
+          ["fact","GMRLIN<br>（GMR 机场基础设施）"],
+          ["long","<span class='bull'>OW GMRLIN '27s<br>（Fitch 今日上调评级）</span>"],
+          ["fact","CP4 tariff 好于标题<br>正面评级轨道<br>支撑 outperformance"],
+          ["neu","tariff 尘埃落定<br>债券情绪改善<br>利差收窄"],
+          ["long","<span class='bull'>GMRLIN '27s 为主要表达</span>"]],
+        ["Barclays",
+          ["fact","DIALIN<br>（德里国际机场）"],
+          ["neu","<span class='neu'>MW DIALIN '29s</span>"],
+          ["fact","CP4 tariff 不如<br>GMRLIN 标题正面<br>但仍处正面轨道"],
+          ["neu","评级上行空间<br>相对 GMRLIN<br>更温和"],
+          ["neu","<span class='neu'>MW 参与<br>相对 GMRLIN 谨慎</span>"]],
+        ["Barclays",
+          ["fact","泰国 8月 CPI 2.53%<br>（能源推动）<br>BoT 料维持至 2026"],
+          ["neu","<span class='neu'>CPI 上行暂不改变<br>BoT 宽松路径</span>"],
+          ["fact","India monsoon 缺口<br>维持 14%<br>食品通胀可控"],
+          ["neu","FIBCOP 维持 FY+10%<br>TRIEGY Q2<br>混合生产"],
+          ["neu","<span class='neu'>泰债/印债<br>保持中性久期</span>"]]
+      ]
+    },
+    {
+      id:"aus-credit", pri:false, title:"澳洲信用债（AUD Credit）",
+      summary:"TD：AUD credit 在无 primary issuance 下支撑 <b>firmer tone</b>——corporates 与 T2 FRNs 有 better buying，银行账户在 selected OpCo FRNs 买入，整体偏强但清淡；GS：AUD 债券因油价拖累<b>便宜 1-2bp</b>、曲线 steeper +0.5bp，关注 RBA Hauser TV 采访 + Hunter fireside",
+      headers:["券商","市场数据/表现","观点/方向","核心逻辑","技术/资金面","交易建议"],
+      cols:["88px","22%","18%","22%","20%","18%"],
+      rows:[
+        ["TD",
+          ["fact","AUD credit 偏强<br>但交投清淡"],
+          ["long","<span class='bull'>无 primary supply<br>支撑 firmer tone</span>"],
+          ["fact","corporates 与 T2 FRNs<br>better buying"],
+          ["fact","银行账户买入<br>selected OpCo FRNs"],
+          ["neu","<span class='neu'>参与 T2 FRNs<br>与 selected 银行债</span>"]],
+        ["GS",
+          ["fact","AUD 债券便宜 1-2bp<br>曲线 +0.5bp"],
+          ["neu","油价拖累 AUD<br>但幅度有限<br>利差仍有吸引力"],
+          ["fact","RBA Hauser TV 采访<br>+ Hunter fireside<br>关注指引"],
+          ["neu","利率波动<br>压制久期需求<br>资金面清淡"],
+          ["neu","<span class='neu'>关注 RBA 指引<br>与油价路径</span>"]]
+      ]
+    },
+
+    {
+      id:"us-mbs", pri:false, title:"美国MBS（Prepayment）",
+      summary:"BMO：8月 30yr conventional speeds <b>-13%</b>（符合 -11% 预测）、G2 <b>-16%</b>；<b>6.0-6.5s peak speeds 急剧减速</b>（FN 6.5s ≈ 50 CPR）、S-curve 变陡；8月固定利率 MBS net issuance <b>$27bn</b>（YTD $98bn）+ ARM $3.2bn；conventional delinquency 小幅上升（SA +6bp YoY）；预期 9月 speeds -7~10%；Barclays：8月 Agency speeds 略低于预期，但 6.5s/7s 未显著减速、<b>prepay 韧性犹存</b>",
+      headers:["券商","市场数据/表现","Prepayment观点","估值/利差观点","Technical/供给","整体观点","交易建议"],
+      cols:["88px","20%","16%","16%","18%","14%","16%"],
+      rows:[
+        ["BMO",
+          ["fact","8月 30yr speeds -13%<br>（预测 -11%）<br>G2 -16%"],
+          ["fact","6.0-6.5s 急剧减速<br>FN 6.5s ≈ 50 CPR<br>S-curve 变陡"],
+          ["short","<span class='bear'>prepay 减速延续<br>低票息 6.0s 相对受益</span>"],
+          ["fact","net issuance $27bn<br>（YTD $98bn）<br>ARM $3.2bn"],
+          ["neu","delinquency 小幅上升<br>SA +6bp YoY"],
+          ["neu","<span class='neu'>预期 9月 -7~10%<br>减速但幅度收敛</span>"]],
+        ["Barclays",
+          ["fact","8月 Agency speeds<br>略低于预期<br>S-curve 变陡"],
+          ["long","<span class='bull'>6.5s/7s 未显著减速<br>prepay 韧性犹存</span>"],
+          ["neu","减速结构分化<br>高票息钝化<br>低票息减速"],
+          ["fact","高票息 prepay<br>对利率敏感度<br>下降"],
+          ["neu","9月 MBS 新发<br>与 speeds 为验证点"],
+          ["long","<span class='bull'>韧性派观点<br>减速或近尾声</span>"]]
+      ]
+    },
+  ],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["120px","28%","22%","22%","28%"],
+    rows:[
+      ["美国MBS（Prepayment）","8月 prepay -13%、S-curve 变陡：BMO 预期 9月续减 7~10% vs Barclays 认为减速近尾声",
+        ["long","<span class='bull'>Barclays（韧性派）<br>6.5s/7s 未显著减速<br>prepay 对高利率钝化<br>减速或近尾声</span>"],
+        ["short","<span class='bear'>BMO（续减派）<br>6.0-6.5s 急剧减速<br>FN 6.5s≈50 CPR<br>预期 9月 -7~10%</span>"],
+        "8月 speeds 数据双向解读：BMO 聚焦 6.0-6.5s 高峰票息减速与 S-curve 变陡，Barclays 强调 6.5s/7s 韧性。<b>结论：</b>减速是否见底决定 6.0-6.5s 相对价值，9月 print 为验证点"],
+      ["欧洲利率/ECB","9月为本轮最后一次加息 vs 12月第三次加息门槛已降低",
+        ["long","<span class='bull'>GS（终点情形）<br>H2 增长低于趋势<br>核心压力温和<br>能源预测低于远期</span>"],
+        ["short","<span class='bear'>GS（12月情形）<br>能源若不回落<br>通胀更坚定<br>Fed 若也加息</span>"],
+        "同家机构两种情形：基准 9月收官，但 12月门槛已大幅降低、skew 向上；概率加权低于市场定价。<b>结论：</b>欧英前端不宜激进做多，外围利差走阔风险需对冲"],
+      ["全球利率/油价","霍尔木兹停火协议「几天内宣布」vs GS 上修油价至 2027",
+        ["long","<span class='bear'>停火/协议落地<br>（伊朗-Oman）<br>油价回落<br>债市超跌反弹</span>"],
+        ["short","<span class='bull'>GS 上修 Brent $85<br>（Dec26）<br>中断延续至 2027<br>上行可超 $120</span>"],
+        "事件与预测的分歧：市场等待 Oman 协议落地，GS 认为停火不可持续并上调预测。<b>结论：</b>油价双向风险，长端空头依托能源风险，协议落地为潜在反弹催化"]
+    ]
+  },
+  noCoverage:["中国利率","中国信用债","美国IG信用债","美国HY信用债","澳门博彩信用债","SSA新发"],
+  footer: {
+    window:"2026-09-07 收盘 ~ 2026-09-08（GS Global Market Recap - Oil/ECB 9.7 + Barclays Daily Macro/CPI Preview 9.7 + Barclays Credit & Securitized Daily 9.7 + Barclays Daily Digest 9.7 + BMO MBS Strategy Aug'26 Prepayment 9.7 + TD AUD Credit Commentary 9.7）",
+    emailCount:"GS 1 / Barclays 3 / BMO 1 / TD 1（共6封邮件 · 4家券商）",
+    omitted:"中国利率、中国信用债、美国IG、美国HY、澳门博彩、SSA 已在「无覆盖市场」汇总"
+  }
+};
+
+
+
 
 // ==================================================================
 // 渲染引擎
