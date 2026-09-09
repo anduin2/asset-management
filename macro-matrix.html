@@ -3055,6 +3055,195 @@ REPORT_DATA["2026-09-08"] = {
 
 
 
+
+REPORT_DATA["2026-09-09"] = {
+  dateCN: "2026年9月9日 星期三",
+  theme: "Brent 收 $99.03（+2.1%）<b>逼近 $100</b>，沙特能源设施遇袭+美伊霍尔木兹船只互攻 → UST bear-flatten（2y +2.7bp vs 30y +0.3bp）、10y BEI +2.2bp，S&P -0.6%、VIX +8.2%、Gold -1.7%；<b>GS：8月 CPI core +0.23%</b>（headline +0.39% 能源驱动）周五公布；FF 期货 ~60% 隐含<b>下周 FOMC 加息</b>；今日 1pm <b>$39bn 10y 再开</b>+周四 10-20y buyback 公告（共识 $4bn、>7bn 为惊喜），JPM 模型显示中间久期偏贵 14bp 需 concession；JGB bull-flatten（5y auction 4c tail 弱）但 30y 获 GPIF/SWF 结构性买盘，BoJ 终端定价 >2%；Bailey 议会证词+9/11 QT £50bn，30bp 加息已定价；EGB 30y 恢复、Bunds 3.40% 技术目标；TTF +70% 风险 >€100；HG <b>9月供给超级周</b>开启（YTD $1502bn、M&A 全年或 $286bn）；Chile 央行持稳 4.50% 但 CPI 0.6% 超预期；Barclays「狗没有叫」：高利率未必压垮增长",
+  meta: "覆盖券商：Morgan Stanley 1封（Global Macro Commentary - Brent Nears $100）+ Goldman Sachs 2封（US Daily CPI Preview + EM Europe NatGas）+ JPMorgan 2封（UST Auction Daily + Daily Credit Strategy）+ Barclays 2封（Macro Daily Summary + Credit & Securitized）+ BMO 2封（TIPS + SSA）+ Jefferies 3封（Rates Technical/Asia Credit）+ Citi 1封（IG Credit Daily）+ TD Securities 1封（AUD Credit）· 共14封邮件 · 8家券商",
+  brokers: [
+    {n:"MS",c:"b-ms"},{n:"GS",c:"b-gs"},{n:"JPM",c:"b-jpm"},{n:"Barclays",c:"b-barclays"},{n:"BMO",c:"b-bmo"},{n:"Jefferies",c:"b-jefferies"},{n:"Citi",c:"b-citi"},{n:"TD",c:"b-td"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率（拍卖周）",
+      summary:"JPM：9/8 曲线整理（5y +2bp→4.56%、10y 4.78%、30y 5.24%），3y $58bn 拍卖 0.1bp through、2.72x；<b>今日 1pm 10y $39bn 再开</b>（与 7月规模一致），fair value 模型显示中间久期偏贵 ~14bp（收益率偏高）、<b>10y 或需更多 concession</b>；周四 10-20y buyback 公告为焦点（共识 $4bn、>$7bn 惊喜）；MS：UST bear-flatten（2y +2.7bp/30y +0.3bp）、10y BEI +2.2bp、FF 期货 ~60% 隐含下周 FOMC 加息；Jefferies：10y 4.85/4.95/5.01% 方转 dip-buy、长端 5.25-5.40% 目标区买弱、2s10s steepening 见顶回落（55-25bp）",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","拍卖与供给","核心逻辑","交易建议"],
+      cols:["88px","20%","15%","14%","17%","16%","16%"],
+      rows:[
+        ["JPM",
+          ["fact","5y +2bp 至 4.56%<br>10y 4.78%<br>30y 5.24% 整理"],
+          ["short","<span class='bear'>中间久期较 fair value<br>偏贵 ~14bp<br>中枢收益率偏高</span>"],
+          ["fact","3s5s 19bp<br>5s10s 27bp<br>10s30s 19bp"],
+          ["fact","3y $58bn 0.1bp through<br>2.72x；今日 1pm<br>$39bn 10y 再开"],
+          ["fact","真实货币在 4.80%/<br>5.25% 上方承接<br>swap receiving 支撑"],
+          ["short","<span class='bear'>10y 或需更多<br>concession 清出</span>"]],
+        ["MS",
+          ["fact","2y +2.7bp 至 4.37%<br>30y +0.3bp 至 5.24%<br>bear-flatten"],
+          ["short","<span class='bear'>油价冲击→通胀补偿<br>上行（10y BEI +2.2bp）<br>名义长端承压</span>"],
+          ["fact","bear-flatten<br>vs 上周<br>steepening 反转"],
+          ["fact","3y 拍卖已过<br>关注 10y/30y<br>与 buyback"],
+          ["fact","S&P -0.6%、VIX +8.2%<br>Gold -1.7%<br>滞胀交易升温"],
+          ["short","<span class='bear'>加息定价+供给<br>前控制久期<br>对冲能源敞口</span>"]],
+        ["Jefferies",
+          ["fact","10y 回踩 4.81%<br>支撑后小幅反弹<br>上方阻力 4.76%"],
+          ["long","<span class='bull'>10y 4.85/4.95/5.01%<br>才转 buy-on-dips</span>"],
+          ["fact","2s10s steepening<br>见顶回落<br>区间 55-25bp"],
+          ["fact","5y 已破 4.42-4.50 目标<br>转中性并渐买"],
+          ["fact","长端 5.25-5.40%<br>为目标区<br>弱即买不追空"],
+          ["long","<span class='bull'>接近目标区上沿<br>分批建久期<br>布局 2026</span>"]]
+      ]
+    },
+    {
+      id:"us-cpi-fed", pri:false, title:"美国通胀/Fed（CPI 周五 + FOMC 下周）",
+      summary:"GS 8月 CPI 预览：core <b>+0.23% m/m</b>（cons +0.2%、2.40% y/y）、headline +0.39%（能源）；二手车/机票上行、车险回落、OER/rent 温和；8月后 core 维持 ~0.2% 节奏、<b>能源是唯一加速项</b>；BMO：BEI 走高（5s +3.5bp/10s +2.5bp、5y5y 2.46%）、<b>CPI 前长端 TIPS 买盘活跃</b>、Aug fixing 335.00；FF 期货 ~60% 隐含<b>下周 FOMC（9/16-17）加息</b>，油价为最大上行风险",
+      headers:["券商","市场数据/表现","通胀观点","Fed 观点","核心逻辑","交易建议"],
+      cols:["88px","22%","20%","18%","20%","16%"],
+      rows:[
+        ["GS",
+          ["fact","8月 CPI 预览（周五）<br>core +0.23% → 2.40% y/y<br>headline +0.39%"],
+          ["long","<span class='bull'>核心温和：二手车 +0.5%<br>机票 +4.0%<br>OER/rent 温和</span>"],
+          ["neu","8月后 core 维持 ~0.2%<br>能源为唯一<br>加速分项"],
+          ["fact","强 NFP（+162k）后<br>核心不构成<br>连续加息理由"],
+          ["long","<span class='bull'>CPI 难成 Fed<br>连续加息的<br>充分依据</span>"]],
+        ["BMO",
+          ["fact","BEI 5s +3.5bp<br>10s +2.5bp<br>5y5y 2.46%"],
+          ["long","<span class='bull'>油价 $100 直接<br>推升 breakeven<br>CPI 前长端 TIPS 买盘</span>"],
+          ["fact","Aug CPI fixing 335.00<br>（cons 334.87）<br>略高于预期"],
+          ["neu","FF 期货 ~60%<br>隐含下周 FOMC<br>加息定价"],
+          ["long","<span class='bull'>长端 TIPS/BEI<br>为 CPI 敞口<br>首选表达</span>"]]
+      ]
+    },
+    {
+      id:"energy", pri:false, title:"油价/地缘（Brent 逼近 $100）",
+      summary:"MS：Brent 收 <b>$99.03（+2.1%）</b>、日内高 $99.33，沙特能源设施遭胡塞袭击+美伊霍尔木兹船只互攻，供给弹性小+库存低 → 结构性上行；GS：TTF 自 7月初 <b>+70% 至 €70+</b>，冬前流量受约束风险情景 <b>>€100</b>，EM Europe 敏感性重估（Financials 最敏感）；Barclays：UAE 主权/准主权缓冲充足、可渡 H1'26 战争与霍尔木兹关闭",
+      headers:["券商","市场数据/表现","价格预测/方向","地缘逻辑","传导/风险","交易建议"],
+      cols:["88px","20%","18%","20%","20%","18%"],
+      rows:[
+        ["MS",
+          ["fact","Brent 收 $99.03（+2.1%）<br>日内高 $99.33<br>Nears $100"],
+          ["short","<span class='bear'>结构性看多油价<br>供给弹性小<br>+ 库存偏低</span>"],
+          ["fact","沙特能源设施遇袭<br>（胡塞）+ 霍尔木兹<br>船只互攻"],
+          ["short","<span class='bear'>油价→长端利率<br>bear-flatten<br>滞胀交易</span>"],
+          ["short","<span class='bear'>利好 TIPS/BEI<br>压制长端久期</span>"]],
+        ["GS",
+          ["fact","TTF +70%<br>（7月初以来）<br>至 €70+/MWh"],
+          ["short","<span class='bear'>冬前若流量受约束<br>风险情景 >€100</span>"],
+          ["fact","EM Europe 对 TTF<br>敏感度重新评估"],
+          ["short","<span class='bear'>Financials（匈牙利/<br>希腊/波兰银行）<br>最敏感</span>"],
+          ["short","<span class='bear'>MXEE Financials<br>又贵又敏感<br>建议降低敞口</span>"]],
+        ["Barclays",
+          ["fact","UAE 主权/准主权<br>应对霍尔木兹关闭"],
+          ["long","<span class='bull'>H1'26 战争缓冲充足<br>可支撑至<br>2027-28</span>"],
+          ["fact","缓冲=外汇储备<br>+ 低杠杆结构"],
+          ["long","<span class='bull'>相对避风港<br>hold UAE 敞口</span>"]]
+      ]
+    },
+    {
+      id:"eu-uk-rates", pri:false, title:"欧洲/英国利率",
+      summary:"MS：EGB 恢复（30y 长端 -3bp）、OAT 30y 走阔 ~1bp；Gilts pivot flattening（2y +2bp/30y -1bp）；Bailey 议会证词称无 hidden plan、<b>~30bp 加息已定价</b>；Barclays：BoE 9/11 QT <b>£50bn</b> 决策为焦点；Bunds 技术目标 3.40% 已现、下方看 3.45-3.50%；欧洲滞胀组合（油价+AfD 政治压力）下，<b>前端利率风险高于长端</b>",
+      headers:["券商","市场数据/表现","久期观点","央行/财政","核心逻辑","交易建议"],
+      cols:["88px","22%","18%","20%","20%","16%"],
+      rows:[
+        ["MS",
+          ["fact","EGB 30y -3bp 恢复<br>OAT 30y 走阔 ~1bp<br>Bunds 3.40% 附近"],
+          ["short","<span class='bear'>Bunds 下方目标<br>3.45/3.50%<br>短期或诱空回补</span>"],
+          ["fact","Gilts pivot flatten<br>2y +2bp / 30y -1bp<br>供给后长端减压"],
+          ["fact","BoE Bailey 议会证词<br>无 hidden plan<br>~30bp 加息已定价"],
+          ["neu","<span class='neu'>供给+油价双重<br>约束长端下行</span>"]],
+        ["Barclays",
+          ["fact","BoE 9/11 QT 决策<br>£50bn 削减<br>为本周英债焦点"],
+          ["neu","QT 节奏重于方向<br>措辞或偏鹰"],
+          ["fact","30bp 加息 price-in<br>边际或趋缓"],
+          ["fact","油价推升 UK CPI<br>滞胀组合<br>压制前端"],
+          ["neu","<span class='neu'>英债长端<br>供给后风险<br>已部分释放</span>"]]
+      ]
+    },
+    {
+      id:"japan-rates", pri:false, title:"日本利率",
+      summary:"MS：JGB <b>bull-flatten</b>——5y auction 弱（4c tail），但 GPIF/挪威 SWF 长端配置预期支撑 30y；BoJ 终端利率定价仍 <b>>2%</b>；USD/JPY -1.5% 至 153.98；Barclays：Q2 GDP 上修至 <b>+1.4%</b>、不阻碍 BoJ 9月加息；日本投资者 8月卖外债、买外股（养老金两者均买）",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","央行/资金","交易建议"],
+      cols:["88px","22%","18%","18%","22%","16%"],
+      rows:[
+        ["MS",
+          ["fact","JGB bull-flatten<br>5y 2.235%<br>30y 3.96%（获支撑）"],
+          ["neu","长端受 GPIF/<br>挪威 SWF<br>配置预期支撑"],
+          ["short","<span class='bear'>5y auction 弱<br>（4c tail）<br>前端承压</span>"],
+          ["fact","BoJ 终端利率<br>定价 >2%<br>USD/JPY -1.5%"],
+          ["neu","<span class='neu'>买弱 30y<br>优于空 5y</span>"]],
+        ["Barclays",
+          ["fact","Q2 GDP 上修<br>至 +1.4%（第二次）"],
+          ["neu","增长高于潜在<br>不阻碍 9月<br>BoJ 行动"],
+          ["fact","国内需求仍弱<br>但出口/设备<br>投资支撑"],
+          ["fact","日本投资者 8月<br>卖外债买外股<br>养老金双边买入"],
+          ["neu","<span class='neu'>BoJ 9月决策<br>为方向开关</span>"]]
+      ]
+    },
+    {
+      id:"us-credit", pri:false, title:"美国IG信用（9月供给超级周）",
+      summary:"JPM：HG 9月供给<b>超级周</b>（Labor Day 后首两周通常占全月 70%）——YTD $1502bn（全年 $2tr 预测的 75%），Tech 剩 $92bn（hyperscalers $50bn）、M&A 全年或 <b>$286bn</b>；长端 10y+ 占 YTD 18%（2025 年 12%）→ 期限继续拉长；dealer >13m 净空 -$12.4bn（3m 0%ile）提供承接；基金净流入 +$2.97bn；Citi：LDW 后 <b>20 单约 $40bn 开盘</b>，TMT 无供给 → buy gogo（Meta/GOOG/AMZN/NVDA），银行 30y 将更紧、买盘集中于 5y 内",
+      headers:["券商","市场数据/表现","估值/利差观点","供给/期限结构","技术/资金面","交易建议"],
+      cols:["88px","20%","16%","20%","20%","18%"],
+      rows:[
+        ["JPM",
+          ["fact","JULI 93bp（-1bp）<br>收益率 5.86%<br>9月供给超级周"],
+          ["neu","利差 tight<br>无 concession<br>（新债 5bp tighter）"],
+          ["fact","YTD $1502bn<br>Tech 剩 $92bn<br>M&A 或 $286bn"],
+          ["fact","10y+ 占 18%<br>（2025 年 12%）<br>期限结构拉长"],
+          ["short","<span class='bear'>dealer 净空<br>-$12.4bn（0%ile）<br>供给承接有限</span>"],
+          ["neu","<span class='neu'>基金流入 +$2.97bn<br>但对冲供给洪峰</span>"]],
+        ["Citi",
+          ["fact","LDW 后 20 单<br>约 $40bn 开盘<br>9月 Financials 可 $100bn"],
+          ["long","<span class='bull'>利差 tight 下<br>TMT 相对紧<br>（无供给）</span>"],
+          ["fact","bank 30y 将更紧<br>M&A 需 concession"],
+          ["fact","rate vol 压制 10y+<br>买盘集中 5y 以内"],
+          ["long","<span class='bull'>buy gogo 缺口<br>Meta/GOOG/AMZN/NVDA<br>银行 30y 等折让</span>"]]
+      ]
+    },
+    {
+      id:"em-fx", pri:false, title:"新兴市场（拉美/亚洲）",
+      summary:"MS：Chile 8月 CPI <b>+0.6% 超预期</b> → CLP +1.0%；BCCh 维持 4.50%、12月或再降 25bp；BRL +0.82%（Bolsonaro 民调追近 Lula，DI 曲线 bull-flatten）；KOSPI +4.0%、KRW +0.6%、TWD +0.3%，USD/CNH 稳，USD/JPY -1.5%；Barclays：台湾 9月 CPI 或 2.5%（CBC Q3 或加息 12.5bp）、韩国 CA 上修至 $440bn",
+      headers:["券商","市场数据/表现","央行观点","汇率/资金","交易建议"],
+      cols:["88px","24%","22%","24%","18%"],
+      rows:[
+        ["MS",
+          ["fact","Chile CPI +0.6% 超预期<br>CLP +1.0%<br>BRL +0.82%（政治溢价）"],
+          ["fact","BCCh 维持 4.50%<br>12月或再降 25bp<br>巴西 DI 曲线 bull-flatten"],
+          ["fact","USD/JPY -1.5% 153.98<br>DXY -0.3%<br>KRW +0.6%、TWD +0.3%"],
+          ["neu","<span class='neu'>COL 2y +7bp<br>关注墨西哥 CPI<br>与巴西政治</span>"]],
+        ["Barclays",
+          ["fact","台湾 9月 CPI 或 2.5%<br>韩国 CA 上修<br>至 $440bn"],
+          ["fact","CBC Q3 或加息 12.5bp<br>通胀韧性为主因"],
+          ["fact","亚洲货币兑美元<br>整体偏强<br>CNH 稳定"],
+          ["neu","<span class='neu'>食品/能源为<br>通胀共性<br>维持中性久期</span>"]]
+      ]
+    },
+  ],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["120px","26%","22%","22%","28%"],
+    rows:[
+      ["美国利率/Fed","油价驱动的加息定价（FF ~60%）vs 核心通胀温和",
+        ["long","<span class='bull'>GS（核心温和派）<br>8月 core +0.23%<br>能源为唯一加速项<br>难支撑连续加息</span>"],
+        ["short","<span class='bear'>BMO/MS（油价传导派）<br>BEI 5s/10s 走高<br>FF 期货 ~60% 加息<br>FOMC 或被迫行动</span>"],
+        "对 CPI 分项权重判断不同：GS 聚焦核心 deceleration，MS/BMO 看能源对 headline 与 breakeven 的传导。<b>结论：</b>CPI 数字决定 60% 定价是打满还是回撤，2s5s 与 BEI 最敏感"],
+      ["美国国债","战术区间：目标区 dip-buy vs 等经济走弱做多（'狗没有叫'）",
+        ["long","<span class='bull'>Jefferies（目标区买家）<br>长端 5.25-5.40% 买弱<br>10y 4.85-5.01% 转买<br>布局 2026</span>"],
+        ["short","<span class='bear'>Barclays（区间派）<br>高利率伤害被高估<br>债牛等经济走弱<br>将失望</span>"],
+        "核心分歧=高利率对增长的传导速度：JEF 认为收益率已近反脆弱区，Barclays 认为增长韧性使下沿抬高。<b>结论：</b>区间交易优于单边，下沿逢买、上沿勿追"],
+      ["美国IG信用","9月供给超级周（或破 $214bn 纪录）vs 承接力与 buy gogo",
+        ["long","<span class='bull'>Citi（资金派）<br>利差 tight、TMT buy gogo<br>银行 30y 折让定价<br>dealer 空头回补支撑</span>"],
+        ["short","<span class='bear'>JPM（供给派）<br>Labor Day 后两周占 70%<br>YTD 75% of $2tr<br>需吸收 $40bn+/周</span>"],
+        "供需平衡判定差异：JPM 提示超级周吸收压力（长端 18% 占比），Citi 强调 TMT 供给真空与流入支撑。<b>结论：</b>9月利差在 90-95bp 区间震荡或修正，取决于 concession 与 fund flows"]
+    ]
+  },
+  noCoverage:["中国利率","中国信用债","美国HY信用债","亚洲高收益信用债","澳门博彩信用债","MBS/证券化"],
+  footer: {
+    window:"2026-09-08 美盘 ~ 2026-09-09（MS Global Macro Commentary - Brent Nears $100 9.8 + GS US Daily CPI Preview 9.8 + GS EM Europe NatGas 9.8 + JPM UST Auction Daily 9.8 + JPM Daily Credit Strategy 9.8 + Barclays Macro Daily Summary 9.8 + Barclays Credit & Securitized 9.8 + BMO TIPS/SSA 9.8 + Jefferies Rates Technical Recap 9.9 + Citi IG Credit Daily 9.8 + TD AUD Credit 9.8）",
+    emailCount:"MS 1 / GS 2 / JPM 2 / Barclays 2 / BMO 2 / Jefferies 3 / Citi 1 / TD 1（共14封邮件 · 8家券商）",
+    omitted:"中国利率、中国信用债、美国HY、亚洲HY、澳门博彩、MBS/证券化 已在「无覆盖市场」汇总"
+  }
+};
+
 // ==================================================================
 // 渲染引擎
 // ==================================================================
