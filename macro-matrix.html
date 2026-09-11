@@ -3505,6 +3505,215 @@ REPORT_DATA["2026-09-10"] = {
     omitted:"剔除股票研究（Derek Liu / Karen Li）与重复转发的 US Treasury Market Daily 等 4 封；中国利率、中国信用债、美国HY、亚洲HY、澳门博彩、MBS/证券化 见「无覆盖市场」"
   }
 };
+REPORT_DATA["2026-09-11"] = {
+  dateCN: "2026年9月11日 星期五",
+  theme: "<b>Brent 单日暴涨 7.4% 至 $108.67</b>（Houthis 或逼近红海战略控制权、Trump 称冲突「会拖过中期选举」），叠加 8月 PPI 商品端 +1.1%、ECB 加息 25bp 且预测全面上修，全球利率 bear-flattening：美债 <b>2y +15.6bp、10y 收 4.96%（+12.2bp，2023年10月以来最高）、30y +7.6bp</b>，9月加息概率升至 <b>~70%</b>。当晚 $22bn 30y 续发极强（5.308% 得标、stop through 5.335% WI、BTC 2.61、end-user <b>97.8% 创历史新高</b>），但 $6bn 上限的 10-20y buyback 仅成交 <b>$5.19bn</b>（offer-to-max 为项目史上最低）→ 长端尾盘再度走弱。JPM 预计今晚 CPI-U <b>+38bp</b>（同比 3.4%，低于共识 40bp），并维持 2Yx3Y 通胀互换空头；BMO 称 breakeven 在油价 +5-6% 下异常稳定、TIPS 买盘仍在。信用端较安静：IG 利差有序走阔 1-3bp，UBS 新发持平或收窄；亚债 KAMPOS / OLYMPU 新发跑赢 reoffer。",
+  meta: "覆盖券商：Morgan Stanley 1 封（Global Macro Commentary - Oil Rekindles Inflation Risk）、J.P. Morgan 1 封（US Treasury Market Daily - You're gonna need a bigger boat）、Citi 1 封（IG Credit Daily Sector Commentary 9.10）、TD Securities 1 封（ECB Commentary: Game, Set, Match Expectations）、BMO 1 封（TIPS End of Day Commentary）、Jefferies 2 封（JEF ASIA Japan/Aus IG EOD、mkt recap for Wed and Outlook for Thursday）。",
+  brokers: [
+    {n:"MS",c:"b-ms"},{n:"JPM",c:"b-jpm"},{n:"Citi",c:"b-citi"},
+    {n:"TD",c:"b-td"},{n:"BMO",c:"b-bmo"},{n:"Jefferies",c:"b-jefferies"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率市场",
+      summary:"前端主导的 bear-flattening：2y +15.6bp、10y +12.2bp 至 4.96%（2023年10月以来最高）、30y +7.6bp；9月加息概率升至约 70%。$22bn 30y 续发需求极强（end-user 97.8% 创纪录、stop through 2.7bp），但 buyback 仅成交 $5.19bn/$6bn 上限、offer-to-max 史上最低，长端在尾盘重新走弱。",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","10y <b>4.96%</b>（+12.2bp）、2y +15.6bp、30y +7.6bp；DXY 99.08（+0.3%）；2y breakeven +6.4bp、10y +2.9bp；S&amp;P -0.6%、VIX +8.4%"],
+          ["bear","bear-flatten<br>前端领跌<br>久期风险偏空"],
+          ["bear","2s10s 平坦化<br>结构性熊市延续"],
+          ["bear","9月加息预期强化<br>Warsh 鹰派基调"],
+          ["neu","能源驱动的通胀脉冲抬高政策路径与前端收益率；$22bn 30y 续发 5.308% 得标、stop through 5.335% WI、BTC 2.61、一级交易商获配极低，但随后 buyback 仅接受 $5.19bn/$6bn 上限，长端重燃跌势，美元互换利差进一步压缩"],
+          ["neu","前端偏空<br>长端等 CPI<br>再做久期决策"]],
+        ["JPM",
+          ["fact","全曲线 8-12bp、前端领跌；10y 为 2023年10月以来最高；OIS 定价 9月加息概率 <b>~70%</b>；8月 PPI 商品 +1.1%、服务 +0.1%，最终需求商品 +0.4% 符合预期"],
+          ["bear","10y 上行目标<br>4.71% 区间<br>(2025/3-2026/5 测量)"],
+          ["bear","bear-flatten<br>2y 测试 4.535%<br>(2023/10 61.8% 回撤)"],
+          ["bear","PPI 为鹰派留门<br>客户调查指数<br>偏多但未触发卖出"],
+          ["neu","buyback 买入 23/40 只合格券（58% vs 历史 12%）、而票面出价仅 $10.5bn、offer-to-max 创项目新低，说明出价质量下降；30y 续发 clear 2.7bp rich、end-user +9.9pp 至 97.8% 纪录高位；6% 的赤字在近充分就业下无法靠 buyback 解决"],
+          ["neu","维持 2Yx3Y<br>通胀互换空头<br>等 CPI 落地"]],
+        ["Jefferies",
+          ["fact","10y 4.85% 已进入其 4.75-4.85% 目标区；20y 97-23+/24 @ 5.31%；5y 4.6%；2y 触及 4.37-4.40% 目标区"],
+          ["long","目标区已到<br>逢跌分批买入<br>而非追空"],
+          ["neu","2s10s 区间<br>55bp-25bp<br>择机做平坦"],
+          ["bear","结构性熊市<br>2027年后<br>收益率或再破 5%"],
+          ["neu","2021 年即判断 40 年国债牛市长周期结束，当前长期熊市仍将主导数年；真正的通胀威胁在于柴油/航煤等馏分油挤压通过运输、货运、航空、农业成本渗入核心通胀，可能成为 Fed 的新难题"],
+          ["long","5.35%/5.4%/5.5%<br>为逢跌买入区<br>跌破 99-17/19 前不转多"]]
+      ]
+    },
+    {
+      id:"us-inflation", title:"美国通胀与美联储",
+      summary:"8月 PPI 总体 +0.4%（符合预期）、核心 +0.2%，但商品端 +1.1% 远高于服务端 +0.1%，且机票、医院护理等 PCE 相关分项偏强；JPM 预计今晚 CPI-U +38bp（同比 3.4%）低于共识 40bp，并维持 2Yx3Y 通胀互换空头。",
+      headers:["券商","市场数据/表现","通胀观点","政策路径","核心逻辑","交易建议"],
+      cols:["88px","23%","16%","16%","24%","21%"],
+      rows:[
+        ["JPM",
+          ["fact","预计 8月 CPI-U <b>+38bp</b>、同比维持 3.4%（共识 +40bp）；能源 3 个月来首次正贡献（+2.5% m/m，车用燃料 +4.2%）；食品 +0.2% m/m"],
+          ["bull","过去 17 次中<br>13 次低于预期<br>通胀意外指数处<br>近十年最弱 10%"],
+          ["bear","OIS 定价 9月<br>加息概率 ~70%"],
+          ["neu","预测低于共识叠加 Warsh 在 Jackson Hole 后的鹰派表态，通胀端风险偏双向；能源与食品假设均偏保守"],
+          ["neu","维持 2Yx3Y<br>通胀互换空头<br>持有至 CPI 公布"]],
+        ["BMO",
+          ["fact","明日 TIPS mid fixing 335.03 vs 共识 334.87；5y5y 近 <b>2.47%</b>、1y1y <b>2.611%</b>，均持续上行；10y breakeven 仅走阔约 2bp"],
+          ["bull","油价 +5-6%<br>而 breakeven 稳定<br>TIPS 承接扎实"],
+          ["neu","—"],
+          ["neu","买盘集中于 5s/10s，30s 出现更多获利了结；只要股市足够稳定，breakeven 的上行动能可以延续；近 2-4 周资金主题性偏买入，TIPS 应有足够深度买盘"],
+          ["long","逢低加仓 5y/10y TIPS<br>30y 适度减仓"]],
+        ["MS",
+          ["fact","8月 headline PPI +0.4% m/m、核心 +0.2%；PCE 相关分项（机票、医院护理）偏强"],
+          ["bear","商品端回温<br>PCE 分项偏强<br>核心回落受阻"],
+          ["bear","9月加息押注<br>进一步强化"],
+          ["neu","商品端价格回温与 PCE 相关服务分项走强，意味着核心 PCE 回落斜率可能慢于预期；能源价格通过运输与航空成本二次传导"],
+          ["neu","关注今晚 CPI<br>与核心分项<br>再做久期调整"]]
+      ]
+    },
+    {
+      id:"oil-geo", pri:true, title:"油价与地缘政治",
+      summary:"Brent 单日 +7.4% 至 $108.67（WTI +6.7%），Houthis 或逼近红海战略控制权、美伊冲突升级；原油与利率同涨令风险资产承压，铜、贵金属同步下跌。",
+      headers:["券商","市场数据/表现","油价与地缘观点","通胀影响","核心逻辑","交易建议"],
+      cols:["88px","21%","18%","15%","26%","20%"],
+      rows:[
+        ["MS",
+          ["fact","Brent <b>$108.67</b>（+7.4%）、WTI +6.7%；DXY 99.08（+0.3%）；S&amp;P -0.6%、NASDAQ -0.7%、VIX +8.4%；黄金 -1.8%、白银 -5.5%、铜 -4.9%"],
+          ["bear","中东供应担忧<br>冲突或延续<br>至中期选举之后"],
+          ["bear","通胀补偿走高<br>2y BE +6.4bp<br>10y BE +2.9bp"],
+          ["neu","能源价格与收益率同步上行收紧金融条件，利率与增长敏感板块普跌（材料 -1.5%、公用 -1.0%、地产 -0.9%、IT -0.9%），能源股反而 -0.4%"],
+          ["neu","能源对冲<br>breakeven 做陡<br>控制成长股敞口"]],
+        ["Jefferies",
+          ["fact","波斯湾局势升级推升油价；大量 IG 发行的 rate-lock 卖盘叠加 buyback 失望，共同击穿一周横盘区间"],
+          ["bear","地缘溢价<br>为主因之一"],
+          ["bear","馏分油挤压<br>才是核心威胁"],
+          ["neu","真正的通胀风险不在原油本身，而在柴油/航煤等馏分油纪录高价通过运输、货运、航空、农业与工业成本渗入核心通胀 —— 这可能成为 Fed 的新难题"],
+          ["neu","关注馏分油裂解价差<br>而非单纯油价"]],
+        ["Citi",
+          ["fact","盘中头条：原油突破 $101 因美伊战争升级、油轮遭袭；伊朗称必要时准备进行更激烈的战争；铜自纪录高位回落"],
+          ["bear","地缘升级<br>供应风险上升"],
+          ["neu","—"],
+          ["neu","油价与利率波动仍是经济增长的逆风，但短期内可能被 ORCL 财报等微观事件盖过；亚盘对利率上行的反应偏冷淡，一级市场已趋薄"],
+          ["neu","偏好低美元价债券<br>关注新发让价"]]
+      ]
+    },
+    {
+      id:"eur-uk", title:"欧元区与英国利率",
+      summary:"ECB 如期加息 25bp，且工作人员预测对通胀与增长全面上修至 2028 年（2028 核心 2.3%），措辞鹰派：德国前端日内上行约 16bp、2s10s bear-flatten 约 11bp，10月会议再定价约 +10bp；英债前端 +17bp。",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","23%","14%","13%","12%","20%","18%"],
+      rows:[
+        ["MS",
+          ["fact","德国 2y 发布会前 +9bp、收盘累计约 <b>+16bp</b>；2s10s bear-flatten 约 11bp；OAT/Bund 与 BTP/Bund 在 5y/10y 均 +4bp；英国前端 +17bp、年内累计加息定价 +15bp"],
+          ["bear","前端领跌<br>能源冲击主导"],
+          ["bear","2s10s 平坦化<br>互换曲线同向"],
+          ["bear","ECB 加息 25bp<br>预测全面上修<br>至 2028 年"],
+          ["neu","ECB 工作人员预测上修通胀与增长（2028 核心 2.3%），10月会议被再定价约 +10bp；能源冲击叠加财政扩张使紧缩预期难以快速回落"],
+          ["neu","规避前端久期<br>关注 OAT/BTP<br>利差相对价值"]],
+        ["TD",
+          ["fact","ECB 上调全部政策利率 25bp（符合预期），并给出偏鹰派预测"],
+          ["bull","前端估值<br>已具吸引力"],
+          ["neu","—"],
+          ["bear","预测偏鹰<br>但未承诺路径"],
+          ["neu","加息已充分定价，市场焦点转向声明与新闻发布会的指引而非决议本身；欧元仍受经济韧性与美元整体偏弱支撑"],
+          ["long","做多欧元区<br>前端久期<br>（价值仍在）"]],
+        ["Jefferies",
+          ["fact","ECB 25bp 已完全定价；Bund 触及长期目标区 3.45%；10y OAT 目标 4.35%"],
+          ["neu","目标区已到<br>逐步兑现"],
+          ["neu","曲线偏平坦化"],
+          ["bear","紧缩周期<br>尚未结束"],
+          ["neu","欧洲利率早已进入其长期目标区（Bund 3.45%），意味着此前设想的加息路径已被市场充分消化，策略上更接近兑现而非追多"],
+          ["neu","在目标区<br>分批获利了结"]]
+      ]
+    },
+    {
+      id:"japan", title:"日本利率与央行",
+      summary:"JGB 曲线 twist-steepening：2y 上涨 1.0bp 至 1.82%、10y 下跌 3.0bp 至 2.91%、30y 下跌 5.0bp 至 4.005%；BoJ 增田委员鹰派但「无数据显示物价趋势快速偏离」缓和了快速加息预期。",
+      headers:["券商","市场数据/表现","日本国债观点","曲线观点","央行观点","核心逻辑","交易建议"],
+      cols:["88px","25%","14%","13%","13%","17%","18%"],
+      rows:[
+        ["MS",
+          ["fact","2y <b>1.82%</b>（-1.0bp）、10y <b>2.91%</b>（+3.0bp）、30y <b>4.005%</b>（+5.0bp）；USD/JPY 154.42（+0.6%）；TONA-OIS twist-steepened 且跑赢 JGB"],
+          ["bear","长端领跌<br>GPIF 回流预期<br>被过度定价"],
+          ["bull","twist-steepening<br>短中端受政策锚支撑"],
+          ["bear","增田委员偏鹰<br>但称无数据<br>支持物价快速偏离"],
+          ["neu","GPIF 国内再配置预期此前推动的涨势被回吐，长端率先抛售；增田讲话未提供新信息、但短中端因「无快速偏离」表述而走强；XCCY basis 在 5y-10y 收窄、20y 以上走阔"],
+          ["neu","曲线做陡<br>长端逢高减久期<br>关注 BoJ 沟通"]]
+      ]
+    },
+    {
+      id:"us-ig", title:"美国投资级信用债",
+      summary:"利率剧烈上行下 IG 二手交投有序：金融与洋基金融利差 +1~3bp、pref/LRCN/hybrid 反而走强 0.125~1pt；TMT 除 AMZN 外普遍被 bid，ORCL 财报后长端交投活跃（峰值 -10bp）、30yr 235 为阻力位。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","23%","13%","14%","13%","22%","15%"],
+      rows:[
+        ["Citi",
+          ["fact","国内金融 CoD +1-3bp、洋基金融 +1-3bp；pref/LRCN/hybrid 上行 0.125-1pt；JPM 6.1 98.375 跌约 1pt；PAA 最优约 $100、BMO 10y -70c、FCNCA -0.875pt；工业板块持平至略收窄（基础化工 -0.5bp）"],
+          ["neu","VW（Baa1/BBB+/A-）重组成本据 Der Spiegel 约 EUR16bn（4 家工厂 EUR4bn、2030 年前 6 万岗位 EUR10bn），以资产处置对冲"],
+          ["neu","TMT 略偏低配需求<br>HYPERSCALER 外<br>普遍有买盘"],
+          ["bull","UBS 新发持平或收窄<br>HF 与 RM 买盘改善<br>短端拥挤度下降"],
+          ["neu","利率与油价双重冲击下 IG 利差仅有序走阔 1-3bp，说明信用端尚未定价增长风险；TMT 空头基础持续消耗、ORCL 财报后长端成交放大但遇 235 阻力；工业板块因曲线 bear-flatten 出现买盘暂停"],
+          ["long","UBS 新发与<br>5-10y 金融债<br>规避高估值长端"]]
+      ]
+    },
+    {
+      id:"asia-ig", title:"亚洲投资级信用债",
+      summary:"日澳 IG 一级市场新发表现突出：KAMPOS 与 OLYMPU 自 reoffer 后跑赢（+20c、利差收窄 4bp），OLYMPU 境内需求旺盛；银行与高质量公司债交投活跃、利差 0-1bp 收窄。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","23%","13%","14%","13%","22%","15%"],
+      rows:[
+        ["Jefferies",
+          ["fact","KAMPOS 与 OLYMPU 新发自 reoffer 后分别 +20c、利差收窄 4bp；高级银行与高质量公司债（CBAAU、NECORP、MIZUHO）活跃、利差 0-1bp 收窄，二级价格回落 15-35c"],
+          ["neu","日本与澳洲发行人<br>基本面稳健"],
+          ["bull","OLYMPU 相对<br>同类 NC10 永续<br>仍具价值"],
+          ["bull","OLYMPU 境内<br>超 50m 内部承接<br>境内需求旺"],
+          ["neu","在美债剧烈波动环境下，亚洲 IG 一级新发仍获境内与跨区域资金追捧，KAMPOS 相比其他 NC10 终身债仍具相对价值；二级跟随美债回落但让价幅度有限"],
+          ["long","KAMPOS 与 OLYMPU<br>新发继续持有<br>银行优先股择优"]]
+      ]
+    },
+    {
+      id:"em-asia", title:"新兴市场与亚洲",
+      summary:"AxJ 货币与利率普遍承压：PHP、THB、INR、KRW 走弱，10y RPGB +5bp、5y INR NDOIS +4bp、10y KRW NDIRS +5bp；中国与马来西亚相对抗跌，拉美/CEEMEA 分化明显，CLP 因铜价大跌 -1.45%。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","政策影响","整体观点","偏好/风险"],
+      cols:["88px","24%","13%","13%","14%","21%","15%"],
+      rows:[
+        ["MS",
+          ["fact","MYR +0.1%、PHP -0.1%（10y RPGB +5bp）、THB -0.4%、INR -0.4%（5y NDOIS +4bp）、KRW -0.4%（10y NDIRS +5bp，外资净卖出韩股 $2.7bn）；CLP -1.45%、COP +0.43%、BRL 走强（Ibovespa +1.2%）；ZAR -1.0%、HUF -0.5%、PLN -0.5%、CZK -0.2%"],
+          ["neu","中国与马来西亚<br>相对抗跌<br>韩国央行偏鹰"],
+          ["neu","墨西哥 TIIE 5y +16bp<br>巴西 Jan-31 DI<br>走强约 10bp"],
+          ["bear","RBI 通过美元抛售<br>与 sell-buy swap<br>及 INR4tr VRRR 维稳"],
+          ["neu","油价与美债双重冲击下 AxJ 普遍承压，但中国 PBoC 净投放与人民币中间价维稳形成缓冲；拉美分化由大宗与政治驱动（智利因铜价 -4.9% 领跌、巴西因民调利好上涨）；哥伦比亚 2026 年 TES 发行规模上调至 COP110.25tn 增加供给压力"],
+          ["neu","偏好中国/马来西亚<br>久期<br>规避高 beta 拉美"]]
+      ]
+    },
+  ],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["120px","26%","22%","22%","28%"],
+    rows:[
+      ["美国利率","$22bn 30y 续发需求创纪录 vs buyback 仅成交 $5.19bn/$6bn 上限",
+        ["long","<span class='bull'>MS（发行需求派）<br>end-user 97.8% 创历史新高<br>stop through 2.7bp<br>一级实需扎实</span>"],
+        ["short","<span class='bear'>JPM（政策支撑派）<br>23/40 只券、出价仅 $10.5bn<br>offer-to-max 史上最低<br>90% 集中于 6 只券</span>"],
+        "同一晚的两组信号方向相反：一级市场实需强劲，但官方 buyback 的出价质量下降反而暴露长端缺乏边际买盘。<b>结论：</b>发行强 ≠ 长端强，buyback 细节与 CPI 才是长端定价的关键"],
+      ["美国通胀","JPM 预计 CPI +38bp 低于共识 40bp vs 商品端 +1.1% 与 PCE 分项偏强",
+        ["long","<span class='bull'>JPM（低预期派）<br>过去 17 次 13 次低于预期<br>做空 2Yx3Y 通胀互换<br>能源假设偏保守</span>"],
+        ["short","<span class='bear'>MS/BMO（黏性派）<br>机票与医院护理偏强<br>5y5y 2.47%、1y1y 2.611%<br>breakeven 动能延续</span>"],
+        "分歧在于商品脉冲是否传导至核心服务：JPM 认为能源是 3 个月来首次正贡献且假设保守，MS 与 BMO 更关注 PCE 相关分项的二次传导。<b>结论：</b>今晚 CPI 的核心服务分项是胜负手"],
+      ["久期方向","Jefferies 目标区已到、逢跌买入 vs MS/JPM 结构性熊市未结束",
+        ["long","<span class='bull'>Jefferies（价值派）<br>10y 4.75-4.85 目标区已到<br>2y 触及 4.37-4.40<br>风险回报具吸引力</span>"],
+        ["short","<span class='bear'>MS/JPM（趋势派）<br>10y 2023/10 以来最高<br>9月加息概率 ~70%<br>6% 赤字难以消化</span>"],
+        "同一组价位上，Jefferies 视其为长期目标区并转多，MS/JPM 强调通胀与财政供给让上行趋势延续。<b>结论：</b>以 CPI 与 30y 后续买盘验证，突破 5.00% 则区间上移"],
+      ["欧元区利率","TD 建议做多欧元区前端 vs MS 前端 bear-flatten 约 16bp 且 10月再定价 +10bp",
+        ["long","<span class='bull'>TD/Jefferies（价值派）<br>加息已充分定价<br>Bund 已达 3.45% 目标区<br>欧元受经济韧性支撑</span>"],
+        ["short","<span class='bear'>MS（趋势派）<br>前端日内 +16bp<br>预测上修至 2028 年<br>紧缩预期难快速回落</span>"],
+        "ECB 加息本身已被完全定价，分歧在于鹰派预测是否过度：TD 认为前端估值已具吸引力，MS 认为能源与财政扩张支撑更高路径。<b>结论：</b>声明与新闻发布会的指引措辞是验证点"]
+    ]
+  },
+  noCoverage:["中国利率","中国信用债","美国HY信用债","亚洲高收益信用债","澳门博彩信用债","MBS/证券化"],
+  footer: {
+    window:"2026-09-10 美盘 ~ 2026-09-11（MS Global Macro Commentary - Oil Rekindles Inflation Risk 9.10 + MS $ Rates EoD 9.10 + JPM US Treasury Market Daily 9.10 + JPM Daily Credit Strategy 9.10 + Citi IG Credit Daily Sector Commentary 9.10 + TD Securities ECB Commentary - Game, Set, Match Expectations 9.10 + BMO TIPS End of Day Commentary 9.10 + Jefferies JEF ASIA Japan/Aus IG EOD 9.10 + Jefferies mkt recap for Wed and Outlook for Thursday 9.10）",
+    emailCount:"TD 1 / Citi 1 / JPM 1 / MS 1 / BMO 1 / Jefferies 2（共7封纳入 · 6家券商 · 已剔除股票研究 1 封）",
+    omitted:"剔除股票研究（Derek Liu US Treasury Market Daily）1 封；中国利率、中国信用债、美国HY、亚洲HY、澳门博彩、MBS/证券化 见「无覆盖市场」"
+  }
+};
 // ==================================================================
 // 渲染引擎
 // ==================================================================
