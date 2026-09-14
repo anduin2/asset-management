@@ -101,7 +101,8 @@ td.ak{width:12%;color:#333}
     <option value="2026-09-08">2026-09-08 周二</option>
     <option value="2026-09-09">2026-09-09 周三</option>
     <option value="2026-09-10">2026-09-10 周四</option>
-    <option value="2026-09-11" selected>2026-09-11 周五</option>
+    <option value="2026-09-11">2026-09-11 周五</option>
+    <option value="2026-09-14" selected>2026-09-14 周一</option>
   </select>
 </div>
 
@@ -9966,7 +9967,7 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
-<div class="day active" id="day-2026-09-11">
+<div class="day" id="day-2026-09-11">
 <!-- ============ 利率/宏观 Rates & Macro ============ -->
 <section>
   <div class="sec-head"><h2>利率/宏观</h2><span class="n">3 行</span><span class="src">GS · MS · Jefferies · BMO · BofA</span></div>
@@ -10563,12 +10564,559 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
+<div class="day active" id="day-2026-09-14">
+<!-- ============ 利率 / 宏观 Rates & Macro ============ -->
+<section>
+  <div class="sec-head"><h2>利率 / 宏观</h2><span class="n">4 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">USTs 美债<span class="bond">US2y 最高 4.645% · 9 月加息概率近 90%</span><span class="istag">CPI 后 bear flatten</span></td>
+        <td class="lv">周五美债 <b>bear flatten</b>，headline CPI <b>+0.4%（5 月以来最快）</b>；<b>US2y 最高 4.645%，为 2024 年 7 月以来最高</b>，<b>9 月加息概率升至近 90%</b><span class="tl">NY trading：CPI 基本锁定 9 月加息；早盘 HF 长端 receiving、RM belly receiving，随后转 better paying，长端付息疑为 convexity 驱动</span></td>
+        <td class="fl">早盘 receiving（HF 长端 / RM belly）→ 盘中转为 better paying，长端 convexity 驱动付息</td>
+        <td class="rv">NY trading <b>偏好当前价位加仓 bond spread 多头</b>：CPI 已消除 9 月不确定性、vol 回落、长端 unanchor 担忧暂缓，且 Bessent 的 buyback 可在 <b>ASW 曲线</b>上体现；GS Research 已改为预期本周 FOMC 加息 25bp</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 本周 FOMC 加息 25bp（GS Research 已改口）；<span class="neu">Risk:</span> 长端 unanchor 与 term premium 上行；若数据继续偏热，加息路径可能不止一次</td>
+        <td class="bk">GS（Asia Macro Global Market Recap）<span class="tl">GS Research：Adding a Hike in September</span></td>
+        <td class="ak"><span class="act">BUY bond spread</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>周五美债 bear flatten，headline CPI +0.4% 为 5 月以来最快；US2y 收益率最高触及 4.645%（2024 年 7 月以来最高），市场对 9 月加息的定价升至接近 90%。</div>
+        <div class="row"><span class="b">交易流与观点</span>NY trading 认为 CPI 基本锁定 9 月加息；盘初见到长端 receiving（HF）与 belly receiving（RM），随后转为 better paying，长端付息疑由 convexity 驱动。台面偏好"在当前价位加仓 bond spread 多头"，逻辑是 CPI 消除了 9 月不确定性、波动率回落、长端 unanchor 担忧暂时缓和，且财政部 buyback 的效果可在 ASW 曲线上体现。GS Research 已将美联储路径预测由按兵不动改为本周加息 25bp。</div>
+        <div class="ev"><i>原文证据</i> "Treasuries bear flattened on Friday following headline CPI of +0.4% m/m (fastest since May), which raised the likelihood of a hike in September. US2yr yields rose as high as 4.645%, the highest level since July 2024, while the probability of a September hike rose to nearly 90%... NY trading likes adding bond spread longs at current levels as CPI removed September uncertainty."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">Bunds / Gilts 德债与英债<span class="bond">德债 2y 变贵 4bp / 30y +2bp · BTP 跑赢 3bp</span><span class="istag">英国 7 月 GDP +0.4% 大超预期</span></td>
+        <td class="lv">周五 Bunds 随美债走强：<b>德债 2y 变贵 4bp、30y 收涨 2bp</b>，<b>BTP 跑赢 3bp</b>；欧股 Stoxx +0.5%、DAX +0.8%、FTSE +0.4%、CAC +0.8%、SMI +0.3%<span class="tl">Gilts 跑赢 Bunds：英国 7 月月度 GDP <b>+0.4%（预期 0.0%）</b>，UK 2/10s 趋陡、<b>UK2y 盘中上涨约 10bp</b></span></td>
+        <td class="fl">英国连续第 3 个月增长超预期（同比 <b>+1.6% vs 预期 1.2%、前值 1.1%</b>），支撑来自服务与信息通信（ONS 指后者或与 AI 有关）；GS nowcast 上调 Q3 实际 GDP 至 <b>+0.5%（原 +0.3%）</b></td>
+        <td class="rv">Gilts 相对 Bunds 明显跑赢；BTP 在欧元区内部跑赢 3bp；曲线层面 UK 2/10s 趋陡是美国 CPI 外溢之外的独立驱动</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 英国周二就业与平均薪资、周三 CPI、周四 BoE、周五零售销售；两次程序化 Gilt 招标（<b>2029 年 £1.25bn、2040 年 £750m</b>）；<span class="neu">Risk:</span> Trump 警告 Zelenskyy 停止打击俄罗斯炼厂（袭击已致柴油炼制停摆、推高油价），能源端可能反噬通胀与利率</td>
+        <td class="bk">GS（Asia Macro Global Market Recap）</td>
+        <td class="ak"><span class="act">GILTS &gt; BUNDS</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>Bunds 周五随美债走强，德债 2y 变贵 4bp、30y 收涨 2bp，BTP 跑赢 3bp。Gilts 跑赢 Bunds：英国 7 月月度 GDP +0.4%（预期 0.0%），同比 +1.6%（预期 1.2%、前值 1.1%），UK 2/10s 趋陡、UK2y 盘中上涨约 10bp；ONS 指增长受服务与信息通信支撑，后者可能与 AI 相关。GS 将 Q3 实际 GDP nowcast 由 +0.3% 上调至 +0.5%。</div>
+        <div class="row"><span class="b">事件与风险</span>Trump 警告 Zelenskyy 停止打击俄罗斯炼油厂，理由是袭击已导致柴油炼制停摆并推高燃料价格。本周英国数据密集：周二就业与平均薪资、周三 CPI、周四 BoE、周五零售销售；另有两次程序化 Gilt 招标（2029 年 £1.25bn、2040 年 £750m）。</div>
+        <div class="ev"><i>原文证据</i> "Bunds richened on Friday alongside Treasuries. German 2yr richened 4bps, while the 30yr closed 2bps richer, with BTPs outperforming by 3bps... Gilts outperformed Bunds after UK monthly GDP came in at +0.4% m/m in July (consensus 0.0%). 2/10s steepened with UK2yr rallying ~10bps intraday. This is the third consecutive month where growth has beat expectations."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">JGBs 日债<span class="bond">10y 期货领跌 · 7-15y 跑输</span><span class="istag">超长端获买盘趋平</span></td>
+        <td class="lv">JGBs 随海外利率急跌而低开；<b>short-covering 似已走完</b>，市场承压且<b>由 10y 期货领跌</b>，<b>7-15y 跑输</b>，<b>15y 成交沉重（或为季末因素）</b><span class="tl">25y 以上见本土与海外买盘 → <b>超长端趋平</b>；中期收益率相对抗跌（主要在衍生品）</span></td>
+        <td class="fl">25y+ 获国内与海外买盘；15y 出现沉重成交；中期段韧性主要体现在衍生品而非现货</td>
+        <td class="rv">中期段抗跌被 GS 解读为政策预期信号，而非单纯技术面：<b>Jiji Press 报道称 BoJ 对市场定价终端利率高于 2% 感到不安</b>，且 <b>Masu 记者会基调偏鸽</b></td>
+        <td class="cr"><span class="neu">Catalyst:</span> BoJ 沟通与终端利率定价（Jiji Press 报道 / Masu 记者会）；季末 15y 成交；<span class="neu">Risk:</span> 若全球长端继续上行，JGB 超长端买盘可能无法持续，10y 期货领跌的压力会向全曲线扩散</td>
+        <td class="bk">GS（Asia Macro Global Market Recap）</td>
+        <td class="ak"><span class="act">WATCH 超长端</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>JGBs 跟随海外利率下挫而低开；short-covering 似乎已经走完，市场处于明显压力之下，由 10y 期货领跌，7-15y 跑输，15y 成交沉重（可能与季末有关）。25y 以上出现国内与海外买盘，带动超长端趋平；中期收益率相对抗跌，且主要体现在衍生品市场。</div>
+        <div class="row"><span class="b">观点</span>GS 认为中期段的韧性可能反映了两点政策信号：Jiji Press 报道称 BoJ 对市场定价终端利率高于 2% 感到不安，以及 Masu 记者会的偏鸽基调。整体而言全日基调沉重。</div>
+        <div class="ev"><i>原文证据</i> "JGBs opened weaker after the overseas selloff. Short-covering ran its course, and the market was under meaningful pressure led by 10yr futures, with 7-15yr underperforming and 15yr trading heavily (quarter-end). Buying in 25yr and beyond from domestic and overseas accounts led to super-long flattening... possibly reflecting a Jiji Press article suggesting the BoJ is uncomfortable with market pricing of a terminal rate above 2%, and the dovish tone of Masu's press conference."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">AUD / FX 澳债与外汇<span class="bond">AUD 曲线日内趋平 3bp 后收复 · 当日陡 1bp</span><span class="istag">拍卖量同比 -34%</span></td>
+        <td class="lv">AUD 债市震荡后收平：<b>曲线在 US CPI 后最多趋平 3bp 又迅速收复，最终当日陡 1bp</b><span class="tl">住宅地产活动回升，但首府城市<b>拍卖量同比低约 34%（Cotality）</b>；本周澳洲无重要数据</span></td>
+        <td class="fl">美元近两月走弱归因于三点：(i) 反应函数不确定 / 市场认为 FOMC 收紧门槛高；(ii) 财政部倾向遏制更高收益率；(iii) 支持被低估货币（尤其亚洲）的个别政策</td>
+        <td class="rv">GS：<b>Fed 的高门槛解释了美元对 CPI 的"类新兴市场"温和反应</b>，跨资产表现更符合高名义增长而非鹰派反应函数；<b>JPY、KRW 加入 CNY 的长期趋势</b>，是被低估亚洲货币贡献最大的部分</td>
+        <td class="cr"><span class="neu">Catalyst:</span> <b>RBA Hunter 今日 12:30pm AEST</b>；<b>周五 9:30am AEST 多位 RBA 官员出席参议院（Bullock、Hauser、Hunter、Kent、Jones）</b>；<span class="neu">Risk:</span> 澳洲本周无重要数据，AUD 方向更多由美债与美元叙事驱动，外部冲击敏感度高</td>
+        <td class="bk">GS（Asia Macro Global Market Recap）<span class="tl">FX：美元走弱三因素</span></td>
+        <td class="ak"><span class="act">WATCH RBA 发言</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>AUD 债市在震荡后收平：曲线在 US CPI 公布后最多趋平 3bp，随后收复，最终当日陡 1bp。住宅地产活动有所回升，但首府城市拍卖量同比下降约 34%（Cotality）。本周澳洲没有重要数据，关注 RBA Hunter 今日 12:30pm AEST 发言，以及周五 9:30am AEST 多位 RBA 官员（Bullock、Hauser、Hunter、Kent、Jones）的参议院出席。</div>
+        <div class="row"><span class="b">FX 观点</span>GS 将美元近两月走弱归因于三点：(i) 反应函数不确定、市场认为 FOMC 收紧门槛高；(ii) 财政部倾向于遏制更高收益率；(iii) 支持被低估货币（尤其亚洲）的个别政策。Fed 的高门槛解释了美元对 CPI 的"类新兴市场"式温和反应，跨资产表现更符合高名义增长而非鹰派反应函数。JPY 与 KRW 加入了 CNY 的长期趋势，是被低估亚洲货币贡献最大的部分。</div>
+        <div class="ev"><i>原文证据</i> "AUD closed sideways after a volatile session. The curve flattened as much as 3bps on US CPI before clawing that back, ultimately closing 1bp steeper... Auction volumes ~34% lower y/y (Cotality). No major data this week, RBA Hunter today 12:30pm AEST." ／ "Dollar weakness attributed to (i) uncertain reaction function / high bar to tighten, (ii) Treasury's preference to curtail higher yields, (iii) idiosyncratic policies supporting undervalued currencies especially in Asia."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 利率策略与预测 Rates Strategy & Forecasts ============ -->
+<section>
+  <div class="sec-head"><h2>利率策略与预测</h2><span class="n">2 行</span><span class="src">GS · HSBC</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">全球利率 Grouped Hikes<span class="bond">YE26 10y 预测：US 4.75% / DE 3.25%</span><span class="istag">抛售广度 · 远期近数十年高位</span></td>
+        <td class="lv">本轮抛售的关键是<b>广度</b>——全球性、无单一主导市场；债券与互换<b>远期在多个市场接近数十年高位</b>，由<b>期限溢价、利率预期、通胀盈亏平衡、更高实际利率</b>共同推动<span class="tl">GS 将 <b>2026 年末 10y 收益率预测上调至美国 4.75%、德国 3.25%</b></span></td>
+        <td class="fl">由基本面驱动的收益率上行，因此需要基本面转变才能推动收益率回落</td>
+        <td class="rv">GS 认为除非商品价格回落，否则预计曲线持续（但形态各异）的<b>趋平风险</b>；ECB 提供了"以通胀为焦点的央行可扩大结果分布区间"的案例</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 商品（尤其能源）价格路径、央行沟通；<span class="neu">Risk:</span> 两大风险——(a) 能源压力迫使央行在"是否对抗通胀"上做出选择；(b) 金融条件仍良性 → 对政策限制性的信心下降</td>
+        <td class="bk">GS Research（Global Rates Trader「Grouped Hikes」）</td>
+        <td class="ak"><span class="act">FLATTENER RISK</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">核心观点</span>GS Global Rates Trader 指出本轮抛售的关键特征是广度：这是全球性的抛售，没有单一主导市场。债券与互换远期在多个市场接近数十年高位，受期限溢价、利率预期、通胀盈亏平衡与更高实际利率共同推动。两个关键风险：(a) 能源压力会迫使各国央行选择是否对通胀采取抵制动向；(b) 金融条件总体仍良性，降低了市场对政策实际限制程度的信心。ECB 的例子说明，以通胀为焦点的央行可以扩大结果的分布区间。</div>
+        <div class="row"><span class="b">预测</span>GS 将 2026 年末 10y 收益率预测上调至美国 4.75%、德国 3.25%；并指出基本面驱动了收益率上行，因此需要基本面转变才能推动收益率下行；在商品价格回落之前，预计曲线将持续面临（形态各异的）趋平风险。</div>
+        <div class="ev"><i>原文证据</i> "The breadth of this selloff is global, with no single driver. Forwards are near multi-decade highs driven by term premium, rate expectations, breakeven inflation, and higher real rates. Two risks: (a) energy pressures force CBs to choose whether to lean against inflation; (b) benign financial conditions reduce confidence in how restrictive policy is. Raise YE26 10y forecasts to 4.75% US and 3.25% Germany. Expect ongoing flattening risk unless commodity prices fade."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美联储路径分歧<span class="bond">GS：9 月 +25bp；HSBC：今年共 50bp（9 月+12 月）</span><span class="istag">加息门槛高 · 决策比定价更不确定</span></td>
+        <td class="lv">GS Research：预期 9 月 FOMC <b>加息 25bp</b>（原为按兵不动），后续再加息"<b>可能但非基准情形</b>"；8 月核心 PCE 预测仅微升至 <b>0.26%</b><span class="tl">HSBC Research：改口预期 <b>今年共加息 50bp（9 月与 12 月各 25bp）</b>；预期新点阵图 2026 年底中位数与"50bp 加息"一致，并预期 <b>2027 全年维持 4.00-4.25% 不变</b></span></td>
+        <td class="fl">HSBC：<b>Sep-Jan FOMC steepener 触及目标后平仓</b>（入场 17bp，以修订后目标 35bp 平仓）；8 月核心 CPI 意外上行延续前端利率上行压力</td>
+        <td class="rv">GS 明确认为<b>经济上并无强加息理由</b>（超调均可归因一次性因素），但 <b>FOMC 不愿在市场已定价近 90% 加息时按兵不动</b>；GS 认为<b>决策远比市场定价所暗示的更不确定</b></td>
+        <td class="cr"><span class="neu">Catalyst:</span> 本周 FOMC 决议与点阵图、核心 PCE；<span class="neu">Risk:</span> 两家券商对加息幅度与时长的路径判断存在实质分歧，若点阵图中位数不及 HSBC 的 50bp 预期，前端可能快速回补</td>
+        <td class="bk">GS Research · HSBC Research<span class="tl">HSBC：平仓 Sep-Jan FOMC steepener</span></td>
+        <td class="ak"><span class="act">平仓 steepener</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">GS 观点</span>US Daily「Adding a Hike in September」：现预期 9 月 FOMC 加息 25bp（此前预期按兵不动）；后续会议再加息"可能但非基准情形"；8 月核心 PCE 预测仅小幅上调至 0.26%。GS 认为经济层面并无强力的加息理由，超额部分可以归因于一次性因素，但 FOMC 不愿在市场已定价近 90% 加息概率的情况下选择按兵不动，并认为最终决策远比市场定价所暗示的更加不确定。</div>
+        <div class="row"><span class="b">HSBC 观点</span>Fed view change：因通胀仍高，改口预期今年共加息 50bp，即 9 月与 12 月各 25bp；预期新的 FOMC 点阵图 2026 年底中位数与"50bp 加息"的更新观点一致；鉴于经济动能具韧性，预期 2027 全年维持在 4.00-4.25% 区间不变。US Rates trade idea：Sep-Jan FOMC steepener 触及目标后平仓——以修订后目标 35bp 平掉 Sep 26-Jan 27 FOMC OIS steepener（入场 17bp），理由是该交易在 8 月核心 CPI 意外上行、前端利率延续上行的背景下已达到目标。</div>
+        <div class="ev"><i>原文证据</i> "US Daily: Adding a Hike in September — 25bp hike expected at the Sept FOMC (vs hold). Additional hikes possible but not baseline. Aug core PCE forecast raised slightly to 0.26%. No strong economic case for raising. The Fed doesn't want the market reaction from holding when the market prices ~90% hike. Sees the Fed's decision as less clear-cut than market pricing implies." ／ "Fed view change: 50bp of hikes this year on still-high inflation. We now expect +25bp in September and +25bp in December... Sep-Jan FOMC steepener hit target, close it (entered 17bp, closed at revised target 35bp)."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt ／ 03_HSBC_FWHSBCAPACCreditDeskStrategy11Sep2026External.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 美国IG · 供给与技术面 US IG Supply & Technicals ============ -->
+<section>
+  <div class="sec-head"><h2>美国IG · 供给与技术面</h2><span class="n">3 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">US IG Cash 供给结构<span class="bond">IG 30y basket -2bp vs 5y/10y 各 -0.5bp</span><span class="istag">$73bn 为记录年第三繁忙周</span></td>
+        <td class="lv">上周发行 <b>$73bn</b>，为记录年以来<b>第三繁忙周</b>（与 $70bn 预估相符）；周五 IG100 在股市微跌时仍收紧 <b>1.5bp</b><span class="tl"><b>IG 30y basket 收紧 2bp，而 5y/10y 各约 0.5bp</b> → 曲线趋平</span></td>
+        <td class="fl">$73bn 一级但 Tflo 仅约 <b>1bn 净卖出 3y+</b>；<b>供给结构比规模更重要</b>：4 天 46 笔，但缺巨型交易，最大为 <b>$6.5bn GSK</b>，仅 3 笔 &gt;$5bn，<b>长端仅占 7%（近三个月为 20%）</b></td>
+        <td class="rv">GS：IG Cash 在更震荡的宏观中跑赢，因<b>提前定价供给的技术面压倒了一切</b>；供给结构 + 技术面驱动曲线趋平</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 下周预计 <b>$50bn</b> 供给；<b>MSFT 意外发行概率上升</b>但除此外供给难成信用跑输驱动；<span class="neu">Risk:</span> 若长端占比重新回到 20% 附近的常态水平，曲线趋平的技术面支撑将减弱</td>
+        <td class="bk">GS（US IG Cash Quick Hits）</td>
+        <td class="ak"><span class="act">CURVE FLATTENER</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>上周 IG 一级发行 $73bn，为记录年以来第三繁忙的一周，与 $70bn 的预估基本相符。周五 IG100 在股市小幅下跌的情况下仍收紧 1.5bp。虽然发行规模达 $73bn，但 Tflo 仅约 1bn 且为 3y+ 净卖出。</div>
+        <div class="row"><span class="b">观点</span>GS 认为供给的结构比规模更重要：4 天内 46 笔交易，但缺少巨型交易，最大单笔为 $6.5bn 的 GSK，仅 3 笔超过 $5bn，长端占比仅 7%（而近三个月为 20%）。该结构叠加强劲技术面推动曲线趋平：IG 30y basket 收紧 2bp，而 5y 与 10y 各约 0.5bp。GS 指出 IG Cash 之所以在更震荡的宏观环境中跑赢，是因为"提前定价供给"的技术面压倒了一切；下周预计 $50bn 供给，除 MSFT 意外发行（概率上升）外，供给难以成为信用跑输的驱动因素。</div>
+        <div class="ev"><i>原文证据</i> "IG Cash outperformed in a more volatile macro backdrop as technicals that front-ran supply trumped all. $73bn of issuance was the third busiest week of the record year (in line with the $70bn estimate)... The supply composition matters more: 46 deals over 4 days but lacking a jumbo, the largest being $6.5bn GSK with only 3 deals >$5bn and just 7% in the long end (vs 20% over the last three months). That composition plus technicals drove curve flattening, with the IG 30y basket 2bp tighter vs 5y/10y each ~0.5bp. $50bn expected next week."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">AI basket / Hyperscalers<span class="bond">AI basket 相对 IG100 创一年多最佳</span><span class="istag">TMT 股票两周最大多头买入</span></td>
+        <td class="lv"><b>AI basket 相对 IG100 创一年多以来最佳表现</b>；AI 股票（GS AI for AI at Risk）周 <b>+5%（MTD +12%）</b>，但仍距高点约 <b>-40%</b><span class="tl"><b>TMT 股票创 2025 年 6 月以来最大两周多头买入（5 年 97 分位）</b></span></td>
+        <td class="fl">Jeff Papai 对 Hyperscalers 跑赢的判断胜出：原因包括供给偏离该子板块、已发债久期有限、AI 动能广泛；<b>ORCL 财报干净超预期（尽管股价回落）</b>、OpenAI Astra 发布、META Muse、GS Communicopia 会议正面</td>
+        <td class="rv">GS 维持 Hyperscalers / AI basket 跑赢判断，核心逻辑是子板块供给稀缺 + 久期受限，而非单纯情绪驱动</td>
+        <td class="cr"><span class="neu">Catalyst:</span> <b>Anthropic CEO（Dario Amodei）周末发帖周一会受关注</b>（要点：AI 能力推进过快，应刻意放慢而非停止），可能抽走部分热度；MSFT 意外发行概率上升；<span class="neu">Risk:</span> AI 股票仍距高点约 -40%，若财报动能转弱或供给回归该子板块，跑赢逻辑将快速逆转</td>
+        <td class="bk">GS（US IG Cash Quick Hits）</td>
+        <td class="ak"><span class="act">BUY AI basket</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>GS 指出 AI basket 相对 IG100 创下一年多以来的最佳表现；AI 相关股票（GS AI for AI at Risk 组合）单周上涨 5%（本月至今 +12%），但仍较高点低约 40%；TMT 股票录得 2025 年 6 月以来最大的两周多头买入（处于 5 年 97 分位）。</div>
+        <div class="row"><span class="b">观点</span>GS 认为 Jeff Papai 此前对 Hyperscalers 跑赢的判断已经胜出，驱动因素包括：供给明显偏离该子板块、已发债久期有限、以及 AI 动能广泛存在。催化包括 OpenAI Astra 发布、META Muse、ORCL 财报干净超预期（尽管股价回落）以及 GS Communicopia 会议的正面反馈。GS 提示需关注 Anthropic CEO Dario Amodei 周末的发帖（核心观点是 AI 能力推进过快，应刻意放慢而非停止），可能抽走部分热度。</div>
+        <div class="ev"><i>原文证据</i> "Jeff Papai's call for Hyperscalers to outperform won out: the AI basket delivered its best week vs IG100 in over a year, driven by supply being away from the subsector, limited duration already issued, and broad AI momentum. OpenAI Astra release, META Muse, ORCL's clean earnings beat (despite the equity pullback), positive GS Communicopia conference. AI equities: GS AI for AI at Risk +5% on the week (MTD +12%), still ~-40% from highs. TMT equities saw the largest two-week long buying since June 2025 (97th percentile over 5 years)."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">GS Prime 仓位 / ETF 空头<span class="bond">IG 多空比 2 年新低 · 公司债 ETF 空头 +14%</span><span class="istag">宏观产品 Liberation Day 以来最大净卖出</span></td>
+        <td class="lv"><b>IG 多空比进入本周时创 2 年新低</b>；IG 债券占账簿比与整体净市值接近 2 年低位<span class="tl">股票净敞口处于 <b>6 分位</b></span></td>
+        <td class="fl">公司债 ETF <b>空头 +14%、环比 +27%</b>，<b>全部由 IG ETF 做空驱动</b>；宏观产品出现 <b>Liberation Day 周以来最大净卖出</b>，且全由卖空驱动，指向 8 月 CPI 前对冲增加</td>
+        <td class="rv">GS：仓位已明显出清（IG 多空比、净市值均为 2 年低位），叠加强劲技术面与便宜波动率，<b>未来约 4 周很难论证信用是最好的做空选择</b></td>
+        <td class="cr"><span class="neu">Catalyst:</span> FOMC 与 CPI 后的对冲平仓、SPX 季节性；<span class="neu">Risk:</span> GS 提醒中期选举前 SPX 平均最大回撤 <b>-830bp</b>（24 次观察），当前距高点不到 180bp，意味着下行空间仍在</td>
+        <td class="bk">GS（Prime Brokerage · Max Lukianchikov）</td>
+        <td class="ak"><span class="act">不宜做空信用</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>GS Prime 数据显示 IG 多空比进入本周时创下 2 年新低，IG 债券占账簿比重与整体净市值也接近 2 年低位；股票净敞口处于 6 分位。公司债 ETF 空头增加 14%、环比 +27%，且全部由 IG ETF 做空驱动。宏观产品出现自 Liberation Day 周以来最大的净卖出，完全由卖空驱动，指向 8 月 CPI 公布前的对冲行为增加。</div>
+        <div class="row"><span class="b">观点</span>GS 认为仓位已明显出清，叠加强劲的技术面与便宜的波动率，未来约 4 周内很难论证信用是最好的做空标的。Max Lukianchikov 指出，中期选举前 SPX 的平均最大回撤为 -830bp（24 次观察），而当前距高点不到 180bp，意味着后续仍存在下行空间。</div>
+        <div class="ev"><i>原文证据</i> "GS Prime: IG long/short ratio entered the week at a 2-year low; IG bonds as share of book and overall net market value near 2-year lows. Corporate bond ETF shorts +14%, +27% w/w, all driven by IG ETF shorts. Equities net exposure 6th percentile. Macro products saw the largest net selling since Liberation Day week, entirely short-driven, pointing to hedging ahead of August CPI." ／ "In the ~4 weeks ahead it's hard to argue credit is the best short given yields, technicals, and cheap vol."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 欧洲信用 European Credit ============ -->
+<section>
+  <div class="sec-head"><h2>欧洲信用</h2><span class="n">2 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">EUR T2 / Subincos / AT1<span class="bond">T2/Incos +3~5bp · RT1s +5~15bp</span><span class="istag">subs 无供给故表现好</span></td>
+        <td class="lv">T2 与 Incos 周收 <b>+3-5bp</b>（LT2s 与 Subincos）；<b>RT1s +5-15bp</b><span class="tl">尽管利率波动，信用表现不错，尤其 subs（因无供给）；现金价格产品 u/p 但周五有买家</span></td>
+        <td class="fl">周三/周四抛售后基调转好；<b>IG 供给被消化第四周 fins 供给，疲劳感上升</b>（本周 8 笔 senior fins 但多为小发行人或短端）；<b>新发跑输因 HF 全周稳定卖出</b></td>
+        <td class="rv">GS：现金流产品与 REITs 受创更多；<b>AT1/RT1s 到后半周才 u/p 并在利差上走阔</b>；在该收益率水平预期更多 short call 买入与久期防御；保险买入零星（长端 15-20mm）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 一级供给节奏（若放缓将更关注二级 block offer）、利率变动引发的卖出/流出；<span class="neu">Risk:</span> 融资疲态与 HF 持续卖出使新发跑输；现金流产品与 REITs 已受创更多，若利率再上行将放大损失</td>
+        <td class="bk">GS（欧元区金融市场回顾）</td>
+        <td class="ak"><span class="act">PREFER SUBS</span><span class="act">久期防御</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>T2 与 Incos 周收 +3-5bp（指 LT2s 与 Subincos），RT1s 收 +5-15bp。尽管利率波动较大，信用表现尚可，尤其是 subs（受益于没有供给）。现金价格产品收盘涨跌互现，但周五出现了买家；在周三与周四的抛售后基调转好。美元侧见到 RM 在 PT 后抬价 ZURNVX$。</div>
+        <div class="row"><span class="b">观点</span>GS 指出 IG 一级供给已连续第四周被消化 fins 供给，市场疲劳感上升（本周 8 笔 senior fins，但多为小发行人或短端），新发因 HF 全周稳定卖出而跑输。现金流产品与 REITs 受创更多；AT1/RT1s 到后半周才回到面值之上，但在利差上是走阔的。在该收益率水平上，GS 预期会出现更多 short call 买入与久期防御行为，保险买盘零星（长端 15-20mm）。</div>
+        <div class="ev"><i>原文证据</i> "T2/Incos closed the week +3-5bps (LT2s and Subincos) with RT1s +5-15bps. Despite rate volatility, credit held up well, especially subs (no supply). Cash price products u/p but with buyers on Friday, tone better after Wed/Thu selloff. IG supply absorbed a fourth week of fins supply, fatigue increasing (8 senior fins but mostly small issuers/short end), new issues underperformed on steady HF selling all week. Cash flow products and REITs hit more. AT1/RT1s only u/p late in the week and wider in spread. Insurance buying sporadic (15-20mm in the long end)."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">法国风险 / OAT-Bund<span class="bond">OAT-Bund +91（创纪录宽）</span><span class="istag">Fund de-risking · 无对手盘</span></td>
+        <td class="lv"><b>法国风险偏软，OAT-Bund 创纪录宽、收于 +91</b>；欧盟 seniors 偏弱一周全线走阔，<b>法国银行跑输（seniors +3/+5bp）</b><span class="tl">基金持续去风险（de-risking），且"无人接另一边"</span></td>
+        <td class="fl">优化换券（optimisation switches）具备动能，偏好从短端延长至 belly 或 belly 内切换；<b>4-5yr 最易轮动</b></td>
+        <td class="rv">GS：老长端相对买盘仍好，但<b>长端 COF 跑输明显</b>；RM 不愿 block sell，若一级放缓将更关注二级 block offer</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 法国财政/政治风险、一级供给放缓后的二级 block offer、利率变动引发的赎回；<span class="neu">Risk:</span> 基金去风险而缺乏对手盘，OAT-Bund 创新宽意味着法国信用在利差端的传染风险仍在累积</td>
+        <td class="bk">GS（欧元区金融市场回顾）</td>
+        <td class="ak"><span class="act">UNWIND 短端→belly</span><span class="act">看淡法国</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>法国风险偏软，OAT-Bund 创新宽并收于 +91，基金进行去风险操作且无人承接另一端。欧盟 seniors 全周偏弱并全线走阔，其中法国银行跑输（seniors +3/+5bp）。</div>
+        <div class="row"><span class="b">观点与交易</span>GS 观察到优化换券（optimisation switches）具备动能，偏好从短端向 belly 延长或在 belly 内部切换，其中 4-5yr 最容易轮动；老长端相对买盘仍较好，但长端 COF 跑输明显。RM 不愿进行 block sell，若一级发行放缓将更关注二级 block offer；GS 提示若利率变动引发卖出或资金流出，需保持警惕。</div>
+        <div class="ev"><i>原文证据</i> "French risk softer, OAT-Bund at a record wide closing at +91, funds de-risking with nobody on the other side. USD side RM lifted ZURNVX$ after PT. Insurance buying sporadic (15-20mm in the long end). At these yield levels expect more short call buying and duration defence. Seniors: softer week across the board, French banks underperforming (seniors +3/+5bps)... Optimisation switches have momentum, preference to extend from the front end into or within the belly; 4-5yr easiest to rotate. Old longs still relatively well bid but long-end COF clearly underperforming. RMs reluctant to block sell."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲IG · 主权与准主权 Asia IG Sovs & Quasi ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲IG · 主权与准主权</h2><span class="n">1 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">Asia IG Sovs / Quasi<span class="bond">INDON 10y+ +2.5~5bp · PHILIP 20y +10bp 最弱</span><span class="istag">曲线陡峭化 · 周末见 ETF/保险买盘</span></td>
+        <td class="lv">RM/HF 卖出主导走阔；<b>周末 ETF 与保险在高收益率下开始买入</b>，local 仍安静<span class="tl">曲线陡峭化：<b>INDON 5y -1~3bp 但 10y+ +2.5~5bp</b>；<b>PHILIP 3y 收紧，但 5y +1-2bp、10y+ +5-7bp（20y +10bp 最弱）</b>；MALAYS unch/+2bp、PETMK +2-6bp（陡峭化）</span></td>
+        <td class="fl">印尼 quasi <b>PERTIJ/PLNIJ/IDASAL 长端 +2-6bp</b>；而高 beta <b>MINCAP 30s、LLPLCA 39s 收紧 8-10bp</b>，呈明显分化</td>
+        <td class="rv">GS：久期不受欢迎，长端需求主要来自少数试图择时核心利率的账户；区域需求集中在 2-7yr 前端与 belly，高 beta 名字反而受益于收益率吸引</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 美债长端走向（GS 将 YE26 10y 上调至 4.75%）、下周 FOMC；<span class="neu">Risk:</span> 全球久期遭抛售时本土账户（local）仍安静，缺乏承接意味着长端走阔压力可能延续</td>
+        <td class="bk">GS（Asia IG Sovs/Quasi）</td>
+        <td class="ak"><span class="act">PREFER 前端</span><span class="act">BUY 高 beta</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>亚洲 IG 主权与准主权走阔由 RM/HF 卖出主导，周末 ETF 与保险在高收益率水平开始买入，本土账户仍然安静。曲线明显陡峭化：INDON 5y 收紧 1-3bp，但 10y 及以上走阔 2.5-5bp；PHILIP 3y 收紧，但 5y 走阔 1-2bp、10y+ 走阔 5-7bp，其中 20y 最弱（+10bp）。印尼 quasi 中 PERTIJ、PLNIJ、IDASAL 长端走阔 2-6bp；高 beta 的 MINCAP 30s、LLPLCA 39s 反而收紧 8-10bp。马来 PETMK 走阔 2-6bp（陡峭化），MALAYS 持平至 +2bp。</div>
+        <div class="row"><span class="b">观点</span>GS 指出久期在本轮不受欢迎，长端需求主要来自少数试图择时核心利率的账户；区域需求驱动集中在 2-7yr 的前端与 belly，高 beta 名字因收益率吸引力而受益。</div>
+        <div class="ev"><i>原文证据</i> "Asia IG Sovs/Quasi: RM/HF selling led the widening; ETFs and insurance started buying into the higher yields over the weekend, locals still quiet. Curve steepening: INDON 5y -1~3bp but 10y+ +2.5~5bp; PHILIP 3y tighter but 5y +1-2bp and 10y+ +5-7bp (20y +10bp weakest). Indonesian quasi PERTIJ/PLNIJ/IDASAL long end +2-6bp; higher beta MINCAP 30s and LLPLCA 39s 8-10bp tighter. Malaysia PETMK +2-6bp, MALAYS unch/+2bp."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲IG · 公司/金融（印度·泰国）Asia IG Corp/Fin — India & Thailand ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲IG · 公司/金融（印度·泰国）</h2><span class="n">1 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">RBL Bank / RBKIN · KBANK<span class="bond">RBL Bank $350mm 5y @T+120 · KBANK $800mm 10NC5 T2 @T+173bp</span><span class="istag">两笔新发均收 tight 5bp</span></td>
+        <td class="lv">印度 <b>RBL Bank（Emirates NBD 持股 60%）$350mm 5y @T+120bp</b>，含 <b>CoC Put at $101</b>（若 ENBD 持股低于 51%），评级 <b>Moody's Baa2（高于印度主权 Baa3）</b>，账簿 <b>&gt;$1.5bn</b>（亚洲 63%/EMEA 37%，70% 配给 FM/AM）<span class="tl">泰国 <b>KBANK $800mm 10NC5 T2 @T+173bp</b>（为赎回现有 $800mm KBANK 31-26c T2s 融资），账簿 <b>&gt;$1.5bn</b>（亚洲 64%/EMEA 36%）</span></td>
+        <td class="fl"><b>新 RBKIN 31s 收盘收紧 5bp</b>，RM/零售/中东账户有兴趣；<b>新 KBANK 36s 收盘收紧 5bp</b>；<b>Bank of Maharashtra 宣布 5y 授权但本周退出未发</b></td>
+        <td class="rv">其余印度银行走阔 1.5-3bp，<b>ICICI 2031 跑输（+5.5bp）</b>，其他印度 IG 收紧 1bp 至 +2bp（RILIN/EXIMBK 久期 +4-6bp）；泰国 T2 <b>BBLTB 走阔 1.5-3bp</b>（seniors 收紧 1bp 至 +2bp），泰国 corp +1-2bp，<b>PTTGC/TOPTB perps 跑赢、收紧 8-18bp</b></td>
+        <td class="cr"><span class="neu">Catalyst:</span> RBL Bank 的 CoC Put 触发条件（ENBD 持股变化）；Bank of Maharashtra 后续发行时点；<span class="neu">Risk:</span> RBL Bank 的 Baa2 高于印度主权 Baa3，属于结构性溢价，若 ENBD 减持至 51% 以下将触发价格调整；ICICI 2031 已跑输，印度银行板块内部轮动加剧</td>
+        <td class="bk">GS（Asia IG Corp/Fin）</td>
+        <td class="ak"><span class="act">NEW ISSUE</span><span class="act">BUY 新发</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">印度</span>RBL Bank（Emirates NBD 持股 60%）发行 $350mm 5y @T+120bp，含 CoC Put at $101（若 ENBD 持股低于 51%），Moody's Baa2（高于印度主权 Baa3），账簿超过 $1.5bn（亚洲 63%/EMEA 37%，70% 分配给 FM/AM）。新 RBKIN 31s 收盘收紧 5bp，RM、零售与中东账户表现出兴趣。Bank of Maharashtra 宣布 5y 授权但本周退出、未发行。其他印度银行走阔 1.5-3bp，ICICI 2031 跑输（+5.5bp），其余印度 IG 收紧 1bp 至走阔 2bp（RILIN/EXIMBK 久期 +4-6bp）。</div>
+        <div class="row"><span class="b">泰国</span>KBANK 发行 $800mm 10NC5 T2 @T+173bp，用于赎回现有 $800mm KBANK 31-26c T2s，账簿超过 $1.5bn（亚洲 64%/EMEA 36%）。新 KBANK 36s 收盘收紧 5bp；BBLTB T2 走阔 1.5-3bp（seniors 收紧 1bp 至 +2bp）。泰国 corp +1-2bp，PTTGC 与 TOPT B perps 跑赢、收紧 8-18bp。</div>
+        <div class="ev"><i>原文证据</i> "India: RBL Bank (60% owned by Emirates NBD) $350mm 5y @T+120bp with a CoC Put at $101 if ENBD ownership falls below 51%, rated Moody's Baa2 (above India sovereign Baa3), book >$1.5bn (Asia 63%/EMEA 37%, 70% to FM/AM). New RBKIN 31s closed 5bp tighter... Bank of Maharashtra announced a 5y mandate but stepped back this week. Other Indian banks 1.5-3bp wider, ICICI 2031 underperformed (+5.5bp)." ／ "Thailand: KBANK $800mm 10NC5 T2 @T+173bp to fund the takeout of the existing $800mm KBANK 31-26c T2s, book >$1.5bn. New KBANK 36s closed 5bp tighter; BBLTB T2 +1.5-3bp wider (seniors -1/+2bp). Thai corp +1-2bp, PTTGC/TOPTB perps outperformed, 8-18bp tighter."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲IG · 公司/金融（韩国·中国·香港·台湾）Asia IG Corp/Fin — Korea/China/HK/TW ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲IG · 公司/金融（韩国·中国·香港·台湾）</h2><span class="n">1 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">韩国新发 / 中国 TMT / 台湾<span class="bond">KOSOPW $300mm 3y @T+50bp · KORSFC $300mm 3y @T+47bp</span><span class="istag">两笔新发跑赢 · Onshore 需求强</span></td>
+        <td class="lv">韩国低 beta 供给：<b>KOSOPW $300mm 3y 气候转型债 @T+50bp（T2+58bp）</b>、<b>KORSFC $300mm 3y @T+47bp（T2+56bp）</b><span class="tl"><b>新 KOSOPW 29s 跑赢、收紧 10bp</b>；<b>新 KORSFC 29s 收紧 3bp</b>；两者 <b>Onshore 需求强</b></span></td>
+        <td class="fl">中国 TMT 活跃：周初亚洲买 5y，后半周全球账户再卖；香港 <b>HPHTSP 31s 最活跃</b>（周初 RM 买入后转 two-way）</td>
+        <td class="rv">中国 <b>BABA、TENCNT 长端走阔 3-7bp</b>（TENCNT 46s 仅 +1bp），5-10y 仅 +1.5-2.5bp；<b>TME 36s、KUAISH 36s 跑输 +5-6bp</b>（31s +1-2bp），<b>MEITUA 跑赢 -2/+1bp</b>，<b>LENOVO 32s +4.5bp 继续弱</b>；台湾高 beta 寿险 +4bp（SHIKON/FUBON 41s）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 韩国 Onshore 补配需求、中国 TMT 长端全球卖压；香港 HPHTSP 31s 的两向流；<span class="neu">Risk:</span> 台湾 TAISEM 见 RM 卖出（+2-3bp）、NSINTW +2.5-3bp，高 beta 寿险久期在利率上行中持续跑输</td>
+        <td class="bk">GS（Asia IG Corp/Fin）</td>
+        <td class="ak"><span class="act">BUY 韩国新发</span><span class="act">减 TMT 久期</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">韩国</span>低 beta 供给：KOSOPW 发行 $300mm 3y 气候转型债 @T+50bp（T2+58bp），KORSFC 发行 $300mm 3y @T+47bp（T2+56bp）。新 KOSOPW 29s 跑赢、收紧 10bp，新 KORSFC 29s 收紧 3bp，两者 Onshore 需求强。其余韩国 IG 走阔 1.5bp 至收紧 2bp，证券行前端 NHSECS 29s 收紧 6bp。</div>
+        <div class="row"><span class="b">中国 / 香港 / 台湾</span>中国 TMT 活跃：周初亚洲账户买入 5y，后半周全球账户再度卖出。BABA、TENCNT 长端走阔 3-7bp（TENCNT 46s 仅 +1bp），5-10y 仅 +1.5-2.5bp。TME 36s、KUAISH 36s 跑输 +5-6bp（31s +1-2bp），MEITUA 跑赢（-2/+1bp），LENOVO 32s +4.5bp 继续偏弱。香港 HPHTSP 31s 为最活跃名字，周初 RM 买入后转为 two-way（收盘 +1bp）；其他 HK 收紧 2bp 至 +1bp，久期跑输（CKHH/HKAA/MTRC +2-6bp）。台湾高 beta 寿险 +4bp（SHIKON/FUBON 41s），NSINTW +2.5-3bp，CATLIF 持平/+1.5bp，TAISEM 见 RM 卖出 +2-3bp。</div>
+        <div class="ev"><i>原文证据</i> "Korea: low beta supply — KOSOPW $300mm 3y climate transition @T+50bp (T2+58bp) and KORSFC $300mm 3y @T+47bp (T2+56bp). New KOSOPW 29s outperformed, 10bp tighter; new KORSFC 29s 3bp tighter; strong onshore demand for both... China: TMT active, Asia buying 5y early in the week and global accounts selling again later. BABA and TENCNT long end 3-7bp wider (TENCNT 46s just +1bp) with 5-10y only +1.5-2.5bp. TME 36s and KUAISH 36s underperformed +5-6bp... Hong Kong: HPHTSP 31s most active... Taiwan: high beta lifers +4bp (SHIKON/FUBON 41s), NSINTW +2.5-3bp, CATLIF unch/+1.5bp, TAISEM saw RM selling +2-3bp."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲HY · 主权与准主权 Asia HY Sovs ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲HY · 主权与准主权</h2><span class="n">1 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">PKSTAN / SRILAN / MONGOL / LAOSIN<span class="bond">PKSTAN 36s -2pt（+14bp）最弱 · 51s -1.875pt</span><span class="istag">油价+地缘+HF/RM 卖出 · 周五见亚洲买盘</span></td>
+        <td class="lv">油价、地缘与 HF/RM 卖出导致亚洲 HY 主权偏弱，<b>周五亚洲账户开始买入</b><span class="tl"><b>新 PKSTAN 36s 跌 2pt（+14bp）表现最弱</b>，<b>51s -1.875pt（+8bp）</b>；新 32s -0.75pt（-4bp 收紧）；前端 <b>27s/29s/31s -0.25pt（收紧 10-15bp）</b></span></td>
+        <td class="fl"><b>SRILAN 前端 MLBs（30s/33s）-0.625~0.75pt</b>、更长端 <b>-1.25~1.625pt</b>；<b>MONGOL -0.375~0.5pt</b>（基准收紧 7-12bp）；<b>LAOSIN 30s -0.625pt</b></td>
+        <td class="rv">GS：价格跌幅与利差变动方向背离（长端价格跌但利差收窄、前端价格小跌但利差大幅收窄），说明<b>基准利率上行是主要驱动</b>，而非信用基本面恶化</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 油价与中东地缘（Trump 中期选举相关的协议紧迫性）、巴基斯坦地缘风险；<span class="neu">Risk:</span> 巴基斯坦曲线出现明显分化（长端大跌、前端利差收窄），若地缘恶化长端跌幅会进一步扩大</td>
+        <td class="bk">GS（Asia HY Sovs）</td>
+        <td class="ak"><span class="act">BUY 前端</span><span class="act">回避长端</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>受油价、地缘因素以及 HF/RM 卖出影响，亚洲 HY 主权整体偏弱，周五亚洲账户开始买入。新 PKSTAN 36s 下跌 2pt（利差 +14bp），为最弱表现；51s 跌 1.875pt（+8bp）；新 32s 跌 0.75pt 但利差收紧 4bp；前端 27s/29s/31s 跌 0.25pt 但利差收紧 10-15bp。SRILAN 前端 MLBs（30s/33s）跌 0.625-0.75pt，更长端跌 1.25-1.625pt。MONGOL 跌 0.375-0.5pt，但基准利差收紧 7-12bp；LAOSIN 30s 跌 0.625pt。</div>
+        <div class="row"><span class="b">观点</span>GS 指出价格跌幅与利差变动方向出现背离——长端价格下跌而利差收窄、前端价格小幅下跌但利差大幅收窄，说明基准利率上行是主要驱动因素，而不是信用基本面恶化。</div>
+        <div class="ev"><i>原文证据</i> "Asia HY Sovs: oil, geopolitics and HF/RM selling drove weakness with Asian accounts buying on Friday. The new PKSTAN 36s -2pts (14bps wider) was the weakest; 51s -1.875pts (8bps) while the new 32s -0.75pt (-4bps tighter) and front end 27s/29s/31s -0.25pt (10-15bps tighter). SRILAN front-end MLBs (30s/33s) -0.625/0.75pt with longer end -1.25/1.625pts. MONGOL -0.375/0.5pt (-7/12bps tighter on the benchmark) and LAOSIN 30s -0.625pt."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲HY · 公司/金融 Asia HY Corp/Fin ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲HY · 公司/金融</h2><span class="n">2 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">VLLPM / 印度 HY / 印尼 perps<span class="bond">VLLPM 收高 3.5-4.5pts · IHFLIN -20bp</span><span class="istag">Vista Land 卖商场偿债</span></td>
+        <td class="lv">菲律宾 <b>VLLPM（Vista Land）曲线非常活跃，净需求在 27s</b>，29s 呈两向<span class="tl">彭博报道其出售商场资产以偿付 2027 年到期债券后，<b>债券收高 3.5-4.5pts</b>，RM/HF 均参与</span></td>
+        <td class="fl">印度 HY：<b>IHFLIN 持平或收紧 20bp</b>；<b>PICAHF +0.875pt（利差 -90bp）</b>；印尼 <b>新 BMRIIJ perps 跌 75c 但利差收紧 4bp</b>，BBNIIJ perps -1pt / +2.5bp</td>
+        <td class="rv">GS：VLLPM 因资产出售消息获得显著重估，是当周最明确的信用改善案例；印尼 perps 的价格跌幅远大于利差变动，说明是基准利率与久期在起作用</td>
+        <td class="cr"><span class="neu">Catalyst:</span> VLLPM 商场资产出售的完成与偿债安排；印尼 perps 的 step-up/结构条款；<span class="neu">Risk:</span> 印尼 perps 价格下跌 75c 但利差仅收紧 4bp，若基准利率继续上行，价格层面的损失会继续放大</td>
+        <td class="bk">GS（Asia HY Corp/Fin）</td>
+        <td class="ak"><span class="act">VLLPM 27s 优先</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>菲律宾 VLLPM（Vista Land）曲线非常活跃，净需求集中在 27s，29s 为两向成交；彭博报道该公司出售商场资产以偿付 2027 年到期债券后，其债券收盘上涨 3.5-4.5pts，RM 与 HF 均参与其中。印度 HY 方面，IHFLIN 持平或收紧 20bp，PICAHF 上涨 0.875pt（利差收紧 90bp）。印尼新 BMRIIJ perps 下跌 75c 但利差收紧 4bp，BBNIIJ perps 下跌 1pt（+2.5bp）。</div>
+        <div class="row"><span class="b">观点</span>GS 认为 VLLPM 因资产出售消息获得显著重估，是当周亚洲 HY 中最明确的信用改善案例；印尼 perps 的价格跌幅远大于利差变动，说明驱动来自基准利率与久期而非信用基本面。</div>
+        <div class="ev"><i>原文证据</i> "VLLPM (Vista Land) curve was very active with net demand in 27s and 2-way in 29s; bonds closed 3.5-4.5pts higher after Bloomberg reported the sale of mall assets to repay 2027 maturities, with RM/HF participating." ／ "India HY: IHFLIN flat to -20bp, PICAHF +0.875pt (-90bp in spread). Indonesia: new BMRIIJ perps -75c but -4bps tighter in spread; BBNIIJ perps -1pt/+2.5bp."<span class="srcf">来源：04_Goldman_Sachs_FWGSAsiaCreditWeeklyThemesRiskViews.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产 / 博彩 / 澳门<span class="bond">RWLVCA 29s -0.75pt（+15bp）· GENTMK perps -1.5~2pts</span><span class="istag">Fitch 下调云顶系评级</span></td>
+        <td class="lv">中国地产周初有需求：<b>SHUION、LNGFOR 曲线 +0.25-0.375pt，VNKRLE +0.5-0.75pt</b>；工业名字基本持平，仅 <b>GLPSP perps -0.5pt</b><span class="tl">博彩：<b>Fitch 将 Genting Berhad 下调至 BBB-、Resorts World Las Vegas 下调至 BB+（展望稳定）</b>，<b>RWLVCA 曲线与 GENTMK perps 承压收 -1.5-2pts</b></span></td>
+        <td class="fl">澳门板块抗跌，零售买前端：<b>27s/28s 到期持平、3yr -0.25~0.375pt（-10~-20bp）、更长端 -0.5~1pt（-1.5~-3bp）</b>；少数逆势收高 0-25c：<b>SJMHOL 31s（-22bp）、MGMCHI 31s（-8bp）、STDCITY 31s（-25bp）</b></td>
+        <td class="rv">GS：RWLVCA 29s 跌 0.75pt 即利差 +15bp，<b>GENTMK perps 利差 +8-15bp、RWLVCA 30s/31s +30-40bp</b>；澳门则以利差收窄为主，属"价格跌但估值改善"的结构</td>
+        <td class="cr"><span class="neu">Catalyst:</span> Fitch 下调后的评级跟进（Moody's/S&P）、中国地产资产处置与重组进展；<span class="neu">Risk:</span> 云顶系评级下调后 RWLVCA 30s/31s 利差走阔 30-40bp，若再遭下调将触发指数与持仓限制</td>
+        <td class="bk">GS（Asia HY Corp/Fin）</td>
+        <td class="ak"><span class="act">BUY 澳门前端</span><span class="act">减 云顶系</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">中国地产/工业</span>中国地产周初出现需求，SHUION、LNGFOR 曲线上涨 0.25-0.375pt，VNKRLE 亦上涨 0.5-0.75pt；工业名字基本持平，仅 GLPSP perps 下跌 0.5pt。</div>
+        <div class="row"><span class="b">博彩</span>Fitch 将 Genting Berhad 下调至 BBB-、将 Resorts World Las Vegas 下调至 BB+（展望稳定）；RWLVCA 曲线与 GENTMK perps 承压，收跌 1.5-2pts，其中 RWLVCA 29s 跌 0.75pt（利差 +15bp）。利差口径上，GENTMK perps 走阔 8-15bp，RWLVCA 30s/31s 走阔 30-40bp。</div>
+        <div class="row"><span class="b">澳门</span>板块相对抗跌，零售账户买入前端：27s/28s 到期持平，3yr 跌 0.25-0.375pt（利差收紧 10-20bp），更长端跌 0.5-1pt（利差收紧 1.5-3bp）。少数名字逆势收高 0-25c：SJMHOL 31s（利差 -22bp）、MGMCHI 31s（-8bp）、STDCITY 31s（-25bp）。</div>
+        <div class="ev"><i>原文证据</i> "China property: demand early in the week, SHUION and LNGFOR curves +0.25/0.375pt (VNKRLE also +0.5/0.75pt); industrials broadly flat with only GLPSP perps -0.5pt." ／ "Gaming: Fitch downgraded Genting Berhad to BBB- and Resorts World Las Vegas to BB+ (stable outlook), with RWLVCA curves and GENTMK perps closing 1.5-2pts lower (RWLVCA 29s -0.75pt, i.e. +15bps). GENTMK perps +8-15bps and RWLVCA 30s/31s +30-40bps in spread terms." ／ "Macau: sector resilient with retail buying the front end, 27s/28s maturities flat, 3yr -0.25/0.375pt (-10/-20bps) and longer end -0.5/1pt (-1.5/-3bps). A few names closed 0-25c higher: SJMHOL 31s (-22bps), MGMCHI 31s (-8bps), STDCITY 31s (-25bps)."<span class="srcf">来源：04_Goldman_Sachs_FWGSAsiaCreditWeeklyThemesRiskViews.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 日本 Japan ============ -->
+<section>
+  <div class="sec-head"><h2>日本</h2><span class="n">2 行</span><span class="src">HSBC</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">日本信用基调<span class="bond">大体横盘 · 边际资金流更软</span><span class="istag">Asia HY/beta 跑赢动能消退</span></td>
+        <td class="lv">信用市场上周混合收尾：<b>日本大体横盘，边际资金流更软</b><span class="tl"><b>亚洲 HY/beta 相对跑赢 IG</b>，但随着 <b>RM 与 FM 账户削减部分 carry 名字</b>，该动能开始消退</span></td>
+        <td class="fl">今日开盘大体不变；交投集中在下列名字（前一交易日）：EXIMBK、CKHH、HKTGHD、NTT、KORSFC（China IG）；CHGRID、INDUBK、KEBHNB（Financials）；CHCONS、GRNLGR、HYNMTR、PWONIJ、RAKUTN、SMCGL、SOFTBK（HY）；DAIL、KOLAHO、MUANTH、STOAU（Non China IG）</td>
+        <td class="rv">HSBC：beta 跑赢的动能正在被 carry 削减行为抵消，提示 HY/beta 的短期超买；日本横盘但资金流走软，说明买盘偏好正在从日本转向其他区域</td>
+        <td class="cr"><span class="neu">Catalyst:</span> RM/FM 对 carry 名字的进一步减持、一级供给节奏；<span class="neu">Risk:</span> 若 carry 削减范围扩大，HY/beta 相对 IG 的跑赢将快速逆转</td>
+        <td class="bk">HSBC（APAC Credit Desk Strategy）</td>
+        <td class="ak"><span class="act">WATCH carry 减持</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/表现</span>HSBC：信用市场上周以混合基调收尾。日本大体横盘，边际资金流更软。亚洲 HY/beta 相对跑赢 IG，但随着 RM 与 FM 账户削减部分 carry 名字，这一动能开始消退。今日开盘大体不变。</div>
+        <div class="row"><span class="b">前一日最活跃标的</span>China IG：EXIMBK、CKHH、HKTGHD、NTT、KORSFC；Financials：CHGRID、INDUBK、KEBHNB；HY：CHCONS、GRNLGR、HYNMTR、PWONIJ、RAKUTN、SMCGL、SOFTBK；Non China IG：DAIL、KOLAHO、MUANTH、STOAU。</div>
+        <div class="ev"><i>原文证据</i> "Market colour: credit markets finished the week mixed. Japan was largely sideways with softer marginal flows. Asia HY/beta outperformed IG but that momentum began to fade as RM and FM accounts trimmed some carry names. Today opened broadly unchanged. Top traded tickers: China IG — EXIMBK, CKHH, HKTGHD, NTT, KORSFC; Financials — CHGRID, INDUBK, KEBHNB; HY — CHCONS, GRNLGR, HYNMTR, PWONIJ, RAKUTN, SMCGL, SOFTBK; Non China IG — DAIL, KOLAHO, MUANTH, STOAU."<span class="srcf">来源：03_HSBC_FWHSBCAPACCreditDeskStrategy11Sep2026External.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">KAMPOS / OLYMPU 新发<span class="bond">KAMPOS 6.5% 56 · OLYMPU 5.526 31</span><span class="istag">break 后持稳 reoffer 上方/内侧</span></td>
+        <td class="lv"><b>新发跑赢：KAMPOS 与 OLYMPU 在 break 后表现出色，持稳于 reoffer 上方或内侧</b><span class="tl">保险板块在 <b>KAMPOS 定价前被大量抛售</b>，定价后带出对<b>存量保险 hybrid 的零售需求</b>（价格随利率修正、收益率更具吸引力）</span></td>
+        <td class="fl">零售买盘转向存量保险 hybrid；新发（KAMPOS/OLYMPU）在 break 后获持续承接</td>
+        <td class="rv">HSBC：新发定价提供的收益率高于二级存量保险 hybrid，因此"定价前抛售旧券 → 定价后资金回流"的轮动路径清晰</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 后续日本一级供给（投资者会议与授权管道：Commercial Bank of Qatar 14 Sep HK / 16 Sep SG、KHFC 14-15 HK、Yinson Production 15-16 HK / 17-18 SG、Mongolia Mortgage Corp 16-17 Virtual、Tonwgas 21 Sep Virtual、Vicinity Centres 22 Sep HK / 24 Sep SG、SMBC Aviation 24 Sep HK）；<span class="neu">Risk:</span> 存量保险 hybrid 的零售需求由"收益率吸引力"驱动，一旦基准利率回落，该支撑会迅速消失</td>
+        <td class="bk">HSBC（APAC Credit Desk Strategy）</td>
+        <td class="ak"><span class="act">BUY 新发</span><span class="act">零售买存量 hybrid</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/观点</span>HSBC：新发跑赢——KAMPOS 与 OLYMPU 在 break 后表现出色，持稳于 reoffer 上方或内侧；今日开盘大体不变。保险板块在 KAMPOS 定价前被大量抛售，定价后则带出对存量保险 hybrid 的零售需求，原因在于价格随利率修正后收益率更具吸引力。</div>
+        <div class="row"><span class="b">投资者会议与授权管道</span>HSBC 公布的一级管道包括：Commercial Bank of Qatar（14 Sep 香港 / 16 Sep 新加坡）、KHFC（14-15 香港）、Yinson Production（15-16 香港 / 17-18 新加坡）、Mongolia Mortgage Corp（16-17 线上）、Tonwgas（21 Sep 线上）、Vicinity Centres（22 Sep 香港 / 24 Sep 新加坡）、SMBC Aviation（24 Sep 香港）、Hang Lung（10 月 15-16 中国）。</div>
+        <div class="ev"><i>原文证据</i> "The insurance sector was heavily sold ahead of KAMPOS pricing, which afterwards brought out retail demand for existing insurance hybrids as prices corrected with rates and yields became more attractive. New issues outperformed: KAMPOS and OLYMPU performed well post break, holding above or inside reoffer."<span class="srcf">来源：03_HSBC_FWHSBCAPACCreditDeskStrategy11Sep2026External.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 中国 · 亚洲信用流与头条 China & Asia Headlines ============ -->
+<section>
+  <div class="sec-head"><h2>中国 · 亚洲信用流与头条</h2><span class="n">1 行</span><span class="src">HSBC</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产困境 / SOFTBK 评级<span class="bond">SOFTBK 获 Fitch 首次 BB+</span><span class="istag">奥园二次重组 · 恒大诉讼上诉</span></td>
+        <td class="lv"><b>SOFTBK（软银集团）获 Fitch 首次评级 BB+（REDD）</b><span class="tl">困境：<b>CAPG（中国奥园）美元债持有人小组聘请 Moelis 进行第二轮重组谈判</b>；<b>EVERRE（恒大）——PwC International 寻求对 $8.5bn 诉讼裁决的上诉许可</b></span></td>
+        <td class="fl"><b>HONGQI（中国宏桥）完成提前赎回 $330mn 7.05% 2028</b>；<b>REDSUN 延长早期 RSA 费用截止至 10/9、基础 RSA 至 10/23</b>；<b>RONXIN（融信）9/14 恢复 6 只境内债交易，持有人批准 10 年展期、1% 票息重组</b>；<b>SHUION（瑞安房地产）拟以 201mm RMB 出售重庆商业物业</b></td>
+        <td class="rv">HSBC 头条显示困境债发行人正沿两条路径推进：一是通过资产处置与提前赎回改善资产负债表（HONGQI、SHUION），二是通过展期与重组谈判延长期限（REDSUN、RONXIN、CAPG）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> CAPG 第二轮重组谈判（Moelis 受聘）、EVERRE 上诉许可结果、RONXIN 境内债恢复交易后的定价、REDSUN RSA 截止日期（10/9 与 10/23）；<span class="neu">Risk:</span> RONXIN 重组方案为 10 年展期 + 1% 票息，回收条款对持有人极为不利，可能成为其他发行人的参照，压低困境债整体回收预期</td>
+        <td class="bk">HSBC（APAC Credit Desk Strategy · Headlines）</td>
+        <td class="ak"><span class="act">WATCH 重组进展</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">评级</span>SOFTBK：软银集团获得 Fitch 首次评级 BB+（据 REDD 报道）。</div>
+        <div class="row"><span class="b">困境与再融资</span>CAPG：中国奥园美元债持有人小组已聘请 Moelis 就第二轮重组进行谈判。EVERRE：PwC International 正寻求对恒大 $8.5bn 诉讼裁决的上诉许可。HONGQI：中国宏桥完成对 $330mn 7.05% 2028 债券的提前赎回。REDSUN：将早期 RSA 费用截止日延长至 10 月 9 日，基础 RSA 延长至 10 月 23 日。RONXIN：融信于 9 月 14 日恢复 6 只境内债券交易，持有人批准了 10 年展期、1% 票息的重组方案。SHUION：瑞安房地产拟以 2.01 亿人民币出售重庆一宗商业物业。另据 HSBC 头条：BABA 支持的 Moonshot AI（亦获腾讯投资）考虑在香港与上海双重上市（REDD）；Sammaan Capital（IHFLIN）配售 INR 5bn 9.05% 2029 与 INR 2.75bn 9.1% 2031 NCD；Jollibee（JFCPM）将于 10 月 14 日派发 PHP 95.4mn 优先股股息；Medco 支持的 Amman Mineral（MEDCIJ）拟在香港上市、募资 $1bn。</div>
+        <div class="row"><span class="b">观点</span>HSBC 的头条列表显示困境发行人正在沿两条路径推进：一是通过资产处置与提前赎回改善资产负债表（HONGQI 提前赎回、SHUION 出售资产），二是通过展期与重组谈判延长期限（REDSUN、RONXIN、CAPG）。</div>
+        <div class="ev"><i>原文证据</i> "Headlines: BABA (Alibaba/Tencent-backed Moonshot AI considers dual listing in HK and Shanghai, REDD); IHFLIN (Sammaan Capital places INR 5bn 9.05% 2029 and INR 2.75bn 9.1% 2031 NCDs); JFCPM (Jollibee to pay PHP 95.4mn preferred dividend 14 Oct); MEDCIJ (Medco-backed Amman Mineral plans $1bn HK listing); SOFTBK (SoftBank Group gets first-time Fitch BB+ rating, REDD); CAPG (China Aoyuan dollar bondholder group hires Moelis for second-round restructuring talks); EVERRE (PwC International seeks leave to appeal the $8.5bn lawsuit ruling); HONGQI (China Hongqiao completes early redemption of $330mn 7.05% 2028); REDSUN (extends early RSA fee deadline to 10/9, base RSA to 10/23); RONXIN (Rongxin resumes trading in 6 onshore bonds on 9/14, holders approve 10-year extension and 1% coupon restructuring); SHUION (Shui On Land to sell Chongqing commercial property for RMB 201mm)."<span class="srcf">来源：03_HSBC_FWHSBCAPACCreditDeskStrategy11Sep2026External.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 澳元AUD信用 AUD Credit ============ -->
+<section>
+  <div class="sec-head"><h2>澳元AUD信用</h2><span class="n">1 行</span><span class="src">TD · HSBC</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">AUD 信用 / ING Bank (Australia) 新发<span class="bond">ING AUD 5YFRN/5Y · IPG 3m BBSW+65 / SQASW+65</span><span class="istag">Dealers offer 侧 axed · 利差 +1-2bp</span></td>
+        <td class="lv">AUD 信用以<b>固息债更好的卖盘</b>开盘，但买盘承接良好，随交易日推进买家入场<span class="tl"><b>Dealers 在 offer 侧 axed、bid 侧略防御，推动利差当日走阔 1-2bp</b>；尽管如此整体基调稳定</span></td>
+        <td class="fl">新发：<b>ING Bank (Australia) 定价 AUD 5YFRN/5Y，IPG 3m BBSW+65 / SQASW+65</b>；授权管道另有 Korea Credit Guarantee Fund（9/10）、Korea Development Bank CNH（9/10）、Newcastle Coal Infrastructure Group（9/9）、Golden Concord Group（9/9）、Bank of Maharashtra（9/8）、Hana Securities（9/3）、LOTTE rental（8/31）</td>
+        <td class="rv">TD：卖盘一度占优但买盘承接良好，说明二级需求并未撤离；Dealers 在 bid 侧偏防御使利差被动走阔 1-2bp，属于技术性而非基本面驱动</td>
+        <td class="cr"><span class="neu">Catalyst:</span> ING Bank (Australia) 新发在二级的表现、澳元一级管道（KDB CNH、KHFC 等）；<span class="neu">Risk:</span> Dealers 在 bid 侧的防御姿态若延续，利差将被持续推宽，即使真实需求仍在</td>
+        <td class="bk">TD Securities · HSBC<span class="tl">TD：固息债卖盘更优但买盘承接良好</span></td>
+        <td class="ak"><span class="act">NEUTRAL</span><span class="act">关注新发</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">TD Securities</span>AUD Credit 以固息债更好的卖盘开盘，但买盘承接良好，随着交易日推进买家入场。Dealers 在 offer 侧被 axed、在 bid 侧略偏防御，推动利差当日走阔 1-2bp。尽管如此，整体基调稳定。</div>
+        <div class="row"><span class="b">HSBC</span>新发监控：已定价——ING Bank (Australia) AUD 5YFRN/5Y，IPG 3m BBSW+65 / SQASW+65。授权管道——Korea Credit Guarantee Fund（9/10）、Korea Development Bank CNH（9/10）、Newcastle Coal Infrastructure Group（9/9）、Golden Concord Group（9/9）、Bank of Maharashtra（9/8）、Hana Securities（9/3）、LOTTE rental（8/31）。</div>
+        <div class="ev"><i>原文证据</i> "AUD Credit: opened with better sellers in fixed, but buyers were well received and stepped in as the day progressed. Dealers were axed on the offer side and slightly defensive on the bid, which pushed spreads 1-2bp wider on the day. Tone remained stable nonetheless." ／ "New issue monitor — Priced: ING Bank (Australia) AUD 5YFRN/5Y, IPG 3m BBSW+65/SQASW+65."<span class="srcf">来源：02_TD_Securities_FWTDAUDCreditCommentary.txt ／ 03_HSBC_FWHSBCAPACCreditDeskStrategy11Sep2026External.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 新兴市场主权 EM Sovereigns ============ -->
+<section>
+  <div class="sec-head"><h2>新兴市场主权 EM</h2><span class="n">2 行</span><span class="src">GS</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">CEEMEA<span class="bond">Senegal 周度 +85c~+1.75pts · Egypt -1.5~2pts / CDS +10bp</span><span class="istag">塞内加尔 reprofiling · 安哥拉跑赢</span></td>
+        <td class="lv"><b>塞内加尔</b>总理 Lo 称政府寻求债务"<b>reprofiling</b>"（延长期限、重谈利率）而非重组；周四"塞内加尔已支付 9/13 到期欧元债票息"提振，账户<b>卖长端 48s 买前端 28s</b>，<b>周度 Senegal +85c~+1.75pts，2028s 跑赢</b><span class="tl"><b>安哥拉</b>需求强，周二盘中 +75c 摆动后收 +50c，全周仅 -50~75c，跑赢尼日利亚（-50c~-1.25pts）尽管油价上行；<b>乌克兰</b>周初 -1.5pts（莫斯科/基辅会谈无突破、Witkoff/Kushner），周中因 Trump 言论小幅反弹，全周曲线持平、客户乐观消退</span></td>
+        <td class="fl"><b>埃及被 RM/HF 净卖出，-1.5~2pts、CDS +10bp</b>；<b>GCC 台面活跃，周四单日成交 &gt;$200MM</b>，曲线 +1-4bp 走阔，同时存在公司供给与主权双向流；<b>黎巴嫩 -5~15c</b> 但仍接近 YTD 高位（以色列夺取 Ali al-Taher 山脊）</td>
+        <td class="rv">GS：安哥拉在油价上行背景下仍跑赢尼日利亚，是区域内相对价值最清晰的一组；塞内加尔的"reprofiling 而非重组"表述与已支付票息事实共同支撑前端，推动曲线陡峭化交易（卖 48s 买 28s）</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 塞内加尔 reprofiling 的具体条款与谈判进展、埃及外部融资安排、中东与黎巴嫩地缘、GCC 公司供给节奏；<span class="neu">Risk:</span> 塞内加尔若最终走向正式重组而非 reprofiling，长端 48s 将面临重定价；埃及 CDS 走阔 10bp 显示外部账户在持续撤离</td>
+        <td class="bk">GS（CEEMEA）</td>
+        <td class="ak"><span class="act">BUY Senegal 28s</span><span class="act">SELL 48s</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">塞内加尔</span>总理 Lo 表示政府寻求债务"reprofiling"（延长期限、重新谈判利率）而非重组。周四"塞内加尔已支付 9 月 13 日到期的欧元债票息"的消息提振市场，账户卖出长端 48s、买入前端 28s。周度 Senegal 上涨 85c 至 1.75pts，2028s 跑赢。</div>
+        <div class="row"><span class="b">安哥拉 / 尼日利亚 / 乌克兰</span>安哥拉需求强劲，周二盘中出现 75c 的摆动后收 +50c，全周仅下跌 50-75c，表现优于尼日利亚（-50c 至 -1.25pts），尽管油价上行。乌克兰周初下跌 1.5pts（莫斯科与基辅会谈无突破，Witkoff/Kushner 参与），周中因 Trump 的言论小幅反弹，全周曲线持平，客户的乐观情绪消退。</div>
+        <div class="row"><span class="b">埃及 / GCC / 黎巴嫩</span>埃及被 RM/HF 净卖出，下跌 1.5-2pts，CDS 走阔 10bp。GCC 台面活跃，周四单日成交超过 $200MM，曲线走阔 1-4bp，公司供给与主权双向流并存。黎巴嫩下跌 5-15c，但仍接近年初至今高位（以色列夺取 Ali al-Taher 山脊）。</div>
+        <div class="ev"><i>原文证据</i> "Senegal PM Lo said the government seeks a debt 'reprofiling' (extending maturities, renegotiating rates) rather than a restructuring; Thursday's news that Senegal paid the coupon on its eurobond due 9/13 helped, with accounts selling the long-end 48s and buying the front-end 28s. Senegal +85c to +1.75pts on the week with 2028s outperforming." ／ "Angola saw strong demand, swinging +75c intraday on Tuesday before closing +50c, down only 50-75c on the week and outperforming Nigeria (-50c to -1.25pts) despite higher oil. Ukraine -1.5pts early in the week... Egypt was net sold by RM/HF, -1.5 to -2pts with CDS +10bp. GCC desks were active with over $200MM traded on Thursday alone, curves 1-4bp wider. Lebanon -5-15c but still near YTD highs."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">LATAM<span class="bond">巴西全曲线 -10~20bp（无可争议跑赢）· Ecuador +5~15bp 最弱</span><span class="istag">民调驱动巴西 · Pemex 标题扰动</span></td>
+        <td class="lv"><b>巴西为无可争议的跑赢者，全曲线利差收紧 10-20bp</b>（中 beta 同业仅收紧 1-5bp），因 <b>PoderData/Aya 民调显示 Flávio Bolsonaro 在潜在二轮投票中以 47% vs 45% 领先 Lula</b><span class="tl"><b>墨西哥</b>周三出现误导性标题称对 Pemex 的援助削减 70% 至 $4.8bn，交易商一度将 PEMEX 债券下调最多 1pt，后收 -50c；实际支持与主权 10 年战略计划一致、运营支持不变</span></td>
+        <td class="fl"><b>UMS 跑赢 quasi，收紧 1-9bp</b>（前端 -50~75c vs 长端 -1.15pts），<b>PEMEX 平均走阔 5-8bp</b>（前端 -50c、长端最多 -1.75pts）；<b>阿根廷</b>周中 bid，周三大涨 +10c（寻求 $10bn 双边融资以避开发行国际市场），全周现金 -5~50c 但利差收紧 10-15bp；<b>委内瑞拉 -75c~-1pt</b>（无重大交易流或消息）</td>
+        <td class="rv"><b>厄瓜多尔为区域最弱</b>，周三跌 1pt（Noboa 宣布低辛烷汽油与柴油降价 3 美分），全周利差 +5-15bp，长端 35s/40s 最多 -1.65c；巴西的民调驱动重估是当周 EM 中最清晰的单一叙事</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 巴西民调与 2026 选举进程、墨西哥对 Pemex 支持政策的正式表述、阿根廷 $10bn 双边融资落地、厄瓜多尔燃油补贴政策；<span class="neu">Risk:</span> 巴西行情由民调驱动，若后续民调反转将快速回吐；Pemex 的"标题风险"未消除，市场对支持力度高度敏感</td>
+        <td class="bk">GS（LATAM）</td>
+        <td class="ak"><span class="act">BUY Brazil</span><span class="act">UMS &gt; PEMEX</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">巴西</span>无可争议的跑赢者，全曲线利差收紧 10-20bp（中 beta 同业仅收紧 1-5bp），驱动因素是 PoderData/Aya 民调显示 Flávio Bolsonaro 在潜在的第二轮投票中以 47% 对 45% 领先 Lula。</div>
+        <div class="row"><span class="b">墨西哥 / Pemex</span>周三出现误导性标题，称对 Pemex 的援助被削减 70% 至 $4.8bn，交易商一度将 PEMEX 债券下调最多 1pt，随后收于 -50c。实际情况是支持力度与主权 10 年战略计划一致、运营支持不变。UMS 跑赢 quasi，利差收紧 1-9bp（前端 -50 至 75c vs 长端 -1.15pts），而 PEMEX 平均走阔 5-8bp（前端跌 50c、长端最多跌 1.75pts）。</div>
+        <div class="row"><span class="b">厄瓜多尔 / 阿根廷 / 委内瑞拉</span>厄瓜多尔为区域内最弱，周三下跌 1pt（Noboa 宣布低辛烷值汽油与柴油降价 3 美分），全周走阔 5-15bp，长端 35s/40s 最多跌 1.65c。阿根廷周中获买盘，周三大涨 10c（寻求 $10bn 双边融资以避免在国际市场发行），全周现金跌 5-50c，但利差收紧 10-15bp。委内瑞拉跌 75c 至 1pt，无重大交易流或消息。</div>
+        <div class="ev"><i>原文证据</i> "Brazil was the undisputed outperformer, 10-20bp tighter across the curve (vs mid-beta peers only 1-5bp tighter) on PoderData/Aya polling showing Flávio Bolsonaro leading Lula 47% vs 45% in a potential second round." ／ "Mexico: a misleading headline on Wednesday said aid to Pemex was cut 70% to $4.8bn; dealers marked PEMEX bonds down as much as 1pt before closing -50c. Actual support is consistent with the sovereign's 10-year strategic plan with operating support unchanged. UMS outperformed quasi, 1-9bp tighter (front end -50/75c vs long end -1.15pts) while PEMEX averaged 5-8bp wider (front end -50c, long end up to -1.75pts)." ／ "Ecuador was the weakest in the region, -1pt on Wednesday (Noboa announced a 3-cent cut to low-octane gasoline and diesel), +5-15bp on the week with 35s/40s up to -1.65c... Argentina rallied +10c on Wednesday (seeking $10bn in bilateral financing to avoid international issuance), cash -5/50c on the week but 10-15bp tighter in spread. Venezuela -75c/-1pt."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+<!-- ============ 事件驱动 / 政策与地缘 Events & Policy ============ -->
+<section>
+  <div class="sec-head"><h2>事件驱动 / 政策与地缘</h2><span class="n">2 行</span><span class="src">GS · HSBC</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">地缘 / 油价 / 波动率<span class="bond">油价重上 $100 · 波动率未破 8 月季节性低位</span><span class="istag">中东降温路径难寻 · Warsh vs Trump</span></td>
+        <td class="lv"><b>油价重上 $100</b>，进一步推升通胀预期（BG：上次油价在此位时隐含波动率是现在的 <b>2 倍</b>）；<b>波动率未突破 8 月季节性低位</b><span class="tl">地缘仍是悬顶，中东降温路径难寻；<b>隔夜头条：Fed's Warsh on Collision Course With Trump as Rate Hike Looms（Bloomberg）</b>；<b>Trump 警告 Zelenskyy 停止打击俄罗斯炼厂</b>（袭击已致柴油炼制停摆）</span></td>
+        <td class="fl">GS 观点：<b>未来约 4 周很难论证信用是最好的做空选择</b>（因收益率、技术面、波动率便宜）；<b>Max Lukianchikov：中期选举前 SPX 平均最大回撤 -830bp（24 次观察），当前距高点不到 180bp</b></td>
+        <td class="rv">GS：市场已知多数坏消息并已为此布局，<b>更大的风险在于"转向之后"</b>；油价是通胀预期与长端 term premium 的共同来源，也是"Grouped Hikes"逻辑中能源风险的核心</td>
+        <td class="cr"><span class="neu">Catalyst:</span> 中东冲突演进、Trump 与 Warsh 的政策摩擦、中期选举进程、油价路径；<span class="neu">Risk:</span> 波动率仍在 8 月季节性低位，意味着保护成本便宜但一旦触发将出现非线性调整；中期选举前的历史回撤幅度提示下行空间尚未释放</td>
+        <td class="bk">GS（Macro Themes · Max Lukianchikov）</td>
+        <td class="ak"><span class="act">EVENT RISK</span><span class="act">不宜做空信用</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">市场数据/观点</span>GS Macro Themes：CPI 高于预期但不确定性随之解除，市场现定价约 90% 的加息概率，GIR 加入共识、预期周三加息 25bp。美国财政部宣布 $6bn 长债 buyback（符合 $4-8bn 预期，但不足以改变利率格局），20y UST 收于 2023 年 11 月以来最高。地缘仍是悬顶，中东降温路径难寻；油价重上 $100 进一步推升通胀预期（BG 指出上次油价在此水平时隐含波动率是现在的 2 倍）。波动率尚未突破 8 月的季节性低位。</div>
+        <div class="row"><span class="b">仓位与季节性</span>Max Lukianchikov 指出，中期选举前 SPX 的平均最大回撤为 -830bp（24 次观察），当前距高点不到 180bp。GS 的整体观点是：未来约 4 周很难论证信用是最好的做空选择，原因是收益率、技术面与便宜的波动率；市场已经知道多数坏消息并已为此布局，更大的风险来自"转向之后"。隔夜头条包括 Fed 的 Warsh 在加息临近之际与 Trump 走上冲突轨道（Bloomberg），以及 Trump 警告 Zelenskyy 停止打击俄罗斯炼油厂（袭击已导致柴油炼制停摆并推高燃料价格）。</div>
+        <div class="ev"><i>原文证据</i> "Geopolitics remains the overhang with no clear path to de-escalation in the Middle East; oil back above $100 adds to inflation expectations (BG: the last time oil was here, implied vols were 2x current levels). Volatility has not broken out of August's seasonal lows. Max Lukianchikov: average max drawdown for SPX into midterms is -830bp (24 observations) with the index less than 180bp from highs. GS view: hard to argue credit is the best short over the next ~4 weeks given yields, technicals and cheap vol." ／ "Overnight: Fed's Warsh on Collision Course With Trump as Rate Hike Looms (Bloomberg); Trump warned Zelenskyy to stop targeting Russian oil refineries (strikes have shut down diesel refining and driven up fuel prices)."<span class="srcf">来源：01_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP14SEPTEMBER2026.txt ／ 00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国 Trump-Xi 峰会 / 亚洲 AI 红利<span class="bond">台湾出口贡献 GDP 7pp · 韩国/越南/马来 2-3pp</span><span class="istag">11 月深圳 APEC · 12 月迈阿密 G20</span></td>
+        <td class="lv"><b>GS 调查：9 月峰会之外，今年还可能有两次会面——11 月深圳 APEC、12 月迈阿密 G20</b><span class="tl">基准情形：中美关系<b>趋于稳定而非实质改善或恶化</b>，双方均有避免重新升级的动机</span></td>
+        <td class="fl">预期形成<b>受控但脆弱的缓和</b>，可能达成针对性协议，但<b>双边关系全面重置不太可能</b>；AI 红利方面：2026 年出口对实际 GDP 增速的贡献估计为<b>台湾 7pp、韩国/越南/马来西亚 2-3pp</b>，新加坡紧随其后</td>
+        <td class="rv">GS：资本开支（出口产能与本地数据中心）证据增加；<b>韩国与台湾企业税收激增支撑政府支出加速</b>；但 AI 对本土需求的提振远小于出口，<b>除台湾外不足 1pp of GDP</b></td>
+        <td class="cr"><span class="neu">Catalyst:</span> 9 月 Trump-Xi 峰会成果、11 月 APEC 深圳、12 月 G20 迈阿密；企业税收与政府支出数据；<span class="neu">Risk:</span> "受控但脆弱的缓和"意味着任何单点摩擦都可能打破平衡；AI 红利高度集中于出口端，若全球 AI 资本开支放缓，台湾/韩国/马来西亚的增长贡献会同步回落</td>
+        <td class="bk">GS Research（China 调查 · Asia Economics）</td>
+        <td class="ak"><span class="act">WATCH 峰会</span><span class="act">BUY 亚洲 AI 出口链</span></td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">中国：Trump-Xi 会议预期（投资者调查）</span>GS 调查显示，除了 9 月峰会之外，今年还可能有两次会面：11 月在深圳举行的 APEC、12 月在迈阿密举行的 G20。基准情形是中美关系趋于稳定，而非实质性改善或恶化，双方都有避免重新升级的动机；预期形成一种受控但脆弱的缓和，可能达成有针对性的协议，但双边关系的全面重置不太可能。</div>
+        <div class="row"><span class="b">亚洲经济：出口之外——亚洲扩大的 AI 红利</span>GS 估计 2026 年出口对实际 GDP 增速的贡献为台湾 7pp、韩国/越南/马来西亚 2-3pp，新加坡紧随其后。资本开支（出口产能与本地数据中心）的证据在增加；韩国与台湾的企业税收激增正在支撑政府支出的加速。但 AI 对本土需求的提振远小于对出口的提振，除台湾外不足 1pp of GDP。</div>
+        <div class="ev"><i>原文证据</i> "China: Market expectations for the upcoming Trump-Xi meeting — beyond the September summit, two more possible meetings: APEC in Shenzhen in November and G20 in Miami in December. Baseline: US-China relations stabilize rather than materially improve or deteriorate, with both sides having incentives to avoid re-escalation; a managed but fragile détente with targeted deals possible, but a full reset of the relationship unlikely." ／ "Asia Economics: Exports and Beyond—Asia's Broadening AI Dividend — 2026 exports provide a 7pp boost to real GDP growth in Taiwan, 2-3pp in Korea/Vietnam/Malaysia, with Singapore close behind. Capex lift and data center investment. Korea/Taiwan surging corporate tax receipts. AI-related boost to domestic demand is small vs exports, <1pp ex-Taiwan."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
+      </td></tr>
+
+    </tbody>
+  </table>
+</section>
+</div>
+
 <script>
 function tg(r){
   var d=r.nextElementSibling;
   if(d&&d.classList.contains('det')){d.classList.toggle('open');r.classList.toggle('open');}
 }
-var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-02': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-03': {'w': 'Thursday · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-04': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-07': {'w': 'Monday · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-08': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-09': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-10': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-11': {'w': 'Friday · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
+var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-02': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-03': {'w': 'Thursday · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-04': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-07': {'w': 'Monday · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-08': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-09': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-10': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-11': {'w': 'Friday · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-14': {'w': 'Monday · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
 function showDay(d){
   var days=document.querySelectorAll('.day');
   for(var i=0;i<days.length;i++){days[i].classList.toggle('active', days[i].id==='day-'+d);}
