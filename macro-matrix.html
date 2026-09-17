@@ -4981,22 +4981,28 @@ function renderDay(date){
   html+='<div class="brokers">'+brokers+'</div>';
   html+='</div>';
 
-  // Markets
+  // Markets（以表头列数为准强制对齐，防止 rows cell 数漂移导致串列/偏移）
   d.markets.forEach(function(m){
     html+='<h2'+(m.pri?' class="priority"':'')+'>'+m.title+(m.note?' <span class="note">'+m.note+'</span>':'')+'</h2>';
     if(m.summary){
       html+='<div class="summary-bar">'+m.summary+'</div>';
     }
+    var nCols=m.headers.length;
+    if(!m.cols||m.cols.length!==nCols)console.warn('[日报] '+date+' 「'+m.title+'」 cols列数('+(m.cols?m.cols.length:0)+')≠headers列数('+nCols+')');
     html+='<table><colgroup>';
-    m.cols.forEach(function(w){html+='<col style="width:'+w+'">'});
+    for(var c=0;c<nCols;c++){html+='<col style="width:'+((m.cols&&m.cols[c])||'auto')+'">'};
     html+='</colgroup><tr>';
     m.headers.forEach(function(h){html+='<th>'+h+'</th>'});
     html+='</tr>';
     m.rows.forEach(function(row){
+      if(row.length!==nCols)console.warn('[日报] '+date+' 「'+m.title+'」 行cell数('+row.length+')≠表头('+nCols+')，已自动对齐');
       html+='<tr>';
-      html+='<td>'+row[0]+'</td>';
-      for(var i=1;i<row.length;i++){
+      var c0=row[0];
+      if(Array.isArray(c0))c0=c0[1]||c0[0]||'';
+      html+='<td>'+(c0||'')+'</td>';
+      for(var i=1;i<nCols;i++){
         var cell=row[i];
+        if(cell==null||cell==='')cell=[];
         if(typeof cell==='string')cell=[cell];
         html+=tr(cell[0]||'',cell[1]||'');
       }
@@ -5020,18 +5026,22 @@ function renderDay(date){
   // Divergences
   if(d.divergences){
     var dv=d.divergences;
+    var nDvCols=dv.headers.length;
     html+='<div class="divergence">';
     html+='<h2>重点分歧</h2><table><colgroup>';
-    dv.cols.forEach(function(w){html+='<col style="width:'+w+'">'});
+    for(var c2=0;c2<nDvCols;c2++){html+='<col style="width:'+((dv.cols&&dv.cols[c2])||'auto')+'">'};
     html+='</colgroup><tr>';
     dv.headers.forEach(function(h){html+='<th>'+h+'</th>'});
     html+='</tr>';
     dv.rows.forEach(function(row){
+      if(row.length!==nDvCols)console.warn('[日报] '+date+' 「重点分歧」 行cell数('+row.length+')≠表头('+nDvCols+')');
       html+='<tr>';
-      row.forEach(function(cell){
+      for(var i2=0;i2<nDvCols;i2++){
+        var cell=row[i2];
+        if(cell==null||cell==='')cell=[];
         if(typeof cell==='string')cell=[cell];
         html+=tr(cell[0]||'',cell[1]||'');
-      });
+      }
       html+='</tr>';
     });
     html+='</table></div>';
