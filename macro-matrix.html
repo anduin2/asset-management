@@ -5838,6 +5838,532 @@ REPORT_DATA["2026-09-22"] = {
     emailCount:"Citi 1 / Morgan Stanley 1 / J.P. Morgan 1 / Bank of Montreal 1（共 4 封 · 4 家券商；覆盖美债 twist flattening 与 2s10s 触 19.8bp、TIPS 与盈亏平衡逆油价走阔、T-bill 供给路径与 2y 拍卖前瞻、欧英债大幅跑赢、美欧信用背离）"
   }
 };
+REPORT_DATA["2026-09-23"] = {
+  dateCN: "2026年9月23日 星期三",
+  theme: "美伊外交进展压低油价（Brent <b>-1.7% 至 $98.64</b>、WTI <b>-1.2%</b>），特朗普称美方代表与伊朗代表举行延长时间会晤、看到达成协议动力，海湾国家继续在纽约斡旋——但这一去通胀脉冲被 Fed 谨慎与国债供给完全对冲：美债小幅 <b>bear-steepen</b>（2y <b>+0.7bp</b>、30y <b>+1.6bp</b>、10y +1.0bp 至 4.96），美元走强（DXY +0.1% 至 100.54），风险资产涨跌互现。供给端是当日主线：$69bn 2y 拍卖 tail <b>0.2bp</b> 落 4.787%、bid/cover 由 2.60 升至 2.63，明日 <b>$70bn 5y</b> 拍卖在平淡估值与技术面下 JPM 判断需更多让价。政策面双线推进——第 12 届国债市场会议聚焦 TGA 投 repo 与稳定币需求「新增 vs 重分配」之争，RBNZ 的 Breman 转鹰、ECB 的 Lane 警告油气二次涨价，Nigeria 逆势降息 <b>350bp</b>。信用端结构分化：hybrid 供给 YTD <b>$38bn</b>、全年估 $60bn 创纪录但 Hybrid OAS 219bp 偏贵约 20bp，FAB 指数周降 9bp 至 46bp，而亚洲信用清淡 firm、Posco 走强 3-5bp。",
+  meta: "覆盖券商：Morgan Stanley（Gary Lee + Derek Liu，3 封，Global Macro Commentary）、J.P. Morgan（3 封，US Treasury Market Daily + Credit Strategy）、Barclays（3 封，Emerging Asia + Credit Strategy + 主题报告）、Jefferies（2 封，Rates Technical Recap + Asia Credit EOD）、TD Securities（1 封，AUD Credit）、Bank of Montreal（1 封，TIPS End of Day Commentary）、Bank of America（1 封，Daily Insights）。当日 14 封邮件 · 7 家券商，主线为美伊外交下的油价回落与美债 bear-steepen、2y 拍卖结果与 5y 拍卖前瞻、第 12 届国债市场会议、hybrid 供给创纪录与估值偏贵、REITs 下调及亚洲/澳洲信用盘面。",
+  brokers:[
+    {n:"MS",c:"b-ms"},{n:"JPM",c:"b-jpm"},
+    {n:"Barclays",c:"b-barclays"},{n:"Jefferies",c:"b-jefferies"},
+    {n:"TD",c:"b-td"},{n:"BMO",c:"b-bmo"},
+    {n:"BofA",c:"b-bofa"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率市场",
+      summary:"油价回落带来的去通胀红利被 Fed 谨慎与国债供给完全对冲：美债温和 bear-steepen（2y <b>+0.7bp</b>、30y <b>+1.6bp</b>、10y <b>+1.0bp 至 4.96</b>）。$69bn 2y 拍卖以 <b>4.787%</b> 落槌、tail <b>0.2bp</b>，bid/cover 由 2.60 升至 <b>2.63</b>，前端供给仍偏弱。明日 $70bn 5y 拍卖规模不变，8 月 tail 0.2bp、终端需求 90.0% 为 2025 年 12 月以来最高（海外需求 +3pp 至 12.5%），但过去一个月 5y 收益率已上行 <b>45bp</b>、客户调查多头占比升至去年秋季以来最高，WI roll 由 +0.5bp 走弱至 +0.325bp，JPM 判断需更多让价。Richmond Fed 制造业 9 月 <b>-2</b>（预期 +2）大逊预期，价格指标仍高企。",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","美债温和 bear-steepen：2y <b>+0.7bp</b>、30y <b>+1.6bp</b>、10y <b>+1.0bp 至 4.96</b>；$69bn 2y 拍卖 tail <b>0.2bp</b> 落 <b>4.787%</b>、bid/cover 由 2.60 升至 <b>2.63</b>"],
+          ["short","油价回落未解除前端压力，久期维持谨慎"],
+          ["short","温和 bear-steepen，30y 领跌"],
+          ["short","Barkin 称通胀是「troublemaker」、警告价格压力可能固化、企业愿意转嫁运营成本；称上周加息合理但未表态后续，只称条件「在走强」"],
+          ["fact","Richmond Fed 制造业 9 月 <b>-2</b>（预期 +2）、价格指标仍高企；早盘油价反弹在纽约午后消散"],
+          ["short","<span class='bear'>前端供给与技术面偏弱，久期谨慎</span>"]
+        ],
+        ["JPM",
+          ["fact","明日 1pm 拍卖 <b>$70bn 5y</b>、规模不变；WI roll 由 +0.5bp 走弱至 <b>+0.325bp</b>"],
+          ["short","平淡估值与技术面下 5y 拍卖需更多让价"],
+          ["short","过去一个月 5y 收益率上行 <b>45bp</b>，曲线前端持续承压"],
+          ["neu","8 月 tail 0.2bp、终端需求 <b>90.0%</b> 为 2025 年 12 月以来最高（海外需求 +3pp 至 12.5%）"],
+          ["fact","客户调查多头占比升至去年秋季以来最高，仓位本身成为供给消化的拖累"],
+          ["short","<span class='bear'>预计 5y 拍卖需更多让价才能顺利消化</span>"]
+        ],
+        ["Jefferies",
+          ["fact","周一 bull-flattening，但 <b>$183bn</b> 月末息票供给限制涨势"],
+          ["long","战术上逢弱买入（buy weakness）"],
+          ["long","反趋势修正目标 <b>5.31% / 5.28% / 5.25% / 5.09%</b>；2s10s 呈 55-25bp 区间、当前 20bp 附近可退出平坦化"],
+          ["neu","长端最终目标 5.80-6.00%，但路径上或先经历一次可观修正"],
+          ["fact","$183bn 月末息票供给是本周涨势的主要限制因素"],
+          ["long","<span class='bull'>US10y 入场 4.98-5.01 / 5.06 / 5.10</span>"]
+        ],
+        ["BMO",
+          ["fact","TIPS 回吐部分前日涨幅，breakevens 收窄 <b>1.5-2bp</b>、30y 引领"],
+          ["neu","RM/ETF 早盘买入 5-10y，主卖盘集中在长端"],
+          ["neu","10s 跑赢曲线，30y 引领 breakevens 收紧"],
+          ["neu","油价 choppy（美伊谈判乐观 → Trump 联合国演讲 → 称协议「有很大动力」）"],
+          ["fact","前端 1-2y 有 FM 逢跌买入，但前端仍有相当压力"],
+          ["short","<span class='bear'>前端压力未解除，长端更受青睐</span>"]
+        ]
+      ]
+    },
+    {
+      id:"oil-geo", title:"油价与地缘政治",
+      summary:"美伊外交进展成为油价的主导变量：特朗普称美方代表与伊朗代表举行延长会晤、看到达成协议动力，海湾国家继续在纽约斡旋，Brent 收跌 <b>1.7% 至 $98.64</b>（MS 口径 -1.8%）、WTI -1.2%。BMO 形容能源市场全日 choppy——overnight 因谈判乐观下跌、Trump 联合国演讲后回涨、收盘又因「有很大动力」的表态回落。油价回落的去通胀脉冲并未传导至债市：美债反而小幅 bear-steepen、美元走强，TIPS breakevens 收窄 1.5-2bp 但前端 1-2y 仍有相当压力。",
+      headers:["券商","市场数据/表现","供需观点","曲线/技术面","地缘政治","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","Brent <b>-1.8%</b>、WTI <b>-1.2%</b>；标普横盘、纳指 <b>+0.5%</b>、能源板块 <b>-1.0%</b>、VIX <b>-4.4%</b>"],
+          ["neu","油价回落提供早期去通胀脉冲，但供给端尚无实质变化"],
+          ["neu","风险溢价因外交进展而收缩，原油曲线近月回落"],
+          ["neu","特朗普称美方代表与伊朗代表举行延长时间会晤、看到达成协议动力；海湾国家继续在纽约斡旋"],
+          ["fact","去通胀脉冲被 Fed 谨慎与国债供给完全对冲，美债小幅 bear-steepen、美元走强"],
+          ["neu","<span class='bull'>风险偏好边际改善，但债市未获支撑</span>"]
+        ],
+        ["JPM",
+          ["fact","Brent <b>-1.7% 至 $98.64</b>；贸易加权美元 <b>+0.1%</b>"],
+          ["neu","供给端无实质变化，价格由外交预期驱动"],
+          ["neu","5y 持平 4.83%、10y 持平 4.95%、30y +1bp 至 5.29%；日元持平、欧元 -0.2%"],
+          ["neu","美伊谈判乐观情绪主导价格，跨资产缺乏一致性"],
+          ["fact","油价回落与美元走强同时出现，传统相关性失效"],
+          ["neu","<span class='bull'>油价回落但美元走强，跨资产缺乏一致性</span>"]
+        ],
+        ["BMO",
+          ["fact","能源市场 choppy：油价 overnight 因美伊谈判乐观下跌，Trump 联合国演讲后回涨，收盘又因他称协议「有很大动力」而回落"],
+          ["neu","全天来回波动，方向完全由消息面主导"],
+          ["neu","日内波动区间显著扩大，breakevens 收窄 1.5-2bp"],
+          ["neu","美伊谈判乐观情绪是主要驱动，但消息面反复"],
+          ["fact","油价 choppy 直接导致 TIPS breakevens 收窄 <b>1.5-2bp</b>、30y 引领收紧"],
+          ["neu","<span class='bull'>消息面反复，谨慎追逐方向</span>"]
+        ]
+      ]
+    },
+    {
+      id:"us-macro", title:"美国宏观与政策",
+      summary:"数据与政策信号相互矛盾：Richmond Fed 制造业 9 月 <b>-2</b>（预期 +2）大逊预期、价格指标仍高企，Barkin 将通胀形容为「troublemaker」、警告价格压力可能固化，但同时明确经济未过热——除了被单独点出的 AI 行业。第 12 届国债市场会议聚焦两大主题：TGA 投 repo 只在 TGCR 高于 IORB 的稀缺准备金环境下可扩展，与会者主张灵活参与、保持规律可预测，并强调中央清算与操作时点设计；稳定币增长究竟带来「新增」还是「重分配」国债需求，与会者分歧明显，调查亦担忧 24x7 交易与支付系统的时间错配。Barclays 则发布美国中期选举「Priced for Gridlock」与全球再通胀 FX 效应两份主题报告，看多 USD 与高收益货币、看空 EUR/JPY/CNY/SGD。",
+      headers:["券商","市场数据/表现","增长观点","通胀观点","就业观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","Richmond Fed 制造业 9 月 <b>-2</b>（预期 <b>+2</b>），价格指标仍高企"],
+          ["neu","Barkin 明确经济未过热——除了被单独点出的 AI 行业"],
+          ["short","Barkin 将通胀形容为「troublemaker」、警告价格压力可能固化、企业愿意转嫁运营成本"],
+          ["neu","RBA 的 Bullock 称 4.5% 失业率下劳动力仍偏紧、AI 数据中心建设加剧需求型通胀"],
+          ["fact","增长数据走弱与通胀警告并存，政策判断难度上升"],
+          ["short","<span class='bear'>价格压力固化风险未除</span>"]
+        ],
+        ["JPM",
+          ["fact","第 12 届国债市场会议：TGA 投 repo 与稳定币需求「新增 vs 重分配」构成两大政策焦点"],
+          ["neu","TGA 投 repo 只在 TGCR 高于 IORB 的稀缺准备金环境下可扩展；Fed 若坚持充足准备金框架将限制规模"],
+          ["neu","与会者主张灵活参与、保持规律可预测，强调中央清算与操作时点设计"],
+          ["neu","调查担忧 24x7 交易与支付系统的时间错配"],
+          ["fact","稳定币增长是新增还是重分配国债需求，与会者分歧明显"],
+          ["neu","<span class='bull'>政策框架设计是国债结构性需求的关键变量</span>"]
+        ],
+        ["Barclays",
+          ["fact","发布美国中期选举主题报告「Priced for Gridlock」与全球再通胀 FX 效应报告"],
+          ["neu","政治僵局情景已被市场部分定价，中期选举的方向性影响有限"],
+          ["short","全球再通胀通过 FX 渠道传导，看多 USD 与高收益货币"],
+          ["neu","看空 EUR / JPY / CNY / SGD"],
+          ["fact","再通胀 FX 效应是当前跨市场传导的核心路径"],
+          ["short","<span class='bear'>看多 USD 与高收益货币，看空 EUR/JPY/CNY/SGD</span>"]
+        ]
+      ]
+    },
+    {
+      id:"eur-uk", title:"欧洲与英国利率市场",
+      summary:"欧洲财政裂缝再度成为压制欧债的主线：英国 8 月净借款（ex-banks）<b>£18.27bn</b>、超 OBR 预测 <b>£3.5bn</b>，Gilts 跑输欧元区、30y 收益率 <b>+4bp</b>；法国在 EGB 中相对跑输，10y OAT/Bund 走阔约 <b>3bp</b>，背景是法国宣布支持家庭与企业应对高能源价格的新措施。德国中央政府现金余额 7 月扩大至 €68bn，核心国财政缓冲依旧充足。政策面偏鹰：ECB 的 Lane 警告油气二次涨价将推高通胀并更持久、地缘风险上升。swap 端 2s10s 收窄约 2bp。",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","英国 8 月净借款（ex-banks）<b>£18.27bn</b>、超 OBR 预测 <b>£3.5bn</b>，Gilts 30y <b>+4bp</b>；France 10y OAT/Bund 走阔约 <b>3bp</b>"],
+          ["neu","德国中央政府现金余额 7 月扩大至 €68bn，核心国财政缓冲充足"],
+          ["short","swap 端 2s10s 收窄约 2bp；Gilts 跑输欧元区、30y 领跌"],
+          ["short","ECB 的 Lane 警告油气二次涨价将推高通胀并更持久、地缘风险上升"],
+          ["fact","法国宣布支持家庭与企业应对高能源价格的新措施，财政前景承压"],
+          ["short","<span class='bear'>欧洲财政裂缝压制欧债，France 与 Gilts 相对跑输</span>"]
+        ]
+      ]
+    },
+    {
+      id:"us-ig", title:"美国IG信用债",
+      summary:"信用端结构分化明显。JPM 指出美元非金融 hybrid 在 Moody's 2024 年方法调整后加速扩张：YTD 供给 <b>$38bn</b>、全年估 <b>$60bn</b>（同比 +50% 以上）创纪录，但存量仅 $165bn；自建 hybrid 指数自 2021 年每年跑赢 JULI BBB、YTD +3.6%，然而 Hybrid OAS 已收窄至 <b>219bp</b>（vs BBB 109bp）、6 个月回归偏贵约 <b>20bp</b>，主张精选单券而非整体 beta。境外需求同步走弱：FAB 指数周降 9bp 至 <b>46bp</b>，主因对冲成本上升 9bp 至 3 月以来最高，JPY 投资者 yield pickup 恶化 15bp 至 -22bp；隔夜净买入周增 47% 至 $327mn/night，聚焦银行与科技。JULI 89bp / yield 5.98%，CDX IG 收 56.2bp。Barclays 以「Recurring rates riddle」为题，借板块回吐走阔之机将 REITs / Real Estate 下调至 Underweight，同时维持 CoreWeave 2030-32s Overweight 作长期买入。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","22%","13%","14%","13%","20%","18%"],
+      rows:[
+        ["JPM",
+          ["fact","JULI <b>89bp</b> / yield <b>5.98%</b>；CDX IG 收 <b>56.2bp</b>；hybrid 供给 YTD <b>$38bn</b>、全年估 <b>$60bn</b>（同比 +50% 以上）创纪录，但存量仅 $165bn"],
+          ["neu","hybrid 发行人基本面稳健，供给扩张源于融资成本与会计方法调整"],
+          ["short","Hybrid OAS <b>219bp</b>（vs BBB 109bp）、6 个月回归偏贵约 <b>20bp</b>"],
+          ["fact","FAB 指数周降 9bp 至 <b>46bp</b>，对冲成本上升 9bp 至 3 月以来最高；JPY 投资者 yield pickup 恶化 15bp 至 -22bp；隔夜净买入周增 47% 至 $327mn/night，聚焦银行与科技"],
+          ["neu","hybrid 指数自 2021 年每年跑赢 JULI BBB、YTD +3.6%"],
+          ["short","<span class='bear'>hybrid 估值不如扩张初期，主张精选单券而非整体 beta</span>"]
+        ],
+        ["Barclays",
+          ["fact","以「Recurring rates riddle」为题，借板块回吐走阔之机将 REITs / Real Estate 下调至 <b>Underweight</b>"],
+          ["neu","利率波动加剧推高地产债波动，但板块已部分回吐走阔"],
+          ["neu","CoreWeave 信用面利好：短期合约溢价、完成 $3.7bn 可转债、股权 ATM 计划"],
+          ["neu","CoreWeave 债券价格持续低迷；TC Energy 墨西哥资产出售进一步支持资产负债表灵活性"],
+          ["neu","地产与数据中心信用走势分化明显"],
+          ["short","<span class='bear'>REITs/Real Estate 下调至 UW；CoreWeave 维持 2030-32s OW 作长期买入</span>"]
+        ]
+      ]
+    },
+    {
+      id:"asia-ig", title:"亚洲IG信用债",
+      summary:"日本休市、盘面清淡但整体 firm：spreads 收窄 <b>0-1bp</b>，Posco 全线走强 <b>3-5bp</b>，real money 与 street 共同推高。一级市场表现分化——新 KOROIL 破发、新 ANZ 略好于 reoffer。bank senior OPCO 持续有银行买盘，日本端 KAMPOS、SONYLF 受 PB 与 real money 支撑。TD 指出澳洲信用 better buying，4-5Y 大行 FRNs 需求旺盛、kangaroo FRNs 在更宽水平找到支撑，新 Macquarie 发行让价约 <b>2bps</b>、基本守住 reoffer，fixed tranche 有 follow-on demand。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","22%","13%","14%","13%","20%","18%"],
+      rows:[
+        ["Jefferies",
+          ["fact","日本休市，盘面清淡但整体 firm：spreads 收窄 <b>0-1bp</b>、Posco 全线走强 <b>3-5bp</b>；新 KOROIL 破发、新 ANZ 略好于 reoffer"],
+          ["neu","整体 firm，当日无信用事件扰动"],
+          ["neu","Posco 走强由 real money 与 street 共同推高，落后品种修复"],
+          ["neu","bank senior OPCO 持续有银行买盘；日本端 KAMPOS、SONYLF 受 PB 与 real money 支撑"],
+          ["neu","一级市场分化：新发表现取决于定价与发行规模"],
+          ["long","<span class='bull'>偏好 bank senior OPCO 与日本银行相关标的</span>"]
+        ],
+        ["TD",
+          ["fact","AUD 信用 better buying，4-5Y 大行 FRNs 有需求、kangaroo FRNs 在更宽水平找到支撑"],
+          ["neu","澳洲银行信用基本面稳定，需求来源分散"],
+          ["neu","kangaroo FRNs 在 wider 水平获得价值买盘支撑"],
+          ["neu","新 Macquarie 发行让价约 <b>2bps</b>、基本守住 reoffer，fixed tranche 有 follow-on demand"],
+          ["neu","一级市场定价与需求匹配良好，二级承接顺畅"],
+          ["long","<span class='bull'>偏好 4-5Y 大行 FRNs 与 kangaroo FRNs</span>"]
+        ]
+      ]
+    },
+    {
+      id:"em-asia", title:"新兴市场与亚太本地债",
+      summary:"全球央行分化加剧：Nigeria 降息 <b>350bp 至 23%</b> 为区域最大意外，Hungary 维持 5.50% 但下调通胀目标至 2.5%，Morocco 维持 2.25%；巴西民调打压情绪、BCB 纪要令市场解读为不如预期鸽派。同时 RBNZ 的 Breman 言论偏鹰、推升 10 月加息预期，RBA 的 Bullock 称劳动力仍偏紧、AI 数据中心建设加剧需求型通胀。亚洲汇市与债市表现分化：KRW 因半导体股 <b>+1.1%</b>、CNH 因 PBoC 定盘价 6.7459 微贬、30y CGB 收益率 <b>-1bp</b>、INR +0.2%。Barclays 关注印度季风：降雨缺口连续第三周约 <b>15%</b>，Kharif 播种面积达正常水平 100%，但 8-9 月弱降雨或影响单产。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","政策影响","整体观点","偏好/风险"],
+      cols:["88px","22%","13%","14%","13%","20%","18%"],
+      rows:[
+        ["MS",
+          ["fact","Nigeria 降息 <b>350bp 至 23%</b> 为区域最大意外；Hungary 维持 <b>5.50%</b> 但下调通胀目标至 2.5%；Morocco 维持 2.25%"],
+          ["neu","巴西民调打压情绪、BCB 纪要令市场解读为不如预期鸽派"],
+          ["neu","KRW 因半导体股 <b>+1.1%</b>、CNH 因 PBoC 定盘价 6.7459 微贬、30y CGB 收益率 <b>-1bp</b>、INR +0.2%"],
+          ["short","RBNZ 的 Breman 言论偏鹰，推升 10 月加息预期"],
+          ["short","全球央行同步转鹰与区域意外降息并存，政策分化加剧"],
+          ["short","<span class='bear'>区域政策分化加剧，注意跨市场分化风险</span>"]
+        ],
+        ["Barclays",
+          ["fact","季风降雨开始消退，降雨缺口连续第三周约 <b>15%</b>；Kharif 播种面积达正常水平 <b>100%</b>"],
+          ["neu","8-9 月弱降雨或影响单产，水库水位环比持平"],
+          ["neu","降雨缺口目前未影响播种面积，但单产风险上升"],
+          ["neu","单产风险将影响印度通胀与政策路径"],
+          ["fact","季风缺口是印度通胀与政策路径的关键变量"],
+          ["neu","<span class='bull'>跟踪播种进度与水库水位以判断单产风险</span>"]
+        ]
+      ]
+    },
+    {
+      id:"us-power", title:"美国电力与公用事业",
+      summary:"全球电力需求上升将持续推高电价账单：数据中心增长与住宅电气化令电网扩容投资维持电价上行压力。BofA 更看好可再生/光伏相对燃气发电——LNG 供给容易受扰动，而风光发电没有燃料约束，成本结构更稳定，因此在电力需求结构性上行的背景下，无燃料约束的发电方式相对占优。",
+      headers:["券商","市场数据/表现","供需观点","价格影响","政策影响","整体观点","偏好/风险"],
+      cols:["88px","22%","14%","14%","13%","19%","18%"],
+      rows:[
+        ["BofA",
+          ["fact","全球电力需求上升将推高电价账单"],
+          ["short","数据中心增长与住宅电气化令电网扩容投资维持电价上行压力"],
+          ["short","电价承压，电网投资缺口是核心约束"],
+          ["neu","LNG 供给易受扰动、风光无燃料约束，构成结构性差异"],
+          ["fact","更看好可再生/光伏相对燃气发电"],
+          ["long","<span class='bull'>偏好可再生/光伏相对燃气发电</span>"]
+        ]
+      ]
+    }
+  ],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["120px","26%","22%","22%","28%"],
+    rows:[
+      ["美国利率","$70bn 5y 拍卖是逢跌买入还是需继续让价",
+        ["long","<span class='bull'>MS（拍卖稳健派）<br>$69bn 2y 拍卖 tail 仅 0.2bp<br>bid/cover 由 2.60 升至 2.63<br>8 月 5y 终端需求 90.0% 为 2025/12 以来最高<br>海外需求 +3pp 至 12.5%</span>"],
+        ["short","<span class='bear'>JPM（让价派）<br>WI roll 由 +0.5bp 走弱至 +0.325bp<br>过去一个月 5y 收益率上行 45bp<br>客户多头占比创去年秋季以来新高<br>平淡估值与技术面需更多让价</span>"],
+        "分歧在于「仓位」与「需求结构」的权重：MS 从 2y 拍卖的稳健结果（tail 仅 0.2bp、bid/cover 升至 2.63）与 8 月 5y 终端需求 90.0%、海外需求上行 3pp 出发，认为拍卖需求结构仍在改善；JPM 则把 WI roll 走弱、过去一个月 5y 收益率上行 45bp 与客户调查多头占比升至去年秋季以来最高放在一起，认为拥挤的仓位与平淡的技术面会拖累供给消化，因此判断明日拍卖需更多让价。"],
+      ["油价与通胀","美伊外交的去通胀红利是真实还是被对冲",
+        ["long","<span class='bull'>MS（去通胀派）<br>Brent -1.8%、WTI -1.2%<br>特朗普称看到达成协议动力<br>纳指 +0.5%、VIX -4.4%<br>油价回落提供早期去通胀脉冲</span>"],
+        ["short","<span class='bear'>BMO（消息面主导派）<br>油价全日 choppy、方向由消息面主导<br>overnight 跌、UN 演讲后涨、收盘再跌<br>主卖盘在长端、30y 引领 breakevens 收紧<br>前端 1-2y 仍有相当压力</span>"],
+        "分歧在于油价回落是否具备可持续的方向意义：MS 把 Brent -1.8%、VIX -4.4% 与纳指 +0.5% 一并读作风险偏好改善与早期去通胀脉冲；BMO 则强调全日价格反复（overnight 跌、UN 演讲后涨、收盘又跌），主卖盘集中在长端、30y 引领 breakevens 收紧，前端 1-2y 压力未除，因此认为去通胀叙事过于依赖尚未落地的外交消息。两者共同确认的一点是：油价回落的红利并未有效传导至美债前端。"],
+      ["全球央行","同步转鹰是短期噪音还是趋势起点",
+        ["long","<span class='bull'>JPM（政策框架派）<br>TGA 投 repo 只在稀缺准备金下可扩展<br>与会者主张灵活参与、规律可预测<br>稳定币需求之争未指向即刻加息<br>会议重点在框架设计而非政策路径</span>"],
+        ["short","<span class='bear'>MS / Barclays（鹰派合流派）<br>RBNZ Breman 偏鹰推升 10 月加息预期<br>ECB Lane 警告油气二次涨价<br>RBA Bullock 称劳动力偏紧、AI 数据中心加剧需求型通胀<br>Barclays 全球再通胀 FX 效应看多 USD</span>"],
+        "分歧在于政策沟通的性质判断：JPM 认为第 12 届国债市场会议的议题集中在 TGA 投 repo 的可扩展条件与稳定币需求是「新增还是重分配」等框架性设计问题，并未指向即刻的政策变化；MS 与 Barclays 则把 RBNZ Breman 的偏鹰表态、ECB Lane 对油气二次涨价的警告、RBA Bullock 对劳动力紧俏与 AI 需求的描述串成全球央行同步转鹰的证据链，Barclays 更通过全球再通胀的 FX 效应直接表达为看多 USD、看空 EUR/JPY/CNY/SGD。"],
+      ["信用","估值偏高与供给创纪录下该重视 beta 还是 alpha",
+        ["long","<span class='bull'>Barclays（alpha 派）<br>板块已部分回吐走阔、借机调整仓位<br>REITs / Real Estate 下调至 UW<br>CoreWeave 维持 2030-32s OW<br>TC Energy 墨西哥资产出售改善资产负债表<br>hybrid 存量仅 $165bn、指数长期跑赢</span>"],
+        ["short","<span class='bear'>JPM（beta 承压派）<br>Hybrid OAS 219bp、偏贵约 20bp<br>FAB 指数周降 9bp 至 46bp<br>对冲成本升至 3 月以来最高<br>JPY pickup 恶化 15bp 至 -22bp<br>供给创纪录但存量薄、流动性风险被低估</span>"],
+        "分歧在于对「估值贵但供给强」组合的应对方式：Barclays 认为板块在利率波动中已部分回吐走阔，正是调整结构的机会，故以 alpha 表达——下调 REITs / Real Estate 至 UW、维持 CoreWeave 2030-32s OW，并借 TC Energy 资产出售等个体事件判断资产负债表灵活性；JPM 则从整体估值与流动性出发，指出 Hybrid OAS 已偏贵约 20bp、FAB 指数周降 9bp 至 46bp、对冲成本升至 3 月以来最高，主张精选单券而非整体 beta。"]
+    ]
+  },
+  noCoverage:["中国利率","中国信用债","澳门博彩","亚洲高收益","中国高收益","欧洲信用债","日本利率","美国HY信用债"],
+  footer: {
+    window:"2026-09-22 美盘（美伊外交进展压低油价：Brent -1.7% 至 $98.64、WTI -1.2% + $69bn 2y 拍卖 tail 0.2bp 落 4.787% + Richmond Fed 制造业 -2）~ 2026-09-23 亚洲（Morgan Stanley Global Macro Commentary + J.P. Morgan US Treasury Market Daily / Credit Strategy + Bank of Montreal TIPS End of Day Commentary + Barclays Emerging Asia / Credit Strategy + Jefferies Rates Technical Recap / Asia Credit EOD + TD Securities AUD Credit + Bank of America Daily Insights）",
+    emailCount:"Morgan Stanley 3 / J.P. Morgan 3 / Barclays 3 / Jefferies 2 / TD Securities 1 / Bank of Montreal 1 / Bank of America 1（共 14 封 · 7 家券商；覆盖美伊外交下的油价回落与美债 bear-steepen、$69bn 2y 拍卖结果与 $70bn 5y 前瞻、第 12 届国债市场会议、hybrid 供给创纪录与估值偏贵、FAB 指数下滑、REITs 下调、印度季风与亚洲/澳洲信用盘面）"
+  }
+};
+REPORT_DATA["2026-09-24"] = {
+  dateCN: "2026年9月24日 星期四",
+  theme: "热数据与油价联手把利率重新推向紧缩定价：美国 9 月 flash PMI 制造业 <b>57.0</b>（预期 53.7）、服务业 <b>58.7</b> 全面超预期，欧元区同步改善（德国综合 53.8、法国 51.2），叠加白宫考虑限制成品油出口推动布伦特单日 <b>+4.2% 至 $103.42</b>，9 月 FOMC 后的鹰派路径获双重确认。美债 <b>belly 领跌的熊平</b>随之而来——2y <b>+14.4bp</b>、5y <b>+16.7bp</b>（CT5 失守 <b>5%</b>）、10y <b>+15.3bp 至 5.11%</b>、30y +9.9bp 至 5.40%，$70bn 5y 拍卖以约 <b>3.2bp 的尾部落幕、为 2022 年 6 月以来最大</b>，终端需求降至 2024 年 5 月以来最低，BMO 称这是 <b>2025 年 4 月以来最大单日抛售</b>。美元走强（DXY +0.5% 至 101.13）、权益承压（标普 500 -0.8%）。信用端明显滞后：JULI 利差与收益率持平 <b>89bp / 5.98%</b>，HY 现金利差仅 +1bp 至 302bp，但 <b>HY 现金-CDS 基差单日走阔 13bp 至 +18bp、触及 1 个月与 3 个月区间 100% 分位</b>，IG 基差 -31bp。明日 $44bn 7y 拍卖入场收益率将为 2009 年以来最高。",
+  meta: "覆盖券商：Morgan Stanley 1 封（Global Macro Commentary）、J.P. Morgan 3 封（US Treasury Market Daily + Credit Strategy + DFMM）、Bank of Montreal 1 封（TIPS End of Day Commentary）、Barclays 3 封（Emerging Asia / Macrocast / Credit & Securitized）、Jefferies 2 封（Rates Technical Recap + Asia Credit EOD）、Goldman Sachs 3 封（Global Markets Daily + Top of Mind + EM）、Bank of America 1 封（Daily Insights）。当日 14 封邮件 · 7 家券商，主线为热 PMI 与油价双冲击下的美债熊平、5y 拍卖巨幅尾部、柴油出口禁令的通胀测算、欧洲冬季能源下行情景与亚洲/新兴市场央行鹰派合流。",
+  brokers:[
+    {n:"MS",c:"b-ms"},{n:"JPM",c:"b-jpm"},
+    {n:"BMO",c:"b-bmo"},{n:"Barclays",c:"b-barclays"},
+    {n:"Jefferies",c:"b-jefferies"},{n:"GS",c:"b-gs"},
+    {n:"BofA",c:"b-bofa"}
+  ],
+  markets: [
+    {
+      id:"us-rates", pri:true, title:"美国利率市场",
+      summary:"热 PMI 叠加油价冲击触发 belly 领跌的熊平：2y <b>+14.4bp</b>、5y <b>+16.7bp</b>（CT5 失守 <b>5%</b>）、10y <b>+15.3bp 至 5.11%</b>、30y +9.9bp 至 5.40%。$70bn 5y 拍卖停在 5.033%（WI 5.002%）、尾部约 <b>3.2bp</b>，为 2022 年 6 月以来最大，终端需求占比降至 2024 年 5 月以来最低；BMO 称这是 2025 年 4 月以来最大单日抛售。JPM 客户调查显示久期敞口本周初已移向长端，仓位反过来放大了 belly 跌幅，10y 中间段在公允价值模型下已转为偏贵。明日 $44bn 7y 拍卖，入场收益率将是 2009 年以来最高。",
+      headers:["券商","市场数据/表现","久期观点","曲线观点","美联储观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","DM 熊平、belly 领跌：5y <b>+16.7bp</b>、10y <b>+15.3bp 至 5.11%</b>、2y +14.4bp、30y <b>+9.9bp 至 5.40%</b>"],
+          ["short","久期偏空，曲线中间段最脆弱"],
+          ["short","熊平：belly 领跌、30y 相对抗跌"],
+          ["short","热 PMI（制造业 <b>57.0</b> / 服务业 <b>58.7</b>）与油价上涨把通胀担忧推回定价；Fed 的 Barr 称通胀仍高于目标、进一步调整「很可能」"],
+          ["fact","DXY <b>+0.5% 至 101.13</b>、标普 500 <b>-0.8%</b>；EGB 同步大跌、5y 德债 +12bp、2y Gilts +13bp"],
+          ["short","<span class='bear'>belly 与前端承压，维持偏空久期</span>"]
+        ],
+        ["JPM",
+          ["fact","$70bn 5y 停在 <b>5.033%</b>（WI 5.002%）、尾部约 <b>3.2bp</b>，为 2022 年 6 月以来最大；终端需求占比降至 2024 年 5 月以来最低"],
+          ["neu","10y 中间段在公允价值模型下已由中性转为偏贵"],
+          ["short","曲线中间段的需求裂缝显现，战术性压力尚未释放完毕"],
+          ["short","客户调查显示久期敞口本周初已移向长端，热数据触发平仓与久期回吐相互强化"],
+          ["fact","9/24 拍卖 <b>$44bn 7y</b>（规模不变），7y 收益率自上次拍卖累计上行 <b>54bp</b>、入场收益率为 2009 年以来最高"],
+          ["short","<span class='bear'>预计 7y 仍需额外让价</span>"]
+        ],
+        ["BMO",
+          ["fact","CT5 失守 <b>5%</b>，为 <b>2025 年 4 月以来最大单日抛售</b>；TIPS 退居次要，实际收益率与盈亏平衡随名义利率整体上移"],
+          ["short","实际收益率与盈亏平衡同步上移，久期承压"],
+          ["short","熊平由 belly 主导、5y 跌幅最大"],
+          [""],
+          ["fact","三重触发：强 PMI + 油气期货跳涨 + <b>3bp</b> 的 5y 拍卖尾部，拍卖技术面并非独立事件"],
+          ["short","<span class='bear'>拍卖结果体现需求对 5% 以上收益率定价不足</span>"]
+        ],
+        ["Jefferies",
+          ["fact","US10y 站上 <b>5.00%</b>、US5y 逼近 5%、US2y 约 4.85% 区域"],
+          ["long","自当前水平加仓：US5y 按 <b>4.87% / 4.92% / 5%</b> 分批，US2y 加仓 <b>4.85%</b>"],
+          ["neu","2s10s 陡化行情已成熟、转入 <b>25-55bp 区间震荡</b>，当前 20bp 附近可退出平坦化"],
+          ["neu","长期仍看更高收益率，但定价节奏是关键"],
+          ["fact","维持「逢跌买入」框架：市场定价接近 <b>3 次加息</b>时加仓固收，反弹至 2 次加息定价时减仓"],
+          ["long","<span class='bull'>US10y 在 5.00% 以上逢跌买入</span>"]
+        ]
+      ]
+    },
+    {
+      id:"oil-geo", title:"油价与地缘政治",
+      summary:"白宫正认真考虑限制柴油/成品油出口的报道叠加供应端担忧，布伦特单日大涨 <b>4.2%</b>（MS 口径 +4.4%）至 <b>$103.42/桶</b>。JPM 测算若禁令落地将拉低 1 年期 CPI 通胀率约 <b>14bp</b>，通胀 fixings 因此走软、且集中在 10-12 月合约，6 个月通胀曲线斜率陡化约 5bp。GS 则从欧洲角度警告「超级厄尔尼诺」不会化解能源风险：基线 TTF €70/MWh，若冬季气温低于均值 1 个标准差，12 月 TTF 可达 <b>€115/MWh</b> 乃至 <b>€150/MWh</b>，欧洲柴油上看 <b>$145/桶</b>。油价重新成为通胀定价的边际驱动，与当日 5y 抛售形成共振。",
+      headers:["券商","市场数据/表现","供需观点","曲线/技术面","地缘政治","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["JPM",
+          ["fact","布伦特单日 <b>+4.2% 至 $103.42</b>；白宫正认真考虑限制柴油/成品油出口"],
+          ["short","需求端无新增信息，供给政策风险成为边际驱动"],
+          ["neu","6 个月通胀曲线斜率陡化约 5bp，fixings 集中在 10-12 月合约走软"],
+          ["short","限制柴油/成品油出口的讨论是核心驱动，叠加供应端担忧"],
+          ["fact","测算禁令若实施将拉低 1 年期 CPI 通胀率约 <b>14bp</b>"],
+          ["neu","<span class='bear'>油价上行与短端通胀定价下行并存，方向相互抵消</span>"]
+        ],
+        ["MS",
+          ["fact","Brent <b>+4.4%</b>；能源板块成为美股少有的抗跌方向，标普 500 <b>-0.8%</b>"],
+          ["neu","供给风险溢价回归，但需求侧证据有限"],
+          ["neu","近月风险溢价重新抬升"],
+          ["short","油价上涨与热 PMI 共同把通胀担忧推回定价，是本轮利率抛售的核心叙事"],
+          ["fact","通胀担忧重新成为利率定价的边际变量"],
+          ["short","<span class='bear'>能源通胀风险溢价回归，抑制债市反弹</span>"]
+        ],
+        ["Barclays",
+          ["fact","成品油出口禁令仍属假设情景，但讨论明显升温；炼油利润率处于周期高位"],
+          ["neu","炼油利润率高位，炼油对中游的互换交易开始具备吸引力"],
+          ["neu","假设情景定价，尚无实际供给损失"],
+          ["neu","美国成品油出口禁令讨论升温是当前政策风险焦点"],
+          ["fact","EM Quarterly 提示厄尔尼诺叠加更高的能源与食品成本可能拖慢去通胀、压缩政策空间"],
+          ["long","<span class='bull'>相对价值上偏好做多炼油、做空中游</span>"]
+        ],
+        ["GS",
+          ["fact","基线 TTF <b>€70/MWh</b>；欧洲柴油上看 <b>$145/桶</b>"],
+          ["short","「超级厄尔尼诺」不会化解欧洲能源风险，ECMWF 仅预测平均冬季"],
+          ["short","低于均值 1 个标准差的冬季对应 12 月 TTF <b>€115/MWh</b>、极端情景 <b>€150/MWh</b>"],
+          ["short","海湾出口疲弱叠加更冷冬季构成主要上行风险"],
+          ["fact","把厄尔尼诺当作欧洲能源风险解药是误判"],
+          ["long","<span class='bull'>做多 2026-27 冬季 TTF 看涨价差 + 做多 2027 年欧洲成品油</span>"]
+        ]
+      ]
+    },
+    {
+      id:"eur-uk", title:"欧洲与英国利率市场",
+      summary:"EGB 在美债带动下大幅补跌：5y 德债 <b>+12bp</b>、10s30s 平坦化约 6bp；英国 2y Gilts <b>+13bp</b>、10s30s -3bp。政策面整体偏鹰——ECB 的 Makhlouf 称尚未看到二次效应，Fed 的 Barr 称通胀仍高于目标、进一步调整「很可能」且美联储目前「位置不对」。欧元区/英国 flash PMI 显示欧元区韧性未被挑战、英国有所缓和，但更高的能源价格正在触发第二轮成本推动压力，投入与产出价格指标同步上行，Barclays 因此建议在信用中更重视 alpha 而非对利率方向下大注。",
+      headers:["券商","市场数据/表现","德债观点","曲线观点","ECB观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","EGB 大幅补跌：5y 德债 <b>+12bp</b>、10s30s 平坦化约 <b>6bp</b>；英国 2y Gilts <b>+13bp</b>、10s30s -3bp"],
+          ["short","德债久期偏空，跟随美债补跌"],
+          ["short","10s30s 平坦化约 6bp"],
+          ["short","ECB 的 Makhlouf 称尚未看到二次效应；Fed 的 Barr 称通胀仍高于目标、进一步调整「很可能」"],
+          ["fact","美债带动下的补跌，欧美政策面整体偏鹰"],
+          ["short","<span class='bear'>EGB 补跌未结束，曲线平坦化</span>"]
+        ],
+        ["Barclays",
+          ["fact","欧元区/英国 flash PMI：欧元区韧性未被挑战、英国有所缓和；投入与产出价格指标同步上行"],
+          ["neu","增长韧性维持，但能源成本推动压力抬头"],
+          ["neu","更高的能源价格正在触发第二轮成本推动"],
+          ["short","能源二次成本推动使 ECB 政策空间受限"],
+          ["fact","EM Quarterly 提示厄尔尼诺与更高的能源/食品成本可能拖慢去通胀、限制政策空间"],
+          ["long","<span class='bull'>信用中更重视 alpha 而非 beta</span>"]
+        ]
+      ]
+    },
+    {
+      id:"us-macro", title:"美国宏观与政策",
+      summary:"美国 9 月 flash PMI 全面超预期：制造业 <b>57.0</b>（预期 53.7、前值 53.9）、服务业 <b>58.7</b>，读数位于扩张高位；欧元区同步改善（德国综合 53.8 vs 预期 51.9、法国综合 51.2 vs 预期 48.8），英国略低于预期。强读数落在 9 月 FOMC 之后，直接推动年内加息再定价与曲线熊平。Barclays 的 Macrocast 则质疑 8 月强势数据夸大了潜在需求，若成立则当前由数据强度推导出的 Fed 路径偏鹰、存在回摆空间；BofA 的「Funflation」从消费侧补上价格黏性证据（8 月兴趣类支出 <b>+7.9%</b>，增速超交易量增长两倍）。",
+      headers:["券商","市场数据/表现","增长观点","通胀观点","就业观点","核心逻辑","交易建议"],
+      cols:["88px","22%","13%","12%","12%","23%","18%"],
+      rows:[
+        ["MS",
+          ["fact","美国 9 月 flash PMI 制造业 <b>57.0</b>（预期 53.7、前值 53.9）、服务业 <b>58.7</b>；欧元区德国综合 <b>53.8</b>（预期 51.9）、法国 <b>51.2</b>（预期 48.8）"],
+          ["long","增长读数位于扩张高位，韧性未被挑战"],
+          ["short","增长韧性直接转化为鹰派利率定价"],
+          ["neu","当日无关键就业数据发布"],
+          ["fact","强读数落在 9 月 FOMC 之后，直接推动年内再定价与曲线熊平"],
+          ["short","<span class='bear'>增长韧性强化鹰派定价，久期承压</span>"]
+        ],
+        ["Barclays",
+          ["fact","Macrocast「Maximum buoyancy?」质疑 8 月强势数据可能夸大了潜在需求"],
+          ["neu","8 月强势数据可能夸大潜在需求，真实动能待验证"],
+          ["neu","若数据强度被高估，当前由数据推导的 Fed 路径偏鹰、存在回摆空间"],
+          ["neu","当日无关键就业数据发布"],
+          ["fact","英国 flash PMI 弱于预期、增长动能缓和，但价格压力仍在"],
+          ["neu","<span class='bull'>不对利率方向下大注，在信用中寻找 alpha</span>"]
+        ],
+        ["BofA",
+          ["fact","8 月兴趣/爱好类支出同比 <b>+7.9%</b>，增速超过交易量增长的两倍"],
+          ["neu","体验型消费量价背离延续，消费韧性更多来自价格而非数量"],
+          ["short","「Funflation」为鹰派通胀叙事提供消费端旁证"],
+          ["neu","当日无关键就业数据发布"],
+          ["fact","价格而非数量驱动消费，通胀黏性有消费侧证据"],
+          ["short","<span class='bear'>通胀黏性提示不宜过早做多久期</span>"]
+        ]
+      ]
+    },
+    {
+      id:"us-ig", title:"美国IG信用债",
+      summary:"JULI 利差与收益率持平于 <b>89bp / 5.98%</b>，与美债的剧烈熊平形成鲜明对比。周二 HG 发行 <b>$18.2bn</b>（8 家发行人），周内累计 $28bn、9 月累计 $157bn、YTD $1654bn；但 10 年期以上占比仅 <b>11%</b>、为 1 月以来最低，远低于 18% 的年初至今均值。HG 基金与 ETF 净流入 <b>$31.97 亿</b>（ETF 占 $31.17 亿），交易商净买入 $34 亿、净头寸周内累计 <b>+$21 亿至 -$22 亿</b>（3 个月区间 87% 分位）。Barclays 从个券层面表达观点：Sysco 上调至 MW、Baxter 维持 MW 并建议买入 step 2035s、Teva 新覆盖 MW、Stonegate 2029 英镑/FRN 维持 OW、Medco Energi '29s 上调至 MW。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","22%","13%","14%","13%","20%","18%"],
+      rows:[
+        ["JPM",
+          ["fact","JULI 利差与收益率持平于 <b>89bp / 5.98%</b>；周二 HG 发行 <b>$18.2bn</b>（8 家发行人），周内 $28bn、9 月 $157bn、YTD $1654bn"],
+          ["neu","基本面稳健，暂无恶化信号；但 9 月 10 年期以上发行占比仅 <b>11%</b>、为 1 月以来最低"],
+          ["neu","利差持平、收益率高企；10y+ 占比远低于 <b>18%</b> 的 YTD 均值"],
+          ["fact","HG 基金与 ETF 净流入 <b>$31.97 亿</b>（ETF $31.17 亿、共同基金 $0.8 亿）；交易商净买入 $34 亿、净头寸周内累计 +$21 亿至 <b>-$22 亿</b>（3 个月区间 87% 分位）"],
+          ["neu","利率休克把供给挤向短端，长端久期抽水压力明显减轻"],
+          ["short","<span class='bear'>指数久期拉伸放缓，长久期配置需求被短端发行分流</span>"]
+        ],
+        ["Barclays",
+          ["fact","个券调整：Sysco 上调至 MW、Baxter 维持 MW 并买入 step 2035s、Teva 新覆盖 MW、Stonegate 2029 英镑/FRN 维持 OW、Medco Energi '29s 上调至 MW"],
+          ["neu","个券层面基本面分化，评级动作以上调为主"],
+          ["neu","Acrisure 接近困境，但对 IG 保险经纪商的读穿有限"],
+          ["neu","当日未见显著资金面异动，alpha 机会优于板块方向"],
+          ["neu","以 alpha 而非 beta 表达，个券机会优于板块押注"],
+          ["long","<span class='bull'>偏好 Baxter step 2035s 与 Stonegate 2029 英镑/FRN</span>"]
+        ]
+      ]
+    },
+    {
+      id:"us-hy", title:"美国HY信用债",
+      summary:"HY 现金端极度平稳：现金利差仅 <b>+1bp 至 302bp</b>、YTW <b>+2bp 至 7.79%</b>，10 日新发让价仍为 6bp、优于指数的 2bp。但衍生品端已触及极端分位：HY 现金-CDS 基差单日 <b>+13bp 至 +18bp</b>，同时触及 1 个月与 3 个月区间 <b>100% 分位</b>；IG 基差 -31bp、处于 1 个月 98% / 3 个月 99% 分位。说明本轮利率冲击尚未通过现券利差传导，但基差修复方向一旦反转将放大现金市场波动。Barclays 确认 CDX.HY / FINDEX 9 月展期名单落定，HY47 自 <b>9/28</b> 起交易、内在较 HY46 宽 <b>15bp</b>（价格低约 $0.06），但因 HY46 上投资者多头风险仓位偏高，实际展期预计较内在更平。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","再融资/违约","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","20%","13%","13%","13%","14%","12%","15%"],
+      rows:[
+        ["JPM",
+          ["fact","HY 现金利差 <b>+1bp 至 302bp</b>、YTW <b>+2bp 至 7.79%</b>；HY 现金-CDS 基差单日 <b>+13bp 至 +18bp</b>、触及 1 个月与 3 个月区间 <b>100% 分位</b>"],
+          ["neu","现金端极度平稳，基本面暂无恶化信号"],
+          ["short","现金利差仅 +1bp 与衍生品极端分位并存，利率冲击尚未通过现券传导"],
+          ["neu","10 日新发让价仍为 <b>6bp</b>、优于指数的 2bp"],
+          ["neu","IG 基差 -31bp、处于 1 个月 98% / 3 个月 99% 分位，衍生品端已高度拉伸"],
+          ["neu","现金平稳 vs 衍生品极端，是本日信用端最强的技术信号"],
+          ["short","<span class='bear'>基差修复方向一旦反转将放大现券波动</span>"]
+        ],
+        ["Barclays",
+          ["fact","CDX.HY / FINDEX 9 月展期名单落定，HY47 自 <b>9/28</b> 起交易；内在较 HY46 宽 <b>15bp</b>（价格低约 $0.06）"],
+          ["short","Acrisure（前十大保险经纪商之一）接近困境、被 CLO 与 BDC 广泛持有"],
+          ["neu","展期预计较内在更平，因投资者在 HY46 上的多头风险仓位偏高"],
+          ["short","展期后做多风险的方向性收益高度依赖利差走向"],
+          ["neu","CLO 与 BDC 持仓中的困境名字是当前关键观察点"],
+          ["neu","更重视 alpha，不建议对信用 beta 下大注"],
+          ["short","<span class='bear'>关注私募信用链条的传染路径</span>"]
+        ]
+      ]
+    },
+    {
+      id:"asia-ig", title:"亚洲IG信用债",
+      summary:"日本市场因假期休市，亚洲 IG 盘面交投清淡、利差无方向。混合资本保险债下跌 <b>0-12.5c</b>，但对落后久期（尤其 10 年期）与高质量日本银行高级债、澳洲 T2 出现真实买盘；两笔韩国新发因规模较小反而跑赢。Jefferies 指出亚洲信用尚未定价区域政策转向风险，但在清淡流动性下落后久期与低 beta 品种的相对价值反而更清晰。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","Technical/资金面","整体观点","偏好/风险"],
+      cols:["88px","22%","13%","14%","13%","20%","18%"],
+      rows:[
+        ["Jefferies",
+          ["fact","日本假期下亚洲 IG 交投清淡、利差无方向；混合资本保险债下跌 <b>0-12.5c</b>"],
+          ["neu","基本面稳定，假期流动性偏薄"],
+          ["neu","混合资本保险债走弱，落后久期相对吸引力提升"],
+          ["neu","对落后久期（尤其 10 年期）与高质量日本银行高级债、澳洲 T2 出现真实买盘；两笔韩国新发因规模小反而跑赢"],
+          ["neu","亚洲信用尚未定价区域政策转向风险"],
+          ["long","<span class='bull'>偏好落后久期、日本银行高级债与澳洲 T2</span>"]
+        ]
+      ]
+    },
+    {
+      id:"em-asia", title:"新兴市场与亚洲本地债",
+      summary:"新兴市场内部的政策与资产价格背离是本日非美市场的核心特征。SARB 加息 <b>25bp 至 7.25%</b>，Barclays 判断本轮加息已结束、2027 年下半年有两次 25bp 降息空间，但 MS 指出 CEEMEA 在收紧后反而走弱；印尼央行维持 <b>5.75%</b> 不变并扩大外汇工具箱，Barclays 预计 2026-2027 年全程按兵不动、IDR 偏渐进贬值、对久期持温和看空；新加坡 8 月 CPI 温和，MAS 10 月或「非常小幅」上调 SGD NEER 斜率（接近平局）。GS 给出巴西大选情景：首轮 10/4、决选 10/25，市场友好结果对应 USD/BRL <b>4.50-4.80</b>、不友好结果看向 <b>5.80</b>。",
+      headers:["券商","市场数据/表现","基本面观点","估值/利差观点","政策影响","整体观点","偏好/风险"],
+      cols:["88px","22%","13%","14%","13%","20%","18%"],
+      rows:[
+        ["Barclays",
+          ["fact","SARB 加息 <b>25bp 至 7.25%</b>；印尼央行维持 <b>5.75%</b> 并扩大外汇工具箱；新加坡 8 月 CPI 温和"],
+          ["neu","亚洲除中国外央行同时面对增长韧性、潜在通胀与更鹰 Fed，政策空间被压缩"],
+          ["neu","政策与资产价格背离是区域配置的核心矛盾"],
+          ["short","SARB 本轮结束、2H27 有两次 25bp 降息空间；BI 预计 2026-27 全程按兵不动、IDR 偏渐进贬值、对久期温和看空；MAS 10 月或「非常小幅」上调 SGD NEER 斜率"],
+          ["fact","亚洲央行鹰派合流是区域利率与汇率的共同约束"],
+          ["short","<span class='bear'>对印尼久期温和看空，偏好 alpha 而非 beta</span>"]
+        ],
+        ["MS",
+          ["fact","CEEMEA 在 SARB 收紧后反而走弱；当日 USD 走强进一步压制 EM"],
+          ["neu","新兴市场对「鹰派央行」的反应已从利差支撑转向增长与资金流担忧"],
+          ["neu","政策收紧未能支撑本币资产，CEEMEA 内部走势分化"],
+          ["neu","利差支撑让位于资金流与增长预期"],
+          ["short","增长与资金流担忧主导 EM 定价"],
+          ["short","<span class='bear'>EM 顺周期敏感度上升，操作上谨慎为先</span>"]
+        ],
+        ["GS",
+          ["fact","巴西大选首轮 <b>10/4</b>、决选 <b>10/25</b>；卢拉与 Flávio Bolsonaro 进入第二轮概率较高"],
+          ["neu","市场友好结果对应 USD/BRL <b>4.50-4.80</b>"],
+          ["short","市场不友好结果看向 <b>5.80</b>"],
+          ["neu","大选构成 10 月 EM 本币资产最集中的事件风险"],
+          ["fact","美元因热 PMI 走强、EM 资金流承压"],
+          ["neu","<span class='bear'>巴西大选是 10 月 EM 本币最集中的事件风险</span>"]
+        ]
+      ]
+    }
+  ],
+  divergences: {
+    headers:["市场","议题","偏多券商","偏空券商","分歧原因"],
+    cols:["120px","26%","22%","22%","28%"],
+    rows:[
+      ["美国利率","5% 以上是逢跌买入还是继续让价",
+        ["long","<span class='bull'>Jefferies（逢跌买入派）<br>定价接近 3 次加息时加仓固收<br>2s10s 转入 25-55bp 区间震荡<br>US10y 在 5.00% 以上买入<br>US5y 按 4.87/4.92/5% 分批、US2y 4.85%</span>"],
+        ["short","<span class='bear'>JPM / MS（需求裂缝派）<br>5y 尾部 3.2bp 为 2022/6 以来最大<br>终端需求为 2024/5 以来最低<br>10y 中间段已转贵<br>久期仓位偏高放大抛压<br>明日 7y 预计仍需让价</span>"],
+        "分歧在于对收益率水平与仓位结构的判断：Jefferies 认为 5% 以上已充分定价紧缩、把「接近 3 次加息」视为加仓固收的触发点，并以区间震荡替代单边方向；JPM 与 MS 则把 5y 拍卖的 3.2bp 尾部、终端需求降至 2024 年 5 月以来最低与客户久期敞口向长端迁移视为需求侧的实质裂缝，认为曲线中间段的战术性压力尚未释放、明日 7y 仍需额外让价。"],
+      ["增长数据","热 PMI 是真实动能还是统计幻象",
+        ["long","<span class='bull'>Barclays（数据夸大派）<br>Macrocast「Maximum buoyancy?」<br>8 月强势数据可能夸大潜在需求<br>当前 Fed 路径偏鹰、存在回摆空间<br>不对利率方向下大注</span>"],
+        ["short","<span class='bear'>MS（韧性确认派）<br>制造业 57.0 远超预期 53.7<br>服务业 58.7 位于扩张高位<br>欧元区德国 53.8、法国 51.2 同步改善<br>增长韧性直接转化为鹰派定价</span>"],
+        "分歧在于数据强度向政策路径的映射倍数：MS 把 flash PMI 的全面超预期直接读作增长韧性并转化为年内加息再定价与曲线熊平；Barclays 则质疑 8 月强势数据本身夸大了潜在需求，若成立则市场由数据强度推导出的 Fed 路径偏鹰、存在回摆空间，故选择在信用中寻找 alpha 而非对利率方向下注。同日 BofA 的「Funflation」（兴趣类支出 +7.9%、增速超交易量两倍）则从消费侧支持价格黏性、偏向 MS 一侧。"],
+      ["通胀定价","柴油禁令是通胀上行还是短端通胀定价下行",
+        ["long","<span class='bull'>JPM（短端通胀下行派）<br>禁令若实施拉低 1y CPI 约 14bp<br>通胀 fixings 走软<br>集中在 10-12 月合约<br>6 个月通胀曲线斜率陡化约 5bp</span>"],
+        ["short","<span class='bear'>GS / MS / Barclays（能源通胀上行派）<br>布伦特单日 +4.2% 至 $103.42<br>更冷冬季 12 月 TTF 上看 €115-150<br>欧洲柴油 $145/桶<br>英国投入与产出价格同步上行<br>炼油利润率处周期高位</span>"],
+        "分歧在于同一供给政策对不同期限通胀定价的方向相反：JPM 测算柴油出口禁令会直接压低 1 年期 CPI 约 14bp、使 10-12 月 fixings 走软，属短端通胀定价的下行冲击；GS 从欧洲冬季能源情景出发认为更冷的冬季可把 12 月 TTF 推至 €115-150/MWh、柴油至 $145/桶，Barclays 亦观察到英国投入与产出价格同步上行、欧洲出现第二轮成本推动，属能源通胀的上行冲击。二者共同指向「油价重新成为通胀定价的边际驱动」。"],
+      ["信用与利率背离","现金利差未定价利率冲击是缓冲还是隐患",
+        ["long","<span class='bull'>Barclays（平稳派）<br>JULI 89bp 持平、HY 仅 +1bp 至 302bp<br>HY47 展期料较内在更平<br>个券评级以上调为主<br>重视 alpha 而非 beta</span>"],
+        ["short","<span class='bear'>JPM（基差警示派）<br>HY 现金-CDS 基差 +13bp 至 +18bp<br>触及 1 个月与 3 个月 100% 分位<br>IG 基差 -31bp（98%/99% 分位）<br>衍生品端已高度拉伸<br>现金端尚未定价利率冲击</span>"],
+        "分歧在于对现金端「不动」的解读：Barclays 从利差持平、展期料较内在更平与个券评级上调出发，认为信用基本面与资金面足以吸收本轮利率冲击、alpha 机会优于 beta 押注；JPM 则强调 HY 现金-CDS 基差单日走阔 13bp 至 +18bp 并触及 1 个月与 3 个月区间 100% 分位、IG 基差处于 98-99% 分位，衍生品端已高度拉伸而现券利差几乎未动，一旦修复方向反转将放大现金市场波动。"],
+      ["欧洲能源","超级厄尔尼诺能否化解冬季能源风险",
+        ["long","<span class='bull'>Barclays（假设情景派）<br>成品油出口禁令仍属假设情景<br>尚无实际供给损失<br>炼油 vs 中游互换更有性价比<br>以相对价值表达</span>"],
+        ["short","<span class='bear'>GS（下行情景派）<br>ECMWF 仅预测平均冬季<br>1 个标准差更冷对应 12 月 TTF €115/MWh<br>极端情景 €150/MWh（基线 €70）<br>欧洲柴油上看 $145/桶<br>海湾出口疲弱叠加</span>"],
+        "分歧在于对尾部情景的概率赋权：Barclays 认为美国成品油出口禁令与冬季极端天气仍属假设情景、尚无实际供给损失，因此更倾向用炼油对中游的互换等相对价值工具表达；GS 则明确反驳市场把「超级厄尔尼诺」当作欧洲能源风险解药的看法，指出 ECMWF 最新预测仅为平均冬季，一旦气温低于均值 1 个标准差叠加海湾出口疲弱，12 月 TTF 与欧洲柴油价格将显著上冲，建议直接做多冬季 TTF 看涨价差与 2027 年欧洲成品油。"]
+    ]
+  },
+  noCoverage:["中国利率","中国信用债","澳门博彩","亚洲高收益","中国高收益","日本利率","欧洲信用债","MBS/证券化"],
+  footer: {
+    window:"2026-09-23 美盘（美国 9 月 flash PMI 全面超预期 + 布伦特因柴油出口禁令传闻跳涨 4.2% + $70bn 5y 拍卖 3.2bp 尾部）~ 2026-09-24 亚洲（Morgan Stanley Global Macro Commentary + J.P. Morgan US Treasury Market Daily / Credit Strategy / DFMM + Bank of Montreal TIPS End of Day Commentary + Barclays Emerging Asia / Macrocast / Credit & Securitized + Jefferies Rates Technical Recap / Asia Credit EOD + Goldman Sachs Global Markets Daily / Top of Mind + Bank of America Daily Insights）",
+    emailCount:"Morgan Stanley 1 / J.P. Morgan 3 / Bank of Montreal 1 / Barclays 3 / Jefferies 2 / Goldman Sachs 3 / Bank of America 1（共 14 封 · 7 家券商；覆盖热 PMI 与油价双冲击下的美债熊平与 5y 拍卖巨幅尾部、7y 拍卖前瞻、柴油出口禁令通胀测算、欧洲冬季能源下行情景、亚洲央行鹰派合流、EM 政策分化与 CDX.HY 展期）"
+  }
+};
 
 
 // ==================================================================
