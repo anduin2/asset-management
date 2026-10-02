@@ -72,10 +72,10 @@ td.ak{width:12%;color:#333}
 <header class="top">
   <div>
     <h1>热门交易标的矩阵 <span class="dot">·</span> 交易台日报</h1>
-    <div class="sub" id="subline">数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情</div>
+    <div class="sub" id="subline">数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情</div>
   </div>
   <div class="datebox">
-    <div class="date"><span id="curdate">2026-10-01</span> <small id="curweek">Thu · 周四</small></div>
+    <div class="date"><span id="curdate">2026-10-02</span> <small id="curweek">Fri · 周五</small></div>
   </div>
 </header>
 
@@ -115,7 +115,8 @@ td.ak{width:12%;color:#333}
     <option value="2026-09-28">2026-09-28 周一</option>
     <option value="2026-09-29">2026-09-29 周二</option>
     <option value="2026-09-30">2026-09-30 周三</option>
-    <option value="2026-10-01" selected>2026-10-01 周四</option>
+    <option value="2026-10-01">2026-10-01 周四</option>
+    <option value="2026-10-02" selected>2026-10-02 周五</option>
   </select>
 </div>
 
@@ -18976,7 +18977,7 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
-<div class="day active" id="day-2026-10-01">
+<div class="day" id="day-2026-10-01">
 <!-- ============ 利率 · 美国 ============ -->
 
 <section>
@@ -19801,12 +19802,869 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
+<div class="day active" id="day-2026-10-02">
+<!-- ============ 利率 · 美国 ============ -->
+<section>
+<div class="sec-head"><h2>利率 · 美国</h2><span class="n">3 行</span><span class="src">来源：GS Global Credit Recap / BMO TIPS EOD</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国国债<span class="bond">UST 2y / 5y / 10y / 30y · 全曲线</span><span class="istag">Rates · 美国</span></td>
+<td class="lv"><span class="act">全曲线 rally</span><span class="act">Bull Steepener</span>成交活跃，GS 称当日陡化「aggressive」</td>
+<td class="fl">存量国债市场，无新发</td>
+<td class="rv">主权 · AA+</td>
+<td class="bk"><span class="ch bull">BULL</span>GS：全曲线收益率下行 + 激进陡化，前端领涨；BMO：盘面以卖出为主，卖盘多在欧债（法国）带动前已成交</td>
+<td class="cr">无明确风险；唯一变量是 10/2 非农数据，BMO 认为只要股市顶住，强劲数据对 breakeven 未必是坏事</td>
+<td class="ak">10/2 NFP 公布；曲线陡化延续（GS 报 2s10s +5bp、2s30s +8bp）</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「US rates rallied across the curve and steepened aggressively. <b>1y1y -12bp, 2y -9.5bp, 5y -7.5bp, 10y -4.5bp, 30y -1.5bp</b>. 2s10s +5bp steeper, 2s30s +8bp steeper.」<br>BMO：「Generally selling across the curve... much of the volume crossed before USTs noticed European bonds (France).」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt / 05_BMO_FWBMOTIPSENDOFDAYCOMMENTARY.txt</i></div>
+<div class="srcf">证据：GS 明确给出各期限与曲线变动 bps；BMO 描述盘面方向。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国国债 · 长端与政策定价<span class="bond">长端 buyback 操作 · Fed 加息路径定价</span><span class="istag">Rates · 美国</span></td>
+<td class="lv"><span class="act">Buyback</span><span class="act">Hike Pricing</span>财政部全额购回 60 亿美元长端</td>
+<td class="fl">存量，财政部 buyback 操作</td>
+<td class="rv">主权 · AA+</td>
+<td class="bk"><span class="ch fact">FACT</span>GS：财政部长端 buyback 全额成交 60 亿美元；10 月加息定价降至约 6.5bp，年内累计约 25bp</td>
+<td class="cr">无明确风险</td>
+<td class="ak">GS 提到 Fed 加息定价随利率 rally 一同回落</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「Treasury <b>bought the full $6bn in its long-end buyback operation</b>... October hike pricing fell to <b>~6.5bp</b>, with <b>~25bp priced by year-end</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出 buyback 规模与加息定价点位。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 TIPS / 盈亏平衡通胀<span class="bond">10y / 30y breakevens</span><span class="istag">Rates · 美国通胀</span></td>
+<td class="lv"><span class="act">Breakevens 收窄</span><span class="act">长端减仓</span>成交量偏薄</td>
+<td class="fl">存量 TIPS</td>
+<td class="rv">主权 · 通胀挂钩</td>
+<td class="bk"><span class="ch mix">MIX</span>BMO：10s breakeven -1bp、30s -2.5bp，30 年表现最突出；FM/RM 早盘在 230.00 附近减少长端持仓</td>
+<td class="cr">风险在能源：油价上行令 5y5y 未能突破 2.45%</td>
+<td class="ak">30 年实际收益率高点 3.38%、收盘约 3.34%；5y5y 收在约 2.42%；10/2 非农</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">BMO：「We are seeing a <b>move lower in breakevens (10s -1bps and 30s -2.5bps)</b> on thinner volume... <b>30s are the standout</b>. FM and RM reduced long end positions this morning around the 230.00 level... high in 30yr RYs of <b>3.38%</b> and closing near <b>3.34%</b>... <b>5y5y closing around 2.42%</b>, it just could not overtake 2.45% with energy up.」<i>来源：05_BMO_FWBMOTIPSENDOFDAYCOMMENTARY.txt</i></div>
+<div class="srcf">证据：BMO 原文给出 breakeven 变动、成交区间与实际收益率点位。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 利率 · 欧洲 / 欧元区 ============ -->
+<section>
+<div class="sec-head"><h2>利率 · 欧洲 / 欧元区</h2><span class="n">2 行</span><span class="src">来源：GS Global Credit Recap</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">欧元区主权利差<span class="bond">OAT vs Bund / BTP vs Bund</span><span class="istag">Rates · 欧元区</span></td>
+<td class="lv"><span class="act">利差走阔</span><span class="act">法国承压</span>OAT 与 BTP 双双跑输德债</td>
+<td class="fl">存量主权债</td>
+<td class="rv">主权 · 高评级</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：OAT 对 Bund 收在 +14bp、BTP 对 Bund +15.5bp；欧元区财政担忧推动 OAT-Bund 走阔</td>
+<td class="cr">明确风险：欧元区财政可持续性担忧；GS 将其与 2018 年 BTP 风暴类比</td>
+<td class="ak">法国财政与预算担忧发酵；EURUSD 同日下跌约 75bp 至 1.1245，测试 1.1200/20 突破位</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>OAT and BTP over bund closing +14bp and +15.5bp respectively</b>... OAT-Bund wider + eurozone fiscal concerns.」；FX 部分：「EURUSD -75bps at 1.1245, testing the 1.1200/20 breakout level.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出 OAT/BTP 对 Bund 的具体利差与汇率点位。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">欧洲银行 · AT1 与 Senior 资本<span class="bond">$AT1 / € Senior Fins / CoD</span><span class="istag">Financials · 欧洲</span></td>
+<td class="lv"><span class="act">AT1 下跌</span><span class="act">Senior 走阔</span>高质量与二线名字之间出现 decompression</td>
+<td class="fl">存量 AT1 与高级债；QPHFIN 7.25y 新发于亚洲时段报 re-offer 附近</td>
+<td class="rv">金融 · 次级 / 高级</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：$AT1 收跌 0.875-1pt（+20/+25bp），法国风险 -1 至 -1.5pt（+25/+30bp）；€ Senior Fins CoD 普遍 +6/+8bp、法国 +10bp。Barclays：亚洲时段法国银行继续偏弱，senior 再宽 2-4bp</td>
+<td class="cr">明确风险：GS 警告高质量与二线资本工具出现分化式走阔（decompression），并类比 2018 年意大利次级跑输</td>
+<td class="ak">法国财政担忧外溢至银行资本结构；欧洲整体 AT1 承压</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>$AT1 closed -0.875pt/-1pt (+20/+25bp)</b>, French risk -1pt/-1.5pt (+25/+30bp). <b>€ Senior Fins CoD +6/+8bp generic, +10bp FR</b>... decompression between high quality and second tier; parallels to the 2018 BTP blowout where IT SP underperformed.」<br>Barclays：「<b>French banks continue to be weak, another 2-4 wider in seniors</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt / 06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：GS 给出 AT1 与 senior 的具体跌幅/bp 数；Barclays 佐证亚洲时段法国银行继续走弱。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 美国信用 · 一级市场与新发 ============ -->
+<section>
+<div class="sec-head"><h2>美国信用 · 一级市场与新发</h2><span class="n">3 行</span><span class="src">来源：GS Global Credit Recap / Citi IG Credit Daily / JPM September recap</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 IG 一级市场<span class="bond">当日 4 笔 / 周内累计供给</span><span class="istag">New Issue · 美国 IG</span></td>
+<td class="lv"><span class="act">供给放量</span>当日 32 亿美元、4 笔 IG 交易；本周累计 320 亿美元</td>
+<td class="fl">GS：$3.2bn / 4 IG deals（WTD $32bn）</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch fact">FACT</span>GS：IG 一级当日 32 亿美元、4 笔；JPM 月度盘点显示 9 月 HG 供给 1980 亿美元，为过去 4 年同月均值 1480 亿的 1.34 倍</td>
+<td class="cr">无明确风险；供给压力是背景变量</td>
+<td class="ak">10 月为历史供给淡季（过去 4 年均值 1060 亿美元），但 9 月末的媒体大单尾随效应仍在</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「Primary: <b>$3.2bn across 4 IG deals</b>; $0.4bn across 1 HY deal.」<br>JPM：「High Grade bond supply in September was <b>$198bn</b>. September supply this year was <b>34% above the average issuance of $148bn</b> in September over the past 4 years. Average issuance in October has been $106bn over the past 4 years. YTD supply totals <b>$1695bn which is up 30% YoY</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt / 01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：两封邮件分别提供当日与月度供给事实数据。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 HY 一级市场<span class="bond">当日 1 笔 / 月内成交量与 ETF 流向</span><span class="istag">New Issue · 美国 HY</span></td>
+<td class="lv"><span class="act">供给清淡</span>当日仅 4 亿美元 1 笔；HY ETF 当日转为净流入</td>
+<td class="fl">GS：$0.4bn / 1 HY deal</td>
+<td class="rv">HY</td>
+<td class="bk"><span class="ch fact">FACT</span>GS：HY 一级当日仅 4 亿美元（$0.4bn）、1 笔；JPM：前 25 大 HY ETF 当日净流入 2.77 亿美元（+0.22% AUM），但月内累计净流出 6.72 亿美元</td>
+<td class="cr">无明确风险；HY 二级承接力是变量，JPM 报 CDX.HY 对公允价值仍贵 23c/5bp</td>
+<td class="ak">HY 指数当日下跌 15c/3bp 至 $106.6/338bp，与初级市场的清淡形成对比</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「Primary: $3.2bn across 4 IG deals; <b>$0.4bn across 1 HY deal</b>.」<br>JPM：「The 25 largest HY Corporate-only ETFs had combined <b>inflows of $277mn on Wednesday (0.22% of AUM)</b>. This compares to $711mn inflows (0.56% of AUM) over the week and $672mn outflows (-0.51% of AUM) over the month.」「<b>CDX.HY 5y index sold-off by 15c/3bp on Wednesday to $106.6/338bp</b>... trading 23c/5bp rich to its fair value.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt / 01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：GS 提供当日 HY 新发规模；JPM 提供 HY ETF 与 CDX.HY 的资金流事实。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">PSKY · 大额媒体/TMT 新发<span class="bond">Paramount Skydance 系列 · 年内第二大交易</span><span class="istag">New Issue · TMT</span></td>
+<td class="lv"><span class="act">成交近面值</span><span class="act">前端跑赢</span>GS 称交易出街后几乎持平；Citi 称 3 日回溯约 30 亿美元流入 TMT 新发</td>
+<td class="fl">GS：媒体大单（JPM 称 300 亿美元，年内第二大、历史并列第六大）</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch fact">FACT</span>GS：PSKY 交易出街后几乎未变、前端跑赢；JPM：这笔媒体交易使 9 月供给仅比历史同月纪录低 160 亿美元；Citi：TMT 新发 3 日回溯需求接近 30 亿美元</td>
+<td class="cr">无明确风险；Citi 提示 TMT 二级中 go-go 名字在极值处出现 10bp 以上的恐慌性抛售</td>
+<td class="ak">新发定价带来 TMT 板块二级换手；Citi 指 20 年期技术面最好</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>The PSKY deal went out almost unchanged, with front-end outperforming</b>.」<br>JPM：「September just $16bn short of a record high for the month after <b>yesterday's $30bn media deal which is the second largest deal YTD and tied for 6th largest of all time</b>.」<br>Citi：「3-day lookback just shy of <b>$3bn into the TMT deal</b>... the 20yr is the most technical with meaningful outperformance.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt / 01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt / 03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：三封邮件交叉印证同一笔媒体/TMT 大额新发。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 美国 IG · TMT 与科技 ============ -->
+<section>
+<div class="sec-head"><h2>美国 IG · TMT 与科技</h2><span class="n">3 行</span><span class="src">来源：Citi IG Credit Daily Sector Commentary</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 IG · TMT 二级<span class="bond">10y / 7y / 20y TMT 曲线</span><span class="istag">TMT · 美国 IG</span></td>
+<td class="lv"><span class="act">区间摆动</span><span class="act">20y 技术面最好</span>10y 在 268→282→272 之间摆动、7y 在 248→263→250</td>
+<td class="fl">存量；新发为前置催化剂</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Citi：在利差最宽处空间仅 +2/+12bp，出街时未变至 +5；go-go 名字出现大额抛售、极值处动辄 10bp 以上；20 年期最受技术面支撑</td>
+<td class="cr">明确风险：Citi 直言「市场需要利率稳定」，利率不稳则 TMT 二级继续被抛</td>
+<td class="ak">新 TMT 大额交易定价后 3 日换手；全场「All eyes NFP」</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「TMT: 3-day lookback just shy of $3bn into the TMT deal... <b>the 10yr traded 268 - 282 - 272 and 7yr 248 - 263 - 250</b>. So at wides we had +2/+12bps of space and going out unch/+5. <b>The 20yr is the most technical with meaningful outperformance</b>. Big selling across go-go tickers with 10+bp moves at extremes today.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出 TMT 各期限利差区间与盘中路径。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Broadcom（AVGO）<span class="bond">向 Anthropic 提供 420 亿美元贷款 · 可转债结构</span><span class="istag">TMT · AI 资本开支</span></td>
+<td class="lv"><span class="act">AI 融资结构</span><span class="act">双刃剑</span>覆盖其对 Google 1250 亿美元承诺的约三分之一</td>
+<td class="fl">贷款/可转债，非公开债券发行</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Citi：AVGO 将向 Anthropic 提供 420 亿美元贷款用于采购芯片，采用可转换票据（可转为 Anthropic 股份）；继首期 XPV 平台 350 亿美元之后，平台支持至 2028 年最高 20GW</td>
+<td class="cr">明确风险：与 Anthropic 成败绑定更深；Citi 认为转换权提供真实上行，属双刃剑</td>
+<td class="ak">AI 资本开支融资链条延伸；对信用影响偏中性</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「<b>AVGO to lend Anthropic $42bn for chips</b> (convertible notes, convertible into Anthropic shares); covers <b>~1/3 of its $125bn commitment to Google</b>; follows first tranche of XPV Platform $35bn; platform supports up to 20GW through 2028. Takeaway: double-edged — closer tie to Anthropic success but real upside via conversion right.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出金额、结构与观点（含双刃剑判断）。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">腾讯 / Oracle<span class="bond">Tencent 向 Oracle 租赁 10 万片芯片 · 约 70 亿美元协议</span><span class="istag">TMT · 中国/美国</span></td>
+<td class="lv"><span class="act">海外算力租赁</span>协议位于东南亚数据中心，预付款约 30%</td>
+<td class="fl">租赁/采购协议，非债券发行</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bull">BULL</span>Citi：腾讯向 Oracle 租赁 10 万片芯片、协议约 70 亿美元，预付款约 30%；Citi 认为预付款结构对信用偏正面</td>
+<td class="cr">无明确风险；Citi 明确 takeaway 为「预付款使其对信用保持正面」</td>
+<td class="ak">中资科技海外算力布局；供应商为 Oracle（东南亚数据中心）</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「<b>Tencent leases 100,000 chips from Oracle</b> (South-East Asia datacenters), <b>~$7bn agreement, upfront ~30%</b>. Takeaway: upfront payment keeps it positive for credit.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出租赁规模、预付款比例与信用结论。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 美国 IG · 金融与混合资本 ============ -->
+<section>
+<div class="sec-head"><h2>美国 IG · 金融与混合资本</h2><span class="n">2 行</span><span class="src">来源：Citi IG Credit Daily / JPM September recap</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 IG · 金融板块<span class="bond">银行高级 / T2 · TFLO 资金流</span><span class="istag">Financials · 美国 IG</span></td>
+<td class="lv"><span class="act">Whippy</span><span class="act">净流入</span>与 TMT 新发同期一度走阔至 +3/+4bp；TFLO 全曲线获 25 亿美元净买入</td>
+<td class="fl">存量；9 月一级市场 4 笔</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Citi：金融板块随 TMT 新发走阔至 +3/+4bp 后回落；TFLO 获强劲净买入，全曲线抬升 25 亿美元</td>
+<td class="cr">无明确风险；JPM 提示 9 月金融债利差走阔 4bp、跑输非金融</td>
+<td class="ak">利率企稳预期；月度资金流数据显示金融债为 9 月主要拖累</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「Financials: whippy. They leaked as wide as +3/+4 with the TMT deal... <b>TFLO strong net lifted -2.5bln across the curve</b>.」<br>JPM：「JULI spreads widened by 1bp to 92bp in September with <b>Financials 4bp wider and Non-Financials 0bp wider</b>.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt / 01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：Citi 给出金融板块盘中路径与 TFLO 资金流；JPM 提供月度佐证。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国优先股 / 混合资本<span class="bond">$1000 Pref/Hybrid（CIPS / HIPS）· 保险与银行资本</span><span class="istag">Preferred / Hybrids</span></td>
+<td class="lv"><span class="act">跑赢次级</span>优先股/混合资本跑赢 IG 银行 senior 与 T2；9 月 P0P4 指数 -0.85%</td>
+<td class="fl">存量</td>
+<td class="rv">IG / 次级资本</td>
+<td class="bk"><span class="ch bull">BULL</span>Citi：P0P4（$25 FFL 指数，含高收益）除 HY 外表现最差（-0.85%），YTD -1.32% 为唯一年内负收益；但 $1000 Pref/Hybrid 优于 IG 银行 senior 与 T2（C0P3 -0.19%）；YTD HIPS +3.32% 明显优于 CIPS +1.75%</td>
+<td class="cr">明确风险：P0P4 与 C0P3 的分化说明低评级/高收益成分是主要拖累项</td>
+<td class="ak">月度与季度业绩收官；保险债（CFIL +0.27%）年内跑赢银行（C0P3 -0.05%）</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「<b>P0P4 ($25 FFL Index) -0.85%</b> (worst except HY H0A0 -1.27%); <b>YTD P0P4 -1.32% (only negative)</b>. $1000 Pref/Hybrid CIPS -0.13%, HIPS -0.20%, outperformed IG Bank Senior and T2 (C0P3 -0.19%). <b>YTD HIPS +3.32% vs CIPS +1.75%</b>. Life bonds CFIL +0.27% vs bank C0P3 -0.05% YTD.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出各指数回报数值与比较结论。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 美国 IG · 工业化工与个券相对价值 ============ -->
+<section>
+<div class="sec-head"><h2>美国 IG · 工业化工与个券相对价值</h2><span class="n">5 行</span><span class="src">来源：Citi IG Credit Daily Sector Commentary</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">工业 / 化工板块<span class="bond">Commodity Chems · Building Materials · Paper &amp; Packaging · cuff</span><span class="istag">Industrials · 美国 IG</span></td>
+<td class="lv"><span class="act">整体走阔 1-4bp</span><span class="act">系统性买盘</span>Cuff 利差 +1/+4bp 走阔</td>
+<td class="fl">存量；F 与 VTRS 等处于区间最宽</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bear">BEAR</span>Citi：基础化工 +2/+4bp、农化 +2/+4bp、建材 +2/+4bp、特化/金属/贵金属/纸包装各 +1/+2bp；建材与纸包装出现系统性买盘；F 走阔 5/8 至区间最宽，VTRS +3/5，TEVA/GILD 脱离区间</td>
+<td class="cr">明确风险：Citi 称市场需要利率稳定，否则工业/化工利差持续走阔</td>
+<td class="ak">TMT 大额新发分流资金；利率不稳压制次级工业名字</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「Sector breakdown: <b>Commodity Chems +2/4bp, Specialty Chems +1/2, Ag Chems +2/4, Diversified Metals +1/2, Precious Metals +1/2, Paper &amp; Packaging +1/2, Building Materials +2/4</b>. Systematic buyers in Building Materials and Paper &amp; Packaging.」「Cuff spreads +1/4 wider... <b>F +5/8 at wides, VTRS +3/5, TEVA/GILD/CI breaking loose</b>.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文逐板块给出走阔幅度与买卖盘性质。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Volkswagen（VW）<span class="bond">Fitch 确认 A- · 负面展望维持</span><span class="istag">Autos · 美国 IG</span></td>
+<td class="lv"><span class="act">利差未变至 +1bp</span>评级确认后利差基本持平</td>
+<td class="fl">存量</td>
+<td class="rv">A- / Baa1 / BBB+</td>
+<td class="bk"><span class="ch fact">FACT</span>Citi：Fitch 昨日确认 A- 评级并维持负面展望（自 2025 年 4 月起），Citi 称在全球挑战与重组背景下这一结果令人意外；与 Moody's Baa1 稳定（2025 年 3 月起）、S&amp;P BBB+（2015 年起，2025 年 12 月展望转负）存在差异。利差未变至 +1bp</td>
+<td class="cr">明确风险：三家评级机构展望分化，Fitch 负面展望与 S&amp;P 负面展望并存</td>
+<td class="ak">Fitch 评级行动；全球业务重组进行中</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「<b>VW: Fitch affirmed A- yesterday, maintained negative outlook</b> (since April 2025) — surprise given global challenges/restructuring; differs from Moody's Baa1 stable (since 3/25) and S&amp;P BBB+ (since 2015, outlook to negative Dec 2025). <b>Spreads unchanged to 1bp better</b>.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出评级确认内容、三家机构差异与利差反应。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Cigna（CI）<span class="bond">Investor Day：长期 EPS 增长 10-14%</span><span class="istag">Healthcare · 美国 IG</span></td>
+<td class="lv"><span class="act">Breaking loose</span>早盘利差脱离区间；Citi 罗列 PBM 与专科业务的读穿</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Citi：投资者日给出长期 EPS 增长 10-14%（专科与照护业务驱动）、PBM 增长最高 4%、年内债务/资本目标约 40%；读穿包括 PBM 向透明定价过渡、专科增长 8-12%、GLP-1 增长放缓</td>
+<td class="cr">明确风险：Citi 将 CI 与 TEVA/GILD 并列为「脱离区间」的名字，利差承压</td>
+<td class="ak">Investor Day 指引落地；PBM 定价模式变化外溢至 CVS/UNH/HUM</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「CSS CI (Cigna): Investor Day; <b>10-14% long-term EPS growth</b> via Specialty &amp; Care; PBM up to 4% growth; <b>~40% debt-to-capital target this year</b>. Read-throughs: PBM transition to transparent pricing (CVS/UNH); Specialty growth 8-12% (CVS/UNH/HUM); GLP-1 slowing growth; integrated care model.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出投资者日关键指引与行业读穿逻辑。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Vylor（VYLR）/ Corteva（CTVA）<span class="bond">分拆落地 · VYLR/CTVA 关系稳定在 20bp</span><span class="istag">Materials · Spin-off</span></td>
+<td class="lv"><span class="act">分拆完成</span><span class="act">联邦法院驳回加州请求</span>配股在美东 9:30 前完成</td>
+<td class="fl">CTVA 新发 36 年期（SMR 101 结构），二级报 97 美元面值</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bull">BULL</span>Citi：联邦上诉法院要求下级法院重新考虑加州阻止分拆的请求，随后联邦法院驳回；8-K 确认驳回；VYLR 完成分拆。CTVA 新发 36 年期含 SMR at 101 特征，二级交易在 97 美元；VYLR/CTVA 关系稳定在 20bp</td>
+<td class="cr">无明确风险；法律程序已在联邦层面被驳回</td>
+<td class="ak">分拆于 10/1 完成；CTVA 新发 36 年期定价与二级表现</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「CTVA/VYLR: federal appeals court said lower court must reconsider California's request to block separation; then federal court denied CA's request; 8-Ks confirming denial; <b>distribution dividend completed prior to 9:30am ET</b>. <b>CTVA newly issued '36s with SMR at 101 feature, bonds trading at $97 dollar price</b>. VYLR completed spin.」「VYLR/CTVA relationship firm at 20bp.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文给出法律进展、分拆完成时点与债券交易价格。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">LyondellBasell（LYB）<span class="bond">20 年期处于 52 周最紧 · 建议 20y 换 10y</span><span class="istag">Chemicals · 相对价值</span></td>
+<td class="lv"><span class="act">曲线相对价值</span>20 年期在 52 周最紧位置，缩短久期更合理</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Citi：LYB 20 年期在 52 周最紧水平，认为将 20y 缩短至 10y 是合理的相对价值交易</td>
+<td class="cr">无明确风险；属于估值过紧而非信用恶化</td>
+<td class="ak">化工板块整体走阔背景下的个券久期切换机会</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「<b>LYB 20yr at 52w tights; shortening 20yr to 10yr makes sense</b>.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt</i></div>
+<div class="srcf">证据：Citi 原文明确给出该相对价值交易建议。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 亚洲信用 · 日本 ============ -->
+<section>
+<div class="sec-head"><h2>亚洲信用 · 日本</h2><span class="n">5 行</span><span class="src">来源：Barclays Asian Credit Trading Commentary EOD 1st Oct</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">日本 CDS 指数与展期<span class="bond">Japan CDS index · 展期（roll）</span><span class="istag">Sovereign CDS · 日本</span></td>
+<td class="lv"><span class="act">极度活跃</span><span class="act">展期更陡</span>香港休市仍高度活跃；当日成交约 2000 亿日元（约 13 亿美元）</td>
+<td class="fl">指数与单名 CDS</td>
+<td class="rv">主权 / IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Barclays：开盘偏弱（保护买盘更好），随日经涨 3% 转紧，指数自 +0.875 回到 +0.25，伦敦开盘不佳后再度走阔并于最宽处收盘；展期极其活跃、进一步变陡，最新成交 7.2</td>
+<td class="cr">明确风险：伦敦时段宏观转差后指数重新走阔并收在最宽附近，方向未定</td>
+<td class="ak">日经指数 +3% 与伦敦开盘宏观转差的双向拉锯；展期窗口</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「<b>Japan CDS very active despite HK out</b>. Started weaker with protection better bid, then tighter as equities surged (NKY +3%). <b>Index got to +0.875 morning, back to +0.25</b>, then leaked wider after poor LDN open, <b>closing near wides</b>. Rolls extremely active, steepened a bit more, <b>last trading at 7.2</b>... <b>~¥200bn CDS traded (~$1.3bn)</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出指数点位路径、展期水平与成交名义额。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">SoftBank · CDS<span class="bond">SN 单名 CDS · 曲线熊平</span><span class="istag">CDS · 日本科技</span></td>
+<td class="lv"><span class="act">熊平</span><span class="act">1Y-2Y 买盘</span>SN 活动集中在 SoftBank</td>
+<td class="fl">单名 CDS</td>
+<td class="rv">HY / 边缘 IG</td>
+<td class="bk"><span class="ch bear">BEAR</span>Barclays：SN 成交以 SoftBank 为主，曲线继续熊平（bear flatten），1Y 与 2Y 有买盘</td>
+<td class="cr">明确风险：曲线熊平意味着短端保护需求上升，短端压力更大</td>
+<td class="ak">展期活跃期叠加日本 CDS 整体走阔</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「SN activity mainly <b>Softbank where the curve continued to bear flatten with 1Y~2Y bid</b>. Japan Sov CDS well bid.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出 SoftBank CDS 曲线形态与买盘期限。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">SoftBank · 现金债<span class="bond">SoftBank 存量美元债（含新发）</span><span class="istag">Cash Bond · 日本科技</span></td>
+<td class="lv"><span class="act">离岸卖出 / 本地买入</span>收盘跌 30-50c，折合利差未变至 +3bp</td>
+<td class="fl">存量 + 新发</td>
+<td class="rv">HY / 边缘 IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Barclays：离岸投资者卖出新发、日本本地买入；收盘跌 30/50c（按利差折算为未变至 +3bp）；本地机构卖混合资本、转向新发</td>
+<td class="cr">无明确风险；卖压集中在离岸账户，被本地买盘对冲</td>
+<td class="ak">新发上市换手；本地资金在混合资本与新发之间的轮动</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「<b>Softbank cash: offshore selling in new issues but local buying</b>; <b>closing 30/50c lower = unch/+3bps</b>. Locals selling hybrids and moving into new issues.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出 SoftBank 现金债收盘跌幅与利差折算、买卖盘结构。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">日本公司债 · 5y / 10y 板块<span class="bond">TOYOTS、TOHOKU（5y）；10y 板块</span><span class="istag">Japan Corp · Cash</span></td>
+<td class="lv"><span class="act">5y 承压</span><span class="act">10y 稳固</span>5 年期 TOYOTS 与 TOHOKU 被大量抛售，10 年期被良好承接</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bear">BEAR</span>Barclays：日本公司债资金流偏清淡；5 年期板块承压，TOYOTS 与 TOHOKU 被大量抛售；10 年期被良好承接（held in well）</td>
+<td class="cr">明确风险：5 年期供给与抛压集中，曲线短端承压</td>
+<td class="ak">香港休市与 Golden Week 造成资金流清淡，抛压集中在 5y</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「Japan Corp flows lighter; <b>5yr sector heavy with TOYOTS and TOHOKU well offered; 10yr held in well</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文点明 5 年期与 10 年期的分化及具名发行人。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">亚洲 DM · 混合资本（Hybrids）<span class="bond">泛 DM Hybrids 板块</span><span class="istag">Hybrids · 亚洲时段</span></td>
+<td class="lv"><span class="act">下跌 0.25pt</span><span class="act">持续卖盘</span>受利率走弱拖累</td>
+<td class="fl">存量</td>
+<td class="rv">IG / 次级资本</td>
+<td class="bk"><span class="ch bear">BEAR</span>Barclays：混合资本板块随利率走弱下跌约 0.25pt，卖盘持续；本地机构卖出混合资本并转向新发</td>
+<td class="cr">明确风险：利率走弱 + 持续卖盘，混合资本承接力有限</td>
+<td class="ak">利率走弱；本地资金由混合资本轮动至新发</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「<b>Hybrids are about 0.25pts lower with rates weakness, continued sellers</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出混合资本跌幅、成因与盘口性质。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 亚洲信用 · 韩国 / 澳元 / Yankee / 一级新发 ============ -->
+<section>
+<div class="sec-head"><h2>亚洲信用 · 韩国 / 澳元 / Yankee / 一级新发</h2><span class="n">5 行</span><span class="src">来源：Barclays Asian Credit Trading Commentary EOD 1st Oct</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">韩国 IG<span class="bond">Korea IG 银行 / 企业美元债</span><span class="istag">Cash · 韩国</span></td>
+<td class="lv"><span class="act">买盘略好</span>整体仍偏清淡，方向略偏买</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bull">BULL</span>Barclays：韩国 IG 出现「slight better selling」即买盘略好于卖盘的失衡改善</td>
+<td class="cr">无明确风险；成交清淡是主要限制</td>
+<td class="ak">香港休市 + 中国黄金周导致区域流动性偏薄</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「There is <b>slight better selling in Korea IG</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出韩国 IG 盘口倾向。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">澳元 IG<span class="bond">AUD IG · 3 年以内</span><span class="istag">Cash · 澳元</span></td>
+<td class="lv"><span class="act">清淡</span><span class="act">短端买盘</span>本地账户买入 3 年以内</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bull">BULL</span>Barclays：AUD IG 成交安静，本地账户买入 3 年以内债券</td>
+<td class="cr">无明确风险；清淡市况下报价可靠性下降</td>
+<td class="ak">亚洲整体清淡；本地账户短端配置需求</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「<b>AUD IG quiet; buying sub-3y from domestic accounts</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出澳元 IG 的买卖盘与期限偏好。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Yankee 金融（亚洲时段）<span class="bond">Yankee Fins · 泛 G10 银行美元债</span><span class="istag">Cash · Yankee</span></td>
+<td class="lv"><span class="act">利差未变至 -1bp</span>成交缓慢，方向基本持平</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>Barclays：Yankee 金融利差未变至收窄 1bp；主要大行债券基本未变</td>
+<td class="cr">无明确风险；宏观在伦敦时段转差但未出现有意义抛售</td>
+<td class="ak">香港休市令早盘缓慢；伦敦时段宏观转差</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「<b>Yankee fins spreads unch/-1bp</b>... Macro deteriorated into London hours but no meaningful selling; spreads closed broadly unchanged. Majors largely unchanged.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出 Yankee 金融利差与收盘状态。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">QPHFIN 新发<span class="bond">QPH Finance 7.25 年期</span><span class="istag">New Issue · 亚洲</span></td>
+<td class="lv"><span class="act">围绕 re-offer</span>新券在发行价附近徘徊</td>
+<td class="fl">QPHFIN 7.25y 新发</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch fact">FACT</span>Barclays：新发的 QPHFIN 7.25 年期在 re-offer 附近徘徊</td>
+<td class="cr">无明确风险；新券尚未脱离发行价区间</td>
+<td class="ak">新发定价后首日表现</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「<b>New QPHFIN 7.25y hovering around re-offer</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文给出新券名称、期限与价格位置。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">老挝主权<span class="bond">Laos $Benchmark 144A/Reg S</span><span class="istag">New Issue · 前沿主权</span></td>
+<td class="lv"><span class="act">承销委托（Mandate）</span>尚未定价，处于公告阶段</td>
+<td class="fl">Laos 美元基准、144A/Reg S 结构</td>
+<td class="rv">前沿市场主权</td>
+<td class="bk"><span class="ch fact">FACT</span>Barclays：新发公告栏列出「MANDATE Laos $Benchmark 144A/Reg S」</td>
+<td class="cr">明确风险：前沿主权发行，尚未定价，无二级参照</td>
+<td class="ak">承销委托公告；后续定价将测试前沿主权需求</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「New issues: <b>MANDATE Laos $Benchmark 144A/Reg S</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文新发清单条目。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 澳元信用 · 澳洲公司 ============ -->
+<section>
+<div class="sec-head"><h2>澳元信用 · 澳洲公司</h2><span class="n">3 行</span><span class="src">来源：DB Aussie Credit Desk Commentary</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Transurban（TCLAU）<span class="bond">拟 45 亿澳元收购 CPPIB 收费公路股权</span><span class="istag">Transport · 澳元</span></td>
+<td class="lv"><span class="act">加大股权收购</span><span class="act">债务融资</span>杠杆指标承压但评级获确认</td>
+<td class="fl">银行过桥融资，预计 2027 下半年以长久期债券再融资</td>
+<td class="rv">Baa1 / BBB+</td>
+<td class="bk"><span class="ch mix">MIX</span>DB：TCLAU 以 45 亿澳元现金向 CPPIB 收购 NorthWestern Roads Group 额外 25% 股权（Westlink M7、NorthConnex）及 Sydney Transport Partners 10.5% 股权（WestConnex）；持股升至 75% 与 60.5%。Moody's 与 S&amp;P 确认无评级影响，S&amp;P 指 FFO/债务将从 FY26 的 8.7% 降至未来 1-2 年 6.6%，逼近 6.5% 下调触发线；Moody's 认为信用正面（业务组合更强、集团结构更简单）</td>
+<td class="cr">明确风险：S&amp;P 指出财务灵活性下降，FFO/债务 6.6% 距 6.5% 下调触发线仅 10bp</td>
+<td class="ak">估值基准日 2027-03-31，交割预计 2027 年中或更晚；银行融资后需以长久期债再融资，隐含 2027 下半年发行</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">DB：「<b>TCLAU: agreed to buy additional 25% stake in NorthWestern Roads Group (Westlink M7, NorthConnex) and 10.5% stake in Sydney Transport Partners (WestConnex) for AUD4.5bn cash from CPPIB</b>. NWRG stake to 75%, STP to 60.5%. Debt funded; committed to Baa1/BBB+. Moody's and S&amp;P confirmed no rating impact; <b>S&amp;P noted reduced financial flexibility, FFO/debt to fall from 8.7% FY26 to 6.6% over next 1-2 years vs downside trigger 6.5%</b>. Moody's sees credit positive. Valuation date 31-Mar-27; completion likely mid-2027 or later... <b>would refinance with longer-dated debt → implies bond issuance 2H 2027</b>.」<i>来源：04_Deutsche_Bank_FWDBAussieCreditDeskCommentaryTCLAUIncreasesStake.txt</i></div>
+<div class="srcf">证据：DB 原文给出交易规模、持股变化、两家评级机构口径与再融资时间表。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Suncorp（SUNAU）<span class="bond">否认被 Tokio Marine 收购的报道</span><span class="istag">Insurance · 澳元</span></td>
+<td class="lv"><span class="act">否认谈判</span>公司确认未与 Tokio Marine 进行收购谈判</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch fact">FACT</span>DB：SUNAU 确认未处于收购谈判中，否认《The Australian》关于与 Tokio Marine 洽谈的报道；DB 原认为收购对信用偏正面（Tokio 评级更高），但因处于早期阶段不预期债券有明显影响</td>
+<td class="cr">无明确风险；DB 明言早前判断为「不预期债券有明显影响」</td>
+<td class="ak">媒体收购传闻被公司否认</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">DB：「<b>SUNAU: confirmed not in takeover discussions</b>, denying The Australian report of talks with Tokio Marine. DB originally thought takeover credit positive due to Tokio's higher ratings; <b>didn't expect much bond impact given early stage</b>.」<i>来源：04_Deutsche_Bank_FWDBAussieCreditDeskCommentaryTCLAUIncreasesStake.txt</i></div>
+<div class="srcf">证据：DB 原文给出公司澄清内容与自身判断。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Ampol（ALDAU）<span class="bond">2.25 亿澳元收购 Evie Networks 100% 股权</span><span class="istag">Energy · 澳元</span></td>
+<td class="lv"><span class="act">债务融资</span><span class="act">金额不重大</span>杠杆已高于评级容忍度，预计 12-18 个月回落</td>
+<td class="fl">债务融资，DB 称对杠杆影响不重大</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>DB：ALDAU 以 2.25 亿澳元收购 Evie Networks 100% 股权（电动车充电，1,030+ 充电位）；债务融资但金额不重大；当前杠杆高于 3.0x 的评级容忍上限，预计 12-18 个月内回落至区间内</td>
+<td class="cr">明确风险：杠杆已高于 3.0x 评级容忍度，需 12-18 个月修复</td>
+<td class="ak">电动车充电资产收购；杠杆修复路径依赖现金流</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">DB：「<b>ALDAU: agreed to acquire 100% of Evie Networks for AUD225mn</b> (EV charging, 1030+ bays). Debt funded but immaterial. <b>Leverage currently above 3.0x rating tolerance, expected to fall back within bands in 12-18 months</b>.」<i>来源：04_Deutsche_Bank_FWDBAussieCreditDeskCommentaryTCLAUIncreasesStake.txt</i></div>
+<div class="srcf">证据：DB 原文给出交易金额、资产属性、融资方式与杠杆判断。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 美国信用 · 9 月月度回顾与相对价值 ============ -->
+<section>
+<div class="sec-head"><h2>美国信用 · 9 月月度回顾与相对价值</h2><span class="n">9 行</span><span class="src">来源：JPM Daily Credit Strategy Update — September recap</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">JULI 指数 · 9 月收官<span class="bond">JULI overall 92bp · Financials 93bp · Non-Financials 92bp</span><span class="istag">IG Index · 月度</span></td>
+<td class="lv"><span class="act">利差仅走阔 1bp</span><span class="act">回报惨淡</span>9 月总回报 -2.7%，为近 10 年 5 分位</td>
+<td class="fl">存量；9 月 HG 供给 1980 亿美元</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>JPM：9 月 JULI 利差仅走阔 1bp 至 92bp（金融 +4bp、非金融 0bp）；但总回报 -2.7% 为 2023 年 2 月以来最低，超额回报 0%；YTD 总回报 -3.0%、超额回报 +0.9%</td>
+<td class="cr">明确风险：YTD 为 2022 年以来最差年份，回报疲弱主因利率而非利差</td>
+<td class="ak">月末盘点；9 月 10 年期美债上行 53bp（7 月为 27bp）</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「<b>JULI spreads widened by 1bp to 92bp in September with Financials 4bp wider and Non-Financials 0bp wider</b>... The JULI index total return last month was <b>-2.7%, the lowest since February 2023</b>, while excess return was 0%. <b>YTD total return is -3.0%</b>, while excess return is 0.9%.」<br>JPM：「YTD (-3%) the HG market is now having its worst year since 2022... <b>yields YTD are up +109bp vs. +299bp for YTD 2022</b>.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出利差、回报与 YTD 对比数据。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 HG · 久期分段<span class="bond">1-3y / 3-5y / 5-7y / 7-10y / 10y+</span><span class="istag">IG · 久期</span></td>
+<td class="lv"><span class="act">短端抗跌</span><span class="act">长端重挫</span>1-3 年总回报 -0.8%，10 年以上 -4.5%</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>JPM：9 月所有期限总回报均为负，1-3 年表现最好（-0.8%），10 年以上最差（-4.5%，为 2024 年 4 月以来最低）；超额回报仅长端为正（10y+ 为 +0.2%），7-10 年最差（-0.1%）</td>
+<td class="cr">明确风险：长端总回报 YTD -6.5%，久期是最大风险敞口</td>
+<td class="ak">利率曲线大幅上行；YTD 超额回报各期限均为正（5-7 年 +1.3% 最佳）</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「For HG bonds, total return was negative for all maturities while excess return was positive only for the long end... <b>the short end (1-3yr) outperformed the most with -0.8% return while the long end (10+yr) underperformed the most with total return of -4.5%, the lowest since April 2024</b>... In excess return terms, the long end (10+yr) outperformed the most with excess return of 0.2% while the 7-10yr bucket underperformed the most with excess return of -0.1%. YTD... <b>5-7yr bucket outperformed the most in terms of excess return (+1.3%)</b>.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出各久期分段的回报数值。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 IG · 9 月最佳/最差板块<span class="bond">Computer Hardware -5bp / Cable-Satellite +12bp / Auto Finance +11bp</span><span class="istag">IG · 板块</span></td>
+<td class="lv"><span class="act">板块分化 17bp</span>最佳与最差板块利差变动相差 17bp</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>JPM：9 月最佳板块为 Computer Hardware（-5bp）与 Diversified Media（-4bp）；最差为 Cable/Satellite（+12bp）与 Automotive Finance Cos（+11bp）</td>
+<td class="cr">明确风险：线缆/卫星与汽车金融为 9 月主要受损板块，且 3Q26 分别走阔 24bp 与 10bp</td>
+<td class="ak">月末板块排名；媒体大单推动 Diversified Media 表现居前</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「In September, the best performing sectors were <b>Computer Hardware (-5bp) and Diversified Media (-4bp)</b> while the worst performing sectors were <b>Cable/Satellite (+12bp) and Automotive Finance Cos (+11bp)</b>.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出最佳/最差板块与具体 bp 数。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 HG / HY · 资金流与做市商持仓<span class="bond">HG 公募基金与 ETF · 交易商净持仓 &gt;13m</span><span class="istag">Flows · 美国信用</span></td>
+<td class="lv"><span class="act">月内流入创阶段新低</span><span class="act">当日转流出</span>9 月净流入 165 亿美元，为 2026 年 4 月以来最低</td>
+<td class="fl">存量</td>
+<td class="rv">IG / HY</td>
+<td class="bk"><span class="ch mix">MIX</span>JPM：9 月 HG 公募基金与 ETF 净流入 165 亿美元（上月 397 亿），拆分为 ETF 流入 200 亿、公募流出 40 亿；9/30 当日净流出 5.01 亿美元（ETF +4.69 亿、公募 -9.70 亿）；交易商 &gt;13m 净持仓当日增 19 亿美元，周内降至 4.13 亿美元（3 个月区间 76% 分位）</td>
+<td class="cr">明确风险：公募基金连续转为流出，ETF 为唯一承接力量</td>
+<td class="ak">月末与季末资金再平衡；10 月为历史供给淡季</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「HG public mutual funds and ETFs had <b>$16.5bn of inflows in September, the lowest since April 2026</b> vs inflows of $39.7bn the prior month. This was split between $20bn of ETF inflows (124%) and $4bn of mutual fund outflows (-24%)... <b>HG public mutual funds and ETFs had $501mn of outflows on Wednesday</b>... Our estimate of <b>dealer net positions in corporate bonds &gt;13m increased by $1.9bn on Wednesday</b>... On the week this estimate of positions is down by $1252mn to $413mn, which is at the 76% level in the 3m range.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出资金流与持仓的月度、当日与周内数据。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">CDX 指数 · 定位<span class="bond">CDX.IG 5y 59.9bp · CDX.HY 5y $106.6/338bp · CDX.Financials 95bp</span><span class="istag">Derivatives · CDX</span></td>
+<td class="lv"><span class="act">双双贵于公允价值</span>CDX.IG 贵 2bp、CDX.HY 贵 23c/5bp</td>
+<td class="fl">指数（衍生品）</td>
+<td class="rv">IG / HY</td>
+<td class="bk"><span class="ch bear">BEAR</span>JPM：CDX.IG 5y 周三走阔 0.8bp 至 59.9bp，跑输标的 CDS 1bp、较公允价值贵 2bp；CDX.HY 5y 下跌 15c/3bp 至 $106.6/338bp，跑输标的 12c/3bp、较公允价值贵 23c/5bp；9 月 CDX.HY 走阔 26bp、CDX.IG 走阔 4bp</td>
+<td class="cr">明确风险：两个主要指数均较公允价值偏贵，存在均值回归压力</td>
+<td class="ak">月末指数调整与展期；CDX.HY 9 月走阔幅度（26bp）远超现金市场</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「<b>CDX.IG 5y index widened by 0.8bp on Wednesday to 59.9bp</b>. CDX.IG underperformed its underlying CDS by 1bp on Wednesday and is <b>trading 2bp rich to its fair value</b>... <b>CDX.HY 5y index sold-off by 15c/3bp on Wednesday to $106.6/338bp</b>. CDX.HY underperformed its underlying CDS by 12c/3bp on Wednesday and is <b>trading 23c/5bp rich to its fair value</b>.」<br>JPM 月度：「On a roll and default adjusted basis CDX.IG widened by 4bp to 60bp... and <b>CDX.HY widened by 26bp to 338bp</b>.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出指数点位、相对公允价值偏离度与月度变动。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">相对价值 · 非金融 vs 金融<span class="bond">Non-Fins vs Fins（久期调整）· 当前 -8.9bp</span><span class="istag">RV · 美国 IG</span></td>
+<td class="lv"><span class="act">非金融显著跑赢</span>周内跑赢 2.1bp，现交易于较金融紧 8.9bp</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bull">BULL</span>JPM：非金融较金融跑赢 2.8bp（月度、久期调整），月末交易于较金融紧 8.9bp；YTD 跑赢 6bp；周内跑赢 2.1bp，8.9bp 为 2026 年 6 月以来最宽</td>
+<td class="cr">明确风险：该关系已处于 1 个月与 3 个月区间的最极端位置（0% 分位），继续追涨空间有限</td>
+<td class="ak">9 月金融债走阔 4bp而 非金融持平；银行资本工具供给与利率波动是主要变量</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「<b>Non-Financials outperformed Financials by 2.8bp on the month (duration adjusted) and ended the month trading 8.9bp tight to Financials</b>. YTD, Non-Financials have outperformed Financials by 6bp... <b>Non-financials have outperformed Financials by 2.1bp on the week and now trade 8.9bp tighter on a duration adjusted basis. The 1m range is 9bp tighter/5bp tighter. This is the widest this difference has been since June 2026</b>.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出久期调整后的相对表现与区间分位。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">相对价值 · 评级分化<span class="bond">BBB vs A Non-Fins 33bp · BB vs BBB 122bp（久期调整）</span><span class="istag">RV · 评级</span></td>
+<td class="lv"><span class="act">双双创阶段最宽</span>BBB/A 为 2026 年 7 月以来最宽，BB/BBB 为 6 月以来最宽</td>
+<td class="fl">存量</td>
+<td class="rv">IG / 跨评级</td>
+<td class="bk"><span class="ch mix">MIX</span>JPM：BBB 与 A 非金融利差差 33bp，为 2026 年 7 月以来最宽；BB 与 BBB 久期调整后差 122bp，为 2026 年 6 月以来最宽；周内 BBB 较 BB 跑赢 19bp</td>
+<td class="cr">明确风险：两条关系均处区间极端（100% 分位），均值回归风险上升</td>
+<td class="ak">9 月评级间分化加剧；低评级承压、BBB 相对受益</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「The spread difference between <b>BBB and A Non Financials ex EM is 33bp, its widest level since July 2026</b>. The duration adjusted spread difference between <b>BB and BBB Non Financials ex EM is 122bp, its widest level since June 2026</b>. On a duration adjusted basis, <b>BBB bonds have outperformed BB bonds by 19bp over the week</b>.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出两对评级利差数值与历史分位。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">相对价值 · 曲线定位<span class="bond">3s5s 16bp · 5s10s 23bp · 10s30s 17bp（Non-Fins ex EM）</span><span class="istag">RV · 曲线</span></td>
+<td class="lv"><span class="act">三段全部处于 1 个月区间 0% 分位</span>3s5s 与 5s10s 为区间最平</td>
+<td class="fl">存量</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch mix">MIX</span>JPM：3s5s 报 16bp（1 个月区间 0%）、5s10s 报 23bp（0%）、10s30s 报 17bp（0%）；月度看 10s30s 非金融曲线走平 0.9bp 至 17.0bp、5s10s 走平 2.7bp 至 23.3bp、3s5s 走平 2.1bp 至 16.4bp、20s30s 走陡 1.9bp 至 7.4bp</td>
+<td class="cr">明确风险：三段曲线均处于区间端点，方向选择成本高</td>
+<td class="ak">月末曲线定位；JPM 另有 Curveball 报告列示具体债券对</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「<b>The 3s5s curve is trading at 16bp (0% of its 1m range), 5s10s is trading at 23bp (0% of its 1m range) and 10s30s is trading at 17bp (0% of its 1m range)</b>.」<br>月度：「the 10s30s Non-Financials ex EM spread curve <b>flattened by 0.9bp</b> (+0.5bp steeper YTD) to 17.0bp (YTD range 15bp to 22bp). The 5s10s spread curve <b>flattened by 2.7bp</b> (+2.6bp YTD) at 23.3bp. The 3s5s spread curve <b>flattened by 2.1bp</b> (+4.2bp YTD) to 16.4bp. The 20s30s spread curve <b>steepened by 1.9bp</b> (+4.1bp YTD) to 7.4bp.」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出三段曲线的点位、区间分位与月度变动。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">供给与利率之辩<span class="bond">Hyperscaler / 数据中心发行与美债收益率的关系</span><span class="istag">Theme · 美国 IG</span></td>
+<td class="lv"><span class="act">证伪共识</span>9 月 10 年期美债上行 53bp 而全月无任何美元 hyperscaler/数据中心发行</td>
+<td class="fl">9 月 HG 供给 1980 亿美元，但无 hyperscaler 发行</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch bull">BULL</span>JPM：9 月 10 年期美债收益率上行 53bp（为 7 月的 27bp 近两倍），而 9 月没有任何美元 hyperscaler 或数据中心发行，广义 HG 净供给也不算高，因此「hyperscaler 发行推高主权收益率」的流行论断站不住脚</td>
+<td class="cr">无明确风险；JPM 同时指出该结论对其此前发布的「hyperscaler 集中度担忧被夸大」专题构成支持</td>
+<td class="ak">9 月利率大幅上行与零 hyperscaler 发行的对比；JPM 近期专题「Growing pains: Hyperscaler Issuer Concentration Fears Look Overstated」</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">JPM：「<b>UST 10yr yields rose 2x more in September (+53bp) than July (+27bp)</b> and yet <b>there wasn't a single USD hyperscaler or datacenter issuance in September</b> (and broader net HG issuance wasn't that much higher either) – <b>so much for the consensus thesis that hyperscaler issuance is the main culprit for higher sovereign yields?</b>」<i>来源：01_J.P._Morgan_FWJPMDailyCreditStrategyUpdateSeptemberrecapDisma.txt</i></div>
+<div class="srcf">证据：JPM 原文给出该论断的数据对比与结论措辞。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ ETF 资金流 · 固定收益与股票 ============ -->
+<section>
+<div class="sec-head"><h2>ETF 资金流 · 固定收益与股票</h2><span class="n">2 行</span><span class="src">来源：Jane Street US ETF Market Commentary</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国固定收益 ETF<span class="bond">AGG / BBAG / BKAG / GOVT / VGIT / VGSH / IEI / JMUB / VTEB / IAGG / USFR / LQD / HYG / SPHY</span><span class="istag">Flows · 美国债券 ETF</span></td>
+<td class="lv"><span class="act">国债与市政债净流入</span><span class="act">AGG 系列流出</span>IG ETF 整体偏买方，但 LQD 出现场外流出；HY ETF 双向</td>
+<td class="fl">二级市场资金流</td>
+<td class="rv">IG / HY</td>
+<td class="bk"><span class="ch mix">MIX</span>Jane Street：综合债 ETF 资金流分化（AGG、BBAG、BKAG 流出，JBND 流入）；国债类 GOVT、VGIT、VGSH 流入而 IEI 流出；市政债 JMUB、VTEB 与浮息 USFR、国际债 IAGG 流入强劲；IG ETF 偏买方但 LQD 场外流出；HY ETF 双向，HYG 场外流入而 SPHY 流出</td>
+<td class="cr">无明确风险；资金流在久期与信用等级之间明显分化</td>
+<td class="ak">利率下行（2y -11bp、10y -5bp）驱动久期配置；信用利差整体走阔背景下的 ETF 反向承接</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Jane Street：「Agg ETFs mixed (AGG, BBAG, BKAG outflows vs JBND inflows); Treasury products (GOVT, VGIT, VGSH inflows vs IEI outflows). <b>Strong inflows Munis (JMUB, VTEB), floating rate USFR, international bonds IAGG</b>. <b>IG ETFs skewed to buyers though some OTC outflows from LQD</b>. <b>HY ETFs two-way, OTC inflows HYG vs outflows SPHY</b>.」<i>来源：02_Jane_Street_FWJaneStreetUSETFMarketCommentary1Oct.txt</i></div>
+<div class="srcf">证据：Jane Street 原文逐产品列出流出入方向。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国 / 新兴市场股票 ETF<span class="bond">IEMG / VWO / ILF / EWY / EFA / IVV / RSP / KBWB 等</span><span class="istag">Flows · 股票 ETF</span></td>
+<td class="lv"><span class="act">EM 分化</span><span class="act">必选消费与公用事业获买</span>韩国为唯一跑赢的新兴市场</td>
+<td class="fl">二级市场资金流</td>
+<td class="rv">—</td>
+<td class="bk"><span class="ch mix">MIX</span>Jane Street：新兴市场 IEMG 流入、VWO 流出；拉美 ILF 流出；韩国（EWY）是唯一跑赢的新兴市场；发达市场 EFA、EFG、BBJP、VPL、NUDM 流入；美股买方集中于 IVV、VUG、IJK、QUAL、AVUQ、IWD、XLU，卖方集中于 RSP、DFSV、IUSV、VTV、MGV、IJJ、KBWB</td>
+<td class="cr">无明确风险；美股等权（RSP）与价值型（VTV/IUSV）持续被卖出，说明市场宽度仍差</td>
+<td class="ak">美股等权指数连续第七周下跌；资金向大盘成长与公用事业集中</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Jane Street：「EM inflows IEMG, outflows VWO; LatAm ILF outflows; <b>South Korea (EWY) sole EM outperformer</b>; DM inflows EFA, EFG, BBJP, VPL, NUDM; <b>US equity buyers IVV, VUG, IJK, QUAL, AVUQ, IWD, XLU; sellers RSP, DFSV, IUSV, VTV, MGV, IJJ, KBWB</b>.」<i>来源：02_Jane_Street_FWJaneStreetUSETFMarketCommentary1Oct.txt</i></div>
+<div class="srcf">证据：Jane Street 原文逐产品列出股票 ETF 流出入。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 跨资产 · 股市 / 外汇 / 地缘 ============ -->
+<section>
+<div class="sec-head"><h2>跨资产 · 股市 / 外汇 / 地缘</h2><span class="n">4 行</span><span class="src">来源：GS Global Credit Recap / Barclays / Citi IG Credit Daily</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">美国股市<span class="bond">SPX 7666 · NDX 30501 · RTY 2806</span><span class="istag">Equities · 美国</span></td>
+<td class="lv"><span class="act">指数小涨</span><span class="act">宽度仍差</span>SPX +19bp，11 个板块中 6 个收跌</td>
+<td class="fl">—</td>
+<td class="rv">—</td>
+<td class="bk"><span class="ch mix">MIX</span>GS：SPX +19bp 至 7666、NDX +31bp 至 30501、RTY +35bp 至 2806；等权标普跑赢但仍将录得连续第七周下跌。11 个板块 6 个收跌：医疗 -1.30%、通信服务 -1.19%、地产 -0.62%、材料 -0.45%、必选消费 -0.29%、可选消费 -0.15%；跑赢板块为能源 +1.92%、工业 +1.00%、科技 +0.76%、公用事业 +0.61%</td>
+<td class="cr">明确风险：市场宽度持续恶化（等权指数连跌七周），指数上涨由少数权重股支撑</td>
+<td class="ak">WTI 因中东增兵消息上涨带动能源；ACN 财报后 +16%、NKE 盘后 -6.20%</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>S&amp;P +19bps to 7666, NDX +31bps to 30501 and RTY +35bps to 2806</b>. Equal weight S&amp;P outperformed but is still on track for its <b>7th straight weekly decline</b>. 6 of 11 sectors were red: Healthcare -1.30%, Comm Svcs -1.19%, Real Estate -0.62%, Materials -0.45%, Consumer Spls -0.29% and Consumer Disc -0.15%. Sectors that outperformed: <b>Energy +1.92%, Industrials +1.00%, Tech +0.76% and Utilities +0.61%</b>... ACN +16% after strong fiscal Q4; NKE -6.20% after the bell.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出指数点位、板块涨跌与个股事件。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">亚洲股市<span class="bond">日经指数（NKY）+3%</span><span class="istag">Equities · 亚洲</span></td>
+<td class="lv"><span class="act">日经大涨 3%</span>带动日本 CDS 一度转紧</td>
+<td class="fl">—</td>
+<td class="rv">—</td>
+<td class="bk"><span class="ch bull">BULL</span>Barclays：日经指数上涨 3%，是当日日本 CDS 由弱转强的直接驱动</td>
+<td class="cr">无明确风险；但伦敦时段宏观转差后日本 CDS 回吐全部涨幅，说明股市驱动的改善不稳固</td>
+<td class="ak">日经 +3% 与伦敦宏观转差的拉锯</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays：「Started weaker with protection better bid, then <b>tighter as equities surged (NKY +3%)</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文明确将 CDS 转紧归因于日经 +3%。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">外汇 · 美元<span class="bond">EURUSD 1.1245 · USDJPY 约 160 · USDCHF</span><span class="istag">FX · G10</span></td>
+<td class="lv"><span class="act">美元全面走强</span>G10 中除瑞郎外美元全线上涨，EURUSD 测试 1.1200/20 突破位</td>
+<td class="fl">—</td>
+<td class="rv">—</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：美元对 G10 货币普遍走强，仅对瑞郎下跌 65bp；EURUSD -75bp 至 1.1245，正在测试 1.1200/20 突破位；USDJPY +40bp，接近 160 阻力</td>
+<td class="cr">明确风险：EURUSD 一旦跌破 1.1200/20，将打开新的下行空间；OAT-Bund 走阔与欧元区财政担忧是驱动</td>
+<td class="ak">法国财政担忧与欧元区财政消息；USDJPY 逼近 160 关口</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>Dollar stronger across G10 except CHF +65bps vs USD</b>. EURUSD -75bps at 1.1245, testing the 1.1200/20 breakout level; OAT-Bund wider + eurozone fiscal concerns. USDJPY +40bps around 160 resistance.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出各货币对变动、点位与技术位判断。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">中东地缘 · 伊朗<span class="bond">增兵、第三艘航母、轰炸言论</span><span class="istag">Geopolitics · 中东</span></td>
+<td class="lv"><span class="act">风险升级</span>美国向中东增派第三艘航母与最多 10,000 名士兵</td>
+<td class="fl">—</td>
+<td class="rv">—</td>
+<td class="bk"><span class="ch bear">BEAR</span>Citi：据 WSJ，美国向中东派遣第三艘航母并增派最多 10,000 名士兵；特朗普表示伊朗要么签署协议、要么将不复存在，并称中期选举后可能加大轰炸力度</td>
+<td class="cr">明确风险：地缘冲突升级可能同时推升油价与避险资产，对信用利差形成双向冲击</td>
+<td class="ak">美军增兵与总统表态；WTI 因此上涨 2.7% 至 92.87 美元、黄金 +0.5%</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Citi：「Headlines: <b>US sending third aircraft carrier, up to 10,000 more troops to Middle East (WSJ)</b>; TRUMP: either Iran signs deal, or it won't exist any longer; TRUMP sees ramping up bombing Iran after midterms possible.」<br>Jane Street：「Commodities: <b>WTI +2.7% to $92.87; gold +0.5%</b>.」<i>来源：03_Citi_FWCITIIGCreditDailySectorCommentary1012026VWCI.txt / 02_Jane_Street_FWJaneStreetUSETFMarketCommentary1Oct.txt</i></div>
+<div class="srcf">证据：Citi 转载 WSJ 与总统表态；Jane Street 提供商品价格反应。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 新兴市场信用 · CEEMEA ============ -->
+<section>
+<div class="sec-head"><h2>新兴市场信用 · CEEMEA</h2><span class="n">6 行</span><span class="src">来源：GS Global Credit Recap</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">土耳其 · 金融与企业<span class="bond">TURKEY Fins / Corps · GDZELE、ZOREN</span><span class="istag">EM · 土耳其</span></td>
+<td class="lv"><span class="act">连续第二日走弱</span><span class="act">国际实钱卖出</span>风险下跌 2.25pt 至 -35c，GDZELE 与 ZOREN 各跌 2pt</td>
+<td class="fl">存量；可再生能源名字被抛</td>
+<td class="rv">EM HY / 边缘 IG</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：土耳其金融与企业连续第二个交易日走弱，风险下跌 2.25pt 至 -35c；可再生能源债券被抛售且见国际实钱卖出；GDZELE 与 ZOREN 均下跌 2pt，为主要跑输者</td>
+<td class="cr">明确风险：国际实钱持续卖出，本地承接力不足，跌势呈连续两日趋势</td>
+<td class="ak">土耳其资产整体承压；可再生能源板块遭定向抛售</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「Turkey fins/corps another weaker day, <b>risk -2.25pt to -35c</b>; renewables offered, international RM selling; underperformers <b>GDZELE and ZOREN both -2pts</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出跌幅区间、买卖盘来源与具名跑输者。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">中东（MENA）· 准主权/金融/企业<span class="bond">MENA quasi-sovereign / Fins / Corps · ALINMA 永续债</span><span class="istag">EM · MENA</span></td>
+<td class="lv"><span class="act">资金集中于主权</span><span class="act">永续债被抛</span>ALINMA 永续债遭卖出，多数债券下跌 0.25-0.50pt</td>
+<td class="fl">存量</td>
+<td class="rv">EM IG / HY</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：MENA 准主权、金融与企业板块资金流集中在主权债；ALINMA 永续债被卖出，多数债券下跌 0.25/0.50pt</td>
+<td class="cr">明确风险：资金向主权集中导致企业/准主权流动性抽离；永续债为最脆弱环节</td>
+<td class="ak">区域资金向主权债的单向集中</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>MENA quasi/fins/corps: flow concentrated in sovereigns; ALINMA perps selling, majority of bonds down .25/.50pt</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出资金流向与具名标的跌幅。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">中东欧（CEE）<span class="bond">MBKPW 净卖出 · TVLRO 永续债买盘</span><span class="istag">EM · 中东欧</span></td>
+<td class="lv"><span class="act">开盘异常疲弱</span>一度走阔约 30bp，收盘 senior 为 +3/+6bp</td>
+<td class="fl">存量</td>
+<td class="rv">EM IG / HY</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：CEE 板块开盘异常疲弱，MBKPW 出现净卖出，TVLRO 永续债见买盘；利差一度走阔约 30bp，senior 债券最终收在 +3/+6bp</td>
+<td class="cr">明确风险：开盘 30bp 的瞬时走阔显示流动性薄弱，单一机构（MBKPW）的净卖出即可造成大幅波动</td>
+<td class="ak">区域开盘流动性冲击；永续债与 senior 走势背离</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「CEE: <b>exceptionally weak on open, MBKPW net selling, buyers of TVLRO Perps, ~30bps wider at one point, ended +3/+6bps on senior paper</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出开盘路径、具名机构行为与收盘利差。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">独联体（CIS）企业<span class="bond">JSCKSP · KTZKZ</span><span class="istag">EM · CIS</span></td>
+<td class="lv"><span class="act">本地账户买入 JSCKSP</span><span class="act">国际需求见于 KTZKZ</span>板块整体有双向买盘</td>
+<td class="fl">存量</td>
+<td class="rv">EM HY</td>
+<td class="bk"><span class="ch bull">BULL</span>GS：CIS 企业板块中 JSCKSP 见资金流且由本地账户买入，KTZKZ 见国际需求</td>
+<td class="cr">无明确风险；GS 未在该板块提示风险</td>
+<td class="ak">本地与国际买盘同时出现，为 CEEMEA 中少数偏正面板块</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>CIS Corps: JSCKSP flow with local accounts; KTZKZ demand</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文列出 CIS 企业板块的具名标的与买盘来源。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">以色列（Israeli Complex）<span class="bond">油气公司债 · IG 企业</span><span class="istag">EM · 以色列</span></td>
+<td class="lv"><span class="act">油气债跌 30-75c</span><span class="act">IG 企业最多走阔 10bp</span>油气债折算走阔约 15/30bp</td>
+<td class="fl">存量</td>
+<td class="rv">EM IG / HY</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：以色列板块中油气公司债下跌 30-75c，折算利差走阔约 15/30bp；IG 企业债最多走阔 10bp</td>
+<td class="cr">明确风险：地缘冲突升级对以色列油气与 IG 企业的直接冲击</td>
+<td class="ak">中东增兵与伊朗相关地缘升级（见跨资产章节）</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>Israeli Complex: O&amp;G bonds 30-75c lower, ~15/30bp wider; IG corps up to 10 wider</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出以色列板块各细分跌幅与走阔幅度。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">CEEMEA HY · 企业<span class="bond">PRXNA · TLWLN · 矿业与油气名字</span><span class="istag">EM HY</span></td>
+<td class="lv"><span class="act">普跌 -65c 至 -15c</span><span class="act">国际实钱卖出 TLWLN</span>PRXNA 与超国家债跑输；矿业与油气为净卖出方</td>
+<td class="fl">存量</td>
+<td class="rv">EM HY</td>
+<td class="bk"><span class="ch bear">BEAR</span>GS：HY 企业债下跌 65c 至 15c；PRXNA 与超国家机构债券跑输；TLWLN 下跌 1pt 且见国际实钱卖出；矿业与油气公司为净卖出方</td>
+<td class="cr">明确风险：国际实钱卖出集中于 TLWLN，矿业与油气板块为净卖出来源，跌势具板块性</td>
+<td class="ak">大宗商品与地缘背景下的 EM HY 风险偏好收缩</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">GS：「<b>HY Corps: -65c to -15c; PRXNA and supras underperforming; TLWLN -1pt with international RM selling; mining/oilers net sellers</b>.」<i>来源：00_Goldman_Sachs_FWGSGLOBALCREDITMARKETRECAP2OCTOBER2026.txt</i></div>
+<div class="srcf">证据：GS 原文给出跌幅区间、具名跑输标的与买卖盘结构。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+<!-- ============ 亚洲信用 · 研究观点与新发清单 ============ -->
+<section>
+<div class="sec-head"><h2>亚洲信用 · 研究观点与新发清单</h2><span class="n">4 行</span><span class="src">来源：Barclays 研究发布清单（香港休市、中国黄金周）</span></div>
+<table class="tbl">
+<thead><tr><th>名字</th><th>流动性/交易</th><th>发行</th><th>评级</th><th>券商信息</th><th>风险</th><th>Catalyst</th></tr></thead>
+<tbody>
+<tr class="main" onclick="tg(this)">
+<td class="nm">MGM 中国（MGMCHI）<span class="bond">MGMCHI '33s</span><span class="istag">Macau Gaming · 亚洲 HY</span></td>
+<td class="lv"><span class="act">维持 OW</span>Barclays 认为事件风险已消除并重申超配 '33s</td>
+<td class="fl">存量</td>
+<td class="rv">HY</td>
+<td class="bk"><span class="ch bull">BULL</span>Barclays：9 月 25 日发布「MGM China: Event risk removed」，并重申对 MGMCHI '33s 的超配（OW）</td>
+<td class="cr">无明确风险；Barclays 认为此前压制该标的的事件风险已解除</td>
+<td class="ak">澳门博彩牌照/续牌相关事件风险出清</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays 研究清单：「<b>MGM China: Event risk removed; reiterate OW on MGMCHI '33s (25 Sep)</b>」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文研究发布清单条目（含日期与评级动作）。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">Shriram Finance<span class="bond">对 4.6 亿美元存量债发出要约收购</span><span class="istag">India NBFC · 亚洲 IG</span></td>
+<td class="lv"><span class="act">要约收购</span>针对 4.6 亿美元债券发起 tender offer</td>
+<td class="fl">存量（tender offer 标的）</td>
+<td class="rv">IG</td>
+<td class="bk"><span class="ch fact">FACT</span>Barclays：9 月 22 日发布「Shriram Finance tender offer for USD460mn bonds」</td>
+<td class="cr">明确风险：要约收购的价格与接受率决定持有人实际回收，尚未披露结果</td>
+<td class="ak">要约收购窗口；印度 NBFC 负债结构主动管理</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays 研究清单：「<b>Shriram Finance tender offer for USD460mn bonds (22 Sep)</b>」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文研究发布清单条目。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">新世界发展（NWD）<span class="bond">Victoria Dockside 相关企业行动</span><span class="istag">HK Property · 亚洲 HY</span></td>
+<td class="lv"><span class="act">年内首个大型企业行动</span>Barclays 定性为年内首个重大 corporate action</td>
+<td class="fl">存量</td>
+<td class="rv">HY</td>
+<td class="bk"><span class="ch mix">MIX</span>Barclays：9 月 21 日发布「New World Development / Victoria Dockside: First major corporate action of the year」</td>
+<td class="cr">明确风险：港资地产的负债管理与资产处置进程仍在推进，后续条款与执行存在不确定性</td>
+<td class="ak">Victoria Dockside 资产相关企业行动，为全年首例</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays 研究清单：「<b>New World Development / Victoria Dockside: First major corporate action of the year (21 Sep)</b>」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文研究发布清单条目。</div>
+</td></tr>
+<tr class="main" onclick="tg(this)">
+<td class="nm">亚洲信用 · 其他研究清单<span class="bond">印度可再生能源 · 美国柴油禁令 · Medco Energi · Asia Credit Alpha</span><span class="istag">Research · 亚洲信用</span></td>
+<td class="lv"><span class="act">研究发布集中</span>覆盖印度可再生能源、柴油禁令影响、Medco Energi 与亚洲信用策略</td>
+<td class="fl">存量（研究覆盖）</td>
+<td class="rv">—</td>
+<td class="bk"><span class="ch mix">MIX</span>Barclays 发布清单：亚洲企业——美国柴油禁令影响有限（9/29）；印度可再生能源——限电问题凸显（9/28）；Medco Energi——又一个强劲季度（9/23）；Asia Credit Alpha——「All eyes on yields」（9/24）</td>
+<td class="cr">无明确风险；Asia Credit Alpha 标题点明核心变量仍是收益率水平</td>
+<td class="ak">亚洲信用策略主线回归利率；印度可再生能源限电为新增关注点</td>
+</tr>
+<tr class="det"><td colspan="7">
+<div class="ev">Barclays 研究清单：「Asian Corporates: <b>Limited impact from US diesel ban (29 Sep)</b>; <b>India Renewables: Curtailments bite (28 Sep)</b>; <b>Asia Credit Alpha: All eyes on yields (24 Sep)</b>; <b>Medco Energi: Another strong quarter (23 Sep)</b>.」<i>来源：06_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD1stOctob.txt</i></div>
+<div class="srcf">证据：Barclays 原文研究发布清单条目（含发布日期）。</div>
+</td></tr>
+</tbody>
+</table>
+</section>
+</div>
+
 <script>
 function tg(r){
   var d=r.nextElementSibling;
   if(d&&d.classList.contains('det')){d.classList.toggle('open');r.classList.toggle('open');}
 }
-var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-02': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-03': {'w': 'Thursday · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-04': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-07': {'w': 'Monday · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-08': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-09': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-10': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-11': {'w': 'Friday · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-14': {'w': 'Monday · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-15': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-16': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-17': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-18': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-21': {'w': 'Monday · 周一', 's': '数据源：3 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-22': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-23': {'w': 'Wednesday · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-24': {'w': 'Thu · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-25': {'w': 'Fri · 周五', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-28': {'w': 'Mon · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-29': {'w': 'Tue · 周二', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-30': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-01': {'w': 'Thu · 周四', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
+var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-02': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-03': {'w': 'Thursday · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-04': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-07': {'w': 'Monday · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-08': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-09': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-10': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-11': {'w': 'Friday · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-14': {'w': 'Monday · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-15': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-16': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-17': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-18': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-21': {'w': 'Monday · 周一', 's': '数据源：3 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-22': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-23': {'w': 'Wednesday · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-24': {'w': 'Thu · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-25': {'w': 'Fri · 周五', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-28': {'w': 'Mon · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-29': {'w': 'Tue · 周二', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-30': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-01': {'w': 'Thu · 周四', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-02': {'w': 'Fri · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
 function showDay(d){
   var days=document.querySelectorAll('.day');
   for(var i=0;i<days.length;i++){days[i].classList.toggle('active', days[i].id==='day-'+d);}
