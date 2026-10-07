@@ -322,6 +322,12 @@ def inject_tags(html_path: Path):
         print(f"  [ok] {html_path.name}: auth+refresh injected")
 
 def main():
+    global notify, send_failure_notification, send_nochange_notification
+    if os.environ.get("SKIP_NOTIFY") == "1":
+        notify = lambda summary: print("  [notify] SKIP_NOTIFY=1，已跳过所有通知")
+        send_failure_notification = lambda error_msg: print("  [notify] SKIP_NOTIFY=1，已跳过失败告警")
+        send_nochange_notification = lambda board_results: print("  [notify] SKIP_NOTIFY=1，已跳过无更新通知")
+
     print(f"=== Auto Sync @ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===")
     changed = False
     board_results = []
