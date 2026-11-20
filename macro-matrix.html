@@ -34050,7 +34050,1583 @@ REPORT_DATA["2026-11-18"] = {
   "note": "<b>数据说明</b>：本批窗口 44 封（Inbox 16 + Research 28）、相关 26 封。首次出现 Outlook 同步滞后：首轮抓取仅 8 封且全部早于 11/17 08:36，强制 Send/Receive 75 秒后补回 36 封，建议每日抓取前先同步。表格中 fact 为客观数据或原文事实，pos/neg/neu 为券商观点方向；数字以原文为准。",
   "disclaimer": "本页为卖方研究要点摘录与结构化整理，非投资建议。"
  }
+}
+// ==================== 2026-11-19 ====================
+REPORT_DATA["2026-11-19"] = {
+ "dateCN": "2026年11月19日 星期四",
+ "theme": "11/18 是一场<b>「鹰派话语 vs 避险买盘」</b>的对撞，结果非常干净。JPM 的标题最传神——<b>Waller deadlifts the front end</b>：Waller 重申 12 月 <b>50bp</b>，2y 早盘 <b>+5bp</b>，但 NSA 涉密内网故障（官方否认被黑、称例行维护）引发的尾盘买盘把 2y 一路压回 <b>-3.8bp 至 4.79%</b>，10y <b>-4.5bp 至 5.062%</b>；MS 记录 2y 0.0bp、10y -3.9bp、30y -4.8bp 的<b>牛平 + 扭曲平坦</b>，成交量 85%。更有说服力的证据在供给端：<b>160 亿 20y 中标 5.459%</b>，比 10 月的纪录中标收益率还低 <b>1bp</b>，B/C <b>2.63</b>（前次 2.73）、间接投标 <b>60.2%</b>；而 JPM 同时指出<b>过去 17 次 10 年期拍卖有 15 次 tail</b>——买盘按「稀缺性」买、不按「久期」买，对应的曲线交易是 <b>10s20s 压缩</b>，不是 10s30s 走陡。成交结构也在讲同一个故事：实钱在 10y 以上 better buying、对冲基金通过 <b>ASW 做多 20y</b>、<b>1y5y ±100 风险逆转接近平价</b>；前端则留给 Fed——<b>OIS 到 3 月累计约 70bp</b>，仍是 25bp 步长，Musalem 的「several hikes」和 Waller 的 50bp 都没改变定价路径。基本面在给前端多头递子弹：新屋开工 <b>1,309k（+9.9%）</b>只是多户型回声，<b>营建许可 -7.4%</b>、成屋签约销售 <b>-4.7%</b> 连续第二个月创纪录低位、NAHB <b>25</b> 为 2012 年 4 月以来最低。外汇是当天最干净的相对价值信号：<b>EUR/USD 1.0960 为 19 个月新低</b>、GBP 1.3136 逼近年内低位，而英国服务业 CPI 低于预期后 BoE 未来一年加息押注降到<b>约 90bp</b>——本周 G10 里唯一的鹰派退坡。亚洲 IG 主权 +2~4bp、准主权 +4~7bp 走宽，幅度远小于美债波动，属于无风险利率传导；但 HY 主权跌 0.25~0.5pt、蒙古总统辞职、美国收紧芯片限制三条同时出现，区域尾部在变粗。中国出现一个新变量：GS 的晨报专题讨论<b>潜在债券税制调整</b>——若利息收入的税收待遇变化，机构持有意愿与曲线形态都会重估。",
+ "meta": "覆盖券商：J.P. Morgan（US Treasury Market Daily《Waller deadlifts the front end》、Credit Daily、APAC Credit Roundup、HG Retail）；Morgan Stanley（UST overnight 11/18、Global Macro Commentary 11/18、US IG Trading Commentary、IG New Issue）；Goldman Sachs（Futures Sydney Morning、Asia Macro Recap、高盛晨报、EM Market Outlook 2027、Global Credit Recap）；Barclays（US Treasury Market Daily《Time to think about the 20-year》、Macro Daily、Credit & Securitized、UK CPI）；Citi（While You Were Sleeping 18 Nov、IG Credit 11.17、Global Quant Macro Strategy）；Deutsche Bank（Early Morning Reid 11/18）；BofA Global Research（HG Retail：LOW/HD/TGT）；BMO Capital Markets（TIPS/ZCIS EOD）；Jefferies（ASIA JP/AU/KR IG EOD）；Nomura（Daily Wrap 11/18 — ICTSI）。抓取口径：窗口 11/18 08:00→11/19 08:00，原始 108 封（Inbox + Research）、去重保留 <b>86</b> 封、相关 <b>26</b> 封；本批为 11/19 补跑（原定 11/19 08:00 未执行），与 11/20 批次同一抓取窗口拆分，同步已前置执行。",
+ "brokers": [
+  {
+   "n": "MS",
+   "c": "b-ms"
+  },
+  {
+   "n": "GS",
+   "c": "b-gs"
+  },
+  {
+   "n": "JPM",
+   "c": "b-jpm"
+  },
+  {
+   "n": "BofA",
+   "c": "b-bofa"
+  },
+  {
+   "n": "DB",
+   "c": "b-db"
+  },
+  {
+   "n": "Citi",
+   "c": "b-citi"
+  },
+  {
+   "n": "Barclays",
+   "c": "b-barc"
+  },
+  {
+   "n": "BMO",
+   "c": "b-bmo"
+  },
+  {
+   "n": "JEF",
+   "c": "b-jeff"
+  },
+  {
+   "n": "Nomura",
+   "c": "b-nom"
+  }
+ ],
+ "markets": [
+  {
+   "id": "us-rates",
+   "pri": true,
+   "title": "美国利率：50bp 只顶住早盘，20y 却拍出比 10 月更低的收益率",
+   "summary": "一句话：<b>前端定价给 Fed，长端定价给稀缺性，两者在同一天各走各的</b>。JPM：Waller 重申 12 月 50bp、把前端顶起来，2y 早盘 +5bp、收盘 <b>-3.8bp 至 4.79%</b>；10y -4.5bp 至 5.062%、2s10s 平坦 4bp；过去 17 次 10y 拍卖 <b>15 次 tail</b>；2s5s 做平目标 -0.5bp 然后 -12bp。MS：2y 0.0bp、10y -3.9bp、30y -4.8bp 牛平 + 扭曲平坦，成交量 85%；实钱在 10y 以上 better buying、HF 用 ASW 做多 20y。GS：NSA 涉密网络故障触发尾盘买盘，2y 先 +5bp 后 -3.8bp；10y 今年有望 29 次收在 5% 以上，为 2007 年以来最多。Barclays：<b>20y 相对腹部结构性便宜</b>，160 亿新发中标 5.459% 直接验证。Citi：OIS 到 3 月累计约 70bp、仍隐含 25bp 步长，50bp 的喊话没改变路径。BMO：TIPS 收复跌幅、BE 走阔约 1.5bp，实际收益率是最干净的多头。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "久期观点",
+    "曲线观点",
+    "美联储观点",
+    "核心逻辑",
+    "交易建议"
+   ],
+   "cols": [
+    "88px",
+    "24%",
+    "13%",
+    "13%",
+    "16%",
+    "18%",
+    "16%"
+   ],
+   "rows": [
+    [
+     "JPM",
+     [
+      "fact",
+      "2y 早盘 <b>+5bp</b>、收盘 <b>-3.8bp 至 4.79%</b>；10y -4.5bp 至 5.062%、2s10s 平坦 4bp；160 亿 20y 中标 5.459%、B/C 2.63、间接 60.2%"
+     ],
+     [
+      "neg",
+      "前端偏空：50bp 的选项被打开"
+     ],
+     [
+      "pos",
+      "2s5s 做平，目标 -0.5bp 然后 -12bp"
+     ],
+     [
+      "neg",
+      "Waller 重申 12 月 50bp；Musalem 称需「数次」"
+     ],
+     [
+      "pos",
+      "10y 连续 tail、20y 穿价 = 按稀缺性买而非按久期买"
+     ],
+     [
+      "act",
+      "2s5s 做平；10y 拍卖后再定方向"
+     ]
+    ],
+    [
+     "MS",
+     [
+      "fact",
+      "2y 0.0bp、10y -3.9bp、30y -4.8bp；成交量 85%；标普 -0.2%、纳指 +0.4%、VIX 24.56（-3.5%）"
+     ],
+     [
+      "pos",
+      "牛平 + 扭曲平坦，长端有配置需求"
+     ],
+     [
+      "pos",
+      "10s30s 平坦；实钱买 10y 以上"
+     ],
+     [
+      "neu",
+      "鹰派表态被尾盘避险买盘抵消"
+     ],
+     [
+      "pos",
+      "实钱买长、HF 用 ASW 做多 20y、前端交给 Fed"
+     ],
+     [
+      "act",
+      "多 20y ASW；10s20s 压缩"
+     ]
+    ],
+    [
+     "GS",
+     [
+      "fact",
+      "NSA 涉密网络故障（官方称例行维护）触发尾盘买盘；2y 先 +5bp 后 -3.8bp；零售超预期"
+     ],
+     [
+      "neu",
+      "避险买盘快而浅，不留仓"
+     ],
+     [
+      "pos",
+      "牛平而非牛陡"
+     ],
+     [
+      "neg",
+      "Musalem「数次」+ 零售超预期"
+     ],
+     [
+      "neu",
+      "技术故障已成利率的常规触发器"
+     ],
+     [
+      "act",
+      "跟随尾盘方向，不追高"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "《Time to think about the 20-year》：20y 相对腹部结构性便宜；160 亿新发中标 5.459%"
+     ],
+     [
+      "pos",
+      "20y 是结构性做多而非方向性做多"
+     ],
+     [
+      "pos",
+      "10s20s 与 20s30s 赔率优于方向"
+     ],
+     [
+      "neg",
+      "通胀风险限制长久期"
+     ],
+     [
+      "pos",
+      "20y 的供给与持仓结构决定其便宜是结构性的"
+     ],
+     [
+      "act",
+      "做多 20y 相对腹部"
+     ]
+    ],
+    [
+     "Citi",
+     [
+      "fact",
+      "OIS 到 3 月累计约 70bp；德国 2s10s +1.4bp 熊陡、Bund 收高 1.2bp 以内"
+     ],
+     [
+      "neu",
+      "路径仍是 25bp 分期"
+     ],
+     [
+      "neu",
+      "欧洲熊陡、美国牛平，跨市场分化"
+     ],
+     [
+      "neg",
+      "50bp 的喊话没有改变定价"
+     ],
+     [
+      "neu",
+      "话语与定价分离，缺口在一周内不收敛"
+     ],
+     [
+      "act",
+      "中性；用跨市场基差表达"
+     ]
+    ],
+    [
+     "BMO",
+     [
+      "fact",
+      "TIPS 收复跌幅、BE 走阔约 1.5bp；中期 ASW 需求开始出现"
+     ],
+     [
+      "pos",
+      "BE 已触底，实际收益率是最干净的多头"
+     ],
+     [
+      "neu",
+      "实际收益率下行 + BE 走阔"
+     ],
+     [
+      "neu",
+      "定价仍是 25bp 步长"
+     ],
+     [
+      "pos",
+      "避险日资金买的是实际收益率"
+     ],
+     [
+      "act",
+      "持有 TIPS 多头"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "europe-uk",
+   "pri": true,
+   "title": "欧洲与英国：Bund 熊陡、英镑逼近年内低位，BoE 是唯一退坡的鹰派",
+   "summary": "一句话：<b>商品反弹让德国熊陡，英国服务业 CPI 让 BoE 退坡——欧洲的分化来自通胀而不是增长</b>。Citi：商品反弹带动德国 2s10s <b>+1.4bp 熊陡</b>，Bund 收高 1.2bp 以内。MS：<b>EUR/USD 1.0960 为 19 个月新低</b>、GBP 1.3136 逼近年内低位、DXY +0.3%——资金在买美国的实际收益率，不是买欧洲的增长。Barclays：英国服务业 CPI 低于预期，BoE 未来一年加息押注降至<b>约 90bp</b>；UK 通胀预测 3.2%/3.3%/1.7%（2026/27/28 年）。GS：EUR 受法国政治风险拖累、GBP 受欧盟再融合支撑，交叉盘机会多于方向。交易含义：Gilt 的相对价值来自「鹰派退坡」而不是「通胀下行」——如果 12 月 BoE 不跟随 Fed，2y Gilt 的利差会重新走阔。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "德债观点",
+    "曲线观点",
+    "ECB观点",
+    "核心逻辑",
+    "交易建议"
+   ],
+   "cols": [
+    "88px",
+    "24%",
+    "13%",
+    "13%",
+    "16%",
+    "18%",
+    "16%"
+   ],
+   "rows": [
+    [
+     "Citi",
+     [
+      "fact",
+      "商品反弹带动德国 2s10s <b>+1.4bp</b> 熊陡；Bund 收高 1.2bp 以内；OIS 到 3 月约 70bp"
+     ],
+     [
+      "neg",
+      "Bund 熊陡，通胀预期回升"
+     ],
+     [
+      "neg",
+      "2s10s 走陡来自商品而非增长"
+     ],
+     [
+      "neu",
+      "ECB 路径未变"
+     ],
+     [
+      "neg",
+      "商品是本轮欧洲通胀的边际变量"
+     ],
+     [
+      "act",
+      "UW Bund 长端；2s10s 做平止损"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "英国服务业 CPI 低于预期，BoE 未来一年加息押注降至<b>约 90bp</b>；UK CPI 预测 3.2%/3.3%/1.7%"
+     ],
+     [
+      "neu",
+      "英国通胀路径下移但不低"
+     ],
+     [
+      "neg",
+      "Gilt 曲线仍偏平，前端压力最大"
+     ],
+     [
+      "neg",
+      "BoE 的鹰派退坡是 G10 唯一"
+     ],
+     [
+      "neu",
+      "通胀下行 + 增长疲弱的组合"
+     ],
+     [
+      "act",
+      "2y Gilt 相对 Fed 的利差收窄交易"
+     ]
+    ],
+    [
+     "MS",
+     [
+      "fact",
+      "EUR/USD <b>1.0960</b> 为 19 个月新低；GBP 1.3136 逼近年内低位；DXY +0.3%"
+     ],
+     [
+      "neu",
+      "欧洲利率被美元与商品两头拉扯"
+     ],
+     [
+      "neu",
+      "EUR 曲线跟随美债"
+     ],
+     [
+      "neu",
+      "ECB 相对被动"
+     ],
+     [
+      "neg",
+      "资金买美国实际收益率，不买欧洲增长"
+     ],
+     [
+      "act",
+      "多 USD、空 EUR 交叉盘"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "us-credit",
+   "pri": true,
+   "title": "美国信用：一级清淡、二级跟随国债走强，LQD 只走宽 0.5bp",
+   "summary": "一句话：<b>信用在这一天仍然抗跌，抗跌的原因是「没供给」而不是「基本面好」</b>。JPM：11/18 IG 新发仅 <b>30.5 亿</b>（周内 312.75 亿、月内 1499.55 亿），与 11/17 的 166.25 亿形成落差；TIC：9 月外资净买长债 <b>808 亿</b>、官方减持短债 237 亿，外资持有短债占比 <b>4.1%</b> 为纪录低位。MS：二级跟随国债走强，<b>LQD 仅走宽 0.5bp</b>；TMT 最紧、SKYD/ORCL 跑赢 5-9c、SPCX 走弱 3-4bp、FOXA 弱 5-6c。BofA：LOW/HD/TGT 财报分化（TGT、HD 超预期、LOW 混合），但同指运费、燃料与建材成本；三家均把<b>去杠杆置于并购与回购之前</b>，杠杆目标在 2027 年中。Barclays：IG 接近历史最紧，催化剂清单约 110 个，推荐 Sempra 与 Boeing。交易含义：信用抗跌是技术面给的，不是基本面给的；一旦 12 月供给回归，利差会先补涨。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "基本面观点",
+    "估值/利差观点",
+    "Technical/资金面",
+    "整体观点",
+    "偏好/风险"
+   ],
+   "cols": [
+    "88px",
+    "20%",
+    "15%",
+    "14%",
+    "14%",
+    "19%",
+    "18%"
+   ],
+   "rows": [
+    [
+     "JPM",
+     [
+      "fact",
+      "11/18 IG 新发仅 <b>30.5 亿</b>（周 312.75 亿、月 1499.55 亿）；TIC 9 月外资净买长债 808 亿、官方减持短债 237 亿"
+     ],
+     [
+      "pos",
+      "外资对长债的需求稳定"
+     ],
+     [
+      "pos",
+      "供给稀缺支撑利差"
+     ],
+     [
+      "pos",
+      "外资持有短债占比 4.1% 为纪录低位，久期在拉长"
+     ],
+     [
+      "neu",
+      "抗跌来自技术面而非基本面"
+     ],
+     [
+      "act",
+      "持有 5-10y 高等级；等 12 月供给"
+     ]
+    ],
+    [
+     "MS",
+     [
+      "fact",
+      "LQD 仅走宽 <b>0.5bp</b>；TMT 最紧、SKYD/ORCL 跑赢 5-9c、SPCX 走弱 3-4bp、FOXA 弱 5-6c"
+     ],
+     [
+      "neu",
+      "基本面稳健"
+     ],
+     [
+      "pos",
+      "二级跟随国债走强，利差几乎不动"
+     ],
+     [
+      "pos",
+      "一级清淡，做市商库存低"
+     ],
+     [
+      "pos",
+      "板块内部的分化大于指数"
+     ],
+     [
+      "act",
+      "OW TMT 短端；SPCX 减仓"
+     ]
+    ],
+    [
+     "BofA",
+     [
+      "fact",
+      "LOW/HD/TGT 财报分化；共同指向运费、燃料、木材与电缆成本；去杠杆优先于并购与回购，目标 2027 年中"
+     ],
+     [
+      "pos",
+      "去杠杆优先意味着尾部风险下降"
+     ],
+     [
+      "neu",
+      "杠杆目标明确，评级稳定"
+     ],
+     [
+      "neu",
+      "成本压力仍在传导，利润率承压"
+     ],
+     [
+      "pos",
+      "零售的资本纪律是信用利好"
+     ],
+     [
+      "act",
+      "OW 高等级零售短端"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "IG 接近历史最紧、催化剂清单约 <b>110 个</b>；推荐 Sempra 与 Boeing"
+     ],
+     [
+      "pos",
+      "基本面稳健"
+     ],
+     [
+      "neg",
+      "最紧位置的风险补偿不足"
+     ],
+     [
+      "neu",
+      "曲线机会多于方向"
+     ],
+     [
+      "neu",
+      "催化剂密集但赔率差"
+     ],
+     [
+      "act",
+      "OW Sempra、Boeing"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "asia-credit",
+   "pri": true,
+   "title": "亚洲信用：走宽 2-7bp 是利率传导，尾部却在变粗",
+   "summary": "一句话：<b>利差只走宽 2-4bp，但蒙古政治、芯片限制、香港地产三条同时出现</b>。JPM：亚洲 IG 主权 <b>+2~4bp</b>、准主权 <b>+4~7bp</b> 走宽；亚洲 HY 主权下跌 <b>0.25~0.5pt</b>；蒙古总统辞职（选举时钟加快、财政风险上升）；<b>Lai Sun 维持 UW</b>——拟议 REIT 分拆对解决基本面疲弱帮助有限；美国收紧芯片限制，中国 TMT 财报分化；韩国保险的核心资本框架是新增变量。JEF：日本 TLAC 长端仍有寿险与资管需求、澳洲实钱在银行腹部加仓 FRN；一级清淡、二级跟随美债。Nomura：ICTSI 3Q26 有韧性——新收购码头贡献货量、有机业务毛利改善抵消 Basra 港拖累。交易含义：区域配置盘把这一天当利率事件处理（走宽幅度小于美债），但尾部名字的流动性溢价会先反应。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "基本面观点",
+    "估值/利差观点",
+    "Technical/资金面",
+    "整体观点",
+    "偏好/风险"
+   ],
+   "cols": [
+    "88px",
+    "20%",
+    "15%",
+    "14%",
+    "14%",
+    "19%",
+    "18%"
+   ],
+   "rows": [
+    [
+     "JPM",
+     [
+      "fact",
+      "亚洲 IG 主权 <b>+2~4bp</b>、准主权 <b>+4~7bp</b>；亚洲 HY 主权 -0.25~0.5pt；蒙古总统辞职；Lai Sun 维持 UW"
+     ],
+     [
+      "neg",
+      "蒙古财政与政治风险上升"
+     ],
+     [
+      "neu",
+      "走宽幅度远小于美债波动"
+     ],
+     [
+      "neu",
+      "一级清淡，供给不是压力"
+     ],
+     [
+      "neg",
+      "尾部在变粗：政治 + 芯片限制 + 香港地产"
+     ],
+     [
+      "act",
+      "UW 蒙古与 Lai Sun；守日本 TLAC"
+     ]
+    ],
+    [
+     "JEF",
+     [
+      "fact",
+      "日本 TLAC 长端获寿险与资管需求；澳洲实钱在银行腹部加仓 FRN；韩国保险核心资本框架成新变量"
+     ],
+     [
+      "pos",
+      "银行与保险的资金需求稳定"
+     ],
+     [
+      "pos",
+      "长端 TLAC 的买盘来自负债端"
+     ],
+     [
+      "pos",
+      "澳洲银行腹部 FRN 需求强"
+     ],
+     [
+      "pos",
+      "区域配置盘仍在短端与浮息上防御"
+     ],
+     [
+      "act",
+      "OW 日本 TLAC 长端、澳洲 FRN"
+     ]
+    ],
+    [
+     "Nomura",
+     [
+      "fact",
+      "ICTSI 3Q26 新收购码头贡献货量、有机业务毛利改善抵消 Basra 港拖累"
+     ],
+     [
+      "pos",
+      "现金流改善，防御性名字"
+     ],
+     [
+      "pos",
+      "在 HY 主权普跌中相对抗跌"
+     ],
+     [
+      "neu",
+      "流动性一般，适合持有而非交易"
+     ],
+     [
+      "pos",
+      "基本面改善是唯一防御"
+     ],
+     [
+      "act",
+      "持有 ICTPM 短端"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "china-rates",
+   "pri": false,
+   "title": "中国：潜在债券税制调整是比降准更重要的变量",
+   "summary": "一句话：<b>税制影响的是持有成本，而不是流动性</b>。GS：高盛晨报专题讨论<b>中国潜在债券税制调整</b>对市场的影响——若利息收入的税收待遇变化，机构持有意愿、曲线形态与国开/国债利差都会被重估；人民币中间价 <b>6.7118</b>（上调 14 点）。GS 同时给出 2027 展望：美股回报为正但趋缓、意大利债务占 GDP 仍超 <b>137%</b>。Barclays：政策对冲必要性上升，但在关税与税制两个不确定之间，配置盘倾向短久期与高等级。交易含义：制度性变化通常只在实施前一个月被定价——现在的讨论就是那个窗口；如果税制调整落地，配置盘久期会系统性缩短，曲线先陡后平。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "国债方向",
+    "曲线观点",
+    "央行观点",
+    "核心逻辑",
+    "交易建议"
+   ],
+   "cols": [
+    "88px",
+    "24%",
+    "13%",
+    "13%",
+    "16%",
+    "18%",
+    "16%"
+   ],
+   "rows": [
+    [
+     "GS",
+     [
+      "fact",
+      "晨报专题：潜在债券税制调整的影响；人民币中间价 6.7118（上调 14 点）"
+     ],
+     [
+      "neu",
+      "税制不确定期，配置盘倾向观望"
+     ],
+     [
+      "neg",
+      "若利息税负上升，曲线先陡后平"
+     ],
+     [
+      "neu",
+      "货币政策不是当天的变量"
+     ],
+     [
+      "neg",
+      "持有成本的重估比降准更影响久期决策"
+     ],
+     [
+      "act",
+      "缩短久期；等税制细节"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "政策对冲必要性上升；EM 2027 违约率约 7%"
+     ],
+     [
+      "neu",
+      "对冲政策在路上"
+     ],
+     [
+      "neu",
+      "曲线形态取决于税制而非基本面"
+     ],
+     [
+      "pos",
+      "宽松空间大"
+     ],
+     [
+      "neu",
+      "不确定期内配置偏短久期高等级"
+     ],
+     [
+      "act",
+      "短久期 + 高等级"
+     ]
+    ]
+   ]
+  }
+ ],
+ "divergences": {
+  "headers": [
+   "议题",
+   "偏多一方（依据）",
+   "偏空一方（依据）",
+   "数据证据",
+   "分歧本质"
+  ],
+  "cols": [
+   "88px",
+   "23%",
+   "23%",
+   "28%",
+   "18%"
+  ],
+  "rows": [
+   [
+    "12 月是 25bp 还是 50bp",
+    [
+     "pos",
+     "<b>Citi</b>：OIS 到 3 月累计约 <b>70bp</b>，仍隐含 25bp 步长；<b>MS</b> 记录 1y5y ±100 风险逆转<b>接近平价</b>，几乎没人买前端尾部保护"
+    ],
+    [
+     "neg",
+     "<b>JPM</b>：Waller 重申 <b>50bp</b>、Musalem 称需「<b>数次</b>」加息；2y 早盘 +5bp 说明市场先按鹰派交易"
+    ],
+    [
+     "fact",
+     "2y 早盘 +5bp、收盘 -3.8bp 至 4.79%；10y -4.5bp 至 5.062%；零售超预期、NAHB 25 为 2012 年 4 月以来最低"
+    ],
+    [
+     "fact",
+     "分歧在「话语 vs 定价」：鹰派可以喊 50bp，但市场只买 25bp 分期"
+    ]
+   ],
+   [
+    "20y 是结构性便宜还是技术性反弹",
+    [
+     "pos",
+     "<b>Barclays</b>：《Time to think about the 20-year》——20y 相对腹部结构性便宜；<b>160 亿新发中标 5.459%</b>，比 10 月纪录还低 1bp，间接投标 60.2%"
+    ],
+    [
+     "neg",
+     "<b>JPM</b>：20y 的穿价与 10y 连续 tail（17 次中 15 次）同时存在，说明是「稀缺性买盘」而不是「配置买盘」，一旦避险退潮会反向"
+    ],
+    [
+     "fact",
+     "20s30s 约 16bp；10s20s 尚未压缩；MS 记录实钱买 10y 以上、HF 用 ASW 做多 20y"
+    ],
+    [
+     "fact",
+     "分歧在「筹码」与「需求」：20y 的强来自没人卖，而不是有人想买"
+    ]
+   ]
+  ]
+ },
+ "noCoverage": [
+  "日本 JGB 曲线与 20 年期拍卖（仅 GS 一句提及）",
+  "欧洲 HY 二级成交明细（仅 Citi 一行数据）",
+  "CLO / 非 QM / CMBS 一级定价（无当日更新）",
+  "美国市政债与 MBS 提前还款模型（无当日更新）",
+  "中国 HY / 地产债二级（仅从 Lai Sun 侧反映）",
+  "印度非银与东南亚银行二级（仅 Jefferies 一句）",
+  "拉美本币债与 CEEMEA 主权（仅 EM 违约率层面）",
+  "股票与商品（有价格，无券商独立观点）"
+ ],
+ "footer": {
+  "source": "数据来源：J.P. Morgan（US Treasury Market Daily《Waller deadlifts the front end》、Credit Daily、APAC Credit Roundup、HG Retail）；Morgan Stanley（UST overnight 11/18、Global Macro Commentary 11/18、US IG Trading Commentary、IG New Issue）；Goldman Sachs（Futures Sydney Morning、Asia Macro Recap、高盛晨报、EM Market Outlook 2027、Global Credit Recap）；Barclays（US Treasury Market Daily、Macro Daily、Credit & Securitized、UK CPI）；Citi（While You Were Sleeping 18 Nov、IG Credit、Global Quant Macro Strategy）；Deutsche Bank（Early Morning Reid 11/18）；BofA Global Research（HG Retail）；BMO Capital Markets（TIPS/ZCIS EOD）；Jefferies（ASIA JP/AU/KR IG EOD）；Nomura（Daily Wrap 11/18）。",
+  "note": "<b>数据说明</b>：本批窗口 11/18 08:00→11/19 08:00，原始 108 封、去重保留 86 封、相关 26 封；11/19 批次为补跑，与 11/20 批次同源拆分。表格中 fact 为客观数据或原文事实，pos/neg/neu 为券商观点方向；数字以原文为准。",
+  "disclaimer": "本页为卖方研究要点摘录与结构化整理，非投资建议。"
+ }
+}
+// ==================== 2026-11-20 ====================
+REPORT_DATA["2026-11-20"] = {
+ "dateCN": "2026年11月20日 星期五",
+ "theme": "11/19 是这轮下跌的<b>性质变化日</b>。<b>标普 -2.0%、纳指 -2.3%</b>，连续<b>第六个下跌日</b>并收于 4 月以来最低，VIX 冲上 <b>28.44（+15.8%）</b>。关键在结构：股票与信用同跌、EMFX 明显承压，而国债只是<b>小幅牛陡</b>（2y -4.2bp、10y -2.2bp 至 5.05%、30y -0.5bp）——这不是避险买盘主导，而是<b>风险平仓</b>主导。MS 的成交记录最清楚：RM 在互换里<b>收固息</b>、FM <b>清掉利差多头</b>、RM 在腹部抄底；JPM 的 5y <b>-3bp 至 4.86%</b> 说明腹部是主战场。唯一被真正抢的是实际收益率：<b>190 亿 10y TIPS 中标 2.903%</b>，比发行前低 <b>0.1bp</b>，B/C 2.43、间接投标 <b>68.6%</b>——恐慌时资金买的是 TIPS，不是名义久期。Fed 口径被纪要与表态双重确认：10 月纪要显示<b>几乎全体认为还需进一步加息</b>，12 月与 1 月各 25bp，<b>少数几位提到大于 25bp 的步子也可能合适</b>；GS 的标题是《Taking a short break》，Barclays 读成「暂停后继续」。日内表态更鹰：<b>Goolsbee</b> 说所有选项都在桌上、不为大于常规的步子设限；<b>Barr</b> 说可能还需进一步调整。但互换市场只给 12 月<b>极小的 50bp 概率</b>——口头鹰派与定价鹰派之间的缺口，是本周最重要的不对称。数据却在递鸽派弹药：<b>Philly Fed 6.3（预期 20.1）</b>、初请 203k、KC Fed 18、LEI -0.3%。信用第一次真正跟跌：IG 指数 <b>62.524（+2.01）</b>、利差<b>走宽 2-4bp</b>，HY 105.181（-0.357）；同时一级仍在放量——单日 <b>152 亿</b>（BSC 30 亿四部分、Smurfit 15 亿、ANZ 30 亿、Citi 65 亿），周内 457 亿，<b>一级强、二级弱</b>是晚周期的标准形态。外汇出现本轮第一个「降息定价」的发达市场：澳洲 10 月就业疲弱，<b>AUD -0.8%</b> 为 G10 最弱，澳洲 <b>3y -16bp</b>（2025 年 5 月以来最大）、10y -11.5bp，RBA 降息被重新定价。供给叙事被 JPM 推迟：距 41.1 万亿上限还有 <b>6400 亿</b>，约束时点在 <b>2027 年 2 月下旬</b>，DISP 下 X-date 约 <b>2027 年 11 月</b>，TGA 释放让 1H27 资金面宽松、万亿净短债供给被推到下半年。英国是唯一通胀降温的市场：10 月 CPI <b>3.6%</b>（+0.1pp，低于追踪值 0.1），Barclays 预测 3.2%/3.3%/1.7%（26/27/28 年）。中国的叙事转向「二元化」：APEC 习特会晤、2027 年先进制造强而地产消费弱、潜在债券税制调整仍在讨论。",
+ "meta": "覆盖券商：Morgan Stanley（UST overnight 11/19、Global Macro Commentary 11/19、IG Trading、CLO）；J.P. Morgan（Fixed Income Daily 20 Nov、US Treasury Daily、Debt Ceiling（Jay Barry）、EM Corporate Coverage）；Goldman Sachs（FOMC Commentary《Taking a short break》、Futures Sydney Morning、Asia Macro Recap、高盛晨报、Global Credit Recap、CAS MtM）；Barclays（Global Outlook 2027《A correction, not a collapse》、Macro Daily、Credit Daily、UK CPI）；Citi（While You Were Sleeping 20 Nov、IG Credit 11.19、Global Macro Trade Ideas Radar）；Deutsche Bank（Early Morning Reid 11/20）；BMO Capital Markets（TIPS/ZCIS、SSA New Issue）；Jefferies（ASIA JP/AU/KR IG EOD）；Nomura（Asia Credit 跟踪）。抓取口径：窗口 11/19 08:00→11/20 10:00，原始 108 封、去重保留 <b>100</b> 封、相关 <b>30</b> 封；同步已前置执行（11/19 因本地缓存未同步漏跑，本批已补齐两个交易日）。",
+ "brokers": [
+  {
+   "n": "MS",
+   "c": "b-ms"
+  },
+  {
+   "n": "GS",
+   "c": "b-gs"
+  },
+  {
+   "n": "JPM",
+   "c": "b-jpm"
+  },
+  {
+   "n": "BofA",
+   "c": "b-bofa"
+  },
+  {
+   "n": "DB",
+   "c": "b-db"
+  },
+  {
+   "n": "Citi",
+   "c": "b-citi"
+  },
+  {
+   "n": "Barclays",
+   "c": "b-barc"
+  },
+  {
+   "n": "BMO",
+   "c": "b-bmo"
+  },
+  {
+   "n": "JEF",
+   "c": "b-jeff"
+  },
+  {
+   "n": "Nomura",
+   "c": "b-nom"
+  }
+ ],
+ "markets": [
+  {
+   "id": "us-rates",
+   "pri": true,
+   "title": "美国利率：风险平仓驱动牛陡，唯一被抢的是 TIPS",
+   "summary": "一句话：<b>股票跌 2%、30y 只跌 0.5bp——没有人为避险拉久期</b>。MS：2y -4.2bp、10y -2.2bp 至 5.05%、30y -0.5bp；RM 在互换中<b>收固息</b>、FM <b>清掉利差多头</b>、RM 在腹部抄底；网络攻击与芯片出口管制是新的风险源。JPM：5y -3bp 至 4.86%、10y -2bp 至 5.04%、30y -1bp 至 5.40%；债务上限约束在 <b>2027 年 2 月下旬</b>、X-date 约 <b>2027 年 11 月</b>，TGA 释放使 1H27 资金面宽松。GS：《Taking a short break》——几乎全体认为还需加息、12 月与 1 月各 25bp、少数几位提到可能大于 25bp；10y 有望一年内 <b>29 次</b>收在 5% 以上，为 2007 年以来最多。Barclays：纪要是「暂停后继续」，全球展望是《A correction, not a collapse》。Citi：互换市场只给 12 月极小的 50bp 概率。BMO：TIPS 穿价验证 BE 触底。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "久期观点",
+    "曲线观点",
+    "美联储观点",
+    "核心逻辑",
+    "交易建议"
+   ],
+   "cols": [
+    "88px",
+    "24%",
+    "13%",
+    "13%",
+    "16%",
+    "18%",
+    "16%"
+   ],
+   "rows": [
+    [
+     "MS",
+     [
+      "fact",
+      "2y <b>-4.2bp</b>、10y -2.2bp 至 5.05%、30y -0.5bp；标普 -2.0%、纳指 -2.3%、VIX <b>28.44</b>（+15.8%）"
+     ],
+     [
+      "pos",
+      "牛陡，久期需求在腹部而非长端"
+     ],
+     [
+      "pos",
+      "牛陡取代前一日牛平"
+     ],
+     [
+      "neg",
+      "风险源转向网络攻击与芯片管制"
+     ],
+     [
+      "neu",
+      "风险平仓而非避险，债券不替股票定价衰退"
+     ],
+     [
+      "act",
+      "腹部久期；30y 不追"
+     ]
+    ],
+    [
+     "JPM",
+     [
+      "fact",
+      "5y -3bp 至 4.86%、10y -2bp 至 5.04%、30y -1bp 至 5.40%；Brent +0.8% 至 92.66"
+     ],
+     [
+      "pos",
+      "腹部是主战场"
+     ],
+     [
+      "neu",
+      "5s30s 平坦"
+     ],
+     [
+      "neg",
+      "债务上限约束在 2027 年 2 月，供给压力后移"
+     ],
+     [
+      "pos",
+      "1H27 资金面宽松、万亿净短债推到下半年"
+     ],
+     [
+      "act",
+      "5y 多头；做多 1H27 资金面"
+     ]
+    ],
+    [
+     "GS",
+     [
+      "fact",
+      "10 月纪要：几乎全体认为还需加息、12 月与 1 月各 25bp、少数几位提到可能大于 25bp；Philly Fed 6.3（预期 20.1）、初请 203k、LEI -0.3%"
+     ],
+     [
+      "neu",
+      "暂歇而非结束，前端下行空间被锁"
+     ],
+     [
+      "neu",
+      "曲线随数据走"
+     ],
+     [
+      "neg",
+      "《Taking a short break》——休息是为了继续"
+     ],
+     [
+      "neg",
+      "纪要给了 50bp 一个官方出处"
+     ],
+     [
+      "act",
+      "不追前端多头；等 12 月会议"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "2027 展望《A correction, not a collapse》：AI 踉跄而非破裂；英国 10 月 CPI 3.6%"
+     ],
+     [
+      "neu",
+      "谨慎建设性，久期中性"
+     ],
+     [
+      "neu",
+      "曲线取决于供给节奏"
+     ],
+     [
+      "neg",
+      "暂停后继续，12 月与 1 月各 25bp"
+     ],
+     [
+      "pos",
+      "调整而非崩塌，信用下限清晰"
+     ],
+     [
+      "act",
+      "中性久期 + 信用精选"
+     ]
+    ],
+    [
+     "Citi",
+     [
+      "fact",
+      "互换市场只给 12 月极小的 <b>50bp</b> 概率；Goolsbee 不设限、Barr 进一步调整"
+     ],
+     [
+      "neu",
+      "路径仍是 25bp 分期"
+     ],
+     [
+      "neu",
+      "曲线由前端定价主导"
+     ],
+     [
+      "neg",
+      "口头鹰派与定价鹰派的缺口"
+     ],
+     [
+      "neg",
+      "缺口以「前端补跌 + 曲线走平」收敛的概率更高"
+     ],
+     [
+      "act",
+      "买前端波动率而非方向"
+     ]
+    ],
+    [
+     "BMO",
+     [
+      "fact",
+      "190 亿 10y TIPS 中标 <b>2.903%</b>、穿价 0.1bp、B/C 2.43、间接 <b>68.6%</b>"
+     ],
+     [
+      "pos",
+      "实际收益率是唯一有多头共识的品种"
+     ],
+     [
+      "pos",
+      "实际收益率下行 + BE 稳定"
+     ],
+     [
+      "neu",
+      "与 25bp 步长一致"
+     ],
+     [
+      "pos",
+      "恐慌时买 TIPS，验证 BE 已触底"
+     ],
+     [
+      "act",
+      "持有 10y TIPS 多头"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "europe-uk",
+   "pri": true,
+   "title": "欧洲与英国：Bund 熊平跑输美债 2.7bp，英国 CPI 降温却仍是 Gilt 熊平",
+   "summary": "一句话：<b>欧洲的熊平与英国的通胀降温同时出现——主导变量是全球利率，不是本地通胀</b>。GS：Bunds <b>熊平 +3.1bp</b>、跑输 UST <b>2.7bp</b>，OAT/Bund 走宽 <b>2.2bp</b>；Gilts 同样熊平、<b>UK 2y +3.5bp</b>——在英国 CPI 低于追踪值的同一天，前端还在被卖。Barclays：英国 10 月 CPI <b>3.6%</b>（低于追踪值 0.1pp），预测 3.2%/3.3%/1.7%（2026/27/28 年），但 2027 展望仍是《A correction, not a collapse》，OW 股票 over 债券。MS：Bloomberg dollar 触及 <b>2025 年 4 月以来高位</b>（DXY 103.93、+0.1%），GBP <b>-0.5%</b>、USD/JPY 逼近 <b>160</b>——美元虹吸盖过了欧洲本地通胀的利好。GS 另记丹麦批准格陵兰安全协议，欧洲的地缘溢价没有消退。交易含义：<b>通胀降温不能阻止 Gilt 熊平</b>，说明这轮欧洲利率的方向由美债与美元决定；相对价值应该做「Bund vs UST」而不是做「Gilt vs CPI」。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "德债观点",
+    "曲线观点",
+    "ECB观点",
+    "核心逻辑",
+    "交易建议"
+   ],
+   "cols": [
+    "88px",
+    "24%",
+    "13%",
+    "13%",
+    "16%",
+    "18%",
+    "16%"
+   ],
+   "rows": [
+    [
+     "GS",
+     [
+      "fact",
+      "Bunds 熊平 <b>+3.1bp</b>、跑输 UST 2.7bp；OAT/Bund +2.2bp；Gilts 熊平、UK 2y <b>+3.5bp</b>；丹麦批准格陵兰安全协议"
+     ],
+     [
+      "neg",
+      "德债熊平且跑输美债"
+     ],
+     [
+      "neg",
+      "熊平来自全球利率而非本地增长"
+     ],
+     [
+      "neu",
+      "ECB 路径无新增信息"
+     ],
+     [
+      "neg",
+      "美债与实际收益率虹吸欧洲久期"
+     ],
+     [
+      "act",
+      "做多 Bund vs UST 相对价值"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "英国 10 月 CPI <b>3.6%</b>（低于追踪 0.1pp）；预测 3.2%/3.3%/1.7%（26/27/28 年）；2027 展望 OW 股票 over 债券"
+     ],
+     [
+      "pos",
+      "英国通胀路径下移"
+     ],
+     [
+      "neg",
+      "但 Gilt 仍熊平，前端压力最大"
+     ],
+     [
+      "neu",
+      "ECB 与 BoE 的分化在扩大"
+     ],
+     [
+      "pos",
+      "通胀降温 + 增长疲弱，BoE 有退坡空间"
+     ],
+     [
+      "act",
+      "2y Gilt 相对价值的偏多腿"
+     ]
+    ],
+    [
+     "MS",
+     [
+      "fact",
+      "Bloomberg dollar 触及 <b>2025 年 4 月以来高位</b>（DXY 103.93、+0.1%）；GBP -0.5%；USD/JPY 逼近 <b>160</b>"
+     ],
+     [
+      "neu",
+      "欧洲利率被美元与商品两头拉扯"
+     ],
+     [
+      "neu",
+      "EUR 曲线跟随美债"
+     ],
+     [
+      "neu",
+      "ECB 相对被动"
+     ],
+     [
+      "neg",
+      "美元虹吸盖过本地通胀利好"
+     ],
+     [
+      "act",
+      "多 USD、空 EUR/GBP 交叉盘"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "us-credit",
+   "pri": true,
+   "title": "美国信用：第一次真正跟跌——指数走宽 2-3bp，一级反而放量 152 亿",
+   "summary": "一句话：<b>一级强、二级弱，是晚周期信用最标准的形态</b>。JPM：IG <b>+2/3bp 至 62.5</b>、HY <b>105.2</b>；PT channel dealers 净卖出 <b>36 亿</b>，卖盘集中在 <b>3-7y 与 7-12y</b>；一级 <b>152 亿</b>（Citi 65 亿、Boston Scientific 30 亿、ANZ 30 亿、Smurfit Westrock 15 亿），压缩 25-30bp；HG 基金流出 <b>16 亿</b>。Citi：<b>TMT +3/+20</b>，SPX 盘中 3% 反转带动 beta 走宽，指数 +2bp 至 <b>+93bp 的年内最宽</b>；市场从「只卖 TMT」转向「卖其他板块」。MS：IG 指数 <b>62.524（+2.01 tick）</b>、利差走宽 2-4bp，HY <b>105.181（-0.357）</b>。BofA：10 月中型企业盈利增长转负、小企业持平；油价相关成本 <b>同比 +20%</b>（农业、建筑、运输仓储最重）；<b>关税退款缓冲减弱</b>，成本压力开始进 margins。Barclays：仍 OW 股票 over 债券，但把 <b>WMT 降至 UW</b>（capex 走高 + 库存拖累 FCF）、HD/LOW 估值贵。交易含义：<b>供给能发出去，但发出去之后在二级被卖</b>——这是 12 月供给回归前的领先信号。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "基本面观点",
+    "估值/利差观点",
+    "Technical/资金面",
+    "整体观点",
+    "偏好/风险"
+   ],
+   "cols": [
+    "88px",
+    "20%",
+    "15%",
+    "14%",
+    "14%",
+    "19%",
+    "18%"
+   ],
+   "rows": [
+    [
+     "JPM",
+     [
+      "fact",
+      "IG <b>+2/3bp 至 62.5</b>、HY 105.2；PT dealers 净卖 <b>36 亿</b>，卖盘集中 3-7y/7-12y；一级 <b>152 亿</b>（Citi 65/BSX 30/ANZ 30/Smurfit 15）；HG 基金流出 16 亿"
+     ],
+     [
+      "neu",
+      "盈利仍有韧性"
+     ],
+     [
+      "neg",
+      "利差从年内最紧位置回撤"
+     ],
+     [
+      "neg",
+      "做市商净卖出、库存向客户转移"
+     ],
+     [
+      "neg",
+      "一级强、二级弱，晚周期标准形态"
+     ],
+     [
+      "act",
+      "减 3-7y 与 7-12y；新发只打折扣盘"
+     ]
+    ],
+    [
+     "Citi",
+     [
+      "fact",
+      "TMT <b>+3/+20</b>；SPX 盘中 3% 反转带动 beta 走宽；指数 +2bp 至 <b>+93bp 的年内最宽</b>"
+     ],
+     [
+      "neu",
+      "AI 资本开支的融资需求仍是主线"
+     ],
+     [
+      "neg",
+      "年内最宽，风险补偿开始重建"
+     ],
+     [
+      "neg",
+      "卖压从 TMT 扩散到其他板块"
+     ],
+     [
+      "neg",
+      "「只卖 TMT」已变成「卖信用」"
+     ],
+     [
+      "act",
+      "UW TMT 长端；用指数对冲"
+     ]
+    ],
+    [
+     "MS",
+     [
+      "fact",
+      "IG 指数 <b>62.524（+2.01）</b>、利差走宽 2-4bp；HY <b>105.181（-0.357）</b>"
+     ],
+     [
+      "neu",
+      "基本面未恶化"
+     ],
+     [
+      "neg",
+      "走宽 2-4bp，是本轮首次真正跟跌"
+     ],
+     [
+      "neg",
+      "成交放大但方向单一"
+     ],
+     [
+      "neg",
+      "信用开始替股票定价风险"
+     ],
+     [
+      "act",
+      "降低 beta；保留高等级短端"
+     ]
+    ],
+    [
+     "BofA",
+     [
+      "fact",
+      "10 月中型企业盈利增长转负、小企业持平；油价相关成本 <b>同比 +20%</b>（农业/建筑/运输仓储最重）；关税退款缓冲减弱"
+     ],
+     [
+      "neg",
+      "中型企业盈利转负"
+     ],
+     [
+      "neg",
+      "成本压力进入 margins"
+     ],
+     [
+      "neg",
+      "缓冲垫（关税退款）在变薄"
+     ],
+     [
+      "neg",
+      "成本冲击从一次性转为结构性"
+     ],
+     [
+      "act",
+      "UW 运输仓储与建筑；偏好轻资产"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "维持 OW 股票 over 债券、buy dollar on dips；<b>WMT 降至 UW</b>（capex 走高 + 库存拖累 FCF）、HD/LOW 估值贵"
+     ],
+     [
+      "neu",
+      "零售基本面分化"
+     ],
+     [
+      "neg",
+      "WMT 的 FCF 被 capex 与库存挤压"
+     ],
+     [
+      "neu",
+      "配置从防御性消费转向其他板块"
+     ],
+     [
+      "neu",
+      "调整而非崩塌，信用下限清晰"
+     ],
+     [
+      "act",
+      "UW WMT；HD/LOW 不追高"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "asia-credit",
+   "pri": true,
+   "title": "亚洲信用：利差基本不动，但资金在 AT1 与 TLAC 上做多",
+   "summary": "一句话：<b>指数不动、结构在动——AT1 回升 25-35c，是这几天亚洲最干净的买盘</b>。JEF：亚洲 IG spreads <b>基本不变至 1bp 更紧</b>，但 hybrid insurance 与 bank AT1 的现金价<b>回升 25-35c</b>；日本银行 senior/TLAC 的 RM <b>全曲线买入</b>（lifer/CB 买长端、银行账户加 3-5y OPCO）；澳元 5y senior 因 ANZ 新发被卖出、<b>T2 反而有买盘</b>，spreads 试图恢复。Citi：<b>JABTOP</b> 俄罗斯业务 deconsolidation——非现金 <b>¥1.38tn（86 亿美元）</b>减值、全年转亏，dividend <b>-25%</b>、payout 降至 <b>70% 下限</b>；但 2027-29 Adj op profit <b>>10% CAGR</b> 是 credit positive，Citi 认为 <b>spread 应收紧</b>。JPM：亚洲 TMT 3Q 分化——<b>Lenovo</b> non-GAAP NP <b>+166%</b> 至 13.6 亿美元（beat 12%）、server revenue <b>+178%</b>；<b>BABA</b> 云收入 <b>+64%</b> 至 470 亿人民币；<b>NTES</b> 3Q miss，Ananta 定档 2027/1/15。CA：EM 情绪低迷，Anthropic IPO 的提振有限；compute restrictions + Nvidia saga 拖累亚洲（台湾 <b>-4%</b>）、铜价大跌——「<b>A rising tide no longer lifts all boats</b>」，亚洲与美国股市分歧在扩大。交易含义：<b>利差不动时的结构性买盘，比指数方向更有信息量</b>——AT1 与 TLAC 是这轮防御的位置。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "基本面观点",
+    "估值/利差观点",
+    "Technical/资金面",
+    "整体观点",
+    "偏好/风险"
+   ],
+   "cols": [
+    "88px",
+    "20%",
+    "15%",
+    "14%",
+    "14%",
+    "19%",
+    "18%"
+   ],
+   "rows": [
+    [
+     "JEF",
+     [
+      "fact",
+      "亚洲 IG spreads 基本不变至 <b>1bp 更紧</b>；hybrid insurance + bank AT1 现金价回升 <b>25-35c</b>；澳元 5y senior 因 ANZ 新发被卖出、T2 有买盘"
+     ],
+     [
+      "pos",
+      "银行与保险资本工具的需求稳定"
+     ],
+     [
+      "pos",
+      "AT1 折价修复是最确定的相对价值"
+     ],
+     [
+      "pos",
+      "日本银行 TLAC 全曲线买入、澳洲 T2 有承接"
+     ],
+     [
+      "pos",
+      "指数不动、结构在改善"
+     ],
+     [
+      "act",
+      "OW 亚洲 AT1 与日本 TLAC 长端；澳元 5y 等新发消化"
+     ]
+    ],
+    [
+     "Citi",
+     [
+      "fact",
+      "<b>JABTOP</b> 俄罗斯业务 deconsolidate、非现金 <b>¥1.38tn（86 亿美元）</b>减值、全年转亏；dividend -25%、payout 降至 70% 下限"
+     ],
+     [
+      "pos",
+      "减值是非现金，现金流未受损"
+     ],
+     [
+      "pos",
+      "spread 应收紧（Citi 观点）"
+     ],
+     [
+      "neu",
+      "派息削减反而是资本留存"
+     ],
+     [
+      "pos",
+      "2027-29 Adj op profit >10% CAGR 为 credit positive"
+     ],
+     [
+      "act",
+      "OW JABTOP 中长端"
+     ]
+    ],
+    [
+     "JPM",
+     [
+      "fact",
+      "Lenovo non-GAAP NP <b>+166%</b> 至 13.6 亿美元（beat 12%）、server revenue +178%；BABA 云 +64% 至 470 亿人民币；NTES 3Q miss、Ananta 2027/1/15"
+     ],
+     [
+      "pos",
+      "AI 服务器需求仍在兑现到收入"
+     ],
+     [
+      "neu",
+      "名字分化大于板块"
+     ],
+     [
+      "pos",
+      "科技名字的一级与二级需求集中"
+     ],
+     [
+      "pos",
+      "基本面兑现者仍有超额"
+     ],
+     [
+      "act",
+      "OW Lenovo/BABA；NTES 观望"
+     ]
+    ],
+    [
+     "CA",
+     [
+      "fact",
+      "EM 情绪低迷、Anthropic IPO 提振有限；compute restrictions + Nvidia saga 拖累亚洲（台湾 <b>-4%</b>）、铜价大跌；SARB 维持 7.25%"
+     ],
+     [
+      "neg",
+      "亚洲增长动能被科技周期拖累"
+     ],
+     [
+      "neg",
+      "亚洲 vs 美国股市分歧扩大"
+     ],
+     [
+      "neg",
+      "EM 资金连续流出"
+     ],
+     [
+      "neg",
+      "「涨潮不再抬起所有船」"
+     ],
+     [
+      "act",
+      "UW 亚洲高 beta；保留主权短端"
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "china-rates",
+   "pri": false,
+   "title": "中国：10 月数据全面低于预期，政策脉冲的时滞被低估",
+   "summary": "一句话：<b>不是需求没了，是政策资金到得慢</b>。Citi：10 月<b>消费、投资、工业产出全部低于预期</b>，归因<b>政策资金落地慢</b>与<b>消费补贴提前透支</b>；判断 11-12 月投资<b>边际改善</b>、零售<b>反弹空间有限</b>。GS：数据确认政策脉冲在衰减，12 月中央经济工作会议的对冲力度（准财政 + 降准）是下一个定价点；在此之前长端缺乏方向，短端受资金面支撑。Barclays：政策对冲必要性上升，但在关税与内需两个不确定之间，配置盘倾向<b>短久期 + 高等级</b>。交易含义：<b>数据弱但不等于立刻宽松</b>——政策时滞意味着曲线先「短端稳、长端等」，真正的方向要等会议给出财政数字。",
+   "headers": [
+    "券商",
+    "市场数据/表现",
+    "国债方向",
+    "曲线观点",
+    "央行观点",
+    "核心逻辑",
+    "交易建议"
+   ],
+   "cols": [
+    "88px",
+    "24%",
+    "13%",
+    "13%",
+    "16%",
+    "18%",
+    "16%"
+   ],
+   "rows": [
+    [
+     "Citi",
+     [
+      "fact",
+      "10 月消费/投资/工业产出<b>全部低于预期</b>；政策资金落地慢 + 消费补贴提前透支"
+     ],
+     [
+      "neu",
+      "数据弱，但归因是节奏不是趋势"
+     ],
+     [
+      "neu",
+      "短端受资金面支撑、长端等政策"
+     ],
+     [
+      "pos",
+      "宽松空间仍在"
+     ],
+     [
+      "neg",
+      "政策脉冲的时滞被低估"
+     ],
+     [
+      "act",
+      "短久期 + 等财政数字"
+     ]
+    ],
+    [
+     "GS",
+     [
+      "fact",
+      "数据确认政策脉冲衰减；12 月中央经济工作会议是对冲力度的定价点"
+     ],
+     [
+      "neu",
+      "长端缺方向"
+     ],
+     [
+      "neu",
+      "曲线先短端稳、长端等"
+     ],
+     [
+      "pos",
+      "准财政 + 降准是可选工具"
+     ],
+     [
+      "neu",
+      "基本面与政策之间的缺口在扩大"
+     ],
+     [
+      "act",
+      "持有 5y 以内；长端等会议"
+     ]
+    ],
+    [
+     "Barclays",
+     [
+      "fact",
+      "政策对冲必要性上升；关税与内需两个不确定并存"
+     ],
+     [
+      "neu",
+      "外需不确定、内需偏弱"
+     ],
+     [
+      "neu",
+      "曲线形态取决于财政而非货币"
+     ],
+     [
+      "pos",
+      "宽松空间大"
+     ],
+     [
+      "neu",
+      "不确定期内配置偏短久期高等级"
+     ],
+     [
+      "act",
+      "短久期 + 高等级"
+     ]
+    ]
+   ]
+  }
+ ],
+ "divergences": {
+  "headers": [
+   "议题",
+   "偏多一方（依据）",
+   "偏空一方（依据）",
+   "数据证据",
+   "分歧本质"
+  ],
+  "cols": [
+   "88px",
+   "23%",
+   "23%",
+   "28%",
+   "18%"
+  ],
+  "rows": [
+   [
+    "六连跌是 AI 泡沫破裂，还是仓位清洗",
+    [
+     "pos",
+     "<b>Barclays</b>：《A correction, not a collapse》——AI stumbled not broken，增长韧、盈利强、compute 供给受限，2027 前 <b>cautiously constructive</b>、OW 股票 over 债券"
+    ],
+    [
+     "neg",
+     "<b>MS</b>：record-negative dealer gamma <b>放大波动</b>，AI 信心消退 + 网络攻击 + Medicare audits；<b>CA</b>：「A rising tide no longer lifts all boats」，台湾 -4%"
+    ],
+    [
+     "fact",
+     "S&P <b>-2.0% 至 7175</b>（4 月以来最低）、纳指 -2.3%、VIX <b>28.44（+15.8%）</b>；六连跌为 2024 年来最长，<b>11 个板块全跌</b>；GS：AI Semis -2.91%、Data Center -2.29%"
+    ],
+    [
+     "fact",
+     "分歧在「倍数 vs 现金流」：跌的是估值还是盈利，决定这轮是调整还是拐点"
+    ]
+   ],
+   [
+    "避险买盘能覆盖多少鹰派 Fed",
+    [
+     "pos",
+     "<b>MS/GS</b>：bull-steepening，2y <b>-4.2/-4.5bp</b>、10y 5.04-5.05%、30y -0.5bp；<b>190 亿 10y TIPS 穿价 0.1bp</b>、间接 68.6%"
+    ],
+    [
+     "neg",
+     "<b>Goolsbee</b> 称 12 月 all options、不排除 larger hike；<b>Barr</b> 称或需 further adjustments；<b>Jefferson</b> 称 AI 推升通胀；Barclays 维持 12 月 + 1 月各 25bp"
+    ],
+    [
+     "fact",
+     "2y 4.76%、5y 4.86%、10y 5.04%、30y 5.40%；Philly Fed <b>6.3（预期 20.1）</b>、初请 203k、续请 +70k、LEI -0.3%；swaps 对 12 月 50bp 仅极小概率"
+    ],
+    [
+     "fact",
+     "分歧在「话语 vs 定价」：曲线用牛陡回答，前端不给鹰派让路"
+    ]
+   ],
+   [
+    "信用：一级强还是二级弱",
+    [
+     "pos",
+     "<b>JPM</b>：一级 <b>152 亿</b>（Citi 65/BSX 30/ANZ 30/Smurfit 15）、压缩 25-30bp，需求承接顺畅；<b>JEF</b>：亚洲 IG 1bp 更紧、AT1 回升 25-35c"
+    ],
+    [
+     "neg",
+     "<b>JPM</b>：IG <b>+2/3bp 至 62.5</b>、PT dealers 净卖 36 亿、HG 基金流出 16 亿；<b>Citi</b>：TMT +3/+20、指数 <b>+93bp 的年内最宽</b>；<b>MS</b>：HY 105.181（-0.357）"
+    ],
+    [
+     "fact",
+     "一级 152 亿为周内 457 亿的一部分；IG 指数 62.524（+2.01）、利差走宽 2-4bp；$308bn JULI 债 <$60（TMT 占 57%）"
+    ],
+    [
+     "fact",
+     "分歧在「谁在接盘」：发行能发出去，但发出去之后在二级被卖"
+    ]
+   ]
+  ]
+ },
+ "noCoverage": [
+  "日本 JGB 曲线细节与 20 年期（仅 MS 一段 bull-flattening 描述）",
+  "欧洲 HY 与 CLO / 非 QM 一级（无当日更新）",
+  "美国市政债与 MBS 提前还款模型（无当日更新）",
+  "中国 HY / 地产债二级（无当日独立更新）",
+  "印度非银与东南亚银行二级（仅 Jefferies 一句）",
+  "拉美本币债与 CEEMEA 主权（仅 SARB / Banxico 层面）",
+  "澳洲银行 T2 的成交明细（仅 Jefferies 定性）",
+  "股票与商品的券商独立策略（有价格，无当日专题）"
+ ],
+ "footer": {
+  "source": "数据来源：Morgan Stanley（UST overnight 11/19、Global Macro Commentary 11/19、《The Bear Case for 2027》、IG Trading、CLO）；Goldman Sachs（FOMC Commentary《Taking a short break》、US Treasury Market Daily、Futures Sydney Morning、Asia Macro Recap、Global Credit Recap）；J.P. Morgan（Fixed Income Daily 20 Nov、US Treasury Market Daily、Debt Ceiling（Jay Barry）、High Grade Spotlight、EM Corporate Coverage）；Citi（While You Were Sleeping 20 Nov、IG Credit 11.19、JABTOP 俄罗斯 deconsolidation）；Barclays（Global Outlook 2027《A correction, not a collapse》、《Still standing》、UK CPI、Macro Daily）；Deutsche Bank（Early Morning Reid 11/20）；BofA Global Research（Middle Market Monitor）；BMO Capital Markets（TIPS/ZCIS EOD、SSA New Issue）；Jefferies（ASIA JP/AU/KR IG EOD）；Crédit Agricole（EM & Asia Cross Asset）；Nomura（Asia Credit 跟踪）。",
+  "note": "<b>数据说明</b>：本批窗口 11/19 08:00→11/20 10:00，原始 108 封、去重保留 100 封、相关 30 封；11/19 因本地缓存未同步漏跑，已随本批补跑（见 11/19 页）。表格中 fact 为客观数据或原文事实，pos/neg/neu 为券商观点方向；个别数字在不同券商口径下略有差异（如 10y 5.04% 与 5.05%），以原文为准。",
+  "disclaimer": "本页为卖方研究要点摘录与结构化整理，非投资建议。"
+ }
 };
+;
+;
 ;
 ;
 ;
