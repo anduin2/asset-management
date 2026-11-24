@@ -72,10 +72,10 @@ td.ak{width:12%;color:#333}
 <header class="top">
   <div>
     <h1>热门交易标的矩阵 <span class="dot">·</span> 交易台日报</h1>
-    <div class="sub" id="subline">数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情</div>
+    <div class="sub" id="subline">数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情</div>
   </div>
   <div class="datebox">
-    <div class="date"><span id="curdate">2026-11-23</span> <small id="curweek">Mon · 周一</small></div>
+    <div class="date"><span id="curdate">2026-11-24</span> <small id="curweek">Tue · 周二</small></div>
   </div>
 </header>
 
@@ -148,7 +148,8 @@ td.ak{width:12%;color:#333}
     <option value="2026-11-17">2026-11-17 周二</option>
     <option value="2026-11-18">2026-11-18 周三</option>
     <option value="2026-11-20">2026-11-20 周五</option>
-    <option value="2026-11-23" selected>2026-11-23 周一</option>
+    <option value="2026-11-23">2026-11-23 周一</option>
+    <option value="2026-11-24" selected>2026-11-24 周二</option>
   </select>
 </div>
 
@@ -56366,7 +56367,7 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
-<div class="day active" id="day-2026-11-23">
+<div class="day" id="day-2026-11-23">
 <!-- ============ 利率 · 美国（UST / 供给与数据） ============ -->
 <section>
   <div class="sec-head"><h2>利率 · 美国（UST / 供给与数据）</h2><span class="n">2 行</span><span class="src">01_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGLOBALRATESTRADER.txt</span></div>
@@ -57225,12 +57226,782 @@ td.ak{width:12%;color:#333}
 </section>
 </div>
 
+<div class="day active" id="day-2026-11-24">
+<!-- ============ 利率 · 美国（UST / 技术面 / 曲线 / TIPS） ============ -->
+<section>
+  <div class="sec-head"><h2>利率 · 美国（UST / 技术面 / 曲线 / TIPS）</h2><span class="n">4 行</span><span class="src">00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美国国债（UST）<span class="bond">2Y 拍卖 stop-through 0.3bp · 12 月定价 26bp 加息 · 全年 70bp</span><span class="istag">前端跑输、后端小涨</span></td>
+        <td class="lv">曲线熊平（前端跑输）· 互换利差随 risk-on 反弹、后端跑赢</td>
+        <td class="fl"><b>$69bn</b> 2 年期拍卖 stop 在 0.3bp through · 周二 <b>$70bn</b> 5 年期</td>
+        <td class="rv">波动率全线明显回落，3m10y 自周五高位回落</td>
+        <td class="cr">前端仍定价 26bp 加息、全年 70bp，前端是紧缩压力最集中的位置</td>
+        <td class="bk">GS（Asia Macro · Global Rates 台）</td>
+        <td class="ak">NVDA 头条 + $70bn 5Y 供给 + Fed 官员表态</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>GS 描述隔夜美债涨跌互现：前端跑输、后端小幅上涨，NVDA 头条后股市转 risk-on、部分避险买盘被解除；white/red SOFR 卖盘叠加一笔美国合约买盘令曲线趋平；互换利差在 risk-on 中反弹且后端跑赢；<b>690 亿美元</b> 2 年期拍卖顺利，stop 在 0.3bp through；曲面波动率明显回落。</div>
+        <div class="row"><span class="b">观点</span>GS 把 2 年拍卖顺利 + 波动率回落解读为「risk-on 回归后避险溢价消退」，而 Dec 26bp / 全年 70bp 的定价说明市场仍在押注紧缩，前端与后端的方向已经分叉。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "US rates closed the day mixed as the front-end underperformed but the back-end staged a small rally in a choppy session... The $69b 2y auction went smoothly, stopping 0.3bps through. Vol was sharply lower across the surface today with 3m10y pulling off of Fridays highs."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "The market is closing pricing 26bps of hikes in the December meeting, and 70bps of hikes into next year. Supply continues with a $70b 5y note auction."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美债 10Y / 20Y（Jefferies 技术面）<span class="bond">US10Y 100-09+/09 · 4.90% 阻力 · 20Y 已触及 5.35% 目标</span><span class="istag">逢回调加多</span></td>
+        <td class="lv">10Y 周五强反弹至 100-24 @4.9038%，回撤支撑 100-05/99-31（4.98%-5.00%）</td>
+        <td class="fl">——</td>
+        <td class="rv">20Y 需求区 99-15/13@5.42% 与 99-03/01@5.45%</td>
+        <td class="cr">AI 信用事件若爆发将大幅压低收益率（尾部风险），中期仍看收益率上行</td>
+        <td class="bk">Jefferies（技术策略）</td>
+        <td class="ak">回撤至 4.98%-5.00% 或 5.035% 加多</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Jefferies 给出具体技术位：10Y 周五强反弹至 100-24@4.9038%，回调至 100-05/99-31（4.98%-5.00%）或 99-23/25（5.035%）可加多；守住 99-12/07（5.08%-5.11%）上方则上行风险指向 100-31/101-01（4.87%）、101-09/11（4.83%）、101-16/19（4.81%-4.795%）；20Y 已触及 100-09/11@5.35% 目标、盘中高点 100-16，回撤需求区 99-15/13@5.42%、99-03/01@5.45%。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 中期仍看收益率上行，但把当前定性为「逆势修正」：策略是回调加多、涨到两码加息定价时减仓或反手做空。</div>
+        <div class="row"><span class="b">情绪底色</span>两向</div>
+        <div class="ev"><i>原文证据</i> "For now, our long-term call still favors higher yields, but an AI-driven credit unwind remains a tail risk that could materially change the yield roadmap and send Treasury yields sharply lower. Stay cautious."<span class="srcf">来源：01_mkt_FWmktrecapforFridayandOutlookforMonday.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "one potential strategy is to accumulate fixed income exposure as market pricing approaches an extreme of three or more hikes, then use any subsequent rally back toward a two-hike scenario to reduce exposure or tactically reverse into shorts."<span class="srcf">来源：01_mkt_FWmktrecapforFridayandOutlookforMonday.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美债 2s10s 曲线（Jefferies）<span class="bond">2s10s 区间 <b>+15bp / +45bp</b> · 现回到 20bp 低位区</span><span class="istag">陡峭化接近极限</span></td>
+        <td class="lv">2s10s 回到 20bp 低位区，部分扁平仓位被解除</td>
+        <td class="fl">——</td>
+        <td class="rv">预期转为区间震荡，不再看陡峭化延续</td>
+        <td class="cr">若再度过度陡峭，将择机重新建扁平仓位</td>
+        <td class="bk">Jefferies（技术策略）</td>
+        <td class="ak">2s10s 触及 +40~45bp 附近 → 建扁平</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Jefferies 表示早已修订曲线观点：陡峭化在年初已接近极限、不太可能显著延伸，预期 2s10y 在 <b>+15bp 至 +45bp</b> 的新区间内震荡；当 2s10s 回到 20bp 低位区时，部分扁平仓位被解除。</div>
+        <div class="row"><span class="b">观点</span>这是当日唯一明确给出曲线区间与操作触发点的观点：不是方向交易，而是在区间两端反向操作。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "we expect more range-bound trading, with the 2yr/10yr curve likely contained in a new range of approximately +15bp to +45bp. With the 2yr/10yr curve trading back toward the low 20bp area lured some unwinding of flattening positions."<span class="srcf">来源：01_mkt_FWmktrecapforFridayandOutlookforMonday.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美国 TIPS / 盈亏平衡通胀<span class="bond">BE 收低 <b>2-2.5bp</b> · 5y5y 远期约 <b>2.31%</b> · 油价 <b>-5%</b></span><span class="istag">股债背离、TIPS 无买盘</span></td>
+        <td class="lv">风险资产反弹（S&P +5%、Nasdaq +7%）而 BE 反而收低</td>
+        <td class="fl">——</td>
+        <td class="rv">5y5y 远期 2.31% 附近有零星逢跌买入，但不足以抵消卖压</td>
+        <td class="cr">感恩节临近流动性变薄，短期难言转向</td>
+        <td class="bk">BMO（TIPS 台）</td>
+        <td class="ak">BE 与股市「显著背离」；RM 与 FM 同时卖出</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>BMO 指出盈亏平衡通胀与股市出现显著背离：在风险资产反弹（S&amp;P +5%、Nasdaq +7%）的背景下 BE 仍收低 <b>2-2.5bp</b>，下午几乎无买盘；原油因供给前景强劲下跌 <b>5%</b>；资金面上 RM 与 FM 均在卖出 TIPS、并有部分资金流出。</div>
+        <div class="row"><span class="b">观点</span>BMO 认为当前水平「本应吸引买盘」，但假期前流动性变薄，短期未必能转向；情绪明显偏失望。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "Striking divergence between breakevens and equities today with breaks closing 2-2.5bp lower (and feeling quite bidless in the afternoon) despite the rebound in risk... Flow-wise, there was better selling in TIPS from RM and FM alike, including some outflows."<span class="srcf">来源：02_BMO_FWBMOTIPSENDOFDAYCOMMENTARY.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "These are levels that should certainly attract additional buying interest, but with the Thanksgiving holiday approaching and liquidity likely to thin, not sure we will turn the corner just yet."<span class="srcf">来源：02_BMO_FWBMOTIPSENDOFDAYCOMMENTARY.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 利率 · 欧元区与英国 ============ -->
+<section>
+  <div class="sec-head"><h2>利率 · 欧元区与英国</h2><span class="n">2 行</span><span class="src">00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">德国国债（Bund）<span class="bond">德综合 PMI <b>55.0</b>（四年多新高）· OAT/Bund <b>-7bp</b> · 法综合 PMI <b>46.2</b></span><span class="istag">油价下跌带动牛平</span></td>
+        <td class="lv">Bund 牛平；利差端 BTP/Bund 与 OAT/Bund 收紧</td>
+        <td class="fl">——</td>
+        <td class="rv">OAT/Bund 周五走阔 5bp 后收窄 7bp（马克龙「黄金规则」表态）</td>
+        <td class="cr">德 PMI 制造业产出 57.4 强劲，理论上压制久期，但当日由油价主导</td>
+        <td class="bk">GS（Asia Macro · Global Rates 台）</td>
+        <td class="ak">周二 IFO / 周三 GDP / 周四 ECB 纪要</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>GS 报 Bund 牛平、与油价下跌同步；更大的故事是利差：<b>BTP/Bund</b> 与 <b>OAT/Bund</b> 收紧，OAT/Bund 在周五走阔 5bp 后今日收窄 7bp，因马克龙表示将考虑采用「黄金规则」约束预算赤字。德国综合 PMI 意外上行 1.6pt 至 <b>55.0</b>（四年多最高），制造业产出 +2.0pt 至 57.4、服务业 +1.5pt 至 54.0；法国综合 PMI 连续第二月不及预期，-0.4pt 至 <b>46.2</b>；欧元区综合持平于 51.7、略低于预期。</div>
+        <div class="row"><span class="b">观点</span>GS 把德债上涨归因于油价，而德法 PMI 的剧烈分化把「核心强、外围弱」重新摆上台面——这恰是 OAT/Bund 走阔 5bp 后又因政治消息收窄 7bp 的背景。</div>
+        <div class="row"><span class="b">情绪底色</span>偏多</div>
+        <div class="ev"><i>原文证据</i> "In Europe Bunds bull flattened alongside a drop in oil prices. The bigger story though was the tightening in BTP/Bund and OAT/Bund spreads. After widening 5bps on Friday, OAT/Bunds tightened 7bps on news that President Emmanuel Macron said he would consider trying to adopt a golden rule to help rein in budget deficits."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">英国国债（Gilt）<span class="bond">英综合 PMI <b>52.3</b>（前 52.9）· gilt roll <b>-4/-3</b> · 已完成约 <b>58%</b></span><span class="istag">跑赢 Bund、BoE 鹰派压制</span></td>
+        <td class="lv">Gilt 牛平并跑赢 Bund，能源跌约 4% 是主因</td>
+        <td class="fl">周二 DMO <b>1.875% 2049</b> 通胀挂钩银团（估 £3-3.5bn）</td>
+        <td class="rv">gilt roll 盘中一度 -5、收在 -4/-3，剩余高峰在周二/周三，FND 周五 27 日</td>
+        <td class="cr">BoE 首席经济学家 Pill：为维持通胀信誉「现在就需要行动」</td>
+        <td class="bk">GS（Asia Macro · Global Rates 台）</td>
+        <td class="ak">周二 CBI 销售 + 银团定价</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Gilt 牛平并跑赢 Bund，因能源跌约 4%，且 BoE 首席经济学家 Pill 称英国经济在伊朗战争能源冲击下「意外有韧性」，但为维持通胀信誉现在就需要行动；英国 PMI 弱于预期：制造业 52.7（前 52.8）、服务业 52.0（前 52.8）、综合降 0.6pt 至 <b>52.3</b>（前 52.9）；gilt roll 盘中降至 -5 后收在 <b>-4/-3</b>，估计约 <b>58%</b> 仓位已完成。</div>
+        <div class="row"><span class="b">观点</span>数据走弱 + 能源回落使 Gilt 成为欧洲久期的赢家，但 Pill 的鹰派措辞把前端下行空间锁住，形成「长端涨、前端不跟」的结构。</div>
+        <div class="row"><span class="b">情绪底色</span>偏多</div>
+        <div class="ev"><i>原文证据</i> "Gilts bull flattened (outperforming Bunds) as energy fell ~4% and as BoE chief economist Pill said the UK economy has proved surprisingly resilient in the face of the Iran war energy shock, but action is needed to maintain inflation credibility."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "UK PMIs printed softer than expected (manufacturing 52.7 v 52.8 prior; services 52.0 v 52.8 prior; Composite fell 0.6pts to 52.3 vs 52.9 prior)."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 利率 · 澳洲（ACGB / 基本面与供给） ============ -->
+<section>
+  <div class="sec-head"><h2>利率 · 澳洲（ACGB / 基本面与供给）</h2><span class="n">2 行</span><span class="src">00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">澳洲国债（ACGB）<span class="bond">曲线<b>扭曲式平坦</b> · 前端开盘即承压 · 与美债牛平脱钩</span><span class="istag">本地卖压主导</span></td>
+        <td class="lv">前端开盘走弱、曲线平坦化显著，随海外利率同向卖出</td>
+        <td class="fl">——</td>
+        <td class="rv">美国利率转为上涨时 AUD 下行几乎平行，未出现美债式牛平</td>
+        <td class="cr">伦敦收盘前随美债进一步熊平，AUD 曲线平坦化加速</td>
+        <td class="bk">GS（Asia Macro · 澳元台）</td>
+        <td class="ak">周三 10 月 CPI</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>AUD 利率前端开盘即承压，曲线平坦化显著并随海外利率同向卖出；当美国利率转为上涨时，AUD 下行几乎平行，未触发美债式牛平；伦敦收盘前美债进一步熊平，AUD 曲线平坦化加速，最终呈<b>扭曲式平坦（twist-flattening）</b>。</div>
+        <div class="row"><span class="b">观点</span>GS 强调 AUD 缺少「牛平」这一环，说明本地卖压来自仓位调整而非海外避险；曲线形态由澳州自身资金流决定。</div>
+        <div class="row"><span class="b">情绪底色</span>偏空</div>
+        <div class="ev"><i>原文证据</i> "In AUD rates, the front-end sector traded heavily from the open, and the flattening of the curve was prominent amid selling in tandem with overseas rates... ultimately resulting in a significant twist-flattening of the curve by the London close."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">澳洲基本面与供给<span class="bond">11 月综合 PMI <b>46.1</b>（2021/8 以来最低）· 制造业 48.7 · 服务业 46.2</span><span class="istag">增长预测将下调</span></td>
+        <td class="lv">PMI 全面跌破荣枯线，制造业为 2024/12 以来最低</td>
+        <td class="fl">周二 A$1bn 3.75% 2037、周四 A$150m 2.5% 2030 Linkers、周五 A$1bn 1.75% 2032</td>
+        <td class="rv">GIR 预期 10 月截尾均值 <b>0.25%m/m</b>（3.5%y/y）</td>
+        <td class="cr">财政部预算更新将下调名义增长预测（5 月为 4.25%）</td>
+        <td class="bk">GS（Asia Macro · 澳元台）</td>
+        <td class="ak">周三 CPI + 12 月预算更新</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>澳洲财长 Chalmers 称经济增速将低于政府半年前的预测，因伊朗战争推升物价与失业；11 月综合 PMI 降至 <b>46.1</b>（2021/8 以来最低），制造业 48.7（2024/12 以来最低）、服务业 46.2（2023/11 以来最低）。</div>
+        <div class="row"><span class="b">观点</span>基本面与 PMI 同向走弱，使周三 CPI 成为唯一能改变定价的变量；GS 的截尾均值预测 0.25%m/m 若不超预期，宽松预期将进一步升温。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "Australias PMI s came in lower; S&amp;P Global preliminary composite PMI fell to 46.1 in Nov (the lowest since August 2021) from 48.2 in October; manufacturing PMI fell to 48.7 (lowest since Dec 2024) and services PMI fell to 46.2 (48.5 prior), lowest since Nov 2023."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "Australian Treasurer Jim Chalmers told parliament that Australias economy will grow slower than the government forecast six months ago, as prices and unemployment are rising due to the hit from the war in Iran and other factors."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 跨资产 · 美股 / 英伟达 / 外汇 ============ -->
+<section>
+  <div class="sec-head"><h2>跨资产 · 美股 / 英伟达 / 外汇</h2><span class="n">3 行</span><span class="src">00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美国股指（SPX / NDX / RTY）<span class="bond">SPX <b>+473bp 至 7237</b> · NDX <b>+686bp 至 26746</b> · RTY <b>+340bp 至 2669</b></span><span class="istag">2025/4/9 以来最佳单日</span></td>
+        <td class="lv">11 板块 9 涨，科技 <b>+903bp</b>、通信服务 <b>+503bp</b> 领涨</td>
+        <td class="fl">——</td>
+        <td class="rv">ETF 约占成交 <b>37%</b>，为 4 月以来最高读数</td>
+        <td class="cr">反弹由被动资金与单一头条驱动，结构偏脆弱</td>
+        <td class="bk">GS（Asia Macro · 股票台）</td>
+        <td class="ak">NVDA 董事会恢复黄仁勋职位</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>美股在数周震荡后强力反弹：SPX <b>+473bp</b> 至 <b>7237</b>、NDX <b>+686bp</b> 至 <b>26746</b>、RTY <b>+340bp</b> 至 <b>2669</b>，标普与纳指均为 2025 年 4 月 9 日以来最佳单日；广度转正，11 个板块 9 个上涨，科技 +903bp、通信服务 +503bp 领涨；ETF 约占成交 <b>37%</b>。</div>
+        <div class="row"><span class="b">观点</span>GS 把反弹归因于「NVDA 头条 + 被动资金」的组合，AI 交易出现最强反抽：GSCBSMHX <b>+14%</b>、GSTMTDAT <b>+12%</b>。</div>
+        <div class="row"><span class="b">情绪底色</span>偏强</div>
+        <div class="ev"><i>原文证据</i> "US equities bounced back after a choppy few weeks of trading: SPX +473bps to 7237, NDX +686bps to 26746, and RTY +340bps to 2669. The S&amp;P and Nasdaq logged their best sessions since April 9, 2025."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">英伟达（NVDA）<span class="bond">单日 <b>+31%</b> · 董事会恢复 CEO 黄仁勋 · 此前近两周承压</span><span class="istag">治理事件驱动反抽</span></td>
+        <td class="lv">NVDA +31%，收盘为近两周 supply 后的最强反弹</td>
+        <td class="fl">——</td>
+        <td class="rv">GS AI 半导体篮子 <b>+14%</b>、数据中心篮子 <b>+12%</b></td>
+        <td class="cr">涨幅源于公司治理事件而非基本面；隔夜要闻称 Trump 曾「史无前例地介入」</td>
+        <td class="bk">GS（Asia Macro · 股票台）；隔夜要闻</td>
+        <td class="ak">黄仁勋回归</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>NVDA 单日 <b>+31%</b>，此前近两周持续承压；GS 指出早间头条为「英伟达董事会恢复了 CEO 黄仁勋的职位」；GS AI 半导体篮子（GSCBSMHX）+14%、数据中心篮子（GSTMTDAT）+12%。</div>
+        <div class="row"><span class="b">观点</span>GS 用「almost 2 weeks of supply」描述此前两周，暗示空头回补是反弹的重要成分；这是治理事件而非盈利驱动。</div>
+        <div class="row"><span class="b">情绪底色</span>偏强</div>
+        <div class="ev"><i>原文证据</i> "Tech +903bps and Communication Services +503bps both led sector outperformance, turbocharged by headlines this morning that Nvidias board has reinstated CEO Jensen Huang (NVDA finished +31% after almost 2 weeks of supply)."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "Huangs Return Followed Unprecedented Intervention by Trump (Key Overnight News)"<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">外汇（美元 / 欧元 / 英镑 / 日元 / 挪威克朗 / 澳元）<span class="bond">EUR <b>-60bp</b> 破 1.0950 · GBP <b>-40bp</b> · NOK <b>-75bp</b> · USDJPY <b>+25bp</b></span><span class="istag">风险反弹带动美元 bid</span></td>
+        <td class="lv">美元因风险反弹走强；EUR 技术性跌破 1.0950 形成「真空」，拖累其余 G10</td>
+        <td class="fl">——</td>
+        <td class="rv">EUR 下一关键位 1.0900 / 1.0850，但未能在 1.0900 下方站稳</td>
+        <td class="cr">GBP 触及 11/25 以来最低；NOK 因油价回落 -75bp</td>
+        <td class="bk">GS（Asia Macro · FX 台）</td>
+        <td class="ak">EUR 1.0900 / 1.0850 关口</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>美元因风险反弹获得买盘；EUR 跌破 <b>1.0950</b>（-60bp）形成技术「真空」并拖累其余 G10；GBP -40bp 触及 11 月 25 日以来最低；USDJPY 上行 25bp（本地假期，幅度温和）；AUD 自早盘低点反弹、为当日最佳；NOK 因油价回落 <b>-75bp</b>。</div>
+        <div class="row"><span class="b">观点</span>交易台认为 USDJPY 仍可走低，且看到客户持续以该货币对作为组合对冲；EUR 的跌破属技术性真空而非基本面重定价。</div>
+        <div class="row"><span class="b">情绪底色</span>两向</div>
+        <div class="ev"><i>原文证据</i> "The Dollar caught a bid on the back of the rally in risk. Todays technical break below 1.0950 in EUR (-60bps) created a bit of a vacuum and dragged the rest of G10 alongside it."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "The desk continues to think the pair can move lower from here and we have seen people continue to enter into this trade as a hedge to their overall portfolio."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲信用 · IG 与二级市场（Barclays） ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲信用 · IG 与二级市场（Barclays）</h2><span class="n">5 行</span><span class="src">03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">亚洲信用 IG（整体）<span class="bond">IG 利差 <b>+3~9bp</b> · HY 现金与永续 <b>¼-1pt</b> 下跌 · 美国 HY 周五 <b>+23bp</b></span><span class="istag">周五暴跌后延续承压</span></td>
+        <td class="lv">亚洲午后小幅反弹：HY 自低点回升约 ⅛pt，IG 自最宽处回收约 1bp</td>
+        <td class="fl">——</td>
+        <td class="rv">IG 现金价随利率波动，情绪防御、流动性薄、卖压持续</td>
+        <td class="cr">美国 HY 周五单日走阔 23bp，为年内最大单日之一，传染风险仍在</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">美国 HY 走阔的溢出效应</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Barclays 报亚洲信用在周五暴跌后全天承压：IG 利差走阔 <b>3-9bp</b>，HY 现金与永续下跌 <b>¼-1pt</b>；亚洲午后出现温和修复，HY 自低点反弹约 ⅛pt、IG 自最宽处回收约 1bp，但情绪仍偏防御、流动性稀薄、卖压持续。美国 HY 周五走阔 <b>23bp</b>，为年内最大单日之一。</div>
+        <div class="row"><span class="b">观点</span>Barclays 强调卖盘偏斜集中在 HY，连高质量低 beta 名字也被打到买价，去风险是跨客户、跨区域的普遍行为，而非亚洲本地事件。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "Asia credit remained under pressure throughout the session following Fridays bloodbath, with IG spreads 3-9bps wider and HY cash and perps trading 1/4-1pt lower... US HY widened 23bps on Friday, marking one of the largest single-day moves wider YTD."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">台湾寿险（Taiwan Lifers）<span class="bond">利差 <b>+3~8bp</b> · 长端上周走阔 15bp 后出现双向兴趣</span><span class="istag">防御为主</span></td>
+        <td class="lv">长端在上周 15bp 走阔后于上周尾段出现一些双向兴趣</td>
+        <td class="fl">——</td>
+        <td class="rv">整体基调仍偏防御，长端是唯一有双向流的部分</td>
+        <td class="cr">若美债继续上行，长久期寿险债的利差压力未解</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">长端 15bp 走阔后的估值修复</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>台湾寿险债交易在 <b>3-8bp</b> 更宽；上周长端走阔 <b>15bp</b> 后于周末前出现一些双向兴趣，但整体基调仍偏防御。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把仅有的双向流定位在长端，说明分歧点在久期而非信用本身。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "Taiwan Lifers: Trading 3-8bps wider. Some two-way interest emerged in the long end late last week following a 15bp widening, but the overall tone remains defensive."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">香港 IG / 银行永续（Perps）<span class="bond">Perps <b>⅛-¼pt</b> 下跌 ≈ 扣除利率后 <b>5-10bp</b> 走阔</span><span class="istag">午后温和修复</span></td>
+        <td class="lv">永续跌幅换算成利差约 5-10bp，与整体 IG 市场一致</td>
+        <td class="fl">——</td>
+        <td class="rv">午后出现温和修复，节奏与更广泛的 IG 市场同步</td>
+        <td class="cr">永续对利率与风险偏好双敏感，波动大于同发行人 senior</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">利率变动后的利差换算</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>香港 IG 与永续交易在 <b>⅛-¼pt</b> 更低，扣除利率变动后约 <b>5-10bp</b> 走阔；午后出现一些温和修复，与更广泛的 IG 市场基本一致。</div>
+        <div class="row"><span class="b">观点</span>Barclays 特意做了「扣除利率后」的换算，说明当日下跌中相当部分是利率驱动而非信用恶化。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "HK IG/Perps: Perps trading 1/8-1/4pt lower, translating to approximately 5-10bps wider after accounting for the rates move. Some modest recovery seen in the afternoon, broadly in line with the wider IG market."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">韩国 IG 与澳洲 BBB Yankee<span class="bond">利差 <b>+2~4bp</b>（亚洲时段极清淡）· 澳洲 BBB 最多 <b>+10bp</b></span><span class="istag">澳洲 BBB 卖压更重</span></td>
+        <td class="lv">平台上韩国 IG 有小额卖出但无有意义流量；澳洲企业 BBB 有更好的卖盘</td>
+        <td class="fl">——</td>
+        <td class="rv">澳洲 BBB 相对周五亚洲收盘最多走阔 10bp</td>
+        <td class="cr">流动性极薄，澳洲 BBB 的 10bp 走阔可能放大估值偏离</td>
+        <td class="bk">Barclays（DM 交易台）</td>
+        <td class="ak">平台小额卖出 + 澳洲 BBB 卖盘</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>澳洲 Yankee 与韩国利差大多走阔 <b>2-4bp</b>，亚洲时段极清淡；平台上韩国 IG 有小额卖出但无有意义的流量；澳洲企业债 BBB 名字卖压更大，部分较周五亚洲收盘走阔达 <b>10bp</b>。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把澳洲 BBB 的 10bp 单独点出，是本段最明确的相对价值信号：同为 BBB，澳洲比韩国弱得多。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "Aus Yankees/Korea: Spreads are mostly 2-4bps wider in a very light Asia session today. Seeing small selling on the platform in Korea IG, but no meaningful flow to report. Better selling in Aus corps continues across BBB names, with some as much as 10bps wider vs Asia close on Friday."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">印度 IG<span class="bond">利差 <b>+4~5bp</b> · 与 PETMK 同段并列</span><span class="istag">仓位驱动的波动</span></td>
+        <td class="lv">SEA 板块走势更「情绪化」，仓位是主要推动力</td>
+        <td class="fl">——</td>
+        <td class="rv">印度 IG 走阔 4-5bp，与 PETMK 的 5-7bp 同属 SEA 板块调整</td>
+        <td class="cr">若仓位继续解锁，印度 IG 的相对强势难以维系</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">SEA 板块仓位调整</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>SEA 板块走势更为反复，仓位是主要推动力：<b>PETMK</b> 标记 <b>5-7bp</b> 更宽、<b>印度 IG</b> <b>4-5bp</b> 更宽。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把东南亚与印度 IG 的走阔归因于 positioning 而非基本面，属于「技术性」调整。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "SEA Corps: Have been a bit more erratic, with positioning weighing on moves. PETMK is marked 5-7bps wider and India IG 4-5bps wider."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲 HY · 澳门 / 印度 / 东南亚 ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲 HY · 澳门 / 印度 / 东南亚</h2><span class="n">3 行</span><span class="src">03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">澳门博彩 HY（Macau HY）<span class="bond">价格 <b>¼-¾pt</b> 下跌 · 短端与长端买价均被打</span><span class="istag">整条曲线承压</span></td>
+        <td class="lv">该板块持续偏重，front end 与 long end 的买价都被打到</td>
+        <td class="fl">——</td>
+        <td class="rv">价格自盘中低点小幅回升，但情绪依旧谨慎</td>
+        <td class="cr">若中国宏观与访客数据转弱，博彩 HY 的 beta 会放大跌幅</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">整条曲线 bids hit</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>澳门 HY 交易在 <b>¼-¾pt</b> 更低；该板块持续偏重，短端与长端买价均被打；价格自盘中低点小幅回升，但情绪依旧谨慎。</div>
+        <div class="row"><span class="b">观点</span>Barclays 特别点出「front and long end」同时被打，说明卖压不是单点调仓而是全曲线减仓。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "Macau HY: Trading 1/4-3/4pt lower. The sector remained heavy, with bids hit across both the front and long ends of the curve. Prices recovered marginally from intraday lows but sentiment remains cautious."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">印度 HY<span class="bond">价格 <b>¼-1pt</b> 下跌 · 前两周跑赢全区域</span><span class="istag">相对跑输风险</span></td>
+        <td class="lv">前两周跑赢后，随仓位解除而面临相对跑输</td>
+        <td class="fl">——</td>
+        <td class="rv">跑赢越多、解锁压力越大，是典型的拥挤仓位反向</td>
+        <td class="cr">若资金继续从 HY 撤出，印度 HY 的超额收益会快速回吐</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">仓位解除（positions unwind）</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>印度 HY 交易在 <b>¼-1pt</b> 更低；前两周相对全区域跑赢，随仓位解除而面临相对跑输的压力。</div>
+        <div class="row"><span class="b">观点</span>Barclays 用「vulnerable to relative underperformance as positions unwind」定性，指向拥挤度而非信用基本面。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "India HY: Trading 1/4-1pt lower. Having outperformed the broader region over the past two weeks, India HY remains vulnerable to relative underperformance as positions unwind."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">PETMK（马来西亚国家石油相关）<span class="bond">利差 <b>+5-7bp</b> · SEA 板块仓位主导</span><span class="istag">仓位主导的走阔</span></td>
+        <td class="lv">SEA 板块走势反复，PETMK 被标记 5-7bp 更宽</td>
+        <td class="fl">——</td>
+        <td class="rv">走阔幅度大于印度 IG（4-5bp），是本段最弱的名字</td>
+        <td class="cr">油价回落 + 仓位调整双压，短线难独立走强</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">SEA 板块仓位</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>SEA 板块走势更为反复、仓位主导：<b>PETMK</b> 标记 <b>5-7bp</b> 更宽。</div>
+        <div class="row"><span class="b">观点</span>与同段的印度 IG（4-5bp）相比，PETMK 走阔更多，说明能源价格回落对其压制更直接。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "SEA Corps: Have been a bit more erratic, with positioning weighing on moves. PETMK is marked 5-7bps wider"<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲主权 CDS 与一级新发 ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲主权 CDS 与一级新发</h2><span class="n">4 行</span><span class="src">03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">亚洲 IG 主权（Asia Sovs）<span class="bond">标记 <b>+2~4bp</b> · 现金价随利率变动基本不变</span><span class="istag">主权出现更好买盘</span></td>
+        <td class="lv">IG 主权走阔 2-4bp，现金价因利率变动基本持平</td>
+        <td class="fl">——</td>
+        <td class="rv">印尼 5-10 年段遇到需求；菲律宾在走阔中出现久期买盘</td>
+        <td class="cr">若美债继续上行，主权利差有补偿但久期风险仍在</td>
+        <td class="bk">Barclays（主权/CDS 台）</td>
+        <td class="ak">印尼 5-10Y 需求 + 菲律宾久期买盘</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>亚洲 IG 主权标记 <b>2-4bp</b> 更宽（现金价在利率变动下基本不变），并看到主权端更好的买盘：印尼在 <b>5-10 年</b>段遇到需求，菲律宾在走阔过程中出现久期买盘。</div>
+        <div class="row"><span class="b">观点</span>Barclays 明确区分「利差走阔」与「现金价不变」，说明当日的价格变化主要来自利率而非信用。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "Asia Sovs: IG sovs marked 2-4bps wider (cash prices unchanged into the rates move), and we have seen better buying across sovs. Indo ran into demand in the 5-10y part of the curve, and Phil saw buying in duration into the widening."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">亚洲前沿主权（Frontiers）<span class="bond">价格 <b>-0.25~-0.5pt</b> · 除 ETF 卖盘外几无流量</span><span class="istag">流动性枯竭</span></td>
+        <td class="lv">前沿主权下跌 0.25-0.5pt</td>
+        <td class="fl">——</td>
+        <td class="rv">除 ETF 卖出外几乎没有其他资金流，属被动减仓</td>
+        <td class="cr">流动性缺失会放大单笔 ETF 赎回的价格冲击</td>
+        <td class="bk">Barclays（主权/CDS 台）</td>
+        <td class="ak">ETF 赎回</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>前沿主权标记 <b>0.25-0.5pt</b> 更低，除 ETF 卖出外流量极少。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把前沿的下跌完全归因于 ETF，说明是机械性卖出而非信用重估，这为后续反弹提供了条件。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "Frontiers were marked 0.25-0.5pt lower, with very little flow outside of ETF selling."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">亚洲 CDS 指数与主权 CDS<span class="bond">Itraxx Asia S46 <b>74.25/75.00 +0.375</b> · China <b>33.75/34.50</b> 收窄</span><span class="istag">空头回补带动指数反弹</span></td>
+        <td class="lv">指数 +0.25-0.5bp，开盘即见空头回补；主权双向、净卖出，收在持平至 +1bp</td>
+        <td class="fl">——</td>
+        <td class="rv">恒指回到周五收盘水平、标普期货跌幅有限，风险情绪修复</td>
+        <td class="cr">MSCI 与印尼总统磋商避免降级的头条使本币反弹，但 CDS 未明显收紧</td>
+        <td class="bk">Barclays（主权/CDS 台）</td>
+        <td class="ak">MSCI 印尼降级磋商</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>亚洲 CDS 自周五亚洲收盘后的抛售中大幅反弹：恒指回到周五水平、标普期货跌幅有限；指数 <b>+0.25-0.5bp</b>，开盘即见更好的空头回补；主权双向但净卖出，收在持平至 <b>+1bp</b> 更宽。分项：Itraxx Asia S46 74.25/75.00 +0.375、Itraxx Aus S46 76.50/77.50 +0.5、China 33.75/34.50（收窄）、Philip 77.00/78.50 +0.75、Indon 102.75/104.25 +1、Korea 23.00/23.75 +0.25、Malay 36.50/37.50 +0.5。</div>
+        <div class="row"><span class="b">观点</span>China 是唯一收窄的分项，与 MSCI 印尼磋商的头条共同构成本段的两个本地 positive；其余市场普涨 0.25-1bp。</div>
+        <div class="row"><span class="b">情绪底色</span>两向</div>
+        <div class="ev"><i>原文证据</i> "Asia CDS: Big bounce back from the sell of Friday night post Asia close... Index +.25-0.5bps as we saw better short covering here out of the gates. Sovs, two way with net better selling as well, going out unch to just +1bps wider."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "Headline on MSCI in talks with Indonesian president on avoiding the previously mentioned downgrade. Local currency rallied but no significant move tighter in CDS seen."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">亚洲一级新发（AUD / CNH）<span class="bond">Challenger IM A$ 6NC5 · ASX A$ 3Y FRN · Yi Bright CNH 3Y <b>3.5%</b> 区间</span><span class="istag">新发窗口仍开</span></td>
+        <td class="lv">AUD 与 CNH 两条通道同时有发行</td>
+        <td class="fl">AUD：Challenger IM Capital A$ Short 6NC5 FXD-to-FRN 已 LAUNCH；ASX Limited A$ MTN 3 年期浮息已 MANDATE；CNH：Yi Bright International 3Y Reg S IPT <b>3.5%</b> 区间</td>
+        <td class="rv">——</td>
+        <td class="cr">新发集中在金融与 3 年期，属短久期供给</td>
+        <td class="bk">二级市场承压期的新发定价需给出更高溢价，安全边际更厚</td>
+        <td class="ak">Barclays（新发台）</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Challenger 6NC5 + ASX 3Y FRN + Yi Bright CNH 3Y</div>
+        <div class="row"><span class="b">观点</span>Barclays 列出当日公布的一级新发：AUD 端 Challenger IM Capital A$ 短期 <b>6NC5</b> 固转浮已 LAUNCH，ASX Limited A$ MTN <b>3 年期</b>浮息已获 MANDATE；CNH 端 Yi Bright International <b>3 年期</b> Reg S IPT 在 <b>3.5%</b> 区间。</div>
+        <div class="row"><span class="b">情绪底色</span>03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</div>
+        <div class="ev"><i>原文证据</i> "在二级承压的背景下仍有发行落地，且全部集中在 3-6 年期，说明发行人也在回避长久期。"<span class="srcf">来源：NEW ISSUES ANNOUNCED SO FAR: AUD LAUNCH: Challenger IM Capital A$ Short 6NC5 FXD-to-FRN Notes; MANDATE: ASX Limited A$ MTN Three-Year Floating Rate Notes; CNH IPT: Yi Bright International CNH TBD 3Y Reg S at 3.5% Area</span></div>
+        <div class="ev"><i>交易台原话</i> "中性"<span class="srcf">来源：NEW ISSUES ANNOUNCED SO FAR: AUD LAUNCH: Challenger IM Capital A$ Short 6NC5 FXD-to-FRN Notes; MANDATE: ASX Limited A$ MTN Three-Year Floating Rate Notes; CNH IPT: Yi Bright International CNH TBD 3Y Reg S at 3.5% Area</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 澳元信用 · senior / T2 / 混合资本 ============ -->
+<section>
+  <div class="sec-head"><h2>澳元信用 · senior / T2 / 混合资本</h2><span class="n">5 行</span><span class="src">03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">澳元 senior（澳洲银行/企业）<span class="bond">利差 <b>+1bp</b> · 周五隔夜波动后整体走阔</span><span class="istag">买盘在更宽水平回归</span></td>
+        <td class="lv">AUD 板块成交「相当活跃」，利差在周五隔夜动荡后走阔</td>
+        <td class="fl">——</td>
+        <td class="rv">senior 仅 +1bp，是澳元信用中受影响最小的层级</td>
+        <td class="cr">若美股期货涨势延续，senior 利差可能很快回落</td>
+        <td class="bk">Barclays（DM 交易台）</td>
+        <td class="ak">美股期货反弹带来的买盘</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>澳元板块成交相当活跃，利差在周五隔夜动荡后走阔：<b>senior +1bp</b>、<b>T2 +2-3bp</b>、<b>CDCAUS 混合与 GOOGL +5-6bp</b>、<b>NXTAU -25~-50 cents</b>；在更宽的水平上看到买家随美股期货上涨入场，带来一些安慰。</div>
+        <div class="row"><span class="b">观点</span>Barclays 用「decently busy」与「bringing some comfort back」描述，说明澳元是当日情绪最先修复的市场。</div>
+        <div class="row"><span class="b">情绪底色</span>偏强</div>
+        <div class="ev"><i>原文证据</i> "AUD: Decently busy day, with spreads wider after Fridays overnight shenanigans. Seniors +1 wider, T2 +2-3, CDCAUS hybrids/GOOGL +5-6bps, NXTAU -25-50 cents. Seeing buyers step in at these wider levels alongside the rally in US equity futures this morning, bringing some comfort back."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">澳元 T2（二级资本）<span class="bond">利差 <b>+2-3bp</b> · 幅度为 senior 的 2-3 倍</span><span class="istag">跟随 senior 走阔</span></td>
+        <td class="lv">T2 走阔 2-3bp，介于 senior（+1bp）与混合（+5-6bp）之间</td>
+        <td class="fl">——</td>
+        <td class="rv">与 senior 的 1bp 相比，T2 的 beta 明显更高</td>
+        <td class="cr">利差若继续扩大，T2 的票息重置预期会重新定价</td>
+        <td class="bk">Barclays（DM 交易台）</td>
+        <td class="ak">周五隔夜行情的补跌</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>澳元 T2 在周五隔夜动荡后走阔 <b>2-3bp</b>，与 senior（+1bp）、混合（+5-6bp）构成清晰的 beta 阶梯。</div>
+        <div class="row"><span class="b">观点</span>Barclays 用同一句话给出三个层级，实际提供了澳元资本结构的相对价值坐标。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "Seniors +1 wider, T2 +2-3, CDCAUS hybrids/GOOGL +5-6bps, NXTAU -25-50 cents."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">CDCAUS / GOOGL 混合资本<span class="bond">利差 <b>+5-6bp</b> · 澳元混合资本中最弱层级</span><span class="istag">高 beta 层级承压</span></td>
+        <td class="lv">混合资本走阔 5-6bp，为澳元各层级中最大</td>
+        <td class="fl">——</td>
+        <td class="rv">相对 senior +1bp，混合资本的 beta 放大 5-6 倍</td>
+        <td class="cr">混合资本对股价与波动率双敏感，若美股反弹失速将再次走阔</td>
+        <td class="bk">Barclays（DM 交易台）</td>
+        <td class="ak">美股期货反弹后的买盘</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>澳元混合资本（<b>CDCAUS</b> 与 <b>GOOGL</b>）走阔 <b>5-6bp</b>，为澳元各层级中最大；随美股期货上涨，在更宽水平见到买家入场。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把这两个名字并列为「hybrids」层级，说明当日的走阔是层级性的而非单一发行人事件。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "CDCAUS hybrids/GOOGL +5-6bps... Seeing buyers step in at these wider levels alongside the rally in US equity futures this morning, bringing some comfort back."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">NXTAU（澳元信用，价格跌幅最大）<span class="bond">价格 <b>-25~-50 cents</b> · 当日澳元最弱环节</span><span class="istag">价格大幅折价</span></td>
+        <td class="lv">NXTAU 下跌 25-50 cents，远大于其他层级的利差走阔</td>
+        <td class="fl">——</td>
+        <td class="rv">价格跌幅 25-50c 相当于明显多于 senior 的 1bp，是本段最极端的价格行为</td>
+        <td class="cr">单笔大额卖盘即可造成如此价格缺口，流动性风险突出</td>
+        <td class="bk">Barclays（DM 交易台）</td>
+        <td class="ak">流动性缺口</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span><b>NXTAU</b> 下跌 <b>25-50 cents</b>，为当日澳元信用中价格跌幅最大的标的；同期 senior 仅 +1bp、T2 +2-3bp、混合 +5-6bp。</div>
+        <div class="row"><span class="b">观点</span>Barclays 未给出 NXTAU 下跌的原因，仅记录价格；25-50c 的缺口在澳洲信用中属异常，指向流动性而非信用事件。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "NXTAU -25-50 cents."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">DXSAU（Moody's 展望下调至负面）<span class="bond">senior <b>+3-4bp</b> · 混合 <b>+8-9bp</b> · 下调后反见买盘</span><span class="istag">评级事件驱动走阔</span></td>
+        <td class="lv">Moody's 将 DXSAU 展望下调至负面，senior 走阔 3-4bp、混合走阔 8-9bp</td>
+        <td class="fl">——</td>
+        <td class="rv">在此背景下仍看到买家，说明利差已补偿评级风险</td>
+        <td class="cr">若评级实际下调一档，混合资本的损失吸收要求会重新定价</td>
+        <td class="bk">Barclays（DM 交易台）</td>
+        <td class="ak">Moody's 展望下调</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span><b>DXSAU</b> 被 Moody's 下调展望至负面，senior 走阔 <b>3-4bp</b>、混合走阔 <b>8-9bp</b>；在此背景下仍看到买家入场。</div>
+        <div class="row"><span class="b">观点</span>Barclays 用「Saw buyers on the back of that」记录了一个反向信号：评级利空落地后出现承接盘。</div>
+        <div class="row"><span class="b">情绪底色</span>两向</div>
+        <div class="ev"><i>原文证据</i> "DXSAU was downgraded to negative outlook by Moodys, with seniors +3-4bps and hybrids +8-9bps. Saw buyers on the back of that."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 中国 HY · 地产与评级事件 ============ -->
+<section>
+  <div class="sec-head"><h2>中国 HY · 地产与评级事件</h2><span class="n">3 行</span><span class="src">03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产 · 珠海华发（ZHHFGR）<span class="bond">开盘 <b>+2pt</b> · bullets <b>+5-6pt</b> · perp 至 <b>mid-30s</b></span><span class="istag">珠海国资相关利好</span></td>
+        <td class="lv">珠海国资委相关进展隔夜利好，RM/PB 买入推动 bullets 涨 5-6pt、永续至 mid-30s</td>
+        <td class="fl">——</td>
+        <td class="rv">午后 tone 仍谨慎，因在岸卖压悬顶</td>
+        <td class="cr">在岸抛售压力未消，反弹可持续性存疑</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">珠海国资委（Zhuhai SASAC）相关进展</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span><b>ZHHFGR</b> 因珠海国资委相关进展隔夜开盘 <b>+2pt</b>，RM/PB 买入推动 bullets 上行 <b>5-6pt</b>、永续升至 <b>mid-30s</b>；tone 因在岸卖压悬顶而保持谨慎。</div>
+        <div class="row"><span class="b">观点</span>这是当日中国地产唯一的正面事件，Barclays 用「opened +2pts」与「by midday」标出时间线，说明涨势在午前完成、午后停滞。</div>
+        <div class="row"><span class="b">情绪底色</span>偏强</div>
+        <div class="ev"><i>原文证据</i> "ZHHFGR opened +2pts on supportive Zhuhai SASAC-related developments overnight, with RM/PB buying pushing bullets ~5-6pts higher and PERP to the mid-30s by midday. Tone remained cautious given the onshore selling overhang."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产 · 同业（CPDEV / GRNCH / YUEXIU）<span class="bond">价格 <b>+1-2pt</b> · 跟随 ZHHFGR 走强</span><span class="istag">板块性反弹</span></td>
+        <td class="lv">更广泛的地产板块同步走强 1-2pt</td>
+        <td class="fl">——</td>
+        <td class="rv">三个名字同向同幅，属板块 beta 而非个体事件</td>
+        <td class="cr">若在岸卖压重来，板块反弹会最快回吐</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">ZHHFGR 带来的板块情绪</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>更广泛的地产板块跟随走强，<b>CPDEV</b>、<b>GRNCH</b>、<b>YUEXIU</b> 均上涨约 <b>1-2pt</b>。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把三者并列且给出同一幅度，说明这是板块性 beta，不是各自的信用事件。</div>
+        <div class="row"><span class="b">情绪底色</span>偏强</div>
+        <div class="ev"><i>原文证据</i> "Broader property also traded firmer, with CPDEV/GRNCH/YUEXIU ~1-2pts higher."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">中国地产 · 华发（Huafa，评级事件）<span class="bond">Fitch 列入 <b>Rating Watch Negative</b></span><span class="istag">评级风险落地</span></td>
+        <td class="lv">Fitch 将华发列入负面观察名单</td>
+        <td class="fl">——</td>
+        <td class="rv">与 ZHHFGR 的利好形成反向信号，反映地产评级仍在下行</td>
+        <td class="cr">若 RWN 转为实际下调，将触发部分持有人的评级约束卖出</td>
+        <td class="bk">Barclays（EM 交易台）</td>
+        <td class="ak">Fitch Rating Watch Negative</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>与 ZHHFGR 的反弹同一天，<b>Fitch</b> 将<b>华发（Huafa）</b>列入 <b>Rating Watch Negative</b>。</div>
+        <div class="row"><span class="b">观点</span>Barclays 把这条放在 ZHHFGR 段落末尾，形成「个体利好 + 评级利空」的对冲结构，说明地产的分化在加深。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "while Fitch placed Huafa on Rating Watch Negative."<span class="srcf">来源：03_Barclays_FWBarclaysAsianCreditTradingCommentaryEOD23rdNove.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 亚洲 HY 交易观点（Jefferies 周度 Convictions） ============ -->
+<section>
+  <div class="sec-head"><h2>亚洲 HY 交易观点（Jefferies 周度 Convictions）</h2><span class="n">7 行</span><span class="src">04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">VEDLN 37s（Vedanta，新增 dislike）<span class="bond">收益率 <b>low 8%</b> · 铝 <b>-25%</b> / 锌 <b>-14%</b> / 铜 <b>-17%</b></span><span class="istag">新增 dislike</span></td>
+        <td class="lv">长久期、高杠杆商品信用，现金流高度暴露于铝、锌、铜</td>
+        <td class="fl">——</td>
+        <td class="rv">债券价格对近期商品走弱反应迟钝；low 8% 的收益率对久期与信用而言偏贵</td>
+        <td class="cr">若锌铝只是回归常态而非崩跌，EBITDA 与 FCF 缓冲会走弱，而利差压缩空间已有限，下行不对称性有吸引力</td>
+        <td class="bk">Jefferies（Asia Distressed / Credit Analytics）</td>
+        <td class="ak">商品价格下跌传导至债券</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Jefferies 在 Asia Corp Trading Ideas 中新增 <b>VEDLN 37</b> 为 dislike：其长久期、高杠杆的商品信用现金流高度暴露于铝、锌、铜；<b>铝</b>自 6 月高点已跌 <b>25%</b>、<b>锌</b>自 9 月高点跌 <b>14%</b>、<b>铜</b>自 9 月高点回调 <b>17%</b>并接近 3 月低点；债券价格对商品走弱反应迟缓，<b>low 8%</b> 的收益率对这样的久期与信用而言偏贵。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 的逻辑是「不对称性」：即便锌铝只是正常化而不到崩跌，EBITDA/FCF 缓冲也会削弱，而利差已无压缩空间，因此做空的风险回报优于做多。</div>
+        <div class="row"><span class="b">情绪底色</span>偏空</div>
+        <div class="ev"><i>原文证据</i> "The bonds screen expensive for a long-duration, leveraged commodity credit whose cash flows remain heavily exposed to aluminum, zinc and copper. The bond price is slow in reacting to recent commodities price weakness."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "If zinc and aluminium merely normalize after their strong prior rallies rather than collapse, Vedantas EBITDA and FCF cushion could weaken while the bonds have limited room for further spread compression, creating an attractive downside asymmetry from current levels."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">MINAU（Mine Arc，观点更新）<span class="bond">现金债尚未跟上商品跌幅 · <b>双向活跃</b>交易</span><span class="istag">观望/更新观点</span></td>
+        <td class="lv">铜锌铝锂金急跌后，商品相关信用成为焦点</td>
+        <td class="fl">——</td>
+        <td class="rv">MINAU 与 VEDLN 同步出现活跃双向交易，现金债尚未完全反映商品价格</td>
+        <td class="cr">若商品继续走弱，现金债补跌压力集中在这两个名字</td>
+        <td class="bk">Jefferies（Asia HY 交易台）</td>
+        <td class="ak">商品抛售后现金债的补跌</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Jefferies 更新 <b>MINAU</b> 观点：铜、锌、铝、锂、金急跌后，商品相关信用成为本周焦点，<b>MINAU</b> 与 <b>VEDLN</b> 出现活跃的双向交易，现金债尚未完全跟上更弱的商品价格。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 未给出方向性建议，只指出「价格尚未反映」，属于典型的等待补跌的交易机会。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "Commodity-linked credits became a key focus following the sharp sell-off in copper, zinc, aluminium, lithium and gold, with MINAU and VEDLN seeing active two-way trading as cash bonds had yet to fully catch up with weaker commodity prices."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">SOFTBK（软银，日本 HY）<span class="bond">周初 <b>+0.5~0.75pt</b> 后周五回吐 <b>1pt</b></span><span class="istag">日本 HY 最强口袋</span></td>
+        <td class="lv">需求韧性 + AI/科技基调改善，周初跑赢后周五回吐</td>
+        <td class="fl">——</td>
+        <td class="rv">日本 HY 是本周唯一「显著强势」的口袋</td>
+        <td class="cr">周五回吐 1pt 显示其与 AI 交易高度联动，反弹不牢</td>
+        <td class="bk">Jefferies（Asia HY 交易台）</td>
+        <td class="ak">AI/科技基调 + 需求韧性</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>日本 HY 是本周明显的强势口袋：<b>SOFTBK</b> 因需求韧性与更坚挺的 AI/科技基调跑赢，周初上涨 <b>0.5-0.75pt</b>，随后在周五回吐 <b>1pt</b>。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 用「faded 1pt on Friday」记录回吐，说明 SOFTBK 的走势由 AI 叙事驱动，而非自身信用改善。</div>
+        <div class="row"><span class="b">情绪底色</span>两向</div>
+        <div class="ev"><i>原文证据</i> "Japan HY was a notable pocket of strength, with SOFTBK outperforming on resilient demand and a firmer AI/tech backdrop, rising 0.5-0.75pt in early part of the week then faded 1pt on Friday."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">NWDEVL（新世界发展，中国 HY）<span class="bond">供股公告后 step-up 永续大涨 · senior 先强后回吐</span><span class="istag">本周最强个券</span></td>
+        <td class="lv">供股（rights issue）公告后永续大幅反弹，senior bullets 先因 HF/RM 需求走强，随后因 deal risk 遭 RM/PB 卖出而回吐</td>
+        <td class="fl">——</td>
+        <td class="rv">永续涨幅显著强于 senior，资本结构分化明显</td>
+        <td class="cr">交易风险（deal risk）担忧使 senior 涨幅无法维持</td>
+        <td class="bk">Jefferies（Asia HY 交易台）</td>
+        <td class="ak">供股公告</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>中国 HY 中 <b>NWDEVL</b> 是本周最强个券：供股公告后 step-up 永续大幅反弹，senior bullets 最初因 HF/RM 需求走强，随后因对交易风险的担忧出现 RM/PB 卖出而回吐涨幅。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 把「step-up perps 大涨」与「senior 回吐」并置，说明市场只对条款（step-up）定价，对偿债顺序仍不放心。</div>
+        <div class="row"><span class="b">情绪底色</span>偏强</div>
+        <div class="ev"><i>原文证据</i> "In China HY, NWDEVL was the standout following its rights issue announcement, with step-up perps rallying strongly and senior bullets initially firming on HF/RM demand before giving back gains as RM/PB selling emerged on concern of deal risk."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">MUTHIN（NBFC，走弱）<span class="bond">价格小幅走软 · ETF/HF 卖出 vs LO 需求</span><span class="istag">资金流分化</span></td>
+        <td class="lv">NBFC 板块涨跌互现，MUTHIN 在 ETF/HF 卖出下小幅走软</td>
+        <td class="fl">——</td>
+        <td class="rv">LO 需求存在但不足以吸收 ETF/HF 的卖盘</td>
+        <td class="cr">若 ETF 赎回持续，NBFC 的流动性折价会扩大</td>
+        <td class="bk">Jefferies（Asia HY 交易台）</td>
+        <td class="ak">ETF/HF 卖出</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>NBFC 板块涨跌互现：<b>MUTHIN</b> 在 ETF/HF 卖出对 LO 需求的情况下小幅走软。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 用「ETF/HF 卖出 vs LO 需求」描述买卖双方，说明这是资金流而非基本面驱动的走弱。</div>
+        <div class="row"><span class="b">情绪底色</span>偏弱</div>
+        <div class="ev"><i>原文证据</i> "NBFCs were mixed, with MUTHIN softened a bit amid ETF/HF selling against LO demand."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">ADSEZ（Adani 港口，微涨）<span class="bond">价格 <b>+0.25pt</b> · 印度 HY 整体稳定</span><span class="istag">印度 HY 稳定</span></td>
+        <td class="lv">印度 HY 大体稳定，ADSEZ 上涨 0.25pt</td>
+        <td class="fl">——</td>
+        <td class="rv">在区域走弱背景下，印度 HY 是稳定口袋</td>
+        <td class="cr">与 Barclays 观察到的「印度 HY 前期跑赢、面临解锁压力」形成对照</td>
+        <td class="bk">Jefferies（Asia HY 交易台）</td>
+        <td class="ak">印度 HY 稳定性</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>亚洲 HY 整体有韧性但分化加剧：印度 HY 大体稳定，<b>ADSEZ</b> 上涨 <b>0.25pt</b>。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 与 Barclays 对印度 HY 的判断形成张力：前者称稳定，后者提示前期跑赢后的相对跑输风险。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "Asia HY was broadly resilient but increasingly differentiated through the week, with India HY largely stable as ADSEZ edged +0.25pt."<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">ADANEM（Adani 企业，双向）<span class="bond">HF/RM <b>双向</b>交易 · 无明确方向</span><span class="istag">对冲基金与实钱对做</span></td>
+        <td class="lv">ADANEM 出现 HF 与 RM 的双向交易</td>
+        <td class="fl">——</td>
+        <td class="rv">双向流动说明多空分歧大，缺乏一致方向</td>
+        <td class="cr">若印度 HY 仓位解锁，ADANEM 的高 beta 会放大波动</td>
+        <td class="bk">Jefferies（Asia HY 交易台）</td>
+        <td class="ak">HF/RM 双向流动</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span><b>ADANEM</b> 出现对冲基金（HF）与实钱（RM）的双向交易，未呈现单边方向。</div>
+        <div class="row"><span class="b">观点</span>Jefferies 仅记录双向流，未给观点；这种「two-way」通常是仓位换手的信号，而非趋势。</div>
+        <div class="row"><span class="b">情绪底色</span>两向</div>
+        <div class="ev"><i>原文证据</i> "while ADANEM saw two-way HF/RM flows"<span class="srcf">来源：04_Jefferies_FWJefferiesAsiaWeeklyCreditConvictions23November2.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- ============ 宏观研究与政策 · ECB 准备金 / 美国劳工 / 联储沟通 ============ -->
+<section>
+  <div class="sec-head"><h2>宏观研究与政策 · ECB 准备金 / 美国劳工 / 联储沟通</h2><span class="n">3 行</span><span class="src">00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+  <table class="tbl">
+    <thead><tr><th>Name / Bond</th><th>Market Level</th><th>Flow</th><th>Relative Value</th><th>Catalyst / Risk</th><th>券商信息</th><th>Desk Takeaway / Action</th></tr></thead>
+    <tbody>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">欧元区 · ECB 上调最低准备金率（MRR）研究<span class="bond">MRR <b>1% → 2%</b> · 超额流动性 <b>-€175bn</b> ≈ 4-5 个月 QT</span><span class="istag">研究：对前端基差有实质影响</span></td>
+        <td class="lv">报道称 ECB 正再次考虑将最低准备金率从 1% 上调至 2%</td>
+        <td class="fl">——</td>
+        <td class="rv">欧央行将以更快速度测试准备金可得性；各国影响不均，南欧超额准备金偏低</td>
+        <td class="cr">对银行 LCR 有影响，可能导致 ECB 借款小幅回升或更依赖市场融资</td>
+        <td class="bk">GS Research（Global Markets Daily）</td>
+        <td class="ak">ESTR-BOR 基差走阔、前端最敏感</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>GS 研究指出：报道显示 ECB 正再次考虑把最低准备金率从 <b>1%</b> 上调至 <b>2%</b> 的欧元区银行短期负债；此举意味着超额流动性减少 <b>1750 亿欧元</b>，相当于按当前速度 4-5 个月的 QT 量。影响有三：ECB 以更快速度测试准备金可得性；各国影响不均，南欧超额准备金偏低；对银行 LCR 产生影响，可能导致 ECB 借款小幅回升或更依赖市场融资。</div>
+        <div class="row"><span class="b">观点</span>GS 的结论是「超额流动性下降应使 ESTR-BOR 基差温和走阔」，且对前端曲线的影响既更重要也更可靠——这是一条明确指向前端基差交易的研究结论。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "Press reports suggest the ECB is again considering an increase in minimum reserve requirements from 1% to 2% of euro area banks short-term liabilities. Such an adjustment implies a decline in excess liquidity by EUR 175bn, equivalent to 4-5 months worth of QT at its current pace."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "Our analysis suggests the corresponding decline in excess liquidity should take ESTR-BOR bases modestly wider, with the impact of lower excess liquidity both more important and reliably significant at the front end of the curve."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美国 · 低招聘低解雇的劳工市场研究<span class="bond">招聘/离职/裁员率均<b>低于疫情前</b> · 工资增速被压 <b>0.3pp</b></span><span class="istag">研究：结构性低流动</span></td>
+        <td class="lv">劳工市场进入「低招聘、低解雇」的软性充分就业状态</td>
+        <td class="fl">——</td>
+        <td class="rv">流动率下降压低工资增速约 0.3pp（同失业率下）</td>
+        <td class="cr">若低流动持续，可能通过阻碍人岗匹配进一步拖累生产率</td>
+        <td class="bk">GS Research（US Economics Analyst）</td>
+        <td class="ak">AI 不确定性与疫情后正常化消退后流动率将回升</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>GS 研究认为劳工市场已稳定在「低招聘、低解雇」的软性充分就业形态，招聘率、离职率与裁员率均低于疫情前水平；流动率下降使工资增速被压低约 <b>0.3pp</b>（在给定失业率下），因为换到更高薪工作的频率下降、在职涨薪幅度也因工作不安全感而缩小。</div>
+        <div class="row"><span class="b">观点</span>GS 预期随着疫情后换工作正常化与 AI 不确定性消退，流动率将有所回升；但若低流动持续，减少的动态性也会拖累生产率。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "The labor market has settled into a softer, low-hire, low-fire form of full employment, with the hiring, quits, and layoff rates all running below their pre-pandemic levels... We estimate that depressed churn is weighing on year-over-year wage growth by about 0.3pp."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+      <tr class="main" onclick="tg(this)">
+        <td class="nm">美联储 · 政策沟通与加息定价<span class="bond">Williams：仍有「工作要做」· 12 月定价 <b>26bp</b> · 全年 <b>70bp</b></span><span class="istag">政策仍偏紧</span></td>
+        <td class="lv">Williams 称联储在压制通胀上仍有工作要做</td>
+        <td class="fl">——</td>
+        <td class="rv">市场定价 12 月 26bp 加息、明年累计 70bp</td>
+        <td class="cr">若通胀回落快于预期，当前定价存在回补风险（对前端多头有利）</td>
+        <td class="bk">GS（Asia Macro · Global Rates 台）；Key Overnight News</td>
+        <td class="ak">Williams 讲话 + 隔夜要闻</td>
+      </tr>
+      <tr class="det"><td colspan="7">
+        <h4>券商详情</h4>
+        <div class="row"><span class="b">事实</span>Fed 官员 Williams 表示，联储在压制持续过高的通胀方面仍有「work to do」；市场收盘定价 12 月会议 <b>26bp</b> 加息、明年累计 <b>70bp</b>。隔夜要闻标题为「Williams Says Fed Should Take Action Over Time on Inflation」。</div>
+        <div class="row"><span class="b">观点</span>GS 只客观记录表态与定价，未给方向判断；但 26bp / 70bp 的组合说明市场已从「不降息」转向「再加息」，这是前端承压的政策基础。</div>
+        <div class="row"><span class="b">情绪底色</span>中性</div>
+        <div class="ev"><i>原文证据</i> "In Fed speak, Fed Williams said the central bank still has work to do to tame inflation that has continued to run too high."<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+        <div class="ev"><i>交易台原话</i> "Williams Says Fed Should Take Action Over Time on Inflation (Key Overnight News)"<span class="srcf">来源：00_Goldman_Sachs_FWGSAsiaMacroGlobalMarketRecapGlobalMarketsDail.txt</span></div>
+      </td></tr>
+    </tbody>
+  </table>
+</section>
+</div>
+
 <script>
 function tg(r){
   var d=r.nextElementSibling;
   if(d&&d.classList.contains('det')){d.classList.toggle('open');r.classList.toggle('open');}
 }
-var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-02': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-03': {'w': 'Thursday · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-04': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-07': {'w': 'Monday · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-08': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-09': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-10': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-11': {'w': 'Friday · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-14': {'w': 'Monday · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-15': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-16': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-17': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-18': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-21': {'w': 'Monday · 周一', 's': '数据源：3 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-22': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-23': {'w': 'Wednesday · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-24': {'w': 'Thu · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-25': {'w': 'Fri · 周五', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-28': {'w': 'Mon · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-29': {'w': 'Tue · 周二', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-30': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-01': {'w': 'Thu · 周四', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-02': {'w': 'Fri · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-05': {'w': 'Mon · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-06': {'w': 'Tue · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-07': {'w': 'Wed · 周三', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-08': {'w': 'Thu · 周四', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-09': {'w': 'Friday · 周五', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-14': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-15': {'w': 'Thu · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-16': {'w': 'Fri · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-20': {'w': 'Tue · 周二', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-21': {'w': 'Wed · 周三', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-22': {'w': 'Thu · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-23': {'w': 'Fri · 周五', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-26': {'w': 'Mon · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-27': {'w': 'Tue · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-28': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-29': {'w': 'Thu · 周四', 's': '数据源：14 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-30': {'w': 'Fri · 周五', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-02': {'w': 'Mon · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-03': {'w': 'Tue · 周二', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-04': {'w': 'Wed · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-05': {'w': 'Thu · 周四', 's': '数据源：15 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-06': {'w': 'Fri · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-09': {'w': 'Mon · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-10': {'w': 'Tue · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-11': {'w': 'Wed · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-12': {'w': 'Thu · 周四', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-13': {'w': 'Fri · 周五', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-16': {'w': 'Mon · 周一', 's': '数据源：3 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-17': {'w': 'Tue · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-18': {'w': 'Wed · 周三', 's': '数据源：6 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-20': {'w': 'Fri · 周五', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-23': {'w': 'Mon · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
+var DAYINFO = {'2026-08-18': {'w': 'Tuesday · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-19': {'w': 'Wednesday · 周三', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-20': {'w': 'Thursday · 周四', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-21': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-24': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-25': {'w': 'Tuesday · 周二', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-26': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-27': {'w': 'Thursday · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-28': {'w': 'Friday · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-08-31': {'w': 'Monday · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-01': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-02': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-03': {'w': 'Thursday · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-04': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-07': {'w': 'Monday · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-08': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-09': {'w': 'Wednesday · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-10': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-11': {'w': 'Friday · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-14': {'w': 'Monday · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-15': {'w': 'Tuesday · 周二', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-16': {'w': 'Wednesday · 周三', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-17': {'w': 'Thursday · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-18': {'w': 'Friday · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-21': {'w': 'Monday · 周一', 's': '数据源：3 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-22': {'w': 'Tuesday · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-23': {'w': 'Wednesday · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-24': {'w': 'Thu · 周四', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-25': {'w': 'Fri · 周五', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-28': {'w': 'Mon · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-29': {'w': 'Tue · 周二', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-09-30': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-01': {'w': 'Thu · 周四', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-02': {'w': 'Fri · 周五', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-05': {'w': 'Mon · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-06': {'w': 'Tue · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-07': {'w': 'Wed · 周三', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-08': {'w': 'Thu · 周四', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-09': {'w': 'Friday · 周五', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-14': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-15': {'w': 'Thu · 周四', 's': '数据源：11 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-16': {'w': 'Fri · 周五', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-20': {'w': 'Tue · 周二', 's': '数据源：9 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-21': {'w': 'Wed · 周三', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-22': {'w': 'Thu · 周四', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-23': {'w': 'Fri · 周五', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-26': {'w': 'Mon · 周一', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-27': {'w': 'Tue · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-28': {'w': 'Wed · 周三', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-29': {'w': 'Thu · 周四', 's': '数据源：14 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-10-30': {'w': 'Fri · 周五', 's': '数据源：13 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-02': {'w': 'Mon · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-03': {'w': 'Tue · 周二', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-04': {'w': 'Wed · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-05': {'w': 'Thu · 周四', 's': '数据源：15 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-06': {'w': 'Fri · 周五', 's': '数据源：8 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-09': {'w': 'Mon · 周一', 's': '数据源：4 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-10': {'w': 'Tue · 周二', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-11': {'w': 'Wed · 周三', 's': '数据源：12 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-12': {'w': 'Thu · 周四', 's': '数据源：7 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-13': {'w': 'Fri · 周五', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-16': {'w': 'Mon · 周一', 's': '数据源：3 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-17': {'w': 'Tue · 周二', 's': '数据源：10 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-18': {'w': 'Wed · 周三', 's': '数据源：6 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-20': {'w': 'Fri · 周五', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-23': {'w': 'Mon · 周一', 's': '数据源：2 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}, '2026-11-24': {'w': 'Tue · 周二', 's': '数据源：5 封交易台邮件（Recap / Commentary / EOD）· 分类按标的动态识别 · 点击行展开券商详情'}};
 function showDay(d){
   var days=document.querySelectorAll('.day');
   for(var i=0;i<days.length;i++){days[i].classList.toggle('active', days[i].id==='day-'+d);}
